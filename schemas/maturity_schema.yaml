@@ -1,0 +1,26 @@
+score_formula: clarity + testability + connectedness + evidence
+range:
+  minimum: 0
+  maximum: 20
+fields:
+  clarity:
+    minimum: 0
+    maximum: 5
+    meaning: "How clearly the idea names the problem, user, and constraint."
+  testability:
+    minimum: 0
+    maximum: 5
+    meaning: "How easily the idea can be tested with a bounded experiment."
+  connectedness:
+    minimum: 0
+    maximum: 5
+    meaning: "How well the idea links to other ideas, projects, or reusable lessons."
+  evidence:
+    minimum: 0
+    maximum: 5
+    meaning: "How much real evidence supports the idea."
+classification:
+  raw: "0-5"
+  emerging: "6-10"
+  structured: "11-15"
+  research_ready: "16-20"
