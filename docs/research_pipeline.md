@@ -20,10 +20,22 @@ better research signal than a single attractive note.
 1. Build or update YAML ideas.
 2. Score them.
 3. Generate graph and clusters.
-4. Generate research candidates.
-5. If a candidate becomes real, write a graduation packet.
-6. Move execution into a standalone repo.
-7. Keep only locator/status notes in planning.
+4. Run adaptive weekly selection.
+5. Generate research candidates from selected clusters and mature clusters.
+6. If a candidate becomes real, write a graduation packet.
+7. Move execution into a standalone repo.
+8. Keep only locator/status notes in planning.
+
+## Weekly Selection
+
+The weekly selector avoids local optima by mixing:
+
+- `exploit`: mature, high-value ideas
+- `explore`: novel ideas far from the current cluster center
+- `random`: unexpected ideas from the remaining pool
+
+The selected set can mark a cluster as `research_candidate` when at least two
+selected ideas are connected by shared tags or semantic similarity.
 
 ## Claim Boundary
 

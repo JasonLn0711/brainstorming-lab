@@ -56,6 +56,7 @@ python3 graph/build_graph.py
 python3 clustering/auto_cluster.py
 python3 research/generate_candidates.py
 python3 scripts/generate_index.py
+python3 scripts/weekly_review.py --dry-run
 python3 scripts/weekly_review.py
 python3 scripts/push_to_planning.py --dry-run
 python3 scripts/suggest_today_ideas.py --dry-run

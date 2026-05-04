@@ -39,10 +39,15 @@ python3 scripts/generate_index.py
 ## Weekly Loop
 
 ```bash
+python3 scripts/weekly_review.py --dry-run
 python3 scripts/weekly_review.py
 python3 scripts/push_to_planning.py --dry-run
 python3 scripts/push_to_planning.py
 ```
+
+`weekly_review.py` is adaptive. It mixes exploitation from high
+`selection_score`, exploration from high novelty, and controlled randomness from
+the remaining ideas. The output is `research/weekly_selection.yaml`.
 
 ## Daily Loop
 
@@ -64,5 +69,7 @@ idea_000001:
 Then run:
 
 ```bash
+python3 scripts/pull_feedback.py --week 2026-W19 --dry-run
 python3 scripts/pull_feedback.py
+python3 scripts/pull_feedback.py --week 2026-W19
 ```

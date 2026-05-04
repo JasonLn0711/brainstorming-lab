@@ -110,6 +110,7 @@ Do not add a rule just because an idea is exciting. Add a rule when it prevents 
 - Treat ideas as data: score, link, cluster, and review them through the YAML schema.
 - Keep `score = clarity + testability + connectedness + evidence`.
 - Use `scripts/score_idea.py --all` before weekly review or research-candidate generation.
+- Use `scripts/weekly_review.py` as the adaptive weekly decision engine; it mixes exploitation, novelty exploration, and controlled randomness.
 - Use `scripts/link_ideas.py` for bidirectional links instead of editing only one file.
 - Planning sync must remain short: title, ID, status, score, next test, canonical path, and capacity note only.
 - Feedback from planning must come from explicit Idea OS marker blocks; do not infer feedback from free-form daily-note prose.
