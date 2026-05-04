@@ -9,6 +9,7 @@ items, quoted strings, numbers, booleans, nulls, and block strings.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -31,6 +32,11 @@ def save_yaml(path: str | Path, data: Any) -> None:
 
 
 def loads_yaml(text: str) -> Any:
+    stripped_text = text.strip()
+    if stripped_text == "{}":
+        return {}
+    if stripped_text == "[]":
+        return []
     if _pyyaml is not None:  # pragma: no cover - absent in the target env
         loaded = _pyyaml.safe_load(text)
         return {} if loaded is None else loaded
@@ -93,7 +99,14 @@ def _parse_mapping(lines: list[str], index: int, indent: int) -> tuple[dict[str,
         key, raw_value = _split_key_value(stripped, index)
         if raw_value == "":
             next_index = index + 1
-            if next_index >= len(lines) or _indent_of(lines[next_index]) <= indent:
+            if (
+                next_index < len(lines)
+                and _indent_of(lines[next_index]) == indent
+                and lines[next_index].lstrip().startswith("- ")
+            ):
+                value, index = _parse_list(lines, next_index, indent)
+                result[key] = value
+            elif next_index >= len(lines) or _indent_of(lines[next_index]) <= indent:
                 result[key] = None
                 index = next_index
             else:
@@ -102,8 +115,7 @@ def _parse_mapping(lines: list[str], index: int, indent: int) -> tuple[dict[str,
         elif raw_value in {">", "|"}:
             result[key], index = _parse_block_string(lines, index + 1, indent, raw_value)
         else:
-            result[key] = _parse_scalar(raw_value)
-            index += 1
+            result[key], index = _parse_scalar_with_continuation(lines, index, indent, raw_value)
     return result, index
 
 
@@ -124,7 +136,7 @@ def _parse_list(lines: list[str], index: int, indent: int) -> tuple[list[Any], i
         if item_text == "":
             value, index = _parse_block(lines, index + 1, indent + 2)
             result.append(value)
-        elif ":" in item_text and not item_text.startswith(("'", '"')):
+        elif _looks_like_key_value(item_text) and not item_text.startswith(("'", '"')):
             key, raw_value = _split_key_value(item_text, index)
             item: dict[str, Any] = {key: _parse_scalar(raw_value) if raw_value else None}
             index += 1
@@ -134,19 +146,27 @@ def _parse_list(lines: list[str], index: int, indent: int) -> tuple[list[Any], i
                 nested_key, nested_value = _split_key_value(lines[index].strip(), index)
                 if nested_value == "":
                     next_index = index + 1
-                    if next_index < len(lines) and _indent_of(lines[next_index]) > indent + 2:
+                    if (
+                        next_index < len(lines)
+                        and _indent_of(lines[next_index]) == indent + 2
+                        and lines[next_index].lstrip().startswith("- ")
+                    ):
+                        value, index = _parse_list(lines, next_index, indent + 2)
+                        item[nested_key] = value
+                    elif next_index < len(lines) and _indent_of(lines[next_index]) > indent + 2:
                         value, index = _parse_block(lines, next_index, _indent_of(lines[next_index]))
                         item[nested_key] = value
                     else:
                         item[nested_key] = None
                         index = next_index
                 else:
-                    item[nested_key] = _parse_scalar(nested_value)
-                    index += 1
+                    item[nested_key], index = _parse_scalar_with_continuation(
+                        lines, index, indent + 2, nested_value
+                    )
             result.append(item)
         else:
-            result.append(_parse_scalar(item_text))
-            index += 1
+            value, index = _parse_scalar_with_continuation(lines, index, indent, item_text)
+            result.append(value)
     return result, index
 
 
@@ -200,6 +220,30 @@ def _parse_scalar(raw: str) -> Any:
         return float(raw)
     except ValueError:
         return raw
+
+
+def _parse_scalar_with_continuation(
+    lines: list[str],
+    index: int,
+    indent: int,
+    raw: str,
+) -> tuple[Any, int]:
+    parts = [raw]
+    index += 1
+    while index < len(lines):
+        current_indent = _indent_of(lines[index])
+        if current_indent <= indent:
+            break
+        stripped = lines[index].strip()
+        if stripped.startswith("- ") or _looks_like_key_value(stripped):
+            break
+        parts.append(stripped)
+        index += 1
+    return _parse_scalar(" ".join(parts)), index
+
+
+def _looks_like_key_value(text: str) -> bool:
+    return re.match(r"^[A-Za-z0-9_-]+:", text) is not None
 
 
 def _dump_value(value: Any, indent: int) -> list[str]:
@@ -278,8 +322,8 @@ def _format_scalar(value: Any) -> str:
             return '""'
         if _is_plain_string(value):
             return value
-        return json.dumps(value)
-    return json.dumps(value)
+        return json.dumps(value, ensure_ascii=False)
+    return json.dumps(value, ensure_ascii=False)
 
 
 def _is_plain_string(value: str) -> bool:

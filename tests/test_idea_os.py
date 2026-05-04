@@ -83,6 +83,35 @@ class IdeaOSTest(unittest.TestCase):
         save_yaml(path, data)
         self.assertEqual(load_yaml(path), data)
 
+    def test_yaml_reader_accepts_pyyaml_style_files(self) -> None:
+        path = self.root / "ideas" / "structured" / "pyyaml_style.yaml"
+        path.write_text(
+            """id: idea_000001
+title: Legacy PyYAML style
+tags:
+- ai
+- triage
+summary: Given a long line, preserve wrapped
+  scalar continuation when reading.
+variants:
+- name: Reply-only
+  definition: Inspect replies.
+- name: Reply plus cue
+  definition: Inspect replies with a
+    continuation line.
+empty_mapping: {}
+""",
+            encoding="utf-8",
+        )
+        loaded = load_yaml(path)
+        self.assertEqual(loaded["tags"], ["ai", "triage"])
+        self.assertEqual(
+            loaded["summary"],
+            "Given a long line, preserve wrapped scalar continuation when reading.",
+        )
+        self.assertEqual(loaded["variants"][1]["definition"], "Inspect replies with a continuation line.")
+        self.assertEqual(loaded["empty_mapping"], {})
+
     def test_score_classification_and_validation(self) -> None:
         idea = make_template_idea("idea_000001", "Scoring test")
         idea["baseline"] = ["manual workflow baseline"]
