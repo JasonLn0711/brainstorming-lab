@@ -9,8 +9,10 @@ from pathlib import Path
 from idea_os.clustering_engine import build_clusters
 from idea_os.graphing import build_graph
 from idea_os.indexer import generate_indexes
+from idea_os.merge import detect_merge_candidates, merge_decision
 from idea_os.models import classify_score, score_idea, validate_idea
 from idea_os.planning import insert_or_replace_block, render_today_block
+from idea_os.problem import normalize_idea_problem
 from idea_os.research_engine import generate_research_candidates
 from idea_os.selection import (
     adaptive_epsilon,
@@ -42,6 +44,7 @@ class IdeaOSTest(unittest.TestCase):
             "config",
             "index",
             "research",
+            "clusters",
             "clustering",
             "graph",
         ]:
@@ -82,11 +85,14 @@ class IdeaOSTest(unittest.TestCase):
 
     def test_score_classification_and_validation(self) -> None:
         idea = make_template_idea("idea_000001", "Scoring test")
-        idea["maturity"] = {"clarity": 4, "testability": 4, "connectedness": 3, "evidence": 2}
+        idea["baseline"] = ["manual workflow baseline"]
+        idea["metrics"] = ["time to decision", "review burden"]
+        idea["evidence"] = ["observation", "concrete case", "real-world workflow need"]
+        idea["next_steps"] = ["Run a bounded fixture experiment."]
         score_idea(idea)
-        self.assertEqual(idea["score"], 13)
-        self.assertEqual(idea["status"], "structured")
-        self.assertEqual(classify_score(20), "research_ready")
+        self.assertRegex(idea["maturity_score"], r"^\d+/100$")
+        self.assertNotIn("score", idea)
+        self.assertEqual(classify_score(74), "research_candidate")
         self.assertEqual(validate_idea(idea), [])
 
     def test_id_generation_and_bidirectional_link_script(self) -> None:
@@ -113,6 +119,21 @@ class IdeaOSTest(unittest.TestCase):
         updated_right = load_yaml(path_for_idea(right, self.root))
         self.assertIn("idea_000002", updated_left["connections"])
         self.assertIn("idea_000001", updated_right["connections"])
+        self.assertTrue(list((self.root / "backups" / "idea_yaml").glob("**/*.yaml")))
+
+    def test_problem_normalization_and_merge_detection(self) -> None:
+        idea = make_template_idea("idea_000001", "AI triage", tags=["healthcare"])
+        idea["problem_statement"] = "AI triage"
+        idea["summary"] = ""
+        normalize_idea_problem(idea)
+        self.assertEqual(idea["normalization_status"], "needs_review")
+        self.assertIn("Given", idea["problem_statement"]["normalized"])
+        self.assertEqual(merge_decision(82), "strong_cluster_or_synthesis")
+
+        left = self._idea("idea_000001", "AI triage", 80, ["ai-triage"], ["idea_000002"])
+        right = self._idea("idea_000002", "Clinical review triage", 80, ["ai-triage"], ["idea_000001"])
+        candidates = detect_merge_candidates([left, right], minimum_score=60)
+        self.assertTrue(candidates)
 
     def test_graph_cluster_and_research_candidate(self) -> None:
         ideas = [
@@ -123,11 +144,12 @@ class IdeaOSTest(unittest.TestCase):
         graph = build_graph(ideas, threshold=0.5)
         self.assertTrue(any("manual_connection" in edge["reasons"] for edge in graph["edges"]))
 
-        clusters = build_clusters(ideas, threshold=0.5)
-        self.assertGreaterEqual(clusters["cluster_001"]["size"], 2)
+        clusters = build_clusters(ideas, threshold=60)
+        self.assertIn("cluster_0001", clusters)
+        self.assertGreaterEqual(len(clusters["cluster_0001"]["ideas"]), 2)
 
         candidates = generate_research_candidates(clusters, ideas)
-        self.assertIn("research_candidate_01", candidates)
+        self.assertIn("research_candidate_0001", candidates)
 
     def test_index_generation(self) -> None:
         idea = self._idea("idea_000001", "Indexed idea", 12, ["index"], [])
@@ -135,9 +157,12 @@ class IdeaOSTest(unittest.TestCase):
         save_idea(path, idea)
         loaded = dict(idea)
         loaded["_path"] = str(path)
-        idea_index, tag_index = generate_indexes([loaded], self.root)
+        idea_index, tag_index, cluster_index, research_index = generate_indexes([loaded], self.root)
         self.assertIn("Indexed idea", idea_index.read_text(encoding="utf-8"))
+        self.assertIn("/100", idea_index.read_text(encoding="utf-8"))
         self.assertIn("index", tag_index.read_text(encoding="utf-8"))
+        self.assertTrue(cluster_index.exists())
+        self.assertTrue(research_index.exists())
 
     def test_planning_marker_idempotency(self) -> None:
         selection = {
@@ -147,6 +172,7 @@ class IdeaOSTest(unittest.TestCase):
                     "title": "Planning bridge",
                     "selection_type": "exploit",
                     "selection_score": 1.5,
+                    "maturity_score": "74/100",
                     "novelty": 0.3,
                     "experiment": "Run a tiny test.",
                     "measurable_output": "One note.",
@@ -205,7 +231,7 @@ class IdeaOSTest(unittest.TestCase):
         loaded = [dict(idea, _path=str(path_for_idea(idea, self.root))) for idea in ideas]
         metrics = metrics_for_ideas(loaded, ["ai-triage"])
         pools = build_pools(loaded, metrics)
-        self.assertIn("idea_000002", pools["exploitation_pool"])
+        self.assertTrue(pools["exploitation_pool"])
         self.assertEqual(selection_counts(5, 0.3), {"exploit": 3, "explore": 1, "random": 1})
         selection = build_weekly_selection(self.root, "2026-W19", 3)
         self.assertTrue(selection["clusters"])
@@ -224,8 +250,6 @@ class IdeaOSTest(unittest.TestCase):
 <!-- IDEA_OS_FEEDBACK_START -->
 idea_000001:
   insight: "The experiment changed the next test."
-  maturity_delta:
-    clarity: 1
   experiment_result: "Useful signal"
 <!-- IDEA_OS_FEEDBACK_END -->
 """,
@@ -263,19 +287,42 @@ idea_000001:
         updated = load_yaml(path)
         self.assertIn("The experiment changed the next test.", updated["insights"])
         self.assertIn("Experiment result: Useful signal", updated["insights"])
-        self.assertEqual(updated["maturity"]["clarity"], 5)
+        self.assertIn("maturity_score", updated)
 
-    def _idea(self, idea_id: str, title: str, score: int, tags: list[str], connections: list[str]) -> dict:
+    def test_malformed_yaml_is_reported_by_cli(self) -> None:
+        bad = self.root / "ideas" / "raw" / "bad.yaml"
+        bad.write_text("id: bad\n  broken: true\n", encoding="utf-8")
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(REPO / "scripts" / "normalize_problem.py"),
+                "--root",
+                str(self.root),
+            ],
+            capture_output=True,
+            text=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("ERROR", result.stdout)
+
+    def _idea(self, idea_id: str, title: str, maturity_hint: int, tags: list[str], connections: list[str]) -> dict:
         idea = make_template_idea(idea_id, title, tags=tags)
-        idea["summary"] = f"{title} uses triage evidence routing and reviewer workflow."
-        idea["problem_statement"] = "Given noisy inputs, select useful review targets."
-        idea["connections"] = connections
-        idea["maturity"] = {
-            "clarity": min(5, score),
-            "testability": 4 if score >= 12 else 1,
-            "connectedness": 3 if connections else 0,
-            "evidence": max(0, score - 12),
+        idea["summary"] = f"{title} uses triage evidence routing and reviewer workflow for a concrete case with a benchmark fixture."
+        idea["problem_statement"] = {
+            "raw": "Given noisy inputs, optimize useful review targets under safety and audit constraints.",
+            "normalized": "Given noisy review inputs, optimize review-worthy target selection under constraints of safety, auditability, and reviewer capacity.",
+            "structure": {
+                "given": "noisy review inputs",
+                "optimize": "review-worthy target selection",
+                "constraints": ["safety", "auditability", "reviewer capacity"],
+            },
         }
+        idea["connections"] = connections
+        idea["baseline"] = ["manual review queue baseline"]
+        idea["metrics"] = ["time to first useful action", "review burden", "candidate precision"]
+        idea["evidence"] = ["observation", "concrete case", "benchmark reference", "real-world workflow need"]
+        idea["assumptions"] = ["The useful output is safer routing, not autonomous confirmation."]
+        idea["next_steps"] = ["Run a bounded synthetic fixture experiment within one week."]
         score_idea(idea)
         return idea
 

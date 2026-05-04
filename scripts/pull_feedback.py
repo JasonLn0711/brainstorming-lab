@@ -3,9 +3,11 @@ from __future__ import annotations
 
 import argparse
 from datetime import date
+from datetime import datetime
 
 import _bootstrap  # noqa: F401
 from idea_os.models import score_idea
+from idea_os.models import LEGACY_MATURITY_ALIASES
 from idea_os.planning import load_feedback_from_daily, load_feedback_from_week
 from idea_os.store import find_idea_path, load_idea, save_and_move_idea
 from idea_os.yaml_io import dumps_yaml
@@ -35,8 +37,9 @@ def apply_feedback(idea: dict, feedback: dict) -> None:
     if isinstance(maturity_delta, dict):
         maturity = idea.setdefault("maturity", {})
         for field, delta in maturity_delta.items():
-            current = int(maturity.get(field, 0))
-            maturity[field] = max(0, min(5, current + int(delta)))
+            target = LEGACY_MATURITY_ALIASES.get(str(field), str(field))
+            current = int(maturity.get(target, 0))
+            maturity[target] = max(0, current + int(delta))
         score_idea(idea)
 
 
@@ -56,13 +59,14 @@ def main() -> int:
     if args.dry_run:
         print(dumps_yaml(feedback))
         return 0
+    run_id = datetime.now().strftime("%Y%m%dT%H%M%S")
     for idea_id, data in feedback.items():
         if not isinstance(data, dict):
             continue
         path = find_idea_path(idea_id, args.root)
         idea = load_idea(path)
         apply_feedback(idea, data)
-        target = save_and_move_idea(idea, path, args.root)
+        target = save_and_move_idea(idea, path, args.root, backup=True, backup_run_id=run_id)
         print(f"updated {idea_id}: {target}")
     return 0
 

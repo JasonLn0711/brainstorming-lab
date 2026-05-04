@@ -12,7 +12,7 @@ from typing import Any
 
 from idea_os.clustering_engine import infer_theme
 from idea_os.config import load_config, planning_repo_path
-from idea_os.models import MATURITY_FIELDS
+from idea_os.models import total_maturity
 from idea_os.planning import iso_week_folder
 from idea_os.similarity import idea_similarity, shared_tags
 from idea_os.store import REPO_ROOT, load_idea
@@ -45,9 +45,7 @@ def value_to_number(value: Any) -> float:
 
 
 def maturity_ratio(idea: dict[str, Any]) -> float:
-    maturity = idea.get("maturity", {})
-    total = sum(_to_float(maturity.get(field)) for field in MATURITY_FIELDS)
-    return _round(max(0.0, min(1.0, total / 20.0)))
+    return _round(max(0.0, min(1.0, total_maturity(idea) / 100.0)))
 
 
 def execution_cost(idea: dict[str, Any]) -> float:
@@ -397,7 +395,8 @@ def _selection_entry(
         "id": idea["id"],
         "title": idea.get("title", ""),
         "status": idea.get("status", ""),
-        "maturity_score": idea.get("score", 0),
+        "maturity_score": idea.get("maturity_score", "0/100"),
+        "maturity_level": idea.get("maturity_level", ""),
         "selection_type": selection_type,
         "selection_score": metrics["selection_score"],
         "novelty": metrics["novelty"],

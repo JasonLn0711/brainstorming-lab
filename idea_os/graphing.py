@@ -6,6 +6,7 @@ from itertools import combinations
 from typing import Any
 
 from idea_os.similarity import idea_similarity, shared_tags
+from idea_os.models import total_maturity
 
 
 def build_graph(ideas: list[dict[str, Any]], threshold: float) -> dict[str, Any]:
@@ -14,7 +15,9 @@ def build_graph(ideas: list[dict[str, Any]], threshold: float) -> dict[str, Any]
             "id": idea["id"],
             "title": idea.get("title", ""),
             "status": idea.get("status", ""),
-            "score": idea.get("score", 0),
+            "maturity_score": idea.get("maturity_score", "0/100"),
+            "maturity_score_raw": total_maturity(idea),
+            "maturity_level": idea.get("maturity_level", ""),
             "tags": idea.get("tags", []),
             "path": idea.get("_path", ""),
         }

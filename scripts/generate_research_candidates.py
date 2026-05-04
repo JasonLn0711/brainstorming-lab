@@ -3,27 +3,22 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
-import sys
 
-
-ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
-from idea_os.clustering_engine import build_clusters  # noqa: E402
-from idea_os.research_engine import generate_research_candidates  # noqa: E402
-from idea_os.store import load_active_ideas  # noqa: E402
-from idea_os.yaml_io import load_yaml, save_yaml  # noqa: E402
+import _bootstrap  # noqa: F401
+from idea_os.clustering_engine import build_clusters
+from idea_os.research_engine import generate_research_candidates
+from idea_os.store import load_active_ideas
+from idea_os.yaml_io import load_yaml, save_yaml
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate research candidates from Idea OS clusters.")
+    parser = argparse.ArgumentParser(description="Generate research candidates from active clusters.")
     parser.add_argument("--root", default=None, help="Repo root override")
     args = parser.parse_args()
 
-    repo = Path(args.root).resolve() if args.root is not None else ROOT
-    cluster_path = repo / "clusters" / "active_clusters.yaml"
+    repo = Path(args.root).resolve() if args.root else Path(__file__).resolve().parents[1]
     ideas = load_active_ideas(repo)
+    cluster_path = repo / "clusters" / "active_clusters.yaml"
     if cluster_path.exists():
         loaded = load_yaml(cluster_path)
         clusters = loaded if isinstance(loaded, dict) else {}

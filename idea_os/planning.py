@@ -86,16 +86,17 @@ def render_weekly_bridge(selection: dict[str, Any]) -> str:
         "",
         "## Selected Ideas",
         "",
-        "| Idea | Type | Score | Novelty | Experiment | Measurable output | Canonical path |",
-        "| --- | --- | ---: | ---: | --- | --- | --- |",
+        "| Idea | Type | Maturity | Selection | Novelty | Experiment | Measurable output | Canonical path |",
+        "| --- | --- | ---: | ---: | ---: | --- | --- | --- |",
     ]
     for item in selection_entries(selection):
         lines.append(
-            "| `{id}` {title} | `{selection_type}` | {score} | {novelty} | {experiment} | {measurable_output} | `{path}` |".format(
+            "| `{id}` {title} | `{selection_type}` | {maturity} | {selection_score} | {novelty} | {experiment} | {measurable_output} | `{path}` |".format(
                 id=item.get("id", ""),
                 title=item.get("title", ""),
                 selection_type=item.get("selection_type", ""),
-                score=item.get("selection_score", item.get("score", 0)),
+                maturity=item.get("maturity_score", "0/100"),
+                selection_score=item.get("selection_score", ""),
                 novelty=item.get("novelty", ""),
                 experiment=item.get("experiment", item.get("next_step", "")),
                 measurable_output=item.get("measurable_output", ""),
@@ -132,11 +133,11 @@ def render_today_block(selection: dict[str, Any], day: date | None = None) -> st
         lines.append("- No Idea OS suggestions selected.")
     for item in entries:
         lines.append(
-            "- `{id}` {title} ({selection_type}, score {score}, novelty {novelty})".format(
+            "- `{id}` {title} ({selection_type}, maturity {maturity}, novelty {novelty})".format(
                 id=item.get("id", ""),
                 title=item.get("title", ""),
                 selection_type=item.get("selection_type", item.get("status", "")),
-                score=item.get("selection_score", item.get("score", 0)),
+                maturity=item.get("maturity_score", "0/100"),
                 novelty=item.get("novelty", ""),
             )
         )

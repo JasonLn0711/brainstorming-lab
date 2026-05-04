@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime
 
 import _bootstrap  # noqa: F401
 from idea_os.models import STATUSES, validate_idea
@@ -21,7 +22,8 @@ def main() -> int:
     errors = validate_idea(idea)
     if errors:
         raise SystemExit("; ".join(errors))
-    target = save_and_move_idea(idea, path, args.root)
+    run_id = datetime.now().strftime("%Y%m%dT%H%M%S")
+    target = save_and_move_idea(idea, path, args.root, backup=True, backup_run_id=run_id)
     print(target)
     return 0
 

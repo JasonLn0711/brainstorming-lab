@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime
 
 import _bootstrap  # noqa: F401
 from idea_os.store import find_idea_path, load_idea, save_idea
@@ -27,8 +28,9 @@ def main() -> int:
     right = load_idea(right_path)
     add_link(left, right["id"])
     add_link(right, left["id"])
-    save_idea(left_path, left)
-    save_idea(right_path, right)
+    run_id = datetime.now().strftime("%Y%m%dT%H%M%S")
+    save_idea(left_path, left, backup=True, root=args.root, backup_run_id=run_id)
+    save_idea(right_path, right, backup=True, root=args.root, backup_run_id=run_id)
     print(f"linked {left['id']} <-> {right['id']}")
     return 0
 
