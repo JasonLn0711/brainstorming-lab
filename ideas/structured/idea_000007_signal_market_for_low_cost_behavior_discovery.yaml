@@ -1,0 +1,1193 @@
+id: idea_000007
+title: "Signal Market for low-cost behavior discovery"
+created_at: 2026-05-04
+type: project
+tags:
+  - cybersecurity
+  - scam-research
+  - signal-market
+  - reviewer-assist
+  - decision-system
+  - behavior-extraction
+  - research-operating-system
+  - problem-normalization
+  - behavior-graph
+  - information-efficiency
+  - local-sparse-vectors
+  - feature-discovery
+  - explainable-clustering
+  - embedding-discovery
+  - exploration-layer
+  - outlier-detection
+  - data-acquisition-strategy
+  - exploration-exploitation
+  - self-directed-data-discovery
+  - exploration-generator
+  - candidate-stubs
+  - query-strategy-generator
+  - search-templates
+  - metadata-only
+  - research-candidate
+status: execution_ready
+problem_statement:
+  raw: "Given Track B Threads investment-scam source-arm uncertainty, optimize the selection of high-information-density behavior signals under tight reviewer labor, governance, hard-negative, and aggregate-only constraints."
+  normalized: "Given noisy Threads investment-scam candidate streams, optimize high-information-density behavior discovery under constraints of low reviewer labor, hard-negative protection, governance, uncertainty preservation, and aggregate-only reporting."
+  structure:
+    given: "noisy Threads investment-scam candidate streams and uncertain source arms"
+    optimize: "high-information-density behavior discovery and source-arm investment decisions"
+    constraints:
+      - "low reviewer labor"
+      - "hard-negative protection"
+      - governance
+      - "uncertainty preservation"
+      - "aggregate-only reporting"
+      - "no raw evidence in git"
+summary: "Treat every source arm or signal family as an asset in a Signal Market, score it by behavior information gained per unit of reviewer effort, and upgrade the target project from a record-and-execute workflow into a Research Operating System that can compare batches, evolve signal taxonomy, generate research directions, keep clustering explainable through local sparse vectors, deliberately explore beyond already-seen patterns, and translate exploration tasks into auditable query strategies."
+source_note_zh: "瓶頸不是找更多方法，而是不知道哪一種方法值得長大；下一步是建立會告訴你哪條路值得走的 Signal Market。"
+v2_source_note_zh: "v2 核心是把 repo 從記錄與執行系統，升級成會自己產生方向的研究引擎；v1 問哪裡有 scam，v2 問哪種訊號最值得人類花時間。"
+assumptions:
+  - "The current bottleneck is not method generation; it is deciding which method deserves to scale."
+  - "Replies, comments, and interactions may carry higher behavior density than top-level posts alone."
+  - "The real optimization target is behavior information per reviewer hour, not raw candidate count."
+  - "Batch 0003 should compare signal combinations rather than run a single source arm as another manual trial."
+  - "Human cognitive load is part of the system and should be modeled directly."
+  - "Cross-batch comparability is the missing capability that prevents the repo from becoming a research engine."
+  - "A useful v2 needs taxonomy, evaluation, and evolution, not only batch execution records."
+  - "Formal clustering should find units whose decisions can be merged, not merely items with high semantic similarity."
+  - "Sparse features do not all need to be hand-authored; the system can define the observation language while data proposes emergent features."
+  - "Embedding is useful as a scout and feature generator, but it should not become the decision layer at this stage."
+  - "If the system only learns from existing candidates, it will overfit to the already-seen world and become slow to notice new scam forms."
+  - "The next capability is not a better model; it is an exploration layer that learns where to look for data."
+  - "The project has too little old data for a purely retrospective learning loop; the hard missing capability is strategic data discovery."
+  - "Self-directed exploration should propose where to look and what to look for, while actual access and adjudication remain in the existing governed review flow."
+insights:
+  - "Post-level evidence is often too coarse; reply, comment, and interaction traces expose behavior."
+  - "Micro-behavior extraction can normalize visually different scams into repeated action units."
+  - "Reviewer behavior modeling turns cognitive burden into a measurable design variable instead of an anecdote."
+  - "A good discovery system should automatically produce research-candidate statements when a signal has high yield under low review cost."
+  - "The deeper research object is information-efficiency optimization: how much high-value signal a reviewer can safely judge per unit time."
+  - "Behavior graphs can expose funnel depth, branching, redirect, and coordination patterns without relying only on message semantics."
+  - "The right v2 clustering default is local sparse vectors because the repo needs controllable and auditable behavior-pattern clusters."
+  - "A sparse-vs-embedding discrepancy loop can tell the researcher where their current observation language is missing or too broad."
+  - "The current system compresses, compares, and abstracts known candidates; exploration must add controlled exposure to unknown or low-signal regions."
+  - "Embedding should also look for unlike cases, not only similar cases: outliers are potential sources of new feature language."
+  - "The next upgrade is not a crawler; it is an exploration decision layer that produces source-pattern-risk tasks and metadata-only candidate stubs."
+  - "A system that suggests where to look can expand data strategically while preserving the repo's auditability and low-reviewer-labor design."
+  - "The bridge from exploration to execution is query strategy generation: convert an EXP task into search intent, query patterns, structure patterns, filters, and risk controls."
+  - "The system is still not collecting data; it is generating a plan for how a governed human or future safe tool should look."
+research_operating_system_v2:
+  thesis: "Upgrade the target repo from workflow, governance, and batch execution into a market plus decision engine that can generate research direction."
+  first_principle: "The goal is not scam detection; the goal is to maximize high-value candidate discovery per unit reviewer effort."
+  missing_capability: "Cross-batch comparability."
+  transformation:
+    from: "record and execute system"
+    to: "research engine that compares, evolves, and generates insight"
+  layers:
+    - name: "Signal Layer"
+      purpose: "Define what the world looks like before review."
+      fields:
+        - signal_family
+        - source_arm
+        - behavior_pattern
+        - context
+    - name: "Measurement Layer"
+      purpose: "Turn every signal into a comparable asset."
+      fields:
+        - yield_rate
+        - review_time
+        - confidence
+        - false_positive_pressure
+        - information_density
+    - name: "Market Layer"
+      purpose: "Make signals compete through Signal Value Score."
+      fields:
+        - signal_value_score
+        - per_signal_ranking
+        - per_batch_ranking
+    - name: "Evolution Layer"
+      purpose: "Generate clusters, hypotheses, anomalies, and research candidates."
+      fields:
+        - cluster
+        - hypothesis
+        - anomaly
+        - research_candidate
+v2_critical_capabilities:
+  - name: "Problem Normalization Engine"
+    purpose: "Convert each candidate into a problem representation so different-looking scams can map to reusable templates."
+    representation_fields:
+      - goal
+      - mechanism
+      - target
+      - channel
+    example:
+      goal: "引導聯絡"
+      mechanism: "社群信任建立"
+      target: "投資新手"
+      channel: reply
+  - name: "Behavior Graph"
+    purpose: "Represent a thread as a graph instead of a single observation."
+    graph_model:
+      nodes:
+        - user
+        - message
+      edges:
+        - reply
+        - mention
+        - redirect
+    derived_metrics:
+      - funnel_depth
+      - branching_pattern
+      - coordination_signal
+  - name: "Reviewer Cost Modeling"
+    purpose: "Measure the cognitive cost of review so optimization targets effective signal per second."
+    observable_fields:
+      - time_spent
+      - scroll_depth
+      - re_read_count
+      - uncertainty_flag
+    optimization_target: effective_signal_per_second
+v2_repo_module_map:
+  meta-system:
+    signal_registry: "Signal definitions and approved source-arm taxonomy."
+    behavior_units: "Standardized micro-behavior catalog."
+    problem_templates: "Normalized goal, mechanism, target, channel templates."
+    signal_clusters: "Cross-batch signal and behavior clusters."
+  metrics:
+    batch_logs: "Structured candidate-review metadata by batch."
+    signal_scores: "SVS outputs, rankings, and anomaly flags."
+    reviewer_metrics: "Reviewer time, uncertainty, scroll, re-read, and cognitive-load traces."
+  experiments:
+    batch_variants: "Controlled batch variants with hypotheses and measurement plans."
+  engine:
+    svs_calculator: "Compute SVS per signal and per batch."
+    clustering_engine: "Group behavior units and problem templates."
+    research_generator: "Generate research candidates from high-SVS or anomalous patterns."
+  outputs:
+    research_candidates: "Editor- or project-facing candidate statements."
+    cluster_reports: "Cluster summaries and merge/duplicate pattern reports."
+batch_as_experiment:
+  definition: "Batch = controlled experiment."
+  required_fields:
+    - hypothesis
+    - variant
+    - expected_outcome
+    - measurement_plan
+  rationale: "Without this structure, the repo is only running workflow rather than learning across batches."
+agent_assisted_research_system:
+  automation_targets:
+    - "Find clusters through embedding and similarity."
+    - "Detect anomalies such as sudden yield increases."
+    - "Generate research questions from ranked signal behavior."
+  example_research_question: "Why does reply funnel produce higher yield than post-level review under the same reviewer budget?"
+cluster_engine_strategy:
+  decision: "Use local sparse vectors for v2 formal clustering."
+  rationale: "The current need is controllable, explainable decision support rather than maximum semantic abstraction."
+  rejected_options:
+    embedding_as_primary:
+      reason: "Too early; clustering becomes a black box before the signal space is defined."
+      risk:
+        - "weak governance explanation"
+        - "harder reviewer audit"
+        - "premature semantic optimization"
+    schema_only:
+      reason: "Too shallow; schema without clustering will not produce insight."
+      risk:
+        - "stays in design mode"
+        - "does not reduce duplicate reviewer work"
+  sparse_vector_principle: "Sparse = decision backbone; embedding = scout and feature generator."
+  sparse_cluster_goal: "Find behavior-pattern groups where reviewer decisions may be merged or repeated work reduced."
+  vector_example:
+    誘導聯絡: 0/1
+    保證收益: 0/1
+    社群導流: 0/1
+    reply_funnel: 0/1
+    needs_thread: 0/1
+    review_time_bucket: "low / medium / high"
+  feature_layers:
+    - name: "Core features"
+      owner: human-defined
+      size_hint: "10-20 features"
+      examples:
+        - "誘導聯絡"
+        - "保證收益"
+        - "社群導流"
+        - reply_funnel
+        - needs_thread
+      purpose: "Stable cognitive frame for governance and review."
+    - name: "Emergent features"
+      owner: data-proposed
+      examples:
+        - LINE_ID_pattern
+        - emoji_money_pattern
+        - repeated_script_template
+      promotion_rule: "Appears repeatedly in reviewed batches, especially high-risk candidates, then enters human review."
+      purpose: "Let the feature space grow without forcing humans to define every detail up front."
+    - name: "Experimental features"
+      owner: reviewer-proposed
+      examples:
+        - has_screenshot_claim
+        - has_fake_testimonial
+      lifecycle: "Use for one or a few batches, then promote, revise, or delete."
+      purpose: "Support temporary tests without polluting the stable schema."
+  feature_schema:
+    fields:
+      - feature_id
+      - type
+      - definition
+      - activation_rule
+      - status
+      - supporting_cases
+      - reviewer_decision
+    activation_example:
+      feature_id: LINE_ID_pattern
+      type: emergent
+      activation_rule: "contains('LINE') AND contains_number"
+  dual_track_pipeline:
+    principle: "Run sparse and embedding separately; let them meet only at feature-discovery review."
+    pipeline_a:
+      name: "Sparse Decision Engine"
+      role: primary
+      outputs:
+        - SVS
+        - formal_sparse_clusters
+        - reviewer_output
+      decision_authority: true
+    pipeline_b:
+      name: "Embedding Discovery Engine"
+      role: secondary
+      outputs:
+        - similarity_graph
+        - exploratory_embedding_clusters
+        - anomaly_or_pattern_suggestions
+      decision_authority: false
+    only_intersection:
+      name: "Feature Discovery Engine"
+      process:
+        - "Compare sparse clusters against embedding clusters."
+        - "Detect close-in-embedding but separated-in-sparse cases."
+        - "Detect same-sparse-cluster but far-in-embedding cases."
+        - "Generate feature candidates."
+        - "Send feature candidates to human review before schema update."
+  discrepancy_types:
+    missed_pattern: "Embedding groups cases that sparse features do not explain; candidate new feature may be needed."
+    over_generalization: "Sparse groups cases that embedding separates; feature definition may be too broad."
+  evolution_path:
+    v2: "sparse vector -> explainable clusters"
+    v3: "hybrid sparse + embedding, with sparse still preserving governance-facing explanation"
+exploration_layer:
+  thesis: "Move from learning from data to learning where to look for data."
+  problem: "A system trained only on existing candidates can reinforce known patterns, add increasingly complex features, and stall insight."
+  self_directed_direction: "Prioritize system-generated exploration tasks because the current historical dataset is too small and the target repo lacks its own data-discovery capacity."
+  framing:
+    current_system:
+      - "compression through sparse vectors"
+      - "contrast through embedding-vs-sparse discrepancy"
+      - "abstraction through feature discovery"
+    limitation: "All three rely on candidates that have already been collected."
+    needed_shift: "Add data acquisition strategy to representation learning."
+  exploitation_vs_exploration:
+    exploitation: "Prioritize high-SVS known signals and refine existing behavior representations."
+    exploration: "Deliberately sample uncertain, low-signal, random, or outlier regions to discover unseen patterns."
+  exploration_modes:
+    - name: "Weak exploration"
+      level: immediate
+      mechanism: "Add controlled randomness to batch selection."
+      default_policy: "80 percent high-SVS or known-promising signals, 20 percent random, low-signal, or unknown-source candidates."
+      purpose: "Expose the system to low-probability regions where new patterns may hide."
+      examples:
+        - fake_testimonial_threads
+        - emotional_scam_without_investment_language
+        - weak_contact_cues
+    - name: "Medium exploration"
+      level: near-term
+      mechanism: "Use embedding outlier detection to find candidates unlike known clusters."
+      prompt_question: "What does not fit any known cluster?"
+      outputs:
+        - outlier_candidates
+        - unknown_behavior_notes
+        - feature_candidate_prompts
+    - name: "Strong exploration"
+      level: v3
+      mechanism: "Let the system propose where to search next based on SVS gaps and missing evidence."
+      example_gap: "reply funnel is strong, but DM transition has little data"
+      example_suggestion: "Explore DM-based interaction patterns under governance-safe metadata-only constraints."
+  exploration_policy_config:
+    exploit_ratio: 0.7
+    explore_ratio: 0.3
+    random_sampling_ratio: 0.2
+    max_candidates_per_batch: 15
+    outlier_priority: high
+    underexplored_signal_boost: true
+    outlier_detection: true
+    low_signal_sampling: true
+    unknown_source_required_per_batch: true
+    embedding_outlier_review: "metadata-only, discovery-only, never decision authority"
+  batch_selection_policy:
+    known_signal_ratio: 0.8
+    exploration_ratio: 0.2
+    required_unknown_slot: true
+    selection_buckets:
+      - high_svs_signals
+      - low_signal_or_sparse_unknowns
+      - embedding_outliers
+      - source_arm_gaps
+  outlier_detector:
+    role: "Find candidates far from all known clusters in embedding or sparse-feature space."
+    outputs:
+      - candidate_id
+      - distance_to_nearest_cluster
+      - nearest_known_cluster
+      - possible_new_pattern_note
+      - recommended_review_priority
+    guardrail: "Outlier status is a discovery signal, not a risk label."
+  source_arm_gap_detector:
+    role: "Suggest what source arm or interaction pattern needs more data."
+    inputs:
+      - "SVS ranking"
+      - "batch coverage"
+      - "missing behavior units"
+      - "reviewer uncertainty"
+    output_format:
+      - gap_id
+      - missing_evidence
+      - suggested_exploration_source
+      - expected_learning_value
+      - governance_boundary
+  anti_overfit_rules:
+    - "Every batch should include a small unknown-source or low-signal allocation unless governance risk is elevated."
+    - "Do not promote a feature only because it explains old data; require evidence that it improves future review or exploration."
+    - "Track exploration yield separately from exploitation yield."
+    - "Treat outlier discovery as a research question generator, not a shortcut to acceptance."
+  learning_goal: "The system should tell the researcher not only what the known world looks like, but where the current map is probably incomplete."
+self_directed_data_discovery_layer:
+  core_design: "Let the system generate where to look, what to look for, and why; keep access, collection, and judgment inside the existing safe workflow."
+  not_a_crawler: true
+  boundary_statement: "The system creates exploration tasks and metadata-only candidate stubs; it does not directly access external systems, store raw Threads content, or decide risk."
+  current_flow:
+    - "human selects source arm"
+    - "human collects data"
+    - "candidate enters sparse and review flow"
+  upgraded_flow:
+    - "system proposes exploration task from SVS gaps, discrepancy, and outliers"
+    - "system converts the task into an auditable query strategy"
+    - "system builds metadata-only candidate stubs"
+    - "human or safe manual-assisted process performs governed lookup"
+    - "candidate enters sparse and review flow"
+    - "new feature and SVS changes feed back into exploration policy"
+  v2_5_to_v3_modules:
+    - name: "Exploration Policy"
+      purpose: "Define when and where exploration is required."
+      schema:
+        exploit_ratio: 0.7
+        explore_ratio: 0.3
+        outlier_priority: high
+        underexplored_signal_boost: true
+        max_candidates_per_batch: 15
+    - name: "Exploration Generator"
+      purpose: "Turn SVS ranking, discrepancy reports, and embedding outliers into structured exploration tasks."
+      input:
+        - "SVS ranking"
+        - "sparse-vs-embedding discrepancy"
+        - "embedding outliers"
+      output_fields:
+        - task_id
+        - hypothesis
+        - source_hint
+        - search_cues
+        - priority
+        - reason
+      example:
+        task_id: EXP_0007
+        hypothesis: "reply thread contact transition pattern is under-covered"
+        source_hint: "reply/comment funnel"
+        search_cues:
+          - "contact cue"
+          - "numeric id pattern"
+        priority: high
+        reason:
+          - "high discrepancy"
+          - "sparse under-representation"
+    - name: "Query Strategy Generator"
+      purpose: "Convert exploration tasks into executable search strategies without accessing external systems."
+      input:
+        - "EXP_xxx exploration task"
+      output_fields:
+        - task_id
+        - search_intent
+        - query_patterns
+        - structure_patterns
+        - where_to_look
+        - what_to_ignore
+        - risk_control
+      example:
+        task_id: EXP_0007
+        search_intent: "find reply threads containing contact transition behavior"
+        query_patterns:
+          - "私訊我"
+          - "加LINE"
+          - "帶你操作"
+          - "穩定獲利"
+        structure_patterns:
+          - "reply chain length >= 2"
+          - "repeated contact cue across replies"
+        where_to_look:
+          - "reply sections"
+          - "comment threads"
+        what_to_ignore:
+          - "pure discussion without action guidance"
+          - "single-line ads without interaction"
+        risk_control:
+          - "do not record account IDs"
+          - "do not store raw conversation text"
+          - "record only boolean or categorical pattern presence"
+    - name: "Candidate List Builder"
+      purpose: "Convert exploration tasks into small metadata-only candidate stubs."
+      output_fields:
+        - candidate_stub_id
+        - task_id
+        - signal_hint
+        - expected_behavior
+        - collection_method
+      example:
+        candidate_stub_id: STUB_0012
+        task_id: EXP_0007
+        signal_hint: reply_funnel
+        expected_behavior: contact_transition
+        collection_method: "manual-assisted / safe query"
+    - name: "Outlier Engine"
+      purpose: "Mark candidates that are unlike all known clusters as discovery leads."
+      rule: "if distance_to_all_clusters > threshold, mark as OUTLIER"
+      output_fields:
+        - outlier_id
+        - reason
+        - suggested_focus
+      example:
+        outlier_id: O_0003
+        reason: "far from all known clusters"
+        suggested_focus: "non-investment emotional manipulation?"
+  task_to_stub_loop:
+    - "Existing data updates SVS and clusters."
+    - "Discrepancy and outlier signals feed the Exploration Generator."
+    - "The generator creates EXP_xxx exploration tasks."
+    - "Query Strategy Generator turns EXP_xxx tasks into search templates."
+    - "Candidate List Builder creates metadata-only STUB_xxx records."
+    - "Stubs enter governed sparse plus review flow."
+    - "Observed new features and SVS changes update exploration policy."
+  task_schema:
+    task_id: EXP_0000
+    hypothesis: "What under-covered behavior or source arm might produce high-value candidates?"
+    source_hint: "source arm or interaction surface"
+    search_cues:
+      - cue_a
+      - cue_b
+    priority: "low / medium / high"
+    reason:
+      - "high discrepancy"
+      - "underexplored signal"
+      - "embedding outlier"
+      - "SVS gap"
+  candidate_stub_schema:
+    candidate_stub_id: STUB_0000
+    task_id: EXP_0000
+    signal_hint: "reply_funnel / contact_transition / unknown"
+    expected_behavior: "behavior unit expected before review"
+    collection_method: "safe / manual-assisted"
+    storage_boundary: "metadata-only, no raw content, no PII"
+  query_strategy_schema:
+    task_id: EXP_0000
+    search_intent: "What behavior should the controlled search plan look for?"
+    query_patterns:
+      - keyword_or_behavior_cue_a
+      - keyword_or_behavior_cue_b
+    structure_patterns:
+      - "reply chain length >= n"
+      - "repeated cue across replies"
+    where_to_look:
+      - "reply sections"
+      - "comment threads"
+      - "post level if explicitly allowed"
+    what_to_ignore:
+      - "low-value non-actionable discussion"
+      - "content with no behavior or interaction signal"
+    risk_control:
+      - "no raw content storage"
+      - "no PII"
+      - "boolean or categorical recording only"
+  query_to_candidate_stub_recording:
+    allowed_fields:
+      - has_contact_pattern
+      - reply_depth
+      - requires_thread
+      - signal_hint
+      - expected_behavior
+      - collection_method
+    forbidden_fields:
+      - account_id
+      - raw_text
+      - screenshots
+      - profile_urls
+  strict_boundaries:
+    data_boundary: "Do not store external raw content in git."
+    decision_boundary: "Exploration proposes; sparse and human review decide."
+    pace_boundary: "Keep each batch small, usually 10-15 candidates, to protect reviewer load."
+    query_boundary: "Query strategies are executable plans, not automated collection authority."
+  immediate_operating_principle: "Solve the small-data hard spot by strategic expansion, not by broad crawling; the system decides where and how to look, while humans or approved safe tools control actual lookup."
+origin_context:
+  project_path: /Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/meta-threads-scam-content-research-2026
+  prior_question: "Ask for a next step that can break out of the existing project frame, not necessarily follow the original plan."
+  repo_stage: "Track B capped live method-test execution under run 0054; batch 0001 replay and batch 0002 hard-negative probe are closed; batch 0003 is the next live discovery-yield test."
+  recommended_source_arm: "reply/comment funnel cue candidates"
+  canonical_orientation_files:
+    - README.md
+    - docs/61-labor-efficient-investment-scam-candidate-discovery-north-star.md
+    - docs/18-recommended-path-v1.md
+    - docs/57-investment-scam-discovery-signal-family-matrix.md
+    - docs/62-reviewer-assist-layer-design.md
+signal_market:
+  thesis: "Stop treating source arms as one-off trials; treat each signal as a comparable asset whose value is learned over time."
+  signal_value_score:
+    name: "Signal Value Score"
+    abbreviation: SVS
+    formula: "(yield_rate * information_density) / (review_cost * cognitive_load)"
+    interpretation: "Higher SVS means the signal deserves more collection, reviewer time, and method development."
+  registry_fields:
+    - signal_id
+    - type
+    - source
+    - definition
+    - expected_behavior_trace
+    - governance_boundary
+batch_0003_experiment:
+  source_arm: "reply/comment funnel cue candidates"
+  candidate_cap: "10-15 surfaced candidates"
+  purpose: "Learn which signal combination produces review-worthy candidates per reviewer hour."
+  variants:
+    - name: Reply-only
+      definition: "Only inspect reply/comment surfaces."
+    - name: "Reply plus keyword cue"
+      definition: "Reply/comment surfaces filtered by cues such as LINE, private message, group movement, or guided action."
+    - name: "Reply plus behavior pattern"
+      definition: "Reply/comment surfaces filtered by repeated scripts, multi-person funneling, or coordinated movement patterns."
+  stop_conditions:
+    - "duplicate load becomes high"
+    - "evidence is insufficient for safe review"
+    - "raw-evidence leakage risk appears"
+    - "hard-negative pressure rises"
+    - "second-review pressure becomes too high"
+candidate_logging:
+  - review_time_seconds
+  - signal_family
+  - signal_variant
+  - thread_depth_required
+  - decision
+  - confidence
+  - hard_negative_warning
+  - second_review_reason
+  - summary_would_have_helped
+  - micro_behavior_units
+micro_behavior_units:
+  - contact_direction
+  - guaranteed_return
+  - profit_screenshot_display
+  - community_funnel
+  - emotional_manipulation
+  - repeated_script
+  - multi_account_amplification
+reviewer_behavior_modeling:
+  goal: "Optimize the match between humans and signals, not only the candidate discovery method."
+  observable_fields:
+    - dwell_time
+    - hesitation_count
+    - revisit_count
+    - second_review_trigger
+    - confidence_change
+  expected_outputs:
+    - "content types that consume the most cognitive load"
+    - "signals that are easiest to adjudicate"
+    - "reviewer-assist opportunities that lower effort without overclaiming"
+system_modules:
+  - name: "Signal Registry"
+    purpose: "Record signal definitions, source arms, and governance boundaries."
+  - name: "Batch Metrics Logger"
+    purpose: "Accumulate candidate-level review time, thread depth, decision, confidence, and second-review data."
+  - name: "Auto Cluster Engine"
+    purpose: "Cluster similar behavior units and flag repeated strategies or merge candidates."
+  - name: "Problem Normalization Engine"
+    purpose: "Convert each candidate into goal, mechanism, target, and channel."
+  - name: "Behavior Graph Engine"
+    purpose: "Represent thread-level interaction as user, message, reply, mention, and redirect graphs."
+  - name: "Research Generator"
+    purpose: "Create research candidates when SVS exceeds threshold or anomalies appear."
+  - name: "Sparse Decision Engine"
+    purpose: "Compute explainable behavior-feature vectors, formal clusters, SVS, and signal rankings."
+  - name: "Embedding Discovery Engine"
+    purpose: "Explore similarity and anomaly structure without making review decisions."
+  - name: "Feature Discovery Engine"
+    purpose: "Turn sparse-vs-embedding discrepancies into human-reviewed feature candidates."
+  - name: "Exploration Policy Engine"
+    purpose: "Reserve controlled batch capacity for random, low-signal, unknown-source, outlier, or source-gap exploration."
+  - name: "Outlier Detector"
+    purpose: "Find candidates that do not fit known clusters and convert them into discovery questions."
+  - name: "Source Arm Gap Detector"
+    purpose: "Use SVS gaps and missing behavior coverage to suggest where to look next."
+  - name: "Exploration Generator"
+    purpose: "Generate EXP_xxx tasks that state source hint, pattern, hypothesis, priority, and reason."
+  - name: "Candidate List Builder"
+    purpose: "Convert exploration tasks into metadata-only candidate stubs for safe manual-assisted collection."
+  - name: "Query Strategy Generator"
+    purpose: "Translate exploration tasks into search intents, query patterns, structure patterns, filters, and risk controls."
+research_candidate_generation:
+  trigger: "A signal has meaningfully higher yield under lower review cost while preserving hard-negative and aggregate-only constraints."
+  example_statement: "Reply pattern plus LINE cue produces higher yield under lower review cost than broad reply-only review."
+  output_format:
+    - Title
+    - Observation
+    - Evidence
+    - Hypothesis
+    - "Next experiment"
+codex_prompt_v2: |
+  You are an AI research system architect.
+  Your task is to upgrade the current repository
+  "meta-threads-scam-content-research-2026"
+  into a v2 Research Operating System.
+  Follow FIRST PRINCIPLES:
+  The goal is NOT scam detection.
+  The goal is:
+  "maximize high-value candidate discovery per unit reviewer effort."
+  PART 1 - SYSTEM RESTRUCTURE
+  Create the following directory structure:
+  /meta-system/
+      signal_registry/
+      behavior_units/
+      problem_templates/
+      signal_clusters/
+  /metrics/
+      batch_logs/
+      signal_scores/
+      reviewer_metrics/
+  /experiments/
+      batch_variants/
+  /engine/
+      svs_calculator/
+      clustering_engine/
+      research_generator/
+  /outputs/
+      research_candidates/
+      cluster_reports/
+  PART 2 - SIGNAL REGISTRY
+  Define schema:
+  signal_id:
+  name:
+  type: (reply / comment / post / hybrid)
+  definition:
+  expected_risk:
+  associated_behaviors:
+  Store in YAML.
+  PART 3 - METRICS LOGGER
+  For each reviewed candidate, log:
+  candidate_id:
+  batch_id:
+  review_time_seconds:
+  requires_full_thread: true/false
+  signal_families:
+  behavior_units:
+  decision: (scam / non_scam / uncertain)
+  confidence:
+  second_review_required: true/false
+  notes:
+  PART 4 - SIGNAL VALUE SCORE (SVS)
+  Implement:
+  SVS = (yield_rate * information_density) / (review_time * cognitive_load)
+  Compute per signal and per batch.
+  Output ranking file:
+  metrics/signal_scores/latest_ranking.yaml
+  PART 5 - BEHAVIOR UNIT EXTRACTION
+  Create standardized behavior units:
+  - 誘導聯絡
+  - 保證收益
+  - 社群導流
+  - 情緒操控
+  - 成果展示
+  Each candidate must map to 1 to N units.
+  PART 6 - PROBLEM NORMALIZATION
+  Convert each candidate into:
+  goal:
+  mechanism:
+  target:
+  channel:
+  Store in:
+  meta-system/problem_templates/
+  PART 7 - CLUSTER ENGINE
+  Use embedding similarity to group:
+  - similar behavior units
+  - similar problem templates
+  Output clusters:
+  meta-system/signal_clusters/
+  Also detect:
+  - duplicate patterns
+  - merge candidates
+  PART 8 - EXPERIMENT DESIGN (Batch 0003)
+  Create 3 variants:
+  A: reply only
+  B: reply + keyword cues
+  C: reply + behavior patterns
+  For each variant:
+  define:
+  - hypothesis
+  - expected yield
+  - measurement plan
+  PART 9 - RESEARCH GENERATOR
+  Automatically generate research candidates when:
+  - SVS exceeds threshold
+  - or anomaly detected
+  Output:
+  research_candidates/*.md
+  Format:
+  Title:
+  Observation:
+  Evidence:
+  Hypothesis:
+  Next experiment:
+  PART 10 - GUARDRAILS
+  Ensure:
+  - no raw Threads content stored
+  - no PII
+  - only structured metadata
+  FINAL OUTPUT
+  1. Updated repo structure
+  2. YAML schema files
+  3. Batch 0003 experiment plan
+  4. Initial SVS calculation template
+  5. One example research candidate
+  Think like a system designer, not a data analyst.
+  The system must evolve, compare, and generate insight.
+codex_prompt_sparse_dual_track: |
+  You are an AI system architect.
+  Your task is to implement a dual-track pipeline system
+  for the repository:
+  meta-threads-scam-content-research-2026
+  Follow FIRST PRINCIPLES:
+  The goal is NOT classification.
+  The goal is:
+  "maximize high-value candidate discovery per unit reviewer effort,
+  while maintaining explainability and governance."
+  PART 1 - CORE ARCHITECTURE
+  Implement TWO SEPARATE pipelines:
+  Pipeline A = Sparse Decision Engine (PRIMARY)
+  Pipeline B = Embedding Discovery Engine (SECONDARY)
+  DO NOT merge them into one model.
+  PART 2 - DATA STRUCTURE
+  Create schema:
+  /data/candidates/
+  Each candidate file:
+  candidate_id:
+  batch_id:
+  sparse_vector:
+    features:
+      誘導聯絡: 0/1
+      保證收益: 0/1
+      社群導流: 0/1
+      reply_funnel: 0/1
+      needs_thread: 0/1
+  embedding:
+    model:
+    dim:
+    vector:
+  review:
+    decision: scam / non_scam / uncertain
+    confidence:
+    review_time_seconds:
+    second_review_required:
+  PART 3 - SPARSE ENGINE (PRIMARY SYSTEM)
+  Location:
+  /engine/sparse/
+  Implement:
+  1. SVS calculator
+  SVS = (yield_rate * information_density)
+  / (review_time * cognitive_load)
+  2. Sparse clustering
+  Use rule-based similarity:
+  - shared features count
+  - weighted overlap
+  Output:
+  /outputs/sparse_clusters/
+  3. Signal ranking
+  Output:
+  /metrics/signal_scores/
+  PART 4 - EMBEDDING ENGINE (DISCOVERY ONLY)
+  Location:
+  /engine/embedding/
+  Implement:
+  1. Similarity computation
+  - cosine similarity
+  - nearest neighbors
+  2. Clustering (experimental only)
+  - KNN graph or simple clustering
+  Output:
+  /outputs/embedding_clusters/
+  PART 5 - DISCREPANCY DETECTION (CRITICAL)
+  Compare:
+  sparse_clusters vs embedding_clusters
+  Detect:
+  1. Items close in embedding but NOT in sparse cluster
+  2. Items in same sparse cluster but FAR in embedding
+  Output:
+  /outputs/discrepancy_reports/
+  Format:
+  case_id:
+  type: missed_pattern / over_generalization
+  description:
+  PART 6 - FEATURE DISCOVERY ENGINE
+  Location:
+  /engine/feature_discovery/
+  Input:
+  discrepancy_reports
+  Process:
+  1. Analyze text / metadata
+  2. Identify recurring patterns:
+  - keyword
+  - structure
+  - behavior
+  3. Generate feature candidates
+  Output:
+  /meta-system/feature_candidates/
+  Format:
+  feature_id:
+  type: emergent
+  definition:
+  activation_rule:
+  supporting_cases:
+  confidence:
+  PART 7 - HUMAN-IN-THE-LOOP
+  DO NOT auto-add features.
+  Instead:
+  Create review file:
+  /meta-system/feature_review_queue/
+  Human decides:
+  - accept -> add to sparse schema
+  - reject -> archive
+  PART 8 - AUTO EVOLUTION LOOP
+  Define loop:
+  1. Run batch
+  2. Update sparse clusters
+  3. Run embedding clustering
+  4. Detect discrepancy
+  5. Generate feature candidates
+  6. Human review
+  7. Update sparse schema
+  PART 9 - GUARDRAILS
+  STRICT RULES:
+  - embedding results are NEVER used for decision
+  - sparse is the ONLY decision layer
+  - no raw Threads content stored
+  - no PII
+  - only structured metadata
+  PART 10 - OUTPUTS
+  Generate:
+  1. sparse_clusters
+  2. embedding_clusters (exploratory)
+  3. discrepancy_report
+  4. feature_candidates
+  5. updated_sparse_schema (after approval)
+  FINAL GOAL
+  The system must:
+  - improve feature set over time
+  - reduce reviewer cost
+  - increase high-value discovery rate
+  - remain explainable and auditable
+  Think like a system that learns structure, not a model that predicts labels.
+codex_prompt_exploration_layer: |
+  You are an AI research system architect.
+  Your task is to add an Exploration Layer to the repository:
+  meta-threads-scam-content-research-2026
+  Follow FIRST PRINCIPLES:
+  The system must not only learn from existing candidates.
+  It must learn where to look for new candidates.
+  The goal is:
+  "maximize high-value candidate discovery per unit reviewer effort
+  while preventing overfitting to already-seen scam patterns."
+  PART 1 - EXPLORATION POLICY
+  Create:
+  /meta-system/exploration_policy/
+  Add YAML config:
+  exploration_policy:
+    random_sampling_ratio: 0.2
+    high_svs_sampling_ratio: 0.8
+    outlier_detection: true
+    low_signal_sampling: true
+    unknown_source_required_per_batch: true
+  Guardrail:
+  Exploration does NOT weaken governance limits.
+  Exploration still stores only structured metadata.
+  PART 2 - BATCH SELECTION POLICY
+  Update batch design so every batch includes:
+  - exploitation candidates from high-SVS signals
+  - exploration candidates from random, low-signal, unknown-source, or outlier pools
+  Output:
+  /experiments/batch_variants/batch_selection_policy.yaml
+  Required fields:
+  batch_id:
+  exploitation_ratio:
+  exploration_ratio:
+  exploitation_sources:
+  exploration_sources:
+  governance_stop_conditions:
+  PART 3 - OUTLIER DETECTION
+  Add:
+  /engine/exploration/outlier_detector/
+  Detect candidates that:
+  - are far from all known sparse clusters
+  - are far from all known embedding clusters
+  - contain sparse feature combinations not seen before
+  Output:
+  /outputs/outlier_reports/
+  Format:
+  candidate_id:
+  batch_id:
+  nearest_known_cluster:
+  distance_to_nearest_cluster:
+  why_unusual:
+  recommended_review_priority:
+  Rule:
+  Outlier status is a discovery signal, NOT a scam/risk label.
+  PART 4 - SOURCE ARM GAP DETECTION
+  Add:
+  /engine/exploration/source_arm_gap_detector/
+  Use:
+  - SVS rankings
+  - batch coverage
+  - reviewer uncertainty
+  - missing behavior units
+  Generate exploration suggestions:
+  gap_id:
+  missing_evidence:
+  suggested_exploration_source:
+  expected_learning_value:
+  governance_boundary:
+  Output:
+  /outputs/exploration_suggestions/
+  PART 5 - EXPLORATION METRICS
+  Track separately:
+  exploitation_yield_rate:
+  exploration_yield_rate:
+  new_feature_candidate_count:
+  outlier_review_cost:
+  novel_pattern_count:
+  exploration_to_feature_conversion_rate:
+  Store in:
+  /metrics/exploration/
+  PART 6 - RESEARCH QUESTION GENERATION
+  When an outlier or source-gap appears, generate:
+  Title:
+  Unknown pattern:
+  Why it matters:
+  Current evidence:
+  Suggested next batch:
+  Governance boundary:
+  Store in:
+  /outputs/research_candidates/
+  PART 7 - GUARDRAILS
+  Strict rules:
+  - no raw Threads content in git
+  - no PII
+  - exploration metadata only
+  - outlier is not a risk label
+  - embedding is discovery-only
+  - sparse remains the decision layer
+  - stop if exploration raises raw-evidence leakage risk
+  FINAL OUTPUT
+  Produce:
+  1. exploration_policy YAML
+  2. batch selection policy YAML
+  3. outlier detector scaffold
+  4. source arm gap detector scaffold
+  5. exploration metrics template
+  6. one example exploration suggestion
+  Think like a research engine learning where to look, not a classifier learning what it has already seen.
+codex_prompt_self_directed_data_discovery: |
+  You are an exploration engine for a research operating system.
+  Goal:
+  Propose where to look next to maximize discovery of high-value candidates
+  per unit reviewer effort.
+  INPUT
+  Read:
+  /metrics/signal_scores/latest_ranking.yaml
+  /outputs/discrepancy_reports/latest.yaml
+  /outputs/embedding_clusters/latest.yaml
+  STEP 1 - IDENTIFY GAPS
+  Detect:
+  1. High discrepancy signals
+  2. Low coverage signals, meaning few candidates but high potential
+  3. Embedding outliers
+  STEP 2 - GENERATE EXPLORATION TASKS
+  For each gap, create:
+  task_id:
+  hypothesis:
+  source_hint:
+  search_cues:
+  priority:
+  reason:
+  STEP 3 - BUILD CANDIDATE STUBS
+  For each task, generate 5 to 15 candidate stubs:
+  candidate_stub_id:
+  task_id:
+  signal_hint:
+  expected_behavior:
+  collection_method: "safe / manual-assisted"
+  RULES
+  - Do NOT access external systems directly
+  - Do NOT store raw content
+  - Do NOT include PII
+  - Only produce structured metadata suggestions
+  OUTPUT
+  Write:
+  /exploration/tasks/latest.yaml
+  /data/candidate_stubs/latest.yaml
+  Think like a researcher deciding where to look next,
+  not a crawler collecting everything.
+codex_prompt_query_strategy_generator: |
+  You are a Query Strategy Generator in a research system.
+  Your task:
+  Convert exploration tasks into executable search strategies.
+  INPUT
+  Read:
+  /exploration/tasks/latest.yaml
+  STEP 1 - UNDERSTAND TASK
+  Extract:
+  - hypothesis
+  - signal type
+  - behavior focus
+  STEP 2 - GENERATE SEARCH INTENT
+  Define:
+  search_intent:
+  What kind of behavior are we trying to find?
+  STEP 3 - GENERATE QUERY PATTERNS
+  Create:
+  - 3 to 8 keyword-level patterns
+  - 2 to 4 structure-level patterns
+  Focus on:
+  - behavior cues such as contact, funnel, and persuasion
+  - not exact wording only
+  STEP 4 - DEFINE WHERE TO LOOK
+  Specify:
+  - reply / comment / post level
+  - interaction patterns
+  STEP 5 - DEFINE FILTERS
+  what_to_ignore:
+  - low-value content
+  - non-actionable patterns
+  STEP 6 - DEFINE RISK CONTROL
+  STRICT:
+  - no raw content storage
+  - no PII
+  - only boolean or categorical recording
+  STEP 7 - OUTPUT
+  Write:
+  /exploration/query_strategies/latest.yaml
+  Format:
+  task_id:
+  search_intent:
+  query_patterns:
+  structure_patterns:
+  where_to_look:
+  what_to_ignore:
+  risk_control:
+  Think like a human investigator designing a search plan,
+  not a crawler scraping data.
+execution_boundary:
+  - "This is not a product UI direction."
+  - "This does not authorize crawler expansion, model training, legal fraud determination, enforcement, or raw evidence in git."
+  - "If adopted, execution-specific batch notes belong in the meta-threads project repo; this repo keeps the strategic idea and reusable method logic."
+  - "Self-directed data discovery only proposes source-pattern-risk tasks and metadata-only candidate stubs; it does not directly collect external raw content."
+  - "Query strategies describe how to search safely; they do not authorize automated scraping, raw content storage, or PII capture."
+baseline:
+  - "Manual source-arm trial-and-error: select an arm, run a batch, review manually, and infer source value informally."
+  - "Existing Track B batch 0001 and 0002 flow: workflow replay and hard-negative probe without live discovery-yield ranking."
+metrics:
+  - yield_rate
+  - review_cost_seconds
+  - thread_depth_required
+  - false_positive_pressure
+  - second_review_rate
+  - information_density
+  - cognitive_load
+  - signal_value_score
+  - research_candidate_generation_rate
+  - effective_signal_per_second
+  - cross_batch_comparability
+  - sparse_cluster_explanation_rate
+  - feature_candidate_acceptance_rate
+  - discrepancy_count
+  - exploration_yield_rate
+  - exploitation_yield_rate
+  - novel_pattern_count
+  - outlier_review_cost
+  - exploration_to_feature_conversion_rate
+  - exploration_task_count
+  - candidate_stub_count
+  - underexplored_signal_coverage
+  - task_to_review_conversion_rate
+  - query_strategy_count
+  - query_to_stub_conversion_rate
+  - query_pattern_yield_rate
+  - query_pattern_retirement_rate
+evidence:
+  - conversation
+  - prior-project
+  - "meta-threads Track B context"
+  - "batch 0001 replay closed with workflow and hard-negative checks"
+  - "batch 0002 hard-negative probe closed without accepted strict-valid live records"
+  - "v2 Research Operating System design note from conversation"
+  - "local sparse vector and dual-track feature-discovery design note from conversation"
+  - "exploration layer design note from conversation"
+  - "self-directed data discovery design note from conversation"
+  - "query strategy generator design note from conversation"
+connections:
+  - idea_000002
+  - idea_000004
+  - idea_000005
+value:
+  impact: high
+  feasibility: high
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 12
+  testability_score: 12/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 5
+  novelty_score: 5/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 83/100
+maturity_level: execution_ready
+next_steps:
+  - "Define the SVS metric contract and the minimum fields needed to compute it."
+  - "Turn the v2 module map into an implementation plan for the meta-threads repo without storing raw Threads content."
+  - "Reframe Track B batch 0003 as a controlled three-variant signal-combination experiment."
+  - "Add candidate-level logging for review time, signal family, thread depth, micro-behavior units, problem representation, and reviewer cost."
+  - "Define the sparse feature schema with core, emergent, and experimental feature lifecycles."
+  - "Create the discrepancy rule that turns embedding exploration into human-reviewed feature candidates."
+  - "Add an exploration policy with 80/20 exploitation-to-exploration batch selection."
+  - "Add an outlier detector that finds candidates unlike known sparse or embedding clusters."
+  - "Add a source-arm gap detector that suggests where to look next based on SVS gaps and missing behavior coverage."
+  - "Implement an Exploration Generator that creates EXP_xxx tasks from SVS rankings, discrepancy reports, and embedding outliers."
+  - "Implement a Query Strategy Generator that turns EXP_xxx tasks into search intents, query patterns, structure patterns, filters, and risk controls."
+  - "Implement a Candidate List Builder that creates metadata-only STUB_xxx records for safe manual-assisted collection."
+  - "Keep self-directed exploration inside metadata-only and small-batch review boundaries."
+  - "Add query scoring later so ineffective query patterns can be retired instead of accumulating."
+  - "Produce the first signal ranking after batch 0003."
+  - "Draft the first research-candidate statement from the measured signal ranking."
+source:
+  - conversation
+  - prior-project
+normalization_status: validated
+role: idea
+maturity_action: "generate experiment plan"

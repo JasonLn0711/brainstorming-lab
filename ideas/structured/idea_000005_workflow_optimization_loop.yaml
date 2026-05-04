@@ -1,35 +1,33 @@
 id: idea_000005
-title: Workflow optimization feedback loop
+title: "Workflow optimization feedback loop"
 created_at: 2026-05-04
 type: concept
 tags:
-- workflow
-- feedback-loop
-- planning-bridge
-- decision-system
+  - workflow
+  - feedback-loop
+  - planning-bridge
+  - decision-system
 status: structured
 problem_statement:
-  raw: Given repeated workflow friction, optimize the loop from idea capture to execution
-    feedback without adding planning noise.
-  normalized: Given repeated workflow friction, optimize the loop from idea capture
-    to execution feedback without adding planning noise under constraints of safety.
+  raw: "Given repeated workflow friction, optimize the loop from idea capture to execution feedback without adding planning noise."
+  normalized: "Given repeated workflow friction, optimize the loop from idea capture to execution feedback without adding planning noise under constraints of safety."
   structure:
-    given: repeated workflow friction
-    optimize: the loop from idea capture to execution feedback without adding planning
-      noise
+    given: "repeated workflow friction"
+    optimize: "the loop from idea capture to execution feedback without adding planning noise"
     constraints:
-    - safety
-summary: A closed-loop workflow where ideas produce tests, tests produce feedback,
-  and feedback updates idea maturity and future planning suggestions.
+      - safety
+summary: "A closed-loop workflow where ideas produce tests, tests produce feedback, and feedback updates idea maturity and future planning suggestions."
 assumptions:
-- The loop is useful only if feedback updates the idea database, not only a day note.
-- Idempotent planning markers prevent sync scripts from making daily notes messy.
-- A small explicit feedback block is safer than guessing from free-form prose.
+  - "The loop is useful only if feedback updates the idea database, not only a day note."
+  - "Idempotent planning markers prevent sync scripts from making daily notes messy."
+  - "A small explicit feedback block is safer than guessing from free-form prose."
 insights:
-- The planning bridge is the control-plane interface for the Idea OS.
+  - "The planning bridge is the control-plane interface for the Idea OS."
 connections:
-- idea_000003
-- idea_000006
+  - idea_000003
+  - idea_000006
+  - idea_000007
+  - idea_000008
 value:
   impact: high
   feasibility: high
@@ -42,8 +40,8 @@ maturity:
   testability_score: 0/15
   evidence_support: 6
   evidence_support_score: 6/15
-  connection_strength: 8
-  connection_strength_score: 8/10
+  connection_strength: 10
+  connection_strength_score: 10/10
   novelty: 6
   novelty_score: 6/10
   feasibility: 10
@@ -51,17 +49,17 @@ maturity:
   research_potential: 0
   research_potential_score: 0/10
 next_steps:
-- Run one daily-note suggestion and feedback pull using explicit marker blocks.
+  - "Run one daily-note suggestion and feedback pull using explicit marker blocks."
 source:
-- conversation
-- observation
+  - conversation
+  - observation
 normalization_status: validated
 role: idea
 baseline: []
 metrics: []
 evidence:
-- conversation
-- observation
-maturity_score: 55/100
+  - conversation
+  - observation
+maturity_score: 57/100
 maturity_level: structured
-maturity_action: include in graph and clustering
+maturity_action: "include in graph and clustering"

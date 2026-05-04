@@ -13,14 +13,14 @@
         "evidence-routing",
         "human-review"
       ],
-      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
     },
     {
       "id": "idea_000002",
       "title": "Cybersecurity reviewer assist layer",
       "status": "research_candidate",
-      "maturity_score": "66/100",
-      "maturity_score_raw": 66,
+      "maturity_score": "68/100",
+      "maturity_score_raw": 68,
       "maturity_level": "research_candidate",
       "tags": [
         "cybersecurity",
@@ -28,7 +28,7 @@
         "reviewer-assist",
         "evidence-routing"
       ],
-      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
     },
     {
       "id": "idea_000003",
@@ -43,14 +43,14 @@
         "cognitive-load",
         "workflow"
       ],
-      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
     },
     {
       "id": "idea_000004",
       "title": "Anomaly detection research watch",
       "status": "research_candidate",
-      "maturity_score": "68/100",
-      "maturity_score_raw": 68,
+      "maturity_score": "72/100",
+      "maturity_score_raw": 72,
       "maturity_level": "research_candidate",
       "tags": [
         "anomaly-detection",
@@ -58,14 +58,14 @@
         "research-candidate",
         "evidence-routing"
       ],
-      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000004_anomaly_detection_research_watch.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000004_anomaly_detection_research_watch.yaml"
     },
     {
       "id": "idea_000005",
       "title": "Workflow optimization feedback loop",
       "status": "structured",
-      "maturity_score": "55/100",
-      "maturity_score_raw": 55,
+      "maturity_score": "57/100",
+      "maturity_score_raw": 57,
       "maturity_level": "structured",
       "tags": [
         "workflow",
@@ -73,7 +73,7 @@
         "planning-bridge",
         "decision-system"
       ],
-      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
     },
     {
       "id": "idea_000006",
@@ -88,7 +88,61 @@
         "workflow",
         "approval-gate"
       ],
-      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000006_openclaw_personal_ops_node.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000006_openclaw_personal_ops_node.yaml"
+    },
+    {
+      "id": "idea_000007",
+      "title": "Signal Market for low-cost behavior discovery",
+      "status": "execution_ready",
+      "maturity_score": "83/100",
+      "maturity_score_raw": 83,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "cybersecurity",
+        "scam-research",
+        "signal-market",
+        "reviewer-assist",
+        "decision-system",
+        "behavior-extraction",
+        "research-operating-system",
+        "problem-normalization",
+        "behavior-graph",
+        "information-efficiency",
+        "local-sparse-vectors",
+        "feature-discovery",
+        "explainable-clustering",
+        "embedding-discovery",
+        "exploration-layer",
+        "outlier-detection",
+        "data-acquisition-strategy",
+        "exploration-exploitation",
+        "self-directed-data-discovery",
+        "exploration-generator",
+        "candidate-stubs",
+        "query-strategy-generator",
+        "search-templates",
+        "metadata-only",
+        "research-candidate"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml"
+    },
+    {
+      "id": "idea_000008",
+      "title": "Learned conductor for medical AI research workflows",
+      "status": "execution_ready",
+      "maturity_score": "88/100",
+      "maturity_score_raw": 88,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "multi-agent",
+        "learned-orchestration",
+        "conductor",
+        "medical-ai",
+        "research-workflow",
+        "evaluation",
+        "cost-normalized-benchmark"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml"
     }
   ],
   "edges": [
@@ -119,6 +173,16 @@
       ]
     },
     {
+      "source": "idea_000001",
+      "target": "idea_000008",
+      "weight": 1.0,
+      "similarity": 0.2643,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000002",
       "target": "idea_000004",
       "weight": 1.0,
@@ -126,6 +190,20 @@
       "shared_tags": [
         "cybersecurity",
         "evidence-routing"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000002",
+      "target": "idea_000007",
+      "weight": 1.0,
+      "similarity": 0.319,
+      "shared_tags": [
+        "cybersecurity",
+        "reviewer-assist"
       ],
       "reasons": [
         "manual_connection",
@@ -160,6 +238,32 @@
       ]
     },
     {
+      "source": "idea_000003",
+      "target": "idea_000007",
+      "weight": 0.6,
+      "similarity": 0.1441,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000004",
+      "target": "idea_000007",
+      "weight": 1.0,
+      "similarity": 0.2619,
+      "shared_tags": [
+        "cybersecurity",
+        "research-candidate"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000005",
       "target": "idea_000006",
       "weight": 1.0,
@@ -170,6 +274,29 @@
       "reasons": [
         "manual_connection",
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000005",
+      "target": "idea_000007",
+      "weight": 1.0,
+      "similarity": 0.1056,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000005",
+      "target": "idea_000008",
+      "weight": 1.0,
+      "similarity": 0.0893,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     }
   ]

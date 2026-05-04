@@ -1,0 +1,160 @@
+id: idea_000008
+title: "Learned conductor for medical AI research workflows"
+created_at: 2026-05-04
+type: hypothesis
+tags:
+  - multi-agent
+  - learned-orchestration
+  - conductor
+  - medical-ai
+  - research-workflow
+  - evaluation
+  - cost-normalized-benchmark
+status: execution_ready
+problem_statement:
+  raw: "Can a learned or systematically searched conductor choose better medical AI and automated research workflows than a fixed multi-agent pipeline?"
+  normalized: "Given heterogeneous medical AI and automated research tasks, optimize orchestration policy selection under constraints of cost, latency, verification quality, domain safety, and generalization to unseen task and model pools."
+  structure:
+    given: "heterogeneous medical AI and automated research tasks"
+    optimize: "orchestration policy selection"
+    constraints:
+      - "cost budget"
+      - "latency budget"
+      - "verification quality"
+      - "domain safety"
+      - "generalization to unseen task and model pools"
+summary: "The research angle is not simply adding more agents. The useful test is whether a learned or searched conductor can choose between a cheap single-model path, a fixed specialist-review pipeline, tool-backed verification, and recursive re-review for medical AI or automated research tasks."
+first_principle:
+  scarce_resource: "verified orchestration decisions under cost, latency, safety, and reviewer-capacity limits"
+  not_the_core:
+    - "more agents"
+    - "a prettier recursive loop"
+    - "benchmark wins without cost or latency normalization"
+  core_question: "Can a learned or searched conductor choose the right workflow depth better than a fixed human-written pipeline?"
+  canonical_home: "brainstorming-lab owns detailed thinking, transcript evidence, assumptions, baselines, metrics, and kill criteria."
+  planning_boundary: "planning-everything-track should keep only status, capacity impact, canonical path, and the next decision gate."
+  execution_boundary: "No standalone project repo or model-training sprint until primary-source verification, hardware feasibility, and a tiny no-real-patient-data fixture are defined."
+  smallest_next_test: "Verify primary sources and lab-hardware feasibility, then specify a tiny fixture set comparing single-model, fixed-pipeline, self-refine, and conductor-policy paths."
+  kill_condition: "Park or kill the idea if it cannot beat a fixed specialist pipeline after cost, latency, error-detection, and abstention normalization."
+assumptions:
+  - "Generic planner/worker/verifier loops, debate, self-refine, and model ensembles are baselines, not novelty."
+  - "The possible contribution is a meta-control policy for workflow selection, model selection, context allocation, and subtask prompting."
+  - "Recursive review is useful only when grounded by tools, fixtures, ground-truth checks, or domain-specific verifiers."
+  - "Without cost-normalized and latency-normalized evaluation, multi-agent benchmark gains are not enough evidence."
+  - "The first experiment can avoid real patient data by using synthetic fixtures or public benchmark-style tasks."
+evidence:
+  - "User-provided GPT conversation summarizing AutoGen, LangGraph, Mixture-of-Agents, Sakana Conductor, and Fugu; not independently verified in this turn."
+  - "Conversation claim: Conductor is framed as a small learned coordinator that chooses agents, subtasks, context, and recursive calls."
+  - "Conversation claim: Fugu emphasizes dynamic coordination across frontier models and recursive test-time scaling."
+  - "Existing repo themes include healthcare AI triage and workflow optimization."
+  - "LINE conversation with 吳冠廷 on 2026-05-04: he shared the Fugu beta link, said he applied to Sakana AI, and judged the topic interesting and ICLR-level."
+  - "LINE conversation claim: a 7B-scale coordinator model may be trainable with the lab's hardware."
+baseline:
+  - "Single frontier model with a fixed prompt."
+  - "Hand-written LangGraph or AutoGen-style planner/specialist/verifier pipeline."
+  - "Fixed self-refine template: answer, critique, revise."
+  - "Static model ensemble or majority vote."
+metrics:
+  - "Task success or accuracy on held-out fixtures."
+  - "Cost per solved task."
+  - "Latency per solved task."
+  - "Escalation precision: easy cases stay cheap, hard cases receive deeper review."
+  - "Error detection rate before final answer."
+  - "Calibration of not-enough-evidence and abstention decisions."
+  - "Generalization to unseen task types or changed model pools."
+insights:
+  - "Research value comes from policy learning or policy search, not from the number of agents."
+  - "The conductor should decide when to call radiology-style review, statistical critique, literature review, code execution, error checking, or recursive re-review."
+  - "A medical AI framing needs evidence gates and safety boundaries; it must not imply autonomous clinical deployment."
+  - "The smallest useful artifact is a conductor-policy simulator and evaluation protocol before a full agent framework."
+  - "吳冠廷's hardware note makes the near-term research path more practical: start with a 7B-scale conductor or policy-search simulator rather than assuming only frontier-model orchestration."
+  - "The collaboration context matters: 吳冠廷 has already applied to Sakana AI/Fugu and may become a useful person to compare notes with if access is approved."
+connections:
+  - idea_000001
+  - idea_000005
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 4
+  connection_strength_score: 4/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 88/100
+maturity_level: execution_ready
+next_steps:
+  - "Record the result of 吳冠廷's Sakana AI/Fugu application when known."
+  - "Verify the Conductor/Fugu claims against primary sources before citing them as research evidence."
+  - "Check whether the lab hardware can realistically train or fine-tune a 7B conductor under the expected dataset, context length, and RL or policy-search setup."
+  - "Define a tiny fixture set with easy, medium, and hard medical/research review tasks using no real patient data."
+  - "Compare four baselines: single model, fixed specialist pipeline, fixed self-refine, and conductor policy search."
+  - "Measure cost, latency, error detection, escalation precision, and abstention quality."
+  - "Kill or park the idea if it cannot beat the fixed pipeline after cost and latency normalization."
+source:
+  - "user conversation"
+  - "LINE conversation with 吳冠廷 on 2026-05-04"
+  - "https://www.microsoft.com/en-us/research/project/autogen/"
+  - "https://sakana.ai/learning-to-orchestrate/"
+  - "https://arxiv.org/abs/2512.04388"
+  - "https://sakana.ai/fugu-beta/"
+normalization_status: validated
+maturity_action: "generate experiment plan"
+conversation_log:
+  - date: 2026-05-04
+    weekday: Monday
+    platform: LINE
+    participants:
+      - "吳冠廷"
+      - "阿聖 Jason"
+    raw_transcript_lines:
+      - "16:14 吳冠廷: https://sakana.ai/fugu-beta/"
+      - "21:38 吳冠廷: 跟 Sakana AI 提出申請了XD"
+      - "21:38 吳冠廷: 希望會通過"
+      - "21:38 吳冠廷: 我研究了一下覺得還滿有意思的"
+      - "21:39 吳冠廷: 不愧是能去 ICLR 的題目"
+      - "21:39 吳冠廷: GPT-5.5-Thinking (heavy) 的整理如下"
+      - "現有類似架構確實很多。AutoGen 早已是可建立多 agent、讓 agent 彼此對話解任務的框架；LangGraph 也提供可客製化的單 agent、多 agent、階層式控制流程；Mixture-of-Agents 則已經用多個 LLM 分層產生與改寫答案。換言之，「planner / worker / verifier」、「multi-agent debate」、「self-refine」、「多模型集成」這些元素本身都不是新東西。([Microsoft][1])"
+      - "Fugu / Conductor 比較值得注意的地方，是它不是單純由人手寫一個固定流程，而是訓練一個小模型去學會「如何管理其他模型」。Sakana 的 Conductor paper 說它用 reinforcement learning 訓練一個 7B conductor，讓它決定要呼叫哪個 agent、給什麼子任務、哪些前文要放進 context，而且簡單問題可以只問一個模型，困難 coding 問題則會自動組成 planner、coder、verifier 類型的 pipeline。這點和一般寫死的 LangGraph / AutoGen workflow 不同。([Sakana AI][2])"
+      - "第二個差異是，它把「模型池協調」當成主要能力，而不是把單一模型本身變強。Conductor 論文聲稱它可以在 open-source 與 closed-source worker LLM pool 上學習協調策略，並且透過 randomized agent pools 適應不同可用模型集合；Fugu 產品頁也強調它會動態協調 GPT、Gemini、Claude 等 frontier foundation models，而不是要求使用者自己切換 API 或手動設計工作流。([arXiv][3])"
+      - "第三個才是你貼的那段：recursive test-time scaling。它允許 conductor 把「自己」也選為 worker，讀取上一輪團隊輸出，判斷失敗點，再啟動修正流程。這和普通的「再想一次」不同；普通 self-refine 是固定模板，例如先回答、再批判、再修正。Fugu 的說法是：遞迴本身進入協調器的 action space，由 conductor 決定要不要把自己再次納入工作流程，因此「遞迴深度」變成推理時計算量的一個調節軸。([Sakana AI][4])"
+      - "所以我會這樣分級："
+      - "不特別的部分：多 agent、worker-verifier、self-reflection、recursive loop、model ensemble，這些都已有大量前例。任何熟悉 LangGraph、AutoGen、DSPy、CrewAI 或手寫 agent scaffold 的人，都可以做出某種弱版本。"
+      - "中度特別的部分：它不是手刻流程，而是訓練一個 coordinator / conductor 來學 workflow selection、model selection、context allocation 與 subtask prompting。這比較接近「學會 prompt engineer / project manager」的小模型。"
+      - "真正有研究價值的部分：如果它在固定成本、固定 token budget、未見過的任務與未見過的模型池中，仍然能穩定勝過人類手寫 agent workflow，那就有意義。這表示 agent architecture 從「人工設計 pipeline」走向「learned orchestration policy」。"
+      - "但我不會把它視為完全顛覆性的東西。原因是：第一，遞迴推理本身很容易變成昂貴的 loop；第二，若沒有外部工具、ground truth verifier 或 domain-specific evaluation，遞迴可能只是把錯誤包裝得更漂亮；第三，目前 Fugu 的產品頁展示 benchmark 表現，但這種 multi-model system 是否真的優於單一 frontier model，必須做 cost-normalized、latency-normalized、independent evaluation 才能判斷。Fugu 頁面確實列出 GPQA、LiveCodeBench、SWEPro 等分數，但也註明其中一些評估 scaffold 與比較基準有特定設定，不能直接當成普遍結論。([Sakana AI][4])"
+      - "我會給它的評價是：概念本身不是全新，但把「協調策略」模型化、訓練化、遞迴化，這點是有研究價值的。它不是「新的 agent 概念」，而比較像是把 agent engineering 從 prompt/template/programming framework，推向一種可學習的 meta-control policy。"
+      - "對你而言，最值得借鑑的不是「做很多 agent」，而是這個問題意識：在醫學 AI 或自動研究流程裡，能不能訓練或至少系統性搜尋一個 conductor，讓它決定何時呼叫 radiologist-style reviewer、statistical reviewer、literature reviewer、code executor、error checker，而不是每次都用固定 pipeline。這比單純堆 agent 更有研究價值。"
+      - "[1]: https://www.microsoft.com/en-us/research/project/autogen/?utm_source=chatgpt.com \"AutoGen - Microsoft Research\""
+      - "[2]: https://sakana.ai/learning-to-orchestrate/ \"Learning to Orchestrate Agents in Natural Language with the Conductor\""
+      - "[3]: https://arxiv.org/abs/2512.04388 \"[2512.04388] Learning to Orchestrate Agents in Natural Language with the Conductor\""
+      - "[4]: https://sakana.ai/fugu-beta/ \"Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model\""
+      - "21:40 吳冠廷: 建立了一個 7B 小模型來協調跟調度"
+      - "21:40 阿聖 Jason: LangGraph 真的已經被發揚光大了"
+      - "21:40 吳冠廷: 換言之可能可以去適應任何任務，不用人為定義"
+      - "21:40 阿聖 Jason: 半年前，我還在用 LangChain 不知道要不要進 LangGraph"
+      - "21:41 阿聖 Jason: 智慧的真諦！"
+      - "21:41 吳冠廷: 感覺是挺不錯的，因為如果只是訓練這樣大小的模型，我們實驗室的硬體是能做到的"
+      - "21:42 吳冠廷: Sakana AI 對於 meta learning 的研究真是深刻"
+      - "21:42 阿聖 Jason: 學習了"
+    extracted_facts:
+      - "吳冠廷 shared the Sakana Fugu beta page at 16:14."
+      - "吳冠廷 submitted an application to Sakana AI/Fugu and hoped it would pass."
+      - "吳冠廷 judged the topic interesting and ICLR-level."
+      - "The conversation frames Conductor as a 7B model for coordination and scheduling."
+      - "The conversation frames learned orchestration as potentially task-adaptive without human-defined workflows."
+      - "阿聖 Jason connected this to LangGraph adoption and prior LangChain/LangGraph decision uncertainty."
+      - "吳冠廷 said the lab hardware should be able to train a model of this size."
+      - "吳冠廷 highlighted Sakana AI's depth in meta-learning research."

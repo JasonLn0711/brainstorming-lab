@@ -31,6 +31,7 @@ insights:
 - The first metric should be reduction in time-to-first-safe-action.
 connections:
 - idea_000002
+- idea_000008
 value:
   impact: high
   feasibility: medium

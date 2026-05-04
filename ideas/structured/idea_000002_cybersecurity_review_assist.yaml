@@ -1,39 +1,34 @@
 id: idea_000002
-title: Cybersecurity reviewer assist layer
+title: "Cybersecurity reviewer assist layer"
 created_at: 2026-05-04
 type: project
 tags:
-- cybersecurity
-- ai-triage
-- reviewer-assist
-- evidence-routing
+  - cybersecurity
+  - ai-triage
+  - reviewer-assist
+  - evidence-routing
 status: research_candidate
 problem_statement:
-  raw: Given high-volume suspicious content, optimize review-worthy candidate discovery
-    under hard-negative and aggregate-reporting constraints.
-  normalized: Given high-volume suspicious content, optimize review-worthy candidate
-    discovery under constraints of hard-negative, aggregate-reporting constraints.
+  raw: "Given high-volume suspicious content, optimize review-worthy candidate discovery under hard-negative and aggregate-reporting constraints."
+  normalized: "Given high-volume suspicious content, optimize review-worthy candidate discovery under constraints of hard-negative, aggregate-reporting constraints."
   structure:
-    given: high-volume suspicious content
-    optimize: review-worthy candidate discovery
+    given: "high-volume suspicious content"
+    optimize: "review-worthy candidate discovery"
     constraints:
-    - hard-negative
-    - aggregate-reporting constraints
-summary: A reviewer assist layer that ranks suspicious cybersecurity or scam candidates,
-  explains why they are worth review, and keeps human burden measurable.
+      - hard-negative
+      - "aggregate-reporting constraints"
+summary: "A reviewer assist layer that ranks suspicious cybersecurity or scam candidates, explains why they are worth review, and keeps human burden measurable."
 assumptions:
-- The system is valuable only if it lowers review burden without increasing false
-  confidence.
-- Aggregate-only reporting and hard-negative protection are core constraints, not
-  later polish.
-- A dual metric can track candidate quality and reviewer labor at the same time.
+  - "The system is valuable only if it lowers review burden without increasing false confidence."
+  - "Aggregate-only reporting and hard-negative protection are core constraints, not later polish."
+  - "A dual metric can track candidate quality and reviewer labor at the same time."
 insights:
-- The same structure can support healthcare triage and anomaly review with different
-  risk gates.
-- Review-worthy does not mean legally or medically confirmed.
+  - "The same structure can support healthcare triage and anomaly review with different risk gates."
+  - "Review-worthy does not mean legally or medically confirmed."
 connections:
-- idea_000001
-- idea_000004
+  - idea_000001
+  - idea_000004
+  - idea_000007
 value:
   impact: high
   feasibility: medium
@@ -46,8 +41,8 @@ maturity:
   testability_score: 7/15
   evidence_support: 6
   evidence_support_score: 6/15
-  connection_strength: 8
-  connection_strength_score: 8/10
+  connection_strength: 10
+  connection_strength_score: 10/10
   novelty: 8
   novelty_score: 8/10
   feasibility: 8
@@ -55,17 +50,17 @@ maturity:
   research_potential: 4
   research_potential_score: 4/10
 next_steps:
-- Define a controlled candidate-review fixture with explicit hard negatives.
+  - "Define a controlled candidate-review fixture with explicit hard negatives."
 source:
-- conversation
-- prior-project
+  - conversation
+  - prior-project
 normalization_status: validated
 role: idea
 baseline: []
 metrics: []
 evidence:
-- conversation
-- prior-project
-maturity_score: 66/100
+  - conversation
+  - prior-project
+maturity_score: 68/100
 maturity_level: research_candidate
-maturity_action: evaluate cluster readiness
+maturity_action: "evaluate cluster readiness"
