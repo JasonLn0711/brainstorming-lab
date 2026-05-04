@@ -20,7 +20,7 @@ def main() -> int:
     if args.dry_run:
         path = daily_note_path(day, args.root)
         original = path.read_text(encoding="utf-8") if path.exists() else ""
-        print(insert_or_replace_block(original, render_today_block(selection)))
+        print(insert_or_replace_block(original, render_today_block(selection, day)))
         return 0
     print(update_daily_note(day, selection, args.root))
     return 0

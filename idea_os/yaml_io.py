@@ -47,6 +47,10 @@ def loads_yaml(text: str) -> Any:
 def dumps_yaml(data: Any) -> str:
     if _pyyaml is not None:  # pragma: no cover - absent in the target env
         return _pyyaml.safe_dump(data, sort_keys=False, allow_unicode=True)
+    if data == {}:
+        return "{}\n"
+    if data == []:
+        return "[]\n"
     lines = _dump_value(data, 0)
     return "\n".join(lines).rstrip() + "\n"
 
@@ -124,10 +128,21 @@ def _parse_list(lines: list[str], index: int, indent: int) -> tuple[list[Any], i
             key, raw_value = _split_key_value(item_text, index)
             item: dict[str, Any] = {key: _parse_scalar(raw_value) if raw_value else None}
             index += 1
-            while index < len(lines) and _indent_of(lines[index]) == indent + 2:
+            while index < len(lines) and _indent_of(lines[index]) >= indent + 2:
+                if _indent_of(lines[index]) != indent + 2:
+                    raise ValueError(f"Unexpected nested list mapping near line {index + 1}: {lines[index]}")
                 nested_key, nested_value = _split_key_value(lines[index].strip(), index)
-                item[nested_key] = _parse_scalar(nested_value) if nested_value else None
-                index += 1
+                if nested_value == "":
+                    next_index = index + 1
+                    if next_index < len(lines) and _indent_of(lines[next_index]) > indent + 2:
+                        value, index = _parse_block(lines, next_index, _indent_of(lines[next_index]))
+                        item[nested_key] = value
+                    else:
+                        item[nested_key] = None
+                        index = next_index
+                else:
+                    item[nested_key] = _parse_scalar(nested_value)
+                    index += 1
             result.append(item)
         else:
             result.append(_parse_scalar(item_text))

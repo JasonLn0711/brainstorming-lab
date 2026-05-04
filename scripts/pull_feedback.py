@@ -5,8 +5,10 @@ import argparse
 from datetime import date
 
 import _bootstrap  # noqa: F401
-from idea_os.planning import load_feedback_from_daily
+from idea_os.models import score_idea
+from idea_os.planning import load_feedback_from_daily, load_feedback_from_week
 from idea_os.store import find_idea_path, load_idea, save_and_move_idea
+from idea_os.yaml_io import dumps_yaml
 
 
 def apply_feedback(idea: dict, feedback: dict) -> None:
@@ -23,15 +25,37 @@ def apply_feedback(idea: dict, feedback: dict) -> None:
                     insights.append(str(item))
         elif str(value) not in insights:
             insights.append(str(value))
+    experiment_result = feedback.get("experiment_result")
+    if experiment_result:
+        result_text = f"Experiment result: {experiment_result}"
+        if result_text not in insights:
+            insights.append(result_text)
+
+    maturity_delta = feedback.get("maturity_delta")
+    if isinstance(maturity_delta, dict):
+        maturity = idea.setdefault("maturity", {})
+        for field, delta in maturity_delta.items():
+            current = int(maturity.get(field, 0))
+            maturity[field] = max(0, min(5, current + int(delta)))
+        score_idea(idea)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Pull explicit Idea OS feedback markers from a planning day note.")
     parser.add_argument("--date", default=date.today().isoformat(), help="Target date YYYY-MM-DD")
+    parser.add_argument("--week", default=None, help="Target ISO week YYYY-Www; reads Monday-Friday daily notes")
+    parser.add_argument("--dry-run", action="store_true", help="Print parsed feedback without updating idea YAML")
     parser.add_argument("--root", default=None, help="Repo root override")
     args = parser.parse_args()
 
-    feedback = load_feedback_from_daily(date.fromisoformat(args.date), args.root)
+    feedback = (
+        load_feedback_from_week(args.week, args.root)
+        if args.week
+        else load_feedback_from_daily(date.fromisoformat(args.date), args.root)
+    )
+    if args.dry_run:
+        print(dumps_yaml(feedback))
+        return 0
     for idea_id, data in feedback.items():
         if not isinstance(data, dict):
             continue
