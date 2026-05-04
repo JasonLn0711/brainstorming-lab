@@ -1,0 +1,36 @@
+required_fields:
+  - candidate_id
+  - title
+  - source_cluster
+  - normalized_problem
+  - research_question
+  - why_now
+  - possible_contribution
+  - baseline
+  - metrics
+  - minimum_viable_experiment
+  - risks
+  - next_steps
+  - research_score
+readiness_gates:
+  cluster_size: ">= 2"
+  average_maturity_score: ">= 65/100"
+  average_testability_score: ">= 10/15"
+  average_evidence_score: ">= 8/15"
+  average_feasibility_score: ">= 8/15"
+  has_normalized_problem_statement: true
+  has_baseline: true
+  has_metrics: true
+readiness_score:
+  problem_importance: 0-20
+  scientific_testability: 0-20
+  evidence_depth: 0-15
+  method_feasibility: 0-15
+  novelty_contribution: 0-15
+  execution_path: 0-15
+levels:
+  topic_only: 0-49
+  discussable: 50-64
+  small_experiment_ready: 65-79
+  proposal_ready: 80-89
+  independent_repo_or_paper_ready: 90-100

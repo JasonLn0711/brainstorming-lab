@@ -27,7 +27,8 @@ Every YAML idea should answer:
 ## First Commands
 
 ```bash
-python3 scripts/score_idea.py --all
+python3 scripts/normalize_problem.py
+python3 scripts/score_maturity.py
 python3 scripts/generate_index.py
 ```
 

@@ -1,28 +1,25 @@
 # Idea Lifecycle
 
-This repo now uses `docs/lifecycle.md` as the canonical lifecycle contract.
-
-Short version:
+The lifecycle separates maturity from operations.
 
 ```text
-raw -> emerging -> structured -> research_ready -> executing or archived
+raw -> emerging -> structured -> research_candidate -> execution_ready
 ```
 
-The score rule is:
+`maturity_level` is derived from the 100-point maturity score. `status` is an
+operational field and can also be `executing` or `archived`.
 
-```text
-score = clarity + testability + connectedness + evidence
-```
+| Maturity Score | Level | Default Folder |
+| --- | --- | --- |
+| 0-20/100 | `raw` | `ideas/raw/` |
+| 21-40/100 | `emerging` | `ideas/evolving/` |
+| 41-60/100 | `structured` | `ideas/structured/` |
+| 61-80/100 | `research_candidate` | `ideas/structured/` |
+| 81-100/100 | `execution_ready` | `ideas/structured/` |
 
-Folders:
+Terminal operational states:
 
-| Folder | Status |
+| Status | Folder |
 | --- | --- |
-| `ideas/raw/` | `raw` |
-| `ideas/evolving/` | `emerging` |
-| `ideas/structured/` | `structured`, `research_ready` |
-| `ideas/executing/` | `executing` |
-| `ideas/archived/` | `archived` |
-
-When an idea becomes real, create a graduation packet in `projects-ready/` and
-move execution material into a standalone project repo.
+| `executing` | `ideas/executing/` |
+| `archived` | `ideas/archived/` |

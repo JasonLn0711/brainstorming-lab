@@ -1,26 +1,48 @@
-score_formula: clarity + testability + connectedness + evidence
+score_formula: problem_clarity + boundary_definition + testability + evidence_support + connection_strength + novelty + feasibility + research_potential
 range:
   minimum: 0
-  maximum: 20
+  maximum: 100
+display:
+  total: X/100
+  subscore: X/Y
 fields:
-  clarity:
+  problem_clarity:
     minimum: 0
-    maximum: 5
-    meaning: "How clearly the idea names the problem, user, and constraint."
+    maximum: 15
+  boundary_definition:
+    minimum: 0
+    maximum: 10
   testability:
     minimum: 0
-    maximum: 5
-    meaning: "How easily the idea can be tested with a bounded experiment."
-  connectedness:
+    maximum: 15
+  evidence_support:
     minimum: 0
-    maximum: 5
-    meaning: "How well the idea links to other ideas, projects, or reusable lessons."
-  evidence:
+    maximum: 15
+  connection_strength:
     minimum: 0
-    maximum: 5
-    meaning: "How much real evidence supports the idea."
+    maximum: 10
+  novelty:
+    minimum: 0
+    maximum: 10
+  feasibility:
+    minimum: 0
+    maximum: 15
+  research_potential:
+    minimum: 0
+    maximum: 10
 classification:
-  raw: "0-5"
-  emerging: "6-10"
-  structured: "11-15"
-  research_ready: "16-20"
+  raw:
+    range: 0-20
+    action: keep as raw idea
+  emerging:
+    range: 21-40
+    action: clarify and normalize problem statement
+  structured:
+    range: 41-60
+    action: include in graph and clustering
+  research_candidate:
+    range: 61-80
+    action: evaluate cluster readiness
+  execution_ready:
+    range: 81-100
+    action: generate experiment plan

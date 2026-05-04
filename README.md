@@ -13,9 +13,9 @@ raw ideas -> structured ideas -> clusters -> research candidates -> execution br
 
 Ideas are data, not only text.
 
-Each serious idea is a YAML record with score, status, tags, links, maturity,
-next tests, and source. Markdown remains useful for explanation, but YAML is the
-canonical database.
+Each serious idea is a YAML record with 100-point maturity, normalized problem
+statement, status, tags, links, baseline, metrics, next tests, and source.
+Markdown remains useful for explanation, but YAML is the canonical database.
 
 ## Repo Roles
 
@@ -51,10 +51,13 @@ Planning receives only short bridge notes. Detailed thinking stays here.
 
 ```bash
 python3 scripts/new_idea.py "New idea" --tags ai,workflow
-python3 scripts/score_idea.py --all
+python3 scripts/normalize_problem.py
+python3 scripts/score_maturity.py
+python3 scripts/detect_merge_candidates.py
+python3 scripts/generate_clusters.py
+python3 scripts/generate_research_candidates.py
+python3 scripts/generate_research_brief.py
 python3 graph/build_graph.py
-python3 clustering/auto_cluster.py
-python3 research/generate_candidates.py
 python3 scripts/generate_index.py
 python3 scripts/weekly_review.py --dry-run
 python3 scripts/weekly_review.py

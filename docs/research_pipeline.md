@@ -1,41 +1,39 @@
 # Research Pipeline
 
-## Idea To Research
-
 Research candidates are generated from clusters, not isolated excitement.
 
-`research/generate_candidates.py` selects a cluster when:
+The pipeline is:
 
-- cluster size is at least 2
-- average score is at least 12
-- at least one idea has `maturity.testability >= 3`
+```bash
+python3 scripts/normalize_problem.py
+python3 scripts/score_maturity.py
+python3 scripts/detect_merge_candidates.py
+python3 scripts/generate_clusters.py
+python3 scripts/generate_research_candidates.py
+python3 scripts/generate_research_brief.py
+python3 scripts/generate_index.py
+```
+
+## Cluster To Research
+
+`generate_research_candidates.py` promotes a cluster only when it has at least
+two ideas, average maturity at least 65/100, strong testability, enough evidence,
+feasibility, a normalized problem, baselines, and metrics.
 
 ## Why Clusters Matter
 
 A cluster suggests that several ideas share a reusable problem shape. That is a
-better research signal than a single attractive note.
+better research signal than one attractive note.
 
 ## Paper Or Project Flow
 
 1. Build or update YAML ideas.
-2. Score them.
-3. Generate graph and clusters.
-4. Run adaptive weekly selection.
-5. Generate research candidates from selected clusters and mature clusters.
-6. If a candidate becomes real, write a graduation packet.
-7. Move execution into a standalone repo.
-8. Keep only locator/status notes in planning.
-
-## Weekly Selection
-
-The weekly selector avoids local optima by mixing:
-
-- `exploit`: mature, high-value ideas
-- `explore`: novel ideas far from the current cluster center
-- `random`: unexpected ideas from the remaining pool
-
-The selected set can mark a cluster as `research_candidate` when at least two
-selected ideas are connected by shared tags or semantic similarity.
+2. Normalize and score them.
+3. Detect merge candidates and clusters.
+4. Generate research candidates and briefs.
+5. If a candidate becomes real, write a graduation packet.
+6. Move execution into a standalone repo.
+7. Keep only locator/status notes in planning.
 
 ## Claim Boundary
 

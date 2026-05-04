@@ -2,38 +2,35 @@
 
 ## Inputs
 
-`clustering/auto_cluster.py` reads every YAML idea under `ideas/`.
+`scripts/generate_clusters.py` reads active YAML ideas under `ideas/raw`,
+`ideas/evolving`, `ideas/structured`, and `ideas/executing`.
 
-## Similarity
+## Relationship Score
 
-The dependency-free engine tokenizes title, summary, problem statement, tags,
-assumptions, insights, next steps, and source. Tags and title terms receive more
-weight because they are intentional signals.
-
-## Graph Edges
-
-`graph/build_graph.py` creates an edge when at least one rule matches:
-
-- manual connection in `connections`
-- shared tags
-- token-vector semantic similarity above `similarity_threshold`
+Clusters are built from pairwise merge-readiness scores. The score compares
+normalized problem similarity, semantic similarity, tags, complementary value,
+evidence alignment, and complexity control.
 
 ## Cluster Formation
 
-Clusters are connected components over manual-connection and semantic-similarity
-edges. Shared-tag edges remain visible in the graph but do not automatically
-force clusters, which keeps broad tags from merging unrelated ideas too early.
+An edge is created when the merge score is at least 60/100. Connected components
+with at least two ideas become active clusters.
 
 ## Output
 
-`clustering/clusters.yaml` uses stable generated IDs:
+`clusters/active_clusters.yaml` uses generated IDs:
 
 ```yaml
-cluster_001:
+cluster_0001:
   theme: ai-triage / evidence-routing
+  cluster_type: research_cluster
   ideas:
     - idea_000001
     - idea_000002
-  avg_score: 14.0
-  size: 2
+  normalized_problem: "Given ..."
+  average_maturity_score: 74/100
+  cluster_score: 82/100
+  reason:
+    - normalized problem statements are similar
+  recommendation: evaluate as research candidate
 ```

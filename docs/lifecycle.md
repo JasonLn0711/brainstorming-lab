@@ -1,37 +1,13 @@
-# Idea Lifecycle
+# Lifecycle
 
-## Status Rules
+Idea maturity is scored on a 100-point model and stored as `maturity_score`.
 
-| Score | Status | Folder |
-| ---: | --- | --- |
-| 0-5 | `raw` | `ideas/raw/` |
-| 6-10 | `emerging` | `ideas/evolving/` |
-| 11-15 | `structured` | `ideas/structured/` |
-| 16-20 | `research_ready` | `ideas/structured/` |
-
-Manual lifecycle states:
-
-| Status | Folder | Meaning |
+| Range | Level | Folder |
 | --- | --- | --- |
-| `executing` | `ideas/executing/` | A bounded execution path exists |
-| `archived` | `ideas/archived/` | The idea is killed, parked indefinitely, or superseded |
+| 0-20/100 | `raw` | `ideas/raw/` |
+| 21-40/100 | `emerging` | `ideas/evolving/` |
+| 41-60/100 | `structured` | `ideas/structured/` |
+| 61-80/100 | `research_candidate` | `ideas/structured/` |
+| 81-100/100 | `execution_ready` | `ideas/structured/` |
 
-## Maturity Score
-
-```text
-score = clarity + testability + connectedness + evidence
-```
-
-Each maturity field is an integer from 0 to 5.
-
-## Graduation
-
-An idea graduates only when it has a real next output, audience or owner,
-boundary, and target repo. Keep the graduation packet in `projects-ready/` until
-the standalone execution repo exists.
-
-## Stop Conditions
-
-Archive or park when the idea duplicates existing work, fails a core assumption,
-has no next test after repeated sessions, or would create maintenance without a
-clear output.
+The scoring dimensions are documented in `docs/maturity_model.md`.

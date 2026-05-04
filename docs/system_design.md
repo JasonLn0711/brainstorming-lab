@@ -2,51 +2,41 @@
 
 ## Objective
 
-The system converts raw brainstorming into a closed loop:
+The system converts raw brainstorming into a measurable research pipeline:
 
 ```text
-RAW IDEAS -> STRUCTURED IDEAS -> CLUSTERS -> RESEARCH -> EXECUTION -> FEEDBACK -> IMPROVED IDEAS
+RAW IDEAS -> NORMALIZED PROBLEMS -> 100-POINT MATURITY -> MERGE CANDIDATES -> CLUSTERS -> RESEARCH CANDIDATES -> BRIEFS
 ```
 
-The durable unit is a YAML idea record. The scripts compute score, links,
-clusters, graph edges, research candidates, and planning bridge notes from that
-record.
+The durable unit is a YAML idea record. Scripts compute maturity, links, merge
+scores, clusters, research candidates, briefs, indexes, and short planning
+bridge notes from that record.
 
 ## Architecture
 
 | Layer | Files | Responsibility |
 | --- | --- | --- |
 | Data | `ideas/**/*.yaml` | Canonical idea records |
-| Schema | `schemas/*.yaml`, `idea_os/models.py` | Required fields, statuses, score rules |
-| Core | `idea_os/` | YAML I/O, store, scoring, adaptive selection, similarity, graphing, clustering, research, planning sync |
-| CLI | `scripts/*.py`, `graph/build_graph.py`, `clustering/auto_cluster.py`, `research/generate_candidates.py` | Automation-ready command entrypoints |
-| Outputs | `graph/`, `clustering/`, `research/`, `index/` | Generated artifacts |
-| Bridge | `scripts/push_to_planning.py`, `scripts/suggest_today_ideas.py`, `scripts/pull_feedback.py` | Short planning integration |
+| Schema | `schemas/*.yaml`, `idea_os/models.py` | Required fields, statuses, maturity rules |
+| Core | `idea_os/` | YAML I/O, store, normalization, scoring, merge logic, clustering, research, planning sync |
+| CLI | `scripts/*.py` | Automation-ready command entrypoints |
+| Outputs | `clusters/`, `research/`, `index/`, `graph/` | Generated artifacts |
+| Bridge | planning scripts | Short planning integration |
 
 ## Data Flow
 
 1. `new_idea.py` creates a low-maturity idea in `ideas/raw/`.
-2. `score_idea.py` calculates maturity and moves the file to the matching folder.
-3. `link_ideas.py`, shared tags, and similarity form the graph.
-4. `auto_cluster.py` groups related ideas.
-5. `generate_candidates.py` selects mature clusters for research.
-6. `weekly_review.py` selects ideas with exploitation, novelty exploration, and controlled randomness.
-7. Planning scripts write only bridge notes and daily suggestions.
-8. `pull_feedback.py` consumes explicit feedback markers and updates ideas.
+2. `normalize_problem.py` writes the Given/optimize/constraints structure.
+3. `score_maturity.py` calculates the 100-point maturity score and level.
+4. `detect_merge_candidates.py` compares ideas and recommends merge actions.
+5. `generate_clusters.py` groups ideas with merge score at least 60/100.
+6. `generate_research_candidates.py` promotes clusters that pass readiness gates.
+7. `generate_research_brief.py` writes Markdown briefs for candidate review.
+8. `generate_index.py` rebuilds idea, cluster, and research indexes.
 
-## Adaptive Selection
+## Decision Boundary
 
-Weekly selection reads only `ideas/structured/` and `ideas/evolving/`.
-
-The selector computes impact, feasibility, maturity, novelty, execution cost,
-and priority-tag alignment. It writes `selection_score` separately from the idea
-maturity `score`.
-
-Adaptive epsilon is bounded by config. Incomplete or overloaded prior-week
-reviews increase exploration; high-success reviews reduce it.
-
-## Boundaries
-
-`brainstorming-lab` owns the idea database and detailed thinking.
-`planning-everything-track` owns priority, capacity, commitments, and short
-status links. Execution belongs in standalone project repos after graduation.
+All automated decisions use `maturity_score`, `maturity_level`, merge scores, or
+research readiness scores. The retired compact score is not a decision input.
+`status` remains an operational lifecycle marker; `executing` and `archived`
+are terminal workflow states.
