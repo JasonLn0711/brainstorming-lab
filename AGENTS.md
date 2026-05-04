@@ -69,6 +69,31 @@ When updating both repos:
    - Reusable lessons go back to `planning-everything-track/data/knowledge/`.
    - Link back to the idea file or graduation packet.
 
+## Durable Rule Rules
+
+Use FIRST PRINCIPLE before adding rules here.
+
+This repo may own rules about:
+- how to develop an idea;
+- how to test assumptions;
+- how to compare options;
+- when to park, kill, or graduate an idea;
+- what a graduation packet must contain.
+
+This repo must not own rules about:
+- weekly capacity;
+- daily must-win priority;
+- project execution details after a standalone repo exists;
+- credentials, private evidence, or production operations.
+
+If a brainstorm produces a durable rule:
+- keep the detailed reasoning in the idea file;
+- add only the reusable rule to `AGENTS.md`, README, or `docs/`;
+- update planning only with the rule's capacity/status impact;
+- move execution-specific rules into the execution repo when the idea graduates.
+
+Do not add a rule just because an idea is exciting. Add a rule when it prevents repeated confusion.
+
 ## File Rules
 
 - Prefer Markdown and CSV.
