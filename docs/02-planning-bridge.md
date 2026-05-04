@@ -40,4 +40,4 @@ Planning should stay calm enough to guide the day.
 
 | Idea | Planning bridge | Related project/research repo |
 | --- | --- | --- |
-| `ideas/2026-05-04-openclaw-personal-ops-node.md` | `/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/planning-everything-track/weeks/2026-W19/days/2026-05-04.md` | `/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/second-brain-openclaw` |
+| `ideas/evolving/idea_000006_openclaw_personal_ops_node.yaml` | `/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/planning-everything-track/weeks/2026-W19/days/2026-05-04.md` | `/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/second-brain-openclaw` |

@@ -1,71 +1,75 @@
 # brainstorming-lab
 
-Plain-Markdown workspace for detailed brainstorming, critique, idea shaping, and project-graduation packets.
+`brainstorming-lab` is a CLI-first Idea Operating System beside
+`planning-everything-track`.
 
-This repo sits beside `planning-everything-track`.
+It turns loose thinking into computable idea records:
 
-Local relationship:
+```text
+raw ideas -> structured ideas -> clusters -> research candidates -> execution bridge -> feedback -> improved ideas
+```
+
+## First Principle
+
+Ideas are data, not only text.
+
+Each serious idea is a YAML record with score, status, tags, links, maturity,
+next tests, and source. Markdown remains useful for explanation, but YAML is the
+canonical database.
+
+## Repo Roles
 
 ```text
 planning-everything-track = brain / center / priorities / capacity / status / links
-brainstorming-lab = detailed idea development / critique / option shaping
+brainstorming-lab = idea database / critique / clustering / research generation
 new project repo = execution after an idea becomes real
 ```
 
-## Purpose
-
-Use this repo when an idea needs more room than a daily note.
-
-First principle:
-
-> An idea has a lifecycle, and each lifecycle state needs one canonical home.
-
-Planning owns priority and capacity. This repo owns idea development. A future project repo owns execution.
-
-Good uses:
-- raw idea development
-- assumption checks
-- critique and objections
-- option comparison
-- research/product/patent/project framing
-- multi-session thinking trails
-- graduation packets for ideas that are ready to become real projects
-
-Non-goals:
-- not a daily planner
-- not a project execution repo
-- not a dashboard
-- not a database product
-- not a place to store credentials or sensitive raw evidence
+Planning receives only short bridge notes. Detailed thinking stays here.
 
 ## Folder Map
 
 | Path | Purpose |
 | --- | --- |
-| `ideas/` | Active and parked idea notes |
-| `projects-ready/` | Graduation packets for ideas ready to become standalone project repos |
-| `archive/` | Closed, rejected, or superseded ideas |
-| `docs/` | Operating rules and repo bridge docs |
-| `templates/` | Reusable idea/session/graduation templates |
+| `ideas/raw/` | New low-maturity ideas |
+| `ideas/evolving/` | Emerging ideas that need more tests |
+| `ideas/structured/` | Structured and research-ready YAML ideas |
+| `ideas/executing/` | Ideas temporarily connected to execution |
+| `ideas/archived/` | Closed, killed, or superseded ideas |
+| `idea_os/` | Shared Python core |
+| `scripts/` | CLI commands |
+| `graph/` | Relationship graph builder and JSON output |
+| `clustering/` | Cluster builder and YAML output |
+| `research/` | Research candidate and weekly selection outputs |
+| `index/` | Generated Markdown indexes |
+| `schemas/` | Human-readable schema contracts |
+| `docs/` | Operating documentation |
+| `projects-ready/` | Compatibility layer for graduation packets |
+| `archive/legacy-markdown/` | Pre-Idea-OS Markdown sources |
 
-## Lifecycle
+## Core Commands
 
-```text
-day-note spark
-  -> ideas/<date-slug>.md
-  -> optional repeated brainstorm sessions
-  -> projects-ready/<date-project>.md
-  -> new standalone project repo
-  -> planning repo locator/status update
+```bash
+python3 scripts/new_idea.py "New idea" --tags ai,workflow
+python3 scripts/score_idea.py --all
+python3 graph/build_graph.py
+python3 clustering/auto_cluster.py
+python3 research/generate_candidates.py
+python3 scripts/generate_index.py
+python3 scripts/weekly_review.py
+python3 scripts/push_to_planning.py --dry-run
+python3 scripts/suggest_today_ideas.py --dry-run
 ```
 
-## First Command For Future Agents
+Run the full verification suite with:
 
-Read these files first:
+```bash
+python3 -m unittest
+```
 
-1. `AGENTS.md`
-2. `docs/00-start-here.md`
-3. `docs/01-idea-lifecycle.md`
-4. `docs/02-planning-bridge.md`
+## Start Here
 
-Then inspect the specific idea or graduation packet.
+1. Read `AGENTS.md`.
+2. Read `docs/system_design.md`.
+3. Use `docs/usage.md` for CLI commands.
+4. Inspect `index/idea_index.md` for the current idea database.

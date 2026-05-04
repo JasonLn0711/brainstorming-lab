@@ -97,10 +97,22 @@ Do not add a rule just because an idea is exciting. Add a rule when it prevents 
 ## File Rules
 
 - Prefer Markdown and CSV.
+- Idea records are now canonical YAML files under `ideas/raw/`, `ideas/evolving/`, `ideas/structured/`, `ideas/executing/`, or `ideas/archived/`.
+- Markdown may explain history or reasoning, but future agents should update YAML first when changing idea status, maturity, score, tags, next steps, or connections.
+- Generated graph, clustering, research, and index files should be rebuilt with CLI scripts rather than edited by hand.
 - Keep files readable in plain text.
 - Use dates in filenames when chronology matters.
 - Avoid vague names like `notes.md` unless the parent folder provides enough context.
 - Keep sensitive material out unless a local-only policy is explicitly documented.
+
+## Idea OS Rules
+
+- Treat ideas as data: score, link, cluster, and review them through the YAML schema.
+- Keep `score = clarity + testability + connectedness + evidence`.
+- Use `scripts/score_idea.py --all` before weekly review or research-candidate generation.
+- Use `scripts/link_ideas.py` for bidirectional links instead of editing only one file.
+- Planning sync must remain short: title, ID, status, score, next test, canonical path, and capacity note only.
+- Feedback from planning must come from explicit Idea OS marker blocks; do not infer feedback from free-form daily-note prose.
 
 ## Good Output
 

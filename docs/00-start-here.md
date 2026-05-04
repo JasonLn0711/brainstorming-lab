@@ -7,21 +7,36 @@ Use this repo when an idea needs more thinking room than a daily note.
 | Situation | Action |
 | --- | --- |
 | One passing thought | Keep one line in the planning day note |
-| Idea needs a few questions | Create `ideas/YYYY-MM-DD-short-slug.md` |
-| Idea needs repeated sessions | Keep updating the idea file or add dated session sections |
+| Idea needs structure | Create a YAML record with `scripts/new_idea.py` |
+| Idea needs repeated sessions | Keep updating the YAML record and supporting docs here |
 | Idea may become a project | Create `projects-ready/YYYY-MM-DD-project-slug.md` |
 | Project is real | Move execution into a new standalone repo |
 | Lesson is reusable | Promote a distilled note into `planning-everything-track/data/knowledge/` |
 
-## Minimum Idea File
+## Minimum Idea Record
 
-Every idea file should answer:
+Every YAML idea should answer:
 
-- What is the idea?
-- Why does it matter?
-- What assumption might be false?
+- What problem does it address?
+- Why might it matter?
+- What assumptions might fail?
+- How mature is it?
+- Which ideas is it connected to?
 - What is the smallest next test?
-- Is this parked, active, killed, or ready to graduate?
+
+## First Commands
+
+```bash
+python3 scripts/score_idea.py --all
+python3 scripts/generate_index.py
+```
+
+Then inspect:
+
+```text
+index/idea_index.md
+index/tag_index.md
+```
 
 ## Planning Bridge
 

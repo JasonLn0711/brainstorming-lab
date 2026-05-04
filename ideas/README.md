@@ -1,28 +1,26 @@
 # Ideas
 
-Detailed idea files live here.
+Idea YAML files are the canonical database.
 
-Recommended filename:
+| Folder | Status values |
+| --- | --- |
+| `raw/` | `raw` |
+| `evolving/` | `emerging` |
+| `structured/` | `structured`, `research_ready` |
+| `executing/` | `executing` |
+| `archived/` | `archived` |
 
-```text
-YYYY-MM-DD-short-slug.md
+Use:
+
+```bash
+python3 scripts/new_idea.py "Idea title" --tags tag1,tag2
+python3 scripts/score_idea.py --all
+python3 scripts/link_ideas.py idea_000001 idea_000002
 ```
 
-Start from:
+Current generated overview:
 
 ```text
-templates/idea-seed.md
+index/idea_index.md
+index/tag_index.md
 ```
-
-Keep each idea honest:
-- active
-- parked
-- killed
-- ready-to-graduate
-- graduated
-
-## Current Ideas
-
-| Idea | State | Related repos |
-| --- | --- | --- |
-| `2026-05-04-openclaw-personal-ops-node.md` | active idea / parked from W19 execution | planning: `/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/planning-everything-track`; research/design: `/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/second-brain-openclaw` |
