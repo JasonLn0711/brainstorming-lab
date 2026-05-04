@@ -3,80 +3,92 @@
     {
       "id": "idea_000001",
       "title": "Healthcare AI triage copilot",
-      "status": "structured",
-      "score": 13,
+      "status": "research_candidate",
+      "maturity_score": "73/100",
+      "maturity_score_raw": 73,
+      "maturity_level": "research_candidate",
       "tags": [
         "healthcare",
         "ai-triage",
         "evidence-routing",
         "human-review"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
+      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
     },
     {
       "id": "idea_000002",
       "title": "Cybersecurity reviewer assist layer",
-      "status": "structured",
-      "score": 15,
+      "status": "research_candidate",
+      "maturity_score": "66/100",
+      "maturity_score_raw": 66,
+      "maturity_level": "research_candidate",
       "tags": [
         "cybersecurity",
         "ai-triage",
         "reviewer-assist",
         "evidence-routing"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
+      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
     },
     {
       "id": "idea_000003",
       "title": "Decision load scheduler",
       "status": "structured",
-      "score": 12,
+      "maturity_score": "56/100",
+      "maturity_score_raw": 56,
+      "maturity_level": "structured",
       "tags": [
         "decision-system",
         "planning-bridge",
         "cognitive-load",
         "workflow"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
+      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
     },
     {
       "id": "idea_000004",
       "title": "Anomaly detection research watch",
-      "status": "emerging",
-      "score": 10,
+      "status": "research_candidate",
+      "maturity_score": "68/100",
+      "maturity_score_raw": 68,
+      "maturity_level": "research_candidate",
       "tags": [
         "anomaly-detection",
         "cybersecurity",
         "research-candidate",
         "evidence-routing"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/evolving/idea_000004_anomaly_detection_research_watch.yaml"
+      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000004_anomaly_detection_research_watch.yaml"
     },
     {
       "id": "idea_000005",
       "title": "Workflow optimization feedback loop",
       "status": "structured",
-      "score": 13,
+      "maturity_score": "55/100",
+      "maturity_score_raw": 55,
+      "maturity_level": "structured",
       "tags": [
         "workflow",
         "feedback-loop",
         "planning-bridge",
         "decision-system"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
+      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
     },
     {
       "id": "idea_000006",
       "title": "OpenClaw personal ops node",
-      "status": "emerging",
-      "score": 10,
+      "status": "structured",
+      "maturity_score": "58/100",
+      "maturity_score_raw": 58,
+      "maturity_level": "structured",
       "tags": [
         "openclaw",
         "personal-ops",
         "workflow",
         "approval-gate"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/evolving/idea_000006_openclaw_personal_ops_node.yaml"
+      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000006_openclaw_personal_ops_node.yaml"
     }
   ],
   "edges": [
@@ -84,7 +96,7 @@
       "source": "idea_000001",
       "target": "idea_000002",
       "weight": 1.0,
-      "similarity": 0.5008,
+      "similarity": 0.4476,
       "shared_tags": [
         "ai-triage",
         "evidence-routing"
@@ -98,7 +110,7 @@
       "source": "idea_000001",
       "target": "idea_000004",
       "weight": 0.6,
-      "similarity": 0.27,
+      "similarity": 0.3095,
       "shared_tags": [
         "evidence-routing"
       ],
@@ -110,7 +122,7 @@
       "source": "idea_000002",
       "target": "idea_000004",
       "weight": 1.0,
-      "similarity": 0.3572,
+      "similarity": 0.42,
       "shared_tags": [
         "cybersecurity",
         "evidence-routing"
@@ -124,7 +136,7 @@
       "source": "idea_000003",
       "target": "idea_000005",
       "weight": 1.0,
-      "similarity": 0.4314,
+      "similarity": 0.3561,
       "shared_tags": [
         "decision-system",
         "planning-bridge",
@@ -139,7 +151,7 @@
       "source": "idea_000003",
       "target": "idea_000006",
       "weight": 0.6,
-      "similarity": 0.066,
+      "similarity": 0.0694,
       "shared_tags": [
         "workflow"
       ],
@@ -151,7 +163,7 @@
       "source": "idea_000005",
       "target": "idea_000006",
       "weight": 1.0,
-      "similarity": 0.0931,
+      "similarity": 0.1043,
       "shared_tags": [
         "workflow"
       ],

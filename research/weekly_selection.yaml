@@ -1,6 +1,6 @@
 week: 2026-W19
 epsilon: 0.4
-adaptive_reason: "2026-W18 review metrics incomplete; exploration increased for stagnation"
+adaptive_reason: 2026-W18 review metrics incomplete; exploration increased for stagnation
 pool_weights:
   exploit: 0.6
   explore: 0.2667
@@ -10,161 +10,176 @@ selection_counts:
   explore: 1
   random: 1
 source_folders:
-  - ideas/structured
-  - ideas/evolving
+- ideas/structured
+- ideas/evolving
 priority_tags:
-  - cybersecurity
-  - workflow
-  - planning-bridge
-  - evidence-routing
+- cybersecurity
+- workflow
+- planning-bridge
+- evidence-routing
 pools:
   exploitation_pool:
-    - idea_000005
-    - idea_000003
+  - idea_000003
+  - idea_000005
   novelty_pool:
-    - idea_000006
-    - idea_000004
+  - idea_000006
+  - idea_000003
   random_pool:
-    - idea_000002
-    - idea_000001
+  - idea_000002
+  - idea_000001
+  - idea_000004
 selected:
-  - id: idea_000005
-    title: "Workflow optimization feedback loop"
-    status: structured
-    maturity_score: 13
-    selection_type: exploit
-    selection_score: 1.8169
-    novelty: 0.5686
-    metrics:
-      impact: 3.0
-      feasibility: 3.0
-      maturity: 0.65
-      connections: 2
-      novelty: 0.5686
-      execution_cost: 0.2
-      alignment: 0.5
-      selection_score: 1.8169
-    path: ideas/structured/idea_000005_workflow_optimization_loop.yaml
-    next_step: "Run one daily-note suggestion and feedback pull using explicit marker blocks."
-    experiment: "Run a bounded test for Workflow optimization feedback loop: Run one daily-note suggestion and feedback pull using explicit marker blocks."
-    measurable_output: "One recorded result that can update insight, maturity, or status."
-    reason: "selected from exploit pool"
-    cluster_id: selected_cluster_002
-    research_candidate: true
-  - id: idea_000003
-    title: "Decision load scheduler"
-    status: structured
-    maturity_score: 12
-    selection_type: exploit
-    selection_score: 1.8069
-    novelty: 0.5686
-    metrics:
-      impact: 3.0
-      feasibility: 3.0
-      maturity: 0.6
-      connections: 1
-      novelty: 0.5686
-      execution_cost: 0.2
-      alignment: 0.5
-      selection_score: 1.8069
-    path: ideas/structured/idea_000003_decision_load_scheduler.yaml
-    next_step: "Compare weekly selections against the planning repo daily and weekly notes for one week."
-    experiment: "Run a bounded test for Decision load scheduler: Compare weekly selections against the planning repo daily and weekly notes for one week."
-    measurable_output: "One recorded result that can update insight, maturity, or status."
-    reason: "selected from exploit pool"
-    cluster_id: selected_cluster_002
-    research_candidate: true
-  - id: idea_000006
-    title: "OpenClaw personal ops node"
-    status: emerging
-    maturity_score: 10
-    selection_type: explore
-    selection_score: 1.5957
-    novelty: 0.9069
-    metrics:
-      impact: 3.0
-      feasibility: 2.0
-      maturity: 0.5
-      connections: 1
-      novelty: 0.9069
-      execution_cost: 0.2
-      alignment: 0.25
-      selection_score: 1.5957
-    path: ideas/evolving/idea_000006_openclaw_personal_ops_node.yaml
-    next_step: "Write one bounded design note in second-brain-openclaw before any implementation or purchase."
-    experiment: "Run a bounded test for OpenClaw personal ops node: Write one bounded design note in second-brain-openclaw before any implementation or purchase."
-    measurable_output: "One recorded result that can update insight, maturity, or status."
-    reason: "selected from explore pool"
-    cluster_id: selected_cluster_002
-    research_candidate: true
-  - id: idea_000001
-    title: "Healthcare AI triage copilot"
-    status: structured
-    maturity_score: 13
-    selection_type: random
-    selection_score: 1.5849
-    novelty: 0.4992
-    metrics:
-      impact: 3.0
-      feasibility: 2.0
-      maturity: 0.65
-      connections: 1
-      novelty: 0.4992
-      execution_cost: 0.2
-      alignment: 0.25
-      selection_score: 1.5849
-    path: ideas/structured/idea_000001_healthcare_ai_triage.yaml
-    next_step: "Create a synthetic intake fixture and define reviewer-burden metrics."
-    experiment: "Run a bounded test for Healthcare AI triage copilot: Create a synthetic intake fixture and define reviewer-burden metrics."
-    measurable_output: "One recorded result that can update insight, maturity, or status."
-    reason: "selected from random pool"
-    cluster_id: selected_cluster_001
-    research_candidate: true
-  - id: idea_000002
-    title: "Cybersecurity reviewer assist layer"
-    status: structured
-    maturity_score: 15
-    selection_type: exploit
-    selection_score: 1.6299
-    novelty: 0.4992
-    metrics:
-      impact: 3.0
-      feasibility: 2.0
-      maturity: 0.75
-      connections: 2
-      novelty: 0.4992
-      execution_cost: 0.2
-      alignment: 0.5
-      selection_score: 1.6299
-    path: ideas/structured/idea_000002_cybersecurity_review_assist.yaml
-    next_step: "Define a controlled candidate-review fixture with explicit hard negatives."
-    experiment: "Run a bounded test for Cybersecurity reviewer assist layer: Define a controlled candidate-review fixture with explicit hard negatives."
-    measurable_output: "One recorded result that can update insight, maturity, or status."
-    reason: "selected from exploit pool as backfill after requested pool was exhausted"
-    cluster_id: selected_cluster_001
-    research_candidate: true
+- id: idea_000003
+  title: Decision load scheduler
+  status: structured
+  maturity_score: 56/100
+  maturity_level: structured
+  selection_type: exploit
+  selection_score: 1.8064
+  novelty: 0.6439
+  metrics:
+    impact: 3.0
+    feasibility: 3.0
+    maturity: 0.56
+    connections: 1
+    novelty: 0.6439
+    execution_cost: 0.2
+    alignment: 0.5
+    selection_score: 1.8064
+  path: ideas/structured/idea_000003_decision_load_scheduler.yaml
+  next_step: Compare weekly selections against the planning repo daily and weekly
+    notes for one week.
+  experiment: 'Run a bounded test for Decision load scheduler: Compare weekly selections
+    against the planning repo daily and weekly notes for one week.'
+  measurable_output: One recorded result that can update insight, maturity, or status.
+  reason: selected from exploit pool
+  cluster_id: selected_cluster_002
+  research_candidate: true
+- id: idea_000005
+  title: Workflow optimization feedback loop
+  status: structured
+  maturity_score: 55/100
+  maturity_level: structured
+  selection_type: exploit
+  selection_score: 1.8044
+  novelty: 0.6439
+  metrics:
+    impact: 3.0
+    feasibility: 3.0
+    maturity: 0.55
+    connections: 2
+    novelty: 0.6439
+    execution_cost: 0.2
+    alignment: 0.5
+    selection_score: 1.8044
+  path: ideas/structured/idea_000005_workflow_optimization_loop.yaml
+  next_step: Run one daily-note suggestion and feedback pull using explicit marker
+    blocks.
+  experiment: 'Run a bounded test for Workflow optimization feedback loop: Run one
+    daily-note suggestion and feedback pull using explicit marker blocks.'
+  measurable_output: One recorded result that can update insight, maturity, or status.
+  reason: selected from exploit pool
+  cluster_id: selected_cluster_002
+  research_candidate: true
+- id: idea_000006
+  title: OpenClaw personal ops node
+  status: structured
+  maturity_score: 58/100
+  maturity_level: structured
+  selection_type: explore
+  selection_score: 1.6106
+  novelty: 0.8957
+  metrics:
+    impact: 3.0
+    feasibility: 2.0
+    maturity: 0.58
+    connections: 1
+    novelty: 0.8957
+    execution_cost: 0.2
+    alignment: 0.25
+    selection_score: 1.6106
+  path: ideas/structured/idea_000006_openclaw_personal_ops_node.yaml
+  next_step: Write one bounded design note in second-brain-openclaw before any implementation
+    or purchase.
+  experiment: 'Run a bounded test for OpenClaw personal ops node: Write one bounded
+    design note in second-brain-openclaw before any implementation or purchase.'
+  measurable_output: One recorded result that can update insight, maturity, or status.
+  reason: selected from explore pool
+  cluster_id: selected_cluster_002
+  research_candidate: true
+- id: idea_000004
+  title: Anomaly detection research watch
+  status: research_candidate
+  maturity_score: 68/100
+  maturity_level: research_candidate
+  selection_type: random
+  selection_score: 1.324
+  novelty: 0.58
+  metrics:
+    impact: 2.0
+    feasibility: 2.0
+    maturity: 0.68
+    connections: 1
+    novelty: 0.58
+    execution_cost: 0.2
+    alignment: 0.5
+    selection_score: 1.324
+  path: ideas/structured/idea_000004_anomaly_detection_research_watch.yaml
+  next_step: Define one public or synthetic anomaly fixture and one review packet
+    format.
+  experiment: 'Run a bounded test for Anomaly detection research watch: Define one
+    public or synthetic anomaly fixture and one review packet format.'
+  measurable_output: One recorded result that can update insight, maturity, or status.
+  reason: selected from random pool
+  cluster_id: selected_cluster_001
+  research_candidate: true
+- id: idea_000002
+  title: Cybersecurity reviewer assist layer
+  status: research_candidate
+  maturity_score: 66/100
+  maturity_level: research_candidate
+  selection_type: exploit
+  selection_score: 1.6172
+  novelty: 0.5524
+  metrics:
+    impact: 3.0
+    feasibility: 2.0
+    maturity: 0.66
+    connections: 2
+    novelty: 0.5524
+    execution_cost: 0.2
+    alignment: 0.5
+    selection_score: 1.6172
+  path: ideas/structured/idea_000002_cybersecurity_review_assist.yaml
+  next_step: Define a controlled candidate-review fixture with explicit hard negatives.
+  experiment: 'Run a bounded test for Cybersecurity reviewer assist layer: Define
+    a controlled candidate-review fixture with explicit hard negatives.'
+  measurable_output: One recorded result that can update insight, maturity, or status.
+  reason: selected from exploit pool as backfill after requested pool was exhausted
+  cluster_id: selected_cluster_001
+  research_candidate: true
 clusters:
   selected_cluster_001:
-    theme: "ai-triage / evidence-routing / cybersecurity"
+    theme: cybersecurity / evidence-routing / ai-triage
     ideas:
-      - idea_000001
-      - idea_000002
+    - idea_000002
+    - idea_000004
     research_candidate: true
   selected_cluster_002:
-    theme: "workflow / decision-system / planning-bridge"
+    theme: workflow / decision-system / planning-bridge
     ideas:
-      - idea_000003
-      - idea_000005
-      - idea_000006
+    - idea_000003
+    - idea_000005
+    - idea_000006
     research_candidate: true
 daily_distribution:
-  2026-05-04:
-    - idea_000005
-  2026-05-05:
-    - idea_000003
-  2026-05-06:
-    - idea_000006
-  2026-05-07:
-    - idea_000001
-  2026-05-08:
-    - idea_000002
+  '2026-05-04':
+  - idea_000003
+  '2026-05-05':
+  - idea_000005
+  '2026-05-06':
+  - idea_000006
+  '2026-05-07':
+  - idea_000004
+  '2026-05-08':
+  - idea_000002
