@@ -1,0 +1,36 @@
+id: idea_000002
+title: "Cybersecurity reviewer assist layer"
+created_at: 2026-05-04
+type: project
+tags:
+  - cybersecurity
+  - ai-triage
+  - reviewer-assist
+  - evidence-routing
+status: structured
+problem_statement: "Given high-volume suspicious content, optimize review-worthy candidate discovery under hard-negative and aggregate-reporting constraints."
+summary: "A reviewer assist layer that ranks suspicious cybersecurity or scam candidates, explains why they are worth review, and keeps human burden measurable."
+assumptions:
+  - "The system is valuable only if it lowers review burden without increasing false confidence."
+  - "Aggregate-only reporting and hard-negative protection are core constraints, not later polish."
+  - "A dual metric can track candidate quality and reviewer labor at the same time."
+insights:
+  - "The same structure can support healthcare triage and anomaly review with different risk gates."
+  - "Review-worthy does not mean legally or medically confirmed."
+connections:
+  - idea_000001
+  - idea_000004
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  clarity: 4
+  testability: 4
+  connectedness: 4
+  evidence: 3
+score: 15
+next_steps:
+  - "Define a controlled candidate-review fixture with explicit hard negatives."
+source:
+  - conversation
+  - prior-project

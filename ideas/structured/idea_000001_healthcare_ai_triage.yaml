@@ -1,0 +1,35 @@
+id: idea_000001
+title: "Healthcare AI triage copilot"
+created_at: 2026-05-04
+type: project
+tags:
+  - healthcare
+  - ai-triage
+  - evidence-routing
+  - human-review
+status: structured
+problem_statement: "Given overloaded clinical intake, optimize which cases need human review first under safety and audit constraints."
+summary: "A clinical triage assistant that structures patient intake, flags uncertainty, and routes cases to clinicians with evidence rather than replacing medical judgment."
+assumptions:
+  - "The useful output is safer prioritization, not autonomous diagnosis."
+  - "Clinicians need provenance and uncertainty markers more than another chat surface."
+  - "A small synthetic workflow can test review-burden reduction before any real patient data."
+insights:
+  - "This idea shares the same reviewer-assist pattern as cybersecurity candidate review."
+  - "The first metric should be reduction in time-to-first-safe-action."
+connections:
+  - idea_000002
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  clarity: 4
+  testability: 4
+  connectedness: 3
+  evidence: 2
+score: 13
+next_steps:
+  - "Create a synthetic intake fixture and define reviewer-burden metrics."
+source:
+  - conversation
+  - observation

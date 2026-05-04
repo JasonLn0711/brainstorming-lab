@@ -1,0 +1,24 @@
+week: 2026-W19
+threshold: 12
+top_n: 3
+selection_001:
+  id: idea_000002
+  title: "Cybersecurity reviewer assist layer"
+  status: structured
+  score: 15
+  next_step: "Define a controlled candidate-review fixture with explicit hard negatives."
+  path: ideas/structured/idea_000002_cybersecurity_review_assist.yaml
+selection_002:
+  id: idea_000001
+  title: "Healthcare AI triage copilot"
+  status: structured
+  score: 13
+  next_step: "Create a synthetic intake fixture and define reviewer-burden metrics."
+  path: ideas/structured/idea_000001_healthcare_ai_triage.yaml
+selection_003:
+  id: idea_000005
+  title: "Workflow optimization feedback loop"
+  status: structured
+  score: 13
+  next_step: "Run one daily-note suggestion and feedback pull using explicit marker blocks."
+  path: ideas/structured/idea_000005_workflow_optimization_loop.yaml

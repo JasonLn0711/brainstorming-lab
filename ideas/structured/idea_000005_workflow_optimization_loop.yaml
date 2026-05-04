@@ -1,0 +1,35 @@
+id: idea_000005
+title: "Workflow optimization feedback loop"
+created_at: 2026-05-04
+type: concept
+tags:
+  - workflow
+  - feedback-loop
+  - planning-bridge
+  - decision-system
+status: structured
+problem_statement: "Given repeated workflow friction, optimize the loop from idea capture to execution feedback without adding planning noise."
+summary: "A closed-loop workflow where ideas produce tests, tests produce feedback, and feedback updates idea maturity and future planning suggestions."
+assumptions:
+  - "The loop is useful only if feedback updates the idea database, not only a day note."
+  - "Idempotent planning markers prevent sync scripts from making daily notes messy."
+  - "A small explicit feedback block is safer than guessing from free-form prose."
+insights:
+  - "The planning bridge is the control-plane interface for the Idea OS."
+connections:
+  - idea_000003
+  - idea_000006
+value:
+  impact: high
+  feasibility: high
+maturity:
+  clarity: 4
+  testability: 4
+  connectedness: 3
+  evidence: 2
+score: 13
+next_steps:
+  - "Run one daily-note suggestion and feedback pull using explicit marker blocks."
+source:
+  - conversation
+  - observation

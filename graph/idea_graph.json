@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "idea_000001",
+      "title": "Healthcare AI triage copilot",
+      "status": "structured",
+      "score": 13,
+      "tags": [
+        "healthcare",
+        "ai-triage",
+        "evidence-routing",
+        "human-review"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
+    },
+    {
+      "id": "idea_000002",
+      "title": "Cybersecurity reviewer assist layer",
+      "status": "structured",
+      "score": 15,
+      "tags": [
+        "cybersecurity",
+        "ai-triage",
+        "reviewer-assist",
+        "evidence-routing"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
+    },
+    {
+      "id": "idea_000003",
+      "title": "Decision load scheduler",
+      "status": "structured",
+      "score": 12,
+      "tags": [
+        "decision-system",
+        "planning-bridge",
+        "cognitive-load",
+        "workflow"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
+    },
+    {
+      "id": "idea_000004",
+      "title": "Anomaly detection research watch",
+      "status": "emerging",
+      "score": 10,
+      "tags": [
+        "anomaly-detection",
+        "cybersecurity",
+        "research-candidate",
+        "evidence-routing"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/evolving/idea_000004_anomaly_detection_research_watch.yaml"
+    },
+    {
+      "id": "idea_000005",
+      "title": "Workflow optimization feedback loop",
+      "status": "structured",
+      "score": 13,
+      "tags": [
+        "workflow",
+        "feedback-loop",
+        "planning-bridge",
+        "decision-system"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
+    },
+    {
+      "id": "idea_000006",
+      "title": "OpenClaw personal ops node",
+      "status": "emerging",
+      "score": 10,
+      "tags": [
+        "openclaw",
+        "personal-ops",
+        "workflow",
+        "approval-gate"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/evolving/idea_000006_openclaw_personal_ops_node.yaml"
+    }
+  ],
+  "edges": [
+    {
+      "source": "idea_000001",
+      "target": "idea_000002",
+      "weight": 1.0,
+      "similarity": 0.5008,
+      "shared_tags": [
+        "ai-triage",
+        "evidence-routing"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000001",
+      "target": "idea_000004",
+      "weight": 0.6,
+      "similarity": 0.27,
+      "shared_tags": [
+        "evidence-routing"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000002",
+      "target": "idea_000004",
+      "weight": 1.0,
+      "similarity": 0.3572,
+      "shared_tags": [
+        "cybersecurity",
+        "evidence-routing"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000003",
+      "target": "idea_000005",
+      "weight": 1.0,
+      "similarity": 0.4314,
+      "shared_tags": [
+        "decision-system",
+        "planning-bridge",
+        "workflow"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000003",
+      "target": "idea_000006",
+      "weight": 0.6,
+      "similarity": 0.066,
+      "shared_tags": [
+        "workflow"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000005",
+      "target": "idea_000006",
+      "weight": 1.0,
+      "similarity": 0.0931,
+      "shared_tags": [
+        "workflow"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    }
+  ]
+}

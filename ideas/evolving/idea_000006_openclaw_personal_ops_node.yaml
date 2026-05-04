@@ -1,0 +1,35 @@
+id: idea_000006
+title: "OpenClaw personal ops node"
+created_at: 2026-05-04
+type: project
+tags:
+  - openclaw
+  - personal-ops
+  - workflow
+  - approval-gate
+status: emerging
+problem_statement: "Given Codex-heavy personal operations, optimize a private always-on node under redaction, approval, logging, and rollback constraints."
+summary: "Use a low-power always-on node as a safe personal operations host for OpenClaw and Codex workflows: remote entrypoint, task watcher, approval relay, logs, rollback, and notification."
+assumptions:
+  - "The useful pattern is audited operations infrastructure, not many free-running agents."
+  - "Codex should remain the main coding and workspace execution engine."
+  - "A bounded design note should come before hardware purchase or implementation."
+insights:
+  - "The first version should be a remote supervisor, not hard fusion between OpenClaw and Codex."
+  - "Required safety layers include redaction, action log, approval gate, private network boundary, and rollback."
+connections:
+  - idea_000005
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  clarity: 4
+  testability: 2
+  connectedness: 3
+  evidence: 1
+score: 10
+next_steps:
+  - "Write one bounded design note in second-brain-openclaw before any implementation or purchase."
+source:
+  - conversation
+  - observation
