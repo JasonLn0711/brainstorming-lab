@@ -1,0 +1,265 @@
+id: idea_000010
+title: "AI-assisted smart mosquito trap"
+created_at: 2026-05-05
+type: hypothesis
+tags:
+  - hardware
+  - mosquito-control
+  - sensing
+  - safety
+  - side-project
+status: research_candidate
+problem_statement:
+  raw: "Given mosquitoes are weak targets for open Tesla coil fly-trap geometry, design a smarter mosquito trap as a mosquito decision system that senses conditions, predicts active periods, adjusts attraction, confirms targets, captures safely, and learns from outcomes."
+  normalized: "Given small fast mosquitoes in open air, optimize adaptive detection and capture usefulness under constraints of electrical safety, no exposed high voltage, low cost, false positives, indoor usability, energy use, noise, and measurable benefit over simple commercial traps."
+  structure:
+    given: "small fast mosquitoes in open air"
+    optimize: "adaptive detection and capture usefulness"
+    constraints:
+      - "electrical safety"
+      - "no exposed high voltage"
+      - "low cost"
+      - "false positives"
+      - "indoor usability"
+      - "energy use"
+      - noise
+      - "measurable benefit over simple commercial traps"
+summary: "Design an adaptive AIoT mosquito trapping system that improves on always-on commercial lamps by using environment sensing, acoustic or vision confirmation, dynamic attraction control, safe fan-assisted capture, and outcome logging. The first usable version should be a low-voltage v1 with rules, fan capture, and data logging; AI detection comes after baseline operation is stable."
+assumptions:
+  - "Mosquito effectiveness depends more on lure, contact density, airflow, and dwell time than on visually dramatic arcs."
+  - "AI is useful for detection, counting, false-positive filtering, and experiment measurement, not for bypassing electrical safety."
+  - "The first test can use public or synthetic video/proxy targets before any live-insect or energized hardware experiment."
+  - "The useful upgrade over a basic lamp is adaptive control: run strong attraction only when environmental and target signals justify it."
+  - "Sound and camera classifiers are research hypotheses until tested against dust, fan noise, other insects, and room lighting changes."
+evidence:
+  - conversation
+  - "fly-versus-mosquito mechanism comparison"
+  - "commercial mosquito trap contrast"
+  - "architecture sketch from conversation"
+  - "ESP32 beginner explanation from conversation"
+  - "ESP32 plus humidity sensor plus fan v1 walkthrough from conversation"
+baseline:
+  - "always-on UV lamp with fan or grid"
+  - "commercial UV zapper or capture lamp"
+  - "fan-based mosquito trap"
+  - "simple timed outlet control"
+  - "manual video counting"
+metrics:
+  - "mosquito-like target detection precision and recall on video snippets or proxy footage"
+  - "false activation rate from dust, shadows, and non-target insects"
+  - "capture or entry rate only after a separately reviewed safe physical trap exists"
+  - "prototype has no exposed high-voltage components"
+  - "capture rate per night compared with always-on baseline"
+  - "energy per capture"
+  - "runtime reduction versus all-night operation"
+  - "false attraction or non-target insect ratio"
+  - "nighttime noise level"
+  - "ESP32 reads temperature and humidity reliably"
+  - "fan turns on only when threshold logic is satisfied"
+  - "fan turns off outside threshold logic or after the bounded run window"
+  - "prototype can run 6-8 hours without crashing"
+insights:
+  - "A fly trap and a mosquito trap are different design problems because target size and contact geometry dominate the discharge path."
+  - "Dense grid, fan capture, or adhesive/mechanical interception is more plausible than an open Tesla coil field for mosquitoes."
+  - "The research value is the measurement loop: detect approach events, count outcomes, compare lure strategies, and avoid false positives."
+  - "Any energized grid should be treated as a later safety-reviewed module, not the first prototype."
+  - "Think of the device as a mosquito decision system: attract only when conditions are favorable, verify the target, then record the outcome."
+  - "The MVP should not begin with deep learning. Start with a rule engine over time of day, humidity, temperature, and possible acoustic events."
+  - "A fan-negative-pressure capture path is the safest first capture mechanism because it avoids exposed high voltage and leaves countable evidence."
+  - "Raspberry Pi is not required for v1. Hardware should be chosen by needed sensing and inference: ESP32 for rules, ESP32 plus TinyML for lightweight acoustic classification, Raspberry Pi only for camera-heavy or full multimodal AI."
+  - "For a beginner-facing build, explain ESP32 as a tiny low-power connected controller for reading sensors and controlling lights, fans, and simple automation, not as a Linux computer."
+  - "The v1 success target is a stable sensing-control loop, not high mosquito capture volume."
+  - "Keep UV or purple-light attraction as a second-stage add-on; first prove ESP32 sensing and fan actuation."
+connections:
+  - idea_000009
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 6
+  evidence_support_score: 6/15
+  connection_strength: 2
+  connection_strength_score: 2/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 11
+  feasibility_score: 11/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 74/100
+maturity_level: research_candidate
+research_question: "Compared with an always-on commercial mosquito lamp, does adaptive sensing plus dynamic attraction improve capture rate, energy per capture, false attraction, runtime, and nighttime noise?"
+system_design:
+  hardware_decision:
+    decision_rule: "Choose the controller from the required sensing and inference, not from maximum compute."
+    esp32_primer:
+      plain_definition: "ESP32 is a small low-power microcontroller with WiFi, Bluetooth, and GPIO pins for sensing and device control."
+      project_role: "Read sensors, apply simple decision rules, control the fan and attraction cues, and log or transmit data."
+      mental_model:
+        - "Mac or PC: powerful general computer"
+        - "Raspberry Pi: small Linux computer"
+        - "ESP32: smaller controller for sensors, motors, lights, and low-power IoT behavior"
+      suitable_tasks:
+        - "read temperature and humidity"
+        - "read light or simple microphone signals"
+        - "control UV or weak visual cue"
+        - "control fan or relay through safe driver circuitry"
+        - "send logs over WiFi"
+        - "run simple rule-based automation"
+      not_suitable_for:
+        - "large programs"
+        - "desktop-style software"
+        - "image-heavy AI"
+        - "full dashboard or server workloads"
+      beginner_summary: "ESP32 is the simplest controller for turning this idea into a real low-voltage device that senses, decides, and actuates."
+    questions:
+      - "Does v1 need a camera?"
+      - "Does the device need to run sound or vision AI locally?"
+      - "Does it need long-duration low-power operation?"
+    options:
+      - controller: ESP32
+        use_when: "No camera AI is needed; v1 only needs sensors, rules, fan control, lighting control, and logging."
+        strengths:
+          - "low cost"
+          - "low power"
+          - "stable long-running operation"
+          - "fast MVP build"
+        limits:
+          - "not suitable for image AI"
+          - "audio analysis should stay simple"
+      - controller: "ESP32 plus TinyML"
+        use_when: "v2 needs lightweight mosquito-like sound classification while preserving low power."
+        strengths:
+          - "microphone inference on device"
+          - "lower power than Raspberry Pi"
+          - "enough for a research prototype if the model is small"
+        limits:
+          - "limited model size"
+          - "requires a carefully collected audio dataset"
+      - controller: "Raspberry Pi"
+        use_when: "v3 needs camera, motion tracking, YOLO-style models, dashboard, larger storage, or multimodal fusion."
+        strengths:
+          - "supports camera-heavy prototypes"
+          - "easier local data logging and dashboard"
+          - "better for demonstration or paper-grade multimodal AI"
+        limits:
+          - "higher cost"
+          - "higher power draw"
+          - "more system complexity"
+  modules:
+    attraction:
+      purpose: "Bring mosquitoes near the capture inlet without relying only on UV."
+      candidate_parts:
+        - "UV or weak visual cue"
+        - "safe commercial lure or odor cue"
+        - "low-temperature heat cue"
+        - "airflow cue"
+        - "CO2 candidate module, only if safety and sourcing are reviewed"
+    sensing:
+      purpose: "Decide when strong attraction is worth running."
+      candidate_parts:
+        - "temperature and humidity sensor"
+        - "light sensor"
+        - "CO2 sensor as occupancy or environment signal"
+        - "microphone for acoustic candidate events"
+        - "small camera pointed at the inlet"
+        - "PIR for room occupancy context"
+    decision:
+      levels:
+        - name: "Level 1 environment score"
+          method: "Rules over humidity, temperature, night period, occupancy, and possible acoustic events."
+        - name: "Level 2 acoustic classifier"
+          method: "FFT or spectrogram features with a small classifier after the logging dataset exists."
+        - name: "Level 3 visual confirmation"
+          method: "Background subtraction or tiny object tracking near the inlet after v1 is stable."
+    capture:
+      preferred: "Fan-negative-pressure funnel into a capture box, sticky insert, or fine mesh bag."
+      deferred: "Only consider an enclosed commercial low-risk grid module after separate safety review."
+    learning:
+      logs:
+        - timestamp
+        - temperature
+        - humidity
+        - "light level"
+        - "audio event score"
+        - "camera event count"
+        - runtime
+        - "capture or entry evidence"
+mvp:
+  name: "Smart Mosquito Trap v1"
+  scope:
+    - "ESP32 controller"
+    - "temperature and humidity sensor"
+    - "microphone module"
+    - "UV or weak visual cue"
+    - "small fan"
+    - "capture box"
+    - "simple rule engine"
+  rule_engine: "If it is night, humidity is above 60%, temperature is roughly 24-30 C, and there is a possible mosquito-like audio event, run attraction plus fan mode for a bounded interval and log the outcome."
+  minimum_parts:
+    - "ESP32 development board"
+    - "DHT22 temperature and humidity sensor, or DHT11 for cheaper rough testing"
+    - "5V small fan"
+    - "MOSFET module or relay module for fan switching"
+    - "jumper wires"
+    - "breadboard for bench testing"
+    - "USB cable for power and programming"
+    - "capture box or fine mesh bag"
+  deferred_parts:
+    - "UV or purple LED module"
+    - "light sensor or RTC for real night detection"
+    - "microphone classifier"
+  wiring_notes:
+    - "DHT22 VCC to ESP32 3.3V, GND to GND, DATA to GPIO 4."
+    - "Use a 10k pull-up resistor from DHT22 DATA to 3.3V."
+    - "Do not power or drive the fan directly from an ESP32 GPIO pin."
+    - "Use GPIO 16 to control a MOSFET or relay module that switches the 5V fan."
+    - "If the fan uses a separate 5V supply, share ground with the ESP32 control circuit."
+  v1_rule: "If night mode is enabled, humidity is above 60%, and temperature is 24-32 C, run the fan for a bounded window, then turn it off."
+  success_criteria:
+    - "ESP32 reads temperature and humidity stably."
+    - "Fan turns on when the rule is satisfied."
+    - "Fan turns off when the rule is not satisfied or the run window ends."
+    - "Prototype runs 6-8 hours without crashing."
+    - "No exposed high voltage is present."
+roadmap:
+  - version: v1
+    controller: ESP32
+    focus: "Fan capture plus environment rules"
+    goal: "Stable safe low-power operation and usable logs"
+  - version: v2
+    controller: "ESP32 plus TinyML"
+    focus: "Microphone-based mosquito-like event detection"
+    goal: "Reduce false starts"
+  - version: v3
+    controller: "Raspberry Pi"
+    focus: "Camera, audio, and environment fusion"
+    goal: "AIoT research demonstration system"
+safety_boundaries:
+  - "Do not use exposed high-voltage circuits."
+  - "Do not treat AI as a substitute for electrical or chemical safety review."
+  - "Keep the first prototype low-voltage and fan-based."
+  - "Use safe commercial lures or sensor-only tests before experimenting with CO2 or odor modules."
+  - "Separate live-insect testing from early sensor and proxy-target evaluation."
+  - "Do not introduce Raspberry Pi until camera or full multimodal AI is needed."
+  - "Do not drive motors or fans directly from ESP32 GPIO pins."
+experiment_packet: experiments/idea_000010_smart_mosquito_trap_v1_esp32.md
+next_steps:
+  - "Review the v1 ESP32 build note and decide whether to buy the minimum parts."
+  - "Bench-test ESP32 plus DHT22 before connecting the fan."
+  - "Bench-test fan switching through MOSFET module with a short run window."
+  - "Specify the hardware upgrade gate from ESP32 to ESP32 plus TinyML to Raspberry Pi."
+  - "Define a sensor-only logging run before any live-insect or capture experiment."
+  - "Create a tiny benchmark with mosquito-like audio or video snippets plus obvious false positives to test whether AI adds value."
+  - "Compare always-on mode against rule-based dynamic mode on runtime and energy before claiming capture improvement."
+source:
+  - conversation
+maturity_action: "evaluate cluster readiness"
+normalization_status: validated

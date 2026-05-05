@@ -19,6 +19,24 @@ cluster_0001:
     evidence_support: 9/15
     feasibility: 11/15
 cluster_0002:
+  theme: "hardware / safety / side-project"
+  cluster_type: research_cluster
+  ideas:
+    - idea_000009
+    - idea_000010
+  normalized_problem: "Given small fast mosquitoes in open air, optimize adaptive detection and capture usefulness under constraints of electrical safety, no exposed high voltage, low cost, false positives, indoor usability, energy use, noise, and measurable benefit over simple commercial traps."
+  average_maturity_score: 70/100
+  cluster_score: 63/100
+  reason:
+    - "shared tags: hardware, safety, side-project"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommendation: "evaluate as research candidate"
+  averages:
+    testability: 12/15
+    evidence_support: 6/15
+    feasibility: 10/15
+cluster_0003:
   theme: "decision-system / planning-bridge / workflow"
   cluster_type: research_cluster
   ideas:

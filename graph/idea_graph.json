@@ -143,6 +143,37 @@
         "cost-normalized-benchmark"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml"
+    },
+    {
+      "id": "idea_000009",
+      "title": "Safe Tesla coil insect-trap teaching demo",
+      "status": "research_candidate",
+      "maturity_score": "65/100",
+      "maturity_score_raw": 65,
+      "maturity_level": "research_candidate",
+      "tags": [
+        "hardware",
+        "physics-education",
+        "safety",
+        "side-project"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml"
+    },
+    {
+      "id": "idea_000010",
+      "title": "AI-assisted smart mosquito trap",
+      "status": "research_candidate",
+      "maturity_score": "74/100",
+      "maturity_score_raw": 74,
+      "maturity_level": "research_candidate",
+      "tags": [
+        "hardware",
+        "mosquito-control",
+        "sensing",
+        "safety",
+        "side-project"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml"
     }
   ],
   "edges": [
@@ -297,6 +328,21 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000009",
+      "target": "idea_000010",
+      "weight": 1.0,
+      "similarity": 0.4105,
+      "shared_tags": [
+        "hardware",
+        "safety",
+        "side-project"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
       ]
     }
   ]

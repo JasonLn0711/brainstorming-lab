@@ -25,6 +25,31 @@ merge_candidate_0001:
 merge_candidate_0002:
   candidate_id: merge_candidate_0002
   ideas:
+    - idea_000009
+    - idea_000010
+  merge_type: cluster_merge
+  merge_score: 63/100
+  confidence: medium
+  reason:
+    - "shared tags: hardware, safety, side-project"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: create_cluster
+  decision: suggest_cluster
+  subscores:
+    normalized_problem_similarity: 4/25
+    semantic_similarity: 6/15
+    tag_overlap: 10/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 15/20
+  shared_tags:
+    - hardware
+    - safety
+    - side-project
+merge_candidate_0003:
+  candidate_id: merge_candidate_0003
+  ideas:
     - idea_000001
     - idea_000002
   merge_type: cluster_merge
@@ -46,8 +71,8 @@ merge_candidate_0002:
   shared_tags:
     - ai-triage
     - evidence-routing
-merge_candidate_0003:
-  candidate_id: merge_candidate_0003
+merge_candidate_0004:
+  candidate_id: merge_candidate_0004
   ideas:
     - idea_000003
     - idea_000005
@@ -71,8 +96,8 @@ merge_candidate_0003:
     - decision-system
     - planning-bridge
     - workflow
-merge_candidate_0004:
-  candidate_id: merge_candidate_0004
+merge_candidate_0005:
+  candidate_id: merge_candidate_0005
   ideas:
     - idea_000002
     - idea_000007
@@ -95,8 +120,8 @@ merge_candidate_0004:
   shared_tags:
     - cybersecurity
     - reviewer-assist
-merge_candidate_0005:
-  candidate_id: merge_candidate_0005
+merge_candidate_0006:
+  candidate_id: merge_candidate_0006
   ideas:
     - idea_000005
     - idea_000006
@@ -118,8 +143,8 @@ merge_candidate_0005:
     complexity_control: 20/20
   shared_tags:
     - workflow
-merge_candidate_0006:
-  candidate_id: merge_candidate_0006
+merge_candidate_0007:
+  candidate_id: merge_candidate_0007
   ideas:
     - idea_000004
     - idea_000007
@@ -142,8 +167,8 @@ merge_candidate_0006:
   shared_tags:
     - cybersecurity
     - research-candidate
-merge_candidate_0007:
-  candidate_id: merge_candidate_0007
+merge_candidate_0008:
+  candidate_id: merge_candidate_0008
   ideas:
     - idea_000001
     - idea_000004
@@ -163,8 +188,8 @@ merge_candidate_0007:
     complexity_control: 20/20
   shared_tags:
     - evidence-routing
-merge_candidate_0008:
-  candidate_id: merge_candidate_0008
+merge_candidate_0009:
+  candidate_id: merge_candidate_0009
   ideas:
     - idea_000003
     - idea_000006
@@ -184,8 +209,8 @@ merge_candidate_0008:
     complexity_control: 20/20
   shared_tags:
     - workflow
-merge_candidate_0009:
-  candidate_id: merge_candidate_0009
+merge_candidate_0010:
+  candidate_id: merge_candidate_0010
   ideas:
     - idea_000005
     - idea_000007

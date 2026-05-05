@@ -91,6 +91,11 @@
 
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 
+## hardware
+
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
 ## healthcare
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 73/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
@@ -119,6 +124,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 83/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## mosquito-control
+
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
 ## multi-agent
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 88/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -134,6 +143,10 @@
 ## personal-ops
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 58/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+
+## physics-education
+
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
 
 ## planning-bridge
 
@@ -166,6 +179,11 @@
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 83/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## safety
+
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 83/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -177,6 +195,15 @@
 ## self-directed-data-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 83/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## sensing
+
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
+## side-project
+
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## signal-market
 
