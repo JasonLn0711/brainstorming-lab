@@ -46,6 +46,7 @@ evidence:
   - "User-provided GPT conversation summarizing AutoGen, LangGraph, Mixture-of-Agents, Sakana Conductor, and Fugu; not independently verified in this turn."
   - "Conversation claim: Conductor is framed as a small learned coordinator that chooses agents, subtasks, context, and recursive calls."
   - "Conversation claim: Fugu emphasizes dynamic coordination across frontier models and recursive test-time scaling."
+  - "Official Sakana Fugu beta page verified on 2026-05-05: Fugu is described as a small model that coordinates pools of frontier foundation models, learns adaptive collaboration patterns, exposes an OpenAI-compatible API, and can use recursive test-time scaling."
   - "Existing repo themes include healthcare AI triage and workflow optimization."
   - "LINE conversation with 吳冠廷 on 2026-05-04: he shared the Fugu beta link, said he applied to Sakana AI, and judged the topic interesting and ICLR-level."
   - "LINE conversation claim: a 7B-scale coordinator model may be trainable with the lab's hardware."
@@ -72,6 +73,8 @@ insights:
 connections:
   - idea_000001
   - idea_000005
+  - idea_000007
+  - idea_000011
 role: idea
 value:
   impact: high
@@ -85,19 +88,20 @@ maturity:
   testability_score: 15/15
   evidence_support: 12
   evidence_support_score: 12/15
-  connection_strength: 4
-  connection_strength_score: 4/10
+  connection_strength: 9
+  connection_strength_score: 9/10
   novelty: 10
   novelty_score: 10/10
   feasibility: 15
   feasibility_score: 15/15
   research_potential: 7
   research_potential_score: 7/10
-maturity_score: 88/100
+maturity_score: 93/100
 maturity_level: execution_ready
 next_steps:
   - "Record the result of 吳冠廷's Sakana AI/Fugu application when known."
-  - "Verify the Conductor/Fugu claims against primary sources before citing them as research evidence."
+  - "Verify the Conductor and Trinity paper-level claims against primary sources before citing them as research evidence."
+  - "Use idea_000007 as the scam-research application surface for the learned-conductor pattern."
   - "Check whether the lab hardware can realistically train or fine-tune a 7B conductor under the expected dataset, context length, and RL or policy-search setup."
   - "Define a tiny fixture set with easy, medium, and hard medical/research review tasks using no real patient data."
   - "Compare four baselines: single model, fixed specialist pipeline, fixed self-refine, and conductor policy search."

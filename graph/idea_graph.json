@@ -94,8 +94,8 @@
       "id": "idea_000007",
       "title": "Signal Market for low-cost behavior discovery",
       "status": "execution_ready",
-      "maturity_score": "83/100",
-      "maturity_score_raw": 83,
+      "maturity_score": "92/100",
+      "maturity_score_raw": 92,
       "maturity_level": "execution_ready",
       "tags": [
         "cybersecurity",
@@ -122,7 +122,20 @@
         "query-strategy-generator",
         "search-templates",
         "metadata-only",
-        "research-candidate"
+        "research-candidate",
+        "multi-agent",
+        "learned-orchestration",
+        "conductor",
+        "fugu-style-orchestration",
+        "test-time-scaling",
+        "task-graph",
+        "evaluator-loop",
+        "strategy-learner",
+        "decision-architecture",
+        "workflow-policy-learning",
+        "coordination-cost",
+        "control-loop",
+        "bounded-rationality"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml"
     },
@@ -130,8 +143,8 @@
       "id": "idea_000008",
       "title": "Learned conductor for medical AI research workflows",
       "status": "execution_ready",
-      "maturity_score": "88/100",
-      "maturity_score_raw": 88,
+      "maturity_score": "93/100",
+      "maturity_score_raw": 93,
       "maturity_level": "execution_ready",
       "tags": [
         "multi-agent",
@@ -177,6 +190,27 @@
         "cross-domain"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml"
+    },
+    {
+      "id": "idea_000011",
+      "title": "AI-assisted statement interview question recommendation system",
+      "status": "executing",
+      "maturity_score": "87/100",
+      "maturity_score_raw": 87,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "law-enforcement",
+        "statement-interview",
+        "legal-ai",
+        "langgraph",
+        "hermes-agent",
+        "rag",
+        "auditability",
+        "non-leading-questions",
+        "human-in-the-loop",
+        "local-llm"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml"
     }
   ],
   "edges": [
@@ -210,7 +244,7 @@
       "source": "idea_000001",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.2643,
+      "similarity": 0.2596,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -234,7 +268,7 @@
       "source": "idea_000002",
       "target": "idea_000007",
       "weight": 1.0,
-      "similarity": 0.319,
+      "similarity": 0.3375,
       "shared_tags": [
         "cybersecurity",
         "reviewer-assist"
@@ -242,6 +276,16 @@
       "reasons": [
         "manual_connection",
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000002",
+      "target": "idea_000011",
+      "weight": 1.0,
+      "similarity": 0.0984,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     },
     {
@@ -275,7 +319,7 @@
       "source": "idea_000003",
       "target": "idea_000007",
       "weight": 0.6,
-      "similarity": 0.1441,
+      "similarity": 0.1753,
       "shared_tags": [
         "decision-system"
       ],
@@ -299,7 +343,7 @@
       "source": "idea_000004",
       "target": "idea_000007",
       "weight": 1.0,
-      "similarity": 0.2619,
+      "similarity": 0.2712,
       "shared_tags": [
         "cybersecurity",
         "research-candidate"
@@ -326,7 +370,7 @@
       "source": "idea_000005",
       "target": "idea_000007",
       "weight": 1.0,
-      "similarity": 0.1056,
+      "similarity": 0.1735,
       "shared_tags": [
         "decision-system"
       ],
@@ -339,7 +383,7 @@
       "source": "idea_000005",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.0893,
+      "similarity": 0.0906,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -358,15 +402,60 @@
       ]
     },
     {
+      "source": "idea_000006",
+      "target": "idea_000011",
+      "weight": 1.0,
+      "similarity": 0.0793,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000007",
+      "target": "idea_000008",
+      "weight": 1.0,
+      "similarity": 0.4483,
+      "shared_tags": [
+        "conductor",
+        "learned-orchestration",
+        "multi-agent"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000007",
       "target": "idea_000010",
       "weight": 0.6,
-      "similarity": 0.1871,
+      "similarity": 0.2286,
       "shared_tags": [
         "decision-system"
       ],
       "reasons": [
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000007",
+      "target": "idea_000011",
+      "weight": 1.0,
+      "similarity": 0.2364,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000008",
+      "target": "idea_000011",
+      "weight": 1.0,
+      "similarity": 0.2202,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     },
     {

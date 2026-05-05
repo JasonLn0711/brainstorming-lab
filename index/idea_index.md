@@ -2,8 +2,9 @@
 
 | ID | Title | Maturity | Level | Status | Next Step | Path |
 | --- | --- | ---: | --- | --- | --- | --- |
-| `idea_000008` | Learned conductor for medical AI research workflows | 88/100 | `execution_ready` | `execution_ready` | Record the result of 吳冠廷's Sakana AI/Fugu application when known. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
-| `idea_000007` | Signal Market for low-cost behavior discovery | 83/100 | `execution_ready` | `execution_ready` | Define the SVS metric contract and the minimum fields needed to compute it. | `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml` |
+| `idea_000008` | Learned conductor for medical AI research workflows | 93/100 | `execution_ready` | `execution_ready` | Record the result of 吳冠廷's Sakana AI/Fugu application when known. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
+| `idea_000007` | Signal Market for low-cost behavior discovery | 92/100 | `execution_ready` | `execution_ready` | Draft a tiny Fugu-style conductor fixture for the scam system with six synthetic cases: two obvious cases, two hard negatives, one outlier, and one insufficient-evidence case. | `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml` |
+| `idea_000011` | AI-assisted statement interview question recommendation system | 87/100 | `execution_ready` | `executing` | Install Ollama and pull gpt-oss:20b, then run the MVP-0 CLI without --mock. | `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml` |
 | `idea_000010` | AI-assisted smart mosquito trap | 78/100 | `research_candidate` | `research_candidate` | Review the v1 ESP32 build note and decide whether to buy the minimum parts. | `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml` |
 | `idea_000001` | Healthcare AI triage copilot | 73/100 | `research_candidate` | `research_candidate` | Create a synthetic intake fixture and define reviewer-burden metrics. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
 | `idea_000004` | Anomaly detection research watch | 72/100 | `research_candidate` | `research_candidate` | Define one public or synthetic anomaly fixture and one review packet format. | `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml` |
@@ -21,7 +22,8 @@
 - idea_000004 - Anomaly detection research watch - 72/100 - research_candidate
 - idea_000005 - Workflow optimization feedback loop - 57/100 - structured
 - idea_000006 - OpenClaw personal ops node - 58/100 - structured
-- idea_000007 - Signal Market for low-cost behavior discovery - 83/100 - execution_ready
-- idea_000008 - Learned conductor for medical AI research workflows - 88/100 - execution_ready
+- idea_000007 - Signal Market for low-cost behavior discovery - 92/100 - execution_ready
+- idea_000008 - Learned conductor for medical AI research workflows - 93/100 - execution_ready
 - idea_000009 - Safe Tesla coil insect-trap teaching demo - 65/100 - research_candidate
 - idea_000010 - AI-assisted smart mosquito trap - 78/100 - research_candidate
+- idea_000011 - AI-assisted statement interview question recommendation system - 87/100 - execution_ready

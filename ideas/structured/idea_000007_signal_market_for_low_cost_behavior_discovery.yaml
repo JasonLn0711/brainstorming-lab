@@ -28,6 +28,19 @@ tags:
   - search-templates
   - metadata-only
   - research-candidate
+  - multi-agent
+  - learned-orchestration
+  - conductor
+  - fugu-style-orchestration
+  - test-time-scaling
+  - task-graph
+  - evaluator-loop
+  - strategy-learner
+  - decision-architecture
+  - workflow-policy-learning
+  - coordination-cost
+  - control-loop
+  - bounded-rationality
 status: execution_ready
 problem_statement:
   raw: "Given Track B Threads investment-scam source-arm uncertainty, optimize the selection of high-information-density behavior signals under tight reviewer labor, governance, hard-negative, and aggregate-only constraints."
@@ -42,7 +55,7 @@ problem_statement:
       - "uncertainty preservation"
       - "aggregate-only reporting"
       - "no raw evidence in git"
-summary: "Treat every source arm or signal family as an asset in a Signal Market, score it by behavior information gained per unit of reviewer effort, and upgrade the target project from a record-and-execute workflow into a Research Operating System that can compare batches, evolve signal taxonomy, generate research directions, keep clustering explainable through local sparse vectors, deliberately explore beyond already-seen patterns, and translate exploration tasks into auditable query strategies."
+summary: "Treat every source arm or signal family as an asset in a Signal Market, score it by behavior information gained per unit of reviewer effort, and upgrade the target project from a record-and-execute workflow into a Research Operating System that can compare batches, evolve signal taxonomy, generate research directions, keep clustering explainable through local sparse vectors, deliberately explore beyond already-seen patterns, and translate exploration tasks into auditable query strategies. The Fugu-style upgrade is a learned or searched conductor layer that chooses which modules to run, how much review depth to spend, and when to recurse instead of forcing every scam-research case through one fixed pipeline."
 source_note_zh: "瓶頸不是找更多方法，而是不知道哪一種方法值得長大；下一步是建立會告訴你哪條路值得走的 Signal Market。"
 v2_source_note_zh: "v2 核心是把 repo 從記錄與執行系統，升級成會自己產生方向的研究引擎；v1 問哪裡有 scam，v2 問哪種訊號最值得人類花時間。"
 assumptions:
@@ -60,6 +73,10 @@ assumptions:
   - "The next capability is not a better model; it is an exploration layer that learns where to look for data."
   - "The project has too little old data for a purely retrospective learning loop; the hard missing capability is strategic data discovery."
   - "Self-directed exploration should propose where to look and what to look for, while actual access and adjudication remain in the existing governed review flow."
+  - "Fugu-style orchestration is useful only if the conductor chooses between cheap triage, evidence expansion, hard-negative review, query strategy generation, and report synthesis under explicit cost and review-labor budgets."
+  - "The coordinator must optimize for reviewer burden, uncertainty preservation, and false-confidence control, not raw agent count."
+  - "Recursive retry should be allowed only when it produces an explicit evidence delta, a clearer abstention, or a narrower next test."
+  - "The official Sakana Fugu page supports the system-level orchestration framing, but product benchmark claims still need independent cost-normalized and latency-normalized validation before they become research evidence."
 insights:
   - "Post-level evidence is often too coarse; reply, comment, and interaction traces expose behavior."
   - "Micro-behavior extraction can normalize visually different scams into repeated action units."
@@ -75,6 +92,9 @@ insights:
   - "A system that suggests where to look can expand data strategically while preserving the repo's auditability and low-reviewer-labor design."
   - "The bridge from exploration to execution is query strategy generation: convert an EXP task into search intent, query patterns, structure patterns, filters, and risk controls."
   - "The system is still not collecting data; it is generating a plan for how a governed human or future safe tool should look."
+  - "The useful AI unit is not a single model; for this project, it is a governed review system with a coordinator, workers, evaluators, evidence logs, and stop rules."
+  - "The scam-research version of Fugu-style design is not product magic from a model pool; it is a local control policy over attack simulation, detector review, judge evaluation, hard-negative review, query strategy, and report synthesis."
+  - "The existing AI A / AI B / Judge structure maps cleanly onto Attacker / Detector / Evaluator workers, but the research value comes from the conductor deciding when each role is worth the extra cost."
 research_operating_system_v2:
   thesis: "Upgrade the target repo from workflow, governance, and batch execution into a market plus decision engine that can generate research direction."
   first_principle: "The goal is not scam detection; the goal is to maximize high-value candidate discovery per unit reviewer effort."
@@ -111,6 +131,241 @@ research_operating_system_v2:
         - hypothesis
         - anomaly
         - research_candidate
+fugu_style_orchestration_layer:
+  source_note: "Captured from the 2026-05-05 discussion of Sakana Fugu as an AI orchestration layer and verified against the official Sakana Fugu beta page."
+  first_principle: "The goal is not to run more agents. The goal is to choose the cheapest reliable workflow depth for each scam-research question while preserving evidence boundaries."
+  paradigm_shift: "Move from one model answering everything to a system that decides how multiple specialized models or modules should cooperate."
+  core_definition: "Make the thinking workflow itself learnable, schedulable, and evaluable. The system improves how models are used, not only which model is stronger."
+  decision_architecture_frame:
+    thesis: "Fugu-style architecture is not primarily a model architecture. It is a decision architecture for organizing intelligence under uncertainty, cost, and feedback limits."
+    core_question: "For this task state, who should work, in what order, with what context, under whose review, and when should the system stop?"
+    strategic_choices:
+      - "train a larger model"
+      - "rerun the same model more times"
+      - "build a system that decomposes, assigns, checks, repairs, and stops"
+    chosen_path: "Use decomposition, assignment, evaluation, and repair as the learnable object."
+    research_translation: "The research object is workflow policy learning, not simply prompt engineering or agent count."
+  economic_model:
+    principle: "Division of labor creates quality gains, but coordination can consume those gains."
+    total_value_formula: "total_value = task_quality_gain - coordination_cost - inference_cost - error_propagation_cost"
+    decision_rule: "Use extra workers only when expected quality or safety gain exceeds coordination, inference, and propagation costs."
+    cost_terms:
+      - communication_cost
+      - duplicate_work_cost
+      - context_loss_cost
+      - inter_agent_misunderstanding_cost
+      - budget_overrun_cost
+      - error_propagation_cost
+  policy_learning_formalization:
+    policy: "policy(task_state) -> workflow_action"
+    state:
+      - task
+      - current_answer
+      - failure_signals
+      - evidence_state
+      - risk_level
+      - spent_cost
+      - remaining_budget
+      - reviewer_load
+    action:
+      - select_worker
+      - assign_subtask_prompt
+      - select_context
+      - set_communication_topology
+      - add_parallel_review
+      - recurse_with_named_gap
+      - stop_accept
+      - stop_abstain
+      - park_for_human_review
+    reward:
+      - answer_correctness
+      - evidence_sufficiency
+      - hard_negative_protection
+      - format_validity
+      - cost_control
+      - latency_control
+      - reviewer_burden_reduction
+      - user_decision_value
+    conductor_poster_mapping:
+      - "participating agents"
+      - "subtasks assigned to each agent"
+      - "communication topology between agents"
+  organization_theory_frame:
+    metaphor: "The conductor is a temporary organization designer."
+    routing_examples:
+      simple: "one worker answers directly"
+      medium: "one worker drafts and one worker checks"
+      high_risk: "multiple reviewers plus final judge"
+      high_uncertainty: "explore first, decide later"
+    bounded_rationality_link: "Single agents have limited cognition, so the system uses procedure, hierarchy, review, and stop rules to approximate better decisions."
+  control_theory_frame:
+    open_loop: "input -> model -> output"
+    closed_loop: "input -> plan -> execute -> evaluate -> repair -> output"
+    feedback_signals:
+      - inconsistent_answer
+      - missing_evidence
+      - invalid_format
+      - reasoning_jump
+      - budget_overrun
+      - hard_negative_disagreement
+    control_action: "Adjust the next workflow action based on evaluator-observed deviation."
+  intelligence_formula: "intelligence = model_capability * orchestration_policy * feedback_quality * cost_constraint"
+  minimal_architecture:
+    flow: "User query -> Coordinator -> Task Graph -> Workers -> Evaluator -> Output"
+    coordinator_output_schema:
+      plan:
+        - step: analyze
+          worker: detector
+          reason: "Score known behavior features first."
+        - step: verify
+          worker: hard_negative_reviewer
+          reason: "Check false-positive and legitimacy risk."
+        - step: judge
+          worker: judge
+          reason: "Decide output, recursion, abstention, or park."
+    task_graph_rules:
+      - "The graph is regenerated per case rather than fixed as one linear pipeline."
+      - "Parallel branches are allowed for detector review and hard-negative review when ambiguity is high."
+      - "Back edges are allowed only through a named evaluator finding, such as missing evidence or inconsistency."
+      - "Every added node must declare expected evidence delta, cost, and stop condition."
+    worker_interchangeability: "Workers may be LLMs, scripts, local scoring tools, search-intent generators, or database/report builders; routing should depend on task need, not provider identity."
+  coordinator:
+    role: "Conductor that chooses the workflow, worker mix, recursion depth, and stop condition per task."
+    possible_implementation_paths:
+      - "hand-scored policy table for the first fixture"
+      - "searched orchestration policy over a small action space"
+      - "learned conductor only after enough governed fixture traces exist"
+  worker_pool:
+    - name: "Attack simulator"
+      purpose: "Generate plausible adversarial behavior hypotheses or scam evolution patterns without creating operational abuse instructions."
+    - name: Detector
+      purpose: "Score candidate metadata, sparse behavior features, and signal-family fit."
+    - name: "Hard-negative reviewer"
+      purpose: "Protect legitimate or ambiguous cases from being over-labeled."
+    - name: "Exploration generator"
+      purpose: "Suggest EXP_xxx tasks from SVS gaps, outliers, and underexplored source arms."
+    - name: "Query strategy generator"
+      purpose: "Translate exploration tasks into auditable search intent and risk controls."
+    - name: Judge
+      purpose: "Evaluate whether the workflow produced enough evidence, should recurse, should abstain, or should stop."
+    - name: "Report writer"
+      purpose: "Compress accepted evidence into aggregate-only, reviewer-readable output."
+  routing_policy_sketch:
+    cheap_path: "Known pattern, low ambiguity, sufficient metadata -> detector plus judge only."
+    hard_negative_path: "High reputational or false-positive risk -> detector, hard-negative reviewer, judge."
+    exploration_path: "Low coverage or outlier signal -> exploration generator, query strategy generator, judge."
+    recursive_path: "Judge finds an explicit evidence gap -> conductor selects one more bounded pass with a named purpose."
+    stop_path: "No evidence delta after recursion budget -> abstain or park instead of polishing a weak claim."
+  evaluator_loop:
+    question: "Is the result good enough for this evidence boundary?"
+    retry_triggers:
+      - "low confidence score"
+      - "detector and hard-negative reviewer disagree"
+      - "missing required metadata field"
+      - "claim lacks aggregate-only evidence support"
+      - "judge detects inconsistency between signal family and recommendation"
+    allowed_responses:
+      - "retry with a narrower prompt"
+      - "route to a different worker"
+      - "request one bounded context addition"
+      - "add a hard-negative review branch"
+      - "abstain or park when evidence is insufficient"
+    loop_limits:
+      max_iterations: 3
+      require_named_reason: true
+      require_cost_budget: true
+      require_evidence_delta: true
+      stop_on_raw_evidence_risk: true
+  implementation_layers:
+    layer_1_fixed_pipeline:
+      status: "current baseline"
+      flow: "AI A attack/hypothesis generation -> AI B detection/filtering -> Judge evaluation"
+      goal: "Keep the fixed pipeline as the control group."
+    layer_2_evaluator_loop:
+      status: "next build"
+      flow: "Run fixed pipeline, then let Judge trigger bounded retry/refine/abstain actions."
+      done_condition: "Each retry records trigger, selected action, cost, and outcome."
+    layer_3_dynamic_strategy:
+      status: "research upgrade"
+      flow: "Coordinator chooses whether to add a worker, skip a worker, recurse, or stop based on case type and evidence state."
+      done_condition: "Conductor-selected routing beats fixed pipeline after cost, latency, worker-call, hard-negative, and abstention normalization."
+  design_questions:
+    rerun_trigger: "Use confidence score, consistency check, rule-based missing-field triggers, and hard-negative disagreement."
+    infinite_loop_control: "Set max_iterations=3, cost_limit, raw-evidence stop, and require a named evidence gap for every loop."
+    quality_evaluation: "Combine rule-based schema checks, cross-worker agreement, and external or synthetic fixture truth where available."
+  test_time_scaling_boundary:
+    allowed: "Spend more inference only when the extra pass is tied to a named uncertainty, evidence gap, or review-risk reduction."
+    forbidden: "Unlimited self-reflection loops, crawler expansion, raw evidence storage, or legal fraud determination."
+  mermaid_mind_model: |
+    flowchart TD
+        A[User Task / Problem] --> B[Conductor / Coordinator]
+        B --> C{Task Difficulty / Uncertainty / Risk / Cost Budget}
+        C -->|Simple| D[Direct Answer Agent]
+        C -->|Medium| E[Planner Agent]
+        C -->|Hard| F[Dynamic Multi-Agent Team]
+        E --> E1[Subtask 1]
+        E --> E2[Subtask 2]
+        E --> E3[Subtask 3]
+        F --> F1[Research Agent]
+        F --> F2[Reasoning Agent]
+        F --> F3[Critic Agent]
+        F --> F4[Writer Agent]
+        D --> G[Draft Output]
+        E1 --> G
+        E2 --> G
+        E3 --> G
+        F1 --> H[Shared Working Memory]
+        F2 --> H
+        F3 --> H
+        F4 --> H
+        H --> G
+        G --> I[Evaluator / Judge]
+        I --> J{Good Enough?}
+        J -->|Yes| K[Final Answer]
+        J -->|No| L[Repair Decision]
+        L --> L1[Ask More Context]
+        L --> L2[Change Agent]
+        L --> L3[Rewrite Prompt]
+        L --> L4[Run More Iterations]
+        L --> L5[Stop Due to Budget]
+        L1 --> B
+        L2 --> B
+        L3 --> B
+        L4 --> B
+        L5 --> K
+  smallest_next_test: "Build a tiny 6-case synthetic fixture comparing fixed pipeline versus conductor-selected path: two obvious cases, two hard negatives, one outlier, and one insufficient-evidence case."
+  success_metric: "Conductor path reduces unnecessary worker calls while preserving or improving hard-negative protection, evidence sufficiency, and abstention quality."
+  kill_condition: "If a fixed pipeline matches the conductor after cost, latency, and reviewer-labor normalization, keep the simpler fixed workflow."
+  codex_prompt_minimal_fugu_fixture: |
+    You are implementing the first Minimal Fugu fixture for a governed scam-research system.
+    Goal:
+    Compare a fixed AI A / AI B / Judge pipeline against a conductor-selected workflow.
+    Inputs:
+    - six synthetic, non-sensitive cases:
+      1. obvious scam-like behavior
+      2. obvious scam-like behavior
+      3. hard negative / legitimate ambiguous case
+      4. hard negative / legitimate ambiguous case
+      5. outlier behavior pattern
+      6. insufficient-evidence case
+    Components:
+    - Coordinator: choose workflow nodes and stop condition.
+    - Task Graph: record selected nodes, edges, reasons, cost estimate, and expected evidence delta.
+    - Workers: attack simulator, detector, hard-negative reviewer, exploration generator, query strategy generator, judge, report writer.
+    - Evaluator: decide accept, retry, add worker, abstain, or park.
+    Rules:
+    - Do not use raw platform content.
+    - Do not include PII.
+    - Do not make legal fraud determinations.
+    - Every recursive pass needs a named trigger and evidence delta.
+    - max_iterations = 3.
+    - Track worker_call_count, estimated_cost, latency_proxy, hard_negative_protection, abstention_quality, and evidence_sufficiency.
+    Output:
+    - a fixture YAML schema
+    - a conductor action-space YAML
+    - one dry-run trace for fixed pipeline
+    - one dry-run trace for conductor-selected routing
+    - a comparison table showing whether dynamic routing earned its extra complexity
 v2_critical_capabilities:
   - name: "Problem Normalization Engine"
     purpose: "Convert each candidate into a problem representation so different-looking scams can map to reusable templates."
@@ -1131,6 +1386,18 @@ metrics:
   - query_to_stub_conversion_rate
   - query_pattern_yield_rate
   - query_pattern_retirement_rate
+  - conductor_worker_call_count
+  - workflow_cost_per_accepted_case
+  - unnecessary_worker_call_rate
+  - recursive_pass_success_rate
+  - hard_negative_protection_rate
+  - abstention_quality
+  - coordination_cost
+  - inference_cost
+  - error_propagation_cost
+  - total_workflow_value
+  - policy_action_accuracy
+  - feedback_signal_precision
 evidence:
   - conversation
   - prior-project
@@ -1142,10 +1409,18 @@ evidence:
   - "exploration layer design note from conversation"
   - "self-directed data discovery design note from conversation"
   - "query strategy generator design note from conversation"
+  - "2026-05-05 user note: Sakana Fugu reframes AI from one stronger model to a multi-model orchestration layer, directly matching the scam system's AI A / AI B / Judge structure."
+  - "2026-05-05 user note: Minimal Fugu decomposes into Coordinator, dynamic Task Graph, interchangeable Workers, Evaluator loop, and later Strategy Learner."
+  - "2026-05-05 user note: Fugu-style architecture should be framed as decision architecture and workflow policy learning: organize intelligence through task decomposition, role assignment, communication topology, feedback, and stop conditions."
+  - "Official Sakana Fugu beta page verified on 2026-05-05: Fugu is described as a small model that coordinates pools of frontier foundation models, learns adaptive collaboration patterns, and can use recursive test-time scaling."
+  - "Official Sakana Fugu beta page verified on 2026-05-05: the API-facing product handles collaboration topology, role assignment, and subtask dispatch behind a familiar endpoint."
+  - "Official Conductor poster verified on 2026-05-05: workflows are described as participating agents, assigned subtasks, and communication topology, with RL used to train macro-level multi-agent orchestration."
 connections:
   - idea_000002
   - idea_000004
   - idea_000005
+  - idea_000008
+  - idea_000011
 value:
   impact: high
   feasibility: high
@@ -1154,10 +1429,10 @@ maturity:
   problem_clarity_score: 15/15
   boundary_definition: 10
   boundary_definition_score: 10/10
-  testability: 12
-  testability_score: 12/15
-  evidence_support: 9
-  evidence_support_score: 9/15
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 15
+  evidence_support_score: 15/15
   connection_strength: 10
   connection_strength_score: 10/10
   novelty: 5
@@ -1166,9 +1441,15 @@ maturity:
   feasibility_score: 15/15
   research_potential: 7
   research_potential_score: 7/10
-maturity_score: 83/100
+maturity_score: 92/100
 maturity_level: execution_ready
 next_steps:
+  - "Draft a tiny Fugu-style conductor fixture for the scam system with six synthetic cases: two obvious cases, two hard negatives, one outlier, and one insufficient-evidence case."
+  - "Write the fixture schema, conductor action-space YAML, and dry-run traces described in codex_prompt_minimal_fugu_fixture."
+  - "Add total_workflow_value scoring to the fixture: task_quality_gain minus coordination_cost, inference_cost, and error_propagation_cost."
+  - "Represent the conductor as policy(task_state) -> workflow_action with logged state, action, reward, and stop reason."
+  - "Define the conductor action space: choose cheap triage, hard-negative review, exploration/query-strategy generation, recursive re-review, report synthesis, abstain, or park."
+  - "Compare fixed AI A / AI B / Judge flow against conductor-selected routing under cost, latency, worker-call count, hard-negative protection, and abstention quality."
   - "Define the SVS metric contract and the minimum fields needed to compute it."
   - "Turn the v2 module map into an implementation plan for the meta-threads repo without storing raw Threads content."
   - "Reframe Track B batch 0003 as a controlled three-variant signal-combination experiment."
@@ -1188,6 +1469,8 @@ next_steps:
 source:
   - conversation
   - prior-project
+  - "https://sakana.ai/fugu-beta/"
+  - "https://sakana.ai/assets/fugu-beta/conductor_poster.pdf"
 normalization_status: validated
 role: idea
 maturity_action: "generate experiment plan"

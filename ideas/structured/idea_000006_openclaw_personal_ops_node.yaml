@@ -35,6 +35,7 @@ insights:
   boundary, and rollback.
 connections:
 - idea_000005
+- idea_000011
 value:
   impact: high
   feasibility: medium

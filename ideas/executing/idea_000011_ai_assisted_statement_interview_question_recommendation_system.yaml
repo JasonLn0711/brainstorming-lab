@@ -1,0 +1,209 @@
+id: idea_000011
+title: "AI-assisted statement interview question recommendation system"
+created_at: 2026-05-05
+type: project
+tags:
+  - law-enforcement
+  - statement-interview
+  - legal-ai
+  - langgraph
+  - hermes-agent
+  - rag
+  - auditability
+  - non-leading-questions
+  - human-in-the-loop
+  - local-llm
+status: executing
+problem_statement:
+  raw: "Given police statement interviews with victims, optimize the next-question recommendation workflow under constraints of non-leading questioning, legal auditability, privacy, officer control, SOP grounding, and local or controlled deployment."
+  normalized: "Given victim statement interview workflows, optimize legally safe next-question recommendation under constraints of non-leading wording, auditability, privacy, human officer control, SOP/RAG grounding, and bounded local deployment."
+  structure:
+    given: "victim statement interview workflows"
+    optimize: "legally safe next-question recommendation"
+    constraints:
+      - "non-leading wording"
+      - auditability
+      - privacy
+      - "human officer control"
+      - "SOP and RAG grounding"
+      - "bounded local deployment"
+summary: "A system concept for helping officers choose the next reasonable victim-interview question from the current statement, missing legal elements, SOP/RAG references, and safety checks. The system should be an auditable workflow, not a free-chat investigation agent."
+source_note_zh: "這個系統應定義為可稽核的 AI 偵詢輔助 workflow；Hermes 可以輔助工具執行與技能化，但主流程必須由 LangGraph 或等價的狀態機鎖住。"
+first_principle:
+  scarce_resource: "stable, auditable real-model behavior on the smallest Extract -> Question loop"
+  not_the_core:
+    - Docker
+    - UI
+    - RAG service
+    - Kafka
+    - "multi-model routing"
+    - "complete legal workflow before real-model proof"
+  core_proof: "The same GPT-OSS 20B, constrained by LangGraph node prompts and SQLite audit, can repeatedly produce neutral, necessary, reviewable next-question suggestions."
+  decision_rule: "Do not add Missing/Safety/RAG/UI/Docker until real gpt-oss:20b returns valid JSON for the sample case and audit rows with prompt/version/runtime/hash metadata."
+  human_boundary: "The system suggests; the officer adopts, modifies, skips, or flags."
+assumptions:
+  - "The useful product is a next-question recommendation system, not an autonomous investigator."
+  - "The officer remains the decision maker: every suggested question can be adopted, edited, or skipped."
+  - "Each output must carry a reason, missing-element target, supporting SOP/RAG source, and risk warning."
+  - "Non-leading wording, over-inference checks, privacy minimization, and audit logging are core requirements, not later polish."
+  - "Hermes Agent is useful as a tool/skill/memory execution environment, but should not own the legal workflow state in the MVP."
+  - "LangGraph or an equivalent deterministic graph should own node order, state transitions, retries, and audit boundaries."
+  - "A single local model such as gpt-oss-20b may be enough for MVP only if structured output, tool calling, latency, and legal-safety checks pass on a controlled fixture."
+  - "Persistent memory must be disabled, isolated, or tightly scoped for case work unless a formal retention and privacy policy exists."
+  - "No sensitive raw case evidence should be stored in this brainstorming repo."
+evidence:
+  - "User conversation on 2026-05-05 describing a Criminal Investigation Bureau-adjacent statement-interview system concept."
+  - "User-provided architecture sketch: LangGraph as orchestrator, Hermes as tool executor, RAG for laws/SOP/question bank, rule-based safety review, Kafka excluded from MVP."
+  - "Official Hermes Agent documentation verified on 2026-05-05: Hermes has toolsets for web, terminal/files, browser, orchestration, memory, cron, messaging, MCP, and code execution."
+  - "Official Hermes Agent developer docs verified on 2026-05-05: AIAgent handles prompt assembly, provider resolution, model calls, tool dispatch, compression, persistence, and memory flushing."
+  - "Official Hermes Agent memory docs verified on 2026-05-05: MEMORY.md and USER.md are injected as frozen snapshots at session start, and session search persists conversations in SQLite/FTS5."
+  - "OpenAI/Hugging Face gpt-oss-20b model card verified on 2026-05-05: 21B parameters, 3.6B active parameters, Harmony format requirement, agentic/tool-use support, and MXFP4 running within 16GB memory."
+baseline:
+  - "Manual officer interview using SOP checklist only."
+  - "Static checklist or rule form that does not read the current statement."
+  - "Free-form chatbot that directly advises the officer without fixed workflow or audit trail."
+  - "LangGraph-only pipeline with no external agent executor."
+  - "Hermes-only autonomous agent with broad tools and memory, used as the main controller."
+metrics:
+  - "Missing-element coverage: percentage of legally relevant gaps correctly identified on synthetic cases."
+  - "Non-leading question pass rate judged by legal/SOP reviewers."
+  - "Unsupported-rationale rate: outputs that cite no valid SOP/RAG support."
+  - "Over-inference rate: outputs that assume facts not present in the current statement."
+  - "Officer adoption, edit, and skip rates."
+  - "Latency per recommendation under local model runtime."
+  - "Audit completeness: state, prompt version, retrieved sources, rule-check result, and final officer action are recorded."
+  - "Privacy safety: no raw sensitive case evidence written outside approved storage."
+insights:
+  - "The first-principle boundary is legal auditability, not agent autonomy."
+  - "Hermes should be treated as an execution substrate: tool registry, skill loading, memory/session machinery, subagents, and platform gateway."
+  - "Hermes is weaker as the top-level controller for this domain because its strengths include persistent learning and broad autonomy, while the statement workflow needs constrained, reproducible state transitions."
+  - "LangGraph should own the interview-state object, including extracted facts, case type, missing elements, retrieval IDs, candidate questions, safety-review results, and human feedback."
+  - "Hermes can run bounded tasks such as RAG lookup, question-generation skill execution, fixture-batch evaluation, or report synthesis behind narrow tool permissions."
+  - "The key design move is to make every candidate question answer a contract: question text, target missing element, evidence source, non-leading rationale, risk flags, and stop/ask-human condition."
+  - "A free-chat interface is actively risky here because it hides state, prompts, retrieval source boundaries, and legal safety checks."
+  - "Kafka should stay out of the MVP unless ASR streaming, multi-station event flow, or distributed services become real requirements."
+connections:
+  - idea_000002
+  - idea_000006
+  - idea_000007
+  - idea_000008
+role: idea
+value:
+  impact: high
+  feasibility: medium
+architecture_decision:
+  system_name: "AI-Assisted Statement Interview Question Recommendation System"
+  thesis: "Build a controlled workflow for next-question recommendation, not an autonomous legal/investigative chatbot."
+  recommended_split:
+    langgraph: "Own workflow state, node ordering, retries, traceability, guardrails, and human-feedback transitions."
+    hermes: "Run bounded tool/skill tasks such as RAG lookup, question-generation execution, fixture evaluation, and report packaging."
+    langchain: "Use sparingly for LLM wrappers, retrievers, embeddings, and RAG plumbing."
+    rag: "Ground laws, SOPs, interview templates, and approved question examples."
+    rule_engine: "Hard-check non-leading wording, required fields, source citation, privacy flags, and unsupported inference."
+    database: "Use SQLite or Postgres for state and audit log."
+    kafka: "Exclude from MVP; revisit only for ASR streaming, multi-precinct service events, or distributed scaling."
+  mvp_nodes:
+    - "Input Intake Node"
+    - "Fact Extraction Node"
+    - "Case Type Classification Node"
+    - "Missing Element Analysis Node"
+    - "Hermes-bounded Question Generation Node"
+    - "Safety and Legal Review Node"
+    - "Output Ranking Node"
+    - "Human Feedback Node"
+hermes_understanding:
+  what_it_is: "Nous Research Hermes Agent is a self-hosted agent runtime with prompt assembly, model-provider resolution, tool dispatch, persistent memory, skills, session search, cron, messaging gateway, MCP/plugin integration, and subagent delegation."
+  how_it_works_in_plain_terms:
+    - "It builds an effective system prompt from identity, memory, user profile, skills, context files, tool-use guidance, and model-specific instructions."
+    - "It sends the task to a configured model/provider, receives tool calls, and dispatches registered tools through its tool registry."
+    - "It can persist sessions in SQLite, search old sessions with FTS5, and keep compact curated memory in MEMORY.md and USER.md."
+    - "It can load skills on demand as procedural memory, including agent-created or externally installed SKILL.md workflows."
+    - "It can delegate tasks to subagents with isolated context and selected toolsets."
+    - "It can run across CLI, messaging gateways, cron jobs, and platform integrations."
+  risk_for_statement_system:
+    - "Broad memory and session persistence can conflict with sensitive case-retention requirements."
+    - "Too many enabled tools can make behavior harder to certify."
+    - "Autonomous skill creation is useful for developer workflows but risky inside regulated legal workflows unless disabled or reviewed."
+    - "Case-specific prompt/context compression may lose legally relevant detail unless the legal state is stored outside the conversational history."
+  safe_usage_pattern:
+    - "Create a dedicated Hermes profile or sandbox for development only."
+    - "Expose only narrow tools needed by the node: retriever, LLM generation, schema validation, and logging."
+    - "Disable or isolate long-term memory for real or sensitive case material."
+    - "Have LangGraph pass structured state into Hermes and require structured JSON output back."
+    - "Keep final safety checks outside Hermes."
+question_output_contract:
+  required_fields:
+    - candidate_question
+    - target_missing_element
+    - why_this_question_now
+    - retrieved_sources
+    - non_leading_check
+    - privacy_or_sensitivity_flag
+    - unsupported_inference_flag
+    - officer_action_options
+  forbidden_behavior:
+    - "State facts not present in the interview or retrieved source."
+    - "Ask leading questions that imply the desired answer."
+    - "Produce legal conclusions as if the AI decided the case."
+    - "Store raw case evidence outside the approved audit/state store."
+execution:
+  repo: /Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/statement-interview-question-mvp
+  state: "MVP-0 scaffold running with mock LLM and prompt package v0.1; real GPT-OSS 20B blocked until Ollama is installed and gpt-oss:20b is pulled."
+  mvp_0_scope: "Transcript -> Extract Node -> Question Node -> Result"
+  implemented:
+    - "Standalone git repo with README, AGENTS, pyproject, package code, tests, and scripts."
+    - "Ollama JSON client for gpt-oss:20b."
+    - "Scripted mock client for no-model demos and tests."
+    - "SQLite audit log with run id, step, input, output, timestamp, model, runtime, prompt name, prompt version, input hash, and output hash."
+    - "File-backed prompt package v0.1 under app/prompts/."
+    - "JSON schemas under app/schemas/."
+    - "Local Markdown knowledge files under knowledge/."
+    - "Investment-scam sample case under tests/sample_cases/."
+    - "Extract Node using 01_extract_facts.md."
+    - "Question Node using 04_generate_questions.md."
+    - "Two-node LangGraph pipeline."
+    - "CLI demo."
+    - "Sample-case runner."
+    - "FastAPI health and recommend endpoints."
+  validation:
+    - "Installed LangGraph/FastAPI/pytest into repo-local .venv."
+    - "pytest passed: 5 tests."
+    - "Mock CLI demo returned three next-question recommendations."
+    - "Mock sample-case runner returned three next-question recommendations."
+    - "Sample audit rows include prompt name, prompt package version, runtime, input hash, and output hash."
+    - "FastAPI /health and /recommend with mock=true returned OK."
+  blocked:
+    - "ollama CLI not found on this machine, so real gpt-oss:20b execution was not started."
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 8
+  connection_strength_score: 8/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 87/100
+maturity_level: execution_ready
+next_steps:
+  - "Install Ollama and pull gpt-oss:20b, then run the MVP-0 CLI without --mock."
+  - "Add the remaining five synthetic no-real-victim-data fixtures: one more obvious case, two missing-element cases, one hard-negative/non-leading trap, and one insufficient-evidence case."
+  - "Add Missing Node and Safety Node only after MVP-0 real-model output is stable."
+  - "Tighten the Question Output Contract JSON Schema after the first real gpt-oss:20b run."
+source:
+  - conversation
+  - "https://hermes-agent.nousresearch.com/docs/developer-guide/architecture"
+  - "https://hermes-agent.nousresearch.com/docs/developer-guide/agent-loop/"
+  - "https://hermes-agent.nousresearch.com/docs/user-guide/features/tools/"
+  - "https://hermes-agent.nousresearch.com/docs/user-guide/features/memory/"
+  - "https://huggingface.co/openai/gpt-oss-20b"
+maturity_action: "generate experiment plan"
+normalization_status: validated
