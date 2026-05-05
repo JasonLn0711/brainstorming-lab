@@ -8,6 +8,9 @@ tags:
   - sensing
   - safety
   - side-project
+  - decision-system
+  - software-architecture
+  - cross-domain
 status: research_candidate
 problem_statement:
   raw: "Given mosquitoes are weak targets for open Tesla coil fly-trap geometry, design a smarter mosquito trap as a mosquito decision system that senses conditions, predicts active periods, adjusts attraction, confirms targets, captures safely, and learns from outcomes."
@@ -24,13 +27,14 @@ problem_statement:
       - "energy use"
       - noise
       - "measurable benefit over simple commercial traps"
-summary: "Design an adaptive AIoT mosquito trapping system that improves on always-on commercial lamps by using environment sensing, acoustic or vision confirmation, dynamic attraction control, safe fan-assisted capture, and outcome logging. The first usable version should be a low-voltage v1 with rules, fan capture, and data logging; AI detection comes after baseline operation is stable."
+summary: "Design an adaptive AIoT mosquito trapping system that improves on always-on commercial lamps by using environment sensing, acoustic or vision confirmation, dynamic attraction control, safe fan-assisted capture, and outcome logging. The first usable version should be a low-voltage v1 with rules, fan capture, and data logging; AI detection comes after baseline operation is stable. The hardware trap is only the first embodiment: the reusable idea is a sense-score-act-log decision loop that can transfer into software systems, workflow automation, public-health analytics, and other adaptive control problems."
 assumptions:
   - "Mosquito effectiveness depends more on lure, contact density, airflow, and dwell time than on visually dramatic arcs."
   - "AI is useful for detection, counting, false-positive filtering, and experiment measurement, not for bypassing electrical safety."
   - "The first test can use public or synthetic video/proxy targets before any live-insect or energized hardware experiment."
   - "The useful upgrade over a basic lamp is adaptive control: run strong attraction only when environmental and target signals justify it."
   - "Sound and camera classifiers are research hypotheses until tested against dust, fan noise, other insects, and room lighting changes."
+  - "The cross-domain value is the decision-system pattern, not the mosquito hardware alone."
 evidence:
   - conversation
   - "fly-versus-mosquito mechanism comparison"
@@ -70,6 +74,7 @@ insights:
   - "For a beginner-facing build, explain ESP32 as a tiny low-power connected controller for reading sensors and controlling lights, fans, and simple automation, not as a Linux computer."
   - "The v1 success target is a stable sensing-control loop, not high mosquito capture volume."
   - "Keep UV or purple-light attraction as a second-stage add-on; first prove ESP32 sensing and fan actuation."
+  - "This should not be framed as only a hardware idea. It can generalize into software policies that sense context, decide when to act, minimize wasted runtime, and log outcomes for later learning."
 connections:
   - idea_000009
 role: idea
@@ -89,14 +94,30 @@ maturity:
   connection_strength_score: 2/10
   novelty: 8
   novelty_score: 8/10
-  feasibility: 11
-  feasibility_score: 11/15
+  feasibility: 15
+  feasibility_score: 15/15
   research_potential: 7
   research_potential_score: 7/10
-maturity_score: 74/100
+maturity_score: 78/100
 maturity_level: research_candidate
 research_question: "Compared with an always-on commercial mosquito lamp, does adaptive sensing plus dynamic attraction improve capture rate, energy per capture, false attraction, runtime, and nighttime noise?"
 system_design:
+  transferable_pattern:
+    core_loop: "sense -> score -> decide -> actuate -> log -> compare against baseline"
+    reusable_question: "When should a system switch from passive observation to active intervention?"
+    software_extensions:
+      - "adaptive notification or reminder timing"
+      - "workflow automation that runs only when context signals justify it"
+      - "edge-device runtime policy that reduces wasted energy"
+      - "public-health or building-management analytics over sensor logs"
+      - "software-agent routing that gates expensive actions behind evidence scores"
+      - "research benchmark comparing always-on policies with adaptive policies"
+    non_hardware_artifacts:
+      - "decision policy"
+      - "logging schema"
+      - "baseline comparison protocol"
+      - "simulation harness"
+      - "dashboard or report only after the data loop exists"
   hardware_decision:
     decision_rule: "Choose the controller from the required sensing and inference, not from maximum compute."
     esp32_primer:

@@ -25,31 +25,6 @@ merge_candidate_0001:
 merge_candidate_0002:
   candidate_id: merge_candidate_0002
   ideas:
-    - idea_000009
-    - idea_000010
-  merge_type: cluster_merge
-  merge_score: 63/100
-  confidence: medium
-  reason:
-    - "shared tags: hardware, safety, side-project"
-    - "manual connection exists"
-    - "roles or methods are complementary"
-  recommended_action: create_cluster
-  decision: suggest_cluster
-  subscores:
-    normalized_problem_similarity: 4/25
-    semantic_similarity: 6/15
-    tag_overlap: 10/10
-    complementary_value: 18/20
-    evidence_alignment: 10/10
-    complexity_control: 15/20
-  shared_tags:
-    - hardware
-    - safety
-    - side-project
-merge_candidate_0003:
-  candidate_id: merge_candidate_0003
-  ideas:
     - idea_000001
     - idea_000002
   merge_type: cluster_merge
@@ -71,8 +46,8 @@ merge_candidate_0003:
   shared_tags:
     - ai-triage
     - evidence-routing
-merge_candidate_0004:
-  candidate_id: merge_candidate_0004
+merge_candidate_0003:
+  candidate_id: merge_candidate_0003
   ideas:
     - idea_000003
     - idea_000005
@@ -96,6 +71,31 @@ merge_candidate_0004:
     - decision-system
     - planning-bridge
     - workflow
+merge_candidate_0004:
+  candidate_id: merge_candidate_0004
+  ideas:
+    - idea_000009
+    - idea_000010
+  merge_type: cluster_merge
+  merge_score: 58/100
+  confidence: low
+  reason:
+    - "shared tags: hardware, safety, side-project"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 4/25
+    semantic_similarity: 6/15
+    tag_overlap: 10/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - hardware
+    - safety
+    - side-project
 merge_candidate_0005:
   candidate_id: merge_candidate_0005
   ideas:

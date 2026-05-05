@@ -37,6 +37,10 @@
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 88/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
+## cross-domain
+
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
 ## cybersecurity
 
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
@@ -52,6 +56,7 @@
 - `idea_000003` - Decision load scheduler (`structured`, 56/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 83/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## embedding-discovery
 
@@ -94,7 +99,7 @@
 ## hardware
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## healthcare
 
@@ -126,7 +131,7 @@
 
 ## mosquito-control
 
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## multi-agent
 
@@ -182,7 +187,7 @@
 ## safety
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## scam-research
 
@@ -198,16 +203,20 @@
 
 ## sensing
 
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## side-project
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 74/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## signal-market
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 83/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## software-architecture
+
+- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## workflow
 

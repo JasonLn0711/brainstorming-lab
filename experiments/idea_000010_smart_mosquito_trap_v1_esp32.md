@@ -5,6 +5,16 @@ Canonical idea: `idea_000010` - AI-assisted smart mosquito trap
 Status: draft experiment note. This is a low-voltage sensing and fan-control
 prototype, not a high-voltage trap and not a capture-efficacy claim.
 
+This v1 hardware build is one embodiment of a broader software/control idea:
+
+```text
+sense context -> score action value -> act only when justified -> log outcome
+```
+
+The same pattern could later become a software policy, simulation harness,
+analytics workflow, or adaptive agent-routing rule. The hardware trap is useful
+because it makes the loop measurable in the physical world.
+
 ## Goal
 
 Build the first version that actually moves:

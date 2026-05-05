@@ -163,15 +163,18 @@
       "id": "idea_000010",
       "title": "AI-assisted smart mosquito trap",
       "status": "research_candidate",
-      "maturity_score": "74/100",
-      "maturity_score_raw": 74,
+      "maturity_score": "78/100",
+      "maturity_score_raw": 78,
       "maturity_level": "research_candidate",
       "tags": [
         "hardware",
         "mosquito-control",
         "sensing",
         "safety",
-        "side-project"
+        "side-project",
+        "decision-system",
+        "software-architecture",
+        "cross-domain"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml"
     }
@@ -281,6 +284,18 @@
       ]
     },
     {
+      "source": "idea_000003",
+      "target": "idea_000010",
+      "weight": 0.6,
+      "similarity": 0.1702,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000004",
       "target": "idea_000007",
       "weight": 1.0,
@@ -331,10 +346,34 @@
       ]
     },
     {
+      "source": "idea_000005",
+      "target": "idea_000010",
+      "weight": 0.6,
+      "similarity": 0.1622,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000007",
+      "target": "idea_000010",
+      "weight": 0.6,
+      "similarity": 0.1871,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000009",
       "target": "idea_000010",
       "weight": 1.0,
-      "similarity": 0.4105,
+      "similarity": 0.4083,
       "shared_tags": [
         "hardware",
         "safety",
