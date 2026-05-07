@@ -30,6 +30,25 @@ normalization_status: normalized
 If deterministic rules cannot infer the structure confidently,
 `normalization_status` is set to `needs_review`.
 
+## Friction-First Gate
+
+Before treating a technique impulse as a mature idea, name the friction that
+created the question. Acceptable friction sources include implementation,
+bounded experiments, operations, field observation, lecture-time mental
+execution, and paper-to-workflow simulation.
+
+Then separate:
+
+- problem: the real bottleneck, cost, risk, or blocked transformation
+- symptom: the visible pain
+- tool: a possible method or technology
+- metric: the measurement proxy
+- constraint: the boundary that shapes the answer
+
+If the idea cannot name a bottleneck and a smallest falsifiable test, keep it as
+a lower-maturity spark or structured note instead of promoting it because the
+tool sounds exciting.
+
 ## Examples
 
 AI triage:

@@ -112,6 +112,9 @@ Do not add a rule just because an idea is exciting. Add a rule when it prevents 
 - Use `scripts/normalize_problem.py` and `scripts/score_maturity.py` before weekly review or research-candidate generation.
 - Use `scripts/weekly_review.py` as the adaptive weekly decision engine; it mixes exploitation, novelty exploration, and controlled randomness.
 - Use `scripts/link_ideas.py` for bidirectional links instead of editing only one file.
+- Before promoting a tool-shaped idea, capture at least one friction source: implementation, experiment, operation, field observation, lecture-time mental execution, or paper-to-workflow simulation.
+- Separate problem, symptom, tool, metric, and constraint before raising maturity for technique excitement.
+- The smallest next test should confirm, revise, or kill a bottleneck hypothesis, not only try a tool.
 - Planning sync must remain short: title, ID, status, maturity score, next test, canonical path, and capacity note only.
 - Feedback from planning must come from explicit Idea OS marker blocks; do not infer feedback from free-form daily-note prose.
 
