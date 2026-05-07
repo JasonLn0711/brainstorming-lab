@@ -11,6 +11,8 @@ from idea_os.graphing import build_graph
 from idea_os.indexer import generate_indexes
 from idea_os.merge import detect_merge_candidates, merge_decision
 from idea_os.models import classify_score, score_idea, validate_idea
+from idea_os.paper_lab import EXPECTED_MARKDOWN_FILES, validate_paper_lab
+from idea_os.paper_shortlist import validate_shortlists
 from idea_os.planning import insert_or_replace_block, render_today_block
 from idea_os.problem import normalize_idea_problem
 from idea_os.research_engine import generate_research_candidates
@@ -318,6 +320,138 @@ idea_000001:
         self.assertIn("Experiment result: Useful signal", updated["insights"])
         self.assertIn("maturity_score", updated)
 
+    def test_weekly_paper_lab_validation(self) -> None:
+        paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-agent-memory"
+        paper_dir.mkdir(parents=True, exist_ok=True)
+        save_yaml(paper_dir / "paper.yaml", self._paper_record())
+        self._write_expected_paper_markdown(paper_dir)
+
+        self.assertEqual(validate_paper_lab(self.root), [])
+
+        (paper_dir / "07_scoring_report.md").unlink()
+        errors = validate_paper_lab(self.root)
+        self.assertTrue(any("missing 07_scoring_report.md" in error for error in errors))
+        self._write_expected_paper_markdown(paper_dir)
+
+        (paper_dir / "06_research_idea_seed.md").unlink()
+        errors = validate_paper_lab(self.root)
+        self.assertTrue(any("missing 06_research_idea_seed.md" in error for error in errors))
+
+    def test_weekly_paper_lab_requires_recomputed_connections_and_synthesis(self) -> None:
+        paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-agent-memory"
+        paper_dir.mkdir(parents=True, exist_ok=True)
+        bad = self._paper_record()
+        bad["idea_connections"][0]["connection_strength"]["score"] = 99
+        bad["synthesis_assessment"]["synthesis_score"] = 19
+        save_yaml(paper_dir / "paper.yaml", bad)
+        self._write_expected_paper_markdown(paper_dir)
+
+        errors = validate_paper_lab(self.root)
+        self.assertTrue(any("connection_strength.score must be 100" in error for error in errors))
+        self.assertTrue(any("synthesis_assessment.synthesis_score must be 20" in error for error in errors))
+
+    def test_check_paper_lab_script_reports_invalid_record(self) -> None:
+        paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-invalid"
+        paper_dir.mkdir(parents=True, exist_ok=True)
+        bad = self._paper_record()
+        bad["reproduction_level"] = {"level": 9}
+        save_yaml(paper_dir / "paper.yaml", bad)
+        self._write_expected_paper_markdown(paper_dir)
+
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(REPO / "scripts" / "check_paper_lab.py"),
+                "--root",
+                str(self.root),
+            ],
+            capture_output=True,
+            text=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("reproduction_level.level", result.stdout)
+
+    def test_weekly_paper_shortlist_validation(self) -> None:
+        shortlist_dir = self.root / "weekly-paper-lab" / "shortlists"
+        shortlist_dir.mkdir(parents=True, exist_ok=True)
+        save_yaml(shortlist_dir / "2026-W19.yaml", self._shortlist_record())
+
+        self.assertEqual(validate_shortlists(self.root), [])
+
+        bad = self._shortlist_record()
+        bad["candidates"][0]["candidate_score"] = 100
+        save_yaml(shortlist_dir / "2026-W19.yaml", bad)
+        errors = validate_shortlists(self.root)
+        self.assertTrue(any("candidate_score must be 99" in error for error in errors))
+
+    def test_weekly_paper_shortlist_rejects_previously_selected_item(self) -> None:
+        paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-selected-paper"
+        paper_dir.mkdir(parents=True, exist_ok=True)
+        selected = self._paper_record()
+        selected["paper_id"] = "2026-W19-selected-paper"
+        selected["week"] = "2026-W19"
+        selected["title"] = "Already Selected Research Essay"
+        selected["source_urls"] = ["https://example.com/already-selected"]
+        save_yaml(paper_dir / "paper.yaml", selected)
+
+        shortlist_dir = self.root / "weekly-paper-lab" / "shortlists"
+        shortlist_dir.mkdir(parents=True, exist_ok=True)
+        later = self._shortlist_record()
+        later["week"] = "2026-W20"
+        later["generated_at"] = "2026-05-14"
+        later["candidates"][0]["title"] = "Fresh wrapper around old selection"
+        later["candidates"][0]["evidence_sources"]["paper_url"] = "https://example.com/already-selected?utm_source=test"
+        save_yaml(shortlist_dir / "2026-W20.yaml", later)
+
+        errors = validate_shortlists(self.root)
+        self.assertTrue(any("already selected before" in error for error in errors))
+
+    def test_current_week_selected_record_does_not_block_own_shortlist(self) -> None:
+        paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-selected-paper"
+        paper_dir.mkdir(parents=True, exist_ok=True)
+        selected = self._paper_record()
+        selected["paper_id"] = "paper_1"
+        selected["week"] = "2026-W19"
+        selected["title"] = "Candidate paper_1"
+        selected["source_urls"] = ["https://example.com/paper_1"]
+        save_yaml(paper_dir / "paper.yaml", selected)
+
+        shortlist_dir = self.root / "weekly-paper-lab" / "shortlists"
+        shortlist_dir.mkdir(parents=True, exist_ok=True)
+        save_yaml(shortlist_dir / "2026-W19.yaml", self._shortlist_record())
+
+        self.assertEqual(validate_shortlists(self.root), [])
+
+    def test_weekly_paper_shortlist_rejects_duplicate_candidates(self) -> None:
+        shortlist_dir = self.root / "weekly-paper-lab" / "shortlists"
+        shortlist_dir.mkdir(parents=True, exist_ok=True)
+        bad = self._shortlist_record()
+        bad["candidates"][1]["evidence_sources"]["paper_url"] = bad["candidates"][0]["evidence_sources"]["paper_url"]
+        save_yaml(shortlist_dir / "2026-W19.yaml", bad)
+
+        errors = validate_shortlists(self.root)
+        self.assertTrue(any("duplicates another candidate in this shortlist" in error for error in errors))
+
+    def test_check_paper_shortlist_script_reports_score_mismatch(self) -> None:
+        shortlist_dir = self.root / "weekly-paper-lab" / "shortlists"
+        shortlist_dir.mkdir(parents=True, exist_ok=True)
+        bad = self._shortlist_record()
+        bad["candidates"][0]["scores"]["rtx5080_feasibility"]["score"] = 19
+        save_yaml(shortlist_dir / "2026-W19.yaml", bad)
+
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(REPO / "scripts" / "check_paper_shortlist.py"),
+                "--root",
+                str(self.root),
+            ],
+            capture_output=True,
+            text=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("scores.rtx5080_feasibility.score must be 20", result.stdout)
+
     def test_malformed_yaml_is_reported_by_cli(self) -> None:
         bad = self.root / "ideas" / "raw" / "bad.yaml"
         bad.write_text("id: bad\n  broken: true\n", encoding="utf-8")
@@ -354,6 +488,348 @@ idea_000001:
         idea["next_steps"] = ["Run a bounded synthetic fixture experiment within one week."]
         score_idea(idea)
         return idea
+
+    def _write_expected_paper_markdown(self, paper_dir: Path) -> None:
+        for filename in EXPECTED_MARKDOWN_FILES:
+            if filename == "07_scoring_report.md":
+                (paper_dir / filename).write_text(
+                    "\n".join(
+                        [
+                            "# Scoring Report",
+                            "",
+                            "## Shortlist Triage Scoring",
+                            "",
+                            "Candidate score and weekly pick score are recomputed from fixed evidence fields.",
+                            "",
+                            "## Candidate Selection Explanation",
+                            "",
+                            "The selected candidate is preferred because it supports a bounded reproduction loop.",
+                            "",
+                            "## Idea Connection Scoring",
+                            "",
+                            "Connection scores are recomputed from listed overlaps, methods, metrics, and tests.",
+                            "",
+                            "## Synthesis Scoring",
+                            "",
+                            "Synthesis score is recomputed from transferable method and fixture evidence.",
+                            "",
+                            "## Evidence Gaps And Overrides",
+                            "",
+                            "Unknown evidence is not guessed and contributes zero.",
+                            "",
+                        ]
+                    ),
+                    encoding="utf-8",
+                )
+            else:
+                (paper_dir / filename).write_text(f"# {filename}\n", encoding="utf-8")
+
+    def _shortlist_record(self) -> dict:
+        return {
+            "rubric_version": "paper_lab_rubric_v1",
+            "week": "2026-W19",
+            "cycle_slot": "main_a",
+            "generated_at": "2026-05-07",
+            "candidates": [
+                self._shortlist_candidate("paper_1", True, 99, 99.0),
+                self._shortlist_candidate("paper_2", False, 1, 1.0),
+                self._shortlist_candidate("paper_3", False, 1, 1.0),
+            ],
+        }
+
+    def _shortlist_candidate(self, paper_id: str, selected: bool, candidate_score: int, pick_score: float) -> dict:
+        if selected:
+            scores = self._strong_shortlist_scores()
+            selection_reason = "Best bounded paper for this week's reproduction and research-question loop."
+            rejected_reason = ""
+        else:
+            scores = self._weak_shortlist_scores()
+            selection_reason = ""
+            rejected_reason = "Rejected because evidence does not support a bounded reproduction this week."
+        return {
+            "paper_id": paper_id,
+            "title": f"Candidate {paper_id}",
+            "selected": selected,
+            "evidence_sources": {
+                "paper_url": f"https://example.com/{paper_id}",
+                "code_url": "",
+                "dataset_url": "",
+                "hf_trending_url": "",
+                "openalex_url": "",
+                "checked_at": "2026-05-07",
+            },
+            "scores": scores,
+            "candidate_score": candidate_score,
+            "weekly_pick_score": pick_score,
+            "selection_reason": selection_reason,
+            "rejected_reason": rejected_reason,
+        }
+
+    def _strong_shortlist_scores(self) -> dict:
+        return {
+            "recency_discussion": self._dimension(
+                20,
+                {
+                    "published_within_30_days": True,
+                    "published_within_90_days": True,
+                    "hf_trending_present": True,
+                    "github_stars_100_plus": True,
+                    "github_stars_500_plus": True,
+                    "social_discussion_present": True,
+                    "benchmark_or_leaderboard_mentioned": True,
+                },
+            ),
+            "idea_os_connection": self._dimension(
+                19,
+                {
+                    "matches_existing_project": True,
+                    "matches_existing_research_thread": True,
+                    "matches_existing_idea_yaml": True,
+                    "can_update_existing_method": True,
+                    "only_general_interest": False,
+                },
+            ),
+            "rtx5080_feasibility": self._dimension(
+                20,
+                {
+                    "official_code_available": True,
+                    "single_gpu_possible": True,
+                    "fits_16gb_or_24gb_vram": True,
+                    "small_dataset_or_fixture_possible": True,
+                    "runtime_under_4_hours": True,
+                    "docker_or_conda_install_clear": True,
+                },
+            ),
+            "code_data_benchmark": self._dimension(
+                20,
+                {
+                    "official_code": True,
+                    "unofficial_code": False,
+                    "dataset_available": True,
+                    "benchmark_available": True,
+                    "clear_metrics": True,
+                    "reproducible_commands_or_demo": True,
+                },
+            ),
+            "research_question_potential": self._dimension(
+                20,
+                {
+                    "has_explicit_limitation_section": True,
+                    "has_failure_cases": True,
+                    "has_evaluation_gap": True,
+                    "has_deployment_gap": True,
+                    "has_theory_or_mechanism_gap": True,
+                    "can_generate_3_questions": True,
+                },
+            ),
+            "novelty_or_transfer": self._dimension(
+                20,
+                {
+                    "not_duplicate_of_recent_lab_pick": True,
+                    "introduces_new_problem_frame": True,
+                    "introduces_new_method_family": True,
+                    "has_transfer_path_to_other_domain": True,
+                },
+            ),
+        }
+
+    def _weak_shortlist_scores(self) -> dict:
+        return {
+            "recency_discussion": self._dimension(
+                0,
+                {
+                    "published_within_30_days": False,
+                    "published_within_90_days": False,
+                    "hf_trending_present": False,
+                    "github_stars_100_plus": False,
+                    "github_stars_500_plus": False,
+                    "social_discussion_present": False,
+                    "benchmark_or_leaderboard_mentioned": False,
+                },
+            ),
+            "idea_os_connection": self._dimension(
+                1,
+                {
+                    "matches_existing_project": False,
+                    "matches_existing_research_thread": False,
+                    "matches_existing_idea_yaml": False,
+                    "can_update_existing_method": False,
+                    "only_general_interest": True,
+                },
+            ),
+            "rtx5080_feasibility": self._dimension(
+                0,
+                {
+                    "official_code_available": False,
+                    "single_gpu_possible": False,
+                    "fits_16gb_or_24gb_vram": False,
+                    "small_dataset_or_fixture_possible": False,
+                    "runtime_under_4_hours": False,
+                    "docker_or_conda_install_clear": False,
+                },
+            ),
+            "code_data_benchmark": self._dimension(
+                0,
+                {
+                    "official_code": False,
+                    "unofficial_code": False,
+                    "dataset_available": False,
+                    "benchmark_available": False,
+                    "clear_metrics": False,
+                    "reproducible_commands_or_demo": False,
+                },
+            ),
+            "research_question_potential": self._dimension(
+                0,
+                {
+                    "has_explicit_limitation_section": False,
+                    "has_failure_cases": False,
+                    "has_evaluation_gap": False,
+                    "has_deployment_gap": False,
+                    "has_theory_or_mechanism_gap": False,
+                    "can_generate_3_questions": False,
+                },
+            ),
+            "novelty_or_transfer": self._dimension(
+                0,
+                {
+                    "not_duplicate_of_recent_lab_pick": False,
+                    "introduces_new_problem_frame": False,
+                    "introduces_new_method_family": False,
+                    "has_transfer_path_to_other_domain": False,
+                },
+            ),
+        }
+
+    def _dimension(self, score: int, evidence: dict) -> dict:
+        return {
+            "score": score,
+            "rule_version": "paper_lab_rubric_v1",
+            "evidence": evidence,
+        }
+
+    def _paper_record(self) -> dict:
+        return {
+            "paper_id": "paper_2026_W19_agent_memory",
+            "week": "2026-W19",
+            "cycle_slot": "main_a",
+            "domain_type": "ai_agent_llm_cybersecurity",
+            "title": "Agent memory paper",
+            "source_urls": ["https://example.com/paper"],
+            "triage_score": {
+                "total": 80,
+                "recency_discussion": 16,
+                "idea_os_connection": 16,
+                "rtx5080_feasibility": 16,
+                "code_data_benchmark": 16,
+                "research_question_potential": 16,
+                "cross_domain_transfer": 0,
+            },
+            "reproduction_level": {"level": 2, "label": "run official demo"},
+            "rtx5080_experiment": {
+                "artifact_root": "/home/jnln3799/research-artifacts/weekly-paper-lab/2026-W19-agent-memory",
+                "minimum_viable_experiment": "Run the official demo on a tiny fixture.",
+                "commands": ["python demo.py --small"],
+                "metrics": ["runtime", "memory"],
+                "stop_conditions": ["demo exceeds local GPU memory"],
+            },
+            "failure_taxonomy": {
+                "engineering": [],
+                "data": [],
+                "evaluation": [],
+                "theory": [],
+                "hardware": [],
+                "environment": [],
+                "cost": [],
+                "problem_definition": [],
+            },
+            "research_question_seed": {
+                "question": "",
+                "contribution_hypothesis": "",
+                "next_idea_action": "none",
+            },
+            "idea_links": ["idea_000001"],
+            "idea_connections": [
+                {
+                    "idea_id": "idea_000001",
+                    "idea_path": "ideas/structured/idea_000001_example.yaml",
+                    "relationship_type": "synthesis_seed",
+                    "expected_use": "Use as a small test connection.",
+                    "connection_strength": {
+                        "score": 100,
+                        "rule_version": "paper_connection_rubric_v2",
+                        "dimensions": {
+                            "topical_alignment": {
+                                "score": 20,
+                                "evidence": {
+                                    "title_keyword_overlaps": ["agent", "memory", "workflow", "review"],
+                                    "shared_tags": ["ai", "workflow", "review", "fixture"],
+                                    "explicit_topic_match": True,
+                                },
+                            },
+                            "method_workflow_alignment": {
+                                "score": 20,
+                                "evidence": {
+                                    "shared_methods": ["audit loop", "fixture"],
+                                    "shared_workflow_stages": ["read", "review"],
+                                    "same_artifact_type": True,
+                                    "same_failure_mode": True,
+                                },
+                            },
+                            "next_step_impact": {
+                                "score": 20,
+                                "evidence": {
+                                    "directly_updates_next_step": True,
+                                    "produces_required_artifact": True,
+                                    "reduces_open_uncertainties": ["scope", "metric"],
+                                    "actionable_within_one_week": True,
+                                },
+                            },
+                            "metric_baseline_support": {
+                                "score": 20,
+                                "evidence": {
+                                    "shared_metrics": ["time", "precision"],
+                                    "provides_baseline": True,
+                                    "provides_fixture": True,
+                                    "measurable_success_condition": True,
+                                },
+                            },
+                            "research_generation_value": {
+                                "score": 20,
+                                "evidence": {
+                                    "new_tests": ["test one", "test two"],
+                                    "synthesis_paths": ["path one", "path two"],
+                                    "can_update_yaml_record": True,
+                                    "can_be_reference_citation": True,
+                                },
+                            },
+                        },
+                    },
+                }
+            ],
+            "synthesis_assessment": {
+                "rule_version": "paper_synthesis_rubric_v1",
+                "synthesis_score": 20,
+                "reference_role": "method_reference",
+                "candidate_research_method": "Use the paper as a synthetic method seed.",
+                "combine_with_idea_ids": ["idea_000001"],
+                "required_followups": ["Run a small fixture."],
+                "evidence": {
+                    "has_transferable_method": True,
+                    "has_measurable_fixture": True,
+                    "links_two_or_more_ideas": True,
+                    "defines_new_baseline_or_metric": True,
+                    "can_be_cited_as_reference": True,
+                },
+            },
+            "project_links": [],
+            "planning_sync": {
+                "status": "not_synced",
+                "capacity_note": "none",
+                "canonical_path": "weekly-paper-lab/papers/2026-W19-agent-memory/paper.yaml",
+                "linked_idea_ids": ["idea_000001"],
+            },
+        }
 
 
 if __name__ == "__main__":

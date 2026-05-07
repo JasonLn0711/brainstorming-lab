@@ -1,0 +1,105 @@
+required_fields:
+  - rubric_version
+  - week
+  - cycle_slot
+  - generated_at
+  - candidates
+rubric_version: paper_lab_rubric_v1
+candidate_count:
+  min: 3
+  max: 5
+selection_rule:
+  exactly_one_selected: true
+  selected_requires: selection_reason
+  rejected_requires: rejected_reason
+score_policy:
+  principle: raw evidence -> fixed subscore rules -> recomputed final score
+  invalid_score_rule: "A score is invalid unless every subscore is backed by observable evidence. If evidence is missing, the subscore is false and contributes 0."
+exclusion_policy:
+  exclude_previously_selected_items: true
+  matching_keys:
+    - normalized paper_id
+    - normalized title
+    - normalized identity URL
+  registry_sources:
+    - weekly-paper-lab/papers/*/paper.yaml
+    - prior weekly-paper-lab/shortlists/*.yaml selected candidates
+  applies_to:
+    - paper
+    - essay
+    - technical_report
+    - research_blog_post
+  validator: scripts/check_paper_shortlist.py
+candidate_score:
+  max: 100
+  dimensions:
+    - recency_discussion
+    - idea_os_connection
+    - rtx5080_feasibility
+    - code_data_benchmark
+    - research_question_potential
+weekly_pick_score:
+  formula: "5 * (0.25 * research_question_potential + 0.20 * rtx5080_feasibility + 0.20 * idea_os_connection + 0.15 * code_data_benchmark + 0.10 * recency_discussion + 0.10 * novelty_or_transfer)"
+  cross_domain_formula_note: "For cross_domain weeks, use cross_domain_transfer as novelty_or_transfer."
+dimension_rules:
+  recency_discussion:
+    max: 20
+    evidence_points:
+      published_within_30_days: 5
+      published_within_90_days: 3
+      hf_trending_present: 5
+      github_stars_100_plus: 3
+      github_stars_500_plus: 5
+      social_discussion_present: 3
+      benchmark_or_leaderboard_mentioned: 4
+  idea_os_connection:
+    max: 20
+    evidence_points:
+      matches_existing_project: 6
+      matches_existing_research_thread: 5
+      matches_existing_idea_yaml: 5
+      can_update_existing_method: 3
+      only_general_interest: 1
+  rtx5080_feasibility:
+    max: 20
+    evidence_points:
+      official_code_available: 4
+      single_gpu_possible: 4
+      fits_16gb_or_24gb_vram: 4
+      small_dataset_or_fixture_possible: 3
+      runtime_under_4_hours: 3
+      docker_or_conda_install_clear: 2
+  code_data_benchmark:
+    max: 20
+    evidence_points:
+      official_code: 5
+      unofficial_code: 3
+      dataset_available: 4
+      benchmark_available: 4
+      clear_metrics: 3
+      reproducible_commands_or_demo: 4
+  research_question_potential:
+    max: 20
+    evidence_points:
+      has_explicit_limitation_section: 4
+      has_failure_cases: 4
+      has_evaluation_gap: 4
+      has_deployment_gap: 3
+      has_theory_or_mechanism_gap: 3
+      can_generate_3_questions: 2
+  novelty_or_transfer:
+    max: 20
+    main_slot_only: true
+    evidence_points:
+      not_duplicate_of_recent_lab_pick: 5
+      introduces_new_problem_frame: 5
+      introduces_new_method_family: 5
+      has_transfer_path_to_other_domain: 5
+  cross_domain_transfer:
+    max: 20
+    cross_domain_only: true
+    evidence_points:
+      method_transferable_to_ai_agent: 5
+      method_transferable_to_cybersecurity: 5
+      method_transferable_to_human_ai_workflow: 5
+      can_design_analogy_experiment: 5

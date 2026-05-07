@@ -35,6 +35,28 @@ better research signal than one attractive note.
 6. Move execution into a standalone repo.
 7. Keep only locator/status notes in planning.
 
+## Weekly Paper Lab Input
+
+`weekly-paper-lab/` feeds the research pipeline without replacing Idea OS.
+Paper folders keep reading notes, method breakdowns, RTX 5080 minimum
+experiments, failure logs, scoring reports, and research-question seeds. The
+scoring report explains why the evidence fields were assigned before the
+validator recomputes the numbers. When a paper creates a real research
+direction, create or update an Idea OS YAML record and link back to the paper
+folder through `source`, `evidence`, `connections`, or `next_steps`.
+
+Run this before weekly review when paper folders changed:
+
+```bash
+python3 scripts/check_paper_shortlist.py
+python3 scripts/check_paper_lab.py
+```
+
+After those checks pass, update the planning control plane with the paper title,
+status, scheduled reading/run block, next test, canonical paper path, linked
+Idea OS IDs, and capacity note. Do not copy detailed paper notes or artifact
+contents into planning.
+
 ## Claim Boundary
 
 Research-ready means suitable for a bounded research design or experiment. It

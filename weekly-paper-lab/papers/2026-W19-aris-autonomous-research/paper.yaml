@@ -1,0 +1,269 @@
+paper_id: 2026-W19-aris-autonomous-research
+week: 2026-W19
+cycle_slot: main_a
+domain_type: ai_agent_llm_cybersecurity
+title: "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration"
+source_urls:
+  - "https://huggingface.co/papers/2605.03042"
+  - "https://arxiv.org/abs/2605.03042"
+  - "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"
+selection:
+  shortlist_path: weekly-paper-lab/shortlists/2026-W19.yaml
+  shortlist_rank: 1
+  selected: true
+  why_selected: "Highest weekly_pick_score under paper_lab_rubric_v1 and best fit for the repo's evidence-audit, research-conductor, and Idea OS feedback-loop threads."
+triage_score:
+  total: 81
+  recency_discussion: 20
+  idea_os_connection: 13
+  rtx5080_feasibility: 20
+  code_data_benchmark: 12
+  research_question_potential: 16
+  cross_domain_transfer: 0
+reproduction_level:
+  level: 2
+  label: run official demo or a bounded local fixture
+rtx5080_experiment:
+  artifact_root: /home/jnln3799/research-artifacts/weekly-paper-lab/2026-W19-aris-autonomous-research
+  minimum_viable_experiment: "Create a tiny claim-ledger audit fixture with three synthetic research claims, evidence snippets, and adversarial reviewer checks; run it locally before attempting any full ARIS workflow."
+  commands:
+    - "mkdir -p /home/jnln3799/research-artifacts/weekly-paper-lab/2026-W19-aris-autonomous-research"
+    - "git clone https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep /home/jnln3799/research-artifacts/weekly-paper-lab/2026-W19-aris-autonomous-research/aris-source"
+    - "Inspect README and AGENT_GUIDE before running any workflow."
+  metrics:
+    - "claim_to_evidence_mapping_rate"
+    - "unsupported_claim_detection_rate"
+    - "reviewer_revision_count"
+    - "manual_inspection_time_minutes"
+  stop_conditions:
+    - "Any command requires credentials, paid API usage, or remote write access."
+    - "The workflow tries to store credentials or generated artifacts inside the git repo."
+    - "The first fixture cannot produce an auditable claim-to-evidence ledger within 4 hours."
+failure_taxonomy:
+  engineering:
+    - "Full ARIS workflow was not run because README and AGENT_GUIDE indicate provider/CLI/MCP orchestration; bounded fixture used instead."
+  data:
+    - "Run 001 used synthetic claims and evidence only; no sensitive or real research evidence used."
+  evaluation:
+    - "Run 001 produced claim_to_evidence_mapping_rate=1.0, baseline_unsupported_claim_detection_rate=0.0, adversarial_unsupported_claim_detection_rate=1.0, reviewer_revision_count=2."
+  theory: []
+  hardware: []
+  environment:
+    - "RTX 5080 visible with driver 595.58.03 and CUDA 13.2; first fixture remained CPU/local-file only."
+  cost:
+    - "No paid API, credentialed provider, or remote write workflow was run."
+  problem_definition:
+    - "Run reframed from full ARIS reproduction to unsupported-success measurement via claim-ledger acceptance gates."
+research_question_seed:
+  question: "Can a lightweight cross-model or cross-role evidence-audit loop reduce unsupported-success errors in small research-agent workflows without increasing reviewer burden too much?"
+  contribution_hypothesis: "A bounded claim-ledger fixture can turn vague agent reliability concerns into measurable claim-support, revision, and reviewer-cost metrics for Idea OS research workflows."
+  next_idea_action: update_idea
+idea_links:
+  - idea_000008
+  - idea_000007
+  - idea_000006
+idea_connections:
+  - idea_id: idea_000008
+    idea_path: ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml
+    relationship_type: method_reference
+    expected_use: "Use ARIS as a concrete reference for learned or searched research-conductor workflows with executor, reviewer, evidence audit, and approval gates."
+    connection_strength:
+      score: 100
+      rule_version: paper_connection_rubric_v2
+      dimensions:
+        topical_alignment:
+          score: 20
+          evidence:
+            title_keyword_overlaps:
+              - research workflows
+              - research
+              - agent
+              - conductor
+            shared_tags:
+              - multi-agent
+              - learned-orchestration
+              - research-workflow
+              - evaluation
+            explicit_topic_match: true
+        method_workflow_alignment:
+          score: 20
+          evidence:
+            shared_methods:
+              - executor-reviewer loop
+              - claim ledger or evidence audit
+              - orchestration policy
+            shared_workflow_stages:
+              - execution
+              - review
+              - evidence audit
+            same_artifact_type: true
+            same_failure_mode: true
+        next_step_impact:
+          score: 20
+          evidence:
+            directly_updates_next_step: true
+            produces_required_artifact: true
+            reduces_open_uncertainties:
+              - verification quality
+              - cost and latency normalized evaluation
+            actionable_within_one_week: true
+        metric_baseline_support:
+          score: 20
+          evidence:
+            shared_metrics:
+              - error detection rate
+              - cost per solved task
+              - latency per solved task
+            provides_baseline: true
+            provides_fixture: true
+            measurable_success_condition: true
+        research_generation_value:
+          score: 20
+          evidence:
+            new_tests:
+              - three-claim audit fixture
+              - single-reviewer versus adversarial-review comparison
+            synthesis_paths:
+              - claim-ledger method for idea_000008
+              - evaluation fixture bridge to idea_000007
+            can_update_yaml_record: true
+            can_be_reference_citation: true
+  - idea_id: idea_000007
+    idea_path: ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml
+    relationship_type: evaluation_fixture
+    expected_use: "Use ARIS claim auditing as a measurable fixture for deciding when a research conductor should recurse, review, or accept an output."
+    connection_strength:
+      score: 93
+      rule_version: paper_connection_rubric_v2
+      dimensions:
+        topical_alignment:
+          score: 16
+          evidence:
+            title_keyword_overlaps:
+              - conductor
+              - research operating system
+            shared_tags:
+              - multi-agent
+              - learned-orchestration
+              - conductor
+              - evaluator-loop
+            explicit_topic_match: true
+        method_workflow_alignment:
+          score: 17
+          evidence:
+            shared_methods:
+              - conductor review routing
+              - evidence audit
+            shared_workflow_stages:
+              - review
+              - accept or recurse decision
+            same_artifact_type: false
+            same_failure_mode: true
+        next_step_impact:
+          score: 20
+          evidence:
+            directly_updates_next_step: true
+            produces_required_artifact: true
+            reduces_open_uncertainties:
+              - when to recurse
+              - reviewer burden
+            actionable_within_one_week: true
+        metric_baseline_support:
+          score: 20
+          evidence:
+            shared_metrics:
+              - reviewer burden
+              - error detection rate
+            provides_baseline: true
+            provides_fixture: true
+            measurable_success_condition: true
+        research_generation_value:
+          score: 20
+          evidence:
+            new_tests:
+              - claim-ledger audit fixture
+              - review-depth decision test
+            synthesis_paths:
+              - ARIS assurance plus Signal Market conductor
+              - claim audit as signal-quality gate
+            can_update_yaml_record: true
+            can_be_reference_citation: true
+  - idea_id: idea_000006
+    idea_path: ideas/structured/idea_000006_openclaw_personal_ops_node.yaml
+    relationship_type: implementation_context
+    expected_use: "Use the paper as a harness-engineering reference when deciding what an OpenClaw-like personal ops node must log, review, and gate before it can be trusted."
+    connection_strength:
+      score: 50
+      rule_version: paper_connection_rubric_v2
+      dimensions:
+        topical_alignment:
+          score: 4
+          evidence:
+            title_keyword_overlaps: []
+            shared_tags:
+              - workflow
+              - approval-gate
+            explicit_topic_match: false
+        method_workflow_alignment:
+          score: 14
+          evidence:
+            shared_methods:
+              - approval gate
+              - logging
+            shared_workflow_stages:
+              - review
+            same_artifact_type: false
+            same_failure_mode: true
+        next_step_impact:
+          score: 15
+          evidence:
+            directly_updates_next_step: true
+            produces_required_artifact: false
+            reduces_open_uncertainties:
+              - what to log
+              - what to gate
+            actionable_within_one_week: true
+        metric_baseline_support:
+          score: 4
+          evidence:
+            shared_metrics: []
+            provides_baseline: false
+            provides_fixture: false
+            measurable_success_condition: true
+        research_generation_value:
+          score: 13
+          evidence:
+            new_tests:
+              - approval-gate audit fixture
+            synthesis_paths:
+              - harness-engineering reference for OpenClaw design
+            can_update_yaml_record: true
+            can_be_reference_citation: true
+synthesis_assessment:
+  rule_version: paper_synthesis_rubric_v1
+  synthesis_score: 20
+  reference_role: method_reference
+  candidate_research_method: "Claim-ledger-guided adversarial review for small research-agent workflows: executor produces claims, evidence snippets are mapped, reviewer flags unsupported success, and Idea OS records the accepted update."
+  combine_with_idea_ids:
+    - idea_000008
+    - idea_000007
+    - idea_000006
+  required_followups:
+    - "Build a three-claim synthetic fixture under the external artifact root."
+    - "Measure unsupported-claim detection and reviewer burden before trying a full ARIS workflow."
+    - "If the fixture is useful, update idea_000008 with the claim-ledger method and reference path."
+  evidence:
+    has_transferable_method: true
+    has_measurable_fixture: true
+    links_two_or_more_ideas: true
+    defines_new_baseline_or_metric: true
+    can_be_cited_as_reference: true
+project_links: []
+planning_sync:
+  status: not_synced
+  capacity_note: maybe
+  canonical_path: weekly-paper-lab/papers/2026-W19-aris-autonomous-research/paper.yaml
+  linked_idea_ids:
+    - idea_000008
+    - idea_000007
+    - idea_000006
