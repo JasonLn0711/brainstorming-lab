@@ -1,0 +1,173 @@
+id: idea_000012
+title: "PhD problem-definition thinking system"
+created_at: 2026-05-07
+type: concept
+tags:
+  - research-thinking
+  - problem-definition
+  - phd-training
+  - first-principles
+  - systems-thinking
+  - judgment-system
+  - meta-learning
+  - research-endurance
+  - uncertainty-tolerance
+  - workflow-diagnosis
+  - implementation-friction
+  - embodied-learning
+  - lecture-practice
+status: research_candidate
+problem_statement:
+  raw: "Given a PhD student moving from solution-first tool thinking toward independent research judgment, optimize the habit of letting implementation friction, mental execution simulation, and reality observation generate real problem definitions before selecting methods under constraints of uncertainty, incomplete evidence, long time horizons, emotional energy, and existing project boundaries."
+  normalized: "Given a PhD student moving from solution-first tool thinking toward independent research judgment, optimize problem definition through implementation friction, mental execution simulation, and bottleneck diagnosis under constraints of uncertainty, incomplete evidence, long time horizons, emotional energy, and existing project boundaries."
+  structure:
+    given: "a PhD student moving from solution-first tool thinking toward independent research judgment"
+    optimize: "problem definition through implementation friction, mental execution simulation, and bottleneck diagnosis"
+    constraints:
+      - uncertainty
+      - "incomplete evidence"
+      - "long time horizons"
+      - "emotional energy"
+      - "existing project boundaries"
+summary: "A training frame for becoming a researcher who can define problems before choosing tools: do real work or mentally simulate execution, observe friction, separate symptom/problem/tool/metric/constraint, run a five-layer why chain, map the system, name who suffers, state the smallest falsifiable next test, and iterate the worldview."
+source_note_zh: "博士班真正訓練的，不只是會做研究，而是能不能開始對世界上的某個問題建立自己的判斷系統；問題定義要從眼前真正卡住的地方開始，而且常常是在實作或腦內模擬實作時，因為摩擦自然浮出來。"
+assumptions:
+  - "Problem-definition thinking is trainable through repeated local diagnosis, not only through abstract philosophy."
+  - "The first unit of practice should be the user's current research/workflow friction, because that is where evidence and emotional cost are visible."
+  - "Valuable research questions usually come from doing work, simulating work seriously, or watching reality closely enough that friction becomes visible."
+  - "The practice is not to force clever questions; it is to get close enough to implementation that real obstacles appear."
+  - "A lecture becomes useful when the listener mentally executes the speaker's system and asks what would break, who arbitrates, what state is preserved, and where auditability lives."
+  - "Solution-first language such as AI agent, graph, RL, RAG, bigger model, or LangGraph is usually a tool category, not a research problem."
+  - "A strong problem statement identifies who is affected, what bottleneck blocks progress, which evidence is missing, and what would change if the bottleneck were removed."
+  - "Uncertainty is normal in research; mature judgment is the ability to keep moving while updating the problem definition."
+  - "Research endurance matters because long-running ambiguous work fails when emotional burning outruns system progress."
+  - "Not every diagnosed problem deserves a project; some should be parked or killed with a reason."
+evidence:
+  - "2026-05-07 conversation on PhD thinking, independent judgment, problem definition, five-layer why, and problem/tool/metric/constraint separation."
+  - "2026-05-07 follow-up insight: problems are often not invented by sitting and thinking, but emerge naturally when implementation, experiments, operations, or lecture-time execution simulation reveal friction."
+  - "Existing brainstorming-lab themes already emphasize reviewer burden, governance, evidence paths, auditability, workflow bottlenecks, and human-AI decision systems."
+  - "Weekly Paper Lab W19 ARIS reading pass: full autonomous-agent adoption was reframed into a bounded claim-ledger fixture because provider/API/MCP setup and causal-evaluation gaps exposed the real bottleneck as unsupported-success measurement."
+baseline:
+  - "Solution-first framing: start from the desired method, such as agent, graph, RL, RAG, fine-tune, or bigger model."
+  - "Question-theater framing: try to ask impressive questions without having mentally or practically run the system."
+  - "Knowledge-collection framing: read more papers without compressing them into a judgment system."
+  - "Metric-first framing: treat accuracy, benchmark score, or paper count as the problem itself."
+  - "Mood-driven research: sprint when excited, stall when the direction becomes ambiguous or boring."
+metrics:
+  - "Problem/tool/metric/constraint split completed before choosing a method."
+  - "Five-layer why chain ends in a bottleneck, affected actor, and smallest test rather than a tool name."
+  - "System diagram identifies at least one interaction bottleneck instead of only a component-level weakness."
+  - "At least one question per lecture, paper, or demo is generated by mentally executing the system and naming where it might break."
+  - "Implementation notes record concrete friction events before abstracting them into research questions."
+  - "Weekly review records which problem definitions were validated, revised, parked, or killed."
+  - "New technique impulses are converted into problem statements before implementation starts."
+  - "Research workload remains bounded enough that emotional energy does not become the main failure point."
+insights:
+  - "The PhD shift is from solving assigned problems to defining which problem is worth solving."
+  - "A paper is a carrier of a viewpoint; the deeper output is a judgment system and worldview."
+  - "Most weak research starts by solving a symptom instead of diagnosing the bottleneck."
+  - "Good questions are usually mined from reality, not manufactured from ambition."
+  - "Implementation friction is an epistemic instrument: it reveals constraints, hidden state, human trust gaps, failure modes, and maintenance cost."
+  - "Listening to a talk can become research practice when the listener mentally runs the proposed system and notices execution-level failure points."
+  - "Being good at asking questions may be downstream of being sensitive to real-world friction."
+  - "Problem definition is iterative: scam detector can become reviewer assist, then governed triage, then scalable human-AI evidence workflow."
+  - "The useful first-principles question is not what tool to use, but what bottleneck changes the system if removed."
+  - "System diagrams are a research thinking tool because many real problems live in interactions, not isolated components."
+  - "Research maturity includes tolerating not knowing, admitting wrong turns, and updating the worldview without collapse."
+connections:
+  - idea_000002
+  - idea_000005
+  - idea_000007
+  - idea_000008
+  - idea_000011
+  - weekly-paper-lab/papers/2026-W19-aris-autonomous-research/paper.yaml
+role: idea
+value:
+  impact: high
+  feasibility: high
+planning_boundary:
+  sync_rule: "Do not push the full reflection into planning. Planning only needs a short capacity/status note if this becomes a weekly practice or changes a research lane."
+  planning_summary_shape:
+    - title
+    - id
+    - status
+    - maturity_score
+    - next_test
+    - canonical_path
+    - capacity_note
+problem_definition_frame:
+  core_question: "What is the real bottleneck preventing this system from moving forward?"
+  source_of_questions: "Questions should be harvested from implementation, experiments, operations, field observation, lecture-time execution simulation, and repeated friction, then sharpened into explicit problem definitions."
+  distinguish:
+    problem: "The real friction, cost, risk, or blocked transformation."
+    symptom: "The visible pain, such as bad ASR, too many scams, or low accuracy."
+    tool: "A possible method, such as agent, graph, RAG, RL, or bigger model."
+    metric: "A measurement proxy, such as accuracy, review time, recall, or false positive rate."
+    constraint: "A boundary such as privacy, governance, GPU, time, legal auditability, or reviewer capacity."
+  five_layer_why:
+    - "What symptom is visible?"
+    - "Why does this symptom happen in this situation?"
+    - "Why does that cause real cost or risk?"
+    - "Why is the current system unable to resolve it?"
+    - "What bottleneck, if removed, would change the system?"
+  smallest_next_test: "Pick one current lane and write a one-page problem-definition card: symptom, affected actor, bottleneck, evidence gap, tool temptations, smallest falsifiable test."
+friction_to_question_loop:
+  principle: "Do not force a smart question first. Move close enough to reality that the system pushes back, then name exactly where and why it pushed back."
+  sources:
+    implementation: "Build or operate the smallest version and record where the workflow breaks, slows, becomes ambiguous, or loses trust."
+    experiment: "Run a bounded fixture and record which assumptions fail before interpreting the result."
+    lecture: "Mentally execute the speaker's method as if deploying it: state, arbitration, failure recovery, audit trail, latency, governance, and human workload."
+    paper_reading: "Translate the method into a runnable workflow and ask which steps depend on hidden assumptions."
+    field_observation: "Watch where people hesitate, repeat work, ignore the system, or create informal workarounds."
+  conversion_steps:
+    - "Record the concrete friction event."
+    - "Name the affected actor and consequence."
+    - "Separate symptom, tool temptation, metric, and constraint."
+    - "Ask five-layer why until the answer names a bottleneck."
+    - "State the smallest test that would confirm, revise, or kill that bottleneck hypothesis."
+  lecture_question_examples:
+    - "If this multi-agent system fails, which component notices first and who arbitrates?"
+    - "What state must persist across agents, and how is memory consistency verified?"
+    - "Which part should be deterministic rather than agentic?"
+    - "What evidence trail would let a reviewer reconstruct the decision?"
+    - "What workload is shifted to humans, and how is reviewer fatigue measured?"
+training_loop:
+  - "Do a small implementation, experiment, or lecture-time mental execution pass."
+  - "Capture the current friction in plain language."
+  - "Separate symptom, problem, tool, metric, and constraint."
+  - "Run the five-layer why chain until the answer is a bottleneck, not a technology."
+  - "Draw the system path: input, actor, decision, evidence, bottleneck, output, feedback."
+  - "Name the affected actor and the cost of leaving the bottleneck unsolved."
+  - "State what would change if the bottleneck were removed."
+  - "Define the smallest test that can revise the problem statement."
+  - "After the test, update the worldview: validated, revised, parked, or killed."
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 11
+  testability_score: 11/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 6
+  novelty_score: 6/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 80/100
+maturity_level: research_candidate
+next_steps:
+  - "Apply the one-page problem-definition card to one active lane, preferably idea_000002 or idea_000007, after a concrete implementation or mental-execution friction pass."
+  - "Use the W19 ARIS paper as a worked example: rewrite 'run the agent stack' into symptom, bottleneck, evidence gap, metric, constraint, and smallest falsifiable fixture."
+  - "During the next talk, paper, or demo, write one execution-simulation question: what would break, who would notice, and what evidence would prove it?"
+  - "For the next technique impulse, write the Problem / Tool / Metric / Constraint split first."
+  - "Add a weekly 20-minute review question: which current work is still solving a symptom instead of the real bottleneck?"
+source:
+  - conversation
+  - weekly-paper-lab/papers/2026-W19-aris-autonomous-research/paper.yaml
+maturity_action: "evaluate cluster readiness"
+normalization_status: validated

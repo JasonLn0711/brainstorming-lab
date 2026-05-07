@@ -1,0 +1,46 @@
+required_fields:
+  - id
+  - title
+  - created_at
+  - status
+  - type
+  - tags
+  - problem_statement
+  - summary
+  - assumptions
+  - evidence
+  - baseline
+  - metrics
+  - maturity
+  - maturity_score
+  - maturity_level
+  - connections
+  - role
+  - next_steps
+problem_statement:
+  raw: string
+  normalized: string
+  structure:
+    given: string
+    optimize: string
+    constraints: list
+type_values:
+  - concept
+  - question
+  - hypothesis
+  - project
+status_values:
+  - raw
+  - emerging
+  - structured
+  - research_candidate
+  - execution_ready
+  - executing
+  - archived
+maturity_level_values:
+  - raw
+  - emerging
+  - structured
+  - research_candidate
+  - execution_ready
+notes: "YAML ideas are the canonical database. Markdown may explain an idea, but future agents update YAML first."

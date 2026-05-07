@@ -1,0 +1,259 @@
+merge_candidate_0001:
+  candidate_id: merge_candidate_0001
+  ideas:
+    - idea_000002
+    - idea_000004
+  merge_type: cluster_merge
+  merge_score: 63/100
+  confidence: medium
+  reason:
+    - "shared tags: cybersecurity, evidence-routing"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: create_cluster
+  decision: suggest_cluster
+  subscores:
+    normalized_problem_similarity: 6/25
+    semantic_similarity: 6/15
+    tag_overlap: 8/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 20/20
+  shared_tags:
+    - cybersecurity
+    - evidence-routing
+merge_candidate_0002:
+  candidate_id: merge_candidate_0002
+  ideas:
+    - idea_000001
+    - idea_000002
+  merge_type: cluster_merge
+  merge_score: 61/100
+  confidence: medium
+  reason:
+    - "shared tags: ai-triage, evidence-routing"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: create_cluster
+  decision: suggest_cluster
+  subscores:
+    normalized_problem_similarity: 3/25
+    semantic_similarity: 7/15
+    tag_overlap: 8/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 20/20
+  shared_tags:
+    - ai-triage
+    - evidence-routing
+merge_candidate_0003:
+  candidate_id: merge_candidate_0003
+  ideas:
+    - idea_000003
+    - idea_000005
+  merge_type: cluster_merge
+  merge_score: 61/100
+  confidence: medium
+  reason:
+    - "shared tags: decision-system, planning-bridge, workflow"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: create_cluster
+  decision: suggest_cluster
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 5/15
+    tag_overlap: 10/10
+    complementary_value: 18/20
+    evidence_alignment: 6/10
+    complexity_control: 20/20
+  shared_tags:
+    - decision-system
+    - planning-bridge
+    - workflow
+merge_candidate_0004:
+  candidate_id: merge_candidate_0004
+  ideas:
+    - idea_000009
+    - idea_000010
+  merge_type: cluster_merge
+  merge_score: 58/100
+  confidence: low
+  reason:
+    - "shared tags: hardware, safety, side-project"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 4/25
+    semantic_similarity: 6/15
+    tag_overlap: 10/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - hardware
+    - safety
+    - side-project
+merge_candidate_0005:
+  candidate_id: merge_candidate_0005
+  ideas:
+    - idea_000002
+    - idea_000007
+  merge_type: cluster_merge
+  merge_score: 56/100
+  confidence: low
+  reason:
+    - "shared tags: cybersecurity, reviewer-assist"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 8/25
+    semantic_similarity: 5/15
+    tag_overlap: 8/10
+    complementary_value: 18/20
+    evidence_alignment: 7/10
+    complexity_control: 10/20
+  shared_tags:
+    - cybersecurity
+    - reviewer-assist
+merge_candidate_0006:
+  candidate_id: merge_candidate_0006
+  ideas:
+    - idea_000007
+    - idea_000008
+  merge_type: cluster_merge
+  merge_score: 56/100
+  confidence: low
+  reason:
+    - "shared tags: conductor, learned-orchestration, multi-agent"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 7/15
+    tag_overlap: 10/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - conductor
+    - learned-orchestration
+    - multi-agent
+merge_candidate_0007:
+  candidate_id: merge_candidate_0007
+  ideas:
+    - idea_000005
+    - idea_000006
+  merge_type: cluster_merge
+  merge_score: 52/100
+  confidence: low
+  reason:
+    - "shared tags: workflow"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 2/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 6/10
+    complexity_control: 20/20
+  shared_tags:
+    - workflow
+merge_candidate_0008:
+  candidate_id: merge_candidate_0008
+  ideas:
+    - idea_000004
+    - idea_000007
+  merge_type: cluster_merge
+  merge_score: 49/100
+  confidence: low
+  reason:
+    - "shared tags: cybersecurity, research-candidate"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 4/25
+    semantic_similarity: 4/15
+    tag_overlap: 8/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 10/20
+  shared_tags:
+    - cybersecurity
+    - research-candidate
+merge_candidate_0009:
+  candidate_id: merge_candidate_0009
+  ideas:
+    - idea_000001
+    - idea_000004
+  merge_type: cluster_merge
+  merge_score: 47/100
+  confidence: low
+  reason:
+    - "shared tags: evidence-routing"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 4/25
+    semantic_similarity: 5/15
+    tag_overlap: 4/10
+    complementary_value: 8/20
+    evidence_alignment: 6/10
+    complexity_control: 20/20
+  shared_tags:
+    - evidence-routing
+merge_candidate_0010:
+  candidate_id: merge_candidate_0010
+  ideas:
+    - idea_000003
+    - idea_000006
+  merge_type: cluster_merge
+  merge_score: 41/100
+  confidence: low
+  reason:
+    - "shared tags: workflow"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 1/15
+    tag_overlap: 4/10
+    complementary_value: 8/20
+    evidence_alignment: 6/10
+    complexity_control: 20/20
+  shared_tags:
+    - workflow
+merge_candidate_0011:
+  candidate_id: merge_candidate_0011
+  ideas:
+    - idea_000005
+    - idea_000007
+  merge_type: cluster_merge
+  merge_score: 41/100
+  confidence: low
+  reason:
+    - "shared tags: decision-system"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 3/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 10/20
+  shared_tags:
+    - decision-system

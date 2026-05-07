@@ -1,0 +1,67 @@
+id: idea_000006
+title: "OpenClaw personal ops node"
+created_at: 2026-05-04
+type: project
+tags:
+  - openclaw
+  - personal-ops
+  - workflow
+  - approval-gate
+status: structured
+problem_statement:
+  raw: "Given Codex-heavy personal operations, optimize a private always-on node under redaction, approval, logging, and rollback constraints."
+  normalized: "Given Codex-heavy personal operations, optimize a private always-on node under constraints of redaction, approval, logging, rollback constraints."
+  structure:
+    given: "Codex-heavy personal operations"
+    optimize: "a private always-on node"
+    constraints:
+      - redaction
+      - approval
+      - logging
+      - "rollback constraints"
+summary: "Use a low-power always-on node as a safe personal operations host for OpenClaw and Codex workflows: remote entrypoint, task watcher, approval relay, logs, rollback, and notification."
+assumptions:
+  - "The useful pattern is audited operations infrastructure, not many free-running agents."
+  - "Codex should remain the main coding and workspace execution engine."
+  - "A bounded design note should come before hardware purchase or implementation."
+insights:
+  - "The first version should be a remote supervisor, not hard fusion between OpenClaw and Codex."
+  - "Required safety layers include redaction, action log, approval gate, private network boundary, and rollback."
+connections:
+  - idea_000005
+  - idea_000011
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 0
+  testability_score: 0/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 6
+  connection_strength_score: 6/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 10
+  feasibility_score: 10/15
+  research_potential: 2
+  research_potential_score: 2/10
+next_steps:
+  - "Write one bounded design note in second-brain-openclaw before any implementation or purchase."
+source:
+  - conversation
+  - observation
+normalization_status: validated
+role: idea
+baseline: []
+metrics: []
+evidence:
+  - conversation
+  - observation
+maturity_score: 60/100
+maturity_level: structured
+maturity_action: "include in graph and clustering"

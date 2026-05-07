@@ -1,0 +1,93 @@
+rubric_version: paper_lab_rubric_v1
+purpose: "Make weekly paper selection reproducible by deriving scores from observable evidence."
+principle: "AI collects evidence; fixed rules calculate scores; humans decide whether to accept the selected paper."
+invalid_score_rule: "A score is invalid unless every subscore is backed by observable evidence. Missing or unknown evidence is false and contributes 0."
+exclusion_policy:
+  purpose: "Prevent the weekly lab from rereading an already selected paper or essay as a new weekly pick."
+  rule: "A candidate is invalid if its normalized paper_id, title, or identity URL matches any previously selected item from an earlier week."
+  applies_to:
+    - papers
+    - essays
+    - technical reports
+    - blog-style research essays
+  registry_sources:
+    - weekly-paper-lab/papers/*/paper.yaml
+    - weekly-paper-lab/shortlists/*.yaml candidates with selected: true
+  identity_url_rule: "Use paper, DOI, arXiv, Hugging Face paper, OpenAlex, publisher, or essay URLs. Code and dataset URLs are not primary identity URLs unless no other URL exists."
+  followup_rule: "A revisit should be handled as a follow-up note under the original paper folder or as an Idea OS update, not as a new shortlist candidate."
+candidate_score:
+  max: 100
+  dimensions:
+    recency_discussion: 20
+    idea_os_connection: 20
+    rtx5080_feasibility: 20
+    code_data_benchmark: 20
+    research_question_potential: 20
+weekly_pick_score:
+  scale: 0-100
+  formula: "5 * (0.25 * research_question_potential + 0.20 * rtx5080_feasibility + 0.20 * idea_os_connection + 0.15 * code_data_benchmark + 0.10 * recency_discussion + 0.10 * novelty_or_transfer)"
+  cross_domain_rule: "For cross_domain weeks, use cross_domain_transfer in place of novelty_or_transfer."
+rules:
+  recency_discussion:
+    max: 20
+    evidence_points:
+      published_within_30_days: 5
+      published_within_90_days: 3
+      hf_trending_present: 5
+      github_stars_100_plus: 3
+      github_stars_500_plus: 5
+      social_discussion_present: 3
+      benchmark_or_leaderboard_mentioned: 4
+  idea_os_connection:
+    max: 20
+    evidence_points:
+      matches_existing_project: 6
+      matches_existing_research_thread: 5
+      matches_existing_idea_yaml: 5
+      can_update_existing_method: 3
+      only_general_interest: 1
+    consistency_rule: "only_general_interest cannot be true with any stronger Idea OS connection."
+  rtx5080_feasibility:
+    max: 20
+    evidence_points:
+      official_code_available: 4
+      single_gpu_possible: 4
+      fits_16gb_or_24gb_vram: 4
+      small_dataset_or_fixture_possible: 3
+      runtime_under_4_hours: 3
+      docker_or_conda_install_clear: 2
+  code_data_benchmark:
+    max: 20
+    evidence_points:
+      official_code: 5
+      unofficial_code: 3
+      dataset_available: 4
+      benchmark_available: 4
+      clear_metrics: 3
+      reproducible_commands_or_demo: 4
+    consistency_rule: "official_code and unofficial_code should not both be true."
+  research_question_potential:
+    max: 20
+    evidence_points:
+      has_explicit_limitation_section: 4
+      has_failure_cases: 4
+      has_evaluation_gap: 4
+      has_deployment_gap: 3
+      has_theory_or_mechanism_gap: 3
+      can_generate_3_questions: 2
+  novelty_or_transfer:
+    max: 20
+    main_slot_only: true
+    evidence_points:
+      not_duplicate_of_recent_lab_pick: 5
+      introduces_new_problem_frame: 5
+      introduces_new_method_family: 5
+      has_transfer_path_to_other_domain: 5
+  cross_domain_transfer:
+    max: 20
+    cross_domain_only: true
+    evidence_points:
+      method_transferable_to_ai_agent: 5
+      method_transferable_to_cybersecurity: 5
+      method_transferable_to_human_ai_workflow: 5
+      can_design_analogy_experiment: 5

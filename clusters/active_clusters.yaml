@@ -1,0 +1,38 @@
+cluster_0001:
+  theme: "evidence-routing / ai-triage / cybersecurity"
+  cluster_type: research_cluster
+  ideas:
+    - idea_000001
+    - idea_000002
+    - idea_000004
+  normalized_problem: "Given overloaded clinical intake, optimize which cases need human review first under constraints of safety, audit constraints."
+  average_maturity_score: 72/100
+  cluster_score: 62/100
+  reason:
+    - "shared tags: ai-triage, evidence-routing"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+    - "shared tags: cybersecurity, evidence-routing"
+  recommendation: "evaluate as research candidate"
+  averages:
+    testability: 7/15
+    evidence_support: 9/15
+    feasibility: 11/15
+cluster_0002:
+  theme: "decision-system / planning-bridge / workflow"
+  cluster_type: research_cluster
+  ideas:
+    - idea_000003
+    - idea_000005
+  normalized_problem: "Given many possible next actions, optimize the next decision so the user spends less energy choosing and more energy executing under constraints of limited resources."
+  average_maturity_score: 58/100
+  cluster_score: 61/100
+  reason:
+    - "shared tags: decision-system, planning-bridge, workflow"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommendation: "keep clustered and improve maturity"
+  averages:
+    testability: 2/15
+    evidence_support: 6/15
+    feasibility: 8/15

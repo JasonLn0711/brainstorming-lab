@@ -1,0 +1,65 @@
+id: idea_000001
+title: "Healthcare AI triage copilot"
+created_at: 2026-05-04
+type: project
+tags:
+  - healthcare
+  - ai-triage
+  - evidence-routing
+  - human-review
+status: research_candidate
+problem_statement:
+  raw: "Given overloaded clinical intake, optimize which cases need human review first under safety and audit constraints."
+  normalized: "Given overloaded clinical intake, optimize which cases need human review first under constraints of safety, audit constraints."
+  structure:
+    given: "overloaded clinical intake"
+    optimize: "which cases need human review first"
+    constraints:
+      - safety
+      - "audit constraints"
+summary: "A clinical triage assistant that structures patient intake, flags uncertainty, and routes cases to clinicians with evidence rather than replacing medical judgment."
+assumptions:
+  - "The useful output is safer prioritization, not autonomous diagnosis."
+  - "Clinicians need provenance and uncertainty markers more than another chat surface."
+  - "A small synthetic workflow can test review-burden reduction before any real patient data."
+insights:
+  - "This idea shares the same reviewer-assist pattern as cybersecurity candidate review."
+  - "The first metric should be reduction in time-to-first-safe-action."
+connections:
+  - idea_000002
+  - idea_000008
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 7
+  testability_score: 7/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 7
+  connection_strength_score: 7/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 4
+  research_potential_score: 4/10
+next_steps:
+  - "Create a synthetic intake fixture and define reviewer-burden metrics."
+source:
+  - conversation
+  - observation
+normalization_status: validated
+role: idea
+baseline: []
+metrics: []
+evidence:
+  - conversation
+  - observation
+maturity_score: 75/100
+maturity_level: research_candidate
+maturity_action: "evaluate cluster readiness"

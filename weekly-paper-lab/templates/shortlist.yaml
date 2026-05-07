@@ -1,0 +1,233 @@
+rubric_version: paper_lab_rubric_v1
+week: YYYY-Www
+cycle_slot: main_a
+generated_at: YYYY-MM-DD
+selection_history_check:
+  exclude_previously_selected_items: true
+  registry_sources:
+    - weekly-paper-lab/papers/*/paper.yaml
+    - prior weekly-paper-lab/shortlists/*.yaml selected candidates
+  match_keys:
+    - normalized paper_id
+    - normalized title
+    - normalized identity URL
+candidates:
+  - paper_id: YYYY-Www-example-paper
+    title: "Example Paper"
+    selected: true
+    evidence_sources:
+      paper_url: "https://example.com/paper"
+      code_url: "https://example.com/code"
+      dataset_url: ""
+      hf_trending_url: ""
+      openalex_url: ""
+      checked_at: YYYY-MM-DD
+    scores:
+      recency_discussion:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: true
+          published_within_90_days: true
+          hf_trending_present: true
+          github_stars_100_plus: true
+          github_stars_500_plus: true
+          social_discussion_present: true
+          benchmark_or_leaderboard_mentioned: true
+      idea_os_connection:
+        score: 19
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: true
+          matches_existing_research_thread: true
+          matches_existing_idea_yaml: true
+          can_update_existing_method: true
+          only_general_interest: false
+      rtx5080_feasibility:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: true
+          single_gpu_possible: true
+          fits_16gb_or_24gb_vram: true
+          small_dataset_or_fixture_possible: true
+          runtime_under_4_hours: true
+          docker_or_conda_install_clear: true
+      code_data_benchmark:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: true
+          unofficial_code: false
+          dataset_available: true
+          benchmark_available: true
+          clear_metrics: true
+          reproducible_commands_or_demo: true
+      research_question_potential:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: true
+          has_failure_cases: true
+          has_evaluation_gap: true
+          has_deployment_gap: true
+          has_theory_or_mechanism_gap: true
+          can_generate_3_questions: true
+      novelty_or_transfer:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: true
+          introduces_new_problem_frame: true
+          introduces_new_method_family: true
+          has_transfer_path_to_other_domain: true
+    candidate_score: 99
+    weekly_pick_score: 99.0
+    selection_reason: "Selected because it best supports reading, minimal RTX 5080 reproduction, bottleneck analysis, and Idea OS question generation."
+    rejected_reason: ""
+  - paper_id: YYYY-Www-second-paper
+    title: "Second Candidate"
+    selected: false
+    evidence_sources:
+      paper_url: "https://example.com/paper-2"
+      code_url: ""
+      dataset_url: ""
+      hf_trending_url: ""
+      openalex_url: ""
+      checked_at: YYYY-MM-DD
+    scores:
+      recency_discussion:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: false
+          published_within_90_days: false
+          hf_trending_present: false
+          github_stars_100_plus: false
+          github_stars_500_plus: false
+          social_discussion_present: false
+          benchmark_or_leaderboard_mentioned: false
+      idea_os_connection:
+        score: 1
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: false
+          matches_existing_research_thread: false
+          matches_existing_idea_yaml: false
+          can_update_existing_method: false
+          only_general_interest: true
+      rtx5080_feasibility:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: false
+          single_gpu_possible: false
+          fits_16gb_or_24gb_vram: false
+          small_dataset_or_fixture_possible: false
+          runtime_under_4_hours: false
+          docker_or_conda_install_clear: false
+      code_data_benchmark:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: false
+          unofficial_code: false
+          dataset_available: false
+          benchmark_available: false
+          clear_metrics: false
+          reproducible_commands_or_demo: false
+      research_question_potential:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: false
+          has_failure_cases: false
+          has_evaluation_gap: false
+          has_deployment_gap: false
+          has_theory_or_mechanism_gap: false
+          can_generate_3_questions: false
+      novelty_or_transfer:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: false
+          introduces_new_problem_frame: false
+          introduces_new_method_family: false
+          has_transfer_path_to_other_domain: false
+    candidate_score: 1
+    weekly_pick_score: 1.0
+    selection_reason: ""
+    rejected_reason: "Rejected because it lacks enough evidence for a bounded weekly reproduction."
+  - paper_id: YYYY-Www-third-paper
+    title: "Third Candidate"
+    selected: false
+    evidence_sources:
+      paper_url: "https://example.com/paper-3"
+      code_url: ""
+      dataset_url: ""
+      hf_trending_url: ""
+      openalex_url: ""
+      checked_at: YYYY-MM-DD
+    scores:
+      recency_discussion:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: false
+          published_within_90_days: false
+          hf_trending_present: false
+          github_stars_100_plus: false
+          github_stars_500_plus: false
+          social_discussion_present: false
+          benchmark_or_leaderboard_mentioned: false
+      idea_os_connection:
+        score: 1
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: false
+          matches_existing_research_thread: false
+          matches_existing_idea_yaml: false
+          can_update_existing_method: false
+          only_general_interest: true
+      rtx5080_feasibility:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: false
+          single_gpu_possible: false
+          fits_16gb_or_24gb_vram: false
+          small_dataset_or_fixture_possible: false
+          runtime_under_4_hours: false
+          docker_or_conda_install_clear: false
+      code_data_benchmark:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: false
+          unofficial_code: false
+          dataset_available: false
+          benchmark_available: false
+          clear_metrics: false
+          reproducible_commands_or_demo: false
+      research_question_potential:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: false
+          has_failure_cases: false
+          has_evaluation_gap: false
+          has_deployment_gap: false
+          has_theory_or_mechanism_gap: false
+          can_generate_3_questions: false
+      novelty_or_transfer:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: false
+          introduces_new_problem_frame: false
+          introduces_new_method_family: false
+          has_transfer_path_to_other_domain: false
+    candidate_score: 1
+    weekly_pick_score: 1.0
+    selection_reason: ""
+    rejected_reason: "Rejected because another candidate has stronger Idea OS fit and reproducibility."

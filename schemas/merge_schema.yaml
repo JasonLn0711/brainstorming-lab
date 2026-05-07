@@ -1,0 +1,27 @@
+score_formula: normalized_problem_similarity + semantic_similarity + tag_overlap + complementary_value + evidence_alignment + complexity_control
+range:
+  minimum: 0
+  maximum: 100
+fields:
+  normalized_problem_similarity: 0-25
+  semantic_similarity: 0-15
+  tag_overlap: 0-10
+  complementary_value: 0-20
+  evidence_alignment: 0-10
+  complexity_control: 0-20
+decisions:
+  do_not_merge: 0-39
+  keep_related: 40-59
+  suggest_cluster: 60-74
+  strong_cluster_or_synthesis: 75-89
+  duplicate_merge: 90-100
+merge_types:
+  - duplicate_merge
+  - cluster_merge
+  - research_synthesis
+recommended_actions:
+  - duplicate_merge
+  - create_cluster
+  - keep_related
+  - research_synthesis
+  - do_not_merge

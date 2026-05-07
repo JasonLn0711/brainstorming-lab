@@ -1,0 +1,79 @@
+id: idea_000009
+title: "Safe Tesla coil insect-trap teaching demo"
+created_at: 2026-05-05
+type: question
+tags:
+  - hardware
+  - physics-education
+  - safety
+  - side-project
+status: research_candidate
+problem_statement:
+  raw: "Given the viral Tesla coil fly-trap concept, identify whether it can become a safe physics and engineering teaching demo instead of a hazardous DIY high-voltage device."
+  normalized: "Given a high-voltage insect-trap demonstration, optimize a safe teaching artifact under constraints of no exposed high voltage, no live animal harm, low budget, supervision, and clear learning value."
+  structure:
+    given: "a high-voltage insect-trap demonstration"
+    optimize: "a safe teaching artifact"
+    constraints:
+      - "no exposed high voltage"
+      - "no live animal harm"
+      - "low budget"
+      - "adult supervision"
+      - "clear learning value"
+summary: "Convert the Tesla coil fly-trap idea into a bounded education side project about electric fields, air breakdown, safety boundaries, and media misinterpretation. The safe first version should use simulation, video analysis, or a low-voltage visual mock instead of an exposed arc device."
+assumptions:
+  - "The useful idea is not the insect-killing device; it is the teachable explanation of electric fields, dielectric breakdown, and risk perception."
+  - "A safe demo can preserve the learning value without requiring an exposed Tesla coil, open electrodes, or live insects."
+  - "The first test should evaluate whether the explanation improves understanding, not whether the trap works."
+  - "Fly-scale demonstrations do not automatically transfer to mosquito-scale control because body size, contact geometry, and flight behavior change the circuit."
+evidence:
+  - conversation
+  - "observed viral demo explanation"
+  - "concrete example of Tesla coil fly-trap content"
+  - "fly-versus-mosquito mechanism comparison"
+baseline: []
+metrics:
+  - "learner can explain voltage, current, frequency, and air breakdown after the demo"
+  - "learner can explain why a design that shocks flies may fail on mosquitoes"
+  - "learner can identify at least three safety boundaries before any build"
+  - "teaching artifact avoids exposed high voltage and live animal harm"
+insights:
+  - "Frame this as media-literacy plus physics education, not as a gadget build."
+  - "The minimum safe artifact is a storyboard or simulation that explains why the source device is risky."
+  - "The mosquito question is a useful contrast case: effective pest-control design depends on target scale, lure strategy, contact density, and dwell time, not just stronger electric fields."
+  - "Any real hardware version must be separately reviewed for electrical safety before it graduates into a project repo."
+connections:
+  - idea_000010
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 8
+  testability_score: 8/15
+  evidence_support: 6
+  evidence_support_score: 6/15
+  connection_strength: 5
+  connection_strength_score: 5/10
+  novelty: 6
+  novelty_score: 6/10
+  feasibility: 10
+  feasibility_score: 10/15
+  research_potential: 8
+  research_potential_score: 8/10
+maturity_score: 68/100
+maturity_level: research_candidate
+next_steps:
+  - "Draft a one-page concept note comparing three safe versions: video analysis, electric-field simulation, and low-voltage LED mock."
+  - "Add a fly-versus-mosquito comparison panel to show why mechanism fit matters."
+  - "Define a no-build safety checklist before considering any physical hardware."
+  - "Test the teaching value with one small explanation script and a short before/after comprehension check."
+source:
+  - conversation
+  - gpt-chat-summary
+maturity_action: "evaluate cluster readiness"
+normalization_status: validated

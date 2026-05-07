@@ -1,0 +1,109 @@
+paper_id: paper_YYYY_Www_slug
+week: YYYY-Www
+cycle_slot: main_a
+domain_type: ai_agent_llm_cybersecurity
+title: "TODO"
+source_urls:
+  - "TODO"
+selection:
+  shortlist_path: weekly-paper-lab/shortlists/YYYY-Www.yaml
+  shortlist_rank: 1
+  selected: true
+  why_selected: "TODO"
+triage_score:
+  total: 0
+  recency_discussion: 0
+  idea_os_connection: 0
+  rtx5080_feasibility: 0
+  code_data_benchmark: 0
+  research_question_potential: 0
+  cross_domain_transfer: 0
+reproduction_level:
+  level: 1
+  label: read and concept reconstruction
+rtx5080_experiment:
+  artifact_root: /home/jnln3799/research-artifacts/weekly-paper-lab/YYYY-Www-slug
+  minimum_viable_experiment: "TODO"
+  commands:
+    - "TODO"
+  metrics:
+    - "TODO"
+  stop_conditions:
+    - "TODO"
+failure_taxonomy:
+  engineering: []
+  data: []
+  evaluation: []
+  theory: []
+  hardware: []
+  environment: []
+  cost: []
+  problem_definition: []
+research_question_seed:
+  question: "TODO"
+  contribution_hypothesis: "TODO"
+  next_idea_action: none
+idea_links: []
+idea_connections:
+  - idea_id: idea_000000
+    idea_path: ideas/structured/idea_000000_example.yaml
+    relationship_type: synthesis_seed
+    expected_use: "TODO"
+    connection_strength:
+      score: 0
+      rule_version: paper_connection_rubric_v2
+      dimensions:
+        topical_alignment:
+          score: 0
+          evidence:
+            title_keyword_overlaps: []
+            shared_tags: []
+            explicit_topic_match: false
+        method_workflow_alignment:
+          score: 0
+          evidence:
+            shared_methods: []
+            shared_workflow_stages: []
+            same_artifact_type: false
+            same_failure_mode: false
+        next_step_impact:
+          score: 0
+          evidence:
+            directly_updates_next_step: false
+            produces_required_artifact: false
+            reduces_open_uncertainties: []
+            actionable_within_one_week: false
+        metric_baseline_support:
+          score: 0
+          evidence:
+            shared_metrics: []
+            provides_baseline: false
+            provides_fixture: false
+            measurable_success_condition: false
+        research_generation_value:
+          score: 0
+          evidence:
+            new_tests: []
+            synthesis_paths: []
+            can_update_yaml_record: false
+            can_be_reference_citation: false
+synthesis_assessment:
+  rule_version: paper_synthesis_rubric_v1
+  synthesis_score: 0
+  reference_role: not_ready
+  candidate_research_method: "TODO"
+  combine_with_idea_ids: []
+  required_followups:
+    - "TODO"
+  evidence:
+    has_transferable_method: false
+    has_measurable_fixture: false
+    links_two_or_more_ideas: false
+    defines_new_baseline_or_metric: false
+    can_be_cited_as_reference: false
+project_links: []
+planning_sync:
+  status: not_synced
+  capacity_note: none
+  canonical_path: weekly-paper-lab/papers/YYYY-Www-slug/paper.yaml
+  linked_idea_ids: []

@@ -1,0 +1,62 @@
+id: idea_000003
+title: "Decision load scheduler"
+created_at: 2026-05-04
+type: concept
+tags:
+  - decision-system
+  - planning-bridge
+  - cognitive-load
+  - workflow
+status: structured
+problem_statement:
+  raw: "Given many possible next actions, optimize the next decision so the user spends less energy choosing and more energy executing."
+  normalized: "Given many possible next actions, optimize the next decision so the user spends less energy choosing and more energy executing under constraints of limited resources."
+  structure:
+    given: "many possible next actions"
+    optimize: "the next decision so the user spends less energy choosing and more energy executing"
+    constraints:
+      - "limited resources"
+summary: "A scheduling and review layer that ranks ideas, tasks, and experiments by maturity, capacity impact, and next-test clarity."
+assumptions:
+  - "Decision fatigue is reduced when ideas expose score, next test, and capacity impact."
+  - "Planning should receive only a short bridge, not the full reasoning trail."
+  - "A weekly top-N selection is enough for a first useful loop."
+insights:
+  - "Idea maturity can become an input to weekly planning without becoming a hidden backlog."
+connections:
+  - idea_000005
+value:
+  impact: high
+  feasibility: high
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 3
+  testability_score: 3/15
+  evidence_support: 6
+  evidence_support_score: 6/15
+  connection_strength: 8
+  connection_strength_score: 8/10
+  novelty: 6
+  novelty_score: 6/10
+  feasibility: 7
+  feasibility_score: 7/15
+  research_potential: 3
+  research_potential_score: 3/10
+next_steps:
+  - "Compare weekly selections against the planning repo daily and weekly notes for one week."
+source:
+  - conversation
+  - observation
+normalization_status: validated
+role: idea
+baseline: []
+metrics: []
+evidence:
+  - conversation
+  - observation
+maturity_score: 58/100
+maturity_level: structured
+maturity_action: "include in graph and clustering"

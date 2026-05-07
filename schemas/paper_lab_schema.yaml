@@ -1,0 +1,155 @@
+required_fields:
+  - paper_id
+  - week
+  - cycle_slot
+  - domain_type
+  - title
+  - source_urls
+  - triage_score
+  - reproduction_level
+  - rtx5080_experiment
+  - failure_taxonomy
+  - research_question_seed
+  - idea_links
+  - idea_connections
+  - synthesis_assessment
+  - project_links
+  - planning_sync
+cycle_slot_values:
+  - main_a
+  - main_b
+  - cross_domain
+domain_type_values:
+  - ai_agent_llm_cybersecurity
+  - cross_domain
+reproduction_level_values:
+  1: read and concept reconstruction
+  2: run official demo
+  3: rerun with small parameter changes
+  4: replace data or model
+  5: produce a variant method
+triage_score:
+  total: integer 0-100
+  dimensions:
+    recency_discussion: integer 0-20
+    idea_os_connection: integer 0-20
+    rtx5080_feasibility: integer 0-20
+    code_data_benchmark: integer 0-20
+    research_question_potential: integer 0-20
+    cross_domain_transfer: integer 0-20, required for cross_domain papers
+rtx5080_experiment:
+  artifact_root: /home/jnln3799/research-artifacts/weekly-paper-lab/<YYYY-Www-slug>
+  minimum_viable_experiment: string
+  commands: list
+  metrics: list
+  stop_conditions: list
+failure_taxonomy:
+  engineering: list
+  data: list
+  evaluation: list
+  theory: list
+  hardware: list
+  environment: list
+  cost: list
+  problem_definition: list
+research_question_seed:
+  question: string
+  contribution_hypothesis: string
+  next_idea_action: none | create_idea | update_idea | park | kill | graduate
+idea_connections:
+  type: list
+  min_items: 1
+  required_fields:
+    - idea_id
+    - idea_path
+    - relationship_type
+    - expected_use
+    - connection_strength
+  relationship_type_values:
+    - method_reference
+    - evaluation_fixture
+    - implementation_context
+    - risk_reference
+    - baseline_reference
+    - synthesis_seed
+  connection_strength:
+    rule_version: paper_connection_rubric_v2
+    score: integer 0-100
+    dimensions:
+      topical_alignment:
+        max: 20
+        evidence_points:
+          title_keyword_overlaps: 2 points per item, cap 8
+          shared_tags: 2 points per item, cap 8
+          explicit_topic_match: 4
+      method_workflow_alignment:
+        max: 20
+        evidence_points:
+          shared_methods: 4 points per item, cap 8
+          shared_workflow_stages: 3 points per item, cap 6
+          same_artifact_type: 3
+          same_failure_mode: 3
+      next_step_impact:
+        max: 20
+        evidence_points:
+          directly_updates_next_step: 8
+          produces_required_artifact: 5
+          reduces_open_uncertainties: 2 points per item, cap 4
+          actionable_within_one_week: 3
+      metric_baseline_support:
+        max: 20
+        evidence_points:
+          shared_metrics: 3 points per item, cap 6
+          provides_baseline: 5
+          provides_fixture: 5
+          measurable_success_condition: 4
+      research_generation_value:
+        max: 20
+        evidence_points:
+          new_tests: 4 points per item, cap 8
+          synthesis_paths: 3 points per item, cap 6
+          can_update_yaml_record: 3
+          can_be_reference_citation: 3
+synthesis_assessment:
+  rule_version: paper_synthesis_rubric_v1
+  synthesis_score: integer 0-20
+  reference_role: method_reference | background_reference | baseline_reference | evaluation_reference | risk_reference | not_ready
+  candidate_research_method: string
+  combine_with_idea_ids: list
+  required_followups: list
+  evidence_points:
+    has_transferable_method: 5
+    has_measurable_fixture: 5
+    links_two_or_more_ideas: 4
+    defines_new_baseline_or_metric: 3
+    can_be_cited_as_reference: 3
+planning_sync:
+  status: not_synced | synced | blocked | not_needed
+  capacity_note: none | maybe | yes
+  canonical_path: string
+  linked_idea_ids: list
+expected_markdown_files:
+  - 00_metadata.md
+  - 01_problem.md
+  - 02_method_breakdown.md
+  - 03_key_figures.md
+  - 04_rtx5080_implementation_log.md
+  - 05_bottleneck_and_question.md
+  - 06_research_idea_seed.md
+  - 07_scoring_report.md
+  - 08_scientific_evaluation.md
+scientific_evaluation:
+  required_file: scientific_evaluation.yaml
+  schema: schemas/paper_quality_evaluation_schema.yaml
+  rubric: weekly-paper-lab/rubrics/scientific_paper_evaluation_v1.yaml
+  purpose: "Post-reading paper quality score. This is separate from shortlist triage and Idea OS connection scoring."
+scoring_report:
+  required_file: 07_scoring_report.md
+  required_sections:
+    - Shortlist Triage Scoring
+    - Candidate Selection Explanation
+    - Idea Connection Scoring
+    - Synthesis Scoring
+    - Evidence Gaps And Overrides
+  purpose: "Explain why the evidence fields were marked true, false, or listed before the validator recomputed the scores."
+notes: "Paper Lab records are canonical for selected paper-reading sessions only. Weekly shortlist scoring is canonical in weekly-paper-lab/shortlists/. If a paper creates a real research idea, create or update an Idea OS YAML record and link back to the paper path."

@@ -1,0 +1,437 @@
+paper_id: 2026-W19-aris-autonomous-research
+rubric_version: scientific_paper_evaluation_v1
+evaluation_status: not_started
+evaluated_at: ''
+evaluator: ''
+paper_type: system_paper
+field: ''
+quality_score:
+  raw_score: 0
+  penalty_total: 0
+  applied_cap: null
+  final_score: 0
+  decision: not_evaluated
+dimensions:
+  problem_value:
+    score: 0
+    max: 12
+    items:
+      A1_problem_clarity:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      A2_importance:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      A3_researchability:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      A4_practical_or_theoretical_impact:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      A5_timeliness:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  literature_gap:
+    score: 0
+    max: 10
+    items:
+      B1_core_literature_coverage:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      B2_prior_work_accuracy:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      B3_clear_research_gap:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      B4_avoids_strawman:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  contribution_novelty:
+    score: 0
+    max: 12
+    items:
+      C1_explicit_contributions:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      C2_novelty:
+        weight: 4
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      C3_beyond_engineering_integration:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      C4_alignment_with_problem:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      C5_extensibility:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  method_soundness:
+    score: 0
+    max: 16
+    items:
+      D1_method_clarity:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      D2_assumption_clarity:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      D3_method_problem_fit:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      D4_technical_correctness:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      D5_complete_system_or_process:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      D6_cost_and_complexity_awareness:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  evidence_experiment:
+    score: 0
+    max: 20
+    items:
+      E1_evaluation_matches_claims:
+        weight: 4
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      E2_fair_baselines:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      E3_dataset_or_sample_quality:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      E4_ablation_or_component_analysis:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      E5_statistical_validity:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      E6_failure_case_analysis:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      E7_leakage_or_contamination_prevention:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  results_analysis:
+    score: 0
+    max: 10
+    items:
+      F1_clear_result_presentation:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      F2_analysis_depth:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      F3_results_support_claims:
+        weight: 3
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      F4_tradeoff_discussion:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  reproducibility:
+    score: 0
+    max: 10
+    items:
+      G1_code_availability:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      G2_data_availability_or_protocol:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      G3_experimental_settings:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      G4_environment_and_dependencies:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      G5_reproduction_steps:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  scientific_honesty:
+    score: 0
+    max: 6
+    items:
+      H1_limitation_disclosure:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      H2_claim_restraint:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      H3_ethics_bias_risk_disclosure:
+        weight: 2
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+  communication:
+    score: 0
+    max: 4
+    items:
+      I1_structure:
+        weight: 1
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      I2_figures_and_tables:
+        weight: 1
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      I3_writing_precision:
+        weight: 1
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+      I4_abstract_conclusion_accuracy:
+        weight: 1
+        coefficient: 0
+        score: 0
+        evidence_note: Not evaluated yet.
+penalties:
+  mild_overclaim:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  moderate_overclaim:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  severe_overclaim:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  missing_important_baseline:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  missing_variance_ci_or_repeats:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  misleading_figures:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  cherry_picking:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  thin_limitations:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  missing_failure_case_discussion:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  unclear_data_source:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  unclear_annotation_process:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  unvalidated_llm_judge:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  missing_prompt_or_model_version:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  cybersecurity_missing_misuse_boundary:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+  biomedical_missing_ethics_or_clinical_limits:
+    applied: false
+    deduction: 0
+    evidence_note: Not evaluated yet.
+caps:
+  core_method_major_error:
+    applied: false
+    cap: 55
+    evidence_note: Not evaluated yet.
+  clear_data_leakage:
+    applied: false
+    cap: 50
+    evidence_note: Not evaluated yet.
+  experiments_do_not_support_main_claim:
+    applied: false
+    cap: 60
+    evidence_note: Not evaluated yet.
+  clearly_unfair_baseline:
+    applied: false
+    cap: 70
+    evidence_note: Not evaluated yet.
+  no_evidence_for_core_claim:
+    applied: false
+    cap: 50
+    evidence_note: Not evaluated yet.
+  severe_overclaim:
+    applied: false
+    cap: 65
+    evidence_note: Not evaluated yet.
+  severe_ethics_or_privacy_issue:
+    applied: false
+    cap: 60
+    evidence_note: Not evaluated yet.
+  suspected_fabrication_or_unexplained_anomaly:
+    applied: false
+    cap: 40
+    evidence_note: Not evaluated yet.
+  method_too_unclear_to_understand:
+    applied: false
+    cap: 65
+    evidence_note: Not evaluated yet.
+  not_reproducible_without_reason:
+    applied: false
+    cap: 75
+    evidence_note: Not evaluated yet.
+  missing_core_literature_invalidates_novelty:
+    applied: false
+    cap: 70
+    evidence_note: Not evaluated yet.
+confidence_score:
+  score: 0
+  items:
+    full_text_available:
+      present: false
+      points: 10
+      evidence_note: Not evaluated yet.
+    supplementary_material_available:
+      present: false
+      points: 10
+      evidence_note: Not evaluated yet.
+    code_data_or_appendix_checkable:
+      present: false
+      points: 15
+      evidence_note: Not evaluated yet.
+    evaluator_domain_background:
+      present: false
+      points: 15
+      evidence_note: Not evaluated yet.
+    all_subscores_have_evidence_notes:
+      present: false
+      points: 20
+      evidence_note: Not evaluated yet.
+    two_independent_reviewers:
+      present: false
+      points: 15
+      evidence_note: Not evaluated yet.
+    disagreement_adjudicated:
+      present: false
+      points: 15
+      evidence_note: Not evaluated yet.
+overclaim_risk:
+  level: not_evaluated
+  checklist:
+    overly_strong_conclusion_language:
+      'yes': false
+      evidence_note: Not evaluated yet.
+    small_sample_to_broad_claim:
+      'yes': false
+      evidence_note: Not evaluated yet.
+    offline_benchmark_to_real_world_deployment:
+      'yes': false
+      evidence_note: Not evaluated yet.
+    correlation_as_causation:
+      'yes': false
+      evidence_note: Not evaluated yet.
+    prototype_as_production_ready:
+      'yes': false
+      evidence_note: Not evaluated yet.
+    synthetic_result_as_real_world_validation:
+      'yes': false
+      evidence_note: Not evaluated yet.
+    ignores_failure_cases:
+      'yes': false
+      evidence_note: Not evaluated yet.
+    hides_negative_results:
+      'yes': false
+      evidence_note: Not evaluated yet.
+reproducibility_risk:
+  level: not_evaluated
+  evidence_note: Not evaluated yet.
+reviewer_consistency:
+  reviewer_count: 0
+  score_gap: null
+  requires_adjudication: false
+  disagreement_note: ''

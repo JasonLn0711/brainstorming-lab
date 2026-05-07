@@ -1,0 +1,40 @@
+rubric_version: paper_connection_rubric_v2
+purpose: "Score how strongly a selected paper connects to an existing Idea OS record before reading or implementation starts."
+principle: "AI records observable list items and booleans; the validator recomputes all dimension scores and the 100-point total."
+invalid_score_rule: "A connection score is invalid unless every dimension score and total score can be recomputed from the evidence lists and booleans."
+max_score: 100
+dimensions:
+  topical_alignment:
+    max: 20
+    evidence_points:
+      title_keyword_overlaps: "2 points per listed overlapping keyword, cap 8"
+      shared_tags: "2 points per listed shared tag, cap 8"
+      explicit_topic_match: 4
+  method_workflow_alignment:
+    max: 20
+    evidence_points:
+      shared_methods: "4 points per listed shared method, cap 8"
+      shared_workflow_stages: "3 points per listed shared workflow stage, cap 6"
+      same_artifact_type: 3
+      same_failure_mode: 3
+  next_step_impact:
+    max: 20
+    evidence_points:
+      directly_updates_next_step: 8
+      produces_required_artifact: 5
+      reduces_open_uncertainties: "2 points per listed uncertainty, cap 4"
+      actionable_within_one_week: 3
+  metric_baseline_support:
+    max: 20
+    evidence_points:
+      shared_metrics: "3 points per listed shared metric, cap 6"
+      provides_baseline: 5
+      provides_fixture: 5
+      measurable_success_condition: 4
+  research_generation_value:
+    max: 20
+    evidence_points:
+      new_tests: "4 points per listed possible test, cap 8"
+      synthesis_paths: "3 points per listed synthesis path, cap 6"
+      can_update_yaml_record: 3
+      can_be_reference_citation: 3
