@@ -1,0 +1,395 @@
+rubric_version: paper_lab_rubric_v1
+week: 2026-W19
+cycle_slot: main_a
+generated_at: 2026-05-07
+selection_history_check:
+  exclude_previously_selected_items: true
+  registry_sources:
+    - weekly-paper-lab/papers/*/paper.yaml
+    - prior weekly-paper-lab/shortlists/*.yaml selected candidates
+  match_keys:
+    - normalized paper_id
+    - normalized title
+    - normalized identity URL
+candidates:
+  - paper_id: 2026-W19-aris-autonomous-research
+    title: "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration"
+    selected: true
+    evidence_sources:
+      paper_url: "https://huggingface.co/papers/2605.03042"
+      code_url: "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"
+      dataset_url: ""
+      hf_trending_url: "https://huggingface.co/papers/2605.03042"
+      openalex_url: ""
+      checked_at: 2026-05-07
+      local_evidence:
+        - "index/idea_index.md: idea_000008 Learned conductor for medical AI research workflows"
+        - "index/idea_index.md: idea_000007 Signal Market for low-cost behavior discovery"
+        - "index/idea_index.md: idea_000006 OpenClaw personal ops node"
+    scores:
+      recency_discussion:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: true
+          published_within_90_days: true
+          hf_trending_present: true
+          github_stars_100_plus: true
+          github_stars_500_plus: true
+          social_discussion_present: true
+          benchmark_or_leaderboard_mentioned: false
+      idea_os_connection:
+        score: 13
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: false
+          matches_existing_research_thread: true
+          matches_existing_idea_yaml: true
+          can_update_existing_method: true
+          only_general_interest: false
+      rtx5080_feasibility:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: true
+          single_gpu_possible: true
+          fits_16gb_or_24gb_vram: true
+          small_dataset_or_fixture_possible: true
+          runtime_under_4_hours: true
+          docker_or_conda_install_clear: true
+      code_data_benchmark:
+        score: 12
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: true
+          unofficial_code: false
+          dataset_available: false
+          benchmark_available: false
+          clear_metrics: true
+          reproducible_commands_or_demo: true
+      research_question_potential:
+        score: 16
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: false
+          has_failure_cases: true
+          has_evaluation_gap: true
+          has_deployment_gap: true
+          has_theory_or_mechanism_gap: true
+          can_generate_3_questions: true
+      novelty_or_transfer:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: true
+          introduces_new_problem_frame: true
+          introduces_new_method_family: true
+          has_transfer_path_to_other_domain: true
+    candidate_score: 81
+    weekly_pick_score: 82.0
+    selection_reason: "Selected because it is current, has a highly visible HF discussion signal, ships an official research-harness repo, and can be turned into a bounded claim-ledger audit fixture connected to idea_000008 and idea_000007."
+    rejected_reason: ""
+  - paper_id: 2026-W19-genericagent-context-density
+    title: "GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization"
+    selected: false
+    evidence_sources:
+      paper_url: "https://huggingface.co/papers/2604.17091"
+      code_url: "https://github.com/lsdefine/GenericAgent"
+      dataset_url: ""
+      hf_trending_url: "https://huggingface.co/papers/2604.17091"
+      openalex_url: ""
+      checked_at: 2026-05-07
+      local_evidence:
+        - "index/idea_index.md: idea_000008 Learned conductor for medical AI research workflows"
+        - "index/idea_index.md: idea_000006 OpenClaw personal ops node"
+    scores:
+      recency_discussion:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: true
+          published_within_90_days: true
+          hf_trending_present: true
+          github_stars_100_plus: true
+          github_stars_500_plus: true
+          social_discussion_present: true
+          benchmark_or_leaderboard_mentioned: true
+      idea_os_connection:
+        score: 13
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: false
+          matches_existing_research_thread: true
+          matches_existing_idea_yaml: true
+          can_update_existing_method: true
+          only_general_interest: false
+      rtx5080_feasibility:
+        score: 15
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: true
+          single_gpu_possible: true
+          fits_16gb_or_24gb_vram: true
+          small_dataset_or_fixture_possible: true
+          runtime_under_4_hours: false
+          docker_or_conda_install_clear: false
+      code_data_benchmark:
+        score: 12
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: true
+          unofficial_code: false
+          dataset_available: false
+          benchmark_available: true
+          clear_metrics: true
+          reproducible_commands_or_demo: false
+      research_question_potential:
+        score: 16
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: true
+          has_failure_cases: false
+          has_evaluation_gap: true
+          has_deployment_gap: true
+          has_theory_or_mechanism_gap: true
+          can_generate_3_questions: true
+      novelty_or_transfer:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: true
+          introduces_new_problem_frame: true
+          introduces_new_method_family: true
+          has_transfer_path_to_other_domain: true
+    candidate_score: 76
+    weekly_pick_score: 77.0
+    selection_reason: ""
+    rejected_reason: "Strong second candidate, but the first W19 paper should prioritize the repo's evidence-audit and research-conductor thread before diving into context-density memory design."
+  - paper_id: 2026-W19-agentflow-vulnerability-harness
+    title: "Synthesizing Multi-Agent Harnesses for Vulnerability Discovery"
+    selected: false
+    evidence_sources:
+      paper_url: "https://huggingface.co/papers/2604.20801"
+      code_url: ""
+      dataset_url: ""
+      hf_trending_url: "https://huggingface.co/papers/2604.20801"
+      openalex_url: ""
+      checked_at: 2026-05-07
+      local_evidence:
+        - "index/idea_index.md: idea_000002 Cybersecurity reviewer assist layer"
+        - "index/idea_index.md: idea_000007 Signal Market for low-cost behavior discovery"
+    scores:
+      recency_discussion:
+        score: 17
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: true
+          published_within_90_days: true
+          hf_trending_present: true
+          github_stars_100_plus: false
+          github_stars_500_plus: false
+          social_discussion_present: false
+          benchmark_or_leaderboard_mentioned: true
+      idea_os_connection:
+        score: 13
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: false
+          matches_existing_research_thread: true
+          matches_existing_idea_yaml: true
+          can_update_existing_method: true
+          only_general_interest: false
+      rtx5080_feasibility:
+        score: 3
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: false
+          single_gpu_possible: false
+          fits_16gb_or_24gb_vram: false
+          small_dataset_or_fixture_possible: true
+          runtime_under_4_hours: false
+          docker_or_conda_install_clear: false
+      code_data_benchmark:
+        score: 7
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: false
+          unofficial_code: false
+          dataset_available: false
+          benchmark_available: true
+          clear_metrics: true
+          reproducible_commands_or_demo: false
+      research_question_potential:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: true
+          has_failure_cases: true
+          has_evaluation_gap: true
+          has_deployment_gap: true
+          has_theory_or_mechanism_gap: true
+          can_generate_3_questions: true
+      novelty_or_transfer:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: true
+          introduces_new_problem_frame: true
+          introduces_new_method_family: true
+          has_transfer_path_to_other_domain: true
+    candidate_score: 60
+    weekly_pick_score: 64.75
+    selection_reason: ""
+    rejected_reason: "Excellent research-question potential, but the lack of official code and heavy vulnerability-discovery setup make it a weaker first weekly reproduction target."
+  - paper_id: 2026-W19-semaclaw-harness-engineering
+    title: "SemaClaw: A Step Towards General-Purpose Personal AI Agents through Harness Engineering"
+    selected: false
+    evidence_sources:
+      paper_url: "https://huggingface.co/papers/2604.11548"
+      code_url: "https://github.com/midea-ai/SemaClaw"
+      dataset_url: ""
+      hf_trending_url: "https://huggingface.co/papers/2604.11548"
+      openalex_url: ""
+      checked_at: 2026-05-07
+      local_evidence:
+        - "index/idea_index.md: idea_000006 OpenClaw personal ops node"
+        - "index/idea_index.md: idea_000008 Learned conductor for medical AI research workflows"
+    scores:
+      recency_discussion:
+        score: 13
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: true
+          published_within_90_days: true
+          hf_trending_present: true
+          github_stars_100_plus: false
+          github_stars_500_plus: false
+          social_discussion_present: false
+          benchmark_or_leaderboard_mentioned: false
+      idea_os_connection:
+        score: 13
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: false
+          matches_existing_research_thread: true
+          matches_existing_idea_yaml: true
+          can_update_existing_method: true
+          only_general_interest: false
+      rtx5080_feasibility:
+        score: 18
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: true
+          single_gpu_possible: true
+          fits_16gb_or_24gb_vram: true
+          small_dataset_or_fixture_possible: true
+          runtime_under_4_hours: true
+          docker_or_conda_install_clear: false
+      code_data_benchmark:
+        score: 5
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: true
+          unofficial_code: false
+          dataset_available: false
+          benchmark_available: false
+          clear_metrics: false
+          reproducible_commands_or_demo: false
+      research_question_potential:
+        score: 12
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: false
+          has_failure_cases: false
+          has_evaluation_gap: true
+          has_deployment_gap: true
+          has_theory_or_mechanism_gap: true
+          can_generate_3_questions: true
+      novelty_or_transfer:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: true
+          introduces_new_problem_frame: true
+          introduces_new_method_family: true
+          has_transfer_path_to_other_domain: true
+    candidate_score: 61
+    weekly_pick_score: 66.25
+    selection_reason: ""
+    rejected_reason: "Useful OpenClaw-adjacent paper, but lower code/data/benchmark evidence and weaker research-question potential than ARIS for this week."
+  - paper_id: 2026-W19-agentic-runtime-supply-chain
+    title: "Agentic AI as a Cybersecurity Attack Surface: Threats, Exploits, and Defenses in Runtime Supply Chains"
+    selected: false
+    evidence_sources:
+      paper_url: "https://huggingface.co/papers/2602.19555"
+      code_url: ""
+      dataset_url: ""
+      hf_trending_url: "https://huggingface.co/papers/2602.19555"
+      openalex_url: ""
+      checked_at: 2026-05-07
+      local_evidence:
+        - "index/idea_index.md: idea_000002 Cybersecurity reviewer assist layer"
+        - "index/idea_index.md: idea_000006 OpenClaw personal ops node"
+    scores:
+      recency_discussion:
+        score: 8
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          published_within_30_days: false
+          published_within_90_days: true
+          hf_trending_present: true
+          github_stars_100_plus: false
+          github_stars_500_plus: false
+          social_discussion_present: false
+          benchmark_or_leaderboard_mentioned: false
+      idea_os_connection:
+        score: 13
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          matches_existing_project: false
+          matches_existing_research_thread: true
+          matches_existing_idea_yaml: true
+          can_update_existing_method: true
+          only_general_interest: false
+      rtx5080_feasibility:
+        score: 14
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code_available: false
+          single_gpu_possible: true
+          fits_16gb_or_24gb_vram: true
+          small_dataset_or_fixture_possible: true
+          runtime_under_4_hours: true
+          docker_or_conda_install_clear: false
+      code_data_benchmark:
+        score: 0
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          official_code: false
+          unofficial_code: false
+          dataset_available: false
+          benchmark_available: false
+          clear_metrics: false
+          reproducible_commands_or_demo: false
+      research_question_potential:
+        score: 16
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          has_explicit_limitation_section: false
+          has_failure_cases: true
+          has_evaluation_gap: true
+          has_deployment_gap: true
+          has_theory_or_mechanism_gap: true
+          can_generate_3_questions: true
+      novelty_or_transfer:
+        score: 20
+        rule_version: paper_lab_rubric_v1
+        evidence:
+          not_duplicate_of_recent_lab_pick: true
+          introduces_new_problem_frame: true
+          introduces_new_method_family: true
+          has_transfer_path_to_other_domain: true
+    candidate_score: 51
+    weekly_pick_score: 61.0
+    selection_reason: ""
+    rejected_reason: "Strong conceptual security framing, but no code/data/benchmark support; better suited for a reading-only security note after the first reproducible lab is established."

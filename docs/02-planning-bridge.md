@@ -20,11 +20,41 @@ Planning note shape:
   - Capacity impact: none / maybe / yes
 ```
 
+Weekly paper lab note shape:
+
+```markdown
+- Weekly paper:
+  - Paper:
+  - Status:
+  - Canonical paper lab:
+  - Linked idea IDs:
+  - Next test:
+  - Capacity impact: none / maybe / yes
+```
+
+Weekly paper schedule shape:
+
+```markdown
+- [ ] Weekly Paper Lab block:
+  - selected paper:
+  - scheduled reading / run window:
+  - canonical paper lab:
+  - next test:
+  - capacity boundary:
+```
+
+Update `planning-everything-track` whenever a weekly paper is selected, a
+minimum run completes, a paper is parked/killed, or a research seed becomes an
+Idea OS YAML update. Keep the planning record to status and scheduling; detailed
+scoring reports, run logs, and external artifacts stay in this repo or the
+external artifact root.
+
 ## When To Update Planning
 
 Update planning only when:
 
 - the idea affects today's or this week's capacity
+- a weekly paper changes today's or this week's schedule
 - the idea becomes a real project
 - the next action belongs on an agenda
 - a durable lesson should be promoted

@@ -41,6 +41,7 @@ Planning receives only short bridge notes. Detailed thinking stays here.
 | `graph/` | Relationship graph builder and JSON output |
 | `clustering/` | Cluster builder and YAML output |
 | `research/` | Research candidate and weekly selection outputs |
+| `weekly-paper-lab/` | Weekly paper reading, RTX 5080 reproduction notes, scoring reports, and research-question seeds |
 | `index/` | Generated Markdown indexes |
 | `schemas/` | Human-readable schema contracts |
 | `docs/` | Operating documentation |
@@ -59,6 +60,8 @@ python3 scripts/generate_research_candidates.py
 python3 scripts/generate_research_brief.py
 python3 graph/build_graph.py
 python3 scripts/generate_index.py
+python3 scripts/check_paper_shortlist.py
+python3 scripts/check_paper_lab.py
 python3 scripts/weekly_review.py --dry-run
 python3 scripts/weekly_review.py
 python3 scripts/push_to_planning.py --dry-run
