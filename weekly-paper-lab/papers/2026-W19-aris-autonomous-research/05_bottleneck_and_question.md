@@ -34,3 +34,26 @@ Run 001 version:
 Can a claim-ledger gate improve unsupported-claim detection from a self-accepting
 baseline without creating too many revision demands per accepted research-agent
 output?
+
+## Reading Pass 001 Critique
+
+The paper is strongest as a systems and method report. It gives a concrete
+language for the problem we care about: unsupported success, reviewer
+independence, claim ledgers, and evidence-aware acceptance gates.
+
+The paper is weaker as proof that cross-family review is causally better. Its
+deployment evidence is explicitly observational, and the controlled comparison
+is left as future work. That is not a fatal flaw for our use case, but it
+changes how we should use it:
+
+- Use ARIS as a method reference and failure taxonomy, not as a solved benchmark.
+- Measure our own smallest acceptance-gate behavior before adopting any full
+  orchestration stack.
+- Treat reviewer burden as a first-class metric, because more review can improve
+  detection while still being too expensive for weekly research practice.
+- Keep confidential or sensitive repositories away from repository-level remote
+  reviewer access unless a local-only route is explicitly approved.
+
+Updated bottleneck: the next hard question is not "can we run ARIS?" It is
+whether a five-claim fixture can separate three cases cleanly: supported,
+overstated, and insufficient-evidence claims.

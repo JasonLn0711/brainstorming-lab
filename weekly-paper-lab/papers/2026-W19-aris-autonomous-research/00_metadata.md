@@ -26,3 +26,14 @@
 - HF/GitHub provide an official project repository.
 - Local Idea OS links: `idea_000008`, `idea_000007`, `idea_000006`.
 - First local experiment should avoid full autonomous execution and begin with a tiny claim-ledger audit fixture.
+
+## Reading Pass 001
+
+- Date: 2026-05-07
+- Sources read:
+  - `https://huggingface.co/papers/2605.03042`
+  - `https://arxiv.org/abs/2605.03042`
+  - `https://huggingface.co/papers/2605.03042.md`
+  - `https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep`
+- Reading objective: extract the paper's reusable assurance pattern, not install or run the full ARIS stack.
+- Boundary: treat deployment claims as observational unless a controlled benchmark or independent replication is available.

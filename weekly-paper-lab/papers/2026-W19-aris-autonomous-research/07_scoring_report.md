@@ -49,16 +49,22 @@ metric/baseline support, and research-generation value.
 | `idea_000008` | 100/100 | This is the strongest match. The paper and idea share the research-workflow, conductor, agent, and evaluation frame. They also share executor-reviewer loops, claim/evidence auditing, orchestration policy, review stages, and metrics such as error detection, cost, and latency. The paper can directly update the next method note and produce a one-week fixture. |
 | `idea_000007` | 93/100 | This is a strong evaluation-fixture match. The paper helps decide when a conductor should accept, recurse, or trigger review. It loses points because the artifact type is not identical: `idea_000007` is more about low-cost behavior discovery and signal routing, while ARIS is a research-agent workflow paper. |
 | `idea_000006` | 50/100 | This is a partial implementation-context match. ARIS helps with logging, review, and approval gates for an OpenClaw-like personal ops node, but it does not share the same main topic, metrics, baseline, or fixture. The connection is useful as a harness-engineering reference, not as a primary method source. |
+| `idea_000012` | 100/100 | This is a problem-definition training match. The paper reading pass gives a concrete case where a tool-shaped impulse, "run the full agent stack," is converted into a smaller bottleneck: unsupported-success measurement through claim ledgers, reviewer independence, and acceptance-cost metrics. |
 
 The lower score for `idea_000006` is intentional. It prevents the paper from
 being over-linked to a personal ops node just because both involve agents and
 approval gates.
 
+The `idea_000012` score is full because every point is observable under the
+connection rubric: the overlap is explicit, the shared method is
+implementation-friction diagnosis, the next step is actionable within one week,
+the metrics are named, and the result can update the Idea OS YAML record.
+
 ## Synthesis Scoring
 
 - Synthesis score: 20/20 under `paper_synthesis_rubric_v1`
 - Reference role: method reference
-- Combine with idea IDs: `idea_000008`, `idea_000007`, `idea_000006`
+- Combine with idea IDs: `idea_000008`, `idea_000007`, `idea_000006`, `idea_000012`
 - Candidate research method: claim-ledger-guided adversarial review for small research-agent workflows
 
 The synthesis score is full because the paper provides all five required
@@ -69,6 +75,9 @@ signals:
 - Links two or more ideas: the method connects at least `idea_000008` and `idea_000007`, with `idea_000006` as a weaker implementation context.
 - Defines baseline or metric: unsupported-claim detection, reviewer burden, revision count, and manual inspection time are measurable.
 - Reference value: the paper can be cited as a method reference in a future research note or project packet.
+- Problem-definition value: the paper can be used as a worked example for
+  turning implementation friction into a research question before adopting a
+  full autonomous-agent stack.
 
 ## Evidence Gaps And Overrides
 
@@ -92,3 +101,20 @@ Follow-up check needed before implementation:
 - Inspect the official repository README and agent guide before running code.
 - Confirm whether any workflow requires credentials, paid API calls, or remote writes.
 - Start with the three-claim synthetic fixture before attempting a broader ARIS run.
+
+## Reading Pass 001 Source Check
+
+Primary-source reading supports the original selection but tightens the evidence
+claim:
+
+- The arXiv/HF paper establishes the system frame, assurance stack, and future
+  controlled-benchmark plan.
+- The GitHub repository establishes that ARIS is implemented as a live,
+  Markdown-skill-centered project with a standalone CLI path.
+- The strongest W19 learning value remains the claim-ledger and reviewer
+  independence protocol.
+- The weakest evidence remains causal evaluation: the paper says its deployment
+  outcomes are observational and that controlled comparison is future work.
+
+Therefore the weekly score still stands, but the local use should stay bounded:
+paper reading plus fixture expansion, not full autonomous-research deployment.

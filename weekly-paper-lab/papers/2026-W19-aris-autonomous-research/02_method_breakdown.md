@@ -37,3 +37,28 @@ Build a three-claim synthetic fixture:
 3. One claim unsupported but plausible.
 
 Then compare a baseline self-review against a simple adversarial reviewer pass.
+
+## Reading Pass 001
+
+The reusable method can be decomposed into a small local protocol:
+
+1. Executor produces a bounded artifact and a claim list.
+2. Evidence is stored separately from the artifact, with enough structure to
+   let a reviewer inspect it directly.
+3. A claim ledger assigns each claim a support state: supported, partial, or
+   invalidated.
+4. A fresh reviewer checks the artifact against the ledger and raw evidence,
+   preferably without receiving the executor's summary first.
+5. The system accepts, revises, or abstains based on evidence support and
+   reviewer burden, not on whether the artifact sounds polished.
+
+The paper has a larger stack around this: workflow orchestration, reusable
+Markdown skills, a research wiki, manuscript checks, proof checks, citation
+audit, visual PDF review, and meta-optimization. For this lab, those are
+secondary. The direct method reference is the evidence-to-claim audit cascade
+and the reviewer-independence protocol.
+
+The next method question is whether the reviewer must be a frontier remote model
+or whether a local reviewer model can catch the same hard negatives in a small
+fixture. That keeps the test aligned with the paper while respecting our cost,
+credential, and repo-boundary rules.
