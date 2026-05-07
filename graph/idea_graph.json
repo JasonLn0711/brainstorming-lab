@@ -4,8 +4,8 @@
       "id": "idea_000001",
       "title": "Healthcare AI triage copilot",
       "status": "research_candidate",
-      "maturity_score": "73/100",
-      "maturity_score_raw": 73,
+      "maturity_score": "75/100",
+      "maturity_score_raw": 75,
       "maturity_level": "research_candidate",
       "tags": [
         "healthcare",
@@ -34,8 +34,8 @@
       "id": "idea_000003",
       "title": "Decision load scheduler",
       "status": "structured",
-      "maturity_score": "56/100",
-      "maturity_score_raw": 56,
+      "maturity_score": "58/100",
+      "maturity_score_raw": 58,
       "maturity_level": "structured",
       "tags": [
         "decision-system",
@@ -79,8 +79,8 @@
       "id": "idea_000006",
       "title": "OpenClaw personal ops node",
       "status": "structured",
-      "maturity_score": "58/100",
-      "maturity_score_raw": 58,
+      "maturity_score": "60/100",
+      "maturity_score_raw": 60,
       "maturity_level": "structured",
       "tags": [
         "openclaw",
@@ -143,8 +143,8 @@
       "id": "idea_000008",
       "title": "Learned conductor for medical AI research workflows",
       "status": "execution_ready",
-      "maturity_score": "93/100",
-      "maturity_score_raw": 93,
+      "maturity_score": "94/100",
+      "maturity_score_raw": 94,
       "maturity_level": "execution_ready",
       "tags": [
         "multi-agent",
@@ -161,8 +161,8 @@
       "id": "idea_000009",
       "title": "Safe Tesla coil insect-trap teaching demo",
       "status": "research_candidate",
-      "maturity_score": "65/100",
-      "maturity_score_raw": 65,
+      "maturity_score": "68/100",
+      "maturity_score_raw": 68,
       "maturity_level": "research_candidate",
       "tags": [
         "hardware",
@@ -175,10 +175,10 @@
     {
       "id": "idea_000010",
       "title": "AI-assisted smart mosquito trap",
-      "status": "research_candidate",
-      "maturity_score": "78/100",
-      "maturity_score_raw": 78,
-      "maturity_level": "research_candidate",
+      "status": "execution_ready",
+      "maturity_score": "84/100",
+      "maturity_score_raw": 84,
+      "maturity_level": "execution_ready",
       "tags": [
         "hardware",
         "mosquito-control",
@@ -195,8 +195,8 @@
       "id": "idea_000011",
       "title": "AI-assisted statement interview question recommendation system",
       "status": "executing",
-      "maturity_score": "87/100",
-      "maturity_score_raw": 87,
+      "maturity_score": "89/100",
+      "maturity_score_raw": 89,
       "maturity_level": "execution_ready",
       "tags": [
         "law-enforcement",
@@ -211,6 +211,30 @@
         "local-llm"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml"
+    },
+    {
+      "id": "idea_000012",
+      "title": "PhD problem-definition thinking system",
+      "status": "research_candidate",
+      "maturity_score": "80/100",
+      "maturity_score_raw": 80,
+      "maturity_level": "research_candidate",
+      "tags": [
+        "research-thinking",
+        "problem-definition",
+        "phd-training",
+        "first-principles",
+        "systems-thinking",
+        "judgment-system",
+        "meta-learning",
+        "research-endurance",
+        "uncertainty-tolerance",
+        "workflow-diagnosis",
+        "implementation-friction",
+        "embodied-learning",
+        "lecture-practice"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml"
     }
   ],
   "edges": [
@@ -283,6 +307,16 @@
       "target": "idea_000011",
       "weight": 1.0,
       "similarity": 0.0984,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000002",
+      "target": "idea_000012",
+      "weight": 1.0,
+      "similarity": 0.1185,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -402,6 +436,16 @@
       ]
     },
     {
+      "source": "idea_000005",
+      "target": "idea_000012",
+      "weight": 1.0,
+      "similarity": 0.1429,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000006",
       "target": "idea_000011",
       "weight": 1.0,
@@ -449,10 +493,30 @@
       ]
     },
     {
+      "source": "idea_000007",
+      "target": "idea_000012",
+      "weight": 1.0,
+      "similarity": 0.2762,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000008",
       "target": "idea_000011",
       "weight": 1.0,
       "similarity": 0.2202,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000008",
+      "target": "idea_000012",
+      "weight": 1.0,
+      "similarity": 0.2346,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -471,6 +535,16 @@
       "reasons": [
         "manual_connection",
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000011",
+      "target": "idea_000012",
+      "weight": 1.0,
+      "similarity": 0.202,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     }
   ]

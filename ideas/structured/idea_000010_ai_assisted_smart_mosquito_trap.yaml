@@ -11,7 +11,7 @@ tags:
   - decision-system
   - software-architecture
   - cross-domain
-status: research_candidate
+status: execution_ready
 problem_statement:
   raw: "Given mosquitoes are weak targets for open Tesla coil fly-trap geometry, design a smarter mosquito trap as a mosquito decision system that senses conditions, predicts active periods, adjusts attraction, confirms targets, captures safely, and learns from outcomes."
   normalized: "Given small fast mosquitoes in open air, optimize adaptive detection and capture usefulness under constraints of electrical safety, no exposed high voltage, low cost, false positives, indoor usability, energy use, noise, and measurable benefit over simple commercial traps."
@@ -90,16 +90,16 @@ maturity:
   testability_score: 15/15
   evidence_support: 6
   evidence_support_score: 6/15
-  connection_strength: 2
-  connection_strength_score: 2/10
+  connection_strength: 8
+  connection_strength_score: 8/10
   novelty: 8
   novelty_score: 8/10
   feasibility: 15
   feasibility_score: 15/15
   research_potential: 7
   research_potential_score: 7/10
-maturity_score: 78/100
-maturity_level: research_candidate
+maturity_score: 84/100
+maturity_level: execution_ready
 research_question: "Compared with an always-on commercial mosquito lamp, does adaptive sensing plus dynamic attraction improve capture rate, energy per capture, false attraction, runtime, and nighttime noise?"
 system_design:
   transferable_pattern:
@@ -282,5 +282,5 @@ next_steps:
   - "Compare always-on mode against rule-based dynamic mode on runtime and energy before claiming capture improvement."
 source:
   - conversation
-maturity_action: "evaluate cluster readiness"
+maturity_action: "generate experiment plan"
 normalization_status: validated

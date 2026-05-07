@@ -2,7 +2,7 @@
 
 ## ai-triage
 
-- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 73/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 
 ## anomaly-detection
@@ -11,11 +11,11 @@
 
 ## approval-gate
 
-- `idea_000006` - OpenClaw personal ops node (`structured`, 58/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+- `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
 ## auditability
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## behavior-extraction
 
@@ -35,12 +35,12 @@
 
 ## cognitive-load
 
-- `idea_000003` - Decision load scheduler (`structured`, 56/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
+- `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 
 ## conductor
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
-- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 93/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## control-loop
 
@@ -52,11 +52,11 @@
 
 ## cost-normalized-benchmark
 
-- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 93/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## cross-domain
 
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## cybersecurity
 
@@ -74,18 +74,22 @@
 
 ## decision-system
 
-- `idea_000003` - Decision load scheduler (`structured`, 56/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
+- `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## embedding-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## embodied-learning
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
 ## evaluation
 
-- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 93/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## evaluator-loop
 
@@ -93,7 +97,7 @@
 
 ## evidence-routing
 
-- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 73/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 72/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 
@@ -121,55 +125,71 @@
 
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 
+## first-principles
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
 ## fugu-style-orchestration
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
 ## hardware
 
-- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## healthcare
 
-- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 73/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 
 ## hermes-agent
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## human-in-the-loop
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## human-review
 
-- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 73/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+- `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+
+## implementation-friction
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## information-efficiency
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## judgment-system
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
 ## langgraph
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## law-enforcement
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## learned-orchestration
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
-- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 93/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## lecture-practice
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## legal-ai
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## local-llm
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## local-sparse-vectors
 
@@ -177,7 +197,11 @@
 
 ## medical-ai
 
-- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 93/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## meta-learning
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## metadata-only
 
@@ -185,20 +209,20 @@
 
 ## mosquito-control
 
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## multi-agent
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
-- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 93/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## non-leading-questions
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## openclaw
 
-- `idea_000006` - OpenClaw personal ops node (`structured`, 58/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+- `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
 ## outlier-detection
 
@@ -206,16 +230,24 @@
 
 ## personal-ops
 
-- `idea_000006` - OpenClaw personal ops node (`structured`, 58/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+- `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+
+## phd-training
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## physics-education
 
-- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
 
 ## planning-bridge
 
-- `idea_000003` - Decision load scheduler (`structured`, 56/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
+- `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
+
+## problem-definition
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## problem-normalization
 
@@ -227,20 +259,28 @@
 
 ## rag
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## research-candidate
 
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 72/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## research-endurance
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
 ## research-operating-system
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## research-thinking
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
 ## research-workflow
 
-- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 93/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## reviewer-assist
 
@@ -249,8 +289,8 @@
 
 ## safety
 
-- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## scam-research
 
@@ -266,12 +306,12 @@
 
 ## sensing
 
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## side-project
 
-- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 65/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## signal-market
 
@@ -279,15 +319,19 @@
 
 ## software-architecture
 
-- `idea_000010` - AI-assisted smart mosquito trap (`research_candidate`, 78/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## statement-interview
 
-- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 87/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
 ## strategy-learner
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## systems-thinking
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## task-graph
 
@@ -297,11 +341,19 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## uncertainty-tolerance
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
 ## workflow
 
-- `idea_000003` - Decision load scheduler (`structured`, 56/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
+- `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
-- `idea_000006` - OpenClaw personal ops node (`structured`, 58/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+- `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+
+## workflow-diagnosis
+
+- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## workflow-policy-learning
 

@@ -57,15 +57,15 @@ maturity:
   testability_score: 8/15
   evidence_support: 6
   evidence_support_score: 6/15
-  connection_strength: 2
-  connection_strength_score: 2/10
+  connection_strength: 5
+  connection_strength_score: 5/10
   novelty: 6
   novelty_score: 6/10
   feasibility: 10
   feasibility_score: 10/15
   research_potential: 8
   research_potential_score: 8/10
-maturity_score: 65/100
+maturity_score: 68/100
 maturity_level: research_candidate
 next_steps:
   - "Draft a one-page concept note comparing three safe versions: video analysis, electric-field simulation, and low-voltage LED mock."

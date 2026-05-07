@@ -75,6 +75,7 @@ connections:
   - idea_000005
   - idea_000007
   - idea_000011
+  - idea_000012
 role: idea
 value:
   impact: high
@@ -88,15 +89,15 @@ maturity:
   testability_score: 15/15
   evidence_support: 12
   evidence_support_score: 12/15
-  connection_strength: 9
-  connection_strength_score: 9/10
+  connection_strength: 10
+  connection_strength_score: 10/10
   novelty: 10
   novelty_score: 10/10
   feasibility: 15
   feasibility_score: 15/15
   research_potential: 7
   research_potential_score: 7/10
-maturity_score: 93/100
+maturity_score: 94/100
 maturity_level: execution_ready
 next_steps:
   - "Record the result of 吳冠廷's Sakana AI/Fugu application when known."
