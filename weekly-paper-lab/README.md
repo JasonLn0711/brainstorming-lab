@@ -53,6 +53,8 @@ weekly-paper-lab/papers/<YYYY-Www>-<slug>/
   05_bottleneck_and_question.md
   06_research_idea_seed.md
   07_scoring_report.md
+  08_scientific_evaluation.md
+  scientific_evaluation.yaml
 ```
 
 `paper.yaml` is the canonical record for status, scoring, links, reproduction
@@ -72,6 +74,32 @@ reading notes.
 `07_scoring_report.md` is required. It explains why the triage, connection, and
 synthesis evidence fields were assigned before the validators recompute the
 numbers. The score can be mechanical; the report is the human audit trail.
+
+`scientific_evaluation.yaml` and `08_scientific_evaluation.md` are the
+post-reading scientific-quality layer. They do not decide which paper to read.
+They evaluate whether the paper itself is scientifically strong after reading:
+problem value, literature gap, novelty, method soundness, evidence strength,
+results analysis, reproducibility, honesty, and communication.
+
+The scientific-quality score uses `scientific_paper_evaluation_v1`:
+
+- every subitem has a weight, coefficient, score, and evidence note;
+- coefficients are limited to `0`, `0.25`, `0.5`, `0.75`, or `1`;
+- raw score is recomputed from item weights and coefficients;
+- penalties, caps, confidence score, overclaim risk, and reproducibility risk
+  are validated separately;
+- `not_started` is allowed before a final quality review, but a preliminary or
+  final score cannot use `not_evaluated` risk or decision fields.
+
+This keeps "interesting paper" separate from "well-supported scientific paper."
+If evidence is missing, record the gap. Do not fill a high score from taste,
+authority, popularity, or assumed author competence.
+
+Create a blank machine-checkable score record with:
+
+```bash
+python3 scripts/new_paper_quality_evaluation.py weekly-paper-lab/papers/<YYYY-Www-slug>
+```
 
 The 100-point connection score has five 20-point dimensions:
 
@@ -203,4 +231,5 @@ Run the structural check with:
 
 ```bash
 python3 scripts/check_paper_lab.py
+python3 scripts/check_paper_quality.py
 ```

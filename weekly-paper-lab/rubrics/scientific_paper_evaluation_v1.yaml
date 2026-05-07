@@ -1,0 +1,192 @@
+rubric_version: scientific_paper_evaluation_v1
+purpose: "Score the scientific quality of a selected paper after reading; do not use this rubric for shortlist selection."
+max_score: 100
+principles:
+  - "Every subscore must have an evidence note."
+  - "If no evidence is found, the coefficient must be 0 or conservatively bounded."
+  - "Claim strength determines required evidence strength."
+  - "Caps and penalties prevent a polished paper from hiding fatal scientific defects."
+  - "AI may produce a first pass, but final scores need human calibration."
+coefficient_values:
+  0: "missing, unsupported, or seriously wrong"
+  0.25: "mentioned but very weak"
+  0.5: "basically present but incomplete"
+  0.75: "good with a small gap"
+  1: "clear, complete, and well supported"
+dimensions:
+  problem_value:
+    max: 12
+    items:
+      A1_problem_clarity: 3
+      A2_importance: 3
+      A3_researchability: 2
+      A4_practical_or_theoretical_impact: 2
+      A5_timeliness: 2
+  literature_gap:
+    max: 10
+    items:
+      B1_core_literature_coverage: 3
+      B2_prior_work_accuracy: 2
+      B3_clear_research_gap: 3
+      B4_avoids_strawman: 2
+  contribution_novelty:
+    max: 12
+    items:
+      C1_explicit_contributions: 2
+      C2_novelty: 4
+      C3_beyond_engineering_integration: 2
+      C4_alignment_with_problem: 2
+      C5_extensibility: 2
+  method_soundness:
+    max: 16
+    items:
+      D1_method_clarity: 3
+      D2_assumption_clarity: 3
+      D3_method_problem_fit: 3
+      D4_technical_correctness: 3
+      D5_complete_system_or_process: 2
+      D6_cost_and_complexity_awareness: 2
+  evidence_experiment:
+    max: 20
+    items:
+      E1_evaluation_matches_claims: 4
+      E2_fair_baselines: 3
+      E3_dataset_or_sample_quality: 3
+      E4_ablation_or_component_analysis: 3
+      E5_statistical_validity: 3
+      E6_failure_case_analysis: 2
+      E7_leakage_or_contamination_prevention: 2
+  results_analysis:
+    max: 10
+    items:
+      F1_clear_result_presentation: 2
+      F2_analysis_depth: 3
+      F3_results_support_claims: 3
+      F4_tradeoff_discussion: 2
+  reproducibility:
+    max: 10
+    items:
+      G1_code_availability: 2
+      G2_data_availability_or_protocol: 2
+      G3_experimental_settings: 2
+      G4_environment_and_dependencies: 2
+      G5_reproduction_steps: 2
+  scientific_honesty:
+    max: 6
+    items:
+      H1_limitation_disclosure: 2
+      H2_claim_restraint: 2
+      H3_ethics_bias_risk_disclosure: 2
+  communication:
+    max: 4
+    items:
+      I1_structure: 1
+      I2_figures_and_tables: 1
+      I3_writing_precision: 1
+      I4_abstract_conclusion_accuracy: 1
+penalties:
+  mild_overclaim: 3
+  moderate_overclaim: 6
+  severe_overclaim: 10
+  missing_important_baseline: 5
+  missing_variance_ci_or_repeats: 3
+  misleading_figures: 3
+  cherry_picking: 5
+  thin_limitations: 3
+  missing_failure_case_discussion: 3
+  unclear_data_source: 5
+  unclear_annotation_process: 3
+  unvalidated_llm_judge: 4
+  missing_prompt_or_model_version: 3
+  cybersecurity_missing_misuse_boundary: 4
+  biomedical_missing_ethics_or_clinical_limits: 5
+caps:
+  core_method_major_error: 55
+  clear_data_leakage: 50
+  experiments_do_not_support_main_claim: 60
+  clearly_unfair_baseline: 70
+  no_evidence_for_core_claim: 50
+  severe_overclaim: 65
+  severe_ethics_or_privacy_issue: 60
+  suspected_fabrication_or_unexplained_anomaly: 40
+  method_too_unclear_to_understand: 65
+  not_reproducible_without_reason: 75
+  missing_core_literature_invalidates_novelty: 70
+confidence_score:
+  full_text_available: 10
+  supplementary_material_available: 10
+  code_data_or_appendix_checkable: 15
+  evaluator_domain_background: 15
+  all_subscores_have_evidence_notes: 20
+  two_independent_reviewers: 15
+  disagreement_adjudicated: 15
+overclaim_risk_checklist:
+  - overly_strong_conclusion_language
+  - small_sample_to_broad_claim
+  - offline_benchmark_to_real_world_deployment
+  - correlation_as_causation
+  - prototype_as_production_ready
+  - synthetic_result_as_real_world_validation
+  - ignores_failure_cases
+  - hides_negative_results
+decision_mapping:
+  strong_accept: "90-100"
+  accept: "80-89"
+  weak_accept: "70-79"
+  borderline: "60-69"
+  weak_reject: "50-59"
+  reject: "40-49"
+  strong_reject: "<40"
+domain_adjustments:
+  ai_or_machine_learning:
+    emphasize:
+      - E2_fair_baselines
+      - E4_ablation_or_component_analysis
+      - E7_leakage_or_contamination_prevention
+      - reproducibility
+      - H2_claim_restraint
+  ai_agent:
+    required_checks:
+      - task_realism
+      - tool_use_reliability
+      - token_latency_api_cost
+      - human_burden
+      - traceability
+      - safety
+      - llm_judge_reliability
+  cybersecurity:
+    required_checks:
+      - threat_model
+      - defender_visibility
+      - adaptive_attacker
+      - false_negative_cost
+      - false_positive_burden
+      - misuse_boundary
+      - deployment_maintenance_monitoring
+  biomedical_or_medical_ai:
+    required_checks:
+      - clinical_relevance
+      - dataset_bias
+      - external_validation
+      - patient_outcome
+      - ethics_privacy_risk
+      - interpretability
+      - deployment_safety
+  hci_ux_human_factors:
+    required_checks:
+      - participant_sampling
+      - study_protocol
+      - measurement_fit
+      - qualitative_rigor
+      - ecological_validity
+      - informed_consent
+      - design_implication
+  theory_math_physics:
+    note: "Replace Evidence & Experiment with Theoretical Evidence & Proof Strength when experiments are not the correct evidence form."
+    required_checks:
+      - formal_definition
+      - proof_validity
+      - assumption_clarity
+      - predictive_power
+      - theory_connection
+      - elegance

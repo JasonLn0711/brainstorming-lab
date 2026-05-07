@@ -11,6 +11,7 @@ import re
 from pathlib import Path
 from typing import Any
 
+from idea_os.paper_quality import validate_quality_evaluation_file
 from idea_os.store import REPO_ROOT
 from idea_os.yaml_io import load_yaml
 
@@ -28,6 +29,7 @@ EXPECTED_MARKDOWN_FILES = [
     "05_bottleneck_and_question.md",
     "06_research_idea_seed.md",
     "07_scoring_report.md",
+    "08_scientific_evaluation.md",
 ]
 
 REQUIRED_SCORING_REPORT_SECTIONS = [
@@ -181,6 +183,13 @@ def validate_paper_folder(folder: str | Path, root: str | Path | None = None) ->
             errors.append(f"{label}: missing {filename}")
         elif filename == "07_scoring_report.md":
             errors.extend(_validate_scoring_report(path, repo))
+    expected_id = None
+    if yaml_path.exists():
+        try:
+            expected_id = str(load_yaml(yaml_path).get("paper_id", ""))
+        except Exception:
+            expected_id = None
+    errors.extend(validate_quality_evaluation_file(paper_dir / "scientific_evaluation.yaml", repo, expected_id))
     return errors
 
 

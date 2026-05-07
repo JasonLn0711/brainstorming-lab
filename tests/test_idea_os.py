@@ -12,6 +12,7 @@ from idea_os.indexer import generate_indexes
 from idea_os.merge import detect_merge_candidates, merge_decision
 from idea_os.models import classify_score, score_idea, validate_idea
 from idea_os.paper_lab import EXPECTED_MARKDOWN_FILES, validate_paper_lab
+from idea_os.paper_quality import blank_quality_evaluation, validate_quality_evaluation_file
 from idea_os.paper_shortlist import validate_shortlists
 from idea_os.planning import insert_or_replace_block, render_today_block
 from idea_os.problem import normalize_idea_problem
@@ -350,6 +351,32 @@ idea_000001:
         self.assertTrue(any("connection_strength.score must be 100" in error for error in errors))
         self.assertTrue(any("synthesis_assessment.synthesis_score must be 20" in error for error in errors))
 
+    def test_scientific_paper_evaluation_recomputes_scores(self) -> None:
+        paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-agent-memory"
+        paper_dir.mkdir(parents=True, exist_ok=True)
+        evaluation = blank_quality_evaluation("paper_2026_W19_agent_memory")
+        evaluation["evaluation_status"] = "preliminary"
+        evaluation["quality_score"]["decision"] = "reject"
+        evaluation["overclaim_risk"]["level"] = "low"
+        evaluation["reproducibility_risk"]["level"] = "medium"
+        evaluation["reproducibility_risk"]["evidence_note"] = "Code is not checked yet."
+        evaluation["dimensions"]["problem_value"]["items"]["A1_problem_clarity"]["coefficient"] = 1
+        evaluation["dimensions"]["problem_value"]["items"]["A1_problem_clarity"]["score"] = 3
+        evaluation["dimensions"]["problem_value"]["items"]["A1_problem_clarity"]["evidence_note"] = (
+            "Introduction states a concrete agent-memory problem."
+        )
+        evaluation["dimensions"]["problem_value"]["score"] = 3
+        evaluation["quality_score"]["raw_score"] = 3
+        evaluation["quality_score"]["final_score"] = 3
+        save_yaml(paper_dir / "scientific_evaluation.yaml", evaluation)
+
+        self.assertEqual(validate_quality_evaluation_file(paper_dir / "scientific_evaluation.yaml", self.root), [])
+
+        evaluation["dimensions"]["problem_value"]["items"]["A1_problem_clarity"]["score"] = 2
+        save_yaml(paper_dir / "scientific_evaluation.yaml", evaluation)
+        errors = validate_quality_evaluation_file(paper_dir / "scientific_evaluation.yaml", self.root)
+        self.assertTrue(any("A1_problem_clarity.score must be 3" in error for error in errors))
+
     def test_check_paper_lab_script_reports_invalid_record(self) -> None:
         paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-invalid"
         paper_dir.mkdir(parents=True, exist_ok=True)
@@ -370,6 +397,26 @@ idea_000001:
         )
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("reproduction_level.level", result.stdout)
+
+    def test_check_paper_quality_script_reports_score_mismatch(self) -> None:
+        paper_dir = self.root / "weekly-paper-lab" / "papers" / "2026-W19-agent-memory"
+        paper_dir.mkdir(parents=True, exist_ok=True)
+        evaluation = blank_quality_evaluation("paper_2026_W19_agent_memory")
+        evaluation["quality_score"]["raw_score"] = 1
+        save_yaml(paper_dir / "scientific_evaluation.yaml", evaluation)
+
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(REPO / "scripts" / "check_paper_quality.py"),
+                "--root",
+                str(self.root),
+            ],
+            capture_output=True,
+            text=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("quality_score.raw_score must be 0", result.stdout)
 
     def test_weekly_paper_shortlist_validation(self) -> None:
         shortlist_dir = self.root / "weekly-paper-lab" / "shortlists"
@@ -523,6 +570,7 @@ idea_000001:
                 )
             else:
                 (paper_dir / filename).write_text(f"# {filename}\n", encoding="utf-8")
+        save_yaml(paper_dir / "scientific_evaluation.yaml", blank_quality_evaluation("paper_2026_W19_agent_memory"))
 
     def _shortlist_record(self) -> dict:
         return {

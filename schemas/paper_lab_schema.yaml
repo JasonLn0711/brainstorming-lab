@@ -137,6 +137,12 @@ expected_markdown_files:
   - 05_bottleneck_and_question.md
   - 06_research_idea_seed.md
   - 07_scoring_report.md
+  - 08_scientific_evaluation.md
+scientific_evaluation:
+  required_file: scientific_evaluation.yaml
+  schema: schemas/paper_quality_evaluation_schema.yaml
+  rubric: weekly-paper-lab/rubrics/scientific_paper_evaluation_v1.yaml
+  purpose: "Post-reading paper quality score. This is separate from shortlist triage and Idea OS connection scoring."
 scoring_report:
   required_file: 07_scoring_report.md
   required_sections:

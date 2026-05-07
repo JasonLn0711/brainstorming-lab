@@ -130,10 +130,13 @@ Do not add a rule just because an idea is exciting. Add a rule when it prevents 
 - Selected papers must include `idea_connections` with objective 100-point `paper_connection_rubric_v2` scores before reading or implementation starts.
 - `paper_connection_rubric_v2` evidence list fields must contain the actual observed items; do not replace them with bare counts.
 - Selected papers must include `synthesis_assessment` with objective `paper_synthesis_rubric_v1` scores to decide whether the paper can combine with existing ideas into a future research method or reference.
-- Keep the eight Markdown files as the human lab notebook: metadata, problem, method, figures, RTX 5080 log, bottlenecks, research seed, and scoring report.
+- Keep the Markdown files as the human lab notebook: metadata, problem, method, figures, RTX 5080 log, bottlenecks, research seed, selection/connection scoring report, and scientific evaluation report.
 - Every selected paper must include `07_scoring_report.md` explaining why the shortlist, connection, and synthesis scores were assigned; unknown evidence must be named instead of guessed.
+- Every selected paper must include `scientific_evaluation.yaml` and `08_scientific_evaluation.md` for post-reading paper quality evaluation under `scientific_paper_evaluation_v1`.
+- Scientific quality scoring is separate from shortlist triage: triage decides whether to read the paper; scientific evaluation decides whether the paper's problem, method, evidence, claims, limits, and reproducibility are strong.
+- Scientific evaluation coefficients are limited to `0`, `0.25`, `0.5`, `0.75`, or `1`; every subscore must have an evidence note, and validator-recomputed penalties/caps/confidence/risk fields must match the YAML.
 - Use the three-week cycle: `main_a`, `main_b`, then `cross_domain`.
-- Use `scripts/check_paper_shortlist.py` before selecting the weekly paper and `scripts/check_paper_lab.py` before weekly review or planning sync when paper folders changed.
+- Use `scripts/check_paper_shortlist.py` before selecting the weekly paper and `scripts/check_paper_lab.py` plus `scripts/check_paper_quality.py` before weekly review or planning sync when paper folders changed.
 - Weekly Paper Lab must stay coupled to `planning-everything-track`: update the current day note when a paper is selected or run, update the weekly plan with the scheduled reading/run block and next test, and keep planning notes short.
 - Keep large models, datasets, checkpoints, caches, credentials, sensitive evidence, and generated run artifacts out of git.
 - If a paper produces a real research question, create or update an Idea OS YAML record and link back to the paper folder.

@@ -41,7 +41,18 @@ better research signal than one attractive note.
 Paper folders keep reading notes, method breakdowns, RTX 5080 minimum
 experiments, failure logs, scoring reports, and research-question seeds. The
 scoring report explains why the evidence fields were assigned before the
-validator recomputes the numbers. When a paper creates a real research
+validator recomputes the numbers.
+
+After reading, `scientific_evaluation.yaml` and
+`08_scientific_evaluation.md` score the paper's scientific quality under
+`scientific_paper_evaluation_v1`. This is not the same as shortlist triage:
+triage answers "should we read this paper this week"; scientific evaluation
+answers "how strong are the paper's problem, method, evidence, claims,
+limitations, and reproducibility." Every subscore must have an evidence note,
+and the validator recomputes raw score, penalties, caps, confidence score, and
+risk gates.
+
+When a paper creates a real research
 direction, create or update an Idea OS YAML record and link back to the paper
 folder through `source`, `evidence`, `connections`, or `next_steps`.
 
@@ -50,6 +61,7 @@ Run this before weekly review when paper folders changed:
 ```bash
 python3 scripts/check_paper_shortlist.py
 python3 scripts/check_paper_lab.py
+python3 scripts/check_paper_quality.py
 ```
 
 After those checks pass, update the planning control plane with the paper title,
