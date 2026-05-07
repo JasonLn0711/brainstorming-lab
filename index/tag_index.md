@@ -1,5 +1,9 @@
 # Tag Index
 
+## ai-security
+
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
 ## ai-triage
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
@@ -37,6 +41,10 @@
 
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 
+## compliance
+
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
 ## conductor
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -63,6 +71,7 @@
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 72/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
 ## data-acquisition-strategy
 
@@ -86,6 +95,10 @@
 ## embodied-learning
 
 - `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## endpoint-management
+
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
 ## evaluation
 
@@ -133,6 +146,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## governance
+
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
 ## hardware
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
@@ -162,6 +179,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## iso-27001
+
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
 ## judgment-system
 
 - `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
@@ -186,6 +207,10 @@
 ## legal-ai
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+
+## lenovo-ldo
+
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
 ## local-llm
 
@@ -336,6 +361,10 @@
 ## task-graph
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## teaching
+
+- `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
 ## test-time-scaling
 

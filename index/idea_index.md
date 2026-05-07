@@ -6,6 +6,7 @@
 | `idea_000007` | Signal Market for low-cost behavior discovery | 92/100 | `execution_ready` | `execution_ready` | Draft a tiny Fugu-style conductor fixture for the scam system with six synthetic cases: two obvious cases, two hard negatives, one outlier, and one insufficient-evidence case. | `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml` |
 | `idea_000011` | AI-assisted statement interview question recommendation system | 89/100 | `execution_ready` | `executing` | Install Ollama and pull gpt-oss:20b, then run the MVP-0 CLI without --mock. | `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml` |
 | `idea_000010` | AI-assisted smart mosquito trap | 84/100 | `execution_ready` | `execution_ready` | Review the v1 ESP32 build note and decide whether to buy the minimum parts. | `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml` |
+| `idea_000013` | ISO 27001 high school explainer and compliance teaching module | 84/100 | `execution_ready` | `execution_ready` | Turn the Markdown explainer into a 10-minute classroom handout and ask one non-security reader to summarize ISO/IEC 27001 back in five bullet points. | `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml` |
 | `idea_000012` | PhD problem-definition thinking system | 80/100 | `research_candidate` | `research_candidate` | Apply the one-page problem-definition card to one active lane, preferably idea_000002 or idea_000007, after a concrete implementation or mental-execution friction pass. | `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml` |
 | `idea_000001` | Healthcare AI triage copilot | 75/100 | `research_candidate` | `research_candidate` | Create a synthetic intake fixture and define reviewer-burden metrics. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
 | `idea_000004` | Anomaly detection research watch | 72/100 | `research_candidate` | `research_candidate` | Define one public or synthetic anomaly fixture and one review packet format. | `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml` |
@@ -29,3 +30,4 @@
 - idea_000010 - AI-assisted smart mosquito trap - 84/100 - execution_ready
 - idea_000011 - AI-assisted statement interview question recommendation system - 89/100 - execution_ready
 - idea_000012 - PhD problem-definition thinking system - 80/100 - research_candidate
+- idea_000013 - ISO 27001 high school explainer and compliance teaching module - 84/100 - execution_ready
