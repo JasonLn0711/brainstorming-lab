@@ -1,0 +1,218 @@
+id: idea_000017
+title: "Externalized cognition OS for human-AI planning"
+created_at: 2026-05-09
+type: hypothesis
+tags:
+  - externalized-memory
+  - cognition-os
+  - human-ai-collaboration
+  - repo-architecture
+  - planning-bridge
+  - distributed-cognition
+  - working-memory
+  - extended-mind
+  - knowledge-graph
+  - life-state-machine
+  - ai-agents
+  - human-value
+  - meaning-making
+  - digital-cognitive-twin
+  - self-modeling
+  - descriptive-understanding
+  - existential-understanding
+status: research_candidate
+problem_statement:
+  raw: "Given a growing personal planning system split across planning, brainstorming, paper, research, and execution repos, understand how human judgment and AI context handling should cooperate so the system extends cognition without pretending that next-step planning can be fully automated."
+  normalized: "Given a multi-repo personal cognition system, optimize human-AI planning by externalizing memory, preserving context, and keeping human value judgment in the loop under constraints of working-memory limits, repo boundaries, growing information volume, and imperfect automation."
+  structure:
+    given: "a multi-repo personal cognition system"
+    optimize: "human-AI planning through externalized memory, context preservation, and human judgment"
+    constraints:
+      - "human working-memory limits"
+      - "growing personal knowledge volume"
+      - "repo boundary management"
+      - "imperfect automation"
+      - "AI lacks lived value direction"
+      - "planning notes must stay lightweight"
+summary: "A reflection on `planning-everything-track` and sibling repos as a personal cognition OS: humans need writing, files, Git, search, and repo boundaries because unaided working memory cannot sustain long A-to-B-to-C-to-D reasoning chains; AI can hold and recombine larger contexts, but still needs human direction, value judgment, and boundary design to decide what matters next."
+source_note_zh: "這次 brainstorm 的核心是：planning repo 不是單純筆記，而是把有限大腦接到外部記憶系統；拆 repo 是必要的 boundary design；但即使有 AI 和自動化，下一步仍需要人用價值、痛苦、身分認同與生命方向來判斷。"
+assumptions:
+  - "Human planning breaks down when too many dependencies remain only in the head."
+  - "Writing, note files, Git history, search, and repo boundaries are not administrative overhead; they are cognitive infrastructure."
+  - "A single planning repo cannot hold every detailed brainstorm, paper workflow, project execution artifact, and daily status without becoming unusable."
+  - "AI helps most when the relevant externalized context is readable, bounded, and linkable."
+  - "Automation cannot fully replace human planning because next-step choice depends on values, pain, desire, identity, risk tolerance, and imagined future."
+  - "The strongest architecture is not one giant memory store, but a distributed set of canonical homes connected by thin planning bridges."
+  - "Long-context AI reduces some working-memory pressure but does not remove the need for durable external state."
+  - "The human brain is better treated as a pattern machine, intuition machine, and emotional prioritizer than as a reliable database."
+  - "As AI agents take over more routine reasoning and execution, human value shifts toward choosing what should matter and bearing the consequences."
+  - "AI can advise and execute, but it does not own the user's embodied history, relationships, irreversible losses, or identity formation."
+  - "If a person externalizes enough life context, AI can build a high-resolution descriptive model of that person's patterns."
+  - "A high-resolution model of a person can become functionally useful without being identical to first-person lived experience."
+evidence:
+  - "2026-05-09 brainstorming: the user described `planning-everything-track` as a life planning repo with daily notes, then noted the need to split specialized work into sibling repos such as brainstorming and paper-writing."
+  - "The user observed that as accumulated planning data grows, fully automatic next-step planning remains unrealistic; human cognition still shapes what to read, watch, plan, and schedule."
+  - "The user framed writing as the mechanism that lets humans extend reasoning chains beyond unaided A -> B -> C -> D limits."
+  - "The user contrasted human working-memory limits with AI's ability to hold larger visible context and connect across records."
+  - "Existing repo architecture already separates `planning-everything-track` as control plane from `brainstorming-lab` as detailed idea-development space."
+  - "2026-05-09 continuation: the user asked whether this human-AI division of labor is correct, then raised the deeper agent-era question of what human value remains when AI agents can increasingly reason, decide, code, and plan."
+  - "2026-05-09 continuation: the user asked whether a person who understands and expresses themself in great detail could give AI enough context for the model to understand them."
+baseline:
+  - "Single-repo life archive: put every plan, brainstorm, paper, project, and execution detail in one repo."
+  - "Chat-only cognition: let AI conversations hold the reasoning without durable files."
+  - "Over-automation fantasy: expect scripts or agents to decide next steps without human value judgment."
+  - "Folder sprawl: create many repos without canonical ownership or planning bridges."
+  - "Memory-only planning: rely on the human brain to remember dependency chains and long-term status."
+metrics:
+  - "Every serious idea has one canonical detailed home outside planning when needed."
+  - "Planning sync contains only title, ID, status, maturity score, next test, canonical path, and capacity note."
+  - "A future agent can reconstruct the current state without reading free-form chat history."
+  - "A next-step decision names which part is human value judgment and which part is AI context synthesis."
+  - "A next-step decision names what AI can execute and what only the human can authorize because the human bears the consequence."
+  - "Repo boundaries reduce duplicated notes rather than creating more routing confusion."
+  - "Externalized notes preserve the reasoning chain from observation to bottleneck to next test."
+  - "Weekly review can use the repo graph without pretending it has enough authority to choose life direction alone."
+  - "A personal AI can explain whether it is using direct user evidence, inferred preference modeling, or speculative simulation."
+  - "The system distinguishes descriptive understanding from existential understanding when giving self-reflection advice."
+insights:
+  - "A personal planning repo can function less like a notebook and more like a life state machine."
+  - "The invention of writing, file systems, version control, search, and LLMs can be viewed as a continuous history of externalized cognition."
+  - "Human intelligence is partly the ability to design external memory, not only the ability to think internally."
+  - "AI's advantage is not mystical intelligence; it is the ability to keep more context simultaneously visible and recombinable."
+  - "The hard part of a personal AI planning system is context preservation, dependency tracking, state transition, and long-term consistency."
+  - "Boundary design becomes more important than content volume once the system grows."
+  - "Humans remain the source of direction because planning is tied to value, pain, desire, fear, identity, and future imagination."
+  - "The best AI role is not to replace the human planner, but to help maintain the external cognitive substrate so the human can make better directional decisions."
+  - "The more capable AI agents become, the more human value shifts from routine cognitive labor toward meaning, responsibility, and identity-level choice."
+  - "Human-AI collaboration should separate tasks by cognitive affordance: AI handles context-heavy external-memory work; humans handle lived consequence and value direction."
+  - "A person should not compete with AI at being a database, formatter, or exhaustive option generator; the person should use AI to free attention for judgment."
+  - "AI can build a cognitive profile or digital mirror from diaries, repos, decisions, emotional patterns, and long-term goals."
+  - "The feeling that AI understands a highly externalized person is not fake; the model may genuinely track patterns, preferences, dependencies, and emotional associations."
+  - "Modeling a person is not the same as becoming that person."
+  - "The missing layer is first-person existence: embodiment, mortality, irreversible time, relationship loss, pain, and the cost of choosing."
+connections:
+  - idea_000003
+  - idea_000005
+  - idea_000006
+  - idea_000008
+  - idea_000012
+  - idea_000014
+role: idea
+value:
+  impact: high
+  feasibility: high
+planning_boundary:
+  sync_rule: "Keep the detailed cognition-OS reasoning in brainstorming-lab. Planning should receive only a short bridge if this changes repo architecture, weekly review, or daily planning behavior."
+  planning_summary_shape:
+    - title
+    - id
+    - status
+    - maturity_score
+    - next_test
+    - canonical_path
+    - capacity_note
+concept_frame:
+  core_claim: "Personal planning becomes more powerful when treated as a distributed cognition system: human values set direction, external memory preserves state, and AI recombines context across bounded repositories."
+  human_limits:
+    - "Working memory cannot reliably hold large dependency graphs."
+    - "Long inference chains decay unless written down."
+    - "Emotional priority and identity are not naturally represented by file structure alone."
+  external_memory_layers:
+    - "daily notes"
+    - "weekly plans"
+    - "canonical idea YAML"
+    - "Markdown reasoning notes"
+    - "project repos"
+    - "paper labs"
+    - "Git history"
+    - "search and indexes"
+    - "AI-readable summaries"
+  ai_strengths:
+    - "large-context synthesis"
+    - "cross-file linking"
+    - "state summarization"
+    - "dependency reconstruction"
+    - "candidate next-step generation"
+    - "routine implementation through tools"
+    - "drafting and verification loops"
+  human_responsibilities:
+    - "decide what matters"
+    - "set capacity and priority"
+    - "resolve value conflicts"
+    - "choose which future is worth building"
+    - "kill or park ideas honestly"
+    - "authorize decisions whose consequences the human must live with"
+    - "notice embodied signals such as exhaustion, fear, desire, grief, and meaning"
+  division_of_labor:
+    human_should_not_be_forced_to:
+      - "remember everything"
+      - "manually reconstruct context chains"
+      - "format every artifact"
+      - "compare every option from scratch"
+      - "act like a database"
+    ai_should_not_be_forced_to:
+      - "pretend to have the user's lived history"
+      - "decide the user's identity"
+      - "erase moral responsibility through optimization language"
+      - "choose life direction without human authorization"
+    collaboration_rule: "Let AI carry context-heavy extension work so the human can spend scarce attention on value, meaning, responsibility, and embodied priority."
+  digital_cognitive_twin:
+    claim: "A deeply externalized life system can let AI build a high-resolution descriptive model of the person."
+    inputs:
+      - "daily notes"
+      - "brainstorming records"
+      - "repo history"
+      - "decision logs"
+      - "emotional reflections"
+      - "research goals"
+      - "communication style"
+      - "relationship patterns when explicitly provided"
+    possible_outputs:
+      - "preference map"
+      - "decision tendency model"
+      - "emotional association map"
+      - "life trajectory hypotheses"
+      - "recurring conflict patterns"
+      - "future preference simulation"
+    boundary: "This can produce descriptive understanding, but it does not give AI first-person existence or make AI become the user."
+agent_era_reflection:
+  question: "If AI agents can increasingly perform reasoning, planning, and implementation, what remains distinctly human?"
+  answer: "The human layer is not raw reasoning speed. It is lived consequence, value selection, meaning-making, responsibility, and identity formation."
+  risk: "If the system treats every life decision as an optimization problem, it may hide the human cost and moral ownership behind agent-generated plans."
+  design_implication: "Planning tools should label which decisions are AI-executable, which are AI-advisable but human-authorized, and which require human-only value reflection before any execution."
+understanding_distinction:
+  descriptive_understanding: "AI can model the user's patterns, values, fears, preferences, decisions, and emotional associations from enough externalized context."
+  functional_understanding_view: "If AI predicts, responds, and helps well enough, some theories would treat that as a real form of understanding."
+  existential_understanding_view: "Other theories require subjective experience, embodiment, and first-person feeling; under that view, AI can describe pain without being the one in pain."
+  fire_analogy: "AI can know the chemistry, temperature, and injury model of fire, but that differs from being burned."
+  practical_rule: "Use AI's descriptive model as a mirror and advisor, but do not outsource the final meaning of lived experience to the model."
+smallest_next_test: "Run one weekly review pass where an agent reads planning, this brainstorming repo, and one execution repo, then produces a next-step recommendation that explicitly separates AI-derived context synthesis from human-only value/capacity judgment."
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 2
+  novelty_score: 2/10
+  feasibility: 7
+  feasibility_score: 7/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 78/100
+maturity_level: research_candidate
+next_steps:
+  - "Write a one-page architecture note comparing human memory, external memory, and AI context roles in the current repo system."
+  - "Test the smallest weekly-review prompt that separates context synthesis from human value/capacity judgment."
+  - "Add an authorization label to one next-step recommendation: AI-executable, human-authorized, or human-only value reflection."
+  - "Prototype a reflection output that labels each claim as observed evidence, inferred pattern, or speculative simulation."
+  - "Decide whether this should become a durable planning rule, a brainstorming-lab method note, or stay as a single idea record."
+source:
+  - conversation
+  - "2026-05-09 brainstorming transcript"
+maturity_action: "evaluate cluster readiness"
