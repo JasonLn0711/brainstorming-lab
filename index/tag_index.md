@@ -195,6 +195,10 @@
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 
+## hybrid-intelligence
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## implementation-friction
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
@@ -301,6 +305,10 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## philosophy-of-science
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## physics-education
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
@@ -360,6 +368,10 @@
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## reviewer-ecosystem-modeling
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## reviewer-emulation
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
@@ -372,6 +384,10 @@
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## scientific-culture
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## scientometrics
 
@@ -425,6 +441,10 @@
 ## test-time-scaling
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## trust-formation
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## uncertainty-tolerance
 

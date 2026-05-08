@@ -254,3 +254,277 @@ Done condition:
 - one 1-2 page journal culture brief
 - one compatibility checklist for the current FSI:DI manuscript line
 - one decision: proceed, revise-first, park, or choose another venue
+
+## Method Decision: Do Not Start With Deep Learning
+
+Machine learning and deep learning are possible later, but they are not the
+first move.
+
+The first 80% of value is not the classifier. It is:
+
+- feature engineering
+- rubric design
+- scientometric thinking
+- reviewer psychology modeling
+- latent structure extraction
+- deciding what is worth observing
+
+The common failure mode is too-early AI:
+
+```text
+3000 papers -> embeddings -> clustering -> LLM summary
+```
+
+The output often becomes:
+
+```text
+This journal values rigorous experiments.
+```
+
+That is too abstract. It does not tell us what to strengthen, soften, add,
+remove, or reframe in the manuscript.
+
+Reviewer-sensitive signals often live in small details:
+
+- claim wording
+- limitation placement
+- figure order
+- appendix density
+- operational boundary wording
+- `we deploy` vs `we simulate`
+- evidence-chain description
+- failure-analysis placement
+
+If those features are not defined first, AI will often miss the useful signal.
+
+## Journal Forensic Framework
+
+The first phase should be a quantifiable observation system:
+
+```text
+schema + rubric + feature extraction + human interpretation
+```
+
+Seed schema:
+
+| Category | Feature |
+| --- | --- |
+| claim | aggressive / conservative / investigative |
+| evidence | weak / moderate / strong / traceable |
+| reproducibility | code, protocol, parameters, dataset availability |
+| dataset realism | synthetic / public / private / operational |
+| figures | workflow, table, chart, case study, architecture, evidence trace |
+| evaluation | ablation, baseline, statistical test, failure analysis |
+| language | may, could, practical, deploy, prove, demonstrate |
+| trust signals | limitation, threat model, governance boundary, operational realism |
+
+This is closer to forensic investigation than generic paper summarization.
+
+The hard question is:
+
+```text
+What should be observed?
+```
+
+not:
+
+```text
+Which model should classify the papers?
+```
+
+## Accepted Manifold, Not Acceptance Prediction
+
+This idea is better framed as latent reviewer space extraction.
+
+We usually have:
+
+```text
+accepted papers
+```
+
+but not:
+
+```text
+rejected papers + reviewer comments
+```
+
+So supervised acceptance prediction is structurally weak. The data has serious
+selection bias.
+
+Instead, estimate an accepted-paper distribution:
+
+- what accepted papers sound like
+- what evidence they contain
+- what they avoid claiming
+- what figures they use
+- what risks they preempt
+- what limitations they acknowledge
+
+Then compare our draft against that distribution.
+
+The goal is not:
+
+```text
+acceptance probability = 0.71
+```
+
+The goal is:
+
+```text
+High reviewer risk:
+- insufficient threat model
+- weak operational boundary
+- overclaim wording
+- no failure vignette
+- synthetic realism not defended enough
+```
+
+That output is more honest and more useful.
+
+## Hybrid Intelligence
+
+The practical architecture should be:
+
+```text
+rule-based extraction + LLM assistance + human scientific interpretation
+```
+
+Layer 1: metadata extraction.
+
+- title
+- abstract
+- keywords
+- section structure
+- figure count
+- table count
+- appendix
+- supplementary material
+
+Layer 2: scientific feature extraction.
+
+- claim aggressiveness
+- evidence density
+- reproducibility
+- operational realism
+- limitation style
+- reviewer fear points
+
+Layer 3: human interpretation.
+
+Reviewer culture is context-dependent. FSI:DI may react very differently to a
+synthetic dataset than NeurIPS, IEEE TIFS, or a general AI journal.
+
+AI can assist the extraction, but the interpretation has to remain scientific
+and domain-aware.
+
+## When ML Becomes Useful
+
+ML becomes useful after the schema stabilizes and there are enough calibrated
+examples.
+
+Useful later layers:
+
+- embedding-based nearest accepted-paper search
+- clustering accepted papers into contribution families
+- topic drift detection
+- novelty fatigue detection
+- draft-to-venue similarity ranking
+- reviewer-risk retrieval from prior calibration packets
+
+Example:
+
+```text
+Input: paper_draft.md
+Output: Top-10 nearest accepted papers and the main structural differences
+```
+
+That is useful because it supports revision, not because it pretends to know the
+future editorial decision.
+
+## Cram-School Risk
+
+There is a shallow version of this idea:
+
+```text
+study what reviewers like -> imitate accepted papers -> raise acceptance odds
+```
+
+That is cram-school submission engineering.
+
+Its behaviors are:
+
+- copying accepted-paper format
+- guessing reviewer preferences
+- applying fixed templates
+- optimizing for acceptance probability
+- asking "will reviewers like this?" before asking "is this true and important?"
+
+This is dangerous because it can slowly remove the research soul from the work.
+
+The better version is not reviewer appeasement. It is scientific ecosystem
+awareness.
+
+## Deeper Version: Scientific Ecosystem Awareness
+
+The deeper question is:
+
+```text
+How does this scientific community decide what counts as credible knowledge?
+```
+
+That opens stronger questions:
+
+- Why are some ideas accepted and others resisted?
+- Which evidence types count as trustworthy here?
+- Which claims are considered overreach?
+- Which uncertainty does this community try hardest to reduce?
+- Which important problems are invisible because they do not fit the reviewer
+  mental model?
+- Does the accepted literature contain a structural blind spot?
+
+Scientific writing is not only formal English. It is a trust-building protocol.
+
+Limitation sections, threat models, conservative wording, reproducibility
+details, ablation studies, failure analysis, and evidence traceability all help
+reduce collective uncertainty.
+
+So the best use of this system is not:
+
+```text
+How do I make this look like an accepted paper?
+```
+
+It is:
+
+```text
+What does this community currently trust, fear, reward, and fail to see?
+```
+
+That makes the idea closer to:
+
+- meta-research
+- scientometrics
+- sociology of science
+- philosophy of science
+- computational analysis of scientific culture
+- reviewer ecosystem modeling
+
+## Working Name
+
+`AI-assisted scientific publishing intelligence` is not a standard term yet.
+
+Working definition:
+
+```text
+A human-AI workflow for extracting actionable submission strategy and scientific
+ecosystem insight from accepted papers, journal guidelines, citation networks,
+evidence standards, and reviewer-risk patterns.
+```
+
+Natural Chinese names:
+
+- AI 輔助科學出版情報分析
+- 期刊投稿情報系統
+- 期刊文化反推系統
+- reviewer ecosystem modeling
+- acceptance pattern intelligence

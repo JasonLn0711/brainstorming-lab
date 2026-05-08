@@ -18,6 +18,11 @@ tags:
   - fsi-di
   - ai-governance
   - publication-workflow
+  - scientific-culture
+  - reviewer-ecosystem-modeling
+  - hybrid-intelligence
+  - philosophy-of-science
+  - trust-formation
 status: execution_ready
 problem_statement:
   raw: "Given a researcher preparing international journal submissions without enough visibility into a venue's implicit reviewer/editor preferences, infer the journal's latent acceptance standards from recent accepted Open Access papers, author guidelines, figure/evidence patterns, citation ecosystem, novelty type, and reviewer-risk signals before deciding whether and how to submit."
@@ -41,16 +46,22 @@ assumptions:
   - "Different fields define novelty differently: engineering novelty, forensic novelty, governance novelty, evaluation novelty, or impact-story novelty."
   - "Venue-fit should improve manuscript revision decisions, not become a fake guarantee of acceptance."
   - "For FSI:DI-like forensic/security venues, defensibility, traceability, reproducibility, conservative claims, and failure analysis may matter more than model novelty."
+  - "The first 80% of value comes from defining observable features and rubrics, not from deep learning."
+  - "Accepted-paper-only data has strong selection bias because rejected manuscripts and reviewer comments are usually unavailable."
+  - "The system must not collapse into cram-school submission optimization; its deeper use is understanding how a scientific community forms trust."
 evidence:
   - "2026-05-08 brainstorming note on using recent Open Access papers to infer journal preferences, reviewer habits, figure/evidence style, novelty types, and latent acceptance standards."
   - "Existing planning FSI:DI latest-OA calibration report already tested a small version of this idea for forensic digital investigation reviewer expectations."
   - "Weekly Paper Lab now has paper-quality scoring, claim-evidence placeholders, and scientific-evaluation schemas that can become reusable infrastructure for this idea."
+  - "2026-05-08 follow-up thinking separated shallow accepted-paper imitation from deeper scientific ecosystem awareness, trust formation, and reviewer ecosystem modeling."
 baseline:
   - "Read only author guidelines and scope pages."
   - "Pick a venue by topic keywords alone."
   - "Ask an LLM for generic reviewer comments without venue-specific accepted-paper evidence."
   - "Copy surface style from one accepted paper."
   - "Treat impact factor or ranking as the main venue-fit signal."
+  - "Download every recent Open Access paper, embed or cluster them, and ask an LLM for a generic summary before defining observable features."
+  - "Use accepted-paper patterns as a template to appease reviewers rather than as evidence about community standards and blind spots."
 metrics:
   - "Number of recent accepted OA papers analyzed per venue."
   - "Claim-style distribution: propose, investigate, analyze, demonstrate, deploy, may, could, practical, operational."
@@ -61,6 +72,8 @@ metrics:
   - "Citation-tribe overlap: recurring authors, methods, terminology, venues, skepticism patterns."
   - "Manuscript compatibility score and top revision risks."
   - "Post-decision calibration: whether desk decision or reviewer comments match predicted risk points."
+  - "Actionability of revision advice: whether the analysis names concrete strengthen, soften, add, remove, or reframe actions."
+  - "Depth check: whether the output identifies evidence standards, trust mechanisms, and community blind spots instead of only surface formatting patterns."
 insights:
   - "A journal is not only a publisher container; it is an editor, reviewer tribe, accepted-narrative style, and citation ecosystem."
   - "The strongest analysis asks what the venue fears, not only what it likes."
@@ -69,6 +82,14 @@ insights:
   - "The system should separate author-guideline compliance from latent acceptance culture."
   - "A good output is a revision strategy: what to strengthen, soften, add, remove, or reframe before submission."
   - "This is not a shortcut around scientific quality; it is a way to make venue-specific evidence expectations explicit."
+  - "Do not start with machine learning or deep learning. Start with a journal forensic framework: schema, rubric, feature extraction, and human interpretation."
+  - "The most common failure mode is 'too-early AI': many papers, embeddings, clustering, and generic summaries that say the journal values rigor without producing usable revision guidance."
+  - "This problem is closer to latent reviewer space extraction than supervised acceptance prediction, because there are accepted examples but no reliable rejected-paper labels."
+  - "Hybrid intelligence is the practical first architecture: rule-based extraction, LLM assistance, and human scientific interpretation."
+  - "Reviewer-risk prediction is more useful than fake acceptance probability. The valuable output is a list of likely objection points and revision actions."
+  - "The deeper goal is scientific culture intuition: learning whether a manuscript feels like FSI:DI, IEEE TIFS, Nature-style work, or another venue because the trust/evidence pattern matches."
+  - "The shallow version is cram-school submission engineering: imitate accepted papers, guess reviewer preferences, and optimize for acceptance."
+  - "The deeper version is scientific ecosystem awareness: ask how knowledge becomes accepted, what uncertainty the community is trying to reduce, and what structural blind spots the accepted literature may contain."
 connections:
   - idea_000002
   - idea_000007
@@ -87,8 +108,109 @@ first_principle:
     - "style copying"
     - "guaranteeing acceptance"
     - "generic LLM reviewer comments"
+    - "deep learning before schema"
+    - "cram-school reviewer appeasement"
+    - "acceptance probability theater"
   smallest_useful_unit: "one venue-fit calibration packet for one target journal using 8-12 recent accepted OA papers plus author guidelines"
   decision_boundary: "Use this to choose revision priorities and venue fit, not to claim certainty about hidden reviewer decisions."
+method_position:
+  current_answer: "Machine learning and deep learning are possible later, but they are not the first move."
+  first_phase:
+    name: "Journal Forensic Framework"
+    purpose: "Create a quantifiable observation system before modeling."
+    components:
+      - "paper analysis schema"
+      - "venue-specific rubric"
+      - "scientific feature extraction"
+      - "journal intelligence database"
+      - "acceptance manifold thinking"
+      - "human interpretation"
+  why_not_start_with_deep_learning:
+    - "Most venues do not provide rejected manuscripts or reviewer comments, so supervised labels are missing."
+    - "Accepted Open Access samples may not represent all accepted papers."
+    - "Embedding and clustering before feature definition tends to produce abstract, non-actionable summaries."
+    - "Reviewer-sensitive signals often live in small details: claim wording, limitation placement, figure order, appendix density, operational boundary wording, and evidence-chain language."
+  later_ml_layers:
+    - "embedding-based nearest accepted-paper search after the rubric stabilizes"
+    - "clustering accepted papers into contribution families"
+    - "topic drift and novelty fatigue detection"
+    - "similarity ranking between a draft and accepted-paper patterns"
+    - "reviewer-risk retrieval from prior calibration packets"
+  preferred_output: "venue-specific reviewer-risk report and revision checklist, not a raw acceptance-probability score"
+journal_forensic_schema_seed:
+  claim:
+    examples:
+      - aggressive
+      - conservative
+      - investigative
+      - deployment-implying
+  evidence:
+    examples:
+      - weak
+      - moderate
+      - strong
+      - traceable
+  reproducibility:
+    examples:
+      - "code release"
+      - "protocol detail"
+      - "parameter transparency"
+      - "dataset availability"
+  dataset_realism:
+    examples:
+      - synthetic
+      - public
+      - private
+      - operational
+  figures:
+    examples:
+      - workflow
+      - table
+      - chart
+      - "case study"
+      - architecture
+      - "evidence trace"
+  evaluation:
+    examples:
+      - ablation
+      - baseline
+      - "statistical test"
+      - "failure analysis"
+  language:
+    examples:
+      - may
+      - could
+      - practical
+      - deploy
+      - prove
+      - demonstrate
+  trust_signals:
+    examples:
+      - "explicit limitation"
+      - "threat model"
+      - "governance boundary"
+      - "operational realism"
+      - chain-of-custody
+philosophical_boundary:
+  shallow_version: "Cram-school submission engineering: study accepted papers to imitate format, guess reviewer preferences, and maximize acceptance odds."
+  deep_version: "Scientific ecosystem awareness: study how a community accepts knowledge, establishes trust, manages uncertainty, rewards evidence, and develops blind spots."
+  guiding_question: "Are we trying to please reviewers, or are we trying to understand how this scientific community decides what counts as credible knowledge?"
+  dangers:
+    - "losing research soul by asking only whether reviewers will like the work"
+    - "mistaking accepted-paper surface style for scientific contribution"
+    - "optimizing toward conformity instead of finding important community gaps"
+  deeper_questions:
+    - "Why does this community accept some ideas and resist others?"
+    - "Which evidence types currently count as trustworthy, and why?"
+    - "Which important problems are ignored because they do not fit the reviewer mental model?"
+    - "Is the accepted literature showing a structural blind spot?"
+    - "How does scientific writing reduce uncertainty and build collective trust?"
+  adjacent_fields:
+    - meta-research
+    - scientometrics
+    - "sociology of science"
+    - "philosophy of science"
+    - "computational analysis of scientific culture"
 journal_intelligence_dimensions:
   claim_style:
     purpose: "Infer how aggressively or conservatively accepted papers state contributions."

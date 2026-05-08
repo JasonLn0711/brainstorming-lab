@@ -277,7 +277,12 @@
         "forensic-defensibility",
         "fsi-di",
         "ai-governance",
-        "publication-workflow"
+        "publication-workflow",
+        "scientific-culture",
+        "reviewer-ecosystem-modeling",
+        "hybrid-intelligence",
+        "philosophy-of-science",
+        "trust-formation"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000014_journal_intelligence_system.yaml"
     }
@@ -371,7 +376,7 @@
       "source": "idea_000002",
       "target": "idea_000013",
       "weight": 1.0,
-      "similarity": 0.1156,
+      "similarity": 0.1151,
       "shared_tags": [
         "cybersecurity"
       ],
@@ -384,7 +389,7 @@
       "source": "idea_000002",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2052,
+      "similarity": 0.2201,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -459,7 +464,7 @@
       "source": "idea_000004",
       "target": "idea_000013",
       "weight": 1.0,
-      "similarity": 0.078,
+      "similarity": 0.0776,
       "shared_tags": [
         "cybersecurity"
       ],
@@ -587,7 +592,7 @@
       "source": "idea_000007",
       "target": "idea_000013",
       "weight": 0.6,
-      "similarity": 0.1101,
+      "similarity": 0.1112,
       "shared_tags": [
         "cybersecurity"
       ],
@@ -599,7 +604,7 @@
       "source": "idea_000007",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2239,
+      "similarity": 0.2337,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -629,7 +634,7 @@
       "source": "idea_000008",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.1743,
+      "similarity": 0.17,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -664,7 +669,7 @@
       "source": "idea_000012",
       "target": "idea_000013",
       "weight": 1.0,
-      "similarity": 0.0847,
+      "similarity": 0.0844,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -674,7 +679,7 @@
       "source": "idea_000012",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.1905,
+      "similarity": 0.2138,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
