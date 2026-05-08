@@ -23,6 +23,10 @@ tags:
   - hybrid-intelligence
   - philosophy-of-science
   - trust-formation
+  - meta-research
+  - sociology-of-science
+  - computational-scientometrics
+  - high-school-explainer
 status: execution_ready
 problem_statement:
   raw: "Given a researcher preparing international journal submissions without enough visibility into a venue's implicit reviewer/editor preferences, infer the journal's latent acceptance standards from recent accepted Open Access papers, author guidelines, figure/evidence patterns, citation ecosystem, novelty type, and reviewer-risk signals before deciding whether and how to submit."
@@ -49,11 +53,13 @@ assumptions:
   - "The first 80% of value comes from defining observable features and rubrics, not from deep learning."
   - "Accepted-paper-only data has strong selection bias because rejected manuscripts and reviewer comments are usually unavailable."
   - "The system must not collapse into cram-school submission optimization; its deeper use is understanding how a scientific community forms trust."
+  - "Scientific knowledge is not accepted when one person claims truth; it becomes trusted after a community can inspect, question, reproduce, cite, extend, and apply it."
 evidence:
   - "2026-05-08 brainstorming note on using recent Open Access papers to infer journal preferences, reviewer habits, figure/evidence style, novelty types, and latent acceptance standards."
   - "Existing planning FSI:DI latest-OA calibration report already tested a small version of this idea for forensic digital investigation reviewer expectations."
   - "Weekly Paper Lab now has paper-quality scoring, claim-evidence placeholders, and scientific-evaluation schemas that can become reusable infrastructure for this idea."
   - "2026-05-08 follow-up thinking separated shallow accepted-paper imitation from deeper scientific ecosystem awareness, trust formation, and reviewer ecosystem modeling."
+  - "2026-05-08 follow-up asked how scientific knowledge is accepted by a community and requested high-school-level explanations of meta-research, philosophy of science, sociology of science, computational scientometrics, and reviewer ecosystem modeling."
 baseline:
   - "Read only author guidelines and scope pages."
   - "Pick a venue by topic keywords alone."
@@ -90,6 +96,8 @@ insights:
   - "The deeper goal is scientific culture intuition: learning whether a manuscript feels like FSI:DI, IEEE TIFS, Nature-style work, or another venue because the trust/evidence pattern matches."
   - "The shallow version is cram-school submission engineering: imitate accepted papers, guess reviewer preferences, and optimize for acceptance."
   - "The deeper version is scientific ecosystem awareness: ask how knowledge becomes accepted, what uncertainty the community is trying to reduce, and what structural blind spots the accepted literature may contain."
+  - "Scientific writing can be read as a public inspection path: where the data came from, what the method does, why the design is justified, where it fails, when it cannot be used, and how others can check it."
+  - "A strong manuscript does not merely claim novelty; it gives a skeptical but competent community enough reasons to temporarily trust the result."
 connections:
   - idea_000002
   - idea_000007
@@ -211,6 +219,109 @@ philosophical_boundary:
     - "sociology of science"
     - "philosophy of science"
     - "computational analysis of scientific culture"
+scientific_trust_framework:
+  high_school_summary: "Science is not finished when one person discovers something. A claim becomes scientific knowledge only after many people can inspect it, question it, repeat it, cite it, apply it, and still find it useful enough to trust for now."
+  five_trust_questions:
+    problem_importance: "Does the work solve a real problem?"
+    method_credibility: "Are the data, experiment, and reasoning strong enough to stand up to skeptical inspection?"
+    reproducibility: "Can another team follow the method and get a similar result or at least understand why not?"
+    claim_discipline: "Does the author explain limits and avoid saying more than the evidence supports?"
+    community_validation: "Do other researchers cite, extend, challenge, reuse, or apply the work?"
+  trust_infrastructure:
+    - "data provenance"
+    - "method transparency"
+    - "design rationale"
+    - "failure cases"
+    - "limits of use"
+    - "reproduction path"
+    - "evidence traceability"
+  field_specific_trust_examples:
+    medicine:
+      - "clinical trial design"
+      - "sample size"
+      - "statistical significance"
+      - "ethics review"
+      - "external validation"
+    cybersecurity:
+      - "threat model"
+      - "attack scenario"
+      - "reproducible experiment"
+      - "baseline comparison"
+    digital_forensics:
+      - "evidence trace"
+      - "chain of custody"
+      - "procedure transparency"
+      - "limitation statement"
+    ai_research:
+      - benchmark
+      - "ablation study"
+      - baseline
+      - "robustness test"
+      - "error analysis"
+related_knowledge_fields:
+  meta_research:
+    simple_definition: "Research about the research system itself."
+    high_school_analogy: "Not taking the math test, but studying whether the test system is fair, whether the questions are biased, and whether graders are consistent."
+    real_examples:
+      - "replication crisis: famous psychology findings fail when other labs repeat the experiments"
+      - "publication bias: positive drug results are published while many null results remain invisible"
+      - "benchmark overfitting: AI models become good at one benchmark without improving real-world ability"
+  philosophy_of_science:
+    simple_definition: "The field that asks what science, evidence, explanation, truth, and progress mean."
+    high_school_analogy: "Not asking only for the answer, but asking why this way of answering should count as knowledge."
+    real_examples:
+      - "Popper falsifiability: a claim should be testable and possible to prove wrong"
+      - "Kuhn paradigm shift: Newtonian mechanics, relativity, quantum mechanics, deep learning, and LLMs change what researchers consider normal methods"
+      - "explanation problem in medical AI: high accuracy is not enough if clinicians cannot tell whether the model found disease or a shortcut"
+  sociology_of_science:
+    simple_definition: "The study of science as a human community with institutions, incentives, status, funding, journals, and shared languages."
+    high_school_analogy: "Science is also like a class or club with rules, leaders, popular topics, resource differences, and reputation effects."
+    real_examples:
+      - "hot topics such as LLMs attract funding and attention, making less fashionable but important work harder to see"
+      - "large labs and famous universities may get more initial attention than small labs"
+      - "cross-disciplinary work can be rejected because different communities use different standards and languages"
+  computational_scientometrics:
+    simple_definition: "Using data analysis, NLP, graph analysis, and AI to study large collections of scientific papers."
+    high_school_analogy: "Treat many papers as a dataset and measure where science is moving."
+    real_examples:
+      - "track whether AI agent, tool use, RAG, multi-agent, or workflow automation terms rise from 2021 to 2026"
+      - "build citation networks to find core papers and research communities"
+      - "find research gaps where two active areas rarely connect, such as LLM security and forensic traceability"
+  reviewer_ecosystem_modeling:
+    simple_definition: "Model reviewers, editors, journals, citation networks, and accepted-paper styles as an ecosystem that decides what research seems trustworthy."
+    high_school_analogy: "Not only reading the exam rules, but observing how teachers grade, what past high-scoring essays look like, and which mistakes lose points."
+    shallow_risk: "If used only to imitate accepted work, it becomes cram-school thinking."
+    deep_use: "If used to understand how a knowledge community builds standards, it becomes scientific ecosystem analysis."
+    real_examples:
+      - "FSI:DI may value evidence handling, forensic workflow, conservative claims, realistic limits, and sensitivity around synthetic data"
+      - "medical AI journals may demand clinical meaning, external validation, subgroup bias analysis, and workflow integration"
+      - "NeurIPS, ICML, and ICLR may emphasize novelty, strong baselines, ablations, benchmarks, theory, and open-source code"
+practical_trust_analysis_flow:
+  - step: "Choose one target journal."
+    example: "FSI:DI."
+  - step: "Collect a bounded sample of accepted papers."
+    example: "Start with 30-50 recent papers for pattern finding, or 8-12 papers for the first calibration packet."
+  - step: "Fill a structured analysis table."
+    fields:
+      - "problem type"
+      - "method type"
+      - "data type"
+      - "evidence standard"
+      - "figure type"
+      - "limitation style"
+      - "claim strength"
+      - "reproducibility level"
+      - "operational scenario depth"
+      - "likely reason the paper earned trust"
+  - step: "Extract trust patterns."
+    questions:
+      - "What evidence does this journal trust?"
+      - "Which claims does it distrust?"
+      - "Which novelty types does it accept?"
+      - "Which defensive sections do authors often include?"
+      - "Which papers look like canonical examples of this venue?"
+  - step: "Check the manuscript against community trust needs."
+    framing: "Ask whether the manuscript gives this community the evidence it needs to trust the work, not whether it merely pleases reviewers."
 journal_intelligence_dimensions:
   claim_style:
     purpose: "Infer how aggressively or conservatively accepted papers state contributions."
@@ -325,9 +436,9 @@ maturity:
   novelty_score: 10/10
   feasibility: 7
   feasibility_score: 7/15
-  research_potential: 7
-  research_potential_score: 7/10
-maturity_score: 81/100
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 84/100
 maturity_level: execution_ready
 next_steps:
   - "Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide."

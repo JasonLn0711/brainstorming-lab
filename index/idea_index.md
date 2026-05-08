@@ -8,7 +8,7 @@
 | `idea_000012` | PhD problem-definition thinking system | 87/100 | `execution_ready` | `execution_ready` | Apply the one-page problem-definition card to one active lane, preferably idea_000002 or idea_000007, after a concrete implementation or mental-execution friction pass. | `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml` |
 | `idea_000010` | AI-assisted smart mosquito trap | 84/100 | `execution_ready` | `execution_ready` | Review the v1 ESP32 build note and decide whether to buy the minimum parts. | `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml` |
 | `idea_000013` | ISO 27001 high school explainer and compliance teaching module | 84/100 | `execution_ready` | `execution_ready` | Turn the Markdown explainer into a 10-minute classroom handout and ask one non-security reader to summarize ISO/IEC 27001 back in five bullet points. | `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml` |
-| `idea_000014` | Journal Intelligence System | 81/100 | `execution_ready` | `execution_ready` | Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide. | `ideas/structured/idea_000014_journal_intelligence_system.yaml` |
+| `idea_000014` | Journal Intelligence System | 84/100 | `execution_ready` | `execution_ready` | Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide. | `ideas/structured/idea_000014_journal_intelligence_system.yaml` |
 | `idea_000001` | Healthcare AI triage copilot | 75/100 | `research_candidate` | `research_candidate` | Create a synthetic intake fixture and define reviewer-burden metrics. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
 | `idea_000004` | Anomaly detection research watch | 73/100 | `research_candidate` | `research_candidate` | Define one public or synthetic anomaly fixture and one review packet format. | `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml` |
 | `idea_000002` | Cybersecurity reviewer assist layer | 68/100 | `research_candidate` | `research_candidate` | Define a controlled candidate-review fixture with explicit hard negatives. | `ideas/structured/idea_000002_cybersecurity_review_assist.yaml` |
@@ -32,4 +32,4 @@
 - idea_000011 - AI-assisted statement interview question recommendation system - 89/100 - execution_ready
 - idea_000012 - PhD problem-definition thinking system - 87/100 - execution_ready
 - idea_000013 - ISO 27001 high school explainer and compliance teaching module - 84/100 - execution_ready
-- idea_000014 - Journal Intelligence System - 81/100 - execution_ready
+- idea_000014 - Journal Intelligence System - 84/100 - execution_ready

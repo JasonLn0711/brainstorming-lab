@@ -259,8 +259,8 @@
       "id": "idea_000014",
       "title": "Journal Intelligence System",
       "status": "execution_ready",
-      "maturity_score": "81/100",
-      "maturity_score_raw": 81,
+      "maturity_score": "84/100",
+      "maturity_score_raw": 84,
       "maturity_level": "execution_ready",
       "tags": [
         "journal-intelligence",
@@ -282,7 +282,11 @@
         "reviewer-ecosystem-modeling",
         "hybrid-intelligence",
         "philosophy-of-science",
-        "trust-formation"
+        "trust-formation",
+        "meta-research",
+        "sociology-of-science",
+        "computational-scientometrics",
+        "high-school-explainer"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000014_journal_intelligence_system.yaml"
     }
@@ -389,7 +393,7 @@
       "source": "idea_000002",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2201,
+      "similarity": 0.2227,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -604,7 +608,7 @@
       "source": "idea_000007",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2337,
+      "similarity": 0.2491,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -634,7 +638,7 @@
       "source": "idea_000008",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.17,
+      "similarity": 0.1904,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -679,7 +683,7 @@
       "source": "idea_000012",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2138,
+      "similarity": 0.2367,
       "shared_tags": [],
       "reasons": [
         "manual_connection"

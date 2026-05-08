@@ -2,7 +2,7 @@
 
 ## ai-governance
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## ai-security
 
@@ -43,7 +43,7 @@
 
 ## claim-style
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## cognitive-load
 
@@ -52,6 +52,10 @@
 ## compliance
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
+## computational-scientometrics
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## conductor
 
@@ -118,7 +122,7 @@
 
 ## evidence-density
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## evidence-routing
 
@@ -152,7 +156,7 @@
 
 ## figure-analysis
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## first-principles
 
@@ -160,11 +164,11 @@
 
 ## forensic-defensibility
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## fsi-di
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## fugu-style-orchestration
 
@@ -187,6 +191,10 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
+## high-school-explainer
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## human-in-the-loop
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
@@ -197,7 +205,7 @@
 
 ## hybrid-intelligence
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## implementation-friction
 
@@ -213,7 +221,7 @@
 
 ## journal-intelligence
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## judgment-system
 
@@ -262,7 +270,8 @@
 
 ## meta-research
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## metadata-only
 
@@ -283,7 +292,7 @@
 
 ## novelty-analysis
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## openclaw
 
@@ -295,7 +304,7 @@
 
 ## paper-quality
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## personal-ops
 
@@ -307,7 +316,7 @@
 
 ## philosophy-of-science
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## physics-education
 
@@ -328,11 +337,11 @@
 
 ## publication-strategy
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## publication-workflow
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## query-strategy-generator
 
@@ -370,11 +379,11 @@
 
 ## reviewer-ecosystem-modeling
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## reviewer-emulation
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## safety
 
@@ -387,11 +396,11 @@
 
 ## scientific-culture
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## scientometrics
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## search-templates
 
@@ -413,6 +422,10 @@
 ## signal-market
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## sociology-of-science
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## software-architecture
 
@@ -444,7 +457,7 @@
 
 ## trust-formation
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## uncertainty-tolerance
 
@@ -452,7 +465,7 @@
 
 ## venue-fit
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## workflow
 

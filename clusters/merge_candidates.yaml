@@ -324,3 +324,24 @@ merge_candidate_0014:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
+merge_candidate_0015:
+  candidate_id: merge_candidate_0015
+  ideas:
+    - idea_000012
+    - idea_000014
+  merge_type: cluster_merge
+  merge_score: 40/100
+  confidence: low
+  reason:
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 4/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
