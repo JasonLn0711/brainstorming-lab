@@ -289,6 +289,40 @@
         "high-school-explainer"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000014_journal_intelligence_system.yaml"
+    },
+    {
+      "id": "idea_000015",
+      "title": "Layered Voice Enhancement in Consumer VoIP Calls",
+      "status": "execution_ready",
+      "maturity_score": "90/100",
+      "maturity_score_raw": 90,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "voice-enhancement",
+        "voip",
+        "line",
+        "iphone",
+        "ios-audio",
+        "dsp",
+        "noise-suppression",
+        "real-time-ai",
+        "human-computer-interaction",
+        "product-observation",
+        "edge-ai",
+        "low-resource-ai",
+        "asr",
+        "voice-service-pipeline",
+        "systems-thinking",
+        "system-design",
+        "software-architecture",
+        "product-lifecycle",
+        "design-patterns",
+        "distributed-systems",
+        "real-time-systems",
+        "infrastructure-engineering",
+        "sre"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml"
     }
   ],
   "edges": [
@@ -536,6 +570,16 @@
       ]
     },
     {
+      "source": "idea_000005",
+      "target": "idea_000015",
+      "weight": 1.0,
+      "similarity": 0.098,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000006",
       "target": "idea_000011",
       "weight": 1.0,
@@ -660,6 +704,19 @@
       ]
     },
     {
+      "source": "idea_000010",
+      "target": "idea_000015",
+      "weight": 1.0,
+      "similarity": 0.2494,
+      "shared_tags": [
+        "software-architecture"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000011",
       "target": "idea_000012",
       "weight": 1.0,
@@ -687,6 +744,19 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000012",
+      "target": "idea_000015",
+      "weight": 1.0,
+      "similarity": 0.2464,
+      "shared_tags": [
+        "systems-thinking"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
       ]
     }
   ]

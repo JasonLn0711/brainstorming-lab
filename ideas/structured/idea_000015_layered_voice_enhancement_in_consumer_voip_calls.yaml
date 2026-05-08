@@ -1,0 +1,1275 @@
+id: idea_000015
+title: "Layered Voice Enhancement in Consumer VoIP Calls"
+created_at: 2026-05-08
+type: question
+tags:
+  - voice-enhancement
+  - voip
+  - line
+  - iphone
+  - ios-audio
+  - dsp
+  - noise-suppression
+  - real-time-ai
+  - human-computer-interaction
+  - product-observation
+  - edge-ai
+  - low-resource-ai
+  - asr
+  - voice-service-pipeline
+  - systems-thinking
+  - system-design
+  - software-architecture
+  - product-lifecycle
+  - design-patterns
+  - distributed-systems
+  - real-time-systems
+  - infrastructure-engineering
+  - sre
+status: execution_ready
+problem_statement:
+  raw: "Given the everyday observation that LINE calls on iPhone often sound clean even when the speaker is in a noisy place, determine whether the intelligibility gain comes mostly from LINE's VoIP audio stack, iPhone/iOS device-side voice processing, or a layered interaction between both."
+  normalized: "Given noisy real-world mobile calling and low-resource voice-service devices, optimize attribution, deployment architecture, and smallest test design for layered voice enhancement and speech understanding across device microphones, DSP, OS-level voice processing, app-level VoIP or voice-service processing, ASR, semantic analysis, codec behavior, and network conditions under constraints of closed platforms, limited instrumentation, privacy, small memory, weak CPU/GPU, low power, and real-time latency."
+  structure:
+    given: "noisy real-world mobile calling and low-resource voice-service devices"
+    optimize: "attribution, deployment architecture, and smallest test design for layered voice enhancement and speech understanding"
+    constraints:
+      - "closed iOS and LINE audio pipelines"
+      - "limited access to raw microphone and transmitted audio"
+      - "privacy and consent for call recording"
+      - "small RAM or 1-2 GB VRAM class devices"
+      - "weak CPU or no usable GPU"
+      - "battery and thermal limits"
+      - "real-time latency budget"
+      - "variable phone model, OS version, app version, headset, and network state"
+summary: "A product-observation research seed about why LINE calls on iPhone can sound cleaner than the surrounding environment, expanded into a low-resource voice AI systems and systems-engineering learning path. Modern call quality is likely produced by stacked audio processing layers: microphones, DSP, OS voice isolation or voice-processing modes, app VoIP or voice-service processing, echo cancellation, automatic gain control, codec/network resilience, small AI models, streaming inference, and human-voice-prioritized design. The engineering lesson is that mature AI products are usually reliable, observable, evolvable systems, not one large model."
+source_note_zh: "觀察起點：LINE 通話時，即使對方在路邊、餐廳或其他吵雜環境，人聲仍常常清楚，背景雜音被壓掉，甚至比現場更乾淨。問題不是只問 LINE 或 iPhone 誰比較厲害，而是拆開裝置端、OS 端、app/VoIP 端、codec/network 端各自可能做了什麼，以及它們疊加後如何改變我們聽到的人聲。"
+followup_note_zh: "2026-05-08 補充：如果設備不是高階手機，只有弱 CPU/GPU、小 RAM 或 1-2 GB VRAM，成熟語音 AI 不能靠巨大模型硬壓。真正可部署的做法是 DSP、傳統訊號處理、小模型、量化、streaming inference、VAD gating、ASR、語意分析與風險決策拆成 pipeline，讓 AI 只處理最難且最值得算的部分。"
+system_engineering_note_zh: "2026-05-08 再補充：這條線其實是從寫程式進到設計系統。真正厲害的 AI 公司最後常常不是只比模型大小，而是比系統穩定性、可維護性、可演化性、可觀測性、部署/回滾能力、分散式協作與真實世界存活能力。"
+assumptions:
+  - "The perceived clean LINE call is probably a layered result, not a single component effect."
+  - "Recent iPhones can use multiple microphones, beamforming, echo control, gain control, and voice-oriented signal processing before or during capture."
+  - "iOS may expose voice-processing modes or system-level microphone modes that affect third-party communication apps, but the exact behavior depends on API usage, OS version, hardware, and user settings."
+  - "LINE likely performs app-side VoIP processing such as echo cancellation, noise suppression, automatic gain control, jitter buffering, packet-loss concealment, and voice codec adaptation."
+  - "The design goal of modern calls is intelligibility and conversational continuity, not faithful reproduction of the acoustic scene."
+  - "Over-processing can create artifacts such as metallic voice, clipped tail sounds, sudden background removal, pumping gain, or vacuum-like silence."
+  - "Official documentation may not expose the full production audio pipeline; any technical explanation must separate confirmed docs, black-box observation, and inference."
+  - "Low-resource voice products should avoid treating AI as one giant end-to-end model; production maturity comes from routing work to the cheapest reliable layer."
+  - "Traditional DSP still matters because many operations such as filtering, gain control, echo cancellation, and simple gating are cheaper and more predictable than neural inference."
+  - "Voice Activity Detection can save large amounts of compute by preventing ASR and downstream semantic analysis from running during silence or non-speech segments."
+  - "Small speech models, quantization, distillation, pruning, and streaming inference are more important for real-time deployment than peak benchmark accuracy on clean offline data."
+  - "For a voice understanding service, the hard product problem is often pipeline stability, latency, buffering, audio chunking, noisy input, and memory behavior rather than model choice alone."
+  - "Systems thinking should start from purpose, constraints, feedback loops, bottlenecks, and failure modes rather than from individual features."
+  - "Design patterns are useful after a real coupling, state, event, queueing, retry, or extension problem appears; they should not be forced before the system's pain is visible."
+  - "A production AI company often competes on infrastructure quality, reliability, operations, and product iteration speed as much as model capability."
+  - "Single-machine thinking should precede distributed-system complexity: learn threads, queues, streaming, logging, and async before adding Kafka, Kubernetes, or microservices."
+  - "A system that runs once is not the same as a system that survives 24 hours, handles bad inputs, recovers from failures, and can be maintained by another engineer."
+evidence:
+  - "2026-05-08 user observation: LINE calls often preserve clear human voice and suppress noisy surroundings well enough for conversation."
+  - "2026-05-08 initial explanation hypothesis: iPhone hardware/iOS processing and LINE VoIP processing may both contribute and stack."
+  - "Everyday artifact evidence: occasional robotic, metallic, clipped, or background-gated voice quality suggests aggressive real-time processing rather than raw acoustic transmission."
+  - "2026-05-08 follow-up question reframed the idea around ordinary devices with weak GPU, small VRAM, low compute, and how mature AI voice systems still run under those limits."
+  - "2026-05-08 follow-up proposed a practical voice understanding service pipeline: audio input, VAD, noise reduction, ASR, speaker separation or keyword detection, LLM or semantic analysis, and risk or task decision."
+  - "2026-05-08 follow-up interest: user asked how to learn system engineering, systems thinking, system design, software development flow, product lifecycle, expected difficulties, fixes, and whether design patterns matter."
+  - "2026-05-08 follow-up distinguished function thinking from system thinking: not only calling APIs or training models, but handling data flow, latency, memory, failure, deployment, monitoring, debugging, scaling, and multi-engineer maintenance."
+baseline:
+  - "Explain call quality as LINE-only noise suppression."
+  - "Explain call quality as iPhone-only microphone quality."
+  - "Treat the received voice as raw sound captured by the other phone."
+  - "Compare apps informally without controlling phone model, microphone mode, headset, network, room noise, and recording path."
+  - "Use the largest available model and hope better accuracy solves real-time audio problems."
+  - "Run ASR continuously on every audio frame even when nobody is speaking."
+  - "Build a clean-data GPU demo without measuring CPU load, latency, memory, battery, buffering, and noisy-field behavior."
+  - "Skip DSP and expect an LLM or ASR model to recover from poor microphone capture, echo, clipping, and network instability."
+  - "Treat system design as drawing boxes after implementation rather than using architecture to manage change, latency, observability, and failure."
+  - "Study design patterns abstractly and then force them into the project without a concrete pain point."
+  - "Build only the happy path and postpone logging, tests, rollback, monitoring, and lifecycle decisions until the system is already hard to debug."
+  - "Jump directly to Kafka, Kubernetes, microservices, or cloud scale before a single-machine vertical slice exposes the real bottlenecks."
+  - "Assume a clean AI demo proves the product, even though no long-session, noisy-input, failure-recovery, or operational test has been run."
+metrics:
+  - "Speech intelligibility score under matched noise conditions."
+  - "Signal-to-noise ratio improvement from local reference recording to received call recording."
+  - "Artifact rate: clipped syllables, pumping, metallic tone, dropped background, or over-suppressed consonants."
+  - "Latency and conversational interruption rate under Wi-Fi, 5G, and unstable network conditions."
+  - "Background suppression strength for cafe noise, traffic, wind, keyboard noise, and nearby voices."
+  - "Cross-condition comparison: LINE versus FaceTime, normal cellular call, WhatsApp, Zoom, or a raw voice recorder path."
+  - "Device condition comparison: built-in mic, AirPods, wired mic, iOS microphone mode, and different iPhone generations."
+  - "End-to-end voice-service latency from audio capture to usable system decision."
+  - "CPU-only real-time factor on the target low-resource device."
+  - "Peak RAM/VRAM and thermal stability over a 30-minute session."
+  - "VAD gating efficiency: percent of audio frames skipped before ASR or semantic analysis."
+  - "ASR word error rate under clean, cafe, traffic, wind, and overlapping-speaker conditions."
+  - "Downstream decision accuracy after ASR errors, not only transcription accuracy."
+  - "Power draw or battery drain per hour of active voice monitoring."
+  - "Mean and p95 latency per pipeline stage."
+  - "Queue length, dropped frame rate, and backpressure events."
+  - "Module replacement cost: how many files must change to swap ASR, VAD, storage, or LLM provider."
+  - "Recovery time after a failed module, timeout, or model crash."
+  - "Test coverage by layer: unit, integration, streaming fixture, end-to-end, load, and regression."
+  - "Operational visibility: whether a failure can be located from logs and metrics without guessing."
+  - "Uptime and successful recovery after simulated network loss, worker crash, model timeout, and queue overload."
+  - "Deployment safety: rollback time, release tagging quality, and whether model/config versions are traceable."
+  - "Maintenance burden: time for a new engineer or future self to find the correct module and make a bounded change."
+insights:
+  - "The useful conceptual frame is layered voice enhancement: hardware capture, OS voice processing, app audio pipeline, codec/network resilience, and receiver playback all shape the final voice."
+  - "Modern communication systems optimize for being understood, not for acoustic truth."
+  - "A clean call can be an interface illusion: the system removes enough world detail that the voice feels closer and more stable than the actual scene."
+  - "This is a mature everyday AI/DSP product, not only a speech-recognition or generative-AI topic."
+  - "The research value is not proving that one brand is good; it is learning how human-centered signal systems decide what part of reality should survive compression."
+  - "The same pattern appears in Zoom, Meet, Teams, AirPods, hearing-assistance modes, meeting transcription systems, field interviews, and safety-critical voice communication."
+  - "AI audio is not synonymous with giant language models; mature voice systems often combine decades-old DSP with small neural models."
+  - "The production trick is to let cheap deterministic stages handle easy signal work and reserve neural inference for ambiguity, recognition, separation, or semantic interpretation."
+  - "For low-resource devices, 'good enough now' beats 'best possible later' because conversation breaks when latency, power, or memory exceed human tolerance."
+  - "A deployable voice understanding service should be evaluated as a full system: capture, buffering, VAD, enhancement, ASR, semantic routing, decision, logging, and fallback."
+  - "The first MVP should teach latency, chunking, threading, CPU load, memory pressure, and noisy-input failure before adding sophisticated models."
+  - "System thinking means asking how components influence each other over time: a slow ASR can be caused by chunk size, buffering, VAD policy, queue buildup, or upstream audio quality."
+  - "The real unit of design is not a model or feature, but a boundary: what enters, what exits, what state is owned, what errors are possible, and who observes the result."
+  - "Design patterns are vocabulary for recurring forces. Queue and producer-consumer matter when audio arrives faster than inference; observer matters when many modules need state changes; adapter matters when swapping ASR providers."
+  - "A strong AI system engineer designs for evolvability: the system can change model, device, deployment target, and product requirements without collapsing."
+  - "Function thinking asks whether one API call works; system thinking asks whether the whole product can survive latency, overload, bad audio, failed dependencies, user mistakes, deployments, and future maintenance."
+  - "Distributed systems are not a badge of maturity; they are a response to real scaling, isolation, ownership, and reliability needs."
+  - "SRE thinking starts when the question changes from 'can it run?' to 'how do we know it is healthy, and what happens when it fails?'"
+connections:
+  - idea_000005
+  - idea_000010
+  - idea_000012
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+first_principle:
+  scarce_resource: "mutual intelligibility in noisy, bandwidth-limited, latency-sensitive conversation"
+  core_object: "the transformed voice signal that reaches the listener"
+  not_the_core:
+    - "brand loyalty to LINE or Apple"
+    - "assuming clean audio means raw audio"
+    - "generic AI hype"
+    - "one uncontrolled anecdotal comparison"
+    - "the largest available model"
+    - "GPU-first demo thinking"
+  smallest_useful_unit: "one controlled two-phone experiment plus one low-resource voice-service MVP that records local reference audio, received or processed audio, VAD decisions, ASR output, latency, memory, CPU load, noise condition, app, microphone path, network state, and observable artifacts."
+  decision_boundary: "Keep this as a research seed until official documentation and controlled observations separate confirmed platform behavior from inference."
+technical_hypothesis:
+  likely_layers:
+    - layer: "device microphones and analog front end"
+      possible_functions:
+        - "multi-microphone capture"
+        - beamforming
+        - "wind and handling-noise reduction"
+    - layer: "OS voice processing"
+      possible_functions:
+        - "echo cancellation"
+        - "voice isolation or voice-processing mode"
+        - "automatic gain and dynamic range control"
+        - "machine-learning voice enhancement"
+    - layer: "app VoIP pipeline"
+      possible_functions:
+        - "noise suppression"
+        - "echo cancellation"
+        - "automatic gain control"
+        - "jitter buffer"
+        - "packet-loss concealment"
+        - "codec bitrate adaptation"
+    - layer: "network and codec"
+      possible_functions:
+        - "speech codec compression"
+        - "packet recovery strategy"
+        - "latency-quality tradeoff"
+    - layer: "receiver playback"
+      possible_functions:
+        - "speaker or earbud equalization"
+        - "dynamic range compression"
+        - "listener-side noise and volume adaptation"
+  key_uncertainty: "Which parts are active for LINE on iOS in the user's actual call path, and whether iOS microphone modes are user-visible, app-controlled, or both."
+low_resource_voice_ai:
+  core_question: "How can a practical voice AI system remain useful on ordinary devices with weak GPU, small RAM/VRAM, strict latency, and noisy audio?"
+  answer_frame: "Use a hybrid pipeline: DSP and traditional algorithms handle cheap predictable signal cleanup; small AI models handle recognition, separation, and ambiguity; larger LLM or semantic models run only after gating, summarization, or server handoff when needed."
+  design_principles:
+    - "Do not run expensive inference before VAD decides speech is present."
+    - "Use DSP for filtering, gain control, echo cancellation, simple denoise, and normalization where it is reliable."
+    - "Use small or quantized models for local ASR, wake word, keyword spotting, or noise suppression when latency and privacy matter."
+    - "Use streaming inference so the system processes chunks instead of waiting for a full recording."
+    - "Use cloud or larger models only for tasks that cannot be handled locally, and make that boundary explicit."
+    - "Evaluate downstream task quality, not only isolated ASR accuracy."
+    - "Prefer stable CPU-only behavior before optimizing for optional GPU acceleration."
+  resource_techniques:
+    - "VAD gating"
+    - "fixed sample rate and frame size"
+    - "ring buffers"
+    - "streaming ASR"
+    - "model quantization"
+    - distillation
+    - pruning
+    - "keyword-first routing"
+    - "adaptive quality modes"
+    - "server fallback for expensive semantic analysis"
+  mature_pipeline_pattern:
+    - step: audio_input
+      purpose: "Capture microphone or call audio with known sample rate, channel count, and device metadata."
+    - step: preflight_audio_checks
+      purpose: "Detect clipping, missing audio, bad gain, and impossible sample format before model inference."
+    - step: DSP_preprocessing
+      purpose: "Apply cheap normalization, band-pass filtering, echo control, or simple noise reduction."
+    - step: VAD
+      purpose: "Skip silence and non-speech frames to save compute and reduce false analysis."
+    - step: noise_suppression_or_voice_enhancement
+      purpose: "Improve intelligibility only enough for the next stage; avoid over-cleaning artifacts."
+    - step: ASR_or_keyword_detection
+      purpose: "Convert speech to text or detect narrow command/risk patterns with the smallest viable model."
+    - step: speaker_or_segment_logic
+      purpose: "Separate speakers only if the product actually needs it."
+    - step: semantic_or_LLM_analysis
+      purpose: "Run task-specific interpretation after audio has been compressed into text, events, or short segments."
+    - step: decision_and_logging
+      purpose: "Record latency, confidence, skipped frames, errors, and the reason for each downstream action."
+  mvp_for_voice_understanding_service:
+    goal: "Build a tiny local-first voice pipeline that makes one useful decision from speech under noisy conditions."
+    flow:
+      - "microphone input"
+      - VAD
+      - "light noise reduction"
+      - "small ASR or keyword detector"
+      - "rule-based or small LLM semantic classifier"
+      - "decision display with latency and confidence"
+    first_scope: "One language, one microphone, one noise condition, one decision type, and no always-on background deployment."
+    kill_or_revise_condition: "If VAD plus small ASR cannot keep real-time latency and memory stable on target hardware, simplify to keyword detection or server-assisted ASR before adding more analysis."
+systems_engineering_learning_path:
+  core_identity_shift: "Move from model user to system designer: the goal is not only to make one AI call work, but to make the whole product reliable, observable, replaceable, and useful under real constraints."
+  field_map:
+    - field: "AI System Engineering"
+      why_it_matters: "Integrates models into usable products with latency, cost, reliability, data, and user constraints."
+    - field: "Real-time Systems"
+      why_it_matters: "Voice and conversation break when buffering, scheduling, or inference delay exceeds human tolerance."
+    - field: "Distributed Systems"
+      why_it_matters: "Multiple services, queues, databases, model workers, and frontends must coordinate under partial failure."
+    - field: "Infrastructure Engineering"
+      why_it_matters: "Deployment, scaling, storage, networking, observability, and cost control decide whether the product can live."
+    - field: "Site Reliability Engineering"
+      why_it_matters: "Reliability, monitoring, incident response, rollback, and service-level thinking keep systems healthy."
+    - field: "Product Engineering"
+      why_it_matters: "The system must solve a user problem, not only demonstrate a technical trick."
+    - field: "Human-centered System Design"
+      why_it_matters: "The final design must account for user behavior, trust, correction, confusion, and feedback loops."
+  first_questions:
+    - "What is the system trying to achieve for the user?"
+    - "What is the scarce resource: latency, memory, power, attention, trust, money, or review capacity?"
+    - "Where does data enter, transform, wait, fail, and leave?"
+    - "Which component owns which state?"
+    - "Which failure must be detected, recovered, logged, or escalated?"
+    - "What is the smallest end-to-end path that proves the product loop?"
+  mental_models:
+    - name: "Pipeline thinking"
+      use: "Represent the voice service as stages with input, output, latency, state, and errors."
+    - name: "Boundary thinking"
+      use: "Keep ASR, VAD, semantic analysis, storage, UI, auth, and monitoring from knowing each other's internals."
+    - name: "Feedback-loop thinking"
+      use: "Let logs, user correction, metrics, and failures change future tuning rather than treating launch as the end."
+    - name: "Bottleneck thinking"
+      use: "Optimize the slowest or most fragile stage instead of polishing the easiest component."
+    - name: "Evolvability thinking"
+      use: "Design interfaces so Whisper can become another ASR, local inference can become cloud fallback, and rules can become learned classifiers."
+    - name: "Failure-first thinking"
+      use: "Treat timeout, overload, bad input, crash, network loss, and user misuse as normal states to design for."
+    - name: "Operational thinking"
+      use: "Make every component observable enough that health, cost, latency, and errors can be understood after deployment."
+  architecture_layers_for_voice_service:
+    - layer: input_layer
+      owns: "microphone capture, sample rate, device metadata, consent, file or stream source"
+      must_not_own: "semantic decisions or database schema"
+    - layer: streaming_layer
+      owns: "chunking, ring buffer, queue, timestamps, ordering, backpressure"
+      must_not_own: "business meaning"
+    - layer: signal_processing_layer
+      owns: "VAD, normalization, filtering, denoise, echo or clipping checks"
+      must_not_own: "user account logic"
+    - layer: recognition_layer
+      owns: "ASR, keyword spotting, speaker segmentation when needed"
+      must_not_own: "final risk or product decision"
+    - layer: decision_layer
+      owns: "task-specific semantic interpretation, confidence, risk score, abstain rules"
+      must_not_own: "raw audio capture mechanics"
+    - layer: storage_and_trace_layer
+      owns: "logs, transcripts, metrics, model versions, artifacts, privacy retention"
+      must_not_own: "live audio control flow"
+    - layer: presentation_layer
+      owns: "what the user sees, correction UI, confidence explanation, status"
+      must_not_own: "model provider details"
+    - layer: operations_layer
+      owns: "monitoring, alerting, deployment, rollback, configuration, cost controls"
+      must_not_own: "domain inference itself"
+  product_lifecycle:
+    - stage: MVP
+      question: "Can one narrow voice path work end to end?"
+      deliverable: "microphone -> VAD -> ASR or keyword -> one decision -> visible output -> latency/memory log"
+      avoid: "multi-user platform, many languages, perfect UI, always-on deployment"
+    - stage: pilot
+      question: "Does it survive real audio, real users, and repeated sessions?"
+      deliverable: "small user test, noisy fixtures, error taxonomy, monitoring dashboard, rollback path"
+      avoid: "claiming production readiness from a clean demo"
+    - stage: scale
+      question: "Can cost, latency, storage, privacy, and support load remain controlled?"
+      deliverable: "queue/backpressure policy, autoscaling or local/cloud split, model versioning, load tests"
+      avoid: "unbounded cloud inference and unlogged failures"
+    - stage: maintenance
+      question: "Can future engineers debug and change it safely?"
+      deliverable: "tests, runbooks, schemas, release tags, incident notes, changelog, model cards"
+      avoid: "tribal knowledge and silent data/model drift"
+    - stage: evolution
+      question: "Can the system absorb new models, devices, privacy rules, and product goals?"
+      deliverable: "stable interfaces, adapters, feature flags, migration path, deprecation policy"
+      avoid: "hard-coded providers and cross-layer dependencies"
+  staged_learning_stack:
+    - stage: single_machine_systems
+      learn:
+        - "threads and async"
+        - queues
+        - "streaming buffers"
+        - "structured logging"
+        - "local metrics"
+        - "memory profiling"
+      build: "A local voice pipeline that can run for 30 minutes without growing memory or losing observability."
+    - stage: service_architecture
+      learn:
+        - "REST API"
+        - WebSocket
+        - "gRPC basics"
+        - Redis
+        - PostgreSQL
+        - "configuration management"
+      build: "Separate capture/client, inference service, decision service, and storage with clear contracts."
+    - stage: distributed_systems
+      learn:
+        - "message queues"
+        - "Kafka or RabbitMQ concepts"
+        - "service discovery"
+        - "load balancing"
+        - idempotency
+        - "retry and timeout policies"
+      build: "A small multi-service version that survives one worker crash and one overloaded queue."
+    - stage: production_operations
+      learn:
+        - Docker
+        - CI/CD
+        - deployment
+        - rollback
+        - "monitoring dashboards"
+        - "incident notes"
+      build: "A release-tagged pilot with health metrics, trace IDs, model/config versions, and a rollback path."
+    - stage: scale_and_maintenance
+      learn:
+        - "load testing"
+        - "cost controls"
+        - "privacy retention"
+        - "model versioning"
+        - "schema migration"
+        - runbooks
+      build: "A maintainable system where future changes happen through stable interfaces and documented decisions."
+  likely_difficulties_and_fixes:
+    - difficulty: "high latency"
+      diagnose: "Measure per-stage p50/p95 latency before guessing."
+      fixes:
+        - "smaller chunks"
+        - "VAD gating"
+        - "streaming ASR"
+        - "async workers"
+        - "skip or defer expensive semantic analysis"
+    - difficulty: "memory or VRAM pressure"
+      diagnose: "Track peak memory over long sessions, not only startup."
+      fixes:
+        - "quantized model"
+        - "smaller ASR"
+        - "bounded queues"
+        - "release buffers"
+        - "server fallback"
+    - difficulty: "bad ASR accuracy"
+      diagnose: "Separate capture quality, noise, VAD errors, model errors, and downstream interpretation errors."
+      fixes:
+        - "better microphone path"
+        - "audio normalization"
+        - "domain vocabulary"
+        - "keyword fallback"
+        - "confidence-aware abstention"
+    - difficulty: "pipeline stalls"
+      diagnose: "Check queue length, worker health, blocked threads, and backpressure."
+      fixes:
+        - "producer-consumer queues"
+        - timeouts
+        - "drop policy for stale chunks"
+        - "circuit breaker for failing modules"
+    - difficulty: "cannot debug failures"
+      diagnose: "Ask whether each request has timestamps, stage outputs, model version, error type, and decision reason."
+      fixes:
+        - "structured logs"
+        - "trace IDs"
+        - "metrics dashboard"
+        - "replayable audio fixtures"
+    - difficulty: "system becomes hard to change"
+      diagnose: "Count how many modules know each other's internals."
+      fixes:
+        - interfaces
+        - adapters
+        - "configuration files"
+        - "separation of concerns"
+        - "contract tests"
+    - difficulty: "over-engineering too early"
+      diagnose: "Ask whether the architecture solves a measured bottleneck or only looks mature."
+      fixes:
+        - "single-machine vertical slice first"
+        - "one queue before many services"
+        - "one metric dashboard before full observability platform"
+        - "delay Kubernetes until deployment pain is real"
+    - difficulty: "production drift"
+      diagnose: "Compare real audio, user behavior, latency, and failure logs against the original clean test fixture."
+      fixes:
+        - "field fixtures"
+        - "regression suite"
+        - "model and config versioning"
+        - "user correction loop"
+        - "scheduled review of incidents and false decisions"
+  useful_design_patterns:
+    - pattern: Producer-Consumer
+      when_to_use: "Audio chunks arrive continuously and inference workers consume them at variable speed."
+      risk_if_absent: "Capture blocks, latency spikes, or data is lost silently."
+    - pattern: "Queue with backpressure"
+      when_to_use: "Input may be faster than processing."
+      risk_if_absent: "Memory grows until the process crashes."
+    - pattern: "Observer or event bus"
+      when_to_use: "Metrics, UI, logs, and downstream modules need to react to state changes."
+      risk_if_absent: "Modules call each other directly and become tangled."
+    - pattern: Adapter
+      when_to_use: "ASR, VAD, LLM, or storage provider may be replaced."
+      risk_if_absent: "One provider's API leaks through the whole codebase."
+    - pattern: Strategy
+      when_to_use: "The system chooses local ASR, cloud ASR, keyword-only, or degraded mode based on resources."
+      risk_if_absent: "Quality and cost policies become hard-coded conditionals everywhere."
+    - pattern: "Circuit Breaker"
+      when_to_use: "A model server, cloud API, or worker can fail repeatedly."
+      risk_if_absent: "The whole system waits on a broken dependency."
+    - pattern: Repository
+      when_to_use: "Domain logic should not depend on database implementation."
+      risk_if_absent: "Storage changes force product logic rewrites."
+  software_development_flow:
+    - "Write the narrow product question and done condition."
+    - "Draw the pipeline with owned state and failure modes."
+    - "Create one replayable fixture before optimizing."
+    - "Build a vertical slice before broad feature work."
+    - "Add logs and latency metrics from the first prototype."
+    - "Test each layer and one end-to-end path."
+    - "Run noisy, long-session, and failure-injection tests."
+    - "Tag releases, keep rollback possible, and record design decisions."
+    - "Use user feedback and logs to choose the next bottleneck."
+  lifecycle_principle: "A software product truly begins when maintenance begins; the design must assume future debugging, handoff, deployment, rollback, and changing requirements."
+  learning_sequence:
+    - "Build one local streaming audio script with VAD and timing logs."
+    - "Add a small ASR or keyword detector and measure real-time factor."
+    - "Add a queue and intentionally overload it to learn backpressure."
+    - "Add structured logs, trace IDs, and replayable test fixtures."
+    - "Swap one component through an adapter to feel why boundaries matter."
+    - "Add a tiny UI or API endpoint only after the core loop is measurable."
+    - "Run a pilot with noisy audio and write an error taxonomy."
+    - "Refactor only after a measured pain appears, then name the pattern that solves that pain."
+    - "Promote the project from local script to service only after the single-machine system has clear contracts and logs."
+systems_engineering_curriculum:
+  title: "System Thinking and System Design for AI Products"
+  duration: "4 semesters / 2 years"
+  philosophy: "Train the ability to see programs as living systems: flows, boundaries, bottlenecks, failures, feedback, operations, users, maintenance, and evolution."
+  why_four_semesters: "The target skill is not memorized terminology; it is a rebuilt cognitive structure. Students need repeated implementation, debugging, refactoring, deployment, monitoring, and failure analysis to internalize system thinking."
+  prerequisite_position: "System Design is an upper-layer synthesis course. Without lower-level CS foundations, students tend to memorize architecture names instead of understanding the pain that produced them."
+  prerequisite_map:
+    required_core:
+      - course: "Programming Fundamentals"
+        why: "Builds computational thinking: state, control flow, abstraction, decomposition, error handling, debugging, and early async awareness."
+        must_understand:
+          - "state and mutation"
+          - "function abstraction"
+          - "error handling"
+          - "debugging from evidence"
+          - "basic async and IO intuition"
+        system_design_link: "A system is made of modules with state and flow; weak programming fundamentals make boundaries and failure handling vague."
+      - course: "Data Structures and Algorithms"
+        why: "Trains time-space tradeoff thinking, which is the core language of scalability."
+        must_understand:
+          - queue
+          - stack
+          - "hash map"
+          - heap
+          - "tree and index"
+          - graph
+          - complexity
+        system_design_link: "Kafka, caches, schedulers, database indexes, load balancers, and dependency graphs all rest on data-structure thinking."
+      - course: "Operating Systems"
+        why: "The strongest prerequisite. Many system-design bottlenecks collapse back to process, thread, memory, scheduler, IO, synchronization, and file-system behavior."
+        must_understand:
+          - process
+          - thread
+          - scheduling
+          - "mutex and semaphore"
+          - deadlock
+          - "virtual memory"
+          - paging
+          - "file system"
+          - "socket and IPC"
+          - "blocking versus nonblocking IO"
+        system_design_link: "Explains why async, queues, backpressure, memory limits, worker pools, and latency spikes exist."
+      - course: "Computer Networks"
+        why: "Modern systems are networked; network latency, packet loss, retransmission, congestion, DNS, and service communication shape architecture."
+        must_understand:
+          - "TCP versus UDP"
+          - "packet loss"
+          - congestion
+          - latency
+          - DNS
+          - HTTP
+          - WebSocket
+          - "gRPC basics"
+        system_design_link: "Explains load balancing, API gateways, streaming, realtime voice, timeout, retry, and service discovery."
+      - course: "Database Systems"
+        why: "Large systems are often data-bound rather than compute-bound; storage choices become product constraints."
+        must_understand:
+          - "relational modeling"
+          - indexing
+          - transactions
+          - locks
+          - "query plans"
+          - replication
+          - consistency
+          - "sharding basics"
+        system_design_link: "Explains slow queries, transaction conflicts, consistency tradeoffs, storage bottlenecks, and audit trails."
+      - course: "Software Engineering"
+        why: "Teaches how humans maintain large systems together: modularity, testing, CI/CD, review, refactoring, documentation, and technical debt."
+        must_understand:
+          - modularity
+          - "testing pyramid"
+          - "integration tests"
+          - CI/CD
+          - "code review"
+          - refactoring
+          - "technical debt"
+          - "release and rollback"
+        system_design_link: "Explains why maintainability, ownership, observability, and lifecycle matter as much as feature delivery."
+      - course: "Computer Architecture"
+        why: "Important for AI and performance systems because CPU cache, memory hierarchy, SIMD, GPU bottlenecks, and data movement often dominate latency."
+        must_understand:
+          - "CPU cache"
+          - "memory hierarchy"
+          - "instruction-level performance intuition"
+          - "SIMD basics"
+          - "GPU and accelerator basics"
+          - "bandwidth versus compute"
+        system_design_link: "Explains why utilization can look low while latency is high, and why data movement can dominate AI inference cost."
+    strongly_recommended:
+      - course: "Concurrency and Parallel Computing"
+        why: "Voice, AI, UI, IO, and inference pipelines rarely live in a single-threaded world."
+        system_design_link: "Prepares students for race conditions, deadlocks, async pipelines, worker pools, GPU scheduling, and throughput tuning."
+      - course: "Distributed Systems"
+        why: "Advanced system design starts when many unreliable machines cooperate."
+        system_design_link: "Teaches CAP, replication, consensus, partial failure, retries, idempotency, and fault tolerance."
+      - course: "Embedded Systems"
+        why: "Low-resource and realtime constraints make system tradeoffs concrete."
+        system_design_link: "Connects directly to edge AI, audio devices, memory limits, power limits, and hardware interaction."
+      - course: "Human-Computer Interaction"
+        why: "Real systems are used by humans, not benchmarks."
+        system_design_link: "Adds trust, feedback, correction, attention, explainability, and user behavior into system design."
+      - course: Compilers
+        why: "Not mandatory, but powerful for abstraction, translation, optimization, and runtime thinking."
+        system_design_link: "Sharpens how high-level intent becomes lower-level execution, which helps with tooling, performance, and model/runtime systems."
+      - course: "Probability and Queueing Basics"
+        why: "System performance is often probabilistic: p95 latency, arrival rates, queue growth, retries, and overload."
+        system_design_link: "Supports capacity planning, queueing analysis, SLOs, latency budgets, and load testing."
+    not_first:
+      - Kubernetes
+      - "enterprise cloud architecture"
+      - "microservice frameworks"
+      - "vendor-specific managed services"
+    not_first_reason: "These tools make sense after students understand OS, networking, queues, deployment pain, scaling pressure, and operational failure. Starting with them encourages vocabulary memorization without causal understanding."
+  prerequisite_learning_order:
+    - phase: 1
+      name: "single-machine foundation"
+      courses:
+        - "Programming Fundamentals"
+        - "Data Structures and Algorithms"
+        - "Operating Systems"
+      outcome: "Understand code, state, memory, thread, IO, and local failure."
+    - phase: 2
+      name: "networked service foundation"
+      courses:
+        - "Computer Networks"
+        - "Database Systems"
+        - "Software Engineering"
+      outcome: "Understand communication, persistence, APIs, testing, and maintainability."
+    - phase: 3
+      name: "performance and parallelism"
+      courses:
+        - "Computer Architecture"
+        - "Concurrency and Parallel Computing"
+        - "Probability and Queueing Basics"
+      outcome: "Understand resource constraints, latency, throughput, and overload."
+    - phase: 4
+      name: "advanced systems"
+      courses:
+        - "Distributed Systems"
+        - "Embedded Systems or HCI depending on project"
+      outcome: "Understand partial failure, realtime constraints, human feedback, and real-world operation."
+    - phase: 5
+      name: "AI systems synthesis"
+      courses:
+        - "AI Systems Engineering"
+        - "Real-time AI"
+        - "SRE or DevOps"
+      outcome: "Combine models, data, infrastructure, users, monitoring, rollback, and lifecycle into one living product."
+  recurring_practices:
+    - "Draw one system diagram every week."
+    - "Name the bottleneck before optimizing."
+    - "Write one failure mode and one recovery strategy every week."
+    - "Keep a small architecture decision record for each project change."
+    - "Add observability before claiming a system works."
+    - "Review one real product or everyday system through data flow, dependency, failure, and maintenance."
+  semesters:
+    - semester: 1
+      name: "System Thinking Foundations: Single-Machine Systems"
+      goal: "Understand how a program lives on one machine: process, thread, memory, IO, buffering, latency, logging, failure, modularity, async, queues, and real-time flow."
+      final_project: "A single-machine streaming system such as a voice AI pipeline, realtime CCTV pipeline, mini Discord, or streaming ASR toy system with logs, metrics, failure injection, and refactoring notes."
+      weeks:
+        - week: 1
+          topic: "What is a System?"
+          learn:
+            - "system versus program"
+            - modules
+            - interfaces
+            - dependencies
+            - "data flow"
+          lab: "Draw LINE call, ChatGPT, and YouTube system diagrams."
+          deliverable: "Three diagrams with input, output, modules, failure points, and bottleneck guesses."
+        - week: 2
+          topic: "Process and Thread"
+          learn:
+            - process
+            - thread
+            - scheduler
+            - concurrency
+            - "context switch"
+          lab: "Build a multithread downloader or toy audio stream reader."
+          deliverable: "Timing log showing where concurrency helps and where it creates risk."
+        - week: 3
+          topic: "Memory Thinking"
+          learn:
+            - stack
+            - heap
+            - "memory leak"
+            - fragmentation
+            - "cache locality"
+          lab: "Create and fix a small memory leak or unbounded buffer."
+          deliverable: "Before/after memory trace and short diagnosis."
+        - week: 4
+          topic: "IO and Buffering"
+          learn:
+            - "file IO"
+            - "network IO"
+            - buffering
+            - streaming
+            - "chunk size"
+          lab: "Build a streaming audio or file pipeline with bounded buffers."
+          deliverable: "Experiment comparing small, medium, and large chunk behavior."
+        - week: 5
+          topic: "Latency and Throughput"
+          learn:
+            - latency
+            - throughput
+            - queueing
+            - bottleneck
+            - "p50 and p95"
+          lab: "Compare batch processing with streaming processing."
+          deliverable: "Per-stage latency table and one bottleneck fix."
+        - week: 6
+          topic: "Logging and Observability"
+          learn:
+            - "structured logs"
+            - metrics
+            - tracing
+            - "trace IDs"
+          lab: "Add logs and metrics to the streaming project."
+          deliverable: "One trace from input to output with timestamps."
+        - week: 7
+          topic: "Failure Thinking"
+          learn:
+            - timeout
+            - retry
+            - "crash recovery"
+            - "graceful degradation"
+            - "fault injection"
+          lab: "Inject delay, dropped chunks, and process crash."
+          deliverable: "Failure table with detection, impact, and recovery."
+        - week: 8
+          topic: "Modular Design"
+          learn:
+            - coupling
+            - cohesion
+            - abstraction
+            - "clean architecture"
+            - "SOLID as pain vocabulary"
+          lab: "Refactor one tangled module into clear boundaries."
+          deliverable: "Before/after dependency diagram."
+        - week: 9
+          topic: "Design Patterns as Recurring Pain"
+          learn:
+            - observer
+            - strategy
+            - factory
+            - adapter
+          lab: "Replace one hard-coded component with a strategy or adapter."
+          deliverable: "Short note explaining the pain and why the pattern fits."
+        - week: 10
+          topic: "Async Architecture"
+          learn:
+            - async/await
+            - "event loop"
+            - producer-consumer
+            - "nonblocking IO"
+          lab: "Build an async audio or event pipeline."
+          deliverable: "Trace showing producer and consumer timing."
+        - week: 11
+          topic: "Queue Systems and Backpressure"
+          learn:
+            - queue
+            - "bounded queue"
+            - backpressure
+            - "stale data drop policy"
+          lab: "Build a mini queue and overload it intentionally."
+          deliverable: "Backpressure policy with memory and latency results."
+        - week: 12
+          topic: "Real-time Thinking"
+          learn:
+            - jitter
+            - synchronization
+            - deadline
+            - "realtime audio constraints"
+          lab: "Build a realtime voice processing path with visible latency."
+          deliverable: "Realtime budget and observed jitter."
+        - week: 13
+          topic: "Monitoring Dashboard"
+          learn:
+            - "health metrics"
+            - "stage metrics"
+            - "alert conditions"
+            - "operational view"
+          lab: "Build a small dashboard or text-based monitor."
+          deliverable: "Dashboard showing latency, queue length, memory, and error count."
+        - week: 14
+          topic: "Refactoring and Technical Debt"
+          learn:
+            - "technical debt"
+            - "code smell"
+            - "architecture drift"
+            - "regression risk"
+          lab: "Refactor the semester project while preserving tests."
+          deliverable: "Refactor plan, tests run, and one architecture decision record."
+        - week: 15
+          topic: "Final Project Build Week"
+          learn:
+            - integration
+            - "failure handling"
+            - observability
+          lab: "Finish the single-machine system."
+          deliverable: "Runnable system with README, logs, metrics, and known limitations."
+        - week: 16
+          topic: "Final Review and Failure Analysis"
+          learn:
+            - "architecture review"
+            - postmortem
+            - "future evolution"
+          lab: "Present and break the system."
+          deliverable: "Postmortem plus next-semester service decomposition plan."
+    - semester: 2
+      name: "Distributed Systems and Service Architecture"
+      goal: "Move from one machine to multiple cooperating services: networking, APIs, databases, cache, queues, service discovery, partial failure, CAP tradeoffs, containers, deployment, and rollback."
+      final_project: "A distributed AI or realtime system such as scalable audio AI, realtime fraud detection, or distributed inference with at least three services, message queue, database, monitoring, and failure recovery."
+      weeks:
+        - week: 1
+          topic: "Networking Fundamentals I"
+          learn:
+            - TCP
+            - UDP
+            - packet
+            - latency
+            - congestion
+          lab: "Build a mini chat or audio packet toy."
+          deliverable: "Packet flow diagram and latency measurement."
+        - week: 2
+          topic: "Networking Fundamentals II"
+          learn:
+            - "connection lifecycle"
+            - "packet loss"
+            - retransmission
+            - jitter
+          lab: "Simulate delay and packet loss."
+          deliverable: "Failure behavior report."
+        - week: 3
+          topic: "REST API and gRPC"
+          learn:
+            - request/response
+            - "streaming RPC"
+            - "API contracts"
+            - "schema versioning"
+          lab: "Split ASR and decision into separate services."
+          deliverable: "API contract and integration test."
+        - week: 4
+          topic: "Database Thinking"
+          learn:
+            - indexing
+            - transactions
+            - normalization
+            - "query cost"
+          lab: "Store transcripts, events, metrics, and model versions."
+          deliverable: "Schema with example queries and indexes."
+        - week: 5
+          topic: "Cache Systems"
+          learn:
+            - Redis
+            - "cache hit rate"
+            - TTL
+            - invalidation
+          lab: "Cache repeated analysis or model metadata."
+          deliverable: "Cache strategy and correctness risk."
+        - week: 6
+          topic: "Message Queues"
+          learn:
+            - "Kafka concept"
+            - "RabbitMQ concept"
+            - producer
+            - consumer
+            - durability
+          lab: "Add a queue between capture and inference."
+          deliverable: "Queue metrics under overload."
+        - week: 7
+          topic: "Service Discovery and Load Balancing"
+          learn:
+            - "scaling workers"
+            - "load balancing"
+            - "health checks"
+            - routing
+          lab: "Run multiple inference workers."
+          deliverable: "Load distribution and worker health report."
+        - week: 8
+          topic: "Distributed Failure"
+          learn:
+            - "partial failure"
+            - "split brain"
+            - "retry storm"
+            - idempotency
+          lab: "Crash one service and overload another."
+          deliverable: "Recovery plan and retry policy."
+        - week: 9
+          topic: "CAP and Consistency"
+          learn:
+            - consistency
+            - availability
+            - "partition tolerance"
+            - "tradeoff thinking"
+          lab: "Design consistency choices for transcript and decision records."
+          deliverable: "Consistency decision note."
+        - week: 10
+          topic: "Event-driven Architecture"
+          learn:
+            - events
+            - "event sourcing"
+            - "async workflows"
+            - replay
+          lab: "Represent voice-processing stages as events."
+          deliverable: "Replayable event log."
+        - week: 11
+          topic: Docker
+          learn:
+            - image
+            - container
+            - environment
+            - reproducibility
+          lab: "Containerize services."
+          deliverable: "Docker compose file and runbook."
+        - week: 12
+          topic: "Kubernetes Concepts"
+          learn:
+            - orchestration
+            - pods
+            - deployments
+            - services
+            - "why not always Kubernetes"
+          lab: "Deploy a toy service locally or write a deployment design."
+          deliverable: "Orchestration rationale, not just commands."
+        - week: 13
+          topic: "CI/CD and Rollback"
+          learn:
+            - "build pipeline"
+            - "automated tests"
+            - "release tag"
+            - rollback
+          lab: "Create a simple CI pipeline."
+          deliverable: "Release checklist and rollback test."
+        - week: 14
+          topic: "Distributed Observability"
+          learn:
+            - "logs across services"
+            - metrics
+            - traces
+            - "correlation IDs"
+          lab: "Trace one request across three services."
+          deliverable: "Distributed trace and failure location demo."
+        - week: 15
+          topic: "Final Project Build Week"
+          learn:
+            - integration
+            - scalability
+            - "partial failure"
+          lab: "Finish distributed project."
+          deliverable: "Runnable multi-service system with monitoring."
+        - week: 16
+          topic: "Architecture Review"
+          learn:
+            - "scaling tradeoffs"
+            - "operational risk"
+            - "cost awareness"
+          lab: "Present design and incident simulation."
+          deliverable: "Postmortem and next evolution plan."
+    - semester: 3
+      name: "AI Systems Engineering and Real-time AI Architecture"
+      goal: "Build deployable AI systems: inference architecture, GPU/CPU scheduling, batching, streaming, vector search, RAG, agents, voice AI, AI observability, evaluation, and safety."
+      final_project: "An AI system with streaming or low-latency constraints, measurable evaluation, model/version traceability, observability, and graceful degradation."
+      weeks:
+        - week: 1
+          topic: "AI Systems Are Pipelines"
+          learn:
+            - "data ingestion"
+            - preprocessing
+            - inference
+            - postprocessing
+            - evaluation
+          lab: "Map an AI product into pipeline stages."
+          deliverable: "AI system diagram with metrics per stage."
+        - week: 2
+          topic: "Inference Architecture"
+          learn:
+            - batching
+            - "streaming output"
+            - concurrency
+            - "worker pools"
+          lab: "Compare single request, batch, and streaming inference."
+          deliverable: "Latency and throughput comparison."
+        - week: 3
+          topic: "GPU and Memory Bottlenecks"
+          learn:
+            - VRAM
+            - quantization
+            - offloading
+            - "model size"
+          lab: "Run small and quantized models under memory limits."
+          deliverable: "Resource profile and model choice note."
+        - week: 4
+          topic: "CPU-first and Edge AI"
+          learn:
+            - "CPU-only inference"
+            - "small models"
+            - "device constraints"
+            - "power and thermal limits"
+          lab: "Run a small local voice or text model on constrained resources."
+          deliverable: "Real-time factor and memory report."
+        - week: 5
+          topic: "RAG Pipeline"
+          learn:
+            - chunking
+            - embeddings
+            - retrieval
+            - reranking
+            - citation
+          lab: "Build a small RAG system."
+          deliverable: "Retrieval evaluation with failure cases."
+        - week: 6
+          topic: "Vector Database and Indexing"
+          learn:
+            - "vector index"
+            - recall
+            - latency
+            - "metadata filters"
+          lab: "Compare retrieval settings."
+          deliverable: "Recall-latency tradeoff table."
+        - week: 7
+          topic: "AI Agent Architecture"
+          learn:
+            - orchestrator
+            - planner
+            - tools
+            - memory
+            - "stop conditions"
+          lab: "Build a tiny tool-using agent with logs."
+          deliverable: "Trace of planning, tool calls, failures, and stop rule."
+        - week: 8
+          topic: "Voice AI System"
+          learn:
+            - VAD
+            - "streaming ASR"
+            - "speaker segmentation"
+            - "keyword detection"
+          lab: "Build microphone -> VAD -> ASR -> decision."
+          deliverable: "Latency, WER, and decision-quality report."
+        - week: 9
+          topic: "Real-time AI"
+          learn:
+            - deadline
+            - "degraded mode"
+            - "partial output"
+            - "user-perceived latency"
+          lab: "Add degraded mode when inference is too slow."
+          deliverable: "Policy for local, cloud, keyword-only, and abstain modes."
+        - week: 10
+          topic: "AI Observability"
+          learn:
+            - "hallucination tracking"
+            - drift
+            - "model version"
+            - "prompt/version trace"
+          lab: "Log inputs, outputs, model versions, and error categories."
+          deliverable: "AI trace dashboard."
+        - week: 11
+          topic: "AI Evaluation"
+          learn:
+            - "offline eval"
+            - "online eval"
+            - "golden set"
+            - "regression suite"
+          lab: "Build an evaluation fixture."
+          deliverable: "Eval report with false positives, false negatives, and abstentions."
+        - week: 12
+          topic: "Safety and Guardrails"
+          learn:
+            - "policy engine"
+            - sandbox
+            - "safe tool use"
+            - "human review"
+          lab: "Add a safety boundary to an AI workflow."
+          deliverable: "Threat model and safety test cases."
+        - week: 13
+          topic: "AI Product Feedback Loop"
+          learn:
+            - "user correction"
+            - "feedback capture"
+            - "model improvement loop"
+            - "privacy boundary"
+          lab: "Add correction UI or review queue."
+          deliverable: "Feedback-to-evaluation flow."
+        - week: 14
+          topic: "Cost, Latency, and Quality Tradeoffs"
+          learn:
+            - "cost model"
+            - "model routing"
+            - "adaptive quality"
+            - "budget-aware design"
+          lab: "Implement local/cloud/model-size routing."
+          deliverable: "Routing policy with cost and latency estimates."
+        - week: 15
+          topic: "Final AI System Build Week"
+          learn:
+            - integration
+            - evaluation
+            - safety
+            - observability
+          lab: "Finish AI system."
+          deliverable: "Runnable AI system with eval and monitoring."
+        - week: 16
+          topic: "AI Architecture Review"
+          learn:
+            - "model risk"
+            - "product risk"
+            - "operational risk"
+          lab: "Present AI system and failure analysis."
+          deliverable: "Postmortem, model card, and next iteration plan."
+    - semester: 4
+      name: "Product-grade System Architecture and Long-term Operations"
+      goal: "Move from engineer to architect: reliability, SRE, lifecycle, team ownership, security architecture, cost engineering, incident response, migration, legacy systems, and capstone delivery."
+      final_project: "A product-grade system such as realtime anti-fraud AI, medical AI platform, AI SOC, distributed agent platform, or voice AI service with deployment, monitoring, rollback, failure handling, security, cost controls, and maintainability artifacts."
+      weeks:
+        - week: 1
+          topic: "Architectural Thinking"
+          learn:
+            - "architect role"
+            - "tradeoff documents"
+            - ownership
+            - evolvability
+          lab: "Write an architecture decision record for the capstone."
+          deliverable: "Capstone architecture brief."
+        - week: 2
+          topic: "Reliability Engineering"
+          learn:
+            - reliability
+            - availability
+            - redundancy
+            - "graceful degradation"
+          lab: "Add redundancy or degraded mode to a service."
+          deliverable: "Reliability plan."
+        - week: 3
+          topic: "SRE, SLA, SLO, and Error Budget"
+          learn:
+            - SLA
+            - SLO
+            - "error budget"
+            - "alert fatigue"
+          lab: "Define SLOs for latency, uptime, and error rate."
+          deliverable: "SLO document and alert rules."
+        - week: 4
+          topic: "Product Lifecycle"
+          learn:
+            - MVP
+            - pilot
+            - scaling
+            - maintenance
+            - evolution
+          lab: "Map capstone roadmap across lifecycle stages."
+          deliverable: "Lifecycle roadmap with exit criteria."
+        - week: 5
+          topic: "Team Architecture"
+          learn:
+            - "repo strategy"
+            - ownership
+            - "code review"
+            - governance
+          lab: "Define module ownership and review boundaries."
+          deliverable: "Ownership map and contribution rules."
+        - week: 6
+          topic: "Security Architecture"
+          learn:
+            - "threat modeling"
+            - "least privilege"
+            - "zero trust"
+            - "secret management"
+          lab: "Threat model the capstone."
+          deliverable: "Threat model and mitigation checklist."
+        - week: 7
+          topic: "Privacy and Data Governance"
+          learn:
+            - retention
+            - consent
+            - "sensitive data"
+            - "audit trail"
+          lab: "Design data retention and deletion flow."
+          deliverable: "Data governance policy."
+        - week: 8
+          topic: "Cost Engineering"
+          learn:
+            - "cloud cost"
+            - "GPU utilization"
+            - "scaling cost"
+            - "budget alerts"
+          lab: "Estimate cost under 1x, 10x, and 100x load."
+          deliverable: "Cost model and cost reduction plan."
+        - week: 9
+          topic: "Incident Response"
+          learn:
+            - "incident lifecycle"
+            - triage
+            - mitigation
+            - communication
+          lab: "Run a simulated incident."
+          deliverable: "Incident timeline and response log."
+        - week: 10
+          topic: "Postmortem and Root Cause Analysis"
+          learn:
+            - "blameless postmortem"
+            - "root cause"
+            - "contributing factors"
+            - "action items"
+          lab: "Write postmortem for simulated incident."
+          deliverable: "Postmortem with concrete follow-up tasks."
+        - week: 11
+          topic: "Long-term Evolution and Migration"
+          learn:
+            - "migration plan"
+            - "backward compatibility"
+            - deprecation
+            - "legacy systems"
+          lab: "Replace one major component through an adapter."
+          deliverable: "Migration plan and compatibility tests."
+        - week: 12
+          topic: "Release Engineering"
+          learn:
+            - "semantic versioning"
+            - "release notes"
+            - "feature flags"
+            - "canary rollout"
+          lab: "Create a staged release plan."
+          deliverable: "Release package and rollback proof."
+        - week: 13
+          topic: "Human-centered System Design"
+          learn:
+            - "user behavior"
+            - trust
+            - correction
+            - explainability
+          lab: "Design user feedback and correction loop."
+          deliverable: "Human-in-the-loop flow."
+        - week: 14
+          topic: "Capstone Hardening"
+          learn:
+            - "load testing"
+            - "failure injection"
+            - "security review"
+            - "operational readiness"
+          lab: "Run capstone hardening checklist."
+          deliverable: "Operational readiness review."
+        - week: 15
+          topic: "Capstone Demo"
+          learn:
+            - "product demonstration"
+            - "operational evidence"
+            - "architecture defense"
+          lab: "Present the working system."
+          deliverable: "Demo, architecture doc, monitoring dashboard, and eval report."
+        - week: 16
+          topic: "Capstone Postmortem and Future Evolution"
+          learn:
+            - "maintenance planning"
+            - "system evolution"
+            - "research/product transfer"
+          lab: "Write final postmortem and next-year roadmap."
+          deliverable: "Final postmortem, migration backlog, and long-term architecture map."
+experiment_seed:
+  setup:
+    - "Use two phones and consented local recordings."
+    - "Play a fixed speech sample plus controlled noise near the transmitting phone."
+    - "Record local room audio separately as the reference."
+    - "Record the receiving side output under the same call segment."
+    - "Repeat across LINE, FaceTime, normal phone call, and one raw recorder baseline if available."
+  variables:
+    - "iPhone model and iOS version"
+    - "LINE app version"
+    - "microphone path: built-in, AirPods, wired mic"
+    - "noise type: cafe, traffic, wind, keyboard, nearby speech"
+    - "network: Wi-Fi, 5G, unstable connection"
+    - "iOS microphone mode if visible during the call"
+  smallest_next_test: "Run one 10-minute controlled comparison: LINE built-in mic versus iPhone Voice Memos reference in the same cafe-noise playback condition, then listen for SNR, clipped syllables, and background gating."
+  low_resource_mvp_test: "Build a minimal microphone -> VAD -> small ASR or keyword detector -> rule decision script and log latency, CPU, memory, skipped frames, and transcription/decision failures on one weak target device."
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 15
+  evidence_support_score: 15/15
+  connection_strength: 8
+  connection_strength_score: 8/10
+  novelty: 6
+  novelty_score: 6/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 8
+  research_potential_score: 8/10
+maturity_score: 92/100
+maturity_level: execution_ready
+next_steps:
+  - "Verify official Apple/iOS and LINE/WebRTC/codec documentation enough to label confirmed versus inferred processing layers."
+  - "Build the smallest low-resource voice-service MVP: microphone input, VAD, light denoise, small ASR or keyword detection, one semantic decision, and latency/memory logging."
+  - "Write a one-page system design brief before implementation: purpose, layers, owned state, input/output contracts, failure modes, metrics, and rollback strategy."
+  - "Design the smallest two-phone test that compares local reference audio with received LINE call audio under one controlled noise condition."
+  - "Decide whether this remains a product-observation note, becomes an audio-systems explainer, or connects to a larger research question about AI-mediated sensory reality and deployable edge AI."
+source:
+  - conversation
+maturity_action: "generate experiment plan"
+normalization_status: validated

@@ -21,6 +21,10 @@
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
+## asr
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
 ## auditability
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
@@ -99,6 +103,22 @@
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
+## design-patterns
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## distributed-systems
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## dsp
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## edge-ai
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## embedding-discovery
 
@@ -195,6 +215,10 @@
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
+## human-computer-interaction
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
 ## human-in-the-loop
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
@@ -214,6 +238,18 @@
 ## information-efficiency
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## infrastructure-engineering
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## ios-audio
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## iphone
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## iso-27001
 
@@ -252,6 +288,10 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
+## line
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
 ## local-llm
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
@@ -259,6 +299,10 @@
 ## local-sparse-vectors
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## low-resource-ai
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## medical-ai
 
@@ -285,6 +329,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## noise-suppression
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## non-leading-questions
 
@@ -335,6 +383,14 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## product-lifecycle
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## product-observation
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
 ## publication-strategy
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
@@ -350,6 +406,14 @@
 ## rag
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+
+## real-time-ai
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## real-time-systems
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## research-candidate
 
@@ -430,6 +494,11 @@
 ## software-architecture
 
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## sre
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## statement-interview
 
@@ -439,9 +508,14 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## system-design
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
 ## systems-thinking
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## task-graph
 
@@ -466,6 +540,18 @@
 ## venue-fit
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## voice-enhancement
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## voice-service-pipeline
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## voip
+
+- `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## workflow
 
