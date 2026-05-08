@@ -1,103 +1,66 @@
 id: idea_000013
-title: ISO 27001 high school explainer and compliance teaching module
-created_at: '2026-05-08'
+title: "ISO 27001 high school explainer and compliance teaching module"
+created_at: 2026-05-08
 type: concept
 tags:
-- cybersecurity
-- governance
-- compliance
-- teaching
-- iso-27001
-- ai-security
-- endpoint-management
-- lenovo-ldo
+  - cybersecurity
+  - governance
+  - compliance
+  - teaching
+  - iso-27001
+  - ai-security
+  - endpoint-management
+  - lenovo-ldo
 status: execution_ready
 problem_statement:
-  raw: Given that ISO/IEC 27001 is often explained in expert compliance language,
-    create a Taiwan high-school-student-friendly teaching module that explains what
-    it is, what it covers, who needs it, when it changed, and how it appears in real
-    organizations and endpoint-management products such as Lenovo Device Orchestration.
-  normalized: Given non-specialist learners who need practical cybersecurity governance
-    literacy, optimize ISO/IEC 27001 understanding and product-scope review ability
-    under constraints of plain Traditional Chinese, current-version accuracy, non-operational
-    safety, real-world examples, and evidence-backed vendor-scope claims.
+  raw: "Given that ISO/IEC 27001 is often explained in expert compliance language, create a Taiwan high-school-student-friendly teaching module that explains what it is, what it covers, who needs it, when it changed, and how it appears in real organizations and endpoint-management products such as Lenovo Device Orchestration."
+  normalized: "Given non-specialist learners who need practical cybersecurity governance literacy, optimize ISO/IEC 27001 understanding and product-scope review ability under constraints of plain Traditional Chinese, current-version accuracy, non-operational safety, real-world examples, and evidence-backed vendor-scope claims."
   structure:
-    given: non-specialist learners who need practical cybersecurity governance literacy
-    optimize: ISO/IEC 27001 understanding, recall, and product-scope review ability
+    given: "non-specialist learners who need practical cybersecurity governance literacy"
+    optimize: "ISO/IEC 27001 understanding, recall, and product-scope review ability"
     constraints:
-    - plain Traditional Chinese suitable for Taiwan high-school students
-    - current-version accuracy for ISO/IEC 27001:2022 and later amendments
-    - safe, non-operational cybersecurity explanation
-    - real-world examples from healthcare, AI SaaS, and semiconductor contexts
-    - evidence-backed vendor-scope claims for Lenovo LDO / UDS examples
-summary: A reusable explainer module that turns ISO/IEC 27001 into a governance and
-  risk-management lesson, using school-rule analogies, real-world cases, Lenovo LDO
-  as an endpoint-management product story, and Mermaid diagrams for each major concept.
+      - "plain Traditional Chinese suitable for Taiwan high-school students"
+      - "current-version accuracy for ISO/IEC 27001:2022 and later amendments"
+      - "safe, non-operational cybersecurity explanation"
+      - "real-world examples from healthcare, AI SaaS, and semiconductor contexts"
+      - "evidence-backed vendor-scope claims for Lenovo LDO / UDS examples"
+summary: "A reusable explainer module that turns ISO/IEC 27001 into a governance and risk-management lesson, using school-rule analogies, real-world cases, Lenovo LDO as an endpoint-management product story, and Mermaid diagrams for each major concept."
 assumptions:
-- High-school-level analogies can explain ISMS without losing the core distinction
-  between management system, controls, certification, and tools.
-- 'Learners need both the formal definition and the practical impact map: people,
-  process, technology, and physical environment.'
-- The teaching artifact should avoid implying that ISO/IEC 27001 prevents all breaches;
-  it should frame certification as risk management and assurance.
-- Version facts should be checked against official or certification-body sources before
-  reuse because standards and transition deadlines can drift.
-- 'For LDO-style products, the most useful ISO 27001 lesson is scope discipline: a
-  certificate must be checked against the exact service, cloud platform, data flow,
-  support process, and customer deployment model.'
-- 'Endpoint-management SaaS should be taught as a management-plane risk: a protected
-  admin console and agent-cloud channel may matter more than any single endpoint.'
+  - "High-school-level analogies can explain ISMS without losing the core distinction between management system, controls, certification, and tools."
+  - "Learners need both the formal definition and the practical impact map: people, process, technology, and physical environment."
+  - "The teaching artifact should avoid implying that ISO/IEC 27001 prevents all breaches; it should frame certification as risk management and assurance."
+  - "Version facts should be checked against official or certification-body sources before reuse because standards and transition deadlines can drift."
+  - "For LDO-style products, the most useful ISO 27001 lesson is scope discipline: a certificate must be checked against the exact service, cloud platform, data flow, support process, and customer deployment model."
+  - "Endpoint-management SaaS should be taught as a management-plane risk: a protected admin console and agent-cloud channel may matter more than any single endpoint."
 evidence:
-- conversation
-- ISO official page observed ISO/IEC 27001:2022 as published, edition 3, publication
-  date 2022-10, with ISO/IEC 27001:2022/Amd 1:2024 listed as Amendment 1.
-- LRQA public update observed the 2022 revision grouping Annex A controls into organizational,
-  people, technological, and physical themes, with 93 controls instead of 114.
-- IAF/NQA transition guidance observed the transition deadline from ISO/IEC 27001:2013
-  to ISO/IEC 27001:2022 ending on 2025-10-31.
-- Lenovo LDO support home observed LDO described as an intelligent endpoint management
-  solution for IT teams to monitor, manage, and secure devices.
-- Lenovo LDO requirements observed LDO described as cloud-based, with data collection
-  through lightweight agents, OS/platform support notes, network endpoint requirements,
-  and UDC certificate pinning / TLS inspection constraints.
-- Lenovo ISO 27001 compliance page observed UDS ISO/IEC 27001 scope as limited to
-  the ISMS supporting Lenovo's UDS Core cloud platform, including personnel and technology
-  systems used to store, process, and transmit UDS platform and services data.
+  - conversation
+  - "ISO official page observed ISO/IEC 27001:2022 as published, edition 3, publication date 2022-10, with ISO/IEC 27001:2022/Amd 1:2024 listed as Amendment 1."
+  - "LRQA public update observed the 2022 revision grouping Annex A controls into organizational, people, technological, and physical themes, with 93 controls instead of 114."
+  - "IAF/NQA transition guidance observed the transition deadline from ISO/IEC 27001:2013 to ISO/IEC 27001:2022 ending on 2025-10-31."
+  - "Lenovo LDO support home observed LDO described as an intelligent endpoint management solution for IT teams to monitor, manage, and secure devices."
+  - "Lenovo LDO requirements observed LDO described as cloud-based, with data collection through lightweight agents, OS/platform support notes, network endpoint requirements, and UDC certificate pinning / TLS inspection constraints."
+  - "Lenovo ISO 27001 compliance page observed UDS ISO/IEC 27001 scope as limited to the ISMS supporting Lenovo's UDS Core cloud platform, including personnel and technology systems used to store, process, and transmit UDS platform and services data."
 baseline:
-- Typical ISO 27001 explanations are compliance-heavy and too abstract for first-time
-  learners.
-- Cybersecurity teaching often over-focuses on tools and under-explains governance,
-  accountability, and audit evidence.
-- Vendor compliance discussions often stop at has ISO 27001 instead of checking certificate
-  scope, Statement of Applicability, data flows, support access, and customer shared
-  responsibility.
+  - "Typical ISO 27001 explanations are compliance-heavy and too abstract for first-time learners."
+  - "Cybersecurity teaching often over-focuses on tools and under-explains governance, accountability, and audit evidence."
+  - "Vendor compliance discussions often stop at has ISO 27001 instead of checking certificate scope, Statement of Applicability, data flows, support access, and customer shared responsibility."
 metrics:
-- Can a high-school learner explain ISMS, CIA, scope, certification, and controls
-  in their own words after reading?
-- Can the learner correctly distinguish ISO/IEC 27001 from a tool such as antivirus
-  or a firewall?
-- Can the learner map one real organization to affected departments and controls?
-- Does every section include at least one accurate Mermaid diagram?
-- Can the learner explain why LDO-style endpoint management creates management-plane
-  risk?
-- Can the learner ask the right procurement questions about certificate scope, telemetry,
-  MFA/RBAC, support access, logs, incident notification, and data retention?
+  - "Can a high-school learner explain ISMS, CIA, scope, certification, and controls in their own words after reading?"
+  - "Can the learner correctly distinguish ISO/IEC 27001 from a tool such as antivirus or a firewall?"
+  - "Can the learner map one real organization to affected departments and controls?"
+  - "Does every section include at least one accurate Mermaid diagram?"
+  - "Can the learner explain why LDO-style endpoint management creates management-plane risk?"
+  - "Can the learner ask the right procurement questions about certificate scope, telemetry, MFA/RBAC, support access, logs, incident notification, and data retention?"
 insights:
-- 'The strongest teaching analogy is school governance: computer room access, grade
-  file permissions, account use, backup, and incident response.'
-- ISO/IEC 27001 is best taught as a risk-management loop, not a checklist of tools.
-- AI-era relevance is easy to show through training data, prompts, API keys, model
-  weights, cloud access, and audit logs.
-- 'LDO makes the abstract scope idea concrete: Lenovo may have multiple certificates,
-  and the buyer must verify whether the relevant UDS/LDO cloud platform, personnel,
-  technology systems, and data handling processes are actually in scope.'
-- For endpoint-management SaaS, the teaching center should shift from is the device
-  safe to is the device-management cloud service, admin authority, agent trust, update
-  path, and support access governed?
+  - "The strongest teaching analogy is school governance: computer room access, grade file permissions, account use, backup, and incident response."
+  - "ISO/IEC 27001 is best taught as a risk-management loop, not a checklist of tools."
+  - "AI-era relevance is easy to show through training data, prompts, API keys, model weights, cloud access, and audit logs."
+  - "LDO makes the abstract scope idea concrete: Lenovo may have multiple certificates, and the buyer must verify whether the relevant UDS/LDO cloud platform, personnel, technology systems, and data handling processes are actually in scope."
+  - "For endpoint-management SaaS, the teaching center should shift from is the device safe to is the device-management cloud service, admin authority, agent trust, update path, and support access governed?"
 connections:
-- idea_000002
-- idea_000004
-- idea_000012
+  - idea_000002
+  - idea_000004
+  - idea_000012
 role: idea
 value:
   impact: medium
@@ -122,23 +85,19 @@ maturity:
 maturity_score: 84/100
 maturity_level: execution_ready
 next_steps:
-- Turn the Markdown explainer into a 10-minute classroom handout and ask one non-security
-  reader to summarize ISO/IEC 27001 back in five bullet points.
-- Create a short quiz fixture with questions on ISMS, scope, controls, certification,
-  version timeline, and real-world cases.
-- Create an LDO procurement-review worksheet with the 10 product-specific ISO 27001
-  questions and a column for evidence links / certificate-scope notes.
-- If useful for planning sync, promote only the title, ID, status, canonical path,
-  and one next test.
+  - "Turn the Markdown explainer into a 10-minute classroom handout and ask one non-security reader to summarize ISO/IEC 27001 back in five bullet points."
+  - "Create a short quiz fixture with questions on ISMS, scope, controls, certification, version timeline, and real-world cases."
+  - "Create an LDO procurement-review worksheet with the 10 product-specific ISO 27001 questions and a column for evidence links / certificate-scope notes."
+  - "If useful for planning sync, promote only the title, ID, status, canonical path, and one next test."
 source:
-- conversation
-- ideas/2026-05-08-iso-27001-high-school-explainer.md
-- https://www.iso.org/standard/27001
-- https://www.lrqa.com/en-us/latest-news/iso-iec-27001-2022-published/
-- https://www.nqa.com/en-me/resources/news/iso27001-2022-published
-- https://ldosupport.lenovocloudsoftware.com/portal/en/home
-- https://ldosupport.lenovocloudsoftware.com/portal/en/kb/articles/lenovo-device-orchestration-requirements
-- https://www.lenovo.com/us/en/compliance/iso-27001/
-- https://www.lenovo.com/us/en/ldo-intune/
+  - conversation
+  - ideas/2026-05-08-iso-27001-high-school-explainer.md
+  - "https://www.iso.org/standard/27001"
+  - "https://www.lrqa.com/en-us/latest-news/iso-iec-27001-2022-published/"
+  - "https://www.nqa.com/en-me/resources/news/iso27001-2022-published"
+  - "https://ldosupport.lenovocloudsoftware.com/portal/en/home"
+  - "https://ldosupport.lenovocloudsoftware.com/portal/en/kb/articles/lenovo-device-orchestration-requirements"
+  - "https://www.lenovo.com/us/en/compliance/iso-27001/"
+  - "https://www.lenovo.com/us/en/ldo-intune/"
 normalization_status: validated
-maturity_action: generate experiment plan
+maturity_action: "generate experiment plan"

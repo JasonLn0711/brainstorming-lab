@@ -16,7 +16,7 @@ tags:
   - implementation-friction
   - embodied-learning
   - lecture-practice
-status: research_candidate
+status: execution_ready
 problem_statement:
   raw: "Given a PhD student moving from solution-first tool thinking toward independent research judgment, optimize the habit of letting implementation friction, mental execution simulation, and reality observation generate real problem definitions before selecting methods under constraints of uncertainty, incomplete evidence, long time horizons, emotional energy, and existing project boundaries."
   normalized: "Given a PhD student moving from solution-first tool thinking toward independent research judgment, optimize problem definition through implementation friction, mental execution simulation, and bottleneck diagnosis under constraints of uncertainty, incomplete evidence, long time horizons, emotional energy, and existing project boundaries."
@@ -80,6 +80,7 @@ connections:
   - idea_000007
   - idea_000008
   - idea_000011
+  - idea_000014
   - weekly-paper-lab/papers/2026-W19-aris-autonomous-research/paper.yaml
 role: idea
 value:
@@ -146,10 +147,10 @@ maturity:
   problem_clarity_score: 15/15
   boundary_definition: 10
   boundary_definition_score: 10/10
-  testability: 11
-  testability_score: 11/15
-  evidence_support: 9
-  evidence_support_score: 9/15
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
   connection_strength: 10
   connection_strength_score: 10/10
   novelty: 6
@@ -158,8 +159,8 @@ maturity:
   feasibility_score: 12/15
   research_potential: 7
   research_potential_score: 7/10
-maturity_score: 80/100
-maturity_level: research_candidate
+maturity_score: 87/100
+maturity_level: execution_ready
 next_steps:
   - "Apply the one-page problem-definition card to one active lane, preferably idea_000002 or idea_000007, after a concrete implementation or mental-execution friction pass."
   - "Use the W19 ARIS paper as a worked example: rewrite 'run the agent stack' into symptom, bottleneck, evidence gap, metric, constraint, and smallest falsifiable fixture."
@@ -169,5 +170,5 @@ next_steps:
 source:
   - conversation
   - weekly-paper-lab/papers/2026-W19-aris-autonomous-research/paper.yaml
-maturity_action: "evaluate cluster readiness"
+maturity_action: "generate experiment plan"
 normalization_status: validated

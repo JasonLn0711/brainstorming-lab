@@ -216,6 +216,52 @@ merge_candidate_0009:
 merge_candidate_0010:
   candidate_id: merge_candidate_0010
   ideas:
+    - idea_000002
+    - idea_000013
+  merge_type: cluster_merge
+  merge_score: 46/100
+  confidence: low
+  reason:
+    - "shared tags: cybersecurity"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 2/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 15/20
+  shared_tags:
+    - cybersecurity
+merge_candidate_0011:
+  candidate_id: merge_candidate_0011
+  ideas:
+    - idea_000004
+    - idea_000013
+  merge_type: cluster_merge
+  merge_score: 45/100
+  confidence: low
+  reason:
+    - "shared tags: cybersecurity"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 1/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 15/20
+  shared_tags:
+    - cybersecurity
+merge_candidate_0012:
+  candidate_id: merge_candidate_0012
+  ideas:
     - idea_000003
     - idea_000006
   merge_type: cluster_merge
@@ -234,8 +280,8 @@ merge_candidate_0010:
     complexity_control: 20/20
   shared_tags:
     - workflow
-merge_candidate_0011:
-  candidate_id: merge_candidate_0011
+merge_candidate_0013:
+  candidate_id: merge_candidate_0013
   ideas:
     - idea_000005
     - idea_000007

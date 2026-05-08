@@ -1,5 +1,9 @@
 # Tag Index
 
+## ai-governance
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## ai-security
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
@@ -11,7 +15,7 @@
 
 ## anomaly-detection
 
-- `idea_000004` - Anomaly detection research watch (`research_candidate`, 72/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
+- `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 
 ## approval-gate
 
@@ -36,6 +40,10 @@
 ## candidate-stubs
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## claim-style
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## cognitive-load
 
@@ -69,7 +77,7 @@
 ## cybersecurity
 
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
-- `idea_000004` - Anomaly detection research watch (`research_candidate`, 72/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
+- `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
@@ -94,7 +102,7 @@
 
 ## embodied-learning
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## endpoint-management
 
@@ -108,11 +116,15 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## evidence-density
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## evidence-routing
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
-- `idea_000004` - Anomaly detection research watch (`research_candidate`, 72/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
+- `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 
 ## explainable-clustering
 
@@ -138,9 +150,21 @@
 
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 
+## figure-analysis
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## first-principles
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## forensic-defensibility
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## fsi-di
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## fugu-style-orchestration
 
@@ -173,7 +197,7 @@
 
 ## implementation-friction
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## information-efficiency
 
@@ -183,9 +207,13 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
+## journal-intelligence
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## judgment-system
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## langgraph
 
@@ -202,7 +230,7 @@
 
 ## lecture-practice
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## legal-ai
 
@@ -226,7 +254,11 @@
 
 ## meta-learning
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## meta-research
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## metadata-only
 
@@ -245,6 +277,10 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
+## novelty-analysis
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## openclaw
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
@@ -253,13 +289,17 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## paper-quality
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## personal-ops
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
 ## phd-training
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## physics-education
 
@@ -272,11 +312,19 @@
 
 ## problem-definition
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## problem-normalization
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## publication-strategy
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## publication-workflow
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## query-strategy-generator
 
@@ -288,12 +336,12 @@
 
 ## research-candidate
 
-- `idea_000004` - Anomaly detection research watch (`research_candidate`, 72/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
+- `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
 ## research-endurance
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## research-operating-system
 
@@ -301,7 +349,7 @@
 
 ## research-thinking
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## research-workflow
 
@@ -312,6 +360,10 @@
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## reviewer-emulation
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
 ## safety
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
@@ -320,6 +372,10 @@
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## scientometrics
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## search-templates
 
@@ -356,7 +412,7 @@
 
 ## systems-thinking
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## task-graph
 
@@ -372,7 +428,11 @@
 
 ## uncertainty-tolerance
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## venue-fit
+
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 81/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## workflow
 
@@ -382,7 +442,7 @@
 
 ## workflow-diagnosis
 
-- `idea_000012` - PhD problem-definition thinking system (`research_candidate`, 80/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
 ## workflow-policy-learning
 
