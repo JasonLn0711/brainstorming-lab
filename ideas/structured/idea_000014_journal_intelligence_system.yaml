@@ -103,6 +103,7 @@ connections:
   - idea_000007
   - idea_000008
   - idea_000012
+  - idea_000016
 role: idea
 value:
   impact: high
@@ -430,15 +431,15 @@ maturity:
   testability_score: 15/15
   evidence_support: 9
   evidence_support_score: 9/15
-  connection_strength: 8
-  connection_strength_score: 8/10
+  connection_strength: 10
+  connection_strength_score: 10/10
   novelty: 10
   novelty_score: 10/10
   feasibility: 7
   feasibility_score: 7/15
   research_potential: 10
   research_potential_score: 10/10
-maturity_score: 84/100
+maturity_score: 86/100
 maturity_level: execution_ready
 next_steps:
   - "Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide."

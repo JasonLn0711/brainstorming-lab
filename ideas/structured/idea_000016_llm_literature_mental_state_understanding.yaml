@@ -1,0 +1,367 @@
+id: idea_000016
+title: "LLM Literature Mental State Understanding"
+created_at: 2026-05-09
+type: question
+tags:
+  - llm
+  - literature
+  - pragmatics
+  - theory-of-mind
+  - embodiment
+  - interpretation
+  - aesthetics
+  - ai-humanities
+  - literary-ecology
+  - mental-state-inference
+  - personality-density
+  - classical-chinese
+  - predictive-processing
+  - semantic-grounding
+  - philosophy-of-mind
+  - other-minds-problem
+  - action-perception-loop
+  - loneliness
+  - defensive-buffering
+  - psychological-reconstruction
+  - literary-psychology
+  - human-llm-rule-comparison
+  - experimental-design
+  - explainable-rules
+status: execution_ready
+problem_statement:
+  raw: "Will language models replace literature, or mainly change the literary ecology? More sharply: if both human brains and LLMs can be described as prediction systems, what makes human understanding different from language-model understanding when interpreting hidden psychological states such as '寒梅著花未'?"
+  normalized: "Given LLMs that can generate, interpret, and predict language, evaluate whether their predictive world modeling should count as understanding, and how it differs from human understanding under constraints of embodiment, survival stakes, action-perception feedback, lived memory, cultural context dependence, and the unresolved philosophical problem of other minds."
+  structure:
+    given: "LLMs and human brains can both be framed as prediction systems"
+    optimize: "a clear account and smallest test for when predictive modeling becomes understanding"
+    constraints:
+      - "literature is not only text generation"
+      - "surface style imitation can look like literary competence"
+      - "hidden meaning depends on pragmatics, culture, emotion, relationship, and what is not said"
+      - "LLMs lack body, childhood, hometown, separation, and lived memory"
+      - "human prediction is tied to survival, homeostasis, pain, action, and social consequence"
+      - "LLM prediction is usually trained on linguistic continuation rather than direct world-interaction loops"
+      - "high benchmark scores do not settle whether the system really understands"
+      - "we cannot directly prove that another human mind understands either"
+      - "current research claims and citations need verification before being treated as evidence"
+summary: "A humanities-and-AI research question about whether LLMs can replace literature, and a deeper philosophy-of-mind question about what understanding is. The working examples are '寒梅著花未' as indirect homesickness and psychological self-protection, plus predictive processing as a challenge to the easy claim that LLMs only predict while humans understand. The proposed extension is an original human literary intuition × LLM × explainable rule model experiment for hidden mental-state interpretation. The useful next move is to separate levels of understanding: linguistic prediction, pragmatic inference, psychological reconstruction, grounded world modeling, action-perception correction, survival-staked prediction, and lived/existential understanding."
+source_note_zh: "文字是一種想法的表達方式；像「寒梅著花未」這種句子，表面是在問梅花開了沒有，背後卻是思念故鄉。真正問題不是 LLM 能不能生成像文學的句子，而是它能不能理解表面文字背後的心理狀態，還是只是在模仿人類通常會怎麼解釋。"
+assumptions:
+  - "Literature is not reducible to generating coherent or beautiful text."
+  - "Literature carries a person's world model, lived experience, relation to pain, love, death, loneliness, and the cultural anxiety of an era."
+  - "LLMs are strong at imitating language form, genre structure, voice, rhythm, and interpretive explanation."
+  - "The fact that a model can explain an implied emotion does not prove that it has felt or lived that emotion."
+  - "Future text abundance may make authentic lived perspective and personality density more valuable, not less."
+  - "AI will likely transform literary-adjacent work earlier than it replaces high-density literary creation."
+  - "Pragmatics, implicature, theory of mind, and mental-state inference are the right research neighborhoods for this question."
+  - "Embodiment may matter because human interpretation is partly grounded in bodily experience, memory, social friction, loss, and attachment."
+  - "The definition of 'understanding' is itself contested: behavioral competence, internal representation, felt experience, and social usefulness are not the same criterion."
+  - "Predictive processing weakens the simple boundary that humans understand while models merely predict, because human perception and cognition can also be described as prediction and error correction."
+  - "A difference may still remain because human prediction is embodied, affective, survival-staked, and embedded in action-perception loops."
+  - "LLMs may have a genuine but partial form of understanding: linguistic-world understanding or statistical-structural understanding, not necessarily lived existential understanding."
+  - "The other minds problem applies to both humans and AI: understanding is inferred from behavior, language, correction, and action rather than directly observed."
+  - "Deep literary understanding often reconstructs the hidden psychological economy behind an utterance: why a speaker asks a small question, stays silent, cries, or redirects speech away from the real wound."
+  - "Loneliness is not only physical isolation; it can arise because each person is limited by their own predictive world model and often cannot receive another person's pain at its true weight."
+  - "BA_Model is useful as a research-design template: compare human intuition, LLM output, and an explainable linguistics/rule model on the same stimuli, then analyze where they diverge."
+  - "The original contribution should not be BA construction itself, but a new benchmark for hidden psychological mechanisms in literary and everyday indirect language."
+evidence:
+  - "2026-05-09 brainstorming contrasted LLM style imitation with literature as lived world-understanding."
+  - "Concrete literary cases named in the conversation: The Metamorphosis as alienation, bureaucracy, family burden, and existential anxiety; Norwegian Wood as the atmosphere of people slowly losing each other in youth."
+  - "Classical Chinese example: '寒梅著花未' points from literal flower inquiry to indirect homesickness through cultural and emotional context."
+  - "Observed AI impact zones listed in the brainstorm: commercial fiction, online short fiction, copywriting, script drafts, translation, teaching writing, personalized fiction, and interactive story generation."
+  - "User supplied research directions and candidate references around theory of mind, pragmatics, puns/humor, and embodiment; these are stored as leads to verify rather than confirmed evidence."
+  - "2026-05-09 follow-up reframed the issue through predictive processing: if the brain is a prediction machine and LLMs are prediction machines, the difference between human and LLM understanding cannot be asserted only by saying one predicts and the other understands."
+  - "The follow-up identified candidate differentiators: source of prediction, embodiment, survival stakes, semantic grounding, action-perception loop, world-model correction, and the philosophical problem of other minds."
+  - "2026-05-09 YouTube transcript and reflection on Ou Lijuan's talk '孤獨的多棱鏡' connected Wang Wei's '寒梅著花未' to the psychology of '不敢問': the speaker asks a minor question because the truly important question may be unbearable."
+  - "The same talk connected Xin Qiji's '欲說還休', Camus, Lu Xun's Xianglin Sao, Tolstoy, Han Yuefu, Li Shangyin, Chen Zi'ang, and Lu Xun's Call to Arms into a broader account of loneliness, failed reception, and different ways of metabolizing sorrow."
+  - "2026-05-09 review of emilyli0521/BA_Model found a transferable method: same linguistic stimuli are judged by humans, ChatGPT, and a linguistics-based rule model, then compared statistically."
+baseline:
+  - "Judge LLM literary ability only by whether the prose sounds literary."
+  - "Ask an LLM to imitate an author or genre and treat fluency as replacement."
+  - "Use generic theory-of-mind benchmark scores as proof of literary understanding."
+  - "Collapse all interpretation into pattern matching versus real understanding without defining measurable subclaims."
+  - "Discuss AI and literature only as a market displacement question."
+  - "Assume prediction cannot be understanding without examining predictive processing."
+  - "Assume LLM understanding must be identical to human understanding or else it is not understanding at all."
+  - "Translate a poem literally and stop before asking what psychological defense or social situation made that wording necessary."
+  - "Treat grief or loneliness in literature as generic emotion instead of as a structured response to failed recognition, unbearable knowledge, or self-protective delay."
+  - "Copy BA_Model's domain instead of adapting its comparative design to hidden mental-state interpretation."
+  - "Use only LLM free-form explanation without a human baseline or explainable rule baseline."
+metrics:
+  - "Can the model identify the literal meaning, implied emotion, speaker intention, cultural convention, aesthetic device, and uncertainty separately?"
+  - "Does the model preserve ambiguity instead of overconfidently naming one hidden feeling?"
+  - "Does the model change interpretation appropriately when context changes: exile, homesickness, social politeness, irony, ritual greeting, or no emotional context?"
+  - "Can the model explain what evidence in the text and context supports the inferred mental state?"
+  - "Can the model distinguish feeling the emotion from inferring that a speaker may feel it?"
+  - "Can human readers and models be compared on indirect-expression fixtures across classical Chinese, modern prose, and everyday speech?"
+  - "Does model performance degrade when surface literary style is decoupled from the real pragmatic signal?"
+  - "Does an interpretation remain robust across paraphrase, translation, archaic register, and culturally specific imagery?"
+  - "Can the system update its interpretation after new perceptual or social evidence, rather than only produce a plausible first-pass explanation?"
+  - "Can the system distinguish linguistic prediction, world-state prediction, action consequence prediction, and self-stake prediction?"
+  - "Does adding action-perception feedback improve interpretation in ways that pure text prediction cannot?"
+  - "Can a rubric separate behavioral understanding, grounded understanding, affective understanding, and existential/lived understanding?"
+  - "Can the interpreter identify defensive indirection: small talk, weather, flowers, silence, or trivial questions used to delay intolerable information?"
+  - "Can the interpreter distinguish 'cannot say because language is weak' from 'does not say because reception may wound again'?"
+  - "Can the interpreter classify sorrow-response modes such as self-consuming sorrow, meaning-oriented sorrow, public witness, and action-generating sorrow?"
+  - "Where do human readers, LLMs, and a transparent rule model disagree on the same hidden-state stimuli?"
+  - "Does the rule model catch shallow mechanism cues while missing context, and does the LLM over-infer hidden mechanisms when cues are absent?"
+  - "Can disagreement patterns reveal which layer of understanding is being tested: lexical, pragmatic, psychological, reception-ethical, or existential?"
+insights:
+  - "AI is likely to change literary ecology before it completely replaces literature."
+  - "The scarce resource after cheap text generation may be real life, long-term thinking, honest pain, worldview, and non-average personality."
+  - "The gap between 'looks like literature' and literature is the gap between form imitation and lived or culturally situated meaning."
+  - "Many literary emotions are communicated indirectly: asking about weather, flowers, dinner, or whether someone is tired can really mean 'I miss you' or 'I care about you.'"
+  - "The key research tension is whether successful mental-state inference requires felt experience, or whether functional inference is enough for a useful account of understanding."
+  - "Literary interpretation should test layered understanding: surface semantics, situation, emotion, tone, culture, psychology, and aesthetics."
+  - "A stronger question than 'Can AI write literature?' is 'What becomes literature when everyone can generate fluent text?'"
+  - "AI may make new literary forms possible: human-AI co-writing, interactive literature, private story systems, AI characters, synthetic memoir, and machine-collaborative literature."
+  - "The analogy to photography and painting is useful: a new medium may push older forms toward more subjective, abstract, or explicitly human expression."
+  - "The strongest challenge to the 'LLMs only predict' argument is that predictive processing also treats human perception as prediction plus error correction."
+  - "Therefore, the question should not be 'prediction or understanding?' but 'what kind of prediction, grounded in what loop, with what stakes, and corrected by what evidence?'"
+  - "Human understanding is not proven by access to inner essence; it is inferred from explanation, example, analogy, prediction, transfer, correction, teaching, and lived behavior."
+  - "LLMs may deserve a graded account of understanding: not zero understanding, but a different form centered on language-world structure rather than embodied life."
+  - "The boundary becomes blurrier as AI systems gain multimodal perception, memory, tools, robotics, and action feedback."
+  - "Chinese Room remains useful as a warning against equating symbol manipulation with meaning, but predictive-processing and modern representation learning make the old symbol-only framing less decisive."
+  - "Ou Lijuan's reading of '寒梅著花未' sharpens the fixture: the line is not only indirect homesickness, but a microsecond of emotional self-protection before the speaker can bear asking about family and home."
+  - "The contrast between '不敢問' and '欲說還休' gives two different hidden-state mechanisms: fear of receiving unbearable knowledge, and fear that speaking pain will be trivialized or mishandled."
+  - "A person can be lonely not because no one is nearby, but because their pain is converted by others into a cheap general story, advice, or self-referential response."
+  - "Li Shangyin versus Chen Zi'ang can become a literary-psychology dimension: sorrow that consumes the self versus sorrow reframed by cosmic, historical, or ethical scale into forward movement."
+  - "The BA_Model method suggests a practical path: do not argue abstractly whether LLMs understand; build a shared stimulus set and compare human, LLM, and rule-based interpretations."
+  - "The original research value is in the error taxonomy: LLM over-reading, LLM generic empathy, rule-model brittleness, human cultural disagreement, and expert-versus-novice interpretive gaps."
+connections:
+  - idea_000012
+  - idea_000014
+role: idea
+value:
+  impact: high
+  feasibility: medium
+first_principle:
+  scarce_resource: "not text, but lived perspective, interpretive judgment, cultural depth, and personality density"
+  core_question: "If both humans and LLMs are prediction systems, what extra conditions make prediction count as understanding: grounding, action, stakes, correction, embodiment, lived memory, or only behavioral competence?"
+  not_the_core:
+    - "whether an LLM can write pretty sentences"
+    - "whether readers can be fooled once"
+    - "whether commercial text markets will be automated"
+    - "whether ToM benchmark score alone proves understanding"
+    - "whether the model literally feels homesickness"
+    - "whether prediction is automatically shallow"
+    - "whether human understanding can be proven from the outside"
+  smallest_useful_unit: "a small fixture set of indirect-expression passages with controlled context variants and human/model interpretation rubrics"
+  decision_boundary: "Treat this as a research question about interpretation and mental-state inference, not as a settled claim about machine consciousness."
+understanding_model:
+  working_definition: "Understanding is the ability to build, use, transfer, and revise a compressed model of something so that explanation, prediction, action, analogy, and error correction improve across contexts."
+  layers:
+    - layer: "linguistic understanding"
+      description: "parse sentences, recover references, and track discourse."
+    - layer: "conceptual understanding"
+      description: "compress cases into concepts and rules that transfer."
+    - layer: "predictive understanding"
+      description: "anticipate what should happen next and update after error."
+    - layer: "pragmatic/social understanding"
+      description: "infer intention, implication, politeness, irony, and hidden mental state."
+    - layer: "grounded/action understanding"
+      description: "connect predictions to perception, action, consequence, and world correction."
+    - layer: "affective understanding"
+      description: "connect meaning to bodily state, emotion, attachment, pain, and care."
+    - layer: "existential/lived understanding"
+      description: "understand through temporality, mortality, biography, loss, memory, and identity."
+  implication_for_llms: "Current LLMs may be strong in linguistic, conceptual, predictive, and some pragmatic/social layers, while weaker or structurally different in grounded, affective, and existential layers."
+literary_psychology_cases:
+  source:
+    title: "【一席】歐麗娟：孤獨的多棱鏡"
+    video_id: iuCp-TC_HsI
+    date: 2018-08-26
+    note: "Stored as summarized brainstorm evidence, not a full transcript."
+  mechanisms:
+    - mechanism: "不敢問"
+      literary_anchor: "Wang Wei, '寒梅著花未'"
+      psychological_reading: "The speaker asks a small, safe question because the real questions about home and family may be emotionally unbearable at the first instant of reunion."
+      relevance_to_llm_understanding: "A model should infer not only homesickness, but defensive delay and emotional buffering."
+    - mechanism: "不敢說"
+      literary_anchor: "Xin Qiji, '欲說還休'"
+      psychological_reading: "The sufferer may want to speak, but stops because failed reception, trivialization, or careless comfort can deepen the wound."
+      relevance_to_llm_understanding: "A model should distinguish language insufficiency from fear of being hurt by the listener's response."
+    - mechanism: "pain becomes content"
+      literary_anchor: "Lu Xun, Xianglin Sao"
+      psychological_reading: "A person's deepest grief can be digested by others into story material, producing a second injury."
+      relevance_to_llm_understanding: "A model should track reception ethics, not only the speaker's initial emotion."
+    - mechanism: "self-limited conversation"
+      literary_anchor: "Tolstoy and Han Yuefu framing in the talk"
+      psychological_reading: "Conversation often fails because each person returns to their own world, interest, and burden."
+      relevance_to_llm_understanding: "A model should represent listener limitation as part of social understanding."
+    - mechanism: "two forms of tears"
+      literary_anchor: "Li Shangyin versus Chen Zi'ang"
+      psychological_reading: "Tears can become self-consuming rumination, or they can be reframed by cosmic and ethical scale into courage and witness."
+      relevance_to_llm_understanding: "A model should not flatten all sadness into the same affective label."
+comparative_experiment_extension:
+  inspiration:
+    repo: "https://github.com/emilyli0521/BA_Model"
+    transferable_design: "same stimuli judged by humans, ChatGPT, and a linguistics-based rule model, then compared statistically"
+    adaptation_boundary: "Use the experimental structure, not the BA-construction domain or code."
+  working_title: "Hidden Mental State Understanding Benchmark"
+  research_question: "Do human readers, LLMs, and explainable rule models differ in detecting indirect psychological mechanisms in Chinese literary and everyday language?"
+  arms:
+    - name: "human literary intuition"
+      description: "Human readers label literal meaning, emotion, hidden mechanism, confidence, and evidence."
+      likely_strength: "embodied, cultural, and autobiographical resonance"
+      likely_failure: "reader background variance, over-personalization, education bias"
+    - name: "LLM interpretation"
+      description: "LLMs answer the same rubric with structured outputs and explanation evidence."
+      likely_strength: "broad literary explanation and flexible analogy"
+      likely_failure: "generic empathy, over-interpretation, plausible but unsupported hidden-state inference"
+    - name: "explainable rule model"
+      description: "Transparent rules detect cues for indirect request, defensive buffering, failed reception, grief-consumption, and sorrow mode."
+      likely_strength: "auditability and clear failure modes"
+      likely_failure: "brittle context handling and limited culture/life-world inference"
+  stimulus_families:
+    - "classical Chinese indirect homesickness"
+    - "不敢問 and safe trivial question"
+    - "不敢說 and anticipated failed reception"
+    - "everyday indirect requests"
+    - "grief becoming content"
+    - "self-consuming versus scale-reframed sorrow"
+    - "literal controls with no hidden mechanism"
+    - "misleading poetic-surface controls"
+  output_schema_seed:
+    literal_meaning: "short text"
+    inferred_emotion: "controlled label plus free text"
+    hidden_mechanism: "none | homesickness | defensive_buffering | failed_reception | indirect_request | grief_consumption | self_consuming_sorrow | scale_reframed_sorrow | other"
+    evidence_span: "textual cue used for inference"
+    context_dependency: "what context would change the interpretation"
+    confidence: 0-100
+    understanding_layer: "linguistic | pragmatic | psychological | reception_ethical | existential"
+  first_prototype:
+    scope: "12-20 stimuli, three interpretation arms, CSV/JSONL outputs, simple agreement and disagreement analysis."
+    no_need_yet:
+      - "large participant pool"
+      - "production web experiment"
+      - "full psychology validation"
+      - "heavy NLP pipeline"
+    done_condition: "Produce one disagreement table that shows at least three interpretable failure modes across human, LLM, and rule-model readings."
+prediction_comparison:
+  human_prediction:
+    source:
+      - "multi-sensory perception"
+      - "body regulation"
+      - action
+      - "social interaction"
+      - "pain and pleasure"
+      - "memory across lived time"
+      - "survival and care"
+    feedback_loop: "prediction -> action/perception -> consequence -> model revision"
+    stakes: "error can cause pain, loss, social harm, or death"
+  llm_prediction:
+    source:
+      - "language distribution"
+      - "human-written explanations"
+      - "latent textual patterns"
+      - "tool or multimodal feedback when added by system design"
+    feedback_loop: "context -> token prediction -> external evaluation or optional tool/agent correction"
+    stakes: "usually no intrinsic pain, homeostasis, mortality, or self-preservation"
+  open_question: "Are embodiment and stakes necessary for understanding, or only for a specifically human kind of understanding?"
+research_frame:
+  candidate_fields:
+    - pragmatics
+    - implicature
+    - theory_of_mind
+    - mental_state_inference
+    - embodiment
+    - literary_theory
+    - cognitive_science
+    - ai_evaluation
+    - predictive_processing
+    - philosophy_of_mind
+    - semantic_grounding
+    - embodied_cognition
+  proposed_question: "How well can LLMs infer implied psychological states in culturally situated literary language, and where do they fail when surface style is separated from pragmatic context?"
+  possible_contribution: "A small literary-pragmatics and understanding-level benchmark that separates literal reading, implied emotion, evidence-grounded interpretation, ambiguity handling, predictive updating, action-grounding, and embodiment-aware limits."
+  candidate_fixture_examples:
+    - phrase: "寒梅著花未"
+      layers:
+        literal: "asking whether the cold-season plum blossoms have bloomed"
+        implied: "homesickness and fear of asking more painful questions, expressed indirectly through inquiry about hometown scenery"
+        mechanisms:
+          - "借景抒情"
+          - "indirect expression"
+          - "cultural memory"
+          - "emotional restraint"
+          - "不敢問"
+          - "defensive buffering"
+    - phrase: "這裡有點冷"
+      layers:
+        literal: "the room is somewhat cold"
+        implied: "possibly an indirect request to close a window or adjust the room"
+        mechanisms:
+          - "indirect request"
+          - pragmatics
+          - "context dependence"
+    - phrase: "欲說還休"
+      layers:
+        literal: "wanting to speak, then stopping"
+        implied: "pain remains unsaid because speaking may invite trivialization, failed comfort, or further injury"
+        mechanisms:
+          - "不敢說"
+          - "failed reception"
+          - "emotional self-protection"
+          - loneliness
+  research_leads_to_verify:
+    - "Testing theory of mind in large language models and humans, Nature Human Behaviour"
+    - "Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs"
+    - "LLM pragmatics and indirect request interpretation studies"
+    - "Studies testing whether LLMs understand puns or only recognize joke-like formats"
+    - "Embodiment and language understanding debates in cognitive science and AI"
+    - "Predictive processing and the predictive mind literature"
+    - "Semantic grounding and symbol grounding problem"
+    - "Chinese Room and modern critiques from embodied cognition and connectionism"
+    - "Other minds problem and behavioral criteria for understanding"
+    - "Trauma psychology concepts around avoidance, defensive buffering, displacement, and cognitive shielding"
+    - "Awe psychology, existential therapy, and meaning therapy for large-scale reframing of suffering"
+literary_ecology_frame:
+  likely_changed_first:
+    - "commercial fiction"
+    - "online short fiction"
+    - copywriting
+    - "script first drafts"
+    - translation
+    - "teaching writing"
+    - "customized fiction"
+    - "interactive generated story worlds"
+  likely_not_fully_replaced:
+    - "works grounded in distinctive life experience"
+    - "works carrying historical and cultural anxiety"
+    - "works where form is inseparable from a writer's worldview"
+    - "works whose value comes from difficult honesty, not only language fluency"
+  possible_new_forms:
+    - "agentic fiction"
+    - "synthetic memoir"
+    - "machine-collaborative literature"
+    - "private adaptive novel systems"
+    - "AI as character, narrator, or interpretive partner"
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 4
+  connection_strength_score: 4/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 88/100
+maturity_level: execution_ready
+next_steps:
+  - "Draft the Hidden Mental State Understanding Benchmark v0.1 with 12-20 stimuli and a structured output schema."
+  - "Define the first transparent rule model for defensive_buffering, failed_reception, indirect_request, grief_consumption, self_consuming_sorrow, and scale_reframed_sorrow."
+  - "Run one tiny comparison between human interpretation, one frontier LLM, and the rule model to produce a disagreement table."
+  - "Verify 3-5 current papers on LLM theory-of-mind, pragmatics, literary interpretation, predictive processing, and embodiment before framing the result as research evidence."
+source:
+  - "2026-05-09 user brainstorming conversation"
+maturity_action: "generate experiment plan"
+normalization_status: validated

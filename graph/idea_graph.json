@@ -259,8 +259,8 @@
       "id": "idea_000014",
       "title": "Journal Intelligence System",
       "status": "execution_ready",
-      "maturity_score": "84/100",
-      "maturity_score_raw": 84,
+      "maturity_score": "86/100",
+      "maturity_score_raw": 86,
       "maturity_level": "execution_ready",
       "tags": [
         "journal-intelligence",
@@ -294,8 +294,8 @@
       "id": "idea_000015",
       "title": "Layered Voice Enhancement in Consumer VoIP Calls",
       "status": "execution_ready",
-      "maturity_score": "90/100",
-      "maturity_score_raw": 90,
+      "maturity_score": "92/100",
+      "maturity_score_raw": 92,
       "maturity_level": "execution_ready",
       "tags": [
         "voice-enhancement",
@@ -323,6 +323,69 @@
         "sre"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml"
+    },
+    {
+      "id": "idea_000016",
+      "title": "LLM Literature Mental State Understanding",
+      "status": "execution_ready",
+      "maturity_score": "88/100",
+      "maturity_score_raw": 88,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "llm",
+        "literature",
+        "pragmatics",
+        "theory-of-mind",
+        "embodiment",
+        "interpretation",
+        "aesthetics",
+        "ai-humanities",
+        "literary-ecology",
+        "mental-state-inference",
+        "personality-density",
+        "classical-chinese",
+        "predictive-processing",
+        "semantic-grounding",
+        "philosophy-of-mind",
+        "other-minds-problem",
+        "action-perception-loop",
+        "loneliness",
+        "defensive-buffering",
+        "psychological-reconstruction",
+        "literary-psychology",
+        "human-llm-rule-comparison",
+        "experimental-design",
+        "explainable-rules"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml"
+    },
+    {
+      "id": "idea_000017",
+      "title": "Externalized cognition OS for human-AI planning",
+      "status": "research_candidate",
+      "maturity_score": "78/100",
+      "maturity_score_raw": 78,
+      "maturity_level": "research_candidate",
+      "tags": [
+        "externalized-memory",
+        "cognition-os",
+        "human-ai-collaboration",
+        "repo-architecture",
+        "planning-bridge",
+        "distributed-cognition",
+        "working-memory",
+        "extended-mind",
+        "knowledge-graph",
+        "life-state-machine",
+        "ai-agents",
+        "human-value",
+        "meaning-making",
+        "digital-cognitive-twin",
+        "self-modeling",
+        "descriptive-understanding",
+        "existential-understanding"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml"
     }
   ],
   "edges": [
@@ -485,6 +548,19 @@
       ]
     },
     {
+      "source": "idea_000003",
+      "target": "idea_000017",
+      "weight": 1.0,
+      "similarity": 0.2594,
+      "shared_tags": [
+        "planning-bridge"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000004",
       "target": "idea_000007",
       "weight": 1.0,
@@ -580,10 +656,33 @@
       ]
     },
     {
+      "source": "idea_000005",
+      "target": "idea_000017",
+      "weight": 1.0,
+      "similarity": 0.1905,
+      "shared_tags": [
+        "planning-bridge"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000006",
       "target": "idea_000011",
       "weight": 1.0,
       "similarity": 0.0793,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000006",
+      "target": "idea_000017",
+      "weight": 1.0,
+      "similarity": 0.0772,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -689,6 +788,16 @@
       ]
     },
     {
+      "source": "idea_000008",
+      "target": "idea_000017",
+      "weight": 1.0,
+      "similarity": 0.2658,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000009",
       "target": "idea_000010",
       "weight": 1.0,
@@ -757,6 +866,46 @@
       "reasons": [
         "manual_connection",
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000012",
+      "target": "idea_000016",
+      "weight": 1.0,
+      "similarity": 0.2146,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000012",
+      "target": "idea_000017",
+      "weight": 1.0,
+      "similarity": 0.1902,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000014",
+      "target": "idea_000016",
+      "weight": 1.0,
+      "similarity": 0.1921,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000014",
+      "target": "idea_000017",
+      "weight": 1.0,
+      "similarity": 0.1653,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     }
   ]

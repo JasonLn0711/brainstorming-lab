@@ -1,8 +1,24 @@
 # Tag Index
 
+## action-perception-loop
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## aesthetics
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## ai-agents
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## ai-governance
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## ai-humanities
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## ai-security
 
@@ -47,7 +63,15 @@
 
 ## claim-style
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## classical-chinese
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## cognition-os
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
 ## cognitive-load
 
@@ -59,7 +83,7 @@
 
 ## computational-scientometrics
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## conductor
 
@@ -104,9 +128,25 @@
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
+## defensive-buffering
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## descriptive-understanding
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## design-patterns
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## digital-cognitive-twin
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## distributed-cognition
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
 ## distributed-systems
 
@@ -128,6 +168,10 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## embodiment
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## endpoint-management
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
@@ -142,7 +186,7 @@
 
 ## evidence-density
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## evidence-routing
 
@@ -150,9 +194,21 @@
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 
+## existential-understanding
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## experimental-design
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## explainable-clustering
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## explainable-rules
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## exploration-exploitation
 
@@ -166,6 +222,14 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## extended-mind
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## externalized-memory
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## feature-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -176,7 +240,7 @@
 
 ## figure-analysis
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## first-principles
 
@@ -184,11 +248,11 @@
 
 ## forensic-defensibility
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## fsi-di
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## fugu-style-orchestration
 
@@ -213,7 +277,11 @@
 
 ## high-school-explainer
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## human-ai-collaboration
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
 ## human-computer-interaction
 
@@ -223,13 +291,21 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
+## human-llm-rule-comparison
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## human-review
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 
+## human-value
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## hybrid-intelligence
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## implementation-friction
 
@@ -242,6 +318,10 @@
 ## infrastructure-engineering
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## interpretation
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## ios-audio
 
@@ -257,11 +337,15 @@
 
 ## journal-intelligence
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## judgment-system
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## knowledge-graph
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
 ## langgraph
 
@@ -288,9 +372,29 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
+## life-state-machine
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## line
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## literary-ecology
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## literary-psychology
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## literature
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## llm
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## local-llm
 
@@ -300,13 +404,25 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## loneliness
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## low-resource-ai
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## meaning-making
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## medical-ai
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## mental-state-inference
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## meta-learning
 
@@ -314,8 +430,8 @@
 
 ## meta-research
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## metadata-only
 
@@ -340,11 +456,15 @@
 
 ## novelty-analysis
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## openclaw
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+
+## other-minds-problem
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## outlier-detection
 
@@ -352,19 +472,27 @@
 
 ## paper-quality
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## personal-ops
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
+## personality-density
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## phd-training
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## philosophy-of-mind
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## philosophy-of-science
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## physics-education
 
@@ -374,6 +502,15 @@
 
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## pragmatics
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## predictive-processing
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## problem-definition
 
@@ -391,13 +528,17 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## psychological-reconstruction
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## publication-strategy
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## publication-workflow
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## query-strategy-generator
 
@@ -414,6 +555,10 @@
 ## real-time-systems
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## repo-architecture
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
 ## research-candidate
 
@@ -443,11 +588,11 @@
 
 ## reviewer-ecosystem-modeling
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## reviewer-emulation
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## safety
 
@@ -460,11 +605,11 @@
 
 ## scientific-culture
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## scientometrics
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## search-templates
 
@@ -473,6 +618,14 @@
 ## self-directed-data-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## self-modeling
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## semantic-grounding
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## sensing
 
@@ -489,7 +642,7 @@
 
 ## sociology-of-science
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## software-architecture
 
@@ -529,9 +682,13 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## theory-of-mind
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## trust-formation
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## uncertainty-tolerance
 
@@ -539,7 +696,7 @@
 
 ## venue-fit
 
-- `idea_000014` - Journal Intelligence System (`execution_ready`, 84/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
 ## voice-enhancement
 
@@ -566,3 +723,7 @@
 ## workflow-policy-learning
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## working-memory
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
