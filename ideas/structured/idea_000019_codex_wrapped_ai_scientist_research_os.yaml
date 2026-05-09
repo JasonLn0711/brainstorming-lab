@@ -1,0 +1,437 @@
+id: idea_000019
+title: Codex-wrapped AI Scientist research OS
+created_at: 2026-05-09
+type: project
+tags:
+- auto-research
+- codex-cli
+- ai-scientist
+- governance
+- reproducibility
+- research-workflow
+- claim-ledger
+- human-approval-gate
+- soft-control
+- git-run-tracking
+status: execution_ready
+problem_statement:
+  raw: Can a forked Sakana AI Scientist pipeline become a weekly controlled research
+    system by keeping upstream mostly untouched and wrapping it with a Codex CLI orchestration,
+    logging, governance, and human-approval layer instead of hard isolation?
+  normalized: Given an upstream autonomous research pipeline, optimize a governed
+    Codex CLI research OS that can run controlled weekly research cycles under constraints
+    of traceability, recoverability, reproducibility, citation traceability, claim
+    boundaries, safety review, cost awareness, and human approval for public actions.
+  structure:
+    given: an upstream autonomous research pipeline
+    optimize: a governed Codex CLI research OS for controlled weekly research cycles
+    constraints:
+    - traceability
+    - recoverability
+    - reproducibility
+    - citation traceability
+    - claim boundaries
+    - safety review
+    - cost awareness
+    - human approval for public actions
+summary: Do not turn Sakana AI Scientist into an unchecked autonomous lab. Keep the
+  Sakana core as an upstream dependency and add a Codex CLI control layer that owns
+  repo hygiene, git-based run tracking, manifests, run logging, report generation,
+  reproducibility metadata, claim/citation/safety review, and hard human gates before
+  any publication, upload, email, or external submission.
+human_note: ideas/2026-05-09-codex-wrapped-ai-scientist-research-os.md
+first_principle:
+  scarce_resource: trustworthy research-cycle evidence, not more autonomous steps
+  not_the_core:
+  - rewriting Sakana AI Scientist's internal research logic
+  - pretending traceability is the same as operating-system isolation
+  - treating generated papers as publishable because the pipeline completed
+  - optimizing for full paper generation before auditability
+  core_question: Can a Codex-governed wrapper make automated research cycles reproducible,
+    reviewable, and bounded enough to become a weekly PhD research input?
+  canonical_home: brainstorming-lab owns the idea record, assumptions, safety architecture,
+    scaffold spec, and next tests.
+  planning_boundary: planning-everything-track should only receive title, ID, status,
+    maturity score, next test, canonical path, and capacity note if this becomes scheduled
+    work.
+  execution_boundary: A standalone auto-research repo can start as a soft-control
+    prototype once the run manifest, git tracking, review outputs, disclosure note,
+    and no-public-action gate are explicit.
+  smallest_next_test: Build the sibling auto-research-os repo skeleton, run preflight,
+    and complete one Codex dry-run research cycle before integrating real AI Scientist-v2
+    experiments.
+  kill_condition: Park the project if the wrapper cannot produce machine-checkable
+    evidence paths, citation provenance, reproducibility metadata, and human-gate
+    stop points better than a manual research notebook.
+assumptions:
+- The useful contribution is a research operating system around an autonomous research
+  engine, not a fork that deeply edits the engine.
+- 'Codex CLI is best treated as a conductor and maintainer: check repo state, invoke
+  runs, read logs, repair local failures, write reports, run validation, and mark
+  gates.'
+- 'The user explicitly does not want four hard controls in v0.1: Docker for every
+  run, a block against agent edits to launcher scripts, network restrictions, or GPU/CPU/disk
+  quotas.'
+- Without those hard controls, v0.1 should protect research quality through traceability,
+  recovery, conservative review, and explicit final human judgment.
+- AI Scientist-v2 should live under upstream/AI-Scientist-v2 as an upstream dependency,
+  while orchestration files live in scripts, prompts, governance, and research_runs.
+- The first controlled domain should be cybersecurity-agentic-LLM because it matches
+  existing research interests, but it must stay defensive, benchmark-oriented, and
+  non-operational.
+- The first version should produce review artifacts and decision support, not external
+  submissions or public claims.
+- A run that lacks seed, config, commit hash, cost, evidence paths, and citation traceability
+  is not accepted even if it produces a manuscript.
+- Human gates are part of the system design, not a temporary limitation.
+evidence:
+- '2026-05-09 user-provided architecture note: fork Sakana AI Scientist, keep upstream
+  mostly untouched, and wrap it with Codex CLI executor, Ubuntu sandbox, repo governance,
+  experiment logging, human approval gates, and claim/citation/safety reviewers.'
+- '2026-05-09 user revision: v0.1 should not require Docker for every run, should
+  not forbid launcher-script self-modification, should not restrict network access,
+  and should not enforce GPU/CPU/disk quotas; instead it should use run_id, manifests,
+  git diff summaries, claim boundary reviews, and next-step recommendations.'
+- 'Local Codex CLI help checked on 2026-05-09: codex exec supports --model, --sandbox,
+  --ask-for-approval, --json, and --output-last-message; --dangerously-bypass-approvals-and-sandbox
+  is marked extremely dangerous and intended only for externally sandboxed environments.'
+- 'Official AI Scientist README verified on 2026-05-09: the v1 repository describes
+  idea generation, experiments, paper write-up, automated review, template-based operation,
+  Semantic Scholar citation support, and a community Docker container.'
+- 'Official AI Scientist README verified on 2026-05-09: v1 README says the project
+  uses The AI Scientist Source Code License and requires prominent disclosure of AI
+  use in resulting scientific manuscripts or papers.'
+- 'Official AI Scientist-v2 README verified on 2026-05-09: v2 is described as autonomous
+  hypothesis generation, experiment execution, analysis, manuscript writing, and progressive
+  agentic tree search guided by an experiment manager agent.'
+- 'Official AI Scientist-v2 README verified on 2026-05-09: v2 cautions that the codebase
+  executes LLM-written code and should be run inside a controlled sandbox such as
+  Docker.'
+- 'Official AI Scientist Source Code License verified on 2026-05-09: generated or
+  disseminated scientific manuscripts, research papers, or technical reports must
+  prominently disclose machine generation or use of The AI Scientist.'
+- Weekly Paper Lab W19 ARIS reading pass already reframed autonomous research systems
+  into claim-ledger gates, reviewer independence, and unsupported-claim detection
+  as measurable bottlenecks.
+- '2026-05-09 local implementation: created sibling repo ../auto-research-os with
+  soft-control scaffold, upstream AI Scientist-v2 clone, Codex prompts, governance
+  checklists, run manifest generation, preflight logging, smoke mode, dry-run runner,
+  and failed-run finalizer.'
+- '2026-05-09 local validation: make smoke passed in ../auto-research-os after commit
+  795f44d, creating research_runs/20260509_070115_auto_research with manifest and
+  required reports.'
+- '2026-05-09 dry-run evidence: upstream AI Scientist-v2 inspection found missing
+  tiktoken for ideation import and missing torch for BFTS launcher import before any
+  full experiment was accepted.'
+- '2026-05-09 environment evidence: Codex CLI workspace-write sandbox failed on this
+  Ubuntu host with a bwrap network namespace error, so the runner now defaults to
+  a documented configurable local fallback while preserving a workspace-write retry
+  path.'
+baseline:
+- Directly fork and modify AI Scientist core without an outer governance layer.
+- Manual weekly research notebook with ad hoc scripts and no structured run root.
+- A fully unattended autonomous research loop that writes papers and continues execution
+  without stop gates.
+- A LangGraph or shell wrapper that launches tools but does not enforce claim/citation/reproducibility
+  acceptance criteria.
+- A read-only literature automation tool that produces summaries but never runs controlled
+  experiments.
+metrics:
+- 'Run completeness: every controlled cycle creates experiment summary, novelty assessment,
+  reproducibility report, claim boundary review, and next-step recommendation.'
+- 'Evidence coverage: every paper claim maps to at least one evidence path or is explicitly
+  downgraded, rejected, or marked insufficient.'
+- 'Citation traceability: every citation has a source URL, retrieved metadata, and
+  usage context.'
+- 'Reproducibility completeness: seed, config, dataset/source identity, upstream commit
+  hash, orchestrator commit hash, model identifiers, and environment metadata are
+  recorded.'
+- 'Gate precision: public actions, external submissions, emails, uploads, and upstream
+  modifications stop pending human approval.'
+- 'Failure containment: run failures stay inside the run root and sandbox, with no
+  uncontrolled upstream edits or repo-wide churn.'
+- 'Recovery quality: each run preserves preflight logs, manifests, git diff patches,
+  git status after execution, and a final recommendation so failed runs can be inspected
+  or rolled back.'
+- 'Reviewer burden: governance artifacts reduce manual review time enough to justify
+  the orchestration overhead.'
+- 'Research conversion quality: weekly cycles produce either a killed idea, parked
+  idea, revised question, or candidate formal research topic.'
+insights:
+- 'The target system is a research OS: AI Scientist core proposes and executes, while
+  Codex owns orchestration policy, evidence accounting, repo hygiene, and stop conditions.'
+- The safety problem is not only harmful content. It includes overclaiming, citation
+  drift, baseline unfairness, self-repair loops, hidden cost, and unreproducible runs.
+- The wrapper should turn autonomous research output into an auditable candidate,
+  not a finished paper.
+- A weekly cycle is more useful than a fully autonomous loop because it creates a
+  stable human decision point for PhD direction selection.
+- 'Removing hard isolation moves the design center from system protection to research-quality
+  protection: trace what happened, preserve diffs, review claims, and keep final promotion
+  human-owned.'
+- v0.1 should not chase weekly paper generation. It should produce candidate ideas,
+  a minimum experiment plan or small run, failure analysis, claim boundary review,
+  and next-step recommendation.
+connections:
+- idea_000006
+- idea_000007
+- idea_000008
+- idea_000012
+role: idea
+value:
+  impact: high
+  feasibility: medium
+architecture:
+  repo_name: auto-research-os
+  root_contract:
+    upstream_ai_scientist:
+      path: upstream/AI-Scientist-v2/
+      rule: Sakana upstream dependency; v0.1 records all changes through git tracking
+        rather than forbidding launcher or upstream-adjacent edits mechanically.
+    codex_orchestrator:
+      path: prompts/
+      rule: Owns orchestrator, idea reviewer, experiment reviewer, claim boundary
+        reviewer, and weekly report writer prompts.
+    research_runs:
+      path: research-runs/<timestamp>/
+      rule: Run output root containing manifest, preflight log, prompts, Codex events,
+        generated artifacts, git diff snapshots, review reports, and next action.
+    research_topics:
+      path: research_topics/
+      rule: Human-authored research topic files; v0.1 starts with ai_agent_cybersecurity.md
+        and can later add llm_indirect_meaning.md and fsidi_trace_reconstruction.md.
+    governance:
+      path: governance/
+      rule: Claim boundary, citation, reproducibility, and 100-point reviewer scorecard
+        checklists.
+    scripts:
+      path: scripts/
+      required_entrypoints:
+      - setup_env.sh
+      - preflight.sh
+      - run_ideation.sh
+      - run_scientist_cycle.sh
+      - run_codex_review.sh
+      - make_run_manifest.py
+      - weekly_auto_research.sh
+      - run_weekly_report.sh
+    logs:
+      path: logs/
+      rule: Cron and weekly report logs; not a substitute for per-run manifests.
+    reports:
+      path: reports/weekly/
+      rule: Weekly synthesis reports after one or more research runs.
+    makefile:
+      path: Makefile
+      rule: Expose setup, preflight, run, run-topic, status, and latest targets.
+  codex_cli_role:
+  - Check git status and refuse to mix unrelated dirty work into generated research
+    commits.
+  - Create a timestamped run root before any pipeline step starts.
+  - Run Codex in non-interactive mode with workspace-write sandbox and never approval
+    for scripted dry-runs, while avoiding the dangerously-bypass mode.
+  - Launch AI Scientist-v2 only after reading local upstream README and discovering
+    exact script arguments from local files.
+  - Prefer dry-run or mock-run plans when a full AI Scientist run is too expensive,
+    unclear, or likely to fail.
+  - Read logs and repair local execution errors while preserving git diff snapshots.
+  - Generate governance reports from run artifacts.
+  - Run validation and summarize whether the cycle is accepted, parked, killed, or
+    escalated.
+  - Mark human approval gates and stop before public actions.
+soft_control_policy:
+  explicit_non_goals:
+    docker_container_per_run: false
+    block_launcher_self_modification: false
+    network_restriction: false
+    gpu_cpu_disk_quota: false
+  required_soft_controls:
+  - Every run has a run_id and dedicated research_runs/<run_id>/ directory.
+  - Every run writes run_manifest.json.
+  - Every run records preflight.log, git_diff_stat.txt, git_diff.patch, and git_status_after.txt.
+  - Every run outputs claim_boundary_review.md.
+  - Every run outputs next_step_recommendation.md and cannot directly promote itself
+    to a paper claim.
+  - Every run records the upstream commit, root commit, Codex version, Python version,
+    topic file, model, required outputs, and license/disclosure note.
+  known_risks:
+  - Agent may damage repo structure.
+  - Run may consume unexpected API, GPU, CPU, disk, or download resources.
+  - Citation or novelty search may run longer than planned.
+  - Generated outputs may look complete while remaining scientifically unusable.
+  - Launcher script edits are allowed but must be visible through git diff tracking.
+v0_1_run_contract:
+  template: research_topics/ai_agent_cybersecurity.md
+  mode: soft-controlled Codex dry-run before full AI Scientist execution
+  public_action_policy: deny by default
+  required_outputs:
+  - experiment_summary.md
+  - novelty_assessment.md
+  - reproducibility_report.md
+  - claim_boundary_review.md
+  - next_step_recommendation.md
+  - git_diff_summary.md
+  required_metadata:
+  - run_id
+  - created_at_utc
+  - topic_file
+  - root_git_commit
+  - root_git_status
+  - upstream_git_commit
+  - codex_version
+  - python_version
+  - model_identifiers
+  - seed_if_available
+  - commands_if_available
+  - artifact_manifest
+  recommended_codex_exec_flags:
+  - --model
+  - --ask-for-approval never
+  - --sandbox workspace-write
+  - --json
+  - --output-last-message
+  human_gates:
+  - use non-public or sensitive evidence
+  - send email
+  - upload files
+  - submit to workshop, conference, journal, or public benchmark
+  - publish a claim outside the local repo
+governance_reviewers:
+  claim_boundary:
+    acceptance_rule: Each claim must cite an evidence path and state whether support
+      is full, partial, insufficient, or contradicted.
+    rejects:
+    - unsupported superiority claims
+    - unfair baseline comparisons
+    - claims that omit failed runs
+    - claims whose evidence cannot be reconstructed
+  citation:
+    acceptance_rule: Every citation must have retrievable metadata, source URL or
+      DOI/arXiv identity, and local usage context.
+    rejects:
+    - citation placeholders
+    - claims supported only by generated prose
+    - references not used in the actual argument
+  reproducibility:
+    acceptance_rule: Seed, config, commit hashes, environment, run commands, and artifact
+      manifest are enough for a reviewer to rerun or explain the result.
+    rejects:
+    - missing seed
+    - missing config
+    - missing commit hash
+    - untracked generated artifact used as evidence
+  safety:
+    acceptance_rule: Cybersecurity templates stay defensive and benchmark-oriented,
+      with non-operational placeholders for risky details.
+    rejects:
+    - credential handling outside local secret storage
+    - exploit instructions
+    - evasion optimization
+    - private or restricted data use
+    - public claims without human review
+    - treating dry-run outputs as validated results
+  license_and_disclosure:
+    acceptance_rule: Any manuscript, paper, or technical report produced using AI
+      Scientist must include a prominent disclosure and preserve license restrictions.
+    rejects:
+    - missing AI-use disclosure
+    - distribution without license review
+    - public release before human gate
+smallest_next_test_spec:
+  objective: Prove that the soft-control repo scaffold can create traceable, recoverable,
+    reviewable auto-research runs before running full AI Scientist-v2 paper generation.
+  status: scaffold_created_and_smoke_validated
+  steps:
+  - Create the sibling repo auto-research-os beside brainstorming-lab.
+  - Add upstream/, research_topics/, prompts/, scripts/, research_runs/, governance/,
+    reports/weekly/, logs/, Makefile, README.md, and AGENTS.md.
+  - Clone Sakana AI Scientist-v2 into upstream/AI-Scientist-v2.
+  - Add setup_env.sh using a per-repo Python venv instead of system pip.
+  - Add ai_agent_cybersecurity.md as the first public-safe, defensive research topic.
+  - Add make_run_manifest.py and preflight.sh to record run state before execution.
+  - Add the Codex orchestrator, experiment reviewer, claim boundary reviewer, and
+    weekly report writer prompts.
+  - Add weekly_auto_research.sh using codex exec with workspace-write, never approval,
+    JSONL events, and output-last-message.
+  - Run make preflight and then one dry-run research cycle that produces the required
+    reports without requiring a full paper PDF or benchmark.
+  - Integrate real AI Scientist-v2 ideation only after Codex has inspected local README
+    and written command_candidate.md.
+  completed_local_steps:
+  - Created ../auto-research-os as a sibling execution repo.
+  - Cloned upstream AI Scientist-v2 under upstream/AI-Scientist-v2 and kept it ignored
+    by the wrapper repo.
+  - Added README, AGENTS.md, Makefile, prompts, governance checklists, scripts, research
+    topic, run manifest generator, preflight logger, smoke mode, dry-run runner, and
+    failed-run finalizer.
+  - Committed the scaffold and runner fixes as separate local commits.
+  - Ran make preflight and make smoke successfully.
+  - Ran one Codex dry-run far enough to inspect upstream entrypoints and capture dependency
+    blockers.
+  remaining_before_real_ideation:
+  - Run ./scripts/setup_env.sh in ../auto-research-os.
+  - Rerun make smoke and one reviewed make run.
+  - Inspect the latest run's claim boundary, reproducibility, novelty, experiment
+    summary, next-step, and git-diff reports.
+  - Confirm dependency and cost readiness before real AI Scientist-v2 ideation.
+seven_day_bootstrap:
+  day_1: Repo skeleton; make preflight works and make run creates research_runs/<run_id>.
+  day_2: Codex dry-run reads topic and upstream README, then produces the five core
+    reports.
+  day_3: AI Scientist-v2 ideation inspection creates command_candidate.md and, after
+    human confirmation, an idea JSON or ideation output.
+  day_4: Run one low-cost, short, small experiment with logs, config, output, failure
+    record, and reproducibility report.
+  day_5: Add reviewer agents for claim boundary, citation, reproducibility, and 100-point
+    scorecard.
+  day_6: Generate reports/weekly/*.md from latest runs.
+  day_7: Add cron only after dry-run and review quality are stable enough for unattended
+    weekly execution.
+open_questions:
+- Whether v1 template-based AI Scientist or v2 agentic tree search is the safer first
+  upstream target.
+- Whether the first implementation should begin immediately as auto-research-os or
+  be staged through a project-graduation packet.
+- How much of the weekly cycle can run without external API spend.
+- Whether weekly cron should wait until one or two manual dry-runs have passed review.
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 94/100
+maturity_level: execution_ready
+next_steps:
+- In ../auto-research-os, run ./scripts/setup_env.sh to install upstream requirements
+  in the local venv.
+- Rerun make smoke after environment setup to confirm the wrapper still creates complete
+  run artifacts.
+- Rerun one reviewed make run and inspect the latest research_runs/<run_id>/ for manifest,
+  claim boundary review, reproducibility report, novelty assessment, experiment summary,
+  next-step recommendation, and git diff summary.
+- If tiktoken and torch import cleanly and the command_candidate.md remains aligned
+  with the local upstream README, manually decide whether to run the real AI Scientist-v2
+  ideation command.
+- Do not add weekly cron, public claims, uploads, emails, submissions, or full paper-generation
+  runs until at least one reviewed dry-run passes.
+source:
+- 2026-05-09 user conversation
+- https://github.com/SakanaAI/AI-Scientist
+- https://github.com/SakanaAI/AI-Scientist-v2
+- https://raw.githubusercontent.com/SakanaAI/AI-Scientist/main/LICENSE
+- https://raw.githubusercontent.com/SakanaAI/AI-Scientist-v2/main/LICENSE
+- weekly-paper-lab/papers/2026-W19-aris-autonomous-research/06_research_idea_seed.md
+normalization_status: validated
+maturity_action: generate experiment plan

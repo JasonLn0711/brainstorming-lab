@@ -70,6 +70,7 @@ insights:
   - "The smallest useful artifact is a conductor-policy simulator and evaluation protocol before a full agent framework."
   - "吳冠廷's hardware note makes the near-term research path more practical: start with a 7B-scale conductor or policy-search simulator rather than assuming only frontier-model orchestration."
   - "The collaboration context matters: 吳冠廷 has already applied to Sakana AI/Fugu and may become a useful person to compare notes with if access is approved."
+  - "idea_000019 is the engineering scaffold counterpart: it treats AI Scientist as an upstream research engine and Codex CLI as the governed orchestration, logging, claim-review, and human-gate layer."
 connections:
   - idea_000001
   - idea_000005
@@ -77,6 +78,7 @@ connections:
   - idea_000011
   - idea_000012
   - idea_000014
+  - idea_000019
 role: idea
 value:
   impact: high
@@ -109,6 +111,7 @@ next_steps:
   - "Compare four baselines: single model, fixed specialist pipeline, fixed self-refine, and conductor policy search."
   - "Measure cost, latency, error detection, escalation precision, and abstention quality."
   - "Kill or park the idea if it cannot beat the fixed pipeline after cost and latency normalization."
+  - "Use idea_000019 when the next step is repo scaffolding or weekly auto-research operations, while keeping this idea focused on learned/search-based orchestration policy as the research question."
 source:
   - "user conversation"
   - "LINE conversation with 吳冠廷 on 2026-05-04"

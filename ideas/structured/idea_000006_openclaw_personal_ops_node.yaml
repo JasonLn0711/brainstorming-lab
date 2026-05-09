@@ -30,6 +30,7 @@ insights:
 connections:
   - idea_000005
   - idea_000011
+  - idea_000019
 value:
   impact: high
   feasibility: medium
