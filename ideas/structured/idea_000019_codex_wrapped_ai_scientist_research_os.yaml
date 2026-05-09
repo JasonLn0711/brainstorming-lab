@@ -166,9 +166,7 @@ insights:
   not a finished paper.
 - A weekly cycle is more useful than a fully autonomous loop because it creates a
   stable human decision point for PhD direction selection.
-- 'Removing hard isolation moves the design center from system protection to research-quality
-  protection: trace what happened, preserve diffs, review claims, and keep final promotion
-  human-owned.'
+- 'Removing hard isolation moves the design center from system protection to research-quality protection: trace what happened, preserve diffs, review claims, and keep final promotion human-owned.'
 - v0.1 should not chase weekly paper generation. It should produce candidate ideas,
   a minimum experiment plan or small run, failure analysis, claim boundary review,
   and next-step recommendation.
@@ -177,6 +175,7 @@ connections:
 - idea_000007
 - idea_000008
 - idea_000012
+- idea_000020
 role: idea
 value:
   impact: high

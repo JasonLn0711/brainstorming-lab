@@ -25,6 +25,7 @@ insights:
   - "Idea maturity can become an input to weekly planning without becoming a hidden backlog."
 connections:
   - idea_000005
+  - idea_000020
 value:
   impact: high
   feasibility: high

@@ -133,6 +133,7 @@ connections:
   - idea_000005
   - idea_000010
   - idea_000012
+  - idea_000020
 role: idea
 value:
   impact: medium
