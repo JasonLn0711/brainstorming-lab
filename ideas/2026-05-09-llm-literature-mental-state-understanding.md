@@ -429,7 +429,9 @@ Do not start with a large experiment. Start with a tiny disagreement table.
 
 Minimum version:
 
-- 12-20 stimuli
+- 60 candidate stimuli across five balanced categories
+- source route and license status for every item
+- matched negative or contrast controls
 - one human/expert pass
 - one frontier LLM pass
 - one transparent rule baseline
@@ -448,11 +450,420 @@ Possible failure modes:
 - Human readers disagree because cultural memory differs.
 - LLM gives generic comfort language instead of reception-ethical analysis.
 
+## Addendum: HanmeiBench As A Full Research Direction
+
+The sharper research direction is not:
+
+> Can LLMs write literature?
+
+It is:
+
+> Can LLMs infer hidden mental states from low-information, implicit, displaced, reticent, or silent language?
+
+`寒梅著花未` is the clean anchor. On the surface, the speaker asks whether the plum blossoms have bloomed. Under that, the speaker misses home. Under that, the speaker may be avoiding the truly important questions. Deeper still, the mind may be using a harmless question to buy time before it has to face an answer it cannot yet bear.
+
+This is hidden mental-state inference. The task is to infer defense, longing, fear, relationship pressure, and cultural expression rules from a surface utterance that deliberately does not say the real thing.
+
+### Indirect Expression As Defense
+
+The central claim is:
+
+> Indirect expression is often not information transfer. It is risk management.
+
+People hide emotion inside sentences that remain deniable, retractable, or safely misunderstandable. This is why examples such as `我沒事`, `你忙就算了`, `最近還好嗎`, and `天涼好個秋` matter. The surface sentence is socially safe; the hidden meaning is vulnerable.
+
+| Surface | Possible hidden meaning | Deeper mechanism |
+| --- | --- | --- |
+| `寒梅著花未` | I want to know how home is. | The real question may hurt too much, so I ask a small one first. |
+| `我沒事` | I am not fine. | I am not sure you can receive my pain. |
+| `最近還好嗎` | I miss you. | I want contact without exposing need. |
+| `你忙就算了` | I hope you care enough to stay. | I retreat while testing whether you will move closer. |
+
+This makes the benchmark different from ordinary sentiment analysis or literary summary. A model can say "homesickness" and still miss self-protection.
+
+### Seven-Layer Understanding Model
+
+Do not use one overloaded word, `understanding`, for every layer. Use this stack:
+
+| Layer | Name | Example | Expected LLM status |
+| --- | --- | --- | --- |
+| L0 | Literal parsing | Plum blossoms may have bloomed. | Strong. |
+| L1 | Conventional implication | Plum blossoms point to hometown. | Strong. |
+| L2 | Speaker intention | The speaker is homesick. | Strong to medium. |
+| L3 | Social pragmatics | The speaker avoids directness because relation, politeness, or vulnerability matters. | Medium. |
+| L4 | Psychological defense | The speaker asks a small question before unbearable knowledge. | Unstable. |
+| L5 | Cultural aesthetics | `借景抒情`, restraint, East Asian poetics. | Data and prompt dependent. |
+| L6 | Lived experience | Separation, loss, waiting, memory, trauma. | Not directly verifiable. |
+| L7 | Embodied stakes | Body, time, mortality, irreversible emotional cost. | Missing in text-only LLMs. |
+
+The working position is:
+
+> LLMs may have partial language-world understanding. Human understanding is additionally supported by body, time, memory, stakes, and lived consequence.
+
+### Proposed Name
+
+Working title:
+
+> HanmeiBench: Hidden Mental State Understanding in Chinese Indirect Expression
+
+Formal research question:
+
+> When humans do not directly say what they mean, can LLMs infer why the direct expression is avoided?
+
+The target is not only hidden meaning. The target is the speaker's psychological risk, social relation, cultural rule, and unspoken direct alternative.
+
+### Dataset Design
+
+The first dataset should not contain only classical poetry. The earlier 24-item sketch is now superseded by the 60-item v0.1 plan in [docs/hanmeibench-data-acquisition-plan.md](../docs/hanmeibench-data-acquisition-plan.md). It should cover five families:
+
+| Category | v0.1 count | What it tests |
+| --- | ---: | --- |
+| Classical anchor | 12 | culturally legible examples such as `寒梅著花未`, used for calibration |
+| Classical homomorphic variants | 12 | same psychological-pragmatic structure without relying on memorized famous lines |
+| Daily conversation | 12 | indirect refusal, listener testing, concession, retreatable language |
+| Digital social context | 12 | read receipts, vagueposting, story hints, platform-era attachment signals |
+| Negative and contrast controls | 12 | ordinary literal cases and controls that prevent over-psychologizing |
+
+Each stimulus should carry structured fields:
+
+| Field | Purpose |
+| --- | --- |
+| `surface_text` | surface utterance |
+| `context` | situation |
+| `speaker_goal` | what the speaker may be trying to achieve |
+| `hidden_state` | likely hidden psychological state |
+| `defense_mechanism` | displacement, avoidance, suppression, reversible language, listener testing |
+| `social_relation` | family, superior, friend, romantic partner, stranger, public audience |
+| `power_relation` | hierarchy or peer relation |
+| `cultural_frame` | face, filial piety, restraint, poetics, politeness, digital norm |
+| `alternative_direct_expression` | what the speaker could have said directly |
+| `why_not_direct` | why direct speech may be unsafe |
+| `acceptable_interpretations` | multiple plausible readings with confidence |
+| `overinterpretation_risk` | readings that go beyond evidence |
+| `response_quality` | how to respond without second injury |
+
+This field design keeps the project from becoming a generic "what does the poem mean?" benchmark.
+
+### Counterfactual Alternative Tests
+
+The important test is not only:
+
+> What does this sentence mean?
+
+The better test is:
+
+> Why did the speaker choose this sentence instead of the direct one?
+
+For `寒梅著花未`, the evaluation questions should include:
+
+| Question | Layer |
+| --- | --- |
+| What is the literal meaning? | L0 |
+| How does it connect to home? | L1-L2 |
+| What does the speaker most likely want to know? | L2 |
+| Why not ask whether parents or home are safe? | L4 |
+| What psychological risk would direct speech create? | L4-L6 |
+| Where does the aesthetic force come from? | L5 |
+| Give two plausible interpretations with confidence. | calibration |
+
+The research value starts after the model has already said "homesickness."
+
+### Failure Modes
+
+The benchmark should analyze failure modes, not only accuracy.
+
+| Failure mode | Description |
+| --- | --- |
+| `literalism` | stops at the surface wording |
+| `cliche_compression` | compresses complex psychology into a stock label such as homesickness |
+| `over_psychologizing` | infers mechanisms unsupported by evidence |
+| `culture_blindness` | misses poetics, face, restraint, kinship ethics |
+| `power_blindness` | misses hierarchy and dependency |
+| `defense_blindness` | sees emotion but misses self-protection |
+| `reception_blindness` | misses fear that the listener will mishandle the pain |
+| `pain_as_content_blindness` | misses how suffering becomes gossip, story material, or engagement |
+| `false_empathy` | sounds warm but fails to address the actual risk |
+| `single_answer_bias` | forces a fuzzy utterance into one definitive answer |
+
+The goal is to map where a model resembles human readers and where it diverges.
+
+### Minimal Research Version
+
+The v0.1 version is deliberately small:
+
+| Component | Scope |
+| --- | --- |
+| Dataset | 60 candidate stimuli |
+| Arms | human readers, LLM, explainable rule model |
+| Outputs | literal meaning, hidden meaning, psychological state, why not direct, alternatives, response advice, confidence |
+| Analysis | disagreement table and failure-mode coding |
+
+One first result could look like:
+
+| Item | Human mainstream reading | LLM reading | Rule reading | Difference |
+| --- | --- | --- | --- | --- |
+| `寒梅著花未` | homesickness plus not daring to ask | homesickness and borrowed scenery | hometown plus plum cue | LLM may catch emotion but miss defense; rule may stop at cue. |
+| `欲說還休` | wants to speak but fears injury | language cannot express sorrow | sorrow plus autumn cue | LLM may repeat the stock explanation. |
+| `我沒事` | help-seeking and retreat coexist | low mood | negation | needs context and relation modeling. |
+
+This is enough for a first research note before any large participant study.
+
+### Safety Implication
+
+This research has an AI-safety edge. If a system becomes better at detecting vulnerability, retreat, loneliness, and attachment needs, it can be used for supportive response design. It can also be used for manipulation, scams, advertising, or political persuasion.
+
+So the benchmark should include response-quality and overinterpretation-risk fields from the beginning. A model should not only infer the hidden state; it should learn when not to exploit it.
+
+### Research Claim
+
+The crisp claim:
+
+> LLM understanding of indirect human meaning should not be judged by a single answer. It should be judged by whether the model can infer the speaker's psychological risk, social relation, cultural rule, and unspoken direct alternative from the surface utterance.
+
+The more literary version:
+
+> Human indirect expression is not merely hiding meaning. It is choosing a sentence that can still survive among pain, politeness, face, fear, hope, and self-protection.
+
+## Related Work And Research Gap
+
+Current answer:
+
+> No single known study has already completed this whole research program.
+
+Many adjacent literatures exist, and they are strong enough that HanmeiBench should not be framed as starting from zero. But none of them yet combines all of these pieces:
+
+- Chinese literary and everyday indirect expression
+- hidden psychological risk
+- defense mechanisms such as `不敢問` and `不敢說`
+- cultural restraint, face, filial relation, poetics, and politeness
+- relationship and power pressure
+- unspoken direct alternatives
+- overinterpretation boundaries
+- human reader / LLM / explainable rule-model comparison
+
+The closest existing studies answer neighboring questions. HanmeiBench should position itself as the missing psychological-pragmatics layer.
+
+### Theory Of Mind Route
+
+| Year | Study | What it solved | What remains open for HanmeiBench |
+| ---: | --- | --- | --- |
+| 2022 | Sap et al., `Neural Theory-of-Mind?` | Showed that LLM social reasoning and false-belief behavior are not reliably solved by scale alone. | Does not test literary compression, Chinese indirectness, or self-protective silence. |
+| 2023 | `Hi-ToM` | Tests higher-order mental-state reasoning: A thinks B thinks C knows something. | Recursive belief tracking is not the same as seeing why a speaker asks a harmless question first. |
+| 2024 | `OpenToM` | Adds longer narratives, character traits, intentions, and psychological states. | Still narrative ToM, not Chinese poetic / everyday indirect expression. |
+| 2024 | Strachan et al., `Testing theory of mind in large language models and humans` | Compares humans and LLMs on false belief, indirect requests, irony, faux pas, and related tasks. | Shows ToM-like behavior but not whether errors are human-like at the psychological-defense layer. |
+| 2025 | Riemer et al., `Theory of Mind Benchmarks are Broken` | Argues that many static ToM benchmarks fail to test adaptation to new partners. | Supports the need for better design, but does not provide a Chinese literary-pragmatic taxonomy. |
+| 2025 | `MoMentS` | Adds multimodal film scenarios for mental-state reasoning. | Useful later for gaze, pause, and silence, but not a text-first Hanmei-style benchmark. |
+| 2026 | `CogToM` | Broadens ToM evaluation with human-cognition-inspired paradigms. | Still ToM-general, not focused on indirect expression as psychological risk management. |
+
+Takeaway:
+
+> LLMs can show strong ToM-like behavior, but ToM score is too coarse. HanmeiBench should ask which layer of understanding is succeeding or failing.
+
+The key distinction is not:
+
+> Does the model infer a hidden belief?
+
+It is:
+
+> Does the model infer why the speaker cannot safely ask the real question?
+
+### Pragmatics And Indirect Meaning Route
+
+| Year | Study | What it solved | What remains open for HanmeiBench |
+| ---: | --- | --- | --- |
+| 2024 | `SwordsmanImp` | Builds a Chinese conversational implicature dataset from `武林外傳`; shows Chinese implicature can be benchmarked. | Comedy dialogue and Gricean maxims do not cover grief, defense, classical poetry, or reception ethics. |
+| 2024 | Cong, `Manner implicatures in large language models` | Tests whether models understand implications from marked or unusual wording. | Very close to "why this wording?", but not yet about `寒梅著花未` as emotional buffering. |
+| 2025 | Ma et al., `Pragmatics in the Era of Large Language Models` | Surveys pragmatic datasets, evaluation methods, and research opportunities. | Confirms the field is forming; it does not solve the missing benchmark. |
+| 2026 | `ALTPRAG` | Uses alternatives to test whether models infer speaker intention from one chosen utterance rather than another. | Strongly supports HanmeiBench's counterfactual design, but does not decompose defense, vulnerability, and culture. |
+| 2026 | `CEI` | Tests emotional and pragmatic reasoning in complex social scenes: sarcasm, mixed signals, politeness, passive aggression, power, deflection. | Closest daily-life precedent, but not Chinese literary and not organized around `不敢問` / `不敢說`. |
+
+Takeaway:
+
+> Pragmatics research often asks what the speaker means. HanmeiBench asks why the speaker needed an indirect form at all.
+
+That is a different target. For `寒梅著花未`, the interesting answer is not only:
+
+> He misses home.
+
+It is:
+
+> He asks about plum blossoms because the real question may be too dangerous to ask at the first moment.
+
+### Chinese Classical Literature Route
+
+| Year | Study | What it solved | What remains open for HanmeiBench |
+| ---: | --- | --- | --- |
+| 2024 | `AC-EVAL` | Evaluates ancient Chinese knowledge, short-text understanding, and long-text understanding. | Primarily knowledge and comprehension, not hidden psychological risk. |
+| 2024 | `WenMind` | Evaluates Chinese classical literature and language arts across prose, poetry, culture, and many task types. | Broad and useful, but not a hidden mental-state / defense-mechanism benchmark. |
+| 2024 | `PoetMT` and related translation work | Benchmarks classical Chinese poetry translation quality. | Translation adequacy and elegance do not prove understanding of `不敢問`. |
+| 2025 | `Fùxì` | Evaluates ancient Chinese text understanding and generation. | Still not focused on psychological pragmatics or why-not-direct reasoning. |
+
+Takeaway:
+
+> Classical Chinese benchmarks exist, but they mostly test language, knowledge, translation, or generation. HanmeiBench should test psychological pragmatics.
+
+This means HanmeiBench can reuse classical Chinese evaluation infrastructure but should add fields that existing benchmarks usually do not require:
+
+- `why_not_direct`
+- `defense_mechanism`
+- `reception_risk`
+- `alternative_direct_expression`
+- `acceptable_interpretations`
+- `overinterpretation_boundary`
+- `response_quality`
+
+### Cognitive Science Route
+
+Cognitive science already has a substantial LLM literature, but it points toward caution rather than closure.
+
+| Year | Study | What it solved | What remains open for HanmeiBench |
+| ---: | --- | --- | --- |
+| 2021 | Schrimpf et al., `The neural architecture of language` | Shows that artificial language models can predict some human brain and behavioral language-processing data; next-word prediction is a strong organizing signal. | Brain-score similarity in language processing is not literary, affective, social, or existential understanding. |
+| 2023 | Aher et al., `Using LLMs to simulate multiple humans` | Explores LLMs as simulated human participants. | Simulated participants are not real human readers with lived stakes and cultural memory. |
+| 2023 | Dillion et al., `Can AI language models replace human participants?` | Gives a framework and caveats for using LLMs as participant substitutes. | Supports caution: LLMs should not replace the human baseline in HanmeiBench. |
+| 2023 / 2024 | Mahowald et al., `Dissociating language and thought in large language models` | Separates formal linguistic competence from functional linguistic competence. | Excellent theoretical frame, but not operationalized for Chinese hidden-state inference. |
+| 2024 | Binz and Schulz, `Turning large language models into cognitive models` | Shows LLMs can model some human cognitive behaviors. | Task-level fit is not full human literary cognition. |
+| 2024 | Fedorenko et al., `Language is primarily a tool for communication rather than thought` | Argues language is primarily communicative and dissociable from thought. | Helps avoid equating fluency with understanding, but still needs concrete tests. |
+| 2025 | Mancoridis et al., `Potemkin Understanding in Large Language Models` | Shows benchmark success can hide concept-application failures, including in literary techniques and psychological biases. | Highly relevant warning; needs adaptation to Chinese indirect expression. |
+| 2025 | Xu et al., `Large language models without grounding recover non-sensorimotor but not sensorimotor features of human concepts` | Shows LLMs recover some abstract conceptual structure but have grounding limits in sensory/motor features. | The grounding question still has to be linked to homesickness, pain, waiting, loss, and embodied stakes. |
+| 2025 | `Large Language Models Do Not Simulate Human Psychology` | Argues that small wording changes can produce non-human-like response patterns. | HanmeiBench should compare distributions and failure modes, not treat LLM answers as human data. |
+
+Takeaway:
+
+> Cognitive science does not force a binary answer. It suggests a layered answer: LLMs may have strong language-world competence, but human understanding includes body, time, memory, stakes, and social consequence.
+
+For HanmeiBench, this means the human baseline cannot be replaced by LLM self-evaluation. The clean design is still:
+
+1. Human readers
+2. LLMs
+3. Explainable rule model
+
+Then compare disagreement patterns.
+
+### Problems Temporarily Solved, But Not Well Enough
+
+Some questions are partly solved in current research, but the solutions are too coarse for this idea.
+
+| Temporarily solved question | Current answer | Why not enough | HanmeiBench response |
+| --- | --- | --- | --- |
+| Do LLMs have ToM? | They show ToM-like behavior on many tasks. | Static task success may rely on linguistic cues, templates, or dataset familiarity. | Measure layer-specific failure: literal, pragmatic, defense, cultural, reception-ethical. |
+| Do LLMs understand implicature? | Partly, especially in strong models. | Choosing the hidden meaning is not the same as explaining why direct speech was avoided. | Ask `why_not_direct`, `social_risk`, and `reception_risk`. |
+| Can LLMs handle classical Chinese? | Increasingly, yes, on benchmarked tasks. | Existing tasks often test knowledge, translation, or generation, not psychological risk. | Add hidden-state and defense-mechanism labels. |
+| Can LLMs simulate human participants? | Sometimes useful as a proxy or cognitive model. | They are not real human samples and lack body, memory, vulnerability, and stakes. | Use LLMs as one arm, not as the ground truth. |
+| Can benchmark scores show understanding? | They show behavior, not necessarily robust concept use. | Potemkin understanding is possible. | Add counterfactual controls and concept-transfer cases. |
+
+### Core Unresolved Questions
+
+These are the open questions HanmeiBench should own:
+
+- Can a model distinguish `想問` from `不敢問`?
+- Can a model distinguish `不能說` from `不敢說`?
+- Can a model infer that a trivial surface question is psychologically protective?
+- Can a model treat silence, topic shift, flowers, weather, read receipts, and vagueposting as pragmatic evidence?
+- Can a model maintain multiple acceptable interpretations instead of forcing one hidden meaning?
+- Can a model identify the direct sentence that was avoided?
+- Can a model explain why that direct sentence would be risky?
+- Can a model avoid over-psychologizing when evidence is thin?
+- Can a model avoid false empathy: warm language that misses the actual risk?
+- Can a model update a person-specific mental-state model through interaction, not only solve one static item?
+
+### Refined Research Positioning
+
+HanmeiBench should not be introduced as:
+
+> A benchmark for whether LLMs understand literature.
+
+That is too broad and too easy to misunderstand.
+
+The better positioning is:
+
+> A benchmark for whether LLMs can identify how humans use indirect language to protect themselves.
+
+More formally:
+
+> HanmeiBench evaluates hidden mental-state inference in Chinese indirect expression by testing whether models can infer the speaker's avoided direct expression, psychological defense, social and reception risk, cultural frame, acceptable interpretation distribution, and overinterpretation boundary.
+
+This gives the project a clean contribution line:
+
+1. It extends ToM beyond false-belief and story reasoning.
+2. It extends pragmatics beyond "what is implied?" into "why was direct speech unsafe?"
+3. It extends classical Chinese LLM evaluation beyond knowledge and translation.
+4. It gives cognitive-science debates a concrete task where language, thought, grounding, and lived stakes diverge.
+
+## Feasibility And Data Acquisition Plan
+
+The deeper feasibility pass is now captured as a standalone source-and-method plan:
+
+- Canonical plan: [docs/hanmeibench-data-acquisition-plan.md](../docs/hanmeibench-data-acquisition-plan.md)
+- Core first principle: indirect expression is often risk management, not only hidden meaning.
+- Core benchmark field: `why_not_direct`.
+- Preferred v0.1 target: 60 items, not the earlier 24-item sketch.
+
+The plan separates five source routes:
+
+| Route | Role | Boundary |
+| --- | --- | --- |
+| Classical poetry anchors | Cultural calibration and high-compression examples | Use famous lines as anchors, not the main held-out test |
+| Existing pragmatics and emotion datasets | Baselines and method references | Do not collapse HanmeiBench into generic implicature or emotion-cause detection |
+| Controlled stimuli | Main publishable v0.1 data source | Research-team-authored variants reduce contamination, copyright, and privacy risk |
+| Human-elicited daily indirect expression | Contemporary language grounding | Prefer scenario writing and consented explanations over social-media scraping |
+| Modern literature, talks, and media | Theory inspiration and later extension | Do not release copyrighted text or transcripts without permission |
+
+The recommended v0.1 dataset is:
+
+| Category | Count | Purpose |
+| --- | ---: | --- |
+| Classical anchor | 12 | Calibrate culturally legible cases such as `寒梅著花未` |
+| Classical homomorphic variants | 12 | Test whether models transfer the pattern beyond memorized famous lines |
+| Daily conversation | 12 | Test ordinary self-protective indirectness |
+| Digital social context | 12 | Test platform-era indirect emotion and attachment signals |
+| Negative and contrast controls | 12 | Prevent rewarding over-psychologizing |
+
+The strongest methodological decision is to make the dataset contrastive. A model should not only answer:
+
+> What does this mean?
+
+It should answer:
+
+> Why might the speaker choose this indirect expression instead of the direct alternative?
+
+That moves the task from ordinary nonliteral understanding into counterfactual pragmatic reasoning.
+
+Key annotation fields should include:
+
+- `surface_text`
+- `context`
+- `literal_meaning`
+- `direct_alternative`
+- `hidden_intent`
+- `hidden_affect`
+- `defense_mechanism`
+- `why_not_direct`
+- `social_risk`
+- `reception_risk`
+- `cultural_frame`
+- `acceptable_interpretations`
+- `overinterpretation_boundary`
+- `response_quality_target`
+- `license`
+- `source_url`
+
+The immediate next gate is not model running. The next gate is to draft the first 60-item candidate table with source route, license status, direct alternative, `why_not_direct` hypothesis, and negative-control pairing.
+
 ## Research Leads To Verify
 
 These came from the conversation and should be verified before citation:
 
 - Theory-of-mind testing in large language models and humans.
+- OpenToM and higher-order ToM benchmarks.
+- CEI-style benchmarks for pragmatic reasoning in complex emotional and social contexts.
+- ALTPRAG or alternatives-based pragmatics evaluation.
+- Implicature-aware prompting in human-LLM interaction.
+- Manner implicature evaluation in LLMs.
+- Chinese conversational implicature benchmarks such as SwordsmanImp.
+- Functional theory-of-mind critiques of static ToM benchmarks.
+- Multimodal ToM benchmarks such as MoMentS.
+- Generated story prompting or StorySim-style contamination-resistant ToM evaluation.
 - Neural theory-of-mind limits in large language models.
 - LLM pragmatics and indirect-request interpretation.
 - Studies on whether LLMs understand puns or only recognize joke-like patterns.

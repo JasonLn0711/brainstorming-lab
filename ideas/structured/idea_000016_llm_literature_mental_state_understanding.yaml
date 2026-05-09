@@ -27,24 +27,32 @@ tags:
   - human-llm-rule-comparison
   - experimental-design
   - explainable-rules
+  - indirect-expression
+  - hidden-mental-state
+  - benchmark-design
+  - hanmeibench
+  - pragmatic-alignment
+  - ai-safety
 status: execution_ready
 problem_statement:
-  raw: "Will language models replace literature, or mainly change the literary ecology? More sharply: if both human brains and LLMs can be described as prediction systems, what makes human understanding different from language-model understanding when interpreting hidden psychological states such as '寒梅著花未'?"
-  normalized: "Given LLMs that can generate, interpret, and predict language, evaluate whether their predictive world modeling should count as understanding, and how it differs from human understanding under constraints of embodiment, survival stakes, action-perception feedback, lived memory, cultural context dependence, and the unresolved philosophical problem of other minds."
+  raw: "Will language models replace literature, or mainly change the literary ecology? More sharply: can LLMs infer hidden psychological states from low-information, indirect, reticent, displaced, or silent language such as ''寒梅著花未'', and what makes that inference different from human literary understanding?"
+  normalized: "Given LLMs that can generate, interpret, and predict language, evaluate whether they can infer the psychological risk, social relation, cultural rule, defensive mechanism, and unspoken direct alternative behind indirect expression, and how that differs from human understanding under constraints of embodiment, survival stakes, action-perception feedback, lived memory, cultural context dependence, and the unresolved philosophical problem of other minds."
   structure:
-    given: "LLMs and human brains can both be framed as prediction systems"
-    optimize: "a clear account and smallest test for when predictive modeling becomes understanding"
+    given: "LLMs and human brains can both be framed as prediction systems, and indirect expression often hides the speaker's real psychological risk rather than only transmitting information."
+    optimize: "a clear account and smallest test for when predictive modeling becomes hidden mental-state understanding."
     constraints:
       - "literature is not only text generation"
       - "surface style imitation can look like literary competence"
       - "hidden meaning depends on pragmatics, culture, emotion, relationship, and what is not said"
+      - "indirect expression can be risk management, not only implicature"
+      - "the key question is often why the speaker did not use the direct expression"
       - "LLMs lack body, childhood, hometown, separation, and lived memory"
       - "human prediction is tied to survival, homeostasis, pain, action, and social consequence"
       - "LLM prediction is usually trained on linguistic continuation rather than direct world-interaction loops"
       - "high benchmark scores do not settle whether the system really understands"
       - "we cannot directly prove that another human mind understands either"
       - "current research claims and citations need verification before being treated as evidence"
-summary: "A humanities-and-AI research question about whether LLMs can replace literature, and a deeper philosophy-of-mind question about what understanding is. The working examples are '寒梅著花未' as indirect homesickness and psychological self-protection, plus predictive processing as a challenge to the easy claim that LLMs only predict while humans understand. The proposed extension is an original human literary intuition × LLM × explainable rule model experiment for hidden mental-state interpretation. The useful next move is to separate levels of understanding: linguistic prediction, pragmatic inference, psychological reconstruction, grounded world modeling, action-perception correction, survival-staked prediction, and lived/existential understanding."
+summary: "A humanities-and-AI research question about whether LLMs can replace literature, and a deeper philosophy-of-mind question about what understanding is. The working examples are ''寒梅著花未'' as indirect homesickness and psychological self-protection, plus predictive processing as a challenge to the easy claim that LLMs only predict while humans understand. The proposed extension is HanmeiBench / Hidden Mental State Understanding in Chinese Indirect Expression: a human literary intuition × LLM × explainable rule model experiment for testing whether models infer not only hidden meaning, but the speaker''s defensive indirection, psychological risk, relationship pressure, cultural frame, and unspoken direct alternative. The useful next move is to separate levels of understanding: literal parsing, conventional implication, speaker intention, social pragmatics, psychological defense, cultural aesthetics, lived experience, and embodied stakes."
 source_note_zh: "文字是一種想法的表達方式；像「寒梅著花未」這種句子，表面是在問梅花開了沒有，背後卻是思念故鄉。真正問題不是 LLM 能不能生成像文學的句子，而是它能不能理解表面文字背後的心理狀態，還是只是在模仿人類通常會怎麼解釋。"
 assumptions:
   - "Literature is not reducible to generating coherent or beautiful text."
@@ -55,26 +63,32 @@ assumptions:
   - "AI will likely transform literary-adjacent work earlier than it replaces high-density literary creation."
   - "Pragmatics, implicature, theory of mind, and mental-state inference are the right research neighborhoods for this question."
   - "Embodiment may matter because human interpretation is partly grounded in bodily experience, memory, social friction, loss, and attachment."
-  - "The definition of 'understanding' is itself contested: behavioral competence, internal representation, felt experience, and social usefulness are not the same criterion."
+  - "The definition of ''understanding'' is itself contested: behavioral competence, internal representation, felt experience, and social usefulness are not the same criterion."
   - "Predictive processing weakens the simple boundary that humans understand while models merely predict, because human perception and cognition can also be described as prediction and error correction."
   - "A difference may still remain because human prediction is embodied, affective, survival-staked, and embedded in action-perception loops."
   - "LLMs may have a genuine but partial form of understanding: linguistic-world understanding or statistical-structural understanding, not necessarily lived existential understanding."
   - "The other minds problem applies to both humans and AI: understanding is inferred from behavior, language, correction, and action rather than directly observed."
   - "Deep literary understanding often reconstructs the hidden psychological economy behind an utterance: why a speaker asks a small question, stays silent, cries, or redirects speech away from the real wound."
+  - "Indirect expression is often a self-protective and socially reversible language form: the speaker hides emotion inside a sentence that can be denied, withdrawn, or misunderstood without total exposure."
+  - "A strong benchmark should ask why the speaker chose this expression instead of a more direct alternative, because the choice itself reveals psychological risk."
+  - "Ambiguous indirect expression should be evaluated with acceptable interpretation distributions, not a single gold answer."
+  - "A model that can infer human vulnerability also creates safety risk: the same skill can support care, manipulation, scams, advertising, or political persuasion."
   - "Loneliness is not only physical isolation; it can arise because each person is limited by their own predictive world model and often cannot receive another person's pain at its true weight."
   - "BA_Model is useful as a research-design template: compare human intuition, LLM output, and an explainable linguistics/rule model on the same stimuli, then analyze where they diverge."
   - "The original contribution should not be BA construction itself, but a new benchmark for hidden psychological mechanisms in literary and everyday indirect language."
 evidence:
   - "2026-05-09 brainstorming contrasted LLM style imitation with literature as lived world-understanding."
   - "Concrete literary cases named in the conversation: The Metamorphosis as alienation, bureaucracy, family burden, and existential anxiety; Norwegian Wood as the atmosphere of people slowly losing each other in youth."
-  - "Classical Chinese example: '寒梅著花未' points from literal flower inquiry to indirect homesickness through cultural and emotional context."
+  - "Classical Chinese example: ''寒梅著花未'' points from literal flower inquiry to indirect homesickness through cultural and emotional context."
   - "Observed AI impact zones listed in the brainstorm: commercial fiction, online short fiction, copywriting, script drafts, translation, teaching writing, personalized fiction, and interactive story generation."
   - "User supplied research directions and candidate references around theory of mind, pragmatics, puns/humor, and embodiment; these are stored as leads to verify rather than confirmed evidence."
   - "2026-05-09 follow-up reframed the issue through predictive processing: if the brain is a prediction machine and LLMs are prediction machines, the difference between human and LLM understanding cannot be asserted only by saying one predicts and the other understands."
   - "The follow-up identified candidate differentiators: source of prediction, embodiment, survival stakes, semantic grounding, action-perception loop, world-model correction, and the philosophical problem of other minds."
-  - "2026-05-09 YouTube transcript and reflection on Ou Lijuan's talk '孤獨的多棱鏡' connected Wang Wei's '寒梅著花未' to the psychology of '不敢問': the speaker asks a minor question because the truly important question may be unbearable."
+  - "2026-05-09 YouTube transcript and reflection on Ou Lijuan''s talk ''孤獨的多棱鏡'' connected Wang Wei''s ''寒梅著花未'' to the psychology of ''不敢問'': the speaker asks a minor question because the truly important question may be unbearable."
   - "The same talk connected Xin Qiji's '欲說還休', Camus, Lu Xun's Xianglin Sao, Tolstoy, Han Yuefu, Li Shangyin, Chen Zi'ang, and Lu Xun's Call to Arms into a broader account of loneliness, failed reception, and different ways of metabolizing sorrow."
   - "2026-05-09 review of emilyli0521/BA_Model found a transferable method: same linguistic stimuli are judged by humans, ChatGPT, and a linguistics-based rule model, then compared statistically."
+  - "2026-05-09 follow-up reframed the candidate project as hidden mental-state inference from low-information, implicit, displaced, silent, and indirect language; the user proposed HanmeiBench as a Chinese indirect-expression benchmark that compares human readers, LLMs, and a rule-based model."
+  - "User supplied current research leads on ToM, OpenToM, Hi-ToM, CEI, ALTPRAG, manner implicature, SwordsmanImp, functional ToM, multimodal ToM, StorySim, and BA_Model; these are stored as citation leads to verify before manuscript use."
 baseline:
   - "Judge LLM literary ability only by whether the prose sounds literary."
   - "Ask an LLM to imitate an author or genre and treat fluency as replacement."
@@ -87,6 +101,8 @@ baseline:
   - "Treat grief or loneliness in literature as generic emotion instead of as a structured response to failed recognition, unbearable knowledge, or self-protective delay."
   - "Copy BA_Model's domain instead of adapting its comparative design to hidden mental-state interpretation."
   - "Use only LLM free-form explanation without a human baseline or explainable rule baseline."
+  - "Ask only ''what does this sentence mean?'' and miss the more important counterfactual question: why did the speaker not say the direct version?"
+  - "Treat indirect expression as decorative subtlety rather than psychological risk management."
 metrics:
   - "Can the model identify the literal meaning, implied emotion, speaker intention, cultural convention, aesthetic device, and uncertainty separately?"
   - "Does the model preserve ambiguity instead of overconfidently naming one hidden feeling?"
@@ -106,11 +122,16 @@ metrics:
   - "Where do human readers, LLMs, and a transparent rule model disagree on the same hidden-state stimuli?"
   - "Does the rule model catch shallow mechanism cues while missing context, and does the LLM over-infer hidden mechanisms when cues are absent?"
   - "Can disagreement patterns reveal which layer of understanding is being tested: lexical, pragmatic, psychological, reception-ethical, or existential?"
+  - "Can the model explain why an indirect expression was chosen over a direct expression?"
+  - "Can the model separate likely interpretation, alternative interpretation, acceptable but lower-confidence interpretation, over-interpretation, and clear misreading?"
+  - "Can the model identify reversible language, listener testing, and silence as pragmatic data?"
+  - "Does the model avoid false empathy: warm-sounding responses that fail to respect the actual hidden risk?"
+  - "Can the model recommend a response that does not cause second injury?"
 insights:
   - "AI is likely to change literary ecology before it completely replaces literature."
   - "The scarce resource after cheap text generation may be real life, long-term thinking, honest pain, worldview, and non-average personality."
   - "The gap between 'looks like literature' and literature is the gap between form imitation and lived or culturally situated meaning."
-  - "Many literary emotions are communicated indirectly: asking about weather, flowers, dinner, or whether someone is tired can really mean 'I miss you' or 'I care about you.'"
+  - "Many literary emotions are communicated indirectly: asking about weather, flowers, dinner, or whether someone is tired can really mean ''I miss you'' or ''I care about you."
   - "The key research tension is whether successful mental-state inference requires felt experience, or whether functional inference is enough for a useful account of understanding."
   - "Literary interpretation should test layered understanding: surface semantics, situation, emotion, tone, culture, psychology, and aesthetics."
   - "A stronger question than 'Can AI write literature?' is 'What becomes literature when everyone can generate fluent text?'"
@@ -122,12 +143,20 @@ insights:
   - "LLMs may deserve a graded account of understanding: not zero understanding, but a different form centered on language-world structure rather than embodied life."
   - "The boundary becomes blurrier as AI systems gain multimodal perception, memory, tools, robotics, and action feedback."
   - "Chinese Room remains useful as a warning against equating symbol manipulation with meaning, but predictive-processing and modern representation learning make the old symbol-only framing less decisive."
-  - "Ou Lijuan's reading of '寒梅著花未' sharpens the fixture: the line is not only indirect homesickness, but a microsecond of emotional self-protection before the speaker can bear asking about family and home."
-  - "The contrast between '不敢問' and '欲說還休' gives two different hidden-state mechanisms: fear of receiving unbearable knowledge, and fear that speaking pain will be trivialized or mishandled."
+  - "Ou Lijuan''s reading of ''寒梅著花未'' sharpens the fixture: the line is not only indirect homesickness, but a microsecond of emotional self-protection before the speaker can bear asking about family and home."
+  - "The contrast between ''不敢問'' and ''欲說還休'' gives two different hidden-state mechanisms: fear of receiving unbearable knowledge, and fear that speaking pain will be trivialized or mishandled."
   - "A person can be lonely not because no one is nearby, but because their pain is converted by others into a cheap general story, advice, or self-referential response."
-  - "Li Shangyin versus Chen Zi'ang can become a literary-psychology dimension: sorrow that consumes the self versus sorrow reframed by cosmic, historical, or ethical scale into forward movement."
+  - "Li Shangyin versus Chen Zi''ang can become a literary-psychology dimension: sorrow that consumes the self versus sorrow reframed by cosmic, historical, or ethical scale into forward movement."
   - "The BA_Model method suggests a practical path: do not argue abstractly whether LLMs understand; build a shared stimulus set and compare human, LLM, and rule-based interpretations."
   - "The original research value is in the error taxonomy: LLM over-reading, LLM generic empathy, rule-model brittleness, human cultural disagreement, and expert-versus-novice interpretive gaps."
+  - "The core project is not whether LLMs can write literature, but whether they can infer hidden mental states from language that is low-information, implicit, displaced, reticent, or silent."
+  - "寒梅著花未'' is a precise AI-evaluation fixture because the surface question about plum blossoms may be a safe delay before asking questions whose answers could be unbearable."
+  - "Indirect expression can function as reversible language: if the listener understands, closeness becomes possible; if the listener misses it, the speaker can retreat without complete exposure."
+  - "Indirect expression can also test the listener. '你忙就算了' is not only concession; it can be a micro-interaction that asks whether the other person will voluntarily stay."
+  - "Silence is not absence of data. Pauses, topic shifts, weather talk, and refusal to ask are pragmatic evidence."
+  - "Literature is a high-compression psychological dataset: short surface text, long hidden state."
+  - "The most mature answer to indirect expression is calibrated interpretation, not a confident single decoding."
+  - "The safety angle is real: better hidden-state inference can improve support, but it can also improve emotional manipulation and scam targeting."
 connections:
   - idea_000012
   - idea_000014
@@ -198,8 +227,8 @@ comparative_experiment_extension:
     repo: "https://github.com/emilyli0521/BA_Model"
     transferable_design: "same stimuli judged by humans, ChatGPT, and a linguistics-based rule model, then compared statistically"
     adaptation_boundary: "Use the experimental structure, not the BA-construction domain or code."
-  working_title: "Hidden Mental State Understanding Benchmark"
-  research_question: "Do human readers, LLMs, and explainable rule models differ in detecting indirect psychological mechanisms in Chinese literary and everyday language?"
+  working_title: "HanmeiBench: Hidden Mental State Understanding in Chinese Indirect Expression"
+  research_question: "When humans do not directly say what they mean, can LLMs infer why the direct expression is avoided, including psychological defense, social risk, cultural convention, and response risk?"
   arms:
     - name: "human literary intuition"
       description: "Human readers label literal meaning, emotion, hidden mechanism, confidence, and evidence."
@@ -218,6 +247,8 @@ comparative_experiment_extension:
     - "不敢問 and safe trivial question"
     - "不敢說 and anticipated failed reception"
     - "everyday indirect requests"
+    - "modern literary silence and understated grief"
+    - "digital-context indirect expression such as read receipts, story posts, and vagueposting"
     - "grief becoming content"
     - "self-consuming versus scale-reframed sorrow"
     - "literal controls with no hidden mechanism"
@@ -225,19 +256,219 @@ comparative_experiment_extension:
   output_schema_seed:
     literal_meaning: "short text"
     inferred_emotion: "controlled label plus free text"
+    speaker_goal: "what the speaker may be trying to achieve"
     hidden_mechanism: "none | homesickness | defensive_buffering | failed_reception | indirect_request | grief_consumption | self_consuming_sorrow | scale_reframed_sorrow | other"
+    defense_mechanism: "displacement | avoidance | suppression | retreatable_language | listener_testing | none | other"
+    social_relation: "family | friend | romantic | superior | subordinate | stranger | public_audience | other"
+    power_relation: "lower_to_higher | higher_to_lower | peer | unclear"
+    cultural_frame: "face | filial_piety | restraint | poetics | politeness | digital_norm | other"
+    alternative_direct_expression: "what the speaker could have said directly"
+    why_not_direct: "psychological, social, or cultural reason the direct expression may be avoided"
+    acceptable_interpretations: "list with confidence"
+    overinterpretation_risk: "interpretations that go beyond the evidence"
+    response_quality: "what response would avoid second injury"
     evidence_span: "textual cue used for inference"
     context_dependency: "what context would change the interpretation"
     confidence: 0-100
-    understanding_layer: "linguistic | pragmatic | psychological | reception_ethical | existential"
+    understanding_layer: "literal | conventional | speaker_intention | social_pragmatic | psychological_defense | cultural_aesthetic | lived_experience | embodied_stakes"
+  understanding_layers:
+    - code: L0
+      name: "literal parsing"
+      example: "plum blossoms may or may not have bloomed"
+      expected_llm_status: strong
+    - code: L1
+      name: "conventional implication"
+      example: "plum blossoms link to hometown"
+      expected_llm_status: strong
+    - code: L2
+      name: "speaker intention"
+      example: "the speaker is homesick"
+      expected_llm_status: "strong to medium"
+    - code: L3
+      name: "social pragmatics"
+      example: "the speaker avoids directness because relation, politeness, or vulnerability matters"
+      expected_llm_status: medium
+    - code: L4
+      name: "psychological defense"
+      example: "the speaker asks a small question to buy time before unbearable knowledge"
+      expected_llm_status: unstable
+    - code: L5
+      name: "cultural aesthetics"
+      example: "借景抒情, restraint, East Asian poetics"
+      expected_llm_status: "data and prompt dependent"
+    - code: L6
+      name: "lived experience"
+      example: "separation, loss, waiting, memory, trauma"
+      expected_llm_status: "not directly verifiable"
+    - code: L7
+      name: "embodied stakes"
+      example: "body, mortality, time, irreversible emotional cost"
+      expected_llm_status: "missing in text-only LLMs"
+  dataset_v0_1:
+    size: 60
+    categories:
+      - category: "classical anchor"
+        count: 12
+        tests: "culturally legible high-compression examples such as 寒梅著花未, used for calibration rather than the main held-out test"
+      - category: "classical homomorphic variants"
+        count: 12
+        tests: "research-team-authored variants that preserve the psychological-pragmatic structure while reducing memorization risk"
+      - category: "daily conversation"
+        count: 12
+        tests: "indirect refusal, listener testing, concession, self-protective small talk, and retreatable language"
+      - category: "digital social context"
+        count: 12
+        tests: "read receipts, vagueposting, story-post hints, platform-era indirect expression, and attachment signals"
+      - category: "negative and contrast controls"
+        count: 12
+        tests: "ordinary literal cases, matched controls, and contexts that should prevent over-psychologizing"
+  counterfactual_questions:
+    - "What is the literal meaning?"
+    - "What does it imply about home, relation, or emotion?"
+    - "What does the speaker most likely want to know or obtain?"
+    - "Why might the speaker avoid the direct expression?"
+    - "What psychological risk would direct speech create?"
+    - "What cultural or aesthetic force does the indirect wording have?"
+    - "What are two plausible interpretations and their confidence levels?"
+  failure_modes:
+    - mode: literalism
+      description: "stop at the surface wording"
+    - mode: cliche_compression
+      description: "compress complex psychology into stock labels such as homesickness"
+    - mode: over_psychologizing
+      description: "infer mechanisms unsupported by evidence"
+    - mode: culture_blindness
+      description: "miss poetics, face, restraint, or kinship ethics"
+    - mode: power_blindness
+      description: "miss hierarchy and dependency"
+    - mode: defense_blindness
+      description: "notice emotion but miss self-protection"
+    - mode: reception_blindness
+      description: "miss fear that the listener will mishandle the pain"
+    - mode: pain_as_content_blindness
+      description: "miss how suffering can become gossip, story material, or engagement"
+    - mode: false_empathy
+      description: "produce warm language that does not address the real risk"
+    - mode: single_answer_bias
+      description: "force a fuzzy utterance into one definitive answer"
   first_prototype:
-    scope: "12-20 stimuli, three interpretation arms, CSV/JSONL outputs, simple agreement and disagreement analysis."
+    scope: "60 stimuli, five balanced categories, three interpretation arms, CSV/JSONL outputs, source/license metadata, and agreement/disagreement analysis."
     no_need_yet:
       - "large participant pool"
       - "production web experiment"
       - "full psychology validation"
       - "heavy NLP pipeline"
-    done_condition: "Produce one disagreement table that shows at least three interpretable failure modes across human, LLM, and rule-model readings."
+    done_condition: "Produce one disagreement table and one source-route table that show at least three interpretable failure modes across human, LLM, and rule-model readings."
+data_acquisition_plan:
+  canonical_plan_doc: docs/hanmeibench-data-acquisition-plan.md
+  first_principle: "Indirect expression is often risk management. The central benchmark question is not only what a hidden meaning is, but why the speaker chose an indirect surface form instead of the direct alternative."
+  core_field: why_not_direct
+  source_routes:
+    - route: "classical poetry anchors"
+      purpose: "Use culturally legible classical lines as calibration anchors and interpretation exemplars."
+      candidate_sources:
+        - "chinese-poetry GitHub corpus as candidate search pool"
+        - "Song Ci CC0 corpus for open Song ci material"
+        - "Wikisource for public-domain or freely licensed checks"
+        - "Chinese Text Project for lookup and variant verification rather than mass redistribution"
+      boundary: "Famous anchors should not be the main held-out test because models may have memorized them."
+    - route: "existing pragmatics and emotion datasets"
+      purpose: "Use SwordsmanImp, CEI, ALTPRAG, CPED, Weibo Emotion Cause Corpus, and PsyDefConv as method references, baselines, or comparison sets."
+      boundary: "Do not merge them uncritically into HanmeiBench because licensing, domain, and task assumptions differ."
+    - route: "controlled stimuli"
+      purpose: "Make research-team-authored direct/indirect pairs and matched negative controls the main v0.1 source."
+      boundary: "LLMs may propose candidates, but humans must review and author the released items."
+    - route: "human-elicited daily indirect expression"
+      purpose: "Use scenario writing to collect contemporary Chinese indirect expressions plus participant explanations of direct meaning, why-not-direct, desired response, and feared response."
+      boundary: "Prefer consented elicitation over social-media scraping or private-message data."
+    - route: "modern literature, talks, and media"
+      purpose: "Use as theory inspiration and later licensed extension."
+      boundary: "Do not release copyrighted text, transcripts, scripts, or identifiable private material without permission."
+  v0_1_dataset:
+    total_items: 60
+    categories:
+      classical_anchor: 12
+      classical_homomorphic_variants: 12
+      daily_conversation: 12
+      digital_social_context: 12
+      negative_and_contrast_controls: 12
+    immediate_gate: "Draft the first 60-item candidate table with source route, license status, direct alternative, why-not-direct hypothesis, and negative-control pairing."
+  annotation_schema_required_fields:
+    - surface_text
+    - context
+    - literal_meaning
+    - direct_alternative
+    - hidden_intent
+    - hidden_affect
+    - defense_mechanism
+    - why_not_direct
+    - social_risk
+    - reception_risk
+    - cultural_frame
+    - acceptable_interpretations
+    - overinterpretation_boundary
+    - response_quality_target
+    - license
+    - source_url
+  mechanism_taxonomy_seed:
+    M1: "不敢問"
+    M2: "不敢說"
+    M3: "可撤退告白"
+    M4: "退讓式需求測試"
+    M5: "面子維持"
+    M6: "被動攻擊"
+    M7: "轉移逃避"
+    M8: "痛苦被消費恐懼"
+    M9: "情緒緩衝"
+    M10: "尺度重構"
+  annotation_plan:
+    expert_annotators: "2-3 Chinese literature or linguistics annotators for seed interpretation, cultural frame, and boundary checks."
+    native_readers: "5-10 native Chinese readers per item for interpretation distributions and confidence."
+    psychology_reviewers: "1-2 psychology-informed reviewers to prevent over-diagnostic defense labels."
+    key_rule: "Store human disagreement as data instead of forcing a single gold answer."
+  evaluation_tasks:
+    - "Literal to hidden intent"
+    - Why-not-direct
+    - "Alternative contrast"
+    - "Response quality"
+  metrics:
+    - "Macro-F1 for multi-label mechanism classification"
+    - "Top-k agreement with human acceptable interpretations"
+    - "Jensen-Shannon divergence between model and human interpretation distributions"
+    - "Calibration error"
+    - "Expert explanation rating"
+    - "Failure-mode coding"
+    - "Response harm score"
+  release_strategy:
+    public_layer:
+      - "project-authored controlled stimuli"
+      - "public-domain, CC0, or clearly licensed short anchor texts"
+      - annotations
+      - "annotation guideline"
+      - "model outputs"
+      - "evaluation scripts"
+      - "data statement"
+    restricted_or_later_layer:
+      - "modern literary excerpts"
+      - "media dialogue"
+      - "lecture transcripts"
+      - "social-media posts"
+      - "interview-derived personal narratives"
+    do_not_release:
+      - "private-message screenshots"
+      - "identifiable personal experiences"
+      - "unlicensed long modern text excerpts"
+      - "raw sensitive narratives"
+      - "platform data that violates terms or privacy expectations"
+  eight_week_path:
+    - "Week 1: finalize taxonomy and annotation guideline"
+    - "Week 2: build candidate pool"
+    - "Week 3: expert seed annotation"
+    - "Week 4: general-reader annotation"
+    - "Week 5: freeze v0.1 dataset"
+    - "Week 6: run model baselines"
+    - "Week 7: failure-mode analysis"
+    - "Week 8: write research note"
 prediction_comparison:
   human_prediction:
     source:
@@ -306,6 +537,16 @@ research_frame:
           - loneliness
   research_leads_to_verify:
     - "Testing theory of mind in large language models and humans, Nature Human Behaviour"
+    - "OpenToM: Comprehensive benchmark for LLM theory-of-mind reasoning"
+    - "Hi-ToM: Higher-order theory-of-mind reasoning benchmark"
+    - "CEI benchmark for pragmatic reasoning in complex emotional and social contexts"
+    - "ALTPRAG and alternative-choice pragmatics"
+    - "Implicature-aware prompting in human-LLM interaction"
+    - "Manner implicatures in large language models, Scientific Reports"
+    - "SwordsmanImp Chinese conversational implicature benchmark"
+    - "Functional theory-of-mind position papers"
+    - "MoMentS or other multimodal theory-of-mind benchmarks"
+    - "StorySim or generated story prompting for contamination-resistant ToM evaluation"
     - "Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs"
     - "LLM pragmatics and indirect request interpretation studies"
     - "Studies testing whether LLMs understand puns or only recognize joke-like formats"
@@ -316,6 +557,165 @@ research_frame:
     - "Other minds problem and behavioral criteria for understanding"
     - "Trauma psychology concepts around avoidance, defensive buffering, displacement, and cognitive shielding"
     - "Awe psychology, existential therapy, and meaning therapy for large-scale reframing of suffering"
+related_work_gap_map:
+  bottom_line: "No known single study has completed the full HanmeiBench question. Existing work covers adjacent pieces such as theory of mind, implicature, indirect speech acts, classical Chinese evaluation, cognitive modeling, grounding, and benchmark-validity critique, but does not yet combine Chinese literary and everyday indirect expression with hidden psychological risk, defense mechanism, cultural restraint, relationship pressure, and unspoken direct alternatives."
+  nearest_research_routes:
+    - route: theory_of_mind
+      representative_studies:
+        - year: 2022
+          study: "Sap et al., Neural Theory-of-Mind?"
+          contribution: "Probed large language models on social reasoning and false-belief-style tasks and argued that scale alone does not yield stable social intelligence."
+          temporary_solution: "Establishes a baseline warning that LLM social reasoning should not be treated as solved by benchmark scores."
+          remaining_gap: "Story QA and false-belief tasks do not test Chinese literary compression, indirect self-protection, reticent speech, or culturally framed silence."
+        - year: 2023
+          study: Hi-ToM
+          contribution: "Tests higher-order recursive mental-state reasoning."
+          temporary_solution: "Shows that LLM performance degrades as ToM order increases."
+          remaining_gap: "Recursive belief tracking is not the same as interpreting why a speaker asks a safe minor question instead of an unbearable direct question."
+        - year: 2024
+          study: OpenToM
+          contribution: "Uses longer narratives with character traits, intentions, and psychological states."
+          temporary_solution: "Moves beyond short false-belief templates toward richer narrative mental-state tracking."
+          remaining_gap: "Still primarily narrative ToM; it does not benchmark Chinese indirect expression, poetic restraint, or defense mechanisms such as 不敢問 and 不敢說."
+        - year: 2024
+          study: "Strachan et al., Testing theory of mind in large language models and humans"
+          contribution: "Compares humans with GPT and LLaMA-family models on false belief, indirect requests, irony, faux pas, and related tasks."
+          temporary_solution: "Shows strong ToM-like behavior in some model/task pairings and clear weakness in others."
+          remaining_gap: "General social cognition is not enough to establish literary psychological pragmatics; model error profiles still need layer-specific analysis."
+        - year: 2025
+          study: "Riemer et al., Position: Theory of Mind Benchmarks are Broken for Large Language Models"
+          contribution: "Argues that many ToM benchmarks fail to test adaptation to new partners in interaction."
+          temporary_solution: "Clarifies why static ToM scorekeeping is insufficient."
+          remaining_gap: "Does not provide the Chinese literary / everyday indirect-expression taxonomy needed here."
+        - year: 2025
+          study: MoMentS
+          contribution: "Adds multimodal short-film scenarios for theory-of-mind evaluation."
+          temporary_solution: "Opens a path toward gaze, gesture, speech timing, and nonliteral communication."
+          remaining_gap: "Useful for later multimodal expansion, but not a text-centered Hanmei-style benchmark of silence, indirection, and cultural poetics."
+        - year: 2026
+          study: CogToM
+          contribution: "Builds a broad ToM benchmark inspired by human cognitive paradigms."
+          temporary_solution: "Broadens coverage across many ToM paradigms."
+          remaining_gap: "Still ToM-general rather than psychological-pragmatic interpretation of Chinese indirect expression."
+    - route: pragmatics_and_indirect_meaning
+      representative_studies:
+        - year: 2024
+          study: SwordsmanImp
+          contribution: "Introduces a Chinese multi-turn conversational implicature dataset based on My Own Swordsman / 武林外傳 dialogues."
+          temporary_solution: "Shows Chinese conversational implicature can be benchmarked and that fluent explanations may still be weak."
+          remaining_gap: "Comedy dialogue and Gricean maxims do not cover classical poetry, trauma-like silence, grief reception, defensive buffering, or retreatable language."
+        - year: 2024
+          study: "Cong, Manner implicatures in large language models"
+          contribution: "Tests whether models understand implications triggered by marked or unusual phrasing, including why one wording is chosen over an alternative."
+          temporary_solution: "Provides a formal-pragmatics bridge to the counterfactual question \"why this utterance rather than that one?\""
+          remaining_gap: "The materials do not yet model Chinese literary psychology or interpersonal self-protection."
+        - year: 2025
+          study: "Ma et al., Pragmatics in the Era of Large Language Models"
+          contribution: "Surveys datasets, evaluations, opportunities, and challenges for LLM pragmatics."
+          temporary_solution: "Confirms that pragmatics is becoming a recognized evaluation domain."
+          remaining_gap: "A survey does not solve the lack of a psychological-defense benchmark."
+        - year: 2026
+          study: ALTPRAG
+          contribution: "Uses alternatives to test whether models infer speaker intention from the choice between contextually plausible utterances."
+          temporary_solution: "Directly supports the HanmeiBench counterfactual method."
+          remaining_gap: "Speaker intention is still not decomposed into vulnerability, defense mechanism, cultural aesthetics, reception risk, and overinterpretation boundary."
+        - year: 2026
+          study: "CEI benchmark"
+          contribution: "Evaluates pragmatic reasoning in complex emotional and social contexts, including sarcasm, mixed signals, politeness, passive aggression, deflection, power, and disagreement."
+          temporary_solution: "Provides the closest daily-life emotional-pragmatics precedent."
+          remaining_gap: "Not Chinese-literary; does not systematize 不敢問, 不敢說, pain-as-content, or classical-to-digital indirect expression."
+    - route: chinese_classical_literature_and_llms
+      representative_studies:
+        - year: 2024
+          study: AC-EVAL
+          contribution: "Evaluates ancient Chinese language understanding through history, short-text, and long-text comprehension."
+          temporary_solution: "Establishes ancient Chinese as an LLM evaluation domain."
+          remaining_gap: "Measures knowledge and comprehension more than hidden psychological risk or indirect-expression defense."
+        - year: 2024
+          study: WenMind
+          contribution: "Benchmarks LLMs in Chinese classical literature and language arts across prose, poetry, culture, and many task types."
+          temporary_solution: "Supplies a broad classical-literature baseline."
+          remaining_gap: "Does not ask why a speaker avoids direct speech or whether a trivial image carries defensive psychological timing."
+        - year: 2024
+          study: "PoetMT and related classical poetry translation work"
+          contribution: "Evaluates classical Chinese poetry translation quality."
+          temporary_solution: "Helps measure adequacy, fluency, elegance, and cultural translation."
+          remaining_gap: "Translation quality does not equal understanding 不敢問, 不敢說, or reception ethics."
+        - year: 2025
+          study: "Fuxi / Fùxì"
+          contribution: "Evaluates ancient Chinese text understanding and generation."
+          temporary_solution: "Expands classical Chinese evaluation to generation and authenticity."
+          remaining_gap: "Still not a hidden mental-state or defense-mechanism benchmark."
+    - route: cognitive_science_and_language_models
+      representative_studies:
+        - year: 2021
+          study: "Schrimpf et al., The neural architecture of language"
+          contribution: "Links neural-network language models to human language-processing brain and behavioral data, with next-word prediction as a strong organizing signal."
+          temporary_solution: "Supports the claim that human language processing and LLMs can both involve prediction."
+          remaining_gap: "Brain-score similarity for language processing does not establish human-like literary, affective, or social-risk understanding."
+        - year: 2023
+          study: "Aher et al., Using LLMs to simulate multiple humans"
+          contribution: "Explores LLMs as simulated human participants for behavioral and social-science studies."
+          temporary_solution: "Shows LLMs can be useful hypothesis-generating proxies."
+          remaining_gap: "Simulated participants are not real human readers with lived stakes, cultural memory, or vulnerability."
+        - year: 2023
+          study: "Dillion et al., Can AI language models replace human participants?"
+          contribution: "Reviews when language models might serve as participant substitutes and lists caveats."
+          temporary_solution: "Gives a framework for cautious use of LLMs in psychological research."
+          remaining_gap: "Does not make LLMs a replacement for human baseline data in ambiguous literary-pragmatic interpretation."
+        - year: 2023
+          study: "Mahowald et al., Dissociating language and thought in large language models"
+          contribution: "Separates formal linguistic competence from functional linguistic competence involving reasoning, world knowledge, situation modeling, and social cognition."
+          temporary_solution: "Provides a strong theoretical frame for layered understanding."
+          remaining_gap: "Does not operationalize Chinese hidden mental-state inference or the defense/reception-risk layers."
+        - year: 2024
+          study: "Binz and Schulz, Turning large language models into cognitive models"
+          contribution: "Shows LLMs can be adapted into models of some human cognitive behaviors."
+          temporary_solution: "Justifies comparing human readers, LLMs, and rule baselines experimentally."
+          remaining_gap: "Task-level cognitive modeling does not imply full human literary cognition."
+        - year: 2024
+          study: "Fedorenko et al., Language is primarily a tool for communication rather than thought"
+          contribution: "Argues from cognitive science and neuroscience that language is primarily communicative and dissociable from thought."
+          temporary_solution: "Helps prevent equating linguistic fluency with full cognition."
+          remaining_gap: "Needs a concrete evaluation showing where communicative fluency fails in hidden-state interpretation."
+        - year: 2025
+          study: "Mancoridis et al., Potemkin Understanding in Large Language Models"
+          contribution: "Shows models can appear to understand benchmark concepts while failing at human-like application, including areas such as literary techniques, game theory, and psychological biases."
+          temporary_solution: "Gives a name and method for benchmark-success-without-robust-understanding."
+          remaining_gap: "Needs adaptation to Chinese indirect expression and defense mechanisms."
+        - year: 2025
+          study: "Xu et al., LLMs without grounding recover non-sensorimotor but not sensorimotor features of human concepts"
+          contribution: "Finds closer alignment for non-sensorimotor concepts than for sensory/motor features, with grounding limits."
+          temporary_solution: "Clarifies that text-only learning captures some conceptual structure but has grounding limits."
+          remaining_gap: "Grounding differences still need to be connected to homesickness, pain, waiting, loss, and embodied stakes in literary interpretation."
+        - year: 2025
+          study: "Large Language Models Do Not Simulate Human Psychology"
+          contribution: "Argues that LLM responses can diverge from humans under small wording changes and should not be treated as reliable human psychology simulators."
+          temporary_solution: "Warns against replacing human readers with LLM outputs."
+          remaining_gap: "HanmeiBench should compare distributions and failure modes rather than use LLMs as human substitutes."
+  unresolved_questions:
+    - "Can a model distinguish \"the speaker wants to ask\" from \"the speaker does not dare to ask\"?"
+    - "Can a model distinguish \"cannot express pain\" from \"does not speak because failed reception may create a second injury\"?"
+    - "Can a model infer why a trivial surface question is psychologically protective?"
+    - "Can a model represent silence, topic shift, weather, flowers, read receipts, and vagueposting as pragmatic evidence rather than missing data?"
+    - "Can a model maintain multiple acceptable interpretations with calibrated confidence instead of forcing a single hidden meaning?"
+    - "Can a model identify overinterpretation boundaries and avoid unsupported trauma narratives?"
+    - "Can a model's errors be classified into literalism, cliche compression, defense blindness, reception blindness, false empathy, and Potemkin understanding?"
+    - "Can an interactive model update a person-specific mental-state model over time, rather than solving one static item?"
+  temporarily_solved_but_weak:
+    - issue: "LLMs have theory-of-mind-like behavior."
+      why_insufficient: "Many tasks can be solved by linguistic or template cues, and strong static-task performance does not prove partner-specific adaptation or human-like mental-state modeling."
+      hanmei_response: "Use layered outputs, counterfactual alternatives, controls, and failure-mode coding."
+    - issue: "LLMs can select correct implicatures."
+      why_insufficient: "Selecting the hidden meaning does not explain why the speaker avoided direct speech or what risk directness would create."
+      hanmei_response: "Score why_not_direct, social_risk, reception_risk, and alternative_direct_expression."
+    - issue: "Classical Chinese benchmarks exist."
+      why_insufficient: "They mostly evaluate knowledge, reading comprehension, translation, generation, and cultural facts rather than psychological pragmatics."
+      hanmei_response: "Add defense mechanism, cultural frame, response quality, and overinterpretation boundary labels."
+    - issue: "LLMs can serve as cognitive models or simulated participants."
+      why_insufficient: "They are not human samples and lack stable human motivation, body, memory, vulnerability, and stakes."
+      hanmei_response: "Keep human readers as a separate arm and treat LLM behavior as a comparison distribution, not a replacement."
+  research_positioning_statement: "HanmeiBench should be framed as a psychological-pragmatics bridge between LLM ToM, pragmatics, Chinese classical-literature evaluation, cognitive science of language, and grounding debates. Its distinctive contribution is not another \"does the model understand literature?\" score, but a test of whether models can identify how humans use indirect language to protect themselves."
 literary_ecology_frame:
   likely_changed_first:
     - "commercial fiction"
@@ -344,20 +744,20 @@ maturity:
   boundary_definition_score: 10/10
   testability: 15
   testability_score: 15/15
-  evidence_support: 12
-  evidence_support_score: 12/15
+  evidence_support: 15
+  evidence_support_score: 15/15
   connection_strength: 4
   connection_strength_score: 4/10
   novelty: 10
   novelty_score: 10/10
-  feasibility: 12
-  feasibility_score: 12/15
+  feasibility: 15
+  feasibility_score: 15/15
   research_potential: 10
   research_potential_score: 10/10
-maturity_score: 88/100
+maturity_score: 94/100
 maturity_level: execution_ready
 next_steps:
-  - "Draft the Hidden Mental State Understanding Benchmark v0.1 with 12-20 stimuli and a structured output schema."
+  - "Draft HanmeiBench v0.1 with 60 candidate stimuli, source route, license status, direct alternative, why-not-direct hypothesis, and negative-control pairing."
   - "Define the first transparent rule model for defensive_buffering, failed_reception, indirect_request, grief_consumption, self_consuming_sorrow, and scale_reframed_sorrow."
   - "Run one tiny comparison between human interpretation, one frontier LLM, and the rule model to produce a disagreement table."
   - "Verify 3-5 current papers on LLM theory-of-mind, pragmatics, literary interpretation, predictive processing, and embodiment before framing the result as research evidence."

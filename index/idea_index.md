@@ -3,10 +3,10 @@
 | ID | Title | Maturity | Level | Status | Next Step | Path |
 | --- | --- | ---: | --- | --- | --- | --- |
 | `idea_000008` | Learned conductor for medical AI research workflows | 94/100 | `execution_ready` | `execution_ready` | Record the result of 吳冠廷's Sakana AI/Fugu application when known. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
+| `idea_000016` | LLM Literature Mental State Understanding | 94/100 | `execution_ready` | `execution_ready` | Draft HanmeiBench v0.1 with 60 candidate stimuli, source route, license status, direct alternative, why-not-direct hypothesis, and negative-control pairing. | `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml` |
 | `idea_000007` | Signal Market for low-cost behavior discovery | 92/100 | `execution_ready` | `execution_ready` | Draft a tiny Fugu-style conductor fixture for the scam system with six synthetic cases: two obvious cases, two hard negatives, one outlier, and one insufficient-evidence case. | `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml` |
 | `idea_000015` | Layered Voice Enhancement in Consumer VoIP Calls | 92/100 | `execution_ready` | `execution_ready` | Verify official Apple/iOS and LINE/WebRTC/codec documentation enough to label confirmed versus inferred processing layers. | `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml` |
 | `idea_000011` | AI-assisted statement interview question recommendation system | 89/100 | `execution_ready` | `executing` | Install Ollama and pull gpt-oss:20b, then run the MVP-0 CLI without --mock. | `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml` |
-| `idea_000016` | LLM Literature Mental State Understanding | 88/100 | `execution_ready` | `execution_ready` | Draft the Hidden Mental State Understanding Benchmark v0.1 with 12-20 stimuli and a structured output schema. | `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml` |
 | `idea_000012` | PhD problem-definition thinking system | 87/100 | `execution_ready` | `execution_ready` | Apply the one-page problem-definition card to one active lane, preferably idea_000002 or idea_000007, after a concrete implementation or mental-execution friction pass. | `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml` |
 | `idea_000014` | Journal Intelligence System | 86/100 | `execution_ready` | `execution_ready` | Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide. | `ideas/structured/idea_000014_journal_intelligence_system.yaml` |
 | `idea_000010` | AI-assisted smart mosquito trap | 84/100 | `execution_ready` | `execution_ready` | Review the v1 ESP32 build note and decide whether to buy the minimum parts. | `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml` |
@@ -37,5 +37,5 @@
 - idea_000013 - ISO 27001 high school explainer and compliance teaching module - 84/100 - execution_ready
 - idea_000014 - Journal Intelligence System - 86/100 - execution_ready
 - idea_000015 - Layered Voice Enhancement in Consumer VoIP Calls - 92/100 - execution_ready
-- idea_000016 - LLM Literature Mental State Understanding - 88/100 - execution_ready
+- idea_000016 - LLM Literature Mental State Understanding - 94/100 - execution_ready
 - idea_000017 - Externalized cognition OS for human-AI planning - 78/100 - research_candidate

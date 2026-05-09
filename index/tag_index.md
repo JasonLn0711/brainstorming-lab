@@ -2,11 +2,11 @@
 
 ## action-perception-loop
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## aesthetics
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## ai-agents
 
@@ -18,7 +18,11 @@
 
 ## ai-humanities
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## ai-safety
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## ai-security
 
@@ -53,6 +57,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## benchmark-design
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## bounded-rationality
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -67,7 +75,7 @@
 
 ## classical-chinese
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## cognition-os
 
@@ -130,7 +138,7 @@
 
 ## defensive-buffering
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## descriptive-understanding
 
@@ -170,7 +178,7 @@
 
 ## embodiment
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## endpoint-management
 
@@ -200,7 +208,7 @@
 
 ## experimental-design
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## explainable-clustering
 
@@ -208,7 +216,7 @@
 
 ## explainable-rules
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## exploration-exploitation
 
@@ -262,6 +270,10 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
+## hanmeibench
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## hardware
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
@@ -274,6 +286,10 @@
 ## hermes-agent
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+
+## hidden-mental-state
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## high-school-explainer
 
@@ -293,7 +309,7 @@
 
 ## human-llm-rule-comparison
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## human-review
 
@@ -311,6 +327,10 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## indirect-expression
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## information-efficiency
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -321,7 +341,7 @@
 
 ## interpretation
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## ios-audio
 
@@ -382,19 +402,19 @@
 
 ## literary-ecology
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## literary-psychology
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## literature
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## llm
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## local-llm
 
@@ -406,7 +426,7 @@
 
 ## loneliness
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## low-resource-ai
 
@@ -422,7 +442,7 @@
 
 ## mental-state-inference
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## meta-learning
 
@@ -464,7 +484,7 @@
 
 ## other-minds-problem
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## outlier-detection
 
@@ -480,7 +500,7 @@
 
 ## personality-density
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## phd-training
 
@@ -488,7 +508,7 @@
 
 ## philosophy-of-mind
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## philosophy-of-science
 
@@ -504,13 +524,17 @@
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## pragmatic-alignment
+
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
 ## pragmatics
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## predictive-processing
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## problem-definition
 
@@ -530,7 +554,7 @@
 
 ## psychological-reconstruction
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## publication-strategy
 
@@ -625,7 +649,7 @@
 
 ## semantic-grounding
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## sensing
 
@@ -684,7 +708,7 @@
 
 ## theory-of-mind
 
-- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 88/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## trust-formation
 
