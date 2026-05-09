@@ -2,6 +2,33 @@
 
 Run commands from the repo root.
 
+## Local Python Environment
+
+Ubuntu 24 and newer Debian-family systems protect system Python from direct
+`pip install` changes. Use one virtual environment per repo:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -r requirements-dev.txt
+```
+
+If venv creation fails because OS support is missing:
+
+```bash
+sudo apt update
+sudo apt install python3-venv python3-full
+python3 -m venv .venv
+```
+
+Confirm the test runner:
+
+```bash
+pytest --version
+pytest -q
+```
+
 ## Create
 
 ```bash

@@ -75,6 +75,24 @@ active Idea OS work.
 
 ## Core Commands
 
+Use a per-repo virtual environment on Ubuntu 24 / Debian-family systems:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -r requirements-dev.txt
+```
+
+If `python3 -m venv .venv` reports that the virtual environment was not created
+successfully, install the OS venv support first:
+
+```bash
+sudo apt update
+sudo apt install python3-venv python3-full
+python3 -m venv .venv
+```
+
 ```bash
 python3 scripts/new_idea.py "New idea" --tags ai,workflow
 python3 scripts/normalize_problem.py
@@ -98,6 +116,7 @@ Run the full verification suite with:
 
 ```bash
 python3 -m unittest
+pytest -q
 ```
 
 ## Start Here
