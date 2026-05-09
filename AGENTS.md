@@ -161,6 +161,18 @@ Current important legacy Markdown notes:
 - If a paper produces a real research question, create or update an Idea OS YAML record and link back to the paper folder.
 - Planning receives only title, paper ID, status, next test, canonical path, linked idea IDs, and capacity note.
 
+## Paper Writing Rules
+
+- Use `docs/paper-writing-engineering-process.md` for reusable manuscript drafting and revision.
+- A paper must protect one main problem, one main method, one main evidence stack, and one contribution statement.
+- Before drafting, write the one-sentence claim, reviewer question list, contribution-to-evidence map, Figure 1 overview, and main-text vs appendix split.
+- Abstracts must follow problem, gap, method, result, and contribution-plus-boundary order.
+- Introductions should use the six-part structure: problem, gap, core distinction, method, evidence, contribution.
+- Every contribution must start with a strong verb, name a concrete scientific object, and map to a method section plus evidence artifact.
+- Method sections must define input, output, assumptions, definitions, procedure or algorithm, failure conditions, and reproducibility path.
+- Every result table must include a take-away sentence that states what claim the table supports.
+- Claim boundaries must be explicit, but detailed ledgers, role tables, and defensive exclusion lists should move to appendix unless needed to understand the method.
+
 ## Safety Note
 
 For security or AI-safety brainstorms, keep notes defensive and research-oriented.

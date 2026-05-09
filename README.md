@@ -48,6 +48,13 @@ Planning receives only short bridge notes. Detailed thinking stays here.
 | `projects-ready/` | Compatibility layer for graduation packets |
 | `archive/legacy-markdown/` | Pre-Idea-OS Markdown sources |
 
+## Paper Writing Process
+
+Use `docs/paper-writing-engineering-process.md` when a brainstorm, paper-lab
+reading, or active manuscript needs to become a journal-style paper. The durable
+rule is: one paper protects one main problem, one main method, one main evidence
+stack, and one contribution statement.
+
 ## Legacy Markdown Brainstorms
 
 This checkout preserves local Markdown brainstorms that predate the YAML-first
@@ -124,4 +131,6 @@ pytest -q
 1. Read `AGENTS.md`.
 2. Read `docs/system_design.md`.
 3. Use `docs/usage.md` for CLI commands.
-4. Inspect `index/idea_index.md` for the current idea database.
+4. Use `docs/paper-writing-engineering-process.md` for reusable manuscript
+   drafting and revision rules.
+5. Inspect `index/idea_index.md` for the current idea database.
