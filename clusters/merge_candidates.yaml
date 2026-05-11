@@ -1,8 +1,8 @@
 merge_candidate_0001:
   candidate_id: merge_candidate_0001
   ideas:
-    - idea_000022
     - idea_000023
+    - idea_000024
   merge_type: cluster_merge
   merge_score: 65/100
   confidence: medium
@@ -198,6 +198,30 @@ merge_candidate_0008:
 merge_candidate_0009:
   candidate_id: merge_candidate_0009
   ideas:
+    - idea_000007
+    - idea_000021
+  merge_type: cluster_merge
+  merge_score: 52/100
+  confidence: low
+  reason:
+    - "shared tags: scam-research, signal-market"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 5/25
+    semantic_similarity: 6/15
+    tag_overlap: 8/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 10/20
+  shared_tags:
+    - scam-research
+    - signal-market
+merge_candidate_0010:
+  candidate_id: merge_candidate_0010
+  ideas:
     - idea_000008
     - idea_000019
   merge_type: cluster_merge
@@ -218,8 +242,8 @@ merge_candidate_0009:
     complexity_control: 10/20
   shared_tags:
     - research-workflow
-merge_candidate_0010:
-  candidate_id: merge_candidate_0010
+merge_candidate_0011:
+  candidate_id: merge_candidate_0011
   ideas:
     - idea_000004
     - idea_000007
@@ -242,8 +266,8 @@ merge_candidate_0010:
   shared_tags:
     - cybersecurity
     - research-candidate
-merge_candidate_0011:
-  candidate_id: merge_candidate_0011
+merge_candidate_0012:
+  candidate_id: merge_candidate_0012
   ideas:
     - idea_000015
     - idea_000020
@@ -265,8 +289,8 @@ merge_candidate_0011:
     complexity_control: 10/20
   shared_tags:
     - distributed-systems
-merge_candidate_0012:
-  candidate_id: merge_candidate_0012
+merge_candidate_0013:
+  candidate_id: merge_candidate_0013
   ideas:
     - idea_000005
     - idea_000017
@@ -288,8 +312,8 @@ merge_candidate_0012:
     complexity_control: 15/20
   shared_tags:
     - planning-bridge
-merge_candidate_0013:
-  candidate_id: merge_candidate_0013
+merge_candidate_0014:
+  candidate_id: merge_candidate_0014
   ideas:
     - idea_000001
     - idea_000004
@@ -309,8 +333,8 @@ merge_candidate_0013:
     complexity_control: 20/20
   shared_tags:
     - evidence-routing
-merge_candidate_0014:
-  candidate_id: merge_candidate_0014
+merge_candidate_0015:
+  candidate_id: merge_candidate_0015
   ideas:
     - idea_000003
     - idea_000017
@@ -332,11 +356,11 @@ merge_candidate_0014:
     complexity_control: 15/20
   shared_tags:
     - planning-bridge
-merge_candidate_0015:
-  candidate_id: merge_candidate_0015
+merge_candidate_0016:
+  candidate_id: merge_candidate_0016
   ideas:
     - idea_000007
-    - idea_000021
+    - idea_000022
   merge_type: cluster_merge
   merge_score: 47/100
   confidence: low
@@ -355,8 +379,8 @@ merge_candidate_0015:
     complexity_control: 10/20
   shared_tags:
     - decision-system
-merge_candidate_0016:
-  candidate_id: merge_candidate_0016
+merge_candidate_0017:
+  candidate_id: merge_candidate_0017
   ideas:
     - idea_000012
     - idea_000015
@@ -378,8 +402,8 @@ merge_candidate_0016:
     complexity_control: 10/20
   shared_tags:
     - systems-thinking
-merge_candidate_0017:
-  candidate_id: merge_candidate_0017
+merge_candidate_0018:
+  candidate_id: merge_candidate_0018
   ideas:
     - idea_000002
     - idea_000013
@@ -401,11 +425,11 @@ merge_candidate_0017:
     complexity_control: 15/20
   shared_tags:
     - cybersecurity
-merge_candidate_0018:
-  candidate_id: merge_candidate_0018
+merge_candidate_0019:
+  candidate_id: merge_candidate_0019
   ideas:
     - idea_000008
-    - idea_000021
+    - idea_000022
   merge_type: cluster_merge
   merge_score: 46/100
   confidence: low
@@ -424,8 +448,8 @@ merge_candidate_0018:
     complexity_control: 10/20
   shared_tags:
     - evaluation
-merge_candidate_0019:
-  candidate_id: merge_candidate_0019
+merge_candidate_0020:
+  candidate_id: merge_candidate_0020
   ideas:
     - idea_000004
     - idea_000013
@@ -447,8 +471,8 @@ merge_candidate_0019:
     complexity_control: 15/20
   shared_tags:
     - cybersecurity
-merge_candidate_0020:
-  candidate_id: merge_candidate_0020
+merge_candidate_0021:
+  candidate_id: merge_candidate_0021
   ideas:
     - idea_000010
     - idea_000015
@@ -470,8 +494,8 @@ merge_candidate_0020:
     complexity_control: 10/20
   shared_tags:
     - software-architecture
-merge_candidate_0021:
-  candidate_id: merge_candidate_0021
+merge_candidate_0022:
+  candidate_id: merge_candidate_0022
   ideas:
     - idea_000017
     - idea_000020
@@ -491,8 +515,8 @@ merge_candidate_0021:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0022:
-  candidate_id: merge_candidate_0022
+merge_candidate_0023:
+  candidate_id: merge_candidate_0023
   ideas:
     - idea_000019
     - idea_000020
@@ -512,8 +536,8 @@ merge_candidate_0022:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0023:
-  candidate_id: merge_candidate_0023
+merge_candidate_0024:
+  candidate_id: merge_candidate_0024
   ideas:
     - idea_000003
     - idea_000006
@@ -533,11 +557,11 @@ merge_candidate_0023:
     complexity_control: 20/20
   shared_tags:
     - workflow
-merge_candidate_0024:
-  candidate_id: merge_candidate_0024
+merge_candidate_0025:
+  candidate_id: merge_candidate_0025
   ideas:
     - idea_000004
-    - idea_000021
+    - idea_000022
   merge_type: cluster_merge
   merge_score: 41/100
   confidence: low
@@ -556,8 +580,8 @@ merge_candidate_0024:
     complexity_control: 10/20
   shared_tags:
     - anomaly-detection
-merge_candidate_0025:
-  candidate_id: merge_candidate_0025
+merge_candidate_0026:
+  candidate_id: merge_candidate_0026
   ideas:
     - idea_000005
     - idea_000007
@@ -579,8 +603,8 @@ merge_candidate_0025:
     complexity_control: 10/20
   shared_tags:
     - decision-system
-merge_candidate_0026:
-  candidate_id: merge_candidate_0026
+merge_candidate_0027:
+  candidate_id: merge_candidate_0027
   ideas:
     - idea_000008
     - idea_000020
@@ -600,8 +624,8 @@ merge_candidate_0026:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0027:
-  candidate_id: merge_candidate_0027
+merge_candidate_0028:
+  candidate_id: merge_candidate_0028
   ideas:
     - idea_000012
     - idea_000019
@@ -621,8 +645,8 @@ merge_candidate_0027:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0028:
-  candidate_id: merge_candidate_0028
+merge_candidate_0029:
+  candidate_id: merge_candidate_0029
   ideas:
     - idea_000007
     - idea_000014
@@ -642,8 +666,8 @@ merge_candidate_0028:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0029:
-  candidate_id: merge_candidate_0029
+merge_candidate_0030:
+  candidate_id: merge_candidate_0030
   ideas:
     - idea_000007
     - idea_000019
@@ -663,8 +687,8 @@ merge_candidate_0029:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0030:
-  candidate_id: merge_candidate_0030
+merge_candidate_0031:
+  candidate_id: merge_candidate_0031
   ideas:
     - idea_000008
     - idea_000017
@@ -684,11 +708,11 @@ merge_candidate_0030:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0031:
-  candidate_id: merge_candidate_0031
+merge_candidate_0032:
+  candidate_id: merge_candidate_0032
   ideas:
     - idea_000011
-    - idea_000021
+    - idea_000022
   merge_type: cluster_merge
   merge_score: 40/100
   confidence: low
@@ -705,8 +729,8 @@ merge_candidate_0031:
     complexity_control: 10/20
   shared_tags:
     - human-in-the-loop
-merge_candidate_0032:
-  candidate_id: merge_candidate_0032
+merge_candidate_0033:
+  candidate_id: merge_candidate_0033
   ideas:
     - idea_000012
     - idea_000014
@@ -726,11 +750,11 @@ merge_candidate_0032:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0033:
-  candidate_id: merge_candidate_0033
+merge_candidate_0034:
+  candidate_id: merge_candidate_0034
   ideas:
     - idea_000019
-    - idea_000022
+    - idea_000023
   merge_type: cluster_merge
   merge_score: 40/100
   confidence: low

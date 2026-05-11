@@ -1,4 +1,4 @@
-id: idea_000023
+id: idea_000024
 title: "Search trust collapse under AI-generated web pollution"
 created_at: 2026-05-11
 type: hypothesis
@@ -112,11 +112,11 @@ insights:
   - "Human-source scarcity may be more important than AI content density because search reliability depends on original evidence supply."
   - "Production prevalence and retrieval exposure must be separated; many AI pages may exist without being highly exposed, or a smaller polluted pool may receive high exposure."
   - "AI summaries can shift the human feedback loop by reducing source clicks and weakening incentives for original content."
-  - "This idea is downstream of idea_000022: web pollution detection measures polluted content, while search trust collapse measures retrieval, answer, and user-trust consequences."
+  - "This idea is downstream of idea_000023: web pollution detection measures polluted content, while search trust collapse measures retrieval, answer, and user-trust consequences."
 connections:
   - idea_000014
   - idea_000019
-  - idea_000022
+  - idea_000023
 role: idea
 value:
   impact: high
@@ -145,7 +145,7 @@ next_steps:
   - "Create a 30-query search-result audit template for top-k result labeling."
   - "Define Human-Source Scarcity Index and Source Diversity Entropy precisely."
   - "Run a tiny pilot on 10 queries before considering any user study."
-  - "Decide whether this stays linked to idea_000022 or becomes a separate information-science paper line."
+  - "Decide whether this stays linked to idea_000023 or becomes a separate information-science paper line."
 source:
   - conversation
 external_sources_checked:

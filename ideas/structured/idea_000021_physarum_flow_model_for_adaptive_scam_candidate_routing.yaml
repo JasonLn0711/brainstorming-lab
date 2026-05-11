@@ -1,0 +1,119 @@
+id: idea_000021
+title: Physarum flow model for adaptive scam-candidate routing
+created_at: '2026-05-11'
+type: hypothesis
+tags:
+- physarum
+- slime-mold
+- flow-based-system
+- adaptive-routing
+- scam-research
+- signal-market
+- network-design
+- dynamic-graph
+status: research_candidate
+problem_statement:
+  raw: Given that Physarum slime-mold network design is often compared with Dijkstra
+    or A*, decide whether the useful research object is shortest-path search or adaptive
+    flow-based routing for uncertain scam-candidate discovery.
+  normalized: Given noisy and changing scam-candidate signal streams, optimize adaptive
+    candidate-region discovery under constraints of incomplete graph knowledge, local
+    signal updates, reviewer-labor budget, robustness, and no guarantee of exact shortest-path
+    optimality.
+  structure:
+    given: noisy and changing scam-candidate signal streams
+    optimize: adaptive candidate-region discovery and robust signal allocation
+    constraints:
+    - incomplete or changing graph structure
+    - local signal and flow updates only
+    - limited reviewer labor
+    - need for backup paths / robustness
+    - no exact shortest-path guarantee
+    - no raw sensitive evidence in git
+summary: Physarum should not be framed as bidirectional Dijkstra or A*. The better
+  analogy is an adaptive transport network where flow reinforces useful tubes and
+  weak routes decay, making it a candidate model for long-running signal allocation,
+  exploration, ranking, and robustness in scam-candidate discovery rather than a deterministic
+  exact pathfinder.
+assumptions:
+- A fixed graph with known edge weights is better handled by Dijkstra, bidirectional
+  Dijkstra, or A* than by a slime-mold simulation.
+- The research value appears when the environment is incomplete, noisy, or changing,
+  and when the goal is to surface good-enough candidate regions rather than one exact
+  shortest path.
+- Physarum-style flow dynamics can preserve main paths and backup paths, which may
+  be more useful than single-route optimization for reviewer-limited scam research.
+- 'A practical system should probably be hybrid: use graph search for short-horizon
+  candidate paths and flow/conductivity updates for long-horizon ranking, reinforcement,
+  decay, and exploration.'
+evidence:
+- conversation
+baseline:
+- Bidirectional Dijkstra is the baseline for exact shortest path on a known weighted
+  graph when the source and target are fixed.
+- A* is the baseline when a useful admissible or consistent heuristic can guide search
+  toward a target.
+- Fixed AI A / AI B / Judge scam-review routing is the operational baseline from the
+  existing Signal Market idea.
+metrics:
+- Does a Physarum-style update rule improve candidate discovery per reviewer hour
+  compared with fixed-source-arm review?
+- Does it preserve useful backup regions instead of collapsing too early to one overfit
+  route?
+- Does it recover after simulated edge failures, source-arm drift, or sudden topic
+  changes with less recomputation than a fixed shortest-path workflow?
+- Does the hybrid model beat pure graph-search and pure flow-based baselines after
+  normalizing for cost, latency, and false-confidence risk?
+insights:
+- 'Short answer to the algorithm-comparison question: Physarum is not bidirectional
+  Dijkstra or A*. It is closer to adaptive flow / conductivity reinforcement with
+  decay.'
+- For exact pathfinding, slime mold is usually the wrong tool; it converges over time,
+  may be parameter-sensitive, and does not give the operational clarity of classical
+  graph search.
+- For uncertain scam discovery, the useful metaphor is not finding the scammiest single
+  path. It is letting the content-space signal field reveal which regions deserve
+  more review.
+- The equation-level frame should model edge conductivity, flow, reinforcement, and
+  decay; the evaluation frame should measure information gain and reviewer burden,
+  not only route length.
+connections:
+- idea_000007
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 3
+  evidence_support_score: 3/15
+  connection_strength: 4
+  connection_strength_score: 4/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 9
+  feasibility_score: 9/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 74/100
+maturity_level: research_candidate
+next_steps:
+- Write a one-page formal objective that separates exact shortest-path search from
+  adaptive candidate-region discovery.
+- Draft a minimal synthetic graph with drifting source arms, reviewer budget, and
+  candidate-yield labels.
+- 'Compare three baselines: A* / bidirectional Dijkstra on known target paths, fixed
+  signal-source review, and Physarum-style conductivity update.'
+- Link this hypothesis back to the ant-colony / pheromone note as the slime-mold refinement.
+source:
+- conversation
+- ideas/ant-colony-pheromone-graph-search-social-simulation.md
+- https://pubmed.ncbi.nlm.nih.gov/17069858/
+- https://pubmed.ncbi.nlm.nih.gov/20093467/
+- https://www.sciencedirect.com/science/article/pii/S0022519312003049
+maturity_action: evaluate cluster readiness

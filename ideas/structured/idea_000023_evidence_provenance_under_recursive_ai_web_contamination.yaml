@@ -1,4 +1,4 @@
-id: idea_000022
+id: idea_000023
 title: "Evidence provenance under recursive AI web contamination"
 created_at: 2026-05-11
 type: hypothesis
@@ -147,7 +147,7 @@ connections:
   - idea_000007
   - idea_000014
   - idea_000019
-  - idea_000023
+  - idea_000024
 role: idea
 value:
   impact: high

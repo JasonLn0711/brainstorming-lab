@@ -4,6 +4,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## adaptive-routing
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
 ## aesthetics
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -14,8 +18,8 @@
 
 ## ai-generated-content
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## ai-governance
 
@@ -32,7 +36,7 @@
 ## ai-safety
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## ai-scientist
 
@@ -45,7 +49,7 @@
 
 ## ai-summary
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## ai-triage
 
@@ -59,7 +63,7 @@
 ## anomaly-detection
 
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## approval-gate
 
@@ -91,7 +95,7 @@
 
 ## bicycle-reid
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## bounded-rationality
 
@@ -139,7 +143,7 @@
 
 ## computer-vision
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## computing-philosophy
 
@@ -172,7 +176,7 @@
 
 ## cybercrime-content
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## cybersecurity
 
@@ -195,7 +199,7 @@
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## defensive-buffering
 
@@ -211,7 +215,7 @@
 
 ## detr
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## developer-tools
 
@@ -223,11 +227,11 @@
 
 ## digital-forensics
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## dinov2
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## distributed-cognition
 
@@ -242,13 +246,17 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## dynamic-graph
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
 ## edge-ai
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## edge-deployment
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## embedding-discovery
 
@@ -269,7 +277,7 @@
 ## evaluation
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## evaluator-loop
 
@@ -277,7 +285,7 @@
 
 ## evidence-chain
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## evidence-density
 
@@ -285,8 +293,8 @@
 
 ## evidence-provenance
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## evidence-routing
 
@@ -345,6 +353,10 @@
 ## first-principles
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## flow-based-system
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## forensic-defensibility
 
@@ -406,7 +418,7 @@
 
 ## human-ai-interaction
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## human-approval-gate
 
@@ -419,7 +431,7 @@
 ## human-in-the-loop
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## human-llm-rule-comparison
 
@@ -431,7 +443,7 @@
 
 ## human-source-scarcity
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## human-value
 
@@ -443,7 +455,7 @@
 
 ## identity-persistence
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## implementation-friction
 
@@ -459,8 +471,8 @@
 
 ## information-retrieval
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## infrastructure-engineering
 
@@ -496,7 +508,7 @@
 
 ## knowledge-systems
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## langgraph
 
@@ -573,7 +585,7 @@
 
 ## mamba
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## meaning-making
 
@@ -606,15 +618,15 @@
 
 ## misinformation
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## ml-systems
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## model-collapse
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## mosquito-control
 
@@ -627,7 +639,11 @@
 
 ## multimodal-fusion
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## network-design
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## noise-suppression
 
@@ -643,11 +659,11 @@
 
 ## object-detection
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## object-reid
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## observability
 
@@ -688,6 +704,10 @@
 ## philosophy-of-science
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## physarum
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## physics-education
 
@@ -746,8 +766,8 @@
 ## rag
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## real-time-ai
 
@@ -759,7 +779,7 @@
 
 ## recursive-contamination
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## repo-architecture
 
@@ -767,7 +787,7 @@
 
 ## representation-learning
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## reproducibility
 
@@ -797,11 +817,11 @@
 
 ## retrieval-collapse
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## retrieval-contamination
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## reviewer-assist
 
@@ -818,7 +838,7 @@
 
 ## rf-detr
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## safety
 
@@ -827,11 +847,12 @@
 
 ## scam-content
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## scientific-culture
 
@@ -843,11 +864,11 @@
 
 ## search-engine-reliability
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## search-reliability
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## search-templates
 
@@ -855,7 +876,7 @@
 
 ## search-trust-collapse
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## self-directed-data-discovery
 
@@ -885,6 +906,11 @@
 ## signal-market
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
+## slime-mold
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## sociology-of-science
 
@@ -901,7 +927,7 @@
 
 ## source-diversity
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## sre
 
@@ -909,7 +935,7 @@
 
 ## state-space-models
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## statement-interview
 
@@ -921,15 +947,15 @@
 
 ## streaming-intelligence
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## surveillance
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## synthetic-data-contamination
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## system-design
 
@@ -962,15 +988,15 @@
 
 ## traceability
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## tracking
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## trust-calibration
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## trust-formation
 
@@ -982,7 +1008,7 @@
 
 ## uncertainty
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## uncertainty-tolerance
 
@@ -990,7 +1016,7 @@
 
 ## user-trust
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## venue-fit
 
@@ -1002,7 +1028,7 @@
 
 ## video-understanding
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## voice-enhancement
 
@@ -1018,11 +1044,11 @@
 
 ## web-pollution
 
-- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## web-pollution-detection
 
-- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## workflow
 
@@ -1044,4 +1070,4 @@
 
 ## yolo
 
-- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`

@@ -1,4 +1,5 @@
 # Cluster Index
 
-- cluster_0001 - evidence-routing / ai-triage / cybersecurity - 62/100 - evaluate as research candidate
-- cluster_0002 - decision-system / planning-bridge / workflow - 61/100 - keep clustered and improve maturity
+- cluster_0001 - ai-generated-content / evidence-provenance / information-retrieval - 65/100 - evaluate as research candidate
+- cluster_0002 - evidence-routing / ai-triage / cybersecurity - 62/100 - evaluate as research candidate
+- cluster_0003 - decision-system / planning-bridge / workflow - 61/100 - keep clustered and improve maturity

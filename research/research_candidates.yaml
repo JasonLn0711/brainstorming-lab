@@ -3,8 +3,8 @@ research_candidate_0001:
   title: "Research candidate: ai-generated-content / evidence-provenance / information-retrieval"
   source_cluster: cluster_0001
   source_ideas:
-    - idea_000022
     - idea_000023
+    - idea_000024
   normalized_problem: "Given RAG and search-answer systems that retrieve from an increasingly AI-generated web, optimize evidence-provenance reliability under constraints of unverifiable recursive synthesis, citation lineage loss, synthetic content farms, search-index contamination, source authenticity ambiguity, consensus drift, and the fact that AI-generated content is not automatically false."
   research_question: "Can a bounded method for this problem improve Provenance recoverability: proportion of retrieved claims with traceable primary or authoritative evidence., Recursive synthesis depth: number of synthetic or summary layers between claim and primary evidence., Circular citation rate: proportion of sources that cite or paraphrase each other without primary evidence. compared with the baseline?"
   why_now: "The cluster has multiple connected idea nodes, shared evidence, and measurable next steps across ai-generated-content, ai-safety, ai-summary, cybercrime-content."
