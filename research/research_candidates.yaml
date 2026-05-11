@@ -1,1 +1,58 @@
-{}
+research_candidate_0001:
+  candidate_id: research_candidate_0001
+  title: "Research candidate: ai-generated-content / evidence-provenance / information-retrieval"
+  source_cluster: cluster_0001
+  source_ideas:
+    - idea_000022
+    - idea_000023
+  normalized_problem: "Given RAG and search-answer systems that retrieve from an increasingly AI-generated web, optimize evidence-provenance reliability under constraints of unverifiable recursive synthesis, citation lineage loss, synthetic content farms, search-index contamination, source authenticity ambiguity, consensus drift, and the fact that AI-generated content is not automatically false."
+  research_question: "Can a bounded method for this problem improve Provenance recoverability: proportion of retrieved claims with traceable primary or authoritative evidence., Recursive synthesis depth: number of synthetic or summary layers between claim and primary evidence., Circular citation rate: proportion of sources that cite or paraphrase each other without primary evidence. compared with the baseline?"
+  why_now: "The cluster has multiple connected idea nodes, shared evidence, and measurable next steps across ai-generated-content, ai-safety, ai-summary, cybercrime-content."
+  possible_contribution: "A reusable evaluation frame that compares baseline workflow performance against a small, auditable intervention."
+  baseline:
+    - "Treat hallucination as only a model-output problem and ignore retrieved-source contamination."
+    - "Define all AI-generated web content as pollution."
+    - "Use a black-box AI text detector without checking claim provenance."
+    - "Trust search ranking as a proxy for evidence quality."
+    - "Accept RAG citations if a URL exists, without checking whether the URL contains primary evidence, circular citation, or AI-synthesized unsupported claims."
+    - "Study misinformation broadly without a reconstructable citation or retrieval lineage."
+    - "Measure only answer accuracy and ignore source diversity, provenance depth, and human-source scarcity."
+    - "Treat AI-generated content percentage as equivalent to search trust collapse."
+    - "Assume users will click sources if they care, without measuring behavior under AI summaries."
+    - "Rank sources by domain authority only, without checking claim lineage or primary evidence distance."
+    - "Study generic AI misinformation without search-result exposure and user-trust variables."
+  metrics:
+    - "Provenance recoverability: proportion of retrieved claims with traceable primary or authoritative evidence."
+    - "Recursive synthesis depth: number of synthetic or summary layers between claim and primary evidence."
+    - "Circular citation rate: proportion of sources that cite or paraphrase each other without primary evidence."
+    - "Contamination amplification: how often an unsupported claim appears across indexed pages, summaries, and AI answers."
+    - "Retrieval trust decay: confidence downgrade as lineage becomes synthetic-only, circular, or missing."
+    - "RAG answer risk: unsupported or weak-provenance claims included in generated answers."
+    - "Human audit burden: time to classify a source as primary, human synthesis, AI synthesis, circular, or unverifiable."
+    - "False contamination flag rate: correct human-authored or AI-assisted evidence incorrectly downgraded."
+    - "Synthetic Content Density: estimated share of sentences or paragraphs with AI-assisted generation signals, used only as one weak feature."
+    - "Verifiable Claim Ratio: factual claims with traceable primary or authoritative evidence divided by all factual claims."
+    - "Citation Lineage Depth: number of hops from claim to primary evidence."
+    - "Recursive Synthesis Probability: estimated probability from semantic similarity, citation graph pattern, temporal order, and source redundancy."
+    - "Evidence Drift Score: divergence between a downstream claim and the primary-source claim, assisted by NLI labels such as entailment, contradiction, neutral, exaggeration, and unsupported."
+    - "Graph Risk: citation loops, source laundering, SEO bursts, primary-source absence, semantic cloning, and RAG exposure risk."
+    - "Web Pollution Score: weighted combination of SCD, 1-VCR, RSP, EDS, and graph risk."
+    - "AI Content Density in top-k results by query and time."
+    - "Human-Source Scarcity Index: scarcity of distinct human primary or experience-based sources in top-k results."
+    - "Source Diversity Entropy across domains, authors, claims, citations, and semantic templates."
+    - "Evidence Provenance Depth: distance from retrieved page to primary evidence."
+    - "Provenance Reliability: inverse transform of provenance depth plus penalties for circular or missing evidence."
+    - "Unverifiable Claim Ratio in top-k search results and AI answers."
+    - "AI Summary Click Suppression: click-through difference when AI summary appears versus not."
+    - "User Trust Calibration: whether users distinguish primary source, synthesis, AI summary, and low-provenance source."
+  minimum_viable_experiment: "Write a one-page definition note separating AI-generated content, incorrect content, unverifiable recursive synthesis, circular citation, and retrieval contamination."
+  risks:
+    - "The cluster may be too broad unless the first experiment stays small."
+  next_steps:
+    - "Write a one-page definition note separating AI-generated content, incorrect content, unverifiable recursive synthesis, circular citation, and retrieval contamination."
+    - "Design a cybercrime/scam-focused web pollution pressure test with public sources only."
+    - "Create a source-lineage label set: primary evidence, authoritative synthesis, human synthesis, AI-like synthesis, circular, unverifiable, and unrelated citation."
+    - "Audit 50 public pages from scam-prevention, crypto-recovery, phishing-explainer, and cybercrime-advice queries."
+    - "Measure SCD, VCR, CLD, RSP, EDS, graph risk, provenance recoverability, circular citation rate, unsupported claim rate, and human audit time."
+  research_score: 82/100
+  research_level: proposal_ready

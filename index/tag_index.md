@@ -12,6 +12,11 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## ai-generated-content
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
 ## ai-governance
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
@@ -27,6 +32,7 @@
 ## ai-safety
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## ai-scientist
 
@@ -36,6 +42,10 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## ai-summary
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## ai-triage
 
@@ -160,6 +170,10 @@
 
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
+## cybercrime-content
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
 ## cybersecurity
 
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
@@ -206,6 +220,10 @@
 ## digital-cognitive-twin
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## digital-forensics
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## dinov2
 
@@ -257,9 +275,18 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## evidence-chain
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
 ## evidence-density
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## evidence-provenance
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## evidence-routing
 
@@ -377,6 +404,10 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## human-ai-interaction
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
 ## human-approval-gate
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
@@ -397,6 +428,10 @@
 ## human-review
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+
+## human-source-scarcity
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## human-value
 
@@ -421,6 +456,11 @@
 ## information-efficiency
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## information-retrieval
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## infrastructure-engineering
 
@@ -453,6 +493,10 @@
 ## knowledge-graph
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## knowledge-systems
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## langgraph
 
@@ -560,9 +604,17 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## misinformation
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
 ## ml-systems
 
 - `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## model-collapse
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## mosquito-control
 
@@ -694,6 +746,8 @@
 ## rag
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## real-time-ai
 
@@ -702,6 +756,10 @@
 ## real-time-systems
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## recursive-contamination
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## repo-architecture
 
@@ -737,6 +795,14 @@
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
 
+## retrieval-collapse
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## retrieval-contamination
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
 ## reviewer-assist
 
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
@@ -759,6 +825,10 @@
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
+## scam-content
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -771,9 +841,21 @@
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
+## search-engine-reliability
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## search-reliability
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
 ## search-templates
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## search-trust-collapse
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## self-directed-data-discovery
 
@@ -817,6 +899,10 @@
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## source-diversity
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
 ## sre
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -840,6 +926,10 @@
 ## surveillance
 
 - `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## synthetic-data-contamination
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## system-design
 
@@ -870,9 +960,17 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## traceability
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
 ## tracking
 
 - `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## trust-calibration
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## trust-formation
 
@@ -889,6 +987,10 @@
 ## uncertainty-tolerance
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## user-trust
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## venue-fit
 
@@ -913,6 +1015,14 @@
 ## voip
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## web-pollution
+
+- `idea_000023` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000023_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## web-pollution-detection
+
+- `idea_000022` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000022_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
 ## workflow
 

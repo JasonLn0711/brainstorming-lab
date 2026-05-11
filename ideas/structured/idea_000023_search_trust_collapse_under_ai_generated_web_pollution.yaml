@@ -1,0 +1,163 @@
+id: idea_000023
+title: "Search trust collapse under AI-generated web pollution"
+created_at: 2026-05-11
+type: hypothesis
+tags:
+  - search-engine-reliability
+  - search-trust-collapse
+  - human-source-scarcity
+  - ai-generated-content
+  - web-pollution
+  - evidence-provenance
+  - source-diversity
+  - rag
+  - user-trust
+  - information-retrieval
+  - human-ai-interaction
+  - ai-summary
+  - retrieval-collapse
+  - trust-calibration
+status: execution_ready
+problem_statement:
+  raw: "Search engines may continue to rank pages and produce plausible AI summaries while the underlying evidence ecology degrades: source diversity falls, human primary sources become scarce, and retrieved evidence drifts away from original provenance."
+  normalized: "Given AI-mediated search ecosystems that depend on open web content increasingly shaped by AI-generated, SEO-optimized, and low-provenance pages, optimize search evidence reliability and user trust calibration under constraints of synthetic content density, human-source scarcity, source diversity decay, evidence provenance depth, AI-summary click suppression, and the fact that AI-generated content is not inherently false."
+  structure:
+    given: "AI-mediated search ecosystems that depend on open web content increasingly shaped by AI-generated, SEO-optimized, and low-provenance pages"
+    optimize: "search evidence reliability and user trust calibration"
+    constraints:
+      - "synthetic content density"
+      - "human-source scarcity"
+      - "source diversity decay"
+      - "evidence provenance depth"
+      - "AI-summary click suppression"
+      - "AI-generated content is not inherently false"
+summary: "This idea reframes search-engine trust collapse as trust-signal degradation rather than sudden search failure. Ranking may still work, answers may still sound plausible, and AI summaries may still be useful, while the evidence underneath becomes thinner, more synthetic, more homogeneous, less human-authored, and harder to trace to primary sources. The proposed frame is Search Evidence Degradation Framework: content layer, retrieval layer, answer layer, and user trust layer."
+first_principle:
+  scarce_resource: "human-source evidence and provenance reliability, not search-result volume"
+  not_the_core:
+    - "media-style claims that AI will destroy search"
+    - "assuming AI-generated content is bad by definition"
+    - "only measuring AI content percentage"
+    - "only measuring answer accuracy while ignoring source diversity and provenance depth"
+  core_question: "How can search engines and RAG systems detect evidence provenance degradation under increasing AI-generated web contamination?"
+  canonical_home: "brainstorming-lab owns the trust-collapse hypothesis, metrics, pressure tests, and research framing."
+  planning_boundary: "planning-everything-track should only receive a short bridge if this becomes scheduled work."
+  smallest_next_test: "Measure top-10 search results for 30 queries across cybercrime prevention, product troubleshooting, medical advice, and product reviews; label AI content signals, human-source availability, source diversity, provenance depth, and whether AI summaries reduce source-click incentives."
+  kill_condition: "Park the idea if search trust decay cannot be measured separately from ordinary relevance, SEO quality, or source-authority differences."
+assumptions:
+  - "Search trust collapse is better defined as trust-signal degradation than total search-engine failure."
+  - "The key risk is that search and AI-answer systems may look normal while quietly relying on synthetic, low-provenance, or homogeneous sources."
+  - "Human-authored, primary, experience-based, and verifiable sources are scarce resources for search reliability."
+  - "AI summaries may reduce clicks to original sources, which could weaken incentives for human-authored content and feed a long-term evidence ecology problem."
+  - "Source diversity must be measured at domain, author, claim, citation, and semantic-template levels."
+  - "Evidence provenance depth is a forensic metric: distance from retrieved result to primary evidence."
+  - "Provenance labels may improve user trust calibration, but this needs user study rather than assumption."
+evidence:
+  - "2026-05-11 user framing: Search Engine Trust Collapse should be defined as degradation of trustworthy signals rather than a sudden search failure."
+  - "2026-05-11 user framing: evidence becomes thin when AI-generated, SEO-optimized, low-provenance pages dominate; ranking and answers may remain plausible while source originality and traceability degrade."
+  - "2026-05-11 user proposed variables: AI Content Density, Human-Source Scarcity, Source Diversity Decay, Evidence Provenance Depth, and Search Trust Decay."
+  - "2026-05-11 user proposed framework: Content Layer, Retrieval Layer, Answer Layer, and User Trust Layer."
+  - "2026-05-11 user proposed hypotheses: AI content density may reduce source diversity, deepen provenance distance, reduce clicks to original sources under AI summaries, increase trust in fluent low-provenance content, and make provenance indicators useful."
+  - "Google Search Central checked 2026-05-11: Google says generative AI content can be useful, but mass generation without added value may violate scaled content abuse policies; it emphasizes accuracy, quality, relevance, and context about content creation."
+  - "arXiv checked 2026-05-11: 'Retrieval Collapses When AI Pollutes the Web' frames a two-stage retrieval-collapse process where AI-generated content dominates search results and can infiltrate retrieval pipelines."
+  - "Pew Research Center checked 2026-05-11: a browsing-data study found 58 percent of respondents had at least one Google search in March 2025 that produced an AI-generated summary."
+  - "Pew Research Center checked 2026-05-11: additional analysis reported users clicked traditional search result links in 8 percent of visits with an AI summary versus 15 percent without one, and clicked AI-summary source links in 1 percent of visits with such summaries."
+baseline:
+  - "Measure only answer accuracy and ignore source diversity, provenance depth, and human-source scarcity."
+  - "Treat AI-generated content percentage as equivalent to search trust collapse."
+  - "Assume users will click sources if they care, without measuring behavior under AI summaries."
+  - "Rank sources by domain authority only, without checking claim lineage or primary evidence distance."
+  - "Study generic AI misinformation without search-result exposure and user-trust variables."
+metrics:
+  - "AI Content Density in top-k results by query and time."
+  - "Human-Source Scarcity Index: scarcity of distinct human primary or experience-based sources in top-k results."
+  - "Source Diversity Entropy across domains, authors, claims, citations, and semantic templates."
+  - "Evidence Provenance Depth: distance from retrieved page to primary evidence."
+  - "Provenance Reliability: inverse transform of provenance depth plus penalties for circular or missing evidence."
+  - "Unverifiable Claim Ratio in top-k search results and AI answers."
+  - "AI Summary Click Suppression: click-through difference when AI summary appears versus not."
+  - "User Trust Calibration: whether users distinguish primary source, synthesis, AI summary, and low-provenance source."
+real_world_pressure_tests:
+  - name: "Search trust decay field game"
+    setting: "Compare top-10 search results and AI-summary behavior for practical high-stakes queries where human experience or primary evidence matters."
+    playful_frame: "Treat search results as an evidence ecology: can the user find the original source, or only layers of summaries?"
+    target_bottleneck: "Whether trust degradation can be observed even when answers look fluent and relevant."
+    expected_failure_modes:
+      - "top results repeat the same claim structure with different wording"
+      - "primary source is absent or buried"
+      - "AI summary reduces user clicks to sources"
+      - "users trust fluent low-provenance results"
+      - "domain diversity looks high but claim/citation diversity is low"
+    smallest_test:
+      - "Select 30 queries across cybercrime prevention, product reviews, technical troubleshooting, and medical advice."
+      - "Collect top-10 results from two search systems and record whether an AI summary appears."
+      - "Label human-source availability, provenance depth, claim diversity, and source diversity."
+      - "Run a small human judgment pass comparing unlabeled versus provenance-labeled results."
+    metrics:
+      - "AI Content Density"
+      - "Human-Source Scarcity Index"
+      - "Source Diversity Entropy"
+      - "Evidence Provenance Depth"
+      - "User Trust Calibration"
+    human_decision:
+      - "Would a cautious user know which source is primary?"
+      - "Does a provenance label change source choice?"
+    revise_or_kill_condition: "Revise if trust decay cannot be separated from ordinary SEO quality; kill if measurements cannot be made reliable without invasive tracking."
+    safety_boundary:
+      - "Use public search pages and non-sensitive queries."
+      - "Avoid collecting personal browsing data unless a formal human-subject protocol exists."
+      - "Do not name or accuse specific domains without a separate evidence packet."
+insights:
+  - "Search trust collapse is about evidence ecology, not merely retrieval accuracy."
+  - "Human-source scarcity may be more important than AI content density because search reliability depends on original evidence supply."
+  - "Production prevalence and retrieval exposure must be separated; many AI pages may exist without being highly exposed, or a smaller polluted pool may receive high exposure."
+  - "AI summaries can shift the human feedback loop by reducing source clicks and weakening incentives for original content."
+  - "This idea is downstream of idea_000022: web pollution detection measures polluted content, while search trust collapse measures retrieval, answer, and user-trust consequences."
+connections:
+  - idea_000014
+  - idea_000019
+  - idea_000022
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 8
+  feasibility_score: 8/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 84/100
+maturity_level: execution_ready
+next_steps:
+  - "Write a one-page definition separating retrieval collapse, search trust collapse, source diversity decay, human-source scarcity, and evidence provenance depth."
+  - "Create a 30-query search-result audit template for top-k result labeling."
+  - "Define Human-Source Scarcity Index and Source Diversity Entropy precisely."
+  - "Run a tiny pilot on 10 queries before considering any user study."
+  - "Decide whether this stays linked to idea_000022 or becomes a separate information-science paper line."
+source:
+  - conversation
+external_sources_checked:
+  - "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
+  - "https://arxiv.org/abs/2602.16136"
+  - "https://www.pewresearch.org/data-labs/2025/05/23/what-web-browsing-data-tells-us-about-how-ai-appears-online/"
+  - "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+evidence_gaps:
+  - "Need source-specific method notes for search-result collection because search results vary by time, location, personalization, and engine."
+  - "Need ethical design before any user trust experiment."
+  - "Need stronger literature review around search quality, source diversity, and trust calibration."
+  - "Need to avoid overclaiming from Pew's U.S. browsing panel to global search behavior."
+  - "Need to separate AI summary click behavior from broader zero-click search trends."
+maturity_action: "generate experiment plan"
+normalization_status: validated

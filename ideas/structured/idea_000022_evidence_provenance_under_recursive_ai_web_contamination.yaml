@@ -1,0 +1,196 @@
+id: idea_000022
+title: "Evidence provenance under recursive AI web contamination"
+created_at: 2026-05-11
+type: hypothesis
+tags:
+  - rag
+  - evidence-provenance
+  - retrieval-contamination
+  - model-collapse
+  - synthetic-data-contamination
+  - ai-safety
+  - information-retrieval
+  - digital-forensics
+  - knowledge-systems
+  - misinformation
+  - search-reliability
+  - traceability
+  - evidence-chain
+  - recursive-contamination
+  - ai-generated-content
+  - web-pollution-detection
+  - cybercrime-content
+  - scam-content
+status: execution_ready
+problem_statement:
+  raw: "RAG systems may retrieve AI-generated or recursively synthesized web content whose evidence chain is unverifiable, causing hallucinations to leave the model and re-enter the web as indexed, cited, and re-retrieved evidence."
+  normalized: "Given RAG and search-answer systems that retrieve from an increasingly AI-generated web, optimize evidence-provenance reliability under constraints of unverifiable recursive synthesis, citation lineage loss, synthetic content farms, search-index contamination, source authenticity ambiguity, consensus drift, and the fact that AI-generated content is not automatically false."
+  structure:
+    given: "RAG and search-answer systems that retrieve from an increasingly AI-generated web"
+    optimize: "evidence-provenance reliability"
+    constraints:
+      - "unverifiable recursive synthesis"
+      - "citation lineage loss"
+      - "synthetic content farms"
+      - "search-index contamination"
+      - "source authenticity ambiguity"
+      - "consensus drift"
+      - "AI-generated content is not automatically false"
+summary: "This idea studies AI-generated web pollution as an evidence-chain problem, not a generic 'AI content is bad' claim or a simple AI-text detector. The key object is unverifiable recursive synthesis: information that has been transformed by AI systems, indexed or cited by web surfaces, and then retrieved again by RAG/search-answer systems without a recoverable provenance chain. The likely contribution is a provenance-centric detector for synthetic content density, verifiable claim ratio, citation lineage depth, recursive synthesis probability, evidence drift, graph risk, and downstream RAG exposure risk. The strongest first domain is cybercrime and scam-related content because provenance, traceability, evidence-chain validation, and forensic reconstruction are already central to the user's research background."
+first_principle:
+  scarce_resource: "verifiable evidence provenance, not more fluent summaries"
+  not_the_core:
+    - "generic AI ethics"
+    - "saying all AI-generated content is contamination"
+    - "treating hallucination as only an internal model error"
+    - "building another AI text detector without evidence-chain reconstruction"
+    - "making broad claims about search collapse without measurable lineage data"
+  core_question: "How can forensic provenance signals detect unverifiable recursive AI synthesis in web-scale content before it contaminates search indexes and RAG evidence chains?"
+  canonical_home: "brainstorming-lab owns the hypothesis, failure taxonomy, pressure tests, and research framing."
+  planning_boundary: "planning-everything-track should only receive a short bridge if this becomes scheduled work."
+  smallest_next_test: "Create a small cybercrime/scam web-pollution audit: collect 50 public pages from scam-prevention, crypto-recovery, phishing-explainer, and cybercrime-advice queries; extract factual claims; label provenance; compute SCD, VCR, CLD, RSP, EDS, graph risk, and top-k RAG exposure risk."
+  kill_condition: "Park the idea if the contamination definition cannot be made more precise than 'AI-generated', or if a small audit cannot distinguish primary evidence, human synthesis, AI synthesis, and unverifiable recursive synthesis."
+assumptions:
+  - "RAG and AI search systems increasingly depend on retrieved documents that may themselves be AI-generated or AI-rewritten."
+  - "Hallucination can become externalized when AI-generated false or unsupported claims are indexed, reposted, cited, and then retrieved by later systems."
+  - "The defensible target is not AI-generated content itself, because AI content can be correct and human content can be wrong."
+  - "A stronger definition is unverifiable recursive synthesis: a claim or explanation whose source lineage cannot be traced to primary evidence after repeated AI-mediated transformation."
+  - "Evidence-provenance verification is closer to digital forensics and evidence-chain validation than to generic misinformation detection."
+  - "The user's RAG, cybercrime, forensics, traceability, and evidence-chain background makes evidence-centric AI systems a better angle than generic AI ethics."
+  - "Reviewers will challenge any contamination definition that conflates source type with truth value."
+  - "Propagation can be modeled with citation or reference graphs, retrieval frequency, lineage depth, and trust decay."
+  - "A useful system should downgrade evidence when provenance is missing, circular, synthetic-only, or self-referential."
+  - "AI-generated web pollution should be measured by production prevalence, retrieval exposure, and evidence-chain risk rather than by AI-generation probability alone."
+  - "A first paper should prefer framework, dataset, metrics, and interpretable baselines over an over-complex detector."
+evidence:
+  - "2026-05-11 user observation: LLM feedback loops, model collapse, retrieval contamination, synthetic data contamination, AI-generated content pollution, and self-referential hallucination propagation are becoming a fast-growing 2025-2026 research direction."
+  - "2026-05-11 user observation: RAG systems such as search-answer products retrieve web documents, and those documents may already contain AI hallucinations or unsupported AI synthesis."
+  - "2026-05-11 user observation: hallucination can become externalized into the web, indexed by search engines, quoted by media or forums, retrieved by other AI systems, and recursively amplified."
+  - "2026-05-11 user framing: the valuable paper angle is formalization, such as contamination score, recursive citation graph, hallucination propagation metric, propagation depth, contamination amplification, and retrieval trust decay."
+  - "2026-05-11 user framing: RAG evidence provenance verification may include provenance tracing, citation lineage, source authenticity scoring, and AI-generated content detection."
+  - "2026-05-11 user warning: the hardest reviewer-facing problem is defining contamination, because AI-generated content is not necessarily wrong, human content can be wrong, and consensus can change."
+  - "2026-05-11 user proposed definition: the target should be unverifiable recursive synthesis, not AI-generated content in general."
+  - "2026-05-11 user positioning: the strongest differentiated lane is evidence-centric AI systems: provenance, traceability, evidence chain, forensic reconstruction, retrieval validation, and decision trustworthiness."
+  - "2026-05-11 user extension: web pollution detection should upgrade the task from AI-generated text detection to judging whether content pollutes the web knowledge ecosystem and may be used as evidence by search engines or RAG."
+  - "2026-05-11 user proposed metric stack: Synthetic Content Density, Verifiable Claim Ratio, Citation Lineage Depth, Recursive Synthesis Probability, Evidence Drift Score, and graph risk."
+  - "2026-05-11 user proposed domain focus: AI-generated cybercrime and scam knowledge pollution, including scam-prevention sites, crypto fraud recovery blogs, phishing-kit explainers, fake legal/security advice, and content farms."
+  - "Nature article checked 2026-05-11: Shumailov et al. 2024 define model collapse from recursively generated training data and warn that large-scale LLM content published online can pollute future training data scraped from the web."
+  - "arXiv checked 2026-05-11: Yu, Kim, and Kim's WWW 2026 paper 'Retrieval Collapses When AI Pollutes the Web' defines retrieval collapse and reports that in an SEO scenario, 67 percent pool contamination led to over 80 percent exposure contamination while accuracy could appear stable."
+  - "Google Search Central checked 2026-05-11: Google says generative AI can be useful, but using it to generate many pages without added value may violate scaled content abuse policies; it emphasizes accuracy, quality, relevance, and context about how content was created."
+  - "Ahrefs checked 2026-05-11: a 2025 industry study using Ahrefs' detector reported that 74.2 percent of 900,000 newly detected English pages contained some AI-generated content; this is useful prevalence context but not ground-truth pollution evidence."
+baseline:
+  - "Treat hallucination as only a model-output problem and ignore retrieved-source contamination."
+  - "Define all AI-generated web content as pollution."
+  - "Use a black-box AI text detector without checking claim provenance."
+  - "Trust search ranking as a proxy for evidence quality."
+  - "Accept RAG citations if a URL exists, without checking whether the URL contains primary evidence, circular citation, or AI-synthesized unsupported claims."
+  - "Study misinformation broadly without a reconstructable citation or retrieval lineage."
+metrics:
+  - "Provenance recoverability: proportion of retrieved claims with traceable primary or authoritative evidence."
+  - "Recursive synthesis depth: number of synthetic or summary layers between claim and primary evidence."
+  - "Circular citation rate: proportion of sources that cite or paraphrase each other without primary evidence."
+  - "Contamination amplification: how often an unsupported claim appears across indexed pages, summaries, and AI answers."
+  - "Retrieval trust decay: confidence downgrade as lineage becomes synthetic-only, circular, or missing."
+  - "RAG answer risk: unsupported or weak-provenance claims included in generated answers."
+  - "Human audit burden: time to classify a source as primary, human synthesis, AI synthesis, circular, or unverifiable."
+  - "False contamination flag rate: correct human-authored or AI-assisted evidence incorrectly downgraded."
+  - "Synthetic Content Density: estimated share of sentences or paragraphs with AI-assisted generation signals, used only as one weak feature."
+  - "Verifiable Claim Ratio: factual claims with traceable primary or authoritative evidence divided by all factual claims."
+  - "Citation Lineage Depth: number of hops from claim to primary evidence."
+  - "Recursive Synthesis Probability: estimated probability from semantic similarity, citation graph pattern, temporal order, and source redundancy."
+  - "Evidence Drift Score: divergence between a downstream claim and the primary-source claim, assisted by NLI labels such as entailment, contradiction, neutral, exaggeration, and unsupported."
+  - "Graph Risk: citation loops, source laundering, SEO bursts, primary-source absence, semantic cloning, and RAG exposure risk."
+  - "Web Pollution Score: weighted combination of SCD, 1-VCR, RSP, EDS, and graph risk."
+real_world_pressure_tests:
+  - name: "RAG citation scavenger hunt"
+    setting: "Run a small set of practical search-answer queries where AI summaries, SEO posts, forum reposts, or low-evidence blogs are likely to appear."
+    playful_frame: "Treat each cited claim as a trail: can it be traced back to primary evidence, or does it loop through summaries?"
+    target_bottleneck: "Whether evidence provenance can be audited without calling every AI-generated page contamination."
+    expected_failure_modes:
+      - "citations point to pages that only summarize other pages"
+      - "multiple sources share the same unsupported wording"
+      - "the apparent source is AI-generated SEO content"
+      - "primary evidence is absent, paywalled, broken, or unrelated"
+      - "the RAG answer cites a URL but not the actual evidence"
+    smallest_test:
+      - "Pick 20 queries from cybercrime, health, product advice, or AI research news."
+      - "Save the top 5 retrieved sources or citations for each query."
+      - "Classify each claim lineage as primary, authoritative synthesis, human synthesis, AI-like synthesis, circular, or unverifiable."
+      - "Record whether the final answer includes claims with weak provenance."
+    metrics:
+      - "provenance recoverability"
+      - "recursive synthesis depth"
+      - "circular citation rate"
+      - "unsupported claim rate"
+      - "human audit time per claim"
+    human_decision:
+      - "Would a careful reviewer accept this retrieved document as evidence?"
+      - "Should the RAG system cite, downgrade, or refuse the claim?"
+    revise_or_kill_condition: "Revise if the taxonomy cannot be applied consistently; kill if it collapses into subjective dislike of AI-written content."
+    safety_boundary:
+      - "Use public web pages only."
+      - "Do not collect personal data."
+      - "Do not accuse specific sites of fraud without a formal evidence packet."
+      - "Store only URLs, short claim summaries, provenance labels, and audit notes."
+insights:
+  - "The stable scientific object is evidence provenance under recursive synthesis, not AI-generated content density alone."
+  - "A URL is not evidence; a URL is a locator that still needs lineage, authorship, claim support, and source authenticity checks."
+  - "RAG systems need evidence-quality gates before answer synthesis, not only post-hoc citation formatting."
+  - "This idea connects naturally to digital forensics: reconstruct claim origin, transformations, custody, and reliability."
+  - "The pressure test should make circular evidence visible: several pages may look independent while actually repeating the same unsupported synthetic claim."
+  - "The novelty is the move from AI text detection to evidence-centric web pollution detection."
+  - "The paper line should explicitly state that AI-generated content is not inherently false or harmful."
+  - "Cybercrime/scam content is a strong first domain because the cost of unverifiable claims is concrete and the forensic provenance frame is natural."
+connections:
+  - idea_000002
+  - idea_000004
+  - idea_000007
+  - idea_000014
+  - idea_000019
+  - idea_000023
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 91/100
+maturity_level: execution_ready
+next_steps:
+  - "Write a one-page definition note separating AI-generated content, incorrect content, unverifiable recursive synthesis, circular citation, and retrieval contamination."
+  - "Design a cybercrime/scam-focused web pollution pressure test with public sources only."
+  - "Create a source-lineage label set: primary evidence, authoritative synthesis, human synthesis, AI-like synthesis, circular, unverifiable, and unrelated citation."
+  - "Audit 50 public pages from scam-prevention, crypto-recovery, phishing-explainer, and cybercrime-advice queries."
+  - "Measure SCD, VCR, CLD, RSP, EDS, graph risk, provenance recoverability, circular citation rate, unsupported claim rate, and human audit time."
+  - "Build an interpretable baseline such as logistic regression or XGBoost before considering graph neural networks or complex ensembles."
+  - "Decide whether this should become a research brief linked to Journal Intelligence System, FSI:DI evidence-chain work, or a standalone RAG trust project."
+source:
+  - conversation
+external_sources_checked:
+  - "https://www.nature.com/articles/s41586-024-07566-y"
+  - "https://arxiv.org/abs/2602.16136"
+  - "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
+  - "https://ahrefs.com/blog/what-percentage-of-new-content-is-ai-generated/"
+evidence_gaps:
+  - "Need broader primary-source literature check for AI-generated text detection robustness, mixed human/AI text detection, provenance-aware retrieval, and synthetic web pollution detection."
+  - "Need current examples from search-answer systems before claiming ecosystem-level prevalence."
+  - "Need inter-rater test for provenance labels because contamination definitions can become subjective."
+  - "Need careful wording to avoid implying AI-generated equals false."
+  - "Need venue-fit check before aiming at TOIS, IPM, KBS, FSI:DI, DFRWS, AI & Society, Online Information Review, or Decision Support Systems."
+maturity_action: "generate experiment plan"
+normalization_status: validated

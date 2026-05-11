@@ -1,4 +1,23 @@
 cluster_0001:
+  theme: "ai-generated-content / evidence-provenance / information-retrieval"
+  cluster_type: research_cluster
+  ideas:
+    - idea_000022
+    - idea_000023
+  normalized_problem: "Given RAG and search-answer systems that retrieve from an increasingly AI-generated web, optimize evidence-provenance reliability under constraints of unverifiable recursive synthesis, citation lineage loss, synthetic content farms, search-index contamination, source authenticity ambiguity, consensus drift, and the fact that AI-generated content is not automatically false."
+  average_maturity_score: 88/100
+  cluster_score: 65/100
+  reason:
+    - "idea text has semantic overlap"
+    - "shared tags: ai-generated-content, evidence-provenance, information-retrieval, rag"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommendation: "evaluate as research candidate"
+  averages:
+    testability: 15/15
+    evidence_support: 10/15
+    feasibility: 10/15
+cluster_0002:
   theme: "evidence-routing / ai-triage / cybersecurity"
   cluster_type: research_cluster
   ideas:
@@ -18,7 +37,7 @@ cluster_0001:
     testability: 7/15
     evidence_support: 9/15
     feasibility: 11/15
-cluster_0002:
+cluster_0003:
   theme: "decision-system / planning-bridge / workflow"
   cluster_type: research_cluster
   ideas:
