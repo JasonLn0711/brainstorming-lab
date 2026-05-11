@@ -4,6 +4,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## adaptive-routing
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
 ## aesthetics
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -206,6 +210,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## dynamic-graph
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
 ## edge-ai
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -295,6 +303,10 @@
 ## first-principles
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## flow-based-system
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## forensic-defensibility
 
@@ -537,6 +549,10 @@
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
+## network-design
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
 ## noise-suppression
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -588,6 +604,10 @@
 ## philosophy-of-science
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## physarum
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## physics-education
 
@@ -706,6 +726,7 @@
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## scientific-culture
 
@@ -747,6 +768,11 @@
 ## signal-market
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
+## slime-mold
+
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## sociology-of-science
 

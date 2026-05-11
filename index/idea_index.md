@@ -15,6 +15,7 @@
 | `idea_000020` | GPU-first terminal as AI engineering workbench | 80/100 | `research_candidate` | `research_candidate` | Verify the current Ubuntu terminal stack on the target machine: default terminal, GNOME version, Wayland/X11, GPU driver, and whether Ptyxis/GNOME Terminal uses GTK4 VTE. | `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml` |
 | `idea_000017` | Externalized cognition OS for human-AI planning | 78/100 | `research_candidate` | `research_candidate` | Write a one-page architecture note comparing human memory, external memory, and AI context roles in the current repo system. | `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml` |
 | `idea_000001` | Healthcare AI triage copilot | 75/100 | `research_candidate` | `research_candidate` | Create a synthetic intake fixture and define reviewer-burden metrics. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
+| `idea_000021` | Physarum flow model for adaptive scam-candidate routing | 74/100 | `research_candidate` | `research_candidate` | Write a one-page formal objective that separates exact shortest-path search from adaptive candidate-region discovery. | `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml` |
 | `idea_000004` | Anomaly detection research watch | 73/100 | `research_candidate` | `research_candidate` | Define one public or synthetic anomaly fixture and one review packet format. | `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml` |
 | `idea_000002` | Cybersecurity reviewer assist layer | 68/100 | `research_candidate` | `research_candidate` | Define a controlled candidate-review fixture with explicit hard negatives. | `ideas/structured/idea_000002_cybersecurity_review_assist.yaml` |
 | `idea_000009` | Safe Tesla coil insect-trap teaching demo | 68/100 | `research_candidate` | `research_candidate` | Draft a one-page concept note comparing three safe versions: video analysis, electric-field simulation, and low-voltage LED mock. | `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml` |
@@ -43,3 +44,4 @@
 - idea_000017 - Externalized cognition OS for human-AI planning - 78/100 - research_candidate
 - idea_000019 - Codex-wrapped AI Scientist research OS - 94/100 - execution_ready
 - idea_000020 - GPU-first terminal as AI engineering workbench - 80/100 - research_candidate
+- idea_000021 - Physarum flow model for adaptive scam-candidate routing - 74/100 - research_candidate
