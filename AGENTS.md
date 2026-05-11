@@ -133,6 +133,12 @@ Current important legacy Markdown notes:
 - Use `scripts/link_ideas.py` for bidirectional links instead of editing only one file.
 - Before promoting a tool-shaped idea, capture at least one friction source: implementation, experiment, operation, field observation, lecture-time mental execution, or paper-to-workflow simulation.
 - Separate problem, symptom, tool, metric, and constraint before raising maturity for technique excitement.
+- Before raising an idea to `research_candidate` or `execution_ready`, add a real-world pressure test.
+  - A pressure test names the concrete messy setting where the idea may fail: crowding, occlusion, latency, deployment hardware, weak labels, human review burden, privacy boundary, cost, weather, noise, distribution shift, near-duplicate cases, or operational accountability.
+  - It should convert the abstract idea into a field-like scenario, such as "find my bicycle in a dense NTU bike lot" rather than only "run object detection."
+  - It must include the expected failure mode, the smallest observable test, and the metric or human decision that would confirm, revise, or kill the idea.
+  - Use `docs/real-world-pressure-tests.md` for playful but bounded experiment patterns.
+  - Keep detailed reasoning in the idea YAML or companion Markdown; put only reusable pressure-test rules here.
 - The smallest next test should confirm, revise, or kill a bottleneck hypothesis, not only try a tool.
 - Planning sync must remain short: title, ID, status, maturity score, next test, canonical path, and capacity note only.
 - Feedback from planning must come from explicit Idea OS marker blocks; do not infer feedback from free-form daily-note prose.

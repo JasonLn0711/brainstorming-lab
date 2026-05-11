@@ -55,6 +55,14 @@ reading, or active manuscript needs to become a journal-style paper. The durable
 rule is: one paper protects one main problem, one main method, one main evidence
 stack, and one contribution statement.
 
+## Real-World Pressure Tests
+
+Use `docs/real-world-pressure-tests.md` when an idea starts sounding mature but
+has not yet faced a messy field-like scenario. The durable rule is: before an
+idea becomes `research_candidate` or `execution_ready`, it should name at least
+one concrete pressure test with expected failure mode, smallest observable test,
+metric or human decision, and revise-or-kill condition.
+
 ## Legacy Markdown Brainstorms
 
 This checkout preserves local Markdown brainstorms that predate the YAML-first
@@ -133,4 +141,5 @@ pytest -q
 3. Use `docs/usage.md` for CLI commands.
 4. Use `docs/paper-writing-engineering-process.md` for reusable manuscript
    drafting and revision rules.
-5. Inspect `index/idea_index.md` for the current idea database.
+5. Use `docs/real-world-pressure-tests.md` before promoting mature ideas.
+6. Inspect `index/idea_index.md` for the current idea database.

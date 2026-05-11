@@ -36,9 +36,30 @@ maturity_level: research_candidate
 | 61-80/100 | `research_candidate` | Evaluate cluster readiness |
 | 81-100/100 | `execution_ready` | Generate experiment plan |
 
+## Real-World Pressure Test
+
+Before an idea is treated as `research_candidate` or `execution_ready`, it
+should include at least one real-world pressure test. This is the field-like
+scenario where the idea is most likely to break.
+
+A pressure test should name:
+
+- the messy setting, such as crowding, occlusion, weather, hardware limits,
+  latency, cost, weak labels, privacy, human review burden, near-duplicate
+  cases, or distribution shift;
+- the concrete failure mode expected in that setting;
+- the smallest observable test that would confirm, revise, or kill the idea;
+- the metric or human decision used to judge whether the idea still works.
+
+Example: "detect bicycles" is not enough for a mature computer-vision idea.
+"Find my bicycle in a dense NTU bike lot where hundreds of visually similar
+bicycles overlap, using detection plus ReID embeddings, location priors, and
+top-k human confirmation" is a pressure test.
+
 ## Examples
 
 An idea with only a title and a vague summary will usually stay `raw` or
 `emerging`. An idea with a normalized problem, baseline, metrics, evidence, and
 connected neighbors can become `research_candidate`. An `execution_ready` idea
-needs enough testability and feasibility to support an experiment plan.
+needs enough testability, feasibility, and real-world pressure testing to
+support an experiment plan.

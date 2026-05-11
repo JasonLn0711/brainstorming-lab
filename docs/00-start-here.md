@@ -9,6 +9,7 @@ Use this repo when an idea needs more thinking room than a daily note.
 | One passing thought | Keep one line in the planning day note |
 | Idea needs structure | Create a YAML record with `scripts/new_idea.py` |
 | Idea needs repeated sessions | Keep updating the YAML record and supporting docs here |
+| Idea is becoming mature | Add a real-world pressure test from `docs/real-world-pressure-tests.md` |
 | Idea may become a project | Create `projects-ready/YYYY-MM-DD-project-slug.md` |
 | Idea may become a paper | Use `docs/paper-writing-engineering-process.md` before drafting |
 | Project is real | Move execution into a new standalone repo |
