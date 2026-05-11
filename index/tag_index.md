@@ -19,7 +19,7 @@
 ## ai-generated-content
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## ai-governance
 
@@ -49,7 +49,7 @@
 
 ## ai-summary
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## ai-triage
 
@@ -250,6 +250,10 @@
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
+## ecosystem-knowledge-pollution
+
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
 ## edge-ai
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -294,7 +298,7 @@
 ## evidence-provenance
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## evidence-routing
 
@@ -418,7 +422,7 @@
 
 ## human-ai-interaction
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## human-approval-gate
 
@@ -443,7 +447,11 @@
 
 ## human-source-scarcity
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## human-source-scarcity-index
+
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## human-value
 
@@ -469,10 +477,14 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## information-entropy
+
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
 ## information-retrieval
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## infrastructure-engineering
 
@@ -767,7 +779,7 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## real-time-ai
 
@@ -817,7 +829,7 @@
 
 ## retrieval-collapse
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## retrieval-contamination
 
@@ -864,7 +876,7 @@
 
 ## search-engine-reliability
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## search-reliability
 
@@ -876,7 +888,7 @@
 
 ## search-trust-collapse
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## self-directed-data-discovery
 
@@ -927,7 +939,7 @@
 
 ## source-diversity
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## sre
 
@@ -996,7 +1008,7 @@
 
 ## trust-calibration
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## trust-formation
 
@@ -1016,7 +1028,7 @@
 
 ## user-trust
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## venue-fit
 
@@ -1044,7 +1056,7 @@
 
 ## web-pollution
 
-- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 84/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
 ## web-pollution-detection
 

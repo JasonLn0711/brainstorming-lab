@@ -5,7 +5,7 @@ cluster_0001:
     - idea_000023
     - idea_000024
   normalized_problem: "Given RAG and search-answer systems that retrieve from an increasingly AI-generated web, optimize evidence-provenance reliability under constraints of unverifiable recursive synthesis, citation lineage loss, synthetic content farms, search-index contamination, source authenticity ambiguity, consensus drift, and the fact that AI-generated content is not automatically false."
-  average_maturity_score: 86/100
+  average_maturity_score: 90/100
   cluster_score: 65/100
   reason:
     - "idea text has semantic overlap"
@@ -16,7 +16,7 @@ cluster_0001:
   averages:
     testability: 15/15
     evidence_support: 10/15
-    feasibility: 10/15
+    feasibility: 12/15
 cluster_0002:
   theme: "evidence-routing / ai-triage / cybersecurity"
   cluster_type: research_cluster

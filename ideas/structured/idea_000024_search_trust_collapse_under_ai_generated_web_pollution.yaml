@@ -17,6 +17,9 @@ tags:
   - ai-summary
   - retrieval-collapse
   - trust-calibration
+  - information-entropy
+  - ecosystem-knowledge-pollution
+  - human-source-scarcity-index
 status: execution_ready
 problem_statement:
   raw: "Search engines may continue to rank pages and produce plausible AI summaries while the underlying evidence ecology degrades: source diversity falls, human primary sources become scarce, and retrieved evidence drifts away from original provenance."
@@ -44,6 +47,21 @@ first_principle:
   planning_boundary: "planning-everything-track should only receive a short bridge if this becomes scheduled work."
   smallest_next_test: "Measure top-10 search results for 30 queries across cybercrime prevention, product troubleshooting, medical advice, and product reviews; label AI content signals, human-source availability, source diversity, provenance depth, and whether AI summaries reduce source-click incentives."
   kill_condition: "Park the idea if search trust decay cannot be measured separately from ordinary relevance, SEO quality, or source-authority differences."
+research_positioning:
+  danger: "The topic can easily collapse into social commentary unless every claim is tied to observable, quantifiable, or experimentally testable search behavior."
+  core_distinction: "Search trust collapse is not search-engine failure; it is degradation of trustworthy signals in a still-functional ranking and answer system."
+  strongest_claim: "Search reliability is not only a retrieval-accuracy problem; it is an evidence-ecology problem involving human-source scarcity, provenance degradation, and source-diversity decay."
+  recommended_title: "Human-Source Scarcity in AI-Mediated Search: A Provenance-Centric Framework for Measuring Search Reliability Degradation"
+  alternate_titles:
+    - "Search Engine Trust Collapse under AI-Generated Web Pollution: Measuring Source Diversity, Provenance Depth, and User Trust"
+    - "From Retrieval Collapse to Search Trust Collapse: Evidence Provenance Degradation in AI-Generated Web Ecosystems"
+  paper_boundary_statement: "This study does not assume that AI-generated content is inherently false or harmful. Instead, it investigates whether large-scale AI-generated content reduces source diversity, evidence traceability, and provenance reliability in search ecosystems."
+  contribution_frame:
+    - "Define search trust collapse as trust-signal degradation rather than total search failure."
+    - "Introduce Human-Source Scarcity as a measurable search reliability risk."
+    - "Operationalize Evidence Provenance Depth for top-k search and AI-answer contexts."
+    - "Measure source diversity decay across domain, author, claim, citation, and semantic-template levels."
+    - "Test whether provenance indicators improve user trust calibration."
 assumptions:
   - "Search trust collapse is better defined as trust-signal degradation than total search-engine failure."
   - "The key risk is that search and AI-answer systems may look normal while quietly relying on synthetic, low-provenance, or homogeneous sources."
@@ -62,6 +80,7 @@ evidence:
   - "arXiv checked 2026-05-11: 'Retrieval Collapses When AI Pollutes the Web' frames a two-stage retrieval-collapse process where AI-generated content dominates search results and can infiltrate retrieval pipelines."
   - "Pew Research Center checked 2026-05-11: a browsing-data study found 58 percent of respondents had at least one Google search in March 2025 that produced an AI-generated summary."
   - "Pew Research Center checked 2026-05-11: additional analysis reported users clicked traditional search result links in 8 percent of visits with an AI summary versus 15 percent without one, and clicked AI-summary source links in 1 percent of visits with such summaries."
+  - "Nature checked 2026-05-11: model-collapse work supports the broader concern that recursively generated data can drift away from original human data distributions, but this idea applies the concern to retrieval and search evidence ecology rather than only training data."
 baseline:
   - "Measure only answer accuracy and ignore source diversity, provenance depth, and human-source scarcity."
   - "Treat AI-generated content percentage as equivalent to search trust collapse."
@@ -69,14 +88,137 @@ baseline:
   - "Rank sources by domain authority only, without checking claim lineage or primary evidence distance."
   - "Study generic AI misinformation without search-result exposure and user-trust variables."
 metrics:
-  - "AI Content Density in top-k results by query and time."
-  - "Human-Source Scarcity Index: scarcity of distinct human primary or experience-based sources in top-k results."
-  - "Source Diversity Entropy across domains, authors, claims, citations, and semantic templates."
-  - "Evidence Provenance Depth: distance from retrieved page to primary evidence."
-  - "Provenance Reliability: inverse transform of provenance depth plus penalties for circular or missing evidence."
-  - "Unverifiable Claim Ratio in top-k search results and AI answers."
-  - "AI Summary Click Suppression: click-through difference when AI summary appears versus not."
-  - "User Trust Calibration: whether users distinguish primary source, synthesis, AI summary, and low-provenance source."
+  - name: "AI Content Density"
+    abbreviation: AICD
+    definition: "AICD(q, k, t) = AI-generated or AI-assisted documents in top-k results divided by total top-k retrieved documents for query q at time t."
+    caution: "Do not use this alone as a pollution score because AI-generated content can be accurate, useful, and well-sourced."
+  - name: "Human-Source Scarcity Index"
+    abbreviation: HSSI
+    definition: "HSSI(q, k) = 1 - distinct human primary or experience-based sources in top-k divided by total top-k sources."
+    interpretation: "Higher HSSI means the result set contains fewer independent human primary sources."
+  - name: "Source Diversity Entropy"
+    abbreviation: SDE
+    definition: "Entropy over domains, authors, claims, citations, and semantic templates in a result set."
+    interpretation: "Low entropy means results may look diverse by URL while repeating the same claim structure or citation lineage."
+  - name: "Evidence Provenance Depth"
+    abbreviation: EPD
+    definition: "Distance from retrieved result or AI-summary citation to primary evidence."
+    levels:
+      - "Depth 0: primary evidence such as official record, court judgment, original study, first-hand report, or primary documentation."
+      - "Depth 1: analysis that directly cites primary evidence."
+      - "Depth 2: news, blog, or explainer that cites an analysis."
+      - "Depth 3: AI summary, SEO farm, or aggregator built from secondary material."
+      - "Depth 4+: multi-layer synthesis or unverifiable chain where primary evidence is missing or inaccessible."
+  - name: "Provenance Reliability"
+    abbreviation: PR
+    definition: "PR = 1 / (1 + EPD), with additional penalties for circular citations, missing sources, or source laundering."
+  - name: "Unverifiable Claim Ratio"
+    abbreviation: UCR
+    definition: "Fraction of factual claims in top-k results or AI answers that cannot be traced to primary or accountable evidence."
+  - name: "AI Summary Click Suppression"
+    abbreviation: ASCS
+    definition: "Click-through difference between search visits where an AI summary appears and comparable visits where it does not."
+  - name: "User Trust Calibration"
+    abbreviation: UTC
+    definition: "Whether users can distinguish primary evidence, human synthesis, AI summary, and low-provenance source, and whether provenance labels improve that distinction."
+framework:
+  name: "Search Evidence Degradation Framework"
+  abbreviation: SEDF
+  layers:
+    content_layer:
+      purpose: "Measure the evidence ecology of the open web corpus."
+      observables:
+        - "AI-generated content density"
+        - "human-authored source ratio"
+        - "synthetic content clusters"
+        - "duplicate or paraphrased content"
+        - "source originality"
+    retrieval_layer:
+      purpose: "Measure what search engines or RAG retrievers expose to the user or answer system."
+      observables:
+        - "top-k AI exposure rate"
+        - "source diversity"
+        - "domain concentration"
+        - "citation overlap"
+        - "evidence provenance depth"
+    answer_layer:
+      purpose: "Measure how AI search or RAG answers transform retrieved sources."
+      observables:
+        - "factual accuracy"
+        - "citation faithfulness"
+        - "claim-source alignment"
+        - "hallucination rate"
+        - "unverifiable claim ratio"
+    user_trust_layer:
+      purpose: "Measure whether users can calibrate trust when results are fluent but provenance differs."
+      observables:
+        - "perceived credibility"
+        - "source-checking behavior"
+        - "click-through behavior"
+        - "trust calibration"
+        - "overreliance on AI summaries"
+hypotheses:
+  - id: H1
+    statement: "Higher AI-generated content density is associated with lower source diversity in top-k search results."
+  - id: H2
+    statement: "Higher AI-generated content density is associated with deeper evidence provenance depth in retrieved results."
+  - id: H3
+    statement: "When AI summaries appear, users click original sources less often, potentially weakening the incentive loop for human-authored primary content."
+  - id: H4
+    statement: "Users are more likely to trust fluent and well-formatted AI-generated or AI-mediated content even when its provenance is weaker."
+  - id: H5
+    statement: "Provenance indicators improve user trust calibration by helping users distinguish primary evidence from low-provenance synthesis."
+study_designs:
+  - name: "Study 1: Search-result pollution measurement"
+    goal: "Measure whether top-k search results exhibit AI content density, human-source scarcity, source diversity decay, provenance depth, and unverifiable claims."
+    query_domains:
+      - "medical advice"
+      - "legal information"
+      - "cybercrime prevention"
+      - "product reviews"
+      - "technical troubleshooting"
+      - "local services"
+      - "historical facts"
+      - "financial explainers"
+    labels:
+      - "suspected AI-generated or AI-assisted content"
+      - "author presence"
+      - "primary evidence availability"
+      - "source lineage"
+      - "content homogeneity"
+      - "unverifiable factual claims"
+    outputs:
+      - "AI Content Density"
+      - "Human-Source Scarcity Index"
+      - "Source Diversity Entropy"
+      - "Evidence Provenance Depth"
+      - "Unverifiable Claim Ratio"
+  - name: "Study 2: Controlled search pollution experiment"
+    goal: "Test whether retrieval systems overexpose fluent but low-provenance AI-mediated content as corpus contamination increases."
+    design:
+      - "Build a closed corpus of high-quality human-authored documents."
+      - "Inject AI-generated or AI-rewritten documents at 0, 10, 25, 50, and 75 percent contamination levels."
+      - "Run BM25, dense retrieval, ColBERT-style retrieval, LLM reranking, and RAG pipelines where feasible."
+    measurements:
+      - "top-k exposure contamination versus corpus contamination"
+      - "answer accuracy"
+      - "citation faithfulness"
+      - "source diversity"
+      - "evidence provenance depth"
+  - name: "Study 3: User trust and provenance label experiment"
+    goal: "Test whether users overtrust fluent low-provenance results and whether provenance labels improve judgment."
+    conditions:
+      - "many human primary sources"
+      - "many AI-generated fluent sources"
+      - "low source diversity but authority-looking presentation"
+      - "clear provenance labels"
+      - "no provenance labels"
+    measurements:
+      - "perceived credibility"
+      - "source-click behavior"
+      - "ability to identify primary sources"
+      - "overreliance on AI summaries"
+      - "trust calibration improvement under provenance labeling"
 real_world_pressure_tests:
   - name: "Search trust decay field game"
     setting: "Compare top-10 search results and AI-summary behavior for practical high-stakes queries where human experience or primary evidence matters."
@@ -134,11 +276,11 @@ maturity:
   connection_strength_score: 10/10
   novelty: 10
   novelty_score: 10/10
-  feasibility: 8
-  feasibility_score: 8/15
+  feasibility: 12
+  feasibility_score: 12/15
   research_potential: 7
   research_potential_score: 7/10
-maturity_score: 84/100
+maturity_score: 88/100
 maturity_level: execution_ready
 next_steps:
   - "Write a one-page definition separating retrieval collapse, search trust collapse, source diversity decay, human-source scarcity, and evidence provenance depth."

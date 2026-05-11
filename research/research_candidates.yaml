@@ -37,14 +37,14 @@ research_candidate_0001:
     - "Evidence Drift Score: divergence between a downstream claim and the primary-source claim, assisted by NLI labels such as entailment, contradiction, neutral, exaggeration, and unsupported."
     - "Graph Risk: citation loops, source laundering, SEO bursts, primary-source absence, semantic cloning, and RAG exposure risk."
     - "Web Pollution Score: weighted combination of SCD, 1-VCR, RSP, EDS, and graph risk."
-    - "AI Content Density in top-k results by query and time."
-    - "Human-Source Scarcity Index: scarcity of distinct human primary or experience-based sources in top-k results."
-    - "Source Diversity Entropy across domains, authors, claims, citations, and semantic templates."
-    - "Evidence Provenance Depth: distance from retrieved page to primary evidence."
-    - "Provenance Reliability: inverse transform of provenance depth plus penalties for circular or missing evidence."
-    - "Unverifiable Claim Ratio in top-k search results and AI answers."
-    - "AI Summary Click Suppression: click-through difference when AI summary appears versus not."
-    - "User Trust Calibration: whether users distinguish primary source, synthesis, AI summary, and low-provenance source."
+    - "AI Content Density"
+    - "Human-Source Scarcity Index"
+    - "Source Diversity Entropy"
+    - "Evidence Provenance Depth"
+    - "Provenance Reliability"
+    - "Unverifiable Claim Ratio"
+    - "AI Summary Click Suppression"
+    - "User Trust Calibration"
   minimum_viable_experiment: "Write a one-page definition note separating AI-generated content, incorrect content, unverifiable recursive synthesis, circular citation, and retrieval contamination."
   risks:
     - "The cluster may be too broad unless the first experiment stays small."
@@ -54,5 +54,5 @@ research_candidate_0001:
     - "Create a source-lineage label set: primary evidence, authoritative synthesis, human synthesis, AI-like synthesis, circular, unverifiable, and unrelated citation."
     - "Audit 50 public pages from scam-prevention, crypto-recovery, phishing-explainer, and cybercrime-advice queries."
     - "Measure SCD, VCR, CLD, RSP, EDS, graph risk, provenance recoverability, circular citation rate, unsupported claim rate, and human audit time."
-  research_score: 82/100
+  research_score: 84/100
   research_level: proposal_ready

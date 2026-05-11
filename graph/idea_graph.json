@@ -530,8 +530,8 @@
       "id": "idea_000024",
       "title": "Search trust collapse under AI-generated web pollution",
       "status": "execution_ready",
-      "maturity_score": "84/100",
-      "maturity_score_raw": 84,
+      "maturity_score": "88/100",
+      "maturity_score_raw": 88,
       "maturity_level": "execution_ready",
       "tags": [
         "search-engine-reliability",
@@ -547,7 +547,10 @@
         "human-ai-interaction",
         "ai-summary",
         "retrieval-collapse",
-        "trust-calibration"
+        "trust-calibration",
+        "information-entropy",
+        "ecosystem-knowledge-pollution",
+        "human-source-scarcity-index"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml"
     }
@@ -1239,7 +1242,7 @@
       "source": "idea_000011",
       "target": "idea_000024",
       "weight": 0.6,
-      "similarity": 0.1782,
+      "similarity": 0.187,
       "shared_tags": [
         "rag"
       ],
@@ -1388,7 +1391,7 @@
       "source": "idea_000014",
       "target": "idea_000024",
       "weight": 1.0,
-      "similarity": 0.196,
+      "similarity": 0.2119,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1463,7 +1466,7 @@
       "source": "idea_000019",
       "target": "idea_000024",
       "weight": 1.0,
-      "similarity": 0.2707,
+      "similarity": 0.2801,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1473,7 +1476,7 @@
       "source": "idea_000023",
       "target": "idea_000024",
       "weight": 1.0,
-      "similarity": 0.6824,
+      "similarity": 0.6952,
       "shared_tags": [
         "ai-generated-content",
         "evidence-provenance",
