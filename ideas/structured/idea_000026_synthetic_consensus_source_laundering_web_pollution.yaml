@@ -1,0 +1,458 @@
+id: idea_000026
+title: "Synthetic consensus and source laundering in AI-generated web pollution"
+created_at: 2026-05-11
+type: hypothesis
+tags:
+  - synthetic-consensus
+  - source-laundering
+  - ai-generated-web-pollution
+  - evidence-provenance
+  - apparent-support
+  - independent-evidence
+  - counterfactual-provenance-ablation
+  - citation-faithfulness
+  - source-displacement
+  - support-fragility
+  - rag
+  - information-retrieval
+  - cybercrime-content
+  - scam-content
+  - digital-forensics
+  - provenance-aware-retrieval
+status: research_candidate
+problem_statement:
+  raw: "The deeper problem is not detecting AI-written articles, but detecting when AI-generated or derivative content manufactures false evidential weight: many pages repeat or cite a claim, yet the claim has little or no independent primary evidence."
+  normalized: "Given AI-generated, AI-assisted, SEO-optimized, derivative, and recursively rewritten web pages around high-risk claims, optimize detection of false evidential weight under constraints of unreliable AI-text detection, non-false AI-generated content, non-independent source repetition, citation laundering, primary-source displacement, fragile support after provenance pruning, and downstream RAG exposure."
+  structure:
+    given: "AI-generated, AI-assisted, SEO-optimized, derivative, and recursively rewritten web pages around high-risk claims"
+    optimize: "detection of false evidential weight"
+    constraints:
+      - "unreliable AI-text detection"
+      - "AI-generated content is not inherently false"
+      - "source repetition is not independent evidence"
+      - "citation laundering"
+      - "primary-source displacement"
+      - "support fragility after provenance pruning"
+      - "downstream RAG exposure"
+summary: "This idea sharpens AI-generated web pollution detection into a claim-level evidence problem: synthetic consensus and source laundering. A polluted web claim is not defined by AI authorship alone. It is defined by high apparent support with low independent evidential support. The research task is to detect when many web pages, citations, SEO summaries, or RAG-retrieved sources make a weakly supported claim look like a consensus."
+first_principle:
+  scarce_resource: "independent verifiable evidence, not text authorship labels"
+  core_definition: "Web Pollution = high apparent support with low independent evidential support."
+  knowledge_chain:
+    - "World event or fact"
+    - "Primary evidence"
+    - "Secondary interpretation"
+    - "Search or retrieval exposure"
+    - "LLM or RAG answer"
+  distortion_chain:
+    - "Weak evidence"
+    - "Many synthetic or derivative repetitions"
+    - "High retrieval exposure"
+    - "Apparent consensus"
+  not_the_core:
+    - "binary AI-written versus human-written classification"
+    - "assuming AI-generated content is false"
+    - "counting web pages without checking evidence lineages"
+    - "counting citations without checking citation faithfulness"
+    - "measuring RAG answer accuracy while ignoring source displacement"
+  core_question: "Does this web content create false evidential weight for a claim?"
+  canonical_home: "brainstorming-lab owns this as the most operational child line under idea_000023 and a measurement complement to idea_000025."
+  planning_boundary: "planning-everything-track should only receive a short bridge if this becomes scheduled research execution."
+  smallest_next_test: "Select 30 scam or cybercrime claims, collect top-k web documents, group them by provenance lineage, and compute apparent support, independent evidential support, synthetic consensus gap, support fragility, and citation faithfulness."
+  kill_condition: "Park the idea if source-laundering labels cannot be made reproducible across annotators or if SCG collapses into ordinary source-authority scoring."
+research_positioning:
+  recommended_title: "Detecting Synthetic Consensus and Source Laundering in AI-Generated Web Pollution"
+  focused_domain_title: "Detecting Synthetic Consensus in AI-Generated Scam Web Content: A Provenance-Centric Approach"
+  downstream_title: "Synthetic Consensus Detection in AI-Generated Cybercrime Web Content: Measuring Source Laundering, Evidence Fragility, and Retrieval Exposure"
+  strongest_claim: "AI-generated web pollution is not primarily a text-authorship problem; it is an evidential distortion problem."
+  abstract_sentence: "We define web pollution as the inflation of apparent evidential support through synthetic or derivative content without corresponding growth in independent verifiable evidence."
+  key_shift: "From detecting AI articles to detecting whether AI-mediated web content manufactures false consensus for claims."
+  novelty:
+    - "Synthetic Consensus Gap measures the difference between visible support and independent evidence."
+    - "Source Laundering Detection treats citation use as a forensic evidence-chain problem."
+    - "Counterfactual Provenance Ablation tests whether support survives after derivative and circular sources are removed."
+    - "Truthful derivative pollution captures cases where content is accurate but still displaces primary evidence."
+    - "Provenance-aware retrieval connects web pollution detection to downstream RAG risk reduction."
+related_literature_position:
+  - "LLM-generated text detection surveys establish that binary AI-text detection faces out-of-distribution, adversarial, real-world, and evaluation-framework limitations."
+  - "Model collapse research motivates the importance of preserving human-produced data, but does not directly measure web-level claim support distortion."
+  - "Retrieval collapse research shows synthetic-source exposure can rise while answer accuracy appears stable; this idea identifies claim-level synthetic consensus as a lower-level mechanism."
+  - "Graphite's industry measurements motivate separating content production prevalence from search and answer-engine exposure."
+  - "RAG attribution-faithfulness research motivates the distinction between citation correctness and whether citations faithfully support or explain the answer."
+  - "Common Crawl archives and web graphs make subset-level web graph audits feasible without crawling the whole web from scratch."
+  - "RAG evaluation surveys motivate evaluating retrieval, generation, safety, and downstream risk instead of answer quality alone."
+assumptions:
+  - "A claim can look well-supported because many derivative pages repeat it, even when independent evidence is weak."
+  - "AI-generated content can be faithful and useful; pollution depends on evidence distortion rather than authorship alone."
+  - "Truthful derivative pollution can still harm search reliability by displacing primary sources and reducing direct exposure to original evidence."
+  - "Source laundering can happen inside web articles before RAG systems ever retrieve them."
+  - "Counterfactual pruning of duplicate, derivative, circular, and unsupported sources can reveal fragile support structures."
+  - "Cybercrime and scam content is a strong first domain because unverifiable claims have concrete harm and evidence-chain analysis is natural."
+evidence:
+  - "2026-05-11 user framing: the next deep direction is not detecting AI articles, but detecting false consensus manufactured by AI-generated or derivative content."
+  - "2026-05-11 user definition: synthetic consensus means many AI-generated or rewritten pages repeat the same claim, causing search engines, RAG systems, or users to mistake repetition for independent support."
+  - "2026-05-11 user definition: source laundering means a weakly evidenced claim gains apparent credibility through layers of paraphrase, citation, summary, SEO packaging, or authority-looking citation."
+  - "2026-05-11 user proposed formal object: Synthetic Consensus Gap = Apparent Support - Independent Evidential Support."
+  - "2026-05-11 user proposed methods: Evidence Support Fragility, Primary Source Displacement Rate, Exposure-Weighted Synthetic Consensus, and Counterfactual Provenance Ablation."
+  - "ACL Anthology checked 2026-05-11: the 2025 Computational Linguistics survey frames LLM-generated text detection as binary classification but highlights out-of-distribution, attack, real-world, and evaluation-framework challenges."
+  - "Nature checked 2026-05-11: model collapse research argues model-generated web content can pollute future training data and that genuine human data becomes increasingly valuable."
+  - "arXiv checked 2026-05-11: retrieval-collapse work reports 67 percent pool contamination leading to more than 80 percent exposure contamination in an SEO setting."
+  - "Graphite checked 2026-05-11: industry analysis distinguishes AI article prevalence from Google Search, ChatGPT, and Perplexity citation exposure."
+  - "arXiv checked 2026-05-11: correctness-is-not-faithfulness work reports attributed answers can have substantial citation-faithfulness failures."
+  - "Common Crawl checked 2026-05-11: April 2026 crawl archive contains 2.19 billion pages, and February-March-April 2026 web graphs report 269.0 million host-level nodes and 9.4 billion host-level edges plus 124.6 million domain-level nodes and 4.8 billion domain-level edges."
+  - "arXiv checked 2026-05-11: RAG evaluation survey emphasizes retrieval and generation components and includes security and retrieval hijacking concerns."
+baseline:
+  - "Detect whether each article is AI-generated."
+  - "Treat all AI-generated text as pollution."
+  - "Use domain authority or rank as a proxy for evidence quality."
+  - "Count the number of supporting pages without clustering provenance lineage."
+  - "Assume cited sources support the article's claims."
+  - "Evaluate RAG answers by factual correctness alone."
+  - "Use real SERP audits only, without controlled corpus experiments."
+metrics:
+  - name: "Apparent Support"
+    abbreviation: AS
+    definition: "AS(c) = sum over documents d in D of I(d supports claim c)."
+    caution: "Inflated by SEO farms, near-duplicates, AI rewrites, and circular citation."
+  - name: "Independent Evidential Support"
+    abbreviation: IES
+    definition: "IES(c) = number of independent primary evidence lineages supporting claim c."
+    interpretation: "Multiple pages from one origin count as one lineage."
+  - name: "Synthetic Consensus Gap"
+    abbreviation: SCG
+    definition: "SCG(c) = AS(c) - IES(c)."
+    interpretation: "Large positive values indicate apparent consensus without matching independent evidence."
+  - name: "Synthetic Consensus Gap Ratio"
+    abbreviation: SCG_ratio
+    definition: "SCG_ratio(c) = AS(c) / (1 + IES(c))."
+  - name: "Exposure-Weighted Synthetic Consensus"
+    abbreviation: EWSC
+    definition: "EWSC(c) = sum over claim-supporting documents of rank_weight(d) times pollution_probability_or_risk(d)."
+    interpretation: "Measures whether false evidential weight is likely to be seen by search or RAG systems."
+  - name: "Primary Source Displacement Rate"
+    abbreviation: PSDR
+    definition: "PSDR(q) = synthetic or derivative pages ranked above primary sources divided by all retrieved pages."
+  - name: "Evidence Support Fragility"
+    abbreviation: SF
+    definition: "SF(c) = 1 - Support_after_pruning(c) / Support_before_pruning(c)."
+    pruning_steps:
+      - "remove near-duplicate documents"
+      - "collapse same-owner domains"
+      - "remove AI-like derivative pages"
+      - "remove pages without primary citations"
+      - "remove circular citation clusters"
+  - name: "Citation Faithfulness Rate"
+    abbreviation: CFR
+    definition: "Claim-citation pairs where the cited source supports the claim divided by all claim-citation pairs."
+  - name: "Source Laundering Rate"
+    abbreviation: SLR
+    definition: "Claims using weakly related, unsupported, circular, or authority-masking citations divided by total cited claims."
+  - name: "RAG Synthetic Source Exposure"
+    abbreviation: RSSE
+    definition: "Retrieved RAG context items classified as synthetic, derivative, circular, or unsupported divided by all retrieved context items."
+evidence_tiers:
+  - tier: 1
+    label: "primary source"
+    examples:
+      - "official notice"
+      - "court document"
+      - "regulatory filing"
+      - "original security report"
+      - "first-hand case evidence"
+  - tier: 2
+    label: "reputable secondary source"
+    examples:
+      - "professional analysis with direct primary citations"
+      - "news report with accountable sourcing"
+  - tier: 3
+    label: "derivative article with citation"
+    examples:
+      - "summary or explainer that cites secondary material"
+  - tier: 4
+    label: "uncited article"
+    examples:
+      - "claim-bearing content with no source lineage"
+  - tier: 5
+    label: "circular, synthetic, or unverifiable source"
+    examples:
+      - "content farm repetition"
+      - "AI-like Q&A page without evidence"
+      - "mutual citation loop"
+      - "citation that does not support the claim"
+research_questions:
+  - id: RQ1
+    question: "To what extent do AI-generated or derivative web pages inflate the apparent support of scam or cybercrime-related claims without increasing independent evidential support?"
+    metrics:
+      - AS
+      - IES
+      - SCG
+      - SF
+  - id: RQ2
+    question: "Do synthetic or derivative pages displace primary evidence sources in search and retrieval results?"
+    metrics:
+      - PSDR
+      - EWSC
+      - "primary source exposure"
+      - "SERP exposure contamination"
+  - id: RQ3
+    question: "How often do web articles cite sources that do not faithfully support their claims?"
+    metrics:
+      - CFR
+      - SLR
+      - "unsupported citation rate"
+      - "circular citation rate"
+  - id: RQ4
+    question: "Can provenance-aware reranking reduce synthetic consensus exposure in RAG systems?"
+    metrics:
+      - RSSE
+      - "primary-source citation rate"
+      - "unsupported claim rate"
+      - "answer factuality"
+      - "citation faithfulness"
+hypotheses:
+  - id: H1
+    statement: "Synthetic or derivative pages increase Apparent Support faster than Independent Evidential Support, producing a measurable Synthetic Consensus Gap."
+  - id: H2
+    statement: "Primary sources can be displaced even when synthetic derivative pages are factually correct."
+  - id: H3
+    statement: "Counterfactual Provenance Ablation will reveal high support fragility for claims amplified by AI-like or SEO-style repetition."
+  - id: H4
+    statement: "Citation laundering is more common in scam and cybercrime recovery content than in domains with clear official primary records."
+  - id: H5
+    statement: "Provenance-aware reranking can reduce synthetic source exposure and unsupported RAG claims without necessarily reducing answer accuracy."
+study_designs:
+  - name: "Experiment 1: Controlled Synthetic Consensus Simulation"
+    priority: 1
+    goal: "Create causal evidence that synthetic or derivative repetition inflates apparent support and affects retrieval."
+    seed_claims:
+      target: "200 scam or cybercrime-related claims"
+      claim_types:
+        - "scam prevention claims"
+        - "cybercrime trend claims"
+        - "fake recovery service claims"
+        - "crypto fraud claims"
+        - "phishing technique claims"
+        - "digital forensic procedure claims"
+    document_types:
+      - "primary evidence document"
+      - "human-written summary"
+      - "AI-generated faithful summary"
+      - "AI-generated derivative article without primary source"
+      - "AI-generated laundered article with weak or unsupported citation"
+    contamination_levels:
+      - "0%"
+      - "10%"
+      - "30%"
+      - "50%"
+      - "70%"
+      - "90%"
+    retrievers:
+      - BM25
+      - "dense retriever"
+      - "hybrid retriever"
+      - "RAG pipeline"
+    measurements:
+      - "top-k polluted page ratio"
+      - "primary source displacement"
+      - "RAG citation of derivative pages"
+      - "unsupported claim rate"
+      - "SCG increase"
+      - "provenance-aware reranker effect"
+    feasibility: high
+  - name: "Experiment 2: In-the-Wild Scam and Cybercrime Web Audit"
+    priority: 2
+    goal: "Measure synthetic consensus and source laundering in public web content."
+    query_examples:
+      - "recover stolen crypto funds"
+      - "is platform X legit"
+      - "crypto recovery scam"
+      - "phishing attack prevention"
+      - "romance scam recovery"
+      - "fake investment platform warning"
+      - "malware family explanation"
+    sources_to_collect:
+      - "top 10 or top 20 search results"
+      - "answer engine citations"
+      - "related Q&A pages"
+      - "linked citations"
+      - "archived versions"
+      - "Common Crawl subset where feasible"
+    labels:
+      - "content origin: human, AI, hybrid, unknown"
+      - "evidence type: primary, secondary, derivative, no evidence"
+      - "citation faithfulness: faithful, partial, unsupported, misleading"
+      - "claim status: supported, contradicted, unverifiable"
+      - "lineage: direct, indirect, circular, missing"
+      - "pollution risk: low, medium, high"
+    feasibility: medium-high
+  - name: "Experiment 3: Counterfactual Provenance Ablation"
+    priority: 1
+    goal: "Test whether a claim's support survives after derivative, circular, and unsupported documents are removed."
+    procedure:
+      - "build D_c, the set of documents supporting claim c"
+      - "compute support before pruning"
+      - "remove near-duplicate documents"
+      - "collapse same-owner domains"
+      - "remove AI-like derivative pages"
+      - "remove pages without primary citations"
+      - "remove circular citation clusters"
+      - "compute support after pruning"
+    output: "Evidence Support Fragility and remaining Independent Evidential Support."
+    feasibility: high
+  - name: "Experiment 4: RAG Downstream Risk Test"
+    priority: 3
+    goal: "Evaluate whether provenance-aware retrieval reduces synthetic consensus exposure in RAG."
+    systems:
+      - "baseline RAG with BM25 or dense retrieval"
+      - "source-quality RAG using domain authority, credibility, and date"
+      - "provenance-aware RAG using SCG, IES, PSDR, citation faithfulness, and support fragility"
+    measurements:
+      - "answer factuality"
+      - "citation quality"
+      - "citation faithfulness"
+      - "unsupported claim rate"
+      - "primary source citation rate"
+      - "synthetic source exposure"
+      - "evidence diversity"
+    feasibility: medium-high
+real_world_pressure_tests:
+  - name: "False consensus stress test"
+    setting: "A scam or cybercrime claim appears across many search results, AI answers, and blog posts, but the actual evidence chain may be weak or circular."
+    playful_frame: "Ask whether the claim has real witnesses or just many echoes."
+    target_bottleneck: "Whether apparent consensus survives provenance pruning."
+    expected_failure_modes:
+      - "many pages repeat one unsupported source"
+      - "AI-like derivative pages rank above primary evidence"
+      - "citations are present but do not support the claim"
+      - "RAG retrieves multiple pages from the same provenance cluster"
+      - "after pruning, support collapses to zero or one source"
+    smallest_test:
+      - "Select 10 scam or cybercrime claims from public search queries."
+      - "Collect top 10 results for each claim."
+      - "Normalize claims and group documents into provenance clusters."
+      - "Compute AS, IES, SCG, and SF."
+      - "Check citation faithfulness for the top three cited documents per claim."
+    metrics:
+      - AS
+      - IES
+      - SCG
+      - SF
+      - CFR
+    human_decision:
+      - "Would a careful investigator treat the claim as independently supported?"
+      - "Does pruning derivative pages change the conclusion?"
+      - "Should a RAG system cite, downgrade, or refuse this claim?"
+    revise_or_kill_condition: "Revise if annotators cannot agree on provenance clusters or citation faithfulness; park if the method becomes only subjective credibility scoring."
+    safety_boundary:
+      - "Use public web pages and defensive cybercrime/scam claims only."
+      - "Do not publish accusations against specific sites without a separate evidence packet."
+      - "Store minimal excerpts and avoid sensitive personal data."
+      - "Keep operational cybercrime details out of examples."
+framework:
+  name: "Synthetic Consensus Detection Framework"
+  abbreviation: SCDF
+  layers:
+    claim_layer:
+      purpose: "Extract and normalize claim clusters."
+      artifacts:
+        - "atomic claims"
+        - "claim paraphrase clusters"
+        - "claim status labels"
+    evidence_layer:
+      purpose: "Trace support lineages and evidence tiers."
+      artifacts:
+        - "primary source links"
+        - "lineage graph"
+        - "citation support labels"
+        - "evidence tiers"
+    exposure_layer:
+      purpose: "Measure whether polluted support is visible to search and RAG systems."
+      artifacts:
+        - "rank-weighted exposure"
+        - "SERP position"
+        - "RAG retrieved context"
+    ablation_layer:
+      purpose: "Remove derivative and circular evidence to test support fragility."
+      artifacts:
+        - "support before pruning"
+        - "support after pruning"
+        - "fragility score"
+    intervention_layer:
+      purpose: "Test provenance-aware reranking or claim refusal."
+      artifacts:
+        - "baseline versus provenance-aware retrieval"
+        - "unsupported claim reduction"
+        - "primary evidence exposure"
+priority_order:
+  - rank: 1
+    line: "Synthetic Consensus Gap + Counterfactual Provenance Ablation"
+    reason: "Strongest novelty and least dependent on unreliable AI-text detection."
+  - rank: 2
+    line: "Scam and Cybercrime Web Audit"
+    reason: "Best domain fit for forensic evidence-chain background."
+  - rank: 3
+    line: "Provenance-aware RAG Risk Reduction"
+    reason: "Turns detection into a measurable downstream intervention."
+pitfalls:
+  - "Do not frame the paper as an AI-generated text detector."
+  - "Do not define all AI-generated content as pollution."
+  - "Do not rely on AI-text detectors as ground truth."
+  - "Do not assume primary source exists for every claim; use evidence tiers."
+  - "Do not rely only on live SERP data without controlled experiments."
+  - "Do not skip human validation for claim extraction and citation support."
+connections:
+  - idea_000023
+  - idea_000024
+  - idea_000025
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 3
+  evidence_support_score: 3/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 2
+  novelty_score: 2/10
+  feasibility: 9
+  feasibility_score: 9/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 71/100
+maturity_level: research_candidate
+next_steps:
+  - "Write the one-page definition of synthetic consensus, source laundering, truthful derivative pollution, and web pollution as evidential distortion."
+  - "Create a 10-claim false consensus stress-test sheet for public scam and cybercrime queries."
+  - "Define provenance cluster labeling rules and evidence tiers before collecting larger samples."
+  - "Run Counterfactual Provenance Ablation on 10 claims and report AS, IES, SCG, SF, and CFR."
+  - "Design a controlled synthetic consensus corpus with five document types per seed claim."
+  - "Compare baseline retrieval against a simple provenance-aware reranker."
+source:
+  - conversation
+external_sources_checked:
+  - "https://aclanthology.org/2025.cl-1.8/"
+  - "https://www.nature.com/articles/s41586-024-07566-y"
+  - "https://arxiv.org/html/2602.16136v1"
+  - "https://graphite.io/five-percent/ai-content-in-search-and-llms"
+  - "https://arxiv.org/abs/2412.18004"
+  - "https://commoncrawl.org/blog/april-2026-crawl-archive-now-available"
+  - "https://commoncrawl.org/blog/host--and-domain-level-web-graphs-february-march-and-april-2026"
+  - "https://arxiv.org/html/2504.14891v1"
+evidence_gaps:
+  - "Need exact annotation guide for deciding whether two documents share a provenance lineage."
+  - "Need inter-annotator agreement for evidence tier, citation faithfulness, and source laundering labels."
+  - "Need a controlled corpus where ground-truth lineage is known."
+  - "Need care with Graphite and other industry prevalence data because detector and sampling assumptions are not equivalent to academic ground truth."
+  - "Need a policy for naming or anonymizing real scam-related domains."
+  - "Need to separate truthful derivative pollution from false misinformation."
+  - "Need to decide whether Common Crawl or live SERP is the first real-world data source."
+maturity_action: "evaluate cluster readiness"
+normalization_status: validated
+insights: []

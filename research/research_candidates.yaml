@@ -1,13 +1,14 @@
 research_candidate_0001:
   candidate_id: research_candidate_0001
-  title: "Research candidate: ai-generated-content / evidence-provenance / information-retrieval"
+  title: "Research candidate: evidence-provenance / information-retrieval / rag"
   source_cluster: cluster_0001
   source_ideas:
     - idea_000023
     - idea_000024
+    - idea_000025
   normalized_problem: "Given RAG and search-answer systems that retrieve from an increasingly AI-generated web, optimize evidence-provenance reliability under constraints of unverifiable recursive synthesis, citation lineage loss, synthetic content farms, search-index contamination, source authenticity ambiguity, consensus drift, and the fact that AI-generated content is not automatically false."
   research_question: "Can a bounded method for this problem improve Provenance recoverability: proportion of retrieved claims with traceable primary or authoritative evidence., Recursive synthesis depth: number of synthetic or summary layers between claim and primary evidence., Circular citation rate: proportion of sources that cite or paraphrase each other without primary evidence. compared with the baseline?"
-  why_now: "The cluster has multiple connected idea nodes, shared evidence, and measurable next steps across ai-generated-content, ai-safety, ai-summary, cybercrime-content."
+  why_now: "The cluster has multiple connected idea nodes, shared evidence, and measurable next steps across ai-crawler-opt-out, ai-generated-content, ai-mediated-search, ai-safety."
   possible_contribution: "A reusable evaluation frame that compares baseline workflow performance against a small, auditable intervention."
   baseline:
     - "Treat hallucination as only a model-output problem and ignore retrieved-source contamination."
@@ -21,6 +22,12 @@ research_candidate_0001:
     - "Assume users will click sources if they care, without measuring behavior under AI summaries."
     - "Rank sources by domain authority only, without checking claim lineage or primary evidence distance."
     - "Study generic AI misinformation without search-result exposure and user-trust variables."
+    - "Measure AI Content Density and assume higher AI share means worse search."
+    - "Count domain diversity without measuring whether sources are independent provenance streams."
+    - "Evaluate AI search by answer accuracy alone."
+    - "Treat displayed citations as evidence dependence without claim-source tracing."
+    - "Use an AI text detector as ground truth for web pollution."
+    - "Study only English head queries and miss long-tail or cross-lingual failure modes."
   metrics:
     - "Provenance recoverability: proportion of retrieved claims with traceable primary or authoritative evidence."
     - "Recursive synthesis depth: number of synthetic or summary layers between claim and primary evidence."
@@ -45,6 +52,17 @@ research_candidate_0001:
     - "Unverifiable Claim Ratio"
     - "AI Summary Click Suppression"
     - "User Trust Calibration"
+    - "Primary Evidence Exposure Rate"
+    - "Effective Evidence Sample Size"
+    - "Provenance Cluster Entropy"
+    - "Source Independence Ratio"
+    - "Citation Support Precision"
+    - "Citation Support Recall"
+    - "Citation Laundering Rate"
+    - "Citation Absorption Gap"
+    - "Authority Laundering Rate"
+    - "Human-Source Reproduction Number"
+    - "Evidence Void Amplification Rate"
   minimum_viable_experiment: "Write a one-page definition note separating AI-generated content, incorrect content, unverifiable recursive synthesis, circular citation, and retrieval contamination."
   risks:
     - "The cluster may be too broad unless the first experiment stays small."
@@ -54,5 +72,5 @@ research_candidate_0001:
     - "Create a source-lineage label set: primary evidence, authoritative synthesis, human synthesis, AI-like synthesis, circular, unverifiable, and unrelated citation."
     - "Audit 50 public pages from scam-prevention, crypto-recovery, phishing-explainer, and cybercrime-advice queries."
     - "Measure SCD, VCR, CLD, RSP, EDS, graph risk, provenance recoverability, circular citation rate, unsupported claim rate, and human audit time."
-  research_score: 84/100
-  research_level: proposal_ready
+  research_score: 79/100
+  research_level: small_experiment_ready

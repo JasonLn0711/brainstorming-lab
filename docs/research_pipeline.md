@@ -74,3 +74,19 @@ contents into planning.
 Research-ready means suitable for a bounded research design or experiment. It
 does not mean validated, deployed, clinically safe, legally confirmed, or ready
 for production.
+
+## Current Evidence-Provenance Cluster
+
+The active AI web-pollution / RAG trust cluster currently runs from broad to
+operational:
+
+- `idea_000023`: evidence provenance under recursive AI web contamination
+- `idea_000024`: search trust collapse under AI-generated web pollution
+- `idea_000025`: effective evidence collapse in AI-mediated search
+- `idea_000026`: synthetic consensus and source laundering in AI-generated web
+  pollution
+
+Use `docs/synthetic-consensus-research-line.md` for the current first-principles
+pilot frame. The next useful move is not another broad literature expansion; it
+is a small claim-level pressure test that measures whether apparent support
+survives provenance pruning.

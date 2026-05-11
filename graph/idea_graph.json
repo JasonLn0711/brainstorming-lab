@@ -553,6 +553,61 @@
         "human-source-scarcity-index"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml"
+    },
+    {
+      "id": "idea_000025",
+      "title": "Effective evidence collapse in AI-mediated search",
+      "status": "research_candidate",
+      "maturity_score": "77/100",
+      "maturity_score_raw": 77,
+      "maturity_level": "research_candidate",
+      "tags": [
+        "effective-evidence-collapse",
+        "human-source-scarcity",
+        "citation-absorption-gap",
+        "citation-laundering",
+        "evidence-provenance",
+        "ai-mediated-search",
+        "generative-search",
+        "search-trust-collapse",
+        "information-retrieval",
+        "rag",
+        "human-ai-interaction",
+        "digital-forensics",
+        "cross-lingual-search",
+        "traditional-chinese",
+        "long-tail-queries",
+        "evidence-void",
+        "ai-crawler-opt-out"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml"
+    },
+    {
+      "id": "idea_000026",
+      "title": "Synthetic consensus and source laundering in AI-generated web pollution",
+      "status": "research_candidate",
+      "maturity_score": "71/100",
+      "maturity_score_raw": 71,
+      "maturity_level": "research_candidate",
+      "tags": [
+        "synthetic-consensus",
+        "source-laundering",
+        "ai-generated-web-pollution",
+        "evidence-provenance",
+        "apparent-support",
+        "independent-evidence",
+        "counterfactual-provenance-ablation",
+        "citation-faithfulness",
+        "source-displacement",
+        "support-fragility",
+        "rag",
+        "information-retrieval",
+        "cybercrime-content",
+        "scam-content",
+        "digital-forensics",
+        "provenance-aware-retrieval"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml"
     }
   ],
   "edges": [
@@ -1242,7 +1297,31 @@
       "source": "idea_000011",
       "target": "idea_000024",
       "weight": 0.6,
-      "similarity": 0.187,
+      "similarity": 0.1871,
+      "shared_tags": [
+        "rag"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000011",
+      "target": "idea_000025",
+      "weight": 0.6,
+      "similarity": 0.1788,
+      "shared_tags": [
+        "rag"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000011",
+      "target": "idea_000026",
+      "weight": 0.6,
+      "similarity": 0.1862,
       "shared_tags": [
         "rag"
       ],
@@ -1391,7 +1470,7 @@
       "source": "idea_000014",
       "target": "idea_000024",
       "weight": 1.0,
-      "similarity": 0.2119,
+      "similarity": 0.2156,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1466,7 +1545,7 @@
       "source": "idea_000019",
       "target": "idea_000024",
       "weight": 1.0,
-      "similarity": 0.2801,
+      "similarity": 0.2805,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1476,9 +1555,92 @@
       "source": "idea_000023",
       "target": "idea_000024",
       "weight": 1.0,
-      "similarity": 0.6952,
+      "similarity": 0.6915,
       "shared_tags": [
         "ai-generated-content",
+        "evidence-provenance",
+        "information-retrieval",
+        "rag"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000023",
+      "target": "idea_000025",
+      "weight": 1.0,
+      "similarity": 0.6172,
+      "shared_tags": [
+        "digital-forensics",
+        "evidence-provenance",
+        "information-retrieval",
+        "rag"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000023",
+      "target": "idea_000026",
+      "weight": 1.0,
+      "similarity": 0.7053,
+      "shared_tags": [
+        "cybercrime-content",
+        "digital-forensics",
+        "evidence-provenance",
+        "information-retrieval",
+        "rag",
+        "scam-content"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000024",
+      "target": "idea_000025",
+      "weight": 1.0,
+      "similarity": 0.7011,
+      "shared_tags": [
+        "evidence-provenance",
+        "human-ai-interaction",
+        "human-source-scarcity",
+        "information-retrieval",
+        "rag",
+        "search-trust-collapse"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000024",
+      "target": "idea_000026",
+      "weight": 1.0,
+      "similarity": 0.5722,
+      "shared_tags": [
+        "evidence-provenance",
+        "information-retrieval",
+        "rag"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000025",
+      "target": "idea_000026",
+      "weight": 1.0,
+      "similarity": 0.5768,
+      "shared_tags": [
+        "digital-forensics",
         "evidence-provenance",
         "information-retrieval",
         "rag"

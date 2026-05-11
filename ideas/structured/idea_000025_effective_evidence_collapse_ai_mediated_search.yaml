@@ -1,0 +1,489 @@
+id: idea_000025
+title: "Effective evidence collapse in AI-mediated search"
+title_zh: "AI-mediated search human-source scarcity and citation absorption gap"
+created_at: 2026-05-11
+type: hypothesis
+tags:
+  - effective-evidence-collapse
+  - human-source-scarcity
+  - citation-absorption-gap
+  - citation-laundering
+  - evidence-provenance
+  - ai-mediated-search
+  - generative-search
+  - search-trust-collapse
+  - information-retrieval
+  - rag
+  - human-ai-interaction
+  - digital-forensics
+  - cross-lingual-search
+  - traditional-chinese
+  - long-tail-queries
+  - evidence-void
+  - ai-crawler-opt-out
+status: research_candidate
+problem_statement:
+  raw: "AI-mediated search may still provide fluent, apparently correct, and citation-rich answers while users receive fewer independent human primary evidence streams, and displayed citations may not reflect the sources actually absorbed into the answer."
+  normalized: "Given AI-mediated search systems that retrieve, summarize, cite, and absorb web sources under rising synthetic content, GEO competition, zero-click behavior, crawler opt-out selection bias, and long-tail evidence scarcity, optimize effective independent evidence exposure and citation-faithful verification under constraints of human-source scarcity, provenance cluster collapse, citation laundering, citation absorption gaps, cross-lingual evidence drift, low-evidence queries, and the fact that correctness is not the same as verifiability."
+  structure:
+    given: "AI-mediated search systems that retrieve, summarize, cite, and absorb web sources under rising synthetic content, GEO competition, zero-click behavior, crawler opt-out selection bias, and long-tail evidence scarcity"
+    optimize: "effective independent evidence exposure and citation-faithful verification"
+    constraints:
+      - "human-source scarcity"
+      - "provenance cluster collapse"
+      - "citation laundering"
+      - "citation absorption gaps"
+      - "cross-lingual evidence drift"
+      - "low-evidence queries"
+      - "correctness is not the same as verifiability"
+summary: "This idea narrows the broader Search Engine Trust Collapse frame into a stronger research line: Effective Evidence Collapse. The central claim is that search trust may degrade before answer accuracy visibly fails. The first failure mode is that visible links, AI citations, and fluent summaries can mask a shrinking supply of independent, human-authored, primary evidence. The second failure mode is a citation absorption gap: the sources shown to users may not be the sources that actually shaped the answer's claims, language, structure, or factual support."
+first_principle:
+  scarce_resource: "independent human primary evidence, not web-page count, domain count, citation count, or answer fluency"
+  trust_function: "Search Trust = f(Primary Evidence, Independent Sources, Retrieval Exposure, Citation Faithfulness, User Verification)"
+  core_equations:
+    - "Visible sources != independent evidence"
+    - "Displayed citations != actual evidence dependence"
+    - "Correctness != verifiability"
+  not_the_core:
+    - "counting AI-generated content as inherently bad"
+    - "treating domain diversity as evidence diversity"
+    - "trusting citation presence without claim-level support"
+    - "measuring answer accuracy while ignoring provenance"
+    - "making broad social commentary without observable tests"
+  core_question: "Do AI-mediated search systems preserve fluent answers and apparent citation richness while reducing user exposure to independent human primary evidence?"
+  canonical_home: "brainstorming-lab owns this sharpened paper line as a child of idea_000024 and a downstream measurement target for idea_000023."
+  planning_boundary: "planning-everything-track should only receive a short bridge if this becomes scheduled research execution."
+  smallest_next_test: "Run a 30-query evidence ecology audit comparing head versus long-tail and English versus Traditional Chinese queries; label primary evidence exposure, provenance clusters, citation support, and citation absorption gaps."
+  kill_condition: "Park the idea if effective evidence collapse cannot be measured more reliably than ordinary SEO quality, source authority, or query difficulty."
+research_positioning:
+  recommended_title: "Effective Evidence Collapse in AI-Mediated Search: Measuring Human-Source Scarcity, Citation Laundering, and Provenance Degradation"
+  chinese_working_title: "AI-mediated search human-source scarcity and citation absorption gap"
+  strongest_claim: "Search trust collapse is not primarily a failure of answer accuracy; it is a degradation of effective independent evidence beneath apparently useful answers."
+  contribution_boundary: "This work does not assume AI-generated content is inherently harmful. It studies whether AI-mediated search reduces effective independent evidence, provenance traceability, and citation faithfulness."
+  differentiator: "Move beyond AI content density by measuring whether displayed links and citations correspond to independent evidence streams and claim-level evidence dependence."
+  core_contributions:
+    - "Define Effective Evidence Collapse as degradation in independent primary evidence exposure beneath fluent AI-mediated answers."
+    - "Introduce Effective Evidence Sample Size to measure independent provenance clusters rather than domains."
+    - "Define Citation Laundering and Citation Absorption Gap as claim-level trust failures."
+    - "Test whether long-tail, low-evidence, and cross-lingual queries fail earlier than mainstream head queries."
+    - "Bridge IR, NLP citation verification, digital forensics evidence-chain tracing, and HCI trust calibration."
+related_literature_position:
+  - "Generative search verifiability work shows that fluent generated answers can contain unsupported statements and imperfect citations, motivating claim-level citation support analysis."
+  - "Model collapse work frames recursive synthetic data as a risk to learning from human-produced distributions; this idea shifts the concern from training data to search evidence ecology."
+  - "Retrieval collapse work shows exposure contamination can exceed pool contamination while answer accuracy appears stable; this idea asks whether independent evidence supply and provenance depth degrade first."
+  - "Generative search disruption work suggests AI Overviews and Gemini expose different source sets from organic search; this idea treats source divergence as an evidence-dependence measurement problem."
+  - "GEO and adversarial SEO work imply future search evidence will be shaped by incentives to be cited, absorbed, or preferred by generative systems."
+  - "Citation absorption work separates displayed citation selection from actual answer-level source influence; this idea turns that separation into a trust and forensic provenance question."
+assumptions:
+  - "A search result set can contain many domains while still representing only one or two independent evidence streams."
+  - "AI-mediated answers can be correct while still being weakly verifiable because citations do not support the exact claims."
+  - "Displayed citations may be selected for interface, navigational, or authority reasons rather than because they are the main evidence absorbed by the answer."
+  - "Human primary evidence can become scarce if zero-click behavior reduces traffic, revenue, reputation, and incentive for original reporting or documentation."
+  - "Long-tail, local, multilingual, time-sensitive, and low-evidence queries are likely to show evidence collapse before mainstream head queries."
+  - "Traditional Chinese and Taiwan-local queries may expose cross-lingual evidence collapse, but local official-source availability may sometimes reverse the English advantage."
+evidence:
+  - "2026-05-11 user framing: the deeper problem is Human-Source Scarcity x Citation Absorption Gap rather than generic Search Engine Trust Collapse."
+  - "2026-05-11 user framing: search trust depends on primary evidence, independent sources, retrieval exposure, citation faithfulness, and user verification."
+  - "2026-05-11 user proposed variables: Effective Evidence Sample Size, Citation Laundering Rate, Citation Absorption Gap, Human-Source Reproduction Number, long-tail collapse, cross-lingual evidence collapse, evidence void amplification, and AI crawler opt-out selection bias."
+  - "ACL Anthology checked 2026-05-11: generative search verifiability research reports low full-sentence citation support and imperfect citation support precision in audited systems."
+  - "Pew Research Center checked 2026-05-11: Google AI summary exposure was associated with lower traditional-result clicks and very low AI-summary source-link clicks in its March 2025 U.S. browsing-data study."
+  - "Google Search Central checked 2026-05-11: Google does not treat generative AI content as inherently unacceptable, but warns that large-scale low-value generation can violate scaled-content-abuse policy."
+  - "Nature checked 2026-05-11: recursive generated-data training can lose information about the true distribution, and the authors emphasize the value of human-produced data."
+  - "arXiv checked 2026-05-11: retrieval-collapse work reports SEO-style contamination where exposure contamination can exceed pool contamination while answer accuracy remains apparently stable."
+  - "arXiv checked 2026-05-11: generative-search disruption work reports frequent AI Overview generation on real-user queries and low overlap between organic and generative source sets."
+  - "arXiv checked 2026-05-11: GEO work reports that optimization methods can substantially increase visibility in generative engine responses."
+  - "arXiv checked 2026-05-11: adversarial SEO work frames preference manipulation as a threat when LLMs choose among third-party content."
+  - "arXiv checked 2026-05-11: citation absorption work separates source selection from source influence in generated answers."
+  - "OpenAI checked 2026-05-11: OpenAI's retired AI classifier page warns that AI-written text detection was not reliable enough to use as a primary decision tool."
+baseline:
+  - "Measure AI Content Density and assume higher AI share means worse search."
+  - "Count domain diversity without measuring whether sources are independent provenance streams."
+  - "Evaluate AI search by answer accuracy alone."
+  - "Treat displayed citations as evidence dependence without claim-source tracing."
+  - "Use an AI text detector as ground truth for web pollution."
+  - "Study only English head queries and miss long-tail or cross-lingual failure modes."
+metrics:
+  - name: "Primary Evidence Exposure Rate"
+    abbreviation: "PEER@k"
+    definition: "PEER@k = primary evidence sources in top-k divided by k."
+    interpretation: "Measures whether users actually see original evidence rather than only analysis, aggregation, or synthesis."
+  - name: "Effective Evidence Sample Size"
+    abbreviation: "EESS@k"
+    definition: "EESS@k = 1 / sum_i p_i^2, where p_i is the share of top-k results in provenance cluster i."
+    interpretation: "Measures independent evidence streams; ten domains from one provenance cluster count closer to one evidence stream than ten."
+  - name: "Provenance Cluster Entropy"
+    abbreviation: PCE
+    definition: "Entropy across provenance clusters after grouping near-duplicate, copied, translated, summarized, or citation-linked sources."
+  - name: "Source Independence Ratio"
+    abbreviation: SIR
+    definition: "Independent primary or first-hand sources divided by all visible sources or citations."
+  - name: "Evidence Provenance Depth"
+    abbreviation: EPD
+    definition: "Average distance from answer claim or search result to primary evidence."
+  - name: "Citation Support Precision"
+    abbreviation: CSP
+    definition: "Cited claim-source pairs supported by their displayed citation divided by all displayed citation pairs."
+  - name: "Citation Support Recall"
+    abbreviation: CSR
+    definition: "Claims with complete supporting citations divided by all factual answer claims."
+  - name: "Citation Laundering Rate"
+    abbreviation: CLR
+    definition: "Claims presented with authoritative-looking citations but unsupported, partially supported, or wrongly attributed divided by total cited claims."
+    subtypes:
+      - "unsupported citation"
+      - "partial support"
+      - "wrong-source attribution"
+      - "authority masking"
+      - "synthetic absorption"
+  - name: "Citation Absorption Gap"
+    abbreviation: CAG
+    definition: "Claims whose likely evidence source differs from the displayed citation divided by total factual claims."
+  - name: "Authority Laundering Rate"
+    abbreviation: ALR
+    definition: "Low-provenance claims displayed with high-authority citations divided by total cited claims."
+  - name: "Human-Source Reproduction Number"
+    abbreviation: RH
+    definition: "RH = new human-authored primary sources generated divided by human primary sources consumed, displaced, or de-incentivized by AI summaries."
+    caution: "This is a long-term ecosystem proxy, not a direct short-horizon causal estimate without external publisher data."
+  - name: "Evidence Void Amplification Rate"
+    abbreviation: EVAR
+    definition: "Low-evidence or unanswerable queries that receive plausible unsupported answers divided by all low-evidence queries."
+framework:
+  name: "Evidence-Centric Search Trust Framework"
+  abbreviation: ECSTF
+  layers:
+    evidence_supply:
+      question: "Does the web still contain enough human primary evidence?"
+      observables:
+        - "primary evidence density"
+        - "human-source availability"
+        - "author accountability"
+        - "original observation ratio"
+        - "official or institutional source ratio"
+    retrieval_exposure:
+      question: "Does the search or RAG system expose primary evidence to users?"
+      observables:
+        - "PEER@k"
+        - "source diversity"
+        - "effective evidence sample size"
+        - "synthetic exposure rate"
+        - "evidence provenance depth"
+    answer_absorption:
+      question: "Which sources actually shape the AI answer?"
+      observables:
+        - "citation absorption gap"
+        - "citation support precision"
+        - "unsupported claim ratio"
+        - "authority laundering rate"
+        - "low-provenance absorption ratio"
+    user_verification:
+      question: "Do users still verify the evidence beneath the answer?"
+      observables:
+        - "source click-through"
+        - "provenance label attention"
+        - "trust calibration"
+        - "verification success"
+        - "AI summary overreliance"
+research_questions:
+  - id: RQ1
+    question: "As AI-mediated search expands, do users receive fewer effective independent evidence sources even when displayed links or citations remain numerous?"
+    metrics:
+      - "EESS@k"
+      - "PEER@k"
+      - PCE
+      - SIR
+  - id: RQ2
+    question: "Do displayed citations in AI-mediated search faithfully represent the sources from which answer claims are derived?"
+    metrics:
+      - CSP
+      - CSR
+      - CLR
+      - CAG
+      - UCR
+  - id: RQ3
+    question: "Which query spaces are most vulnerable to evidence collapse?"
+    strata:
+      - "head versus torso versus long-tail"
+      - "English versus Traditional Chinese"
+      - "stable versus time-sensitive"
+      - "answerable versus low-evidence"
+      - "high-stakes versus casual"
+      - "cybercrime, scam, and forensic versus general knowledge"
+hypotheses:
+  - id: H1
+    statement: "Top-k domain diversity overestimates evidence diversity when results cluster around a small number of provenance streams."
+  - id: H2
+    statement: "AI-mediated answers can maintain apparent accuracy while PEER@k and EESS@k decline."
+  - id: H3
+    statement: "Displayed citations do not always faithfully represent evidence dependence, producing measurable citation absorption gaps."
+  - id: H4
+    statement: "Long-tail, low-evidence, local, time-sensitive, and multilingual queries exhibit higher evidence collapse risk than mainstream head queries."
+  - id: H5
+    statement: "Traditional Chinese long-tail queries are more likely than English equivalents to rely on translated, summarized, or secondary sources, except where Taiwan-local primary official sources are strong."
+  - id: H6
+    statement: "Provenance labels improve user trust calibration by helping users detect unsupported citation, source laundering, and primary-source absence."
+study_designs:
+  - name: "Experiment 1: Live Search Evidence Ecology Audit"
+    priority: 2
+    goal: "Measure effective independent evidence in live organic search and AI-mediated search outputs."
+    query_dataset:
+      total_target: 600
+      domains:
+        - "cybercrime and scam"
+        - "medical and health"
+        - "legal and policy"
+        - "product review"
+        - "technical troubleshooting"
+        - "local and Taiwan-specific"
+      query_forms:
+        - "head query"
+        - "long-tail query"
+        - "question-form query"
+        - "time-sensitive query"
+        - "low-evidence query"
+      languages:
+        - English
+        - "Traditional Chinese"
+    systems:
+      - "Google organic top 10"
+      - "Google AI Overview if available"
+      - "Bing or Copilot search"
+      - Perplexity
+      - "ChatGPT Search if accessible"
+      - "Gemini if accessible"
+    labels:
+      - "primary source"
+      - "secondary analysis"
+      - aggregator
+      - "SEO farm"
+      - synthetic-likely
+      - "author presence"
+      - "date presence"
+      - "original citation presence"
+      - "claim supported by citation"
+      - "traceable to primary evidence"
+    key_metrics:
+      - "PEER@k"
+      - "EESS@k"
+      - EPD
+      - CLR
+      - UCR
+    feasibility: high
+    main_risk: "Live search results vary by time, region, personalization, and interface."
+    mitigation:
+      - "record timestamp, region, language, device, login state, and interface state"
+      - "snapshot result pages where allowed"
+      - "repeat small query panels over time"
+      - "use query-level mixed-effects models"
+  - name: "Experiment 2: Controlled Corpus Contamination Experiment"
+    priority: 1
+    goal: "Causally test how synthetic and low-provenance content affects retrieval exposure, primary evidence exposure, and effective evidence sample size."
+    corpus:
+      - "500 human primary sources"
+      - "500 human secondary sources"
+      - "500 AI-generated summaries"
+      - "500 SEO-style synthetic pages"
+      - "500 adversarially optimized pages"
+    contamination_levels:
+      - "0%"
+      - "10%"
+      - "25%"
+      - "50%"
+      - "67%"
+      - "75%"
+    retrievers:
+      - BM25
+      - "dense retriever"
+      - "ColBERT-style retriever"
+      - "LLM reranker"
+      - "RAG pipeline"
+      - "hybrid search"
+    measurements:
+      - "top-k synthetic exposure"
+      - "primary evidence exposure"
+      - "answer accuracy"
+      - "citation support"
+      - "source diversity"
+      - "effective evidence sample size"
+      - "provenance depth"
+    output: "critical contamination threshold where exposure shifts toward synthetic or low-provenance sources"
+    feasibility: "very high"
+  - name: "Experiment 3: Citation Laundering and Absorption Gap Test"
+    priority: 3
+    goal: "Evaluate whether displayed citations faithfully represent answer evidence dependence."
+    method:
+      - "decompose each AI answer into atomic factual claims"
+      - "map each claim to displayed citation"
+      - "judge whether citation supports the claim"
+      - "identify likely evidence source when displayed citation is weak or mismatched"
+      - "build claim-to-displayed-citation and claim-to-likely-evidence-source graphs"
+    metrics:
+      - CSP
+      - CSR
+      - CAG
+      - CLR
+      - ALR
+    feasibility: medium-high
+    annotation_plan:
+      - "LLM-assisted claim extraction"
+      - "human validation on 20 to 30 percent sample"
+      - "inter-annotator agreement"
+      - "adjudication for disputed claim-source pairs"
+  - name: "Experiment 4: Cross-lingual Human-Source Scarcity Study"
+    priority: 2
+    goal: "Compare English and Traditional Chinese evidence ecology for paired queries."
+    paired_queries_target: 200
+    domains:
+      - "phishing kit detection"
+      - "romance scam evidence"
+      - "crypto scam recovery"
+      - "malware indicator interpretation"
+      - "court judgment lookup"
+      - "CVE mitigation"
+      - "medical misinformation"
+      - "consumer fraud"
+      - "local policy"
+      - "public safety notice"
+    measurements:
+      - "primary evidence exposure"
+      - "official source ratio"
+      - "translation or summary ratio"
+      - "aggregator ratio"
+      - "synthetic-likely ratio"
+      - "citation support"
+      - "evidence depth"
+      - "answer abstention"
+    feasibility: high
+  - name: "Experiment 5: User Trust Calibration Experiment"
+    priority: 4
+    goal: "Test whether provenance labels improve user judgment under AI summary and citation-rich result interfaces."
+    design: "2x2 interface experiment"
+    factors:
+      - "AI summary present versus absent"
+      - "provenance labels present versus absent"
+    tasks:
+      - "choose the most trustworthy answer"
+      - "decide whether to click sources"
+      - "identify primary evidence"
+      - "detect unsupported citation"
+      - "rate confidence"
+    measurements:
+      - "trust rating"
+      - "source-click behavior"
+      - "verification accuracy"
+      - "time to decision"
+      - "overtrust rate"
+      - "calibrated trust score"
+    feasibility: medium
+    safety_boundary:
+      - "requires human-subject ethics review before real participant study"
+      - "use simulated interfaces and non-sensitive tasks for pilot design"
+real_world_pressure_tests:
+  - name: "Find the real evidence game"
+    setting: "Give a participant or reviewer a fluent AI-mediated answer with multiple citations for a long-tail practical query, then ask them to identify the actual primary evidence."
+    playful_frame: "Treat each citation like a witness: did it see the event, repeat another witness, or merely stand near the claim?"
+    target_bottleneck: "Whether displayed citations and top links genuinely expose independent primary evidence."
+    expected_failure_modes:
+      - "many visible links collapse into one provenance cluster"
+      - "citation supports a weaker nearby claim but not the main claim"
+      - "AI answer appears correct but hides low provenance dependence"
+      - "Traditional Chinese answer is based on translated or summarized English material without clear lineage"
+      - "low-evidence query receives a fluent answer instead of abstention"
+    smallest_test:
+      - "Select 10 English and 10 Traditional Chinese long-tail queries in cybercrime, scam, local policy, or technical troubleshooting."
+      - "Collect top-10 organic results and one AI-mediated answer when available."
+      - "Group results into provenance clusters."
+      - "Compute PEER@10 and EESS@10."
+      - "Decompose AI answer into claims and check citation support for a five-claim sample."
+    metrics:
+      - "PEER@10"
+      - "EESS@10"
+      - CSP
+      - CAG
+      - CLR
+    human_decision:
+      - "Can the user identify the original evidence without expert help?"
+      - "Would a cautious investigator accept the citation as supporting the claim?"
+      - "Does a provenance label change the source the user trusts?"
+    revise_or_kill_condition: "Revise if provenance clustering cannot be made reproducible; park if claim-source tracing requires proprietary search logs or inaccessible internal model data."
+    safety_boundary:
+      - "Use public, non-sensitive queries."
+      - "Avoid naming domains as low-quality or laundered without a separate evidence packet."
+      - "Do not collect personal browsing behavior without ethics review."
+      - "For cybercrime examples, keep content defensive and non-operational."
+priority_order:
+  - rank: 1
+    line: "Controlled Corpus + Effective Evidence Sample Size"
+    reason: "Best causal control and easiest path to a technical paper."
+    candidate_title: "Measuring Effective Evidence Collapse in Retrieval-Augmented Search under Synthetic Web Contamination"
+  - rank: 2
+    line: "Live Search Audit + Cross-lingual Long-tail Queries"
+    reason: "Highest real-world and personal differentiation value."
+    candidate_title: "Human-Source Scarcity in AI-Mediated Search: A Cross-Lingual Audit of Evidence Provenance in English and Traditional Chinese Queries"
+  - rank: 3
+    line: "Citation Laundering in AI Search"
+    reason: "Most conceptually novel and closest to forensic evidence tracing."
+    candidate_title: "Citation Laundering in AI-Mediated Search: When Displayed Sources Do Not Reflect Evidence Dependence"
+pitfalls:
+  - "Do not define AI-generated content as pollution."
+  - "Do not depend on AI text detection as ground truth."
+  - "Do not confuse domain diversity with evidence diversity."
+  - "Do not treat answer correctness as sufficient for trust."
+  - "Do not overclaim RH without longitudinal publisher or traffic data."
+connections:
+  - idea_000023
+  - idea_000024
+  - idea_000026
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 6
+  evidence_support_score: 6/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 2
+  novelty_score: 2/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 77/100
+maturity_level: research_candidate
+next_steps:
+  - "Write the one-page Effective Evidence Collapse definition with the two key distinctions: visible sources versus independent evidence, and displayed citations versus evidence dependence."
+  - "Create a 30-query pilot sheet with 10 head, 10 long-tail, and 10 low-evidence queries split across English and Traditional Chinese."
+  - "Define provenance cluster labeling rules and examples before collecting more data."
+  - "Run a tiny manual pilot on 20 search-result sets to test PEER@10 and EESS@10."
+  - "Run a five-answer citation laundering pilot with claim decomposition and citation support labels."
+  - "Decide whether the first paper should prioritize controlled corpus causality or cross-lingual live audit differentiation."
+source:
+  - conversation
+external_sources_checked:
+  - "https://aclanthology.org/2023.findings-emnlp.467/"
+  - "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/"
+  - "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
+  - "https://www.nature.com/articles/s41586-024-07566-y"
+  - "https://arxiv.org/abs/2602.16136"
+  - "https://arxiv.org/abs/2604.27790"
+  - "https://arxiv.org/abs/2311.09735"
+  - "https://arxiv.org/abs/2406.18382"
+  - "https://arxiv.org/html/2604.25707v1"
+  - "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/"
+evidence_gaps:
+  - "Need a reproducible provenance-cluster labeling guide."
+  - "Need to decide whether arXiv 2026 sources are used as emerging preprints or wait for venue-stable metadata."
+  - "Need a query sampling protocol that separates head, torso, long-tail, low-evidence, time-sensitive, and local queries."
+  - "Need to avoid claiming crawler opt-out causes quality degradation without publisher-level access and longitudinal data."
+  - "Need ethical review before measuring user behavior or recruiting participants."
+  - "Need inter-annotator agreement for claim-source support labels."
+maturity_action: "evaluate cluster readiness"
+normalization_status: validated
+insights: []

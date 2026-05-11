@@ -255,10 +255,13 @@ insights:
   - "Production prevalence and retrieval exposure must be separated; many AI pages may exist without being highly exposed, or a smaller polluted pool may receive high exposure."
   - "AI summaries can shift the human feedback loop by reducing source clicks and weakening incentives for original content."
   - "This idea is downstream of idea_000023: web pollution detection measures polluted content, while search trust collapse measures retrieval, answer, and user-trust consequences."
+  - "The sharper child paper line is idea_000025: Effective Evidence Collapse, which treats human-source scarcity and citation absorption gaps as the lower-level mechanism beneath broad search trust collapse."
 connections:
   - idea_000014
   - idea_000019
   - idea_000023
+  - idea_000025
+  - idea_000026
 role: idea
 value:
   impact: high
@@ -288,6 +291,7 @@ next_steps:
   - "Define Human-Source Scarcity Index and Source Diversity Entropy precisely."
   - "Run a tiny pilot on 10 queries before considering any user study."
   - "Decide whether this stays linked to idea_000023 or becomes a separate information-science paper line."
+  - "Use idea_000025 as the narrowed paper candidate when the work needs metrics, RQs, and pilot design."
 source:
   - conversation
 external_sources_checked:

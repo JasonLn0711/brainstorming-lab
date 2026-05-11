@@ -12,6 +12,7 @@ Use this repo when an idea needs more thinking room than a daily note.
 | Idea is becoming mature | Add a real-world pressure test from `docs/real-world-pressure-tests.md` |
 | Idea may become a project | Create `projects-ready/YYYY-MM-DD-project-slug.md` |
 | Idea may become a paper | Use `docs/paper-writing-engineering-process.md` before drafting |
+| Idea is an evidence-provenance / RAG trust paper line | Check `docs/synthetic-consensus-research-line.md` and the `idea_000023`-`idea_000026` cluster |
 | Personal/admin record needs structured retrieval | Keep a redacted summary in `docs/personal-admin/`; keep raw private files in `~/system-hub/admin/inventory/`; sync only deadline/status to planning |
 | Project is real | Move execution into a new standalone repo |
 | Lesson is reusable | Promote a distilled note into `planning-everything-track/data/knowledge/` |

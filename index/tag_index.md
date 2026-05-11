@@ -16,10 +16,18 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## ai-crawler-opt-out
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
 ## ai-generated-content
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## ai-generated-web-pollution
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## ai-governance
 
@@ -28,6 +36,10 @@
 ## ai-humanities
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## ai-mediated-search
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## ai-os
 
@@ -64,6 +76,10 @@
 
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## apparent-support
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## approval-gate
 
@@ -104,6 +120,18 @@
 ## candidate-stubs
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## citation-absorption-gap
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
+## citation-faithfulness
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
+## citation-laundering
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## claim-ledger
 
@@ -170,13 +198,22 @@
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
+## counterfactual-provenance-ablation
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
 ## cross-domain
 
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
+## cross-lingual-search
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
 ## cybercrime-content
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## cybersecurity
 
@@ -228,6 +265,8 @@
 ## digital-forensics
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## dinov2
 
@@ -261,6 +300,10 @@
 ## edge-deployment
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## effective-evidence-collapse
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## embedding-discovery
 
@@ -299,12 +342,18 @@
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## evidence-routing
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
+
+## evidence-void
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## existential-understanding
 
@@ -374,6 +423,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## generative-search
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
 ## ghostty
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
@@ -423,6 +476,7 @@
 ## human-ai-interaction
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## human-approval-gate
 
@@ -448,6 +502,7 @@
 ## human-source-scarcity
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## human-source-scarcity-index
 
@@ -469,6 +524,10 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## independent-evidence
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
 ## indirect-expression
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -485,6 +544,8 @@
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## infrastructure-engineering
 
@@ -590,6 +651,10 @@
 ## loneliness
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## long-tail-queries
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## low-resource-ai
 
@@ -759,6 +824,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## provenance-aware-retrieval
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
 ## psychological-reconstruction
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -780,6 +849,8 @@
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## real-time-ai
 
@@ -860,6 +931,7 @@
 ## scam-content
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## scam-research
 
@@ -889,6 +961,7 @@
 ## search-trust-collapse
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## self-directed-data-discovery
 
@@ -937,9 +1010,17 @@
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## source-displacement
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
 ## source-diversity
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## source-laundering
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## sre
 
@@ -961,9 +1042,17 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## support-fragility
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
 ## surveillance
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## synthetic-consensus
+
+- `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
 ## synthetic-data-contamination
 
@@ -1005,6 +1094,10 @@
 ## tracking
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## traditional-chinese
+
+- `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## trust-calibration
 
