@@ -442,6 +442,41 @@
         "cognition-factory"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml"
+    },
+    {
+      "id": "idea_000021",
+      "title": "YOLO-to-foundation-vision reliable deployment decision system",
+      "status": "execution_ready",
+      "maturity_score": "89/100",
+      "maturity_score_raw": 89,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "computer-vision",
+        "yolo",
+        "dinov2",
+        "detr",
+        "rf-detr",
+        "surveillance",
+        "anomaly-detection",
+        "ml-systems",
+        "edge-deployment",
+        "evaluation",
+        "uncertainty",
+        "human-in-the-loop",
+        "representation-learning",
+        "object-detection",
+        "decision-system",
+        "mamba",
+        "state-space-models",
+        "video-understanding",
+        "streaming-intelligence",
+        "bicycle-reid",
+        "object-reid",
+        "identity-persistence",
+        "multimodal-fusion",
+        "tracking"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml"
     }
   ],
   "edges": [
@@ -637,6 +672,18 @@
       ]
     },
     {
+      "source": "idea_000003",
+      "target": "idea_000021",
+      "weight": 0.6,
+      "similarity": 0.1722,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000004",
       "target": "idea_000007",
       "weight": 1.0,
@@ -657,6 +704,19 @@
       "similarity": 0.0776,
       "shared_tags": [
         "cybersecurity"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000004",
+      "target": "idea_000021",
+      "weight": 1.0,
+      "similarity": 0.2123,
+      "shared_tags": [
+        "anomaly-detection"
       ],
       "reasons": [
         "manual_connection",
@@ -752,6 +812,18 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000005",
+      "target": "idea_000021",
+      "weight": 0.6,
+      "similarity": 0.1025,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -884,6 +956,19 @@
       ]
     },
     {
+      "source": "idea_000007",
+      "target": "idea_000021",
+      "weight": 1.0,
+      "similarity": 0.2846,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000008",
       "target": "idea_000011",
       "weight": 1.0,
@@ -947,6 +1032,19 @@
       ]
     },
     {
+      "source": "idea_000008",
+      "target": "idea_000021",
+      "weight": 1.0,
+      "similarity": 0.2115,
+      "shared_tags": [
+        "evaluation"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000009",
       "target": "idea_000010",
       "weight": 1.0,
@@ -975,6 +1073,18 @@
       ]
     },
     {
+      "source": "idea_000010",
+      "target": "idea_000021",
+      "weight": 0.6,
+      "similarity": 0.1985,
+      "shared_tags": [
+        "decision-system"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000011",
       "target": "idea_000012",
       "weight": 1.0,
@@ -982,6 +1092,18 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000011",
+      "target": "idea_000021",
+      "weight": 0.6,
+      "similarity": 0.2219,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -1139,6 +1261,16 @@
       "target": "idea_000020",
       "weight": 1.0,
       "similarity": 0.38,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000021",
+      "weight": 1.0,
+      "similarity": 0.2011,
       "shared_tags": [],
       "reasons": [
         "manual_connection"

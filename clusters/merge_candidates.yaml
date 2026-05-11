@@ -171,6 +171,29 @@ merge_candidate_0007:
 merge_candidate_0008:
   candidate_id: merge_candidate_0008
   ideas:
+    - idea_000008
+    - idea_000019
+  merge_type: cluster_merge
+  merge_score: 51/100
+  confidence: low
+  reason:
+    - "shared tags: research-workflow"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 3/25
+    semantic_similarity: 6/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - research-workflow
+merge_candidate_0009:
+  candidate_id: merge_candidate_0009
+  ideas:
     - idea_000004
     - idea_000007
   merge_type: cluster_merge
@@ -192,8 +215,54 @@ merge_candidate_0008:
   shared_tags:
     - cybersecurity
     - research-candidate
-merge_candidate_0009:
-  candidate_id: merge_candidate_0009
+merge_candidate_0010:
+  candidate_id: merge_candidate_0010
+  ideas:
+    - idea_000015
+    - idea_000020
+  merge_type: cluster_merge
+  merge_score: 49/100
+  confidence: low
+  reason:
+    - "shared tags: distributed-systems"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 5/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - distributed-systems
+merge_candidate_0011:
+  candidate_id: merge_candidate_0011
+  ideas:
+    - idea_000005
+    - idea_000017
+  merge_type: cluster_merge
+  merge_score: 48/100
+  confidence: low
+  reason:
+    - "shared tags: planning-bridge"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 3/25
+    semantic_similarity: 3/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 15/20
+  shared_tags:
+    - planning-bridge
+merge_candidate_0012:
+  candidate_id: merge_candidate_0012
   ideas:
     - idea_000001
     - idea_000004
@@ -213,8 +282,77 @@ merge_candidate_0009:
     complexity_control: 20/20
   shared_tags:
     - evidence-routing
-merge_candidate_0010:
-  candidate_id: merge_candidate_0010
+merge_candidate_0013:
+  candidate_id: merge_candidate_0013
+  ideas:
+    - idea_000003
+    - idea_000017
+  merge_type: cluster_merge
+  merge_score: 47/100
+  confidence: low
+  reason:
+    - "shared tags: planning-bridge"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 4/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 15/20
+  shared_tags:
+    - planning-bridge
+merge_candidate_0014:
+  candidate_id: merge_candidate_0014
+  ideas:
+    - idea_000007
+    - idea_000021
+  merge_type: cluster_merge
+  merge_score: 47/100
+  confidence: low
+  reason:
+    - "shared tags: decision-system"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 4/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - decision-system
+merge_candidate_0015:
+  candidate_id: merge_candidate_0015
+  ideas:
+    - idea_000012
+    - idea_000015
+  merge_type: cluster_merge
+  merge_score: 47/100
+  confidence: low
+  reason:
+    - "shared tags: systems-thinking"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 4/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - systems-thinking
+merge_candidate_0016:
+  candidate_id: merge_candidate_0016
   ideas:
     - idea_000002
     - idea_000013
@@ -236,8 +374,31 @@ merge_candidate_0010:
     complexity_control: 15/20
   shared_tags:
     - cybersecurity
-merge_candidate_0011:
-  candidate_id: merge_candidate_0011
+merge_candidate_0017:
+  candidate_id: merge_candidate_0017
+  ideas:
+    - idea_000008
+    - idea_000021
+  merge_type: cluster_merge
+  merge_score: 46/100
+  confidence: low
+  reason:
+    - "shared tags: evaluation"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 3/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - evaluation
+merge_candidate_0018:
+  candidate_id: merge_candidate_0018
   ideas:
     - idea_000004
     - idea_000013
@@ -259,8 +420,73 @@ merge_candidate_0011:
     complexity_control: 15/20
   shared_tags:
     - cybersecurity
-merge_candidate_0012:
-  candidate_id: merge_candidate_0012
+merge_candidate_0019:
+  candidate_id: merge_candidate_0019
+  ideas:
+    - idea_000010
+    - idea_000015
+  merge_type: cluster_merge
+  merge_score: 43/100
+  confidence: low
+  reason:
+    - "shared tags: software-architecture"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 4/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 6/10
+    complexity_control: 10/20
+  shared_tags:
+    - software-architecture
+merge_candidate_0020:
+  candidate_id: merge_candidate_0020
+  ideas:
+    - idea_000017
+    - idea_000020
+  merge_type: cluster_merge
+  merge_score: 43/100
+  confidence: low
+  reason:
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 7/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0021:
+  candidate_id: merge_candidate_0021
+  ideas:
+    - idea_000019
+    - idea_000020
+  merge_type: cluster_merge
+  merge_score: 42/100
+  confidence: low
+  reason:
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 6/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0022:
+  candidate_id: merge_candidate_0022
   ideas:
     - idea_000003
     - idea_000006
@@ -280,8 +506,31 @@ merge_candidate_0012:
     complexity_control: 20/20
   shared_tags:
     - workflow
-merge_candidate_0013:
-  candidate_id: merge_candidate_0013
+merge_candidate_0023:
+  candidate_id: merge_candidate_0023
+  ideas:
+    - idea_000004
+    - idea_000021
+  merge_type: cluster_merge
+  merge_score: 41/100
+  confidence: low
+  reason:
+    - "shared tags: anomaly-detection"
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 3/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 10/20
+  shared_tags:
+    - anomaly-detection
+merge_candidate_0024:
+  candidate_id: merge_candidate_0024
   ideas:
     - idea_000005
     - idea_000007
@@ -303,8 +552,50 @@ merge_candidate_0013:
     complexity_control: 10/20
   shared_tags:
     - decision-system
-merge_candidate_0014:
-  candidate_id: merge_candidate_0014
+merge_candidate_0025:
+  candidate_id: merge_candidate_0025
+  ideas:
+    - idea_000008
+    - idea_000020
+  merge_type: cluster_merge
+  merge_score: 41/100
+  confidence: low
+  reason:
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 5/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0026:
+  candidate_id: merge_candidate_0026
+  ideas:
+    - idea_000012
+    - idea_000019
+  merge_type: cluster_merge
+  merge_score: 41/100
+  confidence: low
+  reason:
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 5/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0027:
+  candidate_id: merge_candidate_0027
   ideas:
     - idea_000007
     - idea_000014
@@ -324,8 +615,71 @@ merge_candidate_0014:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0015:
-  candidate_id: merge_candidate_0015
+merge_candidate_0028:
+  candidate_id: merge_candidate_0028
+  ideas:
+    - idea_000007
+    - idea_000019
+  merge_type: cluster_merge
+  merge_score: 40/100
+  confidence: low
+  reason:
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 5/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0029:
+  candidate_id: merge_candidate_0029
+  ideas:
+    - idea_000008
+    - idea_000017
+  merge_type: cluster_merge
+  merge_score: 40/100
+  confidence: low
+  reason:
+    - "manual connection exists"
+    - "roles or methods are complementary"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 4/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0030:
+  candidate_id: merge_candidate_0030
+  ideas:
+    - idea_000011
+    - idea_000021
+  merge_type: cluster_merge
+  merge_score: 40/100
+  confidence: low
+  reason:
+    - "shared tags: human-in-the-loop"
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 3/15
+    tag_overlap: 4/10
+    complementary_value: 12/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+    - human-in-the-loop
+merge_candidate_0031:
+  candidate_id: merge_candidate_0031
   ideas:
     - idea_000012
     - idea_000014

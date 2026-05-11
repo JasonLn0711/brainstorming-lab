@@ -49,6 +49,7 @@
 ## anomaly-detection
 
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## approval-gate
 
@@ -77,6 +78,10 @@
 ## benchmark-design
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## bicycle-reid
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## bounded-rationality
 
@@ -121,6 +126,10 @@
 ## computational-scientometrics
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## computer-vision
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## computing-philosophy
 
@@ -172,6 +181,7 @@
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## defensive-buffering
 
@@ -185,6 +195,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## detr
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
 ## developer-tools
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
@@ -192,6 +206,10 @@
 ## digital-cognitive-twin
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## dinov2
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## distributed-cognition
 
@@ -209,6 +227,10 @@
 ## edge-ai
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## edge-deployment
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## embedding-discovery
 
@@ -229,6 +251,7 @@
 ## evaluation
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## evaluator-loop
 
@@ -365,6 +388,7 @@
 ## human-in-the-loop
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## human-llm-rule-comparison
 
@@ -381,6 +405,10 @@
 ## hybrid-intelligence
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## identity-persistence
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## implementation-friction
 
@@ -499,6 +527,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## mamba
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
 ## meaning-making
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -528,6 +560,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## ml-systems
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
 ## mosquito-control
 
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
@@ -536,6 +572,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 94/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## multimodal-fusion
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## noise-suppression
 
@@ -548,6 +588,14 @@
 ## novelty-analysis
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## object-detection
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## object-reid
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## observability
 
@@ -659,6 +707,10 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## representation-learning
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
 ## reproducibility
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
@@ -697,6 +749,10 @@
 ## reviewer-emulation
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## rf-detr
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## safety
 
@@ -765,6 +821,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## state-space-models
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
 ## statement-interview
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
@@ -772,6 +832,14 @@
 ## strategy-learner
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## streaming-intelligence
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## surveillance
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## system-design
 
@@ -802,6 +870,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## tracking
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
 ## trust-formation
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
@@ -809,6 +881,10 @@
 ## ubuntu
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## uncertainty
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## uncertainty-tolerance
 
@@ -821,6 +897,10 @@
 ## verification
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## video-understanding
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## voice-enhancement
 
@@ -851,3 +931,7 @@
 ## working-memory
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## yolo
+
+- `idea_000021` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000021_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
