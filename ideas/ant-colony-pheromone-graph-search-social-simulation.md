@@ -94,6 +94,25 @@ flowchart LR
 
 ## Dijkstra、A* 與蟻群模型的差異
 
+Update on 2026-05-11:
+
+The related slime-mold / `Physarum polycephalum` framing is now captured as
+`ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`.
+The useful distinction is:
+
+```text
+Bidirectional Dijkstra / A* = exact or heuristic search on a known graph
+Physarum / slime mold = adaptive flow-conductivity update on a changing transport field
+```
+
+So if the question is "which classical search algorithm is slime mold most like?",
+the safest answer is "neither." It is closer to a flow-based adaptive network:
+edges or tubes with more useful flow are reinforced, weak routes decay, and the
+network can keep redundant paths when robustness matters. This is less attractive
+for a one-shot shortest-path task, but more interesting for uncertain systems such
+as scam-candidate discovery, where the goal is to surface promising content regions
+under incomplete information and limited reviewer labor.
+
 ### Dijkstra
 
 Dijkstra 的前提是：
