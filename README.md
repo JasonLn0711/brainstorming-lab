@@ -45,6 +45,7 @@ Planning receives only short bridge notes. Detailed thinking stays here.
 | `index/` | Generated Markdown indexes |
 | `schemas/` | Human-readable schema contracts |
 | `docs/` | Operating documentation |
+| `docs/personal-admin/` | Redacted personal administrative records whose raw sources stay outside git |
 | `projects-ready/` | Compatibility layer for graduation packets |
 | `archive/legacy-markdown/` | Pre-Idea-OS Markdown sources |
 

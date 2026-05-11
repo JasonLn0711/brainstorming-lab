@@ -11,6 +11,7 @@ Use this repo when an idea needs more thinking room than a daily note.
 | Idea needs repeated sessions | Keep updating the YAML record and supporting docs here |
 | Idea may become a project | Create `projects-ready/YYYY-MM-DD-project-slug.md` |
 | Idea may become a paper | Use `docs/paper-writing-engineering-process.md` before drafting |
+| Personal/admin record needs structured retrieval | Keep a redacted summary in `docs/personal-admin/`; keep raw private files in `~/system-hub/admin/inventory/`; sync only deadline/status to planning |
 | Project is real | Move execution into a new standalone repo |
 | Lesson is reusable | Promote a distilled note into `planning-everything-track/data/knowledge/` |
 
