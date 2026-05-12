@@ -443,10 +443,10 @@
     {
       "id": "idea_000020",
       "title": "GPU-first terminal as AI engineering workbench",
-      "status": "research_candidate",
-      "maturity_score": "80/100",
-      "maturity_score_raw": 80,
-      "maturity_level": "research_candidate",
+      "status": "execution_ready",
+      "maturity_score": "95/100",
+      "maturity_score_raw": 95,
+      "maturity_level": "execution_ready",
       "tags": [
         "terminal",
         "gpu-rendering",
@@ -465,7 +465,16 @@
         "verification",
         "distributed-systems",
         "ai-security",
-        "cognition-factory"
+        "cognition-factory",
+        "ai-engineering-workstation",
+        "dotfiles",
+        "shell-initialization",
+        "dev-environment",
+        "workstation-governance",
+        "tmux",
+        "direnv",
+        "secrets-management",
+        "backup"
       ],
       "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml"
     },
@@ -761,7 +770,7 @@
       "source": "idea_000002",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.1389,
+      "similarity": 0.133,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -845,7 +854,7 @@
       "source": "idea_000003",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.1135,
+      "similarity": 0.1179,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1010,7 +1019,7 @@
       "source": "idea_000005",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.0861,
+      "similarity": 0.0827,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1062,7 +1071,7 @@
       "source": "idea_000006",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.1087,
+      "similarity": 0.1387,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1164,7 +1173,7 @@
       "source": "idea_000007",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.24,
+      "similarity": 0.2394,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1274,7 +1283,7 @@
       "source": "idea_000008",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.3599,
+      "similarity": 0.3402,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1493,7 +1502,7 @@
       "source": "idea_000012",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.2275,
+      "similarity": 0.2194,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1528,7 +1537,7 @@
       "source": "idea_000013",
       "target": "idea_000020",
       "weight": 0.6,
-      "similarity": 0.1232,
+      "similarity": 0.1359,
       "shared_tags": [
         "ai-security"
       ],
@@ -1570,7 +1579,7 @@
       "source": "idea_000014",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.1853,
+      "similarity": 0.1811,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1600,7 +1609,7 @@
       "source": "idea_000015",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.3309,
+      "similarity": 0.3149,
       "shared_tags": [
         "distributed-systems"
       ],
@@ -1635,7 +1644,7 @@
       "source": "idea_000017",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.4505,
+      "similarity": 0.4418,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1645,7 +1654,7 @@
       "source": "idea_000018",
       "target": "idea_000020",
       "weight": 0.6,
-      "similarity": 0.4893,
+      "similarity": 0.4614,
       "shared_tags": [
         "ai-security"
       ],
@@ -1657,7 +1666,7 @@
       "source": "idea_000019",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.3797,
+      "similarity": 0.4079,
       "shared_tags": [],
       "reasons": [
         "manual_connection"

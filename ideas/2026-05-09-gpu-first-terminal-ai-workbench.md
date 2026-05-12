@@ -336,6 +336,392 @@ validated experiment, or cleaner repo state?
 
 If not, park it.
 
+## 2026-05-12 Update: Ubuntu As AI Engineering Workstation
+
+The newer framing is stronger than:
+
+```text
+replace Ubuntu Terminal with Ghostty
+```
+
+The real object is:
+
+```text
+Ubuntu 24 -> AI engineering workstation
+```
+
+The visible stack is:
+
+```text
+Ghostty + zsh + Starship + Codex CLI
+```
+
+The durable system is:
+
+```text
+a personal operating environment for research, development, paper writing,
+AI-agent runs, and multi-repo governance
+```
+
+This changes the next question. The next step is not to install more attractive
+terminal tools. The next step is to make the workstation maintainable,
+recoverable, synchronized, extensible, and safe for high-value repos.
+
+## Dotfiles As Recovery Infrastructure
+
+The current machine already has local mutations:
+
+```text
+~/.zshrc
+~/.config/ghostty/config
+npm global path
+Starship config
+aliases
+PATH rules
+shell settings
+```
+
+If those stay only on the local machine, the risk is:
+
+```text
+this computer is useful, but nobody knows how it became useful
+```
+
+That is an engineering failure mode, not just a documentation problem.
+
+The minimum recovery structure should be a standalone repo such as:
+
+```text
+~/every_on_git_ubuntu/dotfiles-workstation
+```
+
+with:
+
+```text
+dotfiles-workstation/
+├── README.md
+├── zsh/
+│   └── .zshrc
+├── ghostty/
+│   └── config
+├── starship/
+│   └── starship.toml
+├── scripts/
+│   ├── bootstrap_ubuntu24.sh
+│   └── check_dev_env.sh
+└── docs/
+    └── workstation_decisions.md
+```
+
+The point is not only to store files. The point is to preserve why the
+workstation has this shape.
+
+Example decision log:
+
+```markdown
+## 2026-05-12
+- Use Ghostty as primary terminal.
+- Keep Ubuntu Terminal as fallback recovery console.
+- Use zsh as interactive shell.
+- Use Starship for repo/context-aware prompt.
+- Add ~/.npm-global/bin to PATH for Codex CLI.
+```
+
+This turns terminal muscle memory into recoverable infrastructure.
+
+## Environment Health Check
+
+The `codex: command not found` problem is a typical environment drift symptom.
+
+Future versions of the same failure may look like:
+
+```text
+python not found
+uv not found
+docker permission denied
+codex path missing
+node version wrong
+git branch wrong
+CUDA unavailable
+shell is not the expected shell
+```
+
+Therefore the workstation needs a health check script:
+
+```text
+scripts/check_dev_env.sh
+```
+
+It should report:
+
+- login shell
+- current shell
+- actual shell process
+- PATH entries for npm global, local bin, cargo, and similar paths
+- paths and versions for zsh, starship, ghostty, git, node, npm, codex, docker,
+  python3, and uv
+
+This script is the workstation physical exam. When the environment feels wrong,
+run the check before debugging the tool itself.
+
+## Shell State Model
+
+The workstation must distinguish:
+
+```bash
+echo $SHELL
+echo $0
+ps -p $$
+```
+
+These answer different questions:
+
+```text
+$SHELL   = configured login shell
+$0       = current interactive session shell
+ps -p $$ = actual running shell process
+```
+
+This matters because different surfaces may load different startup files:
+
+```text
+bash reads ~/.bashrc
+zsh reads ~/.zshrc
+login zsh may read ~/.zprofile
+VSCode terminal can override the shell
+Ghostty can launch a configured shell
+tmux creates another layer
+Codex may inherit a different environment
+```
+
+Many future bugs will look like:
+
+```text
+works in normal terminal
+fails in Codex
+works in VSCode
+fails in tmux
+```
+
+Those are often shell-initialization bugs, not tool bugs.
+
+## Repo Startup Entry Point
+
+Multi-repo work needs a fixed entry point per important repo.
+
+Minimum examples:
+
+```text
+make status
+make dev
+make test
+make docs
+```
+
+or:
+
+```text
+./scripts/dev_status.sh
+./scripts/start_dev.sh
+```
+
+The smallest `dev_status.sh` should report:
+
+- repo root
+- current branch
+- git status
+- recent commits
+- key files such as README.md, AGENTS.md, Makefile, pyproject.toml, and
+  package.json
+
+This is especially important for Codex CLI because agent mistakes are much more
+likely when the repo, branch, or dirty state is unclear.
+
+## Git Safety Ritual
+
+Before starting Codex on important repos, run a small safety ritual:
+
+```bash
+git status
+git branch --show-current
+git log --oneline -5
+```
+
+An alias such as `gst` can be useful if it only reports state.
+
+Avoid over-automating commits too early. This user's repos involve research,
+governance, evidence boundaries, patent-sensitive ideas, and local-only
+material. Commit messages should stay intentional.
+
+Checkpoint before broad changes when needed:
+
+```bash
+git add -A
+git commit -m "checkpoint: before workstation shell changes"
+```
+
+## Ghostty Work Layering
+
+Ghostty should be treated as a cockpit, not as decoration.
+
+Useful terminal windows or tmux sessions can map to:
+
+```text
+planning-everything-track
+active coding repo
+logs / server / docker
+notes / paper / markdown
+Codex CLI
+```
+
+tmux remains valuable as persistence and recovery infrastructure:
+
+```text
+terminal closed -> session remains
+SSH disconnect -> work remains
+long task -> output remains
+project context -> named session
+```
+
+Possible stable sessions:
+
+```text
+planning
+fsidi
+threads
+urology
+infra
+```
+
+## Agent-Readable Environment Instructions
+
+Each important repo should have a clear `AGENTS.md` that tells AI agents:
+
+- repo purpose
+- safety rules
+- common commands
+- important directories
+- branch rules
+- sensitive paths or local-only boundaries
+
+This is more important than adding another terminal plugin. In this user's
+work, AI agents may touch cybersecurity research, forensic evidence, CIB-facing
+materials, synthetic scam data, urology AI systems, and patent-sensitive design
+notes. The agent needs boundaries before it receives authority.
+
+## Secrets And Backup Are Workstation Features
+
+Secrets should never be stored in repo docs or Markdown:
+
+```text
+OpenAI API key
+GitHub token
+Slack token
+LINE token
+Google API credentials
+Hugging Face token
+database URL
+private SSH key
+```
+
+Repo rule:
+
+```text
+.env stays out of git
+.env.example may enter git
+secrets/private/local/raw paths stay ignored or explicitly governed
+```
+
+Add secret scanning before risky commits where possible.
+
+Backup should have three layers:
+
+```text
+Git remote
+local external backup
+cloud/private encrypted backup
+```
+
+Sensitive research artifacts should remain local-only or encrypted when the
+project boundary requires it.
+
+## direnv Boundary
+
+`direnv` is useful when repo-specific environment state becomes real:
+
+```text
+PYTHONPATH
+project-specific PATH
+local variables
+Python / Node / Rust / LaTeX / Docker / LLM runtime differences
+```
+
+Do not add it as decoration. Add it when it prevents concrete environment
+pollution.
+
+## Workstation Log
+
+Every meaningful workstation change should produce a short log:
+
+```markdown
+# 2026-05-12 Ghostty + Zsh + Starship Setup
+
+## Changed
+- Installed Ghostty via snap.
+- Installed zsh via apt.
+- Installed Starship.
+- Added Starship init to ~/.zshrc.
+- Added npm global bin path to zsh for Codex CLI.
+
+## Problems
+- source ~/.zshrc was accidentally run inside bash.
+- Codex was installed but missing from zsh PATH.
+
+## Fix
+- Use exec zsh.
+- Add export PATH="$HOME/.npm-global/bin:$PATH" to ~/.zshrc.
+
+## Lesson
+Shell startup files are shell-specific.
+```
+
+The log converts debugging pain into reusable workstation knowledge.
+
+## Tool Role Table
+
+The workstation should keep tool responsibilities separate:
+
+```text
+Ghostty: terminal display and interaction
+zsh: shell command environment
+Starship: context-aware prompt
+tmux: long-running session management and recovery
+Git: version control and rollback
+Codex: AI coding agent
+Docker: environment containment
+uv: Python package/runtime management
+VSCode: large editing and reading
+GitHub: remote backup and collaboration
+```
+
+The more tools are mixed together conceptually, the slower debugging becomes.
+
+## Updated Smallest Next Test
+
+Do not immediately install more tools.
+
+First freeze the current working state:
+
+1. Write the workstation log for the 2026-05-12 Ghostty + zsh + Starship +
+   Codex CLI setup.
+2. Create a minimal `dotfiles-workstation` skeleton.
+3. Add `check_dev_env.sh`.
+4. Add or standardize one `dev_status.sh` in a high-value repo.
+5. Run the Git safety ritual before the next Codex session.
+6. Only after this, benchmark terminal behavior and session-ledger quality.
+
+This keeps the idea tied to real output instead of terminal over-optimization.
+
 ## Wider Paradigm: AI-Native Cognition Factory
 
 The larger structure is not only terminal tooling.

@@ -28,6 +28,10 @@
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
+## ai-engineering-workstation
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
 ## ai-generated-content
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
@@ -51,7 +55,7 @@
 
 ## ai-os
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## ai-safety
 
@@ -66,7 +70,7 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## ai-summary
 
@@ -79,7 +83,7 @@
 
 ## ai-workflow
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## anomaly-detection
 
@@ -105,6 +109,10 @@
 ## auto-research
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
+
+## backup
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## behavior-extraction
 
@@ -164,7 +172,7 @@
 
 ## cognition-factory
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## cognition-os
 
@@ -188,7 +196,7 @@
 
 ## computing-philosophy
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## conductor
 
@@ -197,7 +205,7 @@
 
 ## context-engineering
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## control-loop
 
@@ -272,9 +280,13 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## dev-environment
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
 ## developer-tools
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## digital-cognitive-twin
 
@@ -294,6 +306,10 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## direnv
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
 ## distributed-cognition
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -301,7 +317,11 @@
 ## distributed-systems
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## dotfiles
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## dsp
 
@@ -452,7 +472,7 @@
 
 ## ghostty
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## git-run-tracking
 
@@ -465,7 +485,7 @@
 
 ## gpu-rendering
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## hanmeibench
 
@@ -612,7 +632,7 @@
 
 ## latency
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## law-enforcement
 
@@ -661,7 +681,7 @@
 
 ## local-first
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## local-llm
 
@@ -701,7 +721,7 @@
 
 ## meta-engineering
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## meta-learning
 
@@ -767,7 +787,7 @@
 
 ## observability
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## openclaw
 
@@ -998,6 +1018,10 @@
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
+## secrets-management
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
 ## self-directed-data-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -1016,7 +1040,11 @@
 
 ## session-ledger
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## shell-initialization
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## side-project
 
@@ -1116,7 +1144,7 @@
 
 ## terminal
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## test-time-scaling
 
@@ -1125,6 +1153,10 @@
 ## theory-of-mind
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## tmux
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## traceability
 
@@ -1148,7 +1180,7 @@
 
 ## ubuntu
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## uncertainty
 
@@ -1176,7 +1208,7 @@
 
 ## verification
 
-- `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## video-understanding
 
@@ -1223,6 +1255,10 @@
 ## working-memory
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## workstation-governance
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## yolo
 

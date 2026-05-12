@@ -2,6 +2,7 @@
 
 | ID | Title | Maturity | Level | Status | Next Step | Path |
 | --- | --- | ---: | --- | --- | --- | --- |
+| `idea_000020` | GPU-first terminal as AI engineering workbench | 95/100 | `execution_ready` | `execution_ready` | Create a workstation log entry for the 2026-05-12 Ghostty + zsh + Starship + Codex CLI setup, including the Codex PATH fix and shell-initialization lesson. | `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml` |
 | `idea_000008` | Learned conductor for medical AI research workflows | 94/100 | `execution_ready` | `execution_ready` | Record the result of 吳冠廷's Sakana AI/Fugu application when known. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
 | `idea_000016` | LLM Literature Mental State Understanding | 94/100 | `execution_ready` | `execution_ready` | Draft HanmeiBench v0.1 with 60 candidate stimuli, source route, license status, direct alternative, why-not-direct hypothesis, and negative-control pairing. | `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml` |
 | `idea_000019` | Codex-wrapped AI Scientist research OS | 94/100 | `execution_ready` | `execution_ready` | In ../auto-research-os, run ./scripts/setup_env.sh to install upstream requirements in the local venv. | `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml` |
@@ -16,7 +17,6 @@
 | `idea_000014` | Journal Intelligence System | 86/100 | `execution_ready` | `execution_ready` | Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide. | `ideas/structured/idea_000014_journal_intelligence_system.yaml` |
 | `idea_000010` | AI-assisted smart mosquito trap | 84/100 | `execution_ready` | `execution_ready` | Review the v1 ESP32 build note and decide whether to buy the minimum parts. | `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml` |
 | `idea_000013` | ISO 27001 high school explainer and compliance teaching module | 84/100 | `execution_ready` | `execution_ready` | Turn the Markdown explainer into a 10-minute classroom handout and ask one non-security reader to summarize ISO/IEC 27001 back in five bullet points. | `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml` |
-| `idea_000020` | GPU-first terminal as AI engineering workbench | 80/100 | `research_candidate` | `research_candidate` | Verify the current Ubuntu terminal stack on the target machine: default terminal, GNOME version, Wayland/X11, GPU driver, and whether Ptyxis/GNOME Terminal uses GTK4 VTE. | `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml` |
 | `idea_000017` | Externalized cognition OS for human-AI planning | 78/100 | `research_candidate` | `research_candidate` | Write a one-page architecture note comparing human memory, external memory, and AI context roles in the current repo system. | `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml` |
 | `idea_000025` | Effective evidence collapse in AI-mediated search | 77/100 | `research_candidate` | `research_candidate` | Write the one-page Effective Evidence Collapse definition with the two key distinctions: visible sources versus independent evidence, and displayed citations versus evidence dependence. | `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml` |
 | `idea_000001` | Healthcare AI triage copilot | 75/100 | `research_candidate` | `research_candidate` | Create a synthetic intake fixture and define reviewer-burden metrics. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
@@ -50,7 +50,7 @@
 - idea_000017 - Externalized cognition OS for human-AI planning - 78/100 - research_candidate
 - idea_000018 - AI Value Capture And Agent Security Career Positioning - 88/100 - execution_ready
 - idea_000019 - Codex-wrapped AI Scientist research OS - 94/100 - execution_ready
-- idea_000020 - GPU-first terminal as AI engineering workbench - 80/100 - research_candidate
+- idea_000020 - GPU-first terminal as AI engineering workbench - 95/100 - execution_ready
 - idea_000021 - Physarum flow model for adaptive scam-candidate routing - 74/100 - research_candidate
 - idea_000022 - YOLO-to-foundation-vision reliable deployment decision system - 89/100 - execution_ready
 - idea_000023 - Evidence provenance under recursive AI web contamination - 91/100 - execution_ready
