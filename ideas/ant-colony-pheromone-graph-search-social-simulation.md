@@ -9,6 +9,14 @@ Related notes:
 - `../ideas/ai-aware-grid-decision-twin-power-grid-brainstorm.md`
 - `../ideas/taiwan-academic-research-team-scale-structure-incentives.md`
 
+## Repo Cross-Link Status
+
+2026-05-09 scan result:
+
+- No separate `education-resource-allocation` simulation main file was found in this repo. For now, this note is the canonical home for the education-resource / `reputation_signal` pheromone simulation thread.
+- No separate `world model stress-test generator` main file was found. Related thinking currently lives in this note, `../ideas/ai-aware-grid-decision-twin-power-grid-brainstorm.md`, and `../ideas/taiwan-academic-research-team-scale-structure-incentives.md`.
+- The README already links this note as the ant colony / graph search / social simulation brainstorm.
+
 ## Context
 
 這份筆記來自一次關於 `ANT COLONY PHEROMONES` 圖像的討論。圖中展示螞蟻如何透過費洛蒙在 nest 與 food 之間形成路徑。討論逐步延伸到 Dijkstra、A*、蟻群模型的差異，以及這些方法能否用於道路交通最佳化與社會系統模擬。最後，這個想法被連結到教育資源分配、`reputation_signal`、AI tutor、補教業、詐騙資訊擴散與 `digital twin` research。
@@ -746,8 +754,10 @@ AI tutor 是否能降低教育資源集中化？
 
 ## Action Items
 
-- [ ] 檢查 repo 中是否已有 education resource allocation simulation 的主檔案，並加入 cross-link。
-- [ ] 檢查是否已有 world model / stress-test generator 相關筆記，並加入 cross-link。
+- [x] 檢查 repo 中是否已有 education resource allocation simulation 的主檔案，並加入 cross-link。
+  - 2026-05-09 result: no dedicated main file found; keep this note as the canonical home for now.
+- [x] 檢查是否已有 world model / stress-test generator 相關筆記，並加入 cross-link。
+  - 2026-05-09 result: no dedicated main file found; related notes are listed in `Repo Cross-Link Status`.
 - [ ] 建立最小 Python simulation prototype 的設計稿。
 - [ ] 決定第一版 simulation 要先做交通場景、教育場景，還是詐騙資訊擴散場景。
 - [ ] 設計 `reputation_signal` 的初版公式。
