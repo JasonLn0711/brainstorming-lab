@@ -12,6 +12,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## agentic-ai
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
 ## ai-agents
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -19,6 +23,10 @@
 ## ai-crawler-opt-out
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
+## ai-economy
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## ai-generated-content
 
@@ -57,6 +65,7 @@
 ## ai-security
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`research_candidate`, 80/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## ai-summary
@@ -120,6 +129,10 @@
 ## candidate-stubs
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## career
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## citation-absorption-gap
 
@@ -215,12 +228,17 @@
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
+## cybercrime-investigation
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
 ## cybersecurity
 
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## data-acquisition-strategy
 
@@ -267,6 +285,10 @@
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
+## digital-labor
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## dinov2
 
@@ -406,6 +428,7 @@
 ## first-principles
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## flow-based-system
 
@@ -766,6 +789,10 @@
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
+## personal-positioning
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
 ## personality-density
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -795,6 +822,14 @@
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## platform-economics
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## portfolio-strategy
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## pragmatic-alignment
 
@@ -1067,6 +1102,10 @@
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## taiwan-ai-supply-chain
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
 ## task-graph
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -1119,9 +1158,17 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## us-software-platforms
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
 ## user-trust
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## value-capture
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## venue-fit
 
@@ -1160,6 +1207,10 @@
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+
+## workflow-agents
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## workflow-diagnosis
 

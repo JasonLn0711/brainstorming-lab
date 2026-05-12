@@ -10,6 +10,7 @@
 | `idea_000023` | Evidence provenance under recursive AI web contamination | 91/100 | `execution_ready` | `execution_ready` | Write a one-page definition note separating AI-generated content, incorrect content, unverifiable recursive synthesis, circular citation, and retrieval contamination. | `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml` |
 | `idea_000011` | AI-assisted statement interview question recommendation system | 89/100 | `execution_ready` | `executing` | Install Ollama and pull gpt-oss:20b, then run the MVP-0 CLI without --mock. | `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml` |
 | `idea_000022` | YOLO-to-foundation-vision reliable deployment decision system | 89/100 | `execution_ready` | `execution_ready` | Create a one-page failure taxonomy table for YOLO experiments: data, label, model, evaluation, deployment, and decision-policy failures. | `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml` |
+| `idea_000018` | AI Value Capture And Agent Security Career Positioning | 88/100 | `execution_ready` | `execution_ready` | Pick one 4-6 week portfolio sprint: Agentic SOC Copilot or MCP / Agent Security Lab. | `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml` |
 | `idea_000024` | Search trust collapse under AI-generated web pollution | 88/100 | `execution_ready` | `execution_ready` | Write a one-page definition separating retrieval collapse, search trust collapse, source diversity decay, human-source scarcity, and evidence provenance depth. | `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml` |
 | `idea_000012` | PhD problem-definition thinking system | 87/100 | `execution_ready` | `execution_ready` | Apply the one-page problem-definition card to one active lane, preferably idea_000002 or idea_000007, after a concrete implementation or mental-execution friction pass. | `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml` |
 | `idea_000014` | Journal Intelligence System | 86/100 | `execution_ready` | `execution_ready` | Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide. | `ideas/structured/idea_000014_journal_intelligence_system.yaml` |
@@ -47,6 +48,7 @@
 - idea_000015 - Layered Voice Enhancement in Consumer VoIP Calls - 92/100 - execution_ready
 - idea_000016 - LLM Literature Mental State Understanding - 94/100 - execution_ready
 - idea_000017 - Externalized cognition OS for human-AI planning - 78/100 - research_candidate
+- idea_000018 - AI Value Capture And Agent Security Career Positioning - 88/100 - execution_ready
 - idea_000019 - Codex-wrapped AI Scientist research OS - 94/100 - execution_ready
 - idea_000020 - GPU-first terminal as AI engineering workbench - 80/100 - research_candidate
 - idea_000021 - Physarum flow model for adaptive scam-candidate routing - 74/100 - research_candidate

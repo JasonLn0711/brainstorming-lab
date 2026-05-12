@@ -1,0 +1,591 @@
+id: idea_000018
+title: AI Value Capture And Agent Security Career Positioning
+created_at: 2026-05-09
+type: hypothesis
+tags:
+- ai-economy
+- value-capture
+- agentic-ai
+- ai-security
+- career
+- workflow-agents
+- digital-labor
+- cybersecurity
+- platform-economics
+- taiwan-ai-supply-chain
+- us-software-platforms
+- cybercrime-investigation
+- portfolio-strategy
+- personal-positioning
+- first-principles
+status: execution_ready
+problem_statement:
+  raw: Given that Taiwan AI supply-chain equities have strongly reflected the first
+    stage of the AI infrastructure cycle, identify when the next value-capture stage
+    moves toward workflow agents, platforms, applications, and digital labor, and
+    decide how the user should position their career at the intersection of agentic
+    AI, cybersecurity, cybercrime investigation, and enterprise workflow risk.
+  normalized: Given an AI value chain moving from infrastructure bottlenecks toward
+    workflow/platform control, optimize the user's career and portfolio-building position
+    under constraints of uncertain market timing, non-investment-advice boundaries,
+    current technical skill gaps, geographic job-market options, and the user's differentiated
+    cybercrime and security background.
+  structure:
+    given: AI value capture is shifting from the infrastructure bottleneck phase toward
+      workflow, platform, application, and digital-labor phases.
+    optimize: a concrete personal positioning strategy around AI agent security, cyber
+      automation, fraud intelligence, and enterprise workflow agents.
+    constraints:
+    - market timing and return figures are volatile and must be rechecked before investment
+      use
+    - this note is not financial advice or a trading plan
+    - the user needs a career plan that can be executed through portfolio projects
+      and job targeting
+    - pure frontier-model research is a reach path, not the main career route
+    - the user has a differentiated cybercrime investigation and cybersecurity background
+    - agentic systems introduce real security, governance, auditability, and responsibility
+      constraints
+summary: 'A first-principles career and technology thesis: Taiwan''s AI supply chain
+  rose first because AI is still partly in the infrastructure bottleneck phase, but
+  the next major value-capture layer is likely workflow, platform, application, and
+  digital-labor control. The user''s strongest personal position is not generic ML
+  engineer or pure LLM researcher; it is AI Security / Agentic AI Engineer with cybercrime
+  investigation background, focused on safe agents entering high-risk workflows such
+  as SOC triage, fraud intelligence, evidence review, enterprise automation, and agent
+  governance.'
+source_note_zh: 台股先漲不是美股 AI 故事結束，而是 AI 價值捕獲第一階段落在算力瓶頸、供應鏈與資料中心；下一階段會轉向能控制工作流程、資料、使用者入口、平台抽成與
+  digital labor monetization 的公司。個人定位應該放在 AI agent security / cyber automation / fraud
+  intelligence / enterprise workflow，而不是只當一般 ML 工程師。
+assumptions:
+- AI infrastructure spending can keep growing while application and platform monetization
+  begins; the handoff is overlapping, not sequential.
+- Taiwan's AI-linked equity strength reflects supply-chain earnings visibility, capex
+  bottlenecks, and the market's first-stage preference for tangible infrastructure
+  beneficiaries.
+- The biggest long-run value pool is not hardware alone but software-like control
+  over work units, workflows, distribution, data, permissions, and customer relationships.
+- A gross labor-cost pool, such as global white-collar wages affected by AI, should
+  not be treated as direct revenue or shareholder value.
+- A small capture rate on a very large digital-labor value pool can still justify
+  enormous platform value if the capturing firm has durable distribution or workflow
+  control.
+- Cisco is a useful internet-era analogy only if the lesson is value migration from
+  early infrastructure bottlenecks to later platforms and applications, not that infrastructure
+  was unimportant.
+- Software engineering agents are likely the first major AI application category with
+  clear ROI because repos, tests, PRs, bug fixes, and review workflows create fast
+  feedback loops.
+- 'Enterprise workflow agents need more than model quality: they require permissions,
+  audit logs, data integration, human-in-the-loop controls, workflow state, reliability,
+  and governance.'
+- Agent security is likely to become a structural enterprise need because tool-using
+  agents can touch email, browsers, databases, Slack, GitHub, CRM, cloud resources,
+  and internal tools.
+- The user's cybercrime, security, investigation, and governance context is a differentiator
+  against generic AI-engineering candidates.
+- The best personal wedge is to build inspectable agentic security systems that demonstrate
+  both AI implementation and risk control.
+- Investment claims should remain citation leads and hypotheses unless refreshed with
+  current data before use.
+evidence:
+- '2026-05-09 user thesis: Taiwan stocks have outperformed because the AI revolution
+  is still early and infrastructure bottlenecks are being priced first; later value
+  may shift to applications, platforms, and digital labor.'
+- Taiwan Index page checked on 2026-05-09 showed TAIEX total-return performance fields
+  and confirmed that exact three-year return figures are source/time dependent and
+  should be refreshed before use.
+- Fiera Capital 2026 white paper argues that early and visible AI benefits have accrued
+  to the supply chain and that Taiwan has unusually high IT exposure in its benchmark.
+- OpenAI Codex release page describes a cloud software engineering agent that can
+  work on multiple tasks, read/edit code, run tests, and propose PRs.
+- Microsoft 2025 Work Trend Index describes agents acting as digital labor and reports
+  strong leader confidence in using digital labor over the next 12-18 months.
+- McKinsey 2025 State of AI reports that many organizations see use-case benefits
+  while enterprise-wide EBIT impact remains limited, implying the pilot-to-scale transition
+  is still incomplete.
+- OWASP GenAI Security Project explicitly includes LLMs, agentic AI systems, and AI-driven
+  applications as security and governance targets.
+- Salesforce Agentforce page frames enterprise agents as digital labor integrated
+  into existing workflows, data, and systems.
+- Existing local Idea OS records already emphasize cybersecurity review assist, governed
+  triage, workflow policy learning, learned conductor systems, statement-interview
+  workflows, problem definition, and human-AI cognitive OS.
+baseline:
+- 'Generic AI career framing: become an ML engineer or prompt engineer without a domain
+  wedge.'
+- 'Pure frontier-model-research path: compete directly with OpenAI, DeepMind, Anthropic,
+  and top-tier ML PhDs as the main route.'
+- 'Infrastructure-only thesis: assume all AI value will remain in chips, servers,
+  foundries, and data centers.'
+- 'Application-only thesis: assume AI infrastructure winners will immediately collapse
+  like a simple Cisco analogy.'
+- 'Market-return shortcut: treat a gross labor-cost pool as direct enterprise revenue
+  or shareholder profit.'
+- 'Tool-demo portfolio: build a chatbot or RAG app without security controls, workflow
+  state, auditability, or domain evidence.'
+metrics:
+- Can the thesis separate gross economic value, consumer surplus, revenue capture,
+  profit capture, and market capitalization?
+- Can the timing thesis name observable signals for the handoff from infrastructure
+  to workflow/platform monetization?
+- Can the personal career plan map one portfolio project to one target job family
+  and one interview narrative?
+- Can the portfolio demonstrate tool use, least privilege, human approval, audit logs,
+  prompt-injection defense, and failure-mode evaluation?
+- Can the career strategy turn cybercrime investigation background into product-relevant
+  evidence rather than biography?
+- Can the user complete one visible artifact in 4-6 weeks that is credible to AI security,
+  applied AI, and cybersecurity interviewers?
+- Can the note avoid direct investment advice while preserving the market-structure
+  insight?
+insights:
+- 'The short phrase for the thesis is: Taiwan rose on AI construction rights; the
+  next stage fights over AI taxation rights.'
+- The transition period is likely 2026H2-2028H1 for visible application/platform financial
+  evidence, with 2028-2030 closer to digital-labor steady-state diffusion.
+- The next stage does not require infrastructure spending to stop; infrastructure
+  capex and application monetization can rise together.
+- The first application-layer PMF is likely software labor because code agents can
+  close the loop through tests, PRs, review, and measurable cycle-time reduction.
+- 'Enterprise workflow agents are control planes, not chatbots: the defensible asset
+  is workflow ownership, data access, permissioning, distribution, and auditability.'
+- AI security is a second-order winner because the more agents can act, the more organizations
+  need prompt-injection defense, tool-permission design, sandboxing, data-exfiltration
+  prevention, and audit logs.
+- 'The user''s strongest narrative is: I can build and evaluate agents for high-risk
+  workflows because I understand cybercrime, evidence, investigation, governance,
+  and security failure modes.'
+- Do not sell the user as a generalist AI beginner; sell the intersection of agentic
+  AI, cybersecurity, cybercrime investigation, and workflow governance.
+connections:
+- idea_000002
+- idea_000007
+- idea_000008
+- idea_000011
+- idea_000012
+- idea_000014
+- idea_000017
+role: idea
+value:
+  impact: high
+  feasibility: high
+planning_boundary:
+  sync_rule: Planning only needs a locator/status/capacity note if this becomes a
+    W20 career-preparation lane. Do not duplicate the full market thesis, company
+    list, skill map, or portfolio project plan into planning.
+  status_note_shape:
+  - title
+  - id
+  - status
+  - maturity_score
+  - next_test
+  - canonical_path
+  - capacity_note
+market_thesis:
+  first_principle: Economic value capture flows first to the binding bottleneck, then
+    to the actor that controls workflow, distribution, data, and durable pricing power.
+  short_claim: 台股漲的是 AI 的建設權；下一階段美股與全球軟體公司要爭的是 AI 的抽稅權。
+  staged_model:
+  - stage: 'Stage 1: AI infrastructure bottleneck'
+    timing: 2023-2026 and continuing
+    value_capture: chips, foundry, advanced packaging, servers, cooling, power, networking,
+      data centers
+    example_regions: '["Taiwan", "United States", "Japan", "Korea"]'
+  - stage: 'Stage 2: cloud and model platform'
+    timing: 2025-2027
+    value_capture: frontier models, cloud GPU capacity, developer APIs, enterprise
+      agent tooling, model distribution
+    example_regions: '["United States", "United Kingdom", "France", "Canada"]'
+  - stage: 'Stage 3: workflow and application control'
+    timing: 2026H2-2028H1 as the first large re-rating window
+    value_capture: coding agents, enterprise workflow agents, sales/service agents,
+      legal/compliance/finance agents, knowledge-work platforms
+    example_regions: '["United States", "Singapore", "Australia", "Taiwan for integration/security
+      niches"]'
+  - stage: 'Stage 4: digital labor steady state'
+    timing: 2028-2030 and beyond
+    value_capture: software-defined work units, digital colleagues, agent marketplaces,
+      AI governance, labor-market and policy redesign
+  value_pool_warning: White-collar wage displacement or augmentation estimates describe
+    a gross addressable labor-cost pool, not direct shareholder value. The useful
+    investment question is who can capture a durable percentage through platform tax,
+    workflow tax, distribution tax, or governance-critical control.
+  cisco_analogy_boundary: Cisco is useful as a value-migration analogy, not as proof
+    that AI infrastructure winners must fail. Internet infrastructure was necessary,
+    but later consumer and enterprise platforms captured the larger durable software
+    value.
+timing_judgment:
+  base_case: The next stage has already started, but broad financial and equity re-rating
+    is more likely in 2026H2-2028H1.
+  why_not_later_only: Coding agents and enterprise agent platforms are already being
+    sold and integrated; waiting for infrastructure spend to slow would miss the overlap.
+  why_not_fully_now: Many enterprises still lack workflow integration, permissioning,
+    evals, data plumbing, governance, and reliable enterprise-wide EBIT evidence.
+  observable_signals:
+  - AI software engineering agents become budget-line items rather than experimental
+    tools.
+  - Enterprise agent platforms publish repeatable customer ROI beyond pilot case studies.
+  - Agent security, audit, and governance roles become standard in AI platform deployments.
+  - SaaS companies report attach rates, retention, and margin effects from agent products.
+  - Security incidents involving tool-using agents increase demand for agent governance.
+service_map:
+  most_likely_first_winners:
+  - service: AI software engineer / coding agent
+    why: closed-loop ROI through repo reading, test execution, PR creation, bug fixing,
+      and review
+    examples: '["OpenAI Codex", "GitHub Copilot", "Anthropic Claude Code", "Cursor",
+      "Sourcegraph"]'
+  - service: Enterprise workflow agent
+    why: connects CRM, ERP, ITSM, HR, finance, support, and sales processes to digital
+      labor
+    examples: '["Microsoft Copilot Studio", "Salesforce Agentforce", "ServiceNow AI
+      Agents", "SAP", "Oracle", "Workday"]'
+  - service: Customer support and sales ops agent
+    why: high-volume, measurable, repetitive, data-rich workflows
+    examples: '["Salesforce", "Intercom", "Sierra", "Decagon", "Zendesk", "ServiceNow"]'
+  - service: AI cyber / SOC agent
+    why: security teams face chronic alert overload and need triage, enrichment, report
+      drafting, and controlled response
+    examples: '["Microsoft Security", "CrowdStrike", "Palo Alto Networks", "Wiz",
+      "Cloudflare", "Google Mandiant", "Trend Micro"]'
+  - service: Legal, compliance, finance, and knowledge-worker platforms
+    why: document-heavy, high-wage, review-oriented workflows with strong audit needs
+    examples: '["Harvey", "Thomson Reuters", "Bloomberg", "Palantir", "Glean", "Notion",
+      "Atlassian", "Databricks", "Snowflake"]'
+required_capabilities:
+  engineering_base:
+  - Python
+  - TypeScript or JavaScript
+  - FastAPI or Node.js
+  - SQL and PostgreSQL
+  - Docker
+  - Linux
+  - GitHub Actions
+  - 'one cloud: AWS, Azure, or GCP'
+  - REST API, webhook, OAuth, and IAM basics
+  agent_stack:
+  - OpenAI, Anthropic, or Google model APIs
+  - 'RAG: chunking, embeddings, reranking, metadata filtering'
+  - 'vector DB: pgvector, Pinecone, Weaviate, or Milvus'
+  - 'agent orchestration: LangGraph, Semantic Kernel, or LlamaIndex workflows'
+  - MCP
+  - tool_calling
+  - Playwright
+  - evals
+  - tracing_and_observability
+  ai_security:
+  - OWASP LLM Top 10
+  - OWASP agentic AI security
+  - prompt injection and indirect prompt injection
+  - tool abuse and excessive agency
+  - least_privilege
+  - sandboxing
+  - secrets_management
+  - audit_logging
+  - data_exfiltration_defense
+  - SIEM and EDR basics
+  - MITRE ATT&CK
+  - Sigma and YARA basics
+  - phishing, malware, and fraud analysis workflow
+  ml_data:
+  - PyTorch
+  - Transformers
+  - embedding_models
+  - fine-tuning and LoRA basics
+  - classification
+  - anomaly_detection
+  - graph_analysis
+  - data_pipeline
+  - model_evaluation
+  - experiment_tracking
+  infra_edge_bonus:
+  - CUDA_basics
+  - vLLM
+  - TensorRT_LLM
+  - Triton_Inference_Server
+  - quantization
+  - latency_and_throughput_optimization
+  - ONNX_Runtime
+  - TensorRT
+  - OpenVINO
+geography_and_company_map:
+  united_states:
+    thesis: largest platform and taxation-right pool because of frontier models, cloud,
+      SaaS, capital markets, and distribution
+    companies:
+    - OpenAI
+    - Anthropic
+    - Google_DeepMind
+    - Meta
+    - Microsoft
+    - AWS
+    - NVIDIA
+    - Oracle_Cloud
+    - CoreWeave
+    - Salesforce
+    - ServiceNow
+    - Adobe
+    - Atlassian
+    - Workday
+    - Cursor
+    - Glean
+    - Harvey
+    - Sierra
+    - Decagon
+    - CrowdStrike
+    - Palo_Alto_Networks
+    - Wiz
+    - Cloudflare
+    - Snyk
+  taiwan:
+    thesis: best infrastructure and supply-chain exposure, plus niches in AI security,
+      edge AI, fraud intelligence, and enterprise integration
+    companies:
+    - TSMC
+    - ASE
+    - GlobalWafers
+    - MediaTek
+    - Foxconn
+    - Quanta_QCT
+    - Wiwynn
+    - Wistron
+    - Inventec
+    - Delta
+    - Advantech
+    - Trend_Micro
+    - TXOne
+    - TeamT5
+    - CyCraft
+    - Gogolook
+    - Appier
+    - LINE_Taiwan
+    - Google_Taiwan
+    - Microsoft_Taiwan
+    - NVIDIA_Taiwan
+  singapore:
+    thesis: APAC enterprise AI, cloud AI, finance AI, regtech, fraud AI, and regional
+      HQ hub
+    companies:
+    - Google
+    - Microsoft
+    - AWS
+    - TikTok_ByteDance
+    - Grab
+    - Sea
+    - Databricks
+    - Snowflake
+    - Palantir
+    - CrowdStrike
+    - Palo_Alto
+    - Cloudflare
+    - Wiz
+    - GovTech
+  australia:
+    thesis: practical international landing zone for enterprise AI, AI security, fraud,
+      regulated-industry workflows, and product engineering
+    companies:
+    - Atlassian
+    - Canva
+    - SafetyCulture
+    - CyberCX
+    - Google
+    - Microsoft
+    - AWS
+    - CrowdStrike
+    - Palo_Alto
+    - Cloudflare
+    - Wiz
+    - CBA
+    - NAB
+    - ANZ
+    - Westpac
+  japan:
+    thesis: industrial AI, robotics, enterprise transformation, and manufacturing
+      systems; higher language barrier
+    companies:
+    - Preferred_Networks
+    - Sony
+    - Toyota_Woven
+    - NTT_Data
+    - Fujitsu
+    - NEC
+    - SoftBank
+    - Rakuten
+    - Mercari
+personal_positioning:
+  recommended_identity: AI Security / Agentic AI Engineer with cybercrime investigation
+    background
+  sharper_identity: Agentic AI builder and evaluator for high-risk cybersecurity,
+    fraud, and investigation workflows.
+  avoid_identity:
+  - generic junior AI engineer
+  - prompt engineer only
+  - pure LLM researcher as the main route
+  job_titles:
+  - AI_Security_Engineer
+  - LLM_Security_Engineer
+  - AI_Red_Team_Engineer
+  - Agentic_AI_Engineer
+  - Applied_AI_Engineer
+  - Machine_Learning_Engineer_Security
+  - Threat_Intelligence_Engineer_AI
+  - Fraud_Detection_or_Trust_and_Safety_ML_Engineer
+  - GenAI_Solutions_Architect
+  - AI_Governance_or_AI_Risk_Engineer
+  - Cybersecurity_Data_Scientist
+  - Security_Automation_Engineer
+portfolio_projects:
+- name: Agentic SOC Copilot
+  purpose: Demonstrate agentic workflow, cyber triage, tool use, approval gates, and
+    auditability.
+  features:
+  - ingest phishing email, logs, alerts, URLs, attachment metadata
+  - triage and enrich evidence
+  - map observations to MITRE ATT&CK
+  - generate incident report with confidence
+  - require human approval for high-risk actions
+  - log every tool call
+  interview_signal: I can place AI agents inside real security workflows without losing
+    control.
+- name: MCP / Agent Security Lab
+  purpose: Show both attack understanding and defensive architecture for tool-using
+    agents.
+  features:
+  - vulnerable agent fixture
+  - defended agent fixture
+  - prompt injection tests
+  - indirect prompt injection from document or email
+  - tool over-permission
+  - data exfiltration
+  - memory poisoning
+  - unsafe autonomous action
+  - denial-of-wallet guard
+  interview_signal: I understand agentic AI security beyond generic OWASP naming.
+- name: Cybercrime Intelligence Graph
+  purpose: Turn cybercrime investigation background into visible applied AI product
+    skill.
+  features:
+  - entity_extraction
+  - relationship_graph
+  - risk_scoring
+  - case_timeline
+  - natural_language_query
+  - report_generation
+  interview_signal: I can connect public cybercrime intelligence, graph reasoning,
+    and explainable reporting.
+twelve_month_route:
+  q2_2026:
+    goal: establish positioning and start portfolio
+    actions:
+    - rewrite resume headline around AI Security / Agentic AI Engineer
+    - start Agentic SOC Copilot
+    - start MCP / Agent Security Lab or choose it as the first artifact
+  q3_2026:
+    goal: apply in Taiwan and remote-friendly roles
+    targets:
+    - Trend_Micro
+    - TXOne
+    - TeamT5
+    - CyCraft
+    - Gogolook
+    - Appier
+    - NVIDIA_Taiwan
+    - Google_Taiwan
+    - Microsoft_Taiwan
+    - MediaTek
+    - Quanta_QCT
+    - Foxconn
+    - financial institution fraud or cyber AI teams
+  q4_2026:
+    goal: expand to Singapore, Australia, and global remote
+    targets:
+    - Atlassian
+    - Canva
+    - CrowdStrike
+    - Palo_Alto
+    - Cloudflare
+    - Wiz
+    - CyberCX
+    - AWS
+    - Microsoft
+    - Google
+    - bank fraud AI and cyber analytics teams
+  y2027:
+    goal: upgrade toward platform company, cybersecurity AI vendor, cloud AI security,
+      or enterprise agent platform
+    principle: use first AI/cyber/agent title as a stepping stone, not the endpoint
+risk_register:
+- risk: Financial thesis becomes overconfident or time-stale.
+  mitigation: Keep market figures as refresh-required citation leads and avoid treating
+    the note as investment advice.
+- risk: Career plan becomes too broad.
+  mitigation: Choose one portfolio artifact and one target job family for the first
+    4-6 week sprint.
+- risk: Portfolio becomes a generic chatbot.
+  mitigation: Force every project to include permissions, audit logs, evals, human
+    approval, and security failure cases.
+- risk: Pure AI research ambition diffuses execution.
+  mitigation: Keep frontier-model research as reach optionality and make applied AI
+    security the mainline.
+- risk: Company lists become stale.
+  mitigation: Refresh job postings and role names before applying; treat this as a
+    map, not a final application list.
+source_links:
+- title: Taiwan Stock Exchange Capitalization Weighted Stock Index
+  url: https://taiwanindex.com.tw/en/indexes/t00
+  status: Checked 2026-05-09; performance figures are dynamic.
+- title: 'Fiera Capital: Taiwan, Supply Chain and AI'
+  url: https://www.fieracapital.com/wp-content/uploads/insights/3181/whitepaper-taiwan-supply-chain-and-ai-eng.pdf
+  status: Checked 2026-05-09; source is a marketing communication and should be treated
+    accordingly.
+- title: 'OpenAI: Introducing Codex'
+  url: https://openai.com/index/introducing-codex/
+  status: Checked 2026-05-09.
+- title: Microsoft Work Trend Index 2025
+  url: https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born
+  status: Checked 2026-05-09.
+- title: McKinsey State of AI 2025
+  url: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+  status: Checked 2026-05-09.
+- title: Salesforce Agentforce
+  url: https://www.salesforce.com/ap/agentforce/
+  status: Checked 2026-05-09.
+- title: OWASP Top 10 for LLM Applications / GenAI Security Project
+  url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+  status: Checked 2026-05-09.
+next_steps:
+- 'Pick one 4-6 week portfolio sprint: Agentic SOC Copilot or MCP / Agent Security
+  Lab.'
+- Create a one-page job-positioning packet with target title, target company list,
+  proof artifacts, and missing skills.
+- Refresh company job postings in Taiwan, Singapore, Australia, and remote markets
+  before turning the company map into applications.
+- Build a role-skill matrix from 20 live job descriptions and compare it against the
+  required capabilities in this note.
+- If this becomes a W20 priority, sync only a short locator/status/capacity note to
+  planning.
+source:
+- 2026-05-09 user brainstorm on Taiwan vs US AI value capture, digital labor, and
+  personal career positioning
+- 2026-05-09 source checks listed under source_links
+maturity_action: generate experiment plan
+normalization_status: validated
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 11
+  testability_score: 11/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 88/100
+maturity_level: execution_ready
