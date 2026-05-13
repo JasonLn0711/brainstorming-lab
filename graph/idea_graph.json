@@ -143,8 +143,8 @@
       "id": "idea_000008",
       "title": "Learned conductor for medical AI research workflows",
       "status": "execution_ready",
-      "maturity_score": "94/100",
-      "maturity_score_raw": 94,
+      "maturity_score": "97/100",
+      "maturity_score_raw": 97,
       "maturity_level": "execution_ready",
       "tags": [
         "multi-agent",
@@ -676,7 +676,7 @@
       "source": "idea_000001",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.268,
+      "similarity": 0.2664,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -964,7 +964,7 @@
       "source": "idea_000005",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.0984,
+      "similarity": 0.096,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1081,7 +1081,7 @@
       "source": "idea_000007",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.4532,
+      "similarity": 0.4624,
       "shared_tags": [
         "conductor",
         "learned-orchestration",
@@ -1220,7 +1220,7 @@
       "source": "idea_000008",
       "target": "idea_000011",
       "weight": 1.0,
-      "similarity": 0.2229,
+      "similarity": 0.2337,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1230,7 +1230,7 @@
       "source": "idea_000008",
       "target": "idea_000012",
       "weight": 1.0,
-      "similarity": 0.2581,
+      "similarity": 0.2582,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1240,7 +1240,7 @@
       "source": "idea_000008",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.1945,
+      "similarity": 0.2014,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1250,7 +1250,7 @@
       "source": "idea_000008",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.2788,
+      "similarity": 0.2797,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1260,7 +1260,7 @@
       "source": "idea_000008",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.3359,
+      "similarity": 0.3461,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1270,7 +1270,7 @@
       "source": "idea_000008",
       "target": "idea_000019",
       "weight": 1.0,
-      "similarity": 0.4272,
+      "similarity": 0.4389,
       "shared_tags": [
         "research-workflow"
       ],
@@ -1283,7 +1283,7 @@
       "source": "idea_000008",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.3402,
+      "similarity": 0.3519,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1293,7 +1293,7 @@
       "source": "idea_000008",
       "target": "idea_000022",
       "weight": 1.0,
-      "similarity": 0.2115,
+      "similarity": 0.2312,
       "shared_tags": [
         "evaluation"
       ],

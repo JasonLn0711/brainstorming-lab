@@ -2,8 +2,8 @@
 
 | ID | Title | Maturity | Level | Status | Next Step | Path |
 | --- | --- | ---: | --- | --- | --- | --- |
+| `idea_000008` | Learned conductor for medical AI research workflows | 97/100 | `execution_ready` | `execution_ready` | After W20 fixed gates, define one private bounded beta test plan that compares Fugu-style orchestration against a fixed pipeline under cost, latency, verification, and abstention constraints. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
 | `idea_000020` | GPU-first terminal as AI engineering workbench | 95/100 | `execution_ready` | `execution_ready` | Create a workstation log entry for the 2026-05-12 Ghostty + zsh + Starship + Codex CLI setup, including the Codex PATH fix and shell-initialization lesson. | `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml` |
-| `idea_000008` | Learned conductor for medical AI research workflows | 94/100 | `execution_ready` | `execution_ready` | Record the result of 吳冠廷's Sakana AI/Fugu application when known. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
 | `idea_000016` | LLM Literature Mental State Understanding | 94/100 | `execution_ready` | `execution_ready` | Draft HanmeiBench v0.1 with 60 candidate stimuli, source route, license status, direct alternative, why-not-direct hypothesis, and negative-control pairing. | `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml` |
 | `idea_000019` | Codex-wrapped AI Scientist research OS | 94/100 | `execution_ready` | `execution_ready` | In ../auto-research-os, run ./scripts/setup_env.sh to install upstream requirements in the local venv. | `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml` |
 | `idea_000007` | Signal Market for low-cost behavior discovery | 92/100 | `execution_ready` | `execution_ready` | Draft a tiny Fugu-style conductor fixture for the scam system with six synthetic cases: two obvious cases, two hard negatives, one outlier, and one insufficient-evidence case. | `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml` |
@@ -38,7 +38,7 @@
 - idea_000005 - Workflow optimization feedback loop - 57/100 - structured
 - idea_000006 - OpenClaw personal ops node - 60/100 - structured
 - idea_000007 - Signal Market for low-cost behavior discovery - 92/100 - execution_ready
-- idea_000008 - Learned conductor for medical AI research workflows - 94/100 - execution_ready
+- idea_000008 - Learned conductor for medical AI research workflows - 97/100 - execution_ready
 - idea_000009 - Safe Tesla coil insect-trap teaching demo - 68/100 - research_candidate
 - idea_000010 - AI-assisted smart mosquito trap - 84/100 - execution_ready
 - idea_000011 - AI-assisted statement interview question recommendation system - 89/100 - execution_ready
