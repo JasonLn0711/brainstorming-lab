@@ -10,6 +10,12 @@ tags:
 - research-workflow
 - evaluation
 - cost-normalized-benchmark
+- fugu-ultra
+- codex-cli
+- long-run-agent-evaluation
+- context-compaction
+- state-abstraction
+- workflow-consistency
 status: execution_ready
 problem_statement:
   raw: Can a learned or systematically searched conductor choose better medical AI
@@ -82,6 +88,21 @@ evidence:
   free credits worth 100K JPY according to the email screenshot.'
 - 'The 2026-05-13 beta email screenshot includes a confidentiality boundary: do not
   post screenshots, bugs, hallucinations, beta outputs, or confidential details publicly.'
+- 'Later 2026-05-13 LINE conversation: 吳冠廷 provided a Jason_Test API key for bounded
+  testing, said backend usage is visible on his side, and pointed to the private manual
+  / Codex CLI setup; the live key is stored only in the local secret env file.'
+- 'Local 2026-05-13 smoke test: curl authenticated fugu-mini chat and Responses API
+  successfully, while raw beta outputs remain local-only under the planning repo .local/sakana
+  path.'
+- 'Local 2026-05-13 fugu-ultra Codex CLI Project II stress test: Codex reported 6,319,482
+  total tokens, 6,136,936 input tokens, 23,226,988 cached input tokens, 182,546 output
+  tokens, and 3,437,721 reasoning tokens. The visible trace showed strong repo navigation,
+  tool use, and official IC-side success-boundary awareness, but no captured official
+  IC-created /shared/success.txt before the cutoff.'
+- 2026-05-13 user-provided GPT follow-up analysis framed the same trace as agentic
+  software engineering plus long-context task execution, with context compaction,
+  goal-directed persistence, workflow consistency, world-model limits, and long-term
+  memory risk as the most important research signals.
 baseline:
 - Single frontier model with a fixed prompt.
 - Hand-written LangGraph or AutoGen-style planner/specialist/verifier pipeline.
@@ -95,6 +116,13 @@ metrics:
 - Error detection rate before final answer.
 - Calibration of not-enough-evidence and abstention decisions.
 - Generalization to unseen task types or changed model pools.
+- Valid proof-artifact rate under a fixed time, command, and token budget.
+- Checkpoint quality before long exploration loops.
+- 'Context-efficiency ratio: useful uncertainty reduction per token and command.'
+- State-ledger retention across context compaction.
+- Preservation of proof obligations, forbidden actions, and hidden assumptions after
+  summarization.
+- Drift rate after one or more compaction boundaries.
 insights:
 - Research value comes from policy learning or policy search, not from the number
   of agents.
@@ -118,6 +146,28 @@ insights:
 - 吳冠廷's suggestion that Jason may fit Sakana AI's biologically inspired AI direction
   strengthens the career/research-positioning signal, but should not become a job-application
   sprint unless a separate career lane is opened.
+- 'The API handoff makes the smallest useful next step practical: a private, defensive,
+  low-token fixture that tests orchestration value without publishing beta outputs
+  or generating offensive security instructions.'
+- 'The fugu-ultra Project II stress test sharpens the evaluation question: process
+  competence is not enough. Learned orchestration must produce valid proof artifacts
+  under explicit budgets, not only conduct impressive exploration.'
+- 'The run suggests a likely failure mode for recursive or long-agent orchestration:
+  context movement can become the scarce resource. A conductor should decide when
+  to stop exploring, summarize state, switch tools, ask for human input, or return
+  an honest failure report.'
+- The useful research object is not "Fugu is good or bad"; it is a budgeted decision
+  policy for when deeper agentic work is worth the marginal cost.
+- 'The GPT follow-up analysis clarifies why context compaction matters: it is not
+  only an implementation detail but the memory layer that allows long-horizon task
+  execution, and it is also the failure surface where hidden assumptions can disappear.'
+- Goal-directed persistence may be the more important near-term agent capability than
+  raw coding skill. The fugu-ultra trace should therefore be evaluated by state preservation,
+  operational consistency, and proof production, not only by whether it emits plausible
+  technical steps.
+- 'The capability boundary should stay explicit: the trace suggests high-grade workflow
+  autocomplete plus reasoning scaffolding, but does not prove a true OS or exploitation
+  world model, original vulnerability-class discovery, or stable long-term memory.'
 connections:
 - idea_000001
 - idea_000005
@@ -152,8 +202,11 @@ maturity_score: 97/100
 maturity_level: execution_ready
 next_steps:
 - After W20 fixed gates, define one private bounded beta test plan that compares Fugu-style
-  orchestration against a fixed pipeline under cost, latency, verification, and abstention
-  constraints.
+  orchestration against a fixed pipeline under cost, latency, verification, abstention,
+  checkpoint quality, and valid proof-artifact constraints.
+- 'Add a hard-budget fugu-ultra fixture: same clean repo snapshot, same prompt, fixed
+  time cap, command cap, token/cost cap, explicit stop condition, raw transcript local-only,
+  and tracked analysis that separates process competence from final proof.'
 - Verify the Conductor and Trinity paper-level claims against primary sources before
   citing them as research evidence.
 - Use idea_000007 as the scam-research application surface for the learned-conductor
@@ -165,6 +218,9 @@ next_steps:
 - 'Compare four baselines: single model, fixed specialist pipeline, fixed self-refine,
   and conductor policy search.'
 - Measure cost, latency, error detection, escalation precision, and abstention quality.
+- 'For cybersecurity exploration, stay at defensive workflow level first: incident
+  triage, secure-code review routing, vulnerability-prioritization review, evidence
+  summarization, and policy/checklist generation without exploit steps or payloads.'
 - Kill or park the idea if it cannot beat the fixed pipeline after cost and latency
   normalization.
 - Use idea_000019 when the next step is repo scaffolding or weekly auto-research operations,
@@ -174,6 +230,10 @@ source:
 - user conversation
 - LINE conversation with 吳冠廷 on 2026-05-04
 - LINE conversation with 吳冠廷 on 2026-05-13
+- Sakana Fugu User Manual PDF in local Downloads
+- planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-fugu-ultra-codex-cli-project-ii-test/source.md
+- planning-everything-track/data/knowledge/ai-systems/agent-workflows/learning-notes/2026-05-13-fugu-ultra-codex-cli-project-ii-analysis.md
+- planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-gpt-followup-fugu-ultra-agentic-security-analysis/source.md
 - https://www.microsoft.com/en-us/research/project/autogen/
 - https://sakana.ai/learning-to-orchestrate/
 - https://arxiv.org/abs/2512.04388
@@ -263,6 +323,8 @@ conversation_log:
     publicly.
   - Do not store or repost the screenshot, beta manual link, bug-report form link,
     attached policy PDFs, beta outputs, or private bug examples in public-facing notes.
+  - Do not store live API keys, private manual URLs, or raw beta outputs in tracked
+    repo files; the key is local-only in the Codex secret env file.
   raw_transcript_lines:
   - '10:44 吳冠廷: Photos'
   - '10:44 吳冠廷: 上次申請的 Sakana AI Fugu 通過審核✅'
@@ -278,6 +340,40 @@ conversation_log:
   - '11:01 阿聖 Jason: 大自然的力量很有意思'
   - '11:01 阿聖 Jason: 值得研究'
   - '11:02 吳冠廷: Stickers'
+  - '04:09 吳冠廷: 感覺我可以提供 Sakana AI API key 給 Jason'
+  - '04:09 吳冠廷: 你也可以幫我測試XD'
+  - '04:10 吳冠廷: 看看有什麼資安領域的應用'
+  - '04:10 阿聖 Jason: 喔！'
+  - '04:10 阿聖 Jason: ！'
+  - '04:10 阿聖 Jason: 看一下 gateway 會不會擋'
+  - '04:10 吳冠廷: [private beta manual Google Doc link omitted from tracked note]'
+  - '04:10 吳冠廷: 你看一下能否點開'
+  - '04:11 阿聖 Jason: 那我要怎麼知道我有沒有燒光你的 token 哈哈'
+  - '04:11 吳冠廷: 我後台這邊可以看得到'
+  - '04:11 吳冠廷: 它有提供一個平台端的帳號給我'
+  - '04:11 阿聖 Jason: Photos'
+  - '04:11 阿聖 Jason: 有'
+  - '04:11 吳冠廷: 不過這個是綁我當時申請的信箱，所以我沒辦法給你用XD'
+  - '04:11 吳冠廷: [Sakana API key omitted from tracked note; stored locally in ~/.codex/secrets/sakana-fugu.env]'
+  - '04:12 阿聖 Jason: 晚一點來玩玩看'
+  - '04:12 吳冠廷: 沒問題'
+  - '04:12 吳冠廷: 這組 API keys 的名稱是 Jason_Test XD'
+  - '04:12 阿聖 Jason: 哈哈'
+  - '04:14 阿聖 Jason: 可能晚一點來簡單試一下寫滲透測試代碼'
+  - '04:14 阿聖 Jason: 但不加入龍蝦'
+  - '04:15 吳冠廷: 你加入龍蝦可能會瞬間燒完十萬日圓額度XD'
+  - '04:15 阿聖 Jason: 哈哈'
+  - '04:15 阿聖 Jason: 測測看這模型的等級大概在什麼等級'
+  - '04:48 吳冠廷: 剛剛看了一下，那麼 Fugu 也可以放在 Codex 裡面'
+  - '04:48 吳冠廷: [private beta manual Codex+Fugu section link omitted from tracked
+    note]'
+  - '04:48 阿聖 Jason: 對'
+  - '04:48 阿聖 Jason: 最後面'
+  - '04:48 阿聖 Jason: 哈'
+  - '04:48 吳冠廷: 似乎也可以玩一下，不過只能用在 CLI'
+  - '04:48 阿聖 Jason: 用 codex cli 當界面哈哈'
+  - '04:48 阿聖 Jason: 這樣也不錯'
+  - '04:48 阿聖 Jason: 龍蝦的概念'
   extracted_facts:
   - 吳冠廷 reported that the previous Sakana AI Fugu beta application passed review.
   - The email screenshot indicates beta access through 2026-06-03.
@@ -286,3 +382,57 @@ conversation_log:
   - 吳冠廷 suggested Jason may fit Sakana AI's natural-evolution / biologically inspired
     AI direction.
   - Jason stated that nature's power is interesting and worth studying.
+  - 吳冠廷 provided a Jason_Test API key for bounded testing and said backend usage is
+    visible from his side.
+  - Jason's first practical concern was whether the API gateway would block access
+    and how to avoid invisibly burning the token budget.
+  - The private manual indicates Fugu can be used through Codex CLI, with fugu-mini
+    and fugu-ultra exposed through an OpenAI-compatible API.
+  - Local testing on 2026-05-13 showed curl authentication to fugu-mini chat and Responses
+    API works; raw beta outputs remain local-only.
+evaluation_log:
+- date: 2026-05-13
+  platform: Codex CLI
+  model: fugu-ultra
+  reasoning_effort: high
+  source_summary_path: planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-fugu-ultra-codex-cli-project-ii-test/source.md
+  analysis_path: planning-everything-track/data/knowledge/ai-systems/agent-workflows/learning-notes/2026-05-13-fugu-ultra-codex-cli-project-ii-analysis.md
+  secondary_interpretation_path: planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-gpt-followup-fugu-ultra-agentic-security-analysis/source.md
+  raw_transcript_boundary: local-only under planning-everything-track/.local/sakana;
+    do not copy raw beta output, private manual links, keys, or exploit details into
+    tracked brainstorming notes.
+  task_shape: Continue Network Security Project II Phase II success validation until
+    the official IC-side process creates /shared/success.txt.
+  token_usage_reported:
+    total: 6319482
+    input: 6136936
+    cached_input: 23226988
+    output: 182546
+    reasoning: 3437721
+  observed_strengths:
+  - recovered local repo and Project II scaffold context
+  - read rubric, completion audit, SPEC, core workflow, and lab manifest
+  - preserved the boundary that EC-side success.txt writing is a grading bypass
+  - unpacked official lab bundle and inspected Docker/lab scripts
+  - used file, readelf, objdump, shell, Docker checks, and Python fallback scans
+  observed_limits:
+  - no captured official IC-created /shared/success.txt before the cutoff
+  - high uncontrolled context and reasoning-token cost
+  - no visible hard budget, checkpoint cadence, or explicit stop condition
+  - binary-inspection persistence did not yet become final proof
+  idea_update:
+  - This becomes a negative/partial pressure test for learned orchestration under
+    cost and proof constraints.
+  - The next conductor fixture must score budgeted uncertainty reduction and valid
+    proof artifacts, not only visible effort or tool-use persistence.
+  - Future fugu-ultra tests should run on a fixed clean snapshot with fixed prompt,
+    fixed time/command/token caps, and a stop rule that returns either success proof
+    or the smallest reproducible failure report.
+  secondary_interpretation:
+  - 'Jason highlighted context compaction as the most resonant research signal: it
+    enables long-task execution but may lose assumptions and corrupt reasoning state.'
+  - 'The next fixture should explicitly measure pre-compaction and post-compaction
+    state retention: objective, known facts, assumptions, forbidden actions, proof
+    obligations, next command, and stop rule.'
+  - Do not overclaim this as a true world model. Treat it as evidence of persistent
+    workflow behavior and a prompt to design better memory/ledger evaluations.

@@ -153,7 +153,13 @@
         "medical-ai",
         "research-workflow",
         "evaluation",
-        "cost-normalized-benchmark"
+        "cost-normalized-benchmark",
+        "fugu-ultra",
+        "codex-cli",
+        "long-run-agent-evaluation",
+        "context-compaction",
+        "state-abstraction",
+        "workflow-consistency"
       ],
       "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml"
     },
@@ -676,7 +682,7 @@
       "source": "idea_000001",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.2664,
+      "similarity": 0.2417,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -964,7 +970,7 @@
       "source": "idea_000005",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.096,
+      "similarity": 0.1328,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1081,7 +1087,7 @@
       "source": "idea_000007",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.4624,
+      "similarity": 0.4903,
       "shared_tags": [
         "conductor",
         "learned-orchestration",
@@ -1220,7 +1226,7 @@
       "source": "idea_000008",
       "target": "idea_000011",
       "weight": 1.0,
-      "similarity": 0.2337,
+      "similarity": 0.3018,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1230,7 +1236,7 @@
       "source": "idea_000008",
       "target": "idea_000012",
       "weight": 1.0,
-      "similarity": 0.2582,
+      "similarity": 0.2755,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1240,7 +1246,7 @@
       "source": "idea_000008",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2014,
+      "similarity": 0.2088,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1250,7 +1256,7 @@
       "source": "idea_000008",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.2797,
+      "similarity": 0.3326,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1260,7 +1266,7 @@
       "source": "idea_000008",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.3461,
+      "similarity": 0.3586,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1270,8 +1276,9 @@
       "source": "idea_000008",
       "target": "idea_000019",
       "weight": 1.0,
-      "similarity": 0.4389,
+      "similarity": 0.4628,
       "shared_tags": [
+        "codex-cli",
         "research-workflow"
       ],
       "reasons": [
@@ -1283,7 +1290,7 @@
       "source": "idea_000008",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.3519,
+      "similarity": 0.4247,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1293,7 +1300,7 @@
       "source": "idea_000008",
       "target": "idea_000022",
       "weight": 1.0,
-      "similarity": 0.2312,
+      "similarity": 0.2808,
       "shared_tags": [
         "evaluation"
       ],

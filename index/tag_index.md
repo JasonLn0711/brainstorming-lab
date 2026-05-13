@@ -168,6 +168,7 @@
 
 ## codex-cli
 
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
 
 ## cognition-factory
@@ -201,6 +202,10 @@
 ## conductor
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## context-compaction
+
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## context-engineering
@@ -466,6 +471,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## fugu-ultra
+
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
 ## generative-search
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
@@ -694,6 +703,10 @@
 ## loneliness
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## long-run-agent-evaluation
+
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## long-tail-queries
 
@@ -1089,6 +1102,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## state-abstraction
+
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
 ## state-space-models
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
@@ -1243,6 +1260,10 @@
 ## workflow-agents
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## workflow-consistency
+
+- `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
 ## workflow-diagnosis
 
