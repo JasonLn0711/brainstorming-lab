@@ -1,5 +1,6 @@
 # brainstorming-lab
 
+<img src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=JasonLn0711&repo=brainstorming-lab&countColor=%237B1E7B" alt="Visitor count"/>
 `brainstorming-lab` is a CLI-first Idea Operating System beside
 `planning-everything-track`.
 
