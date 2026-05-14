@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W770C6CJ1J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W770C6CJ1J');
+</script>
+<!-- Google Analytics -->
+
+<!-- FB Card data -->
+<meta property="og:title" content="Sakana AI" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model" />
+<meta property="og:image" content="https://sakana.ai/assets/home/sakana_rect.png" />
+<meta property="og:url" content="https://sakana.ai/" />
+  <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SakanaAILabs">
+<meta name="twitter:title" content="Sakana AI">
+<meta name="twitter:description" content="Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model">
+<meta name="twitter:image" content="https://sakana.ai/assets/home/sakana_rect.png">
+<!-- End cards-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Sakana AI">
+<meta name="generator" content="Jekyll v4.2.2">
+<link rel="canonical" href="/fugu-beta/">
+
+<link rel="stylesheet" href="/assets/css/index.css">
+
+<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="Blog">
+<!-- blazy load as you go image loader -->
+<script src="/js/blazy.js"></script>
+
+
+
+
+
+
+
+<header>
+  <a href="/" class="title"><img src="/assets/home/sakana_ai_text.svg" width="40%"/></a>
+  <!--<a href="/" class="title">Blog</a>-->
+  <!--<nav><a href="" ></a></nav>
+-->
+</header>
+
+<article>
+  <header>
+  <h1><a href="/fugu-beta/">Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model</a></h1>
+  <time datetime="2026-04-24T00:00:00+09:00">April 24, 2026</time>
+  
+  <!--
+  <div class="post-tags"><a class="post-tag" href="/blog/?label=product">#Product</a><a class="post-tag" href="/blog/?label=research">#Research</a></div>
+  -->
+</header>
+
+  
+  <center>
+<img src="/assets/fugu-beta/fugu-beta.jpeg" width="100%" />
+<!--<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/fugu-beta.jpeg" style="width: 100%;"/>-->
+</center>
+
+<!--more-->
+
+<p><i><small><a href="#Japanese" style="color:#555;">（＊日本語は英文の後に）</a></small></i></p>
+
+<hr />
+
+<p>We are excited to introduce <strong>Sakana Fugu</strong>, our flagship international commercial AI product—a multi-agent orchestration system, now opening applications for early beta testers. Sakana Fugu coordinates pools of frontier foundation models to achieve state-of-the-art performance across coding, mathematics, scientific reasoning, etc.</p>
+
+<p>Initially, our Sakana Fugu model will be available as an <strong>API</strong>, where it has served as a key internal tool for our own researchers and engineers, and we are now ready to invite people outside Sakana AI to try it:</p>
+
+<p><strong>👉 <a href="https://forms.gle/BtKkhc2CfLKk1dvNA">Apply for Beta Test</a></strong></p>
+
+<p><a href="https://forms.gle/BtKkhc2CfLKk1dvNA"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/recursive-fugu.png" style="width: 100%;" /></a><br />
+<i>Sakana Fugu Model, which is a small language model itself, learns to call LLMs (left). In the course of training, it can learn to call itself, enabling Test-time scaling (right). The actual coordination in Sakana Fugu is adaptive and complex.</i><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p><br /></p>
+
+<h2 id="pushing-the-boundaries-by-collective-intelligence"><strong>Pushing the Boundaries by Collective Intelligence</strong></h2>
+
+<p>A core conviction at Sakana AI is that the most capable AI systems will not be monolithic models scaled in isolation, but collections of specialized agents working together. This thread runs through everything we have built: <a href="/evolutionary-model-merge/">evolutionary model merging</a>, which showed that diverse open-source models can be combined to produce capabilities none possessed individually; <a href="/ai-scientist-nature/">The AI Scientist</a>, which demonstrated that coordinated AI agents can autonomously execute the full cycle of scientific research; <a href="/shinka-evolve/">ShinkaEvolve</a>, which uses evolutionary search over a pool of LLM-generated programs to discover algorithms that outperform human-written solutions; and <a href="/ab-mcts/">AB-MCTS</a>, which showed that multiple frontier models cooperating through tree search can substantially outperform any individual model on hard reasoning tasks.</p>
+
+<p><strong>Sakana Fugu is the product form of this research direction.</strong></p>
+
+<p><br /></p>
+
+<h2 id="sakana-fugu-"><strong>Sakana Fugu 🐡</strong></h2>
+
+<p>Conventional approaches to utilizing foundation models often require users to manage multiple API keys, as models from different providers tend to specialize in distinct areas. This multi-model management leads to economic inefficiency. Moreover, since model strengths are frequently problem-specific rather than broad area-specific, fine-grained optimization through model switching is difficult for end-users.</p>
+
+<p>Sakana AI’s Fugu models resolve these limitations. Fugu models achieve superior performance by dynamically coordinating and orchestrating a diverse pool of powerful models. Instead of using domain knowledge to prescribe team organization, roles, or workflows, Fugu learns to dynamically assemble agents from a pool and coordinate them through non-obvious but highly efficient collaboration patterns.</p>
+
+<p>Sakana Fugu models are based on our ICLR 2026 papers (<strong><a href="https://arxiv.org/abs/2512.04695">Trinity</a></strong> and <strong><a href="https://arxiv.org/abs/2512.04388">Conductor</a></strong>), and we have substantially further improved the methods to increase the performance and user experience, to be offered as a commercial product.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Task</strong></th>
+      <th style="text-align: left"><strong>Gemini 3.1 (high)</strong></th>
+      <th style="text-align: left"><strong>GPT 5.4 (high)</strong></th>
+      <th style="text-align: left"><strong>Opus 4.6 (max)</strong></th>
+      <th style="text-align: left"><strong>fugu-mini 🐟</strong></th>
+      <th style="text-align: left"><strong>fugu-ultra 🐡</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">GPQAD</td>
+      <td style="text-align: left">94.4</td>
+      <td style="text-align: left">90.9</td>
+      <td style="text-align: left">92.7</td>
+      <td style="text-align: left">92.4</td>
+      <td style="text-align: left"><strong>95.1</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LCBv6</td>
+      <td style="text-align: left">90.3</td>
+      <td style="text-align: left">92.1</td>
+      <td style="text-align: left">92.4</td>
+      <td style="text-align: left">90.4</td>
+      <td style="text-align: left"><strong>93.2</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SWEPro</td>
+      <td style="text-align: left">48.4</td>
+      <td style="text-align: left">51.2</td>
+      <td style="text-align: left"><em>53.4</em> <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></td>
+      <td style="text-align: left">51.3</td>
+      <td style="text-align: left"><strong>54.2</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This adaptive, dynamic orchestration grants Fugu models superior performance on established benchmarks. The above table is a subset of our current results for our models in beta.</p>
+
+<p><br /></p>
+
+<h2 id="using-sakana-fugu"><strong>Using Sakana Fugu</strong></h2>
+
+<p>Sakana Fugu is accessible via APIs, with compatibility for standard OpenAI-format endpoints. If you are already using GPT, Gemini, or Claude via API, Sakana Fugu can be integrated into existing workflows with minimal changes. Behind that familiar interface, Sakana Fugu handles coordination across the model pool automatically — establishing the collaboration topology, assigning the roles and dispatching the subtasks to complete complex tasks.</p>
+
+<p>Two variants are available: <strong>Sakana Fugu Mini 🐟</strong>, optimized with latency in mind, and <strong>Sakana Fugu Ultra 🐡</strong>, the full orchestration system, optimized for performance for demanding tasks.</p>
+
+<p><br /></p>
+
+<h2 id="join-the-beta"><strong>Join the Beta</strong></h2>
+
+<p>We are looking for researchers and engineers from all areas to join as early testers. We want to understand how Sakana Fugu performs across domains we have not yet tested internally, where it falls short, and what researchers and engineers most need from a system like this.</p>
+
+<p>If you are using foundation model APIs in coding assistants like OpenCode and Codex, or in your engineering, business-specific projects where you would like to see if Fugu models bring performance or novelty advantages, we would love to have you involved.</p>
+
+<p><strong>👉 <a href="https://forms.gle/BtKkhc2CfLKk1dvNA">Apply to Join the Beta</a></strong></p>
+
+<p><br /></p>
+
+<hr />
+
+<h3 id="publications"><strong>Publications</strong></h3>
+
+<p><a href="/assets/fugu-beta/TRINITY_poster.pdf"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/TRINITY_poster.png" style="width: 100%;" /></a>
+Xu, Sun, Schwendeman, Nielsen, Cetin, Tang. <em>TRINITY: An Evolved LLM Coordinator.</em> ICLR 2026.</p>
+
+<p><a href="https://arxiv.org/abs/2512.04695">https://arxiv.org/abs/2512.04695</a></p>
+
+<p><a href="/assets/fugu-beta/conductor_poster.pdf"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/conductor_poster.png" style="width: 100%;" /></a></p>
+
+<p>Nielsen, Cetin, Schwendeman, Sun, Xu, Tang. <em>Learning to Orchestrate Agents in Natural Language with the Conductor.</em> ICLR 2026.</p>
+
+<p><a href="https://arxiv.org/abs/2512.04388">https://arxiv.org/abs/2512.04388</a></p>
+
+<hr />
+
+<p><br /></p>
+
+<p><h id="Japanese" style="color:#FFF;">Japanese</h></p>
+
+<h1 id="マルチエージェントオーケストレーションシステムsakanafuguβテスト開始">マルチエージェント・オーケストレーションシステム「Sakana Fugu」βテスト開始</h1>
+
+<center>
+<img src="/assets/fugu-beta/fugu-beta.jpeg" width="100%" />
+<!--<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/fugu-beta.jpeg" style="width: 100%;"/>-->
+</center>
+
+<p><br /></p>
+
+<p>Sakana AIは、新たな商用AIプロダクトとして「Sakana Fugu（サカナ・フグ）」を開発しました。Sakana Fuguは、複数のフロンティア基盤モデルを協調させることで、コーディング、数学、科学的推論といった幅広い領域で高い性能を引き出すマルチエージェント・オーケストレーションシステムです。Sakana Fuguは、当初はAPIとして提供されます。これまで社内の研究者やエンジニアの主要なツールとして活用してきましたが、この度、社外の方々にもお使いいただけるよう、βテストを開始します。</p>
+
+<p><strong>👉 <a href="https://forms.gle/BtKkhc2CfLKk1dvNA">βテストに申し込む</a></strong></p>
+
+<p><a href="https://forms.gle/BtKkhc2CfLKk1dvNA"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/recursive-fugu.png" style="width: 100%;" /></a><br />
+<i>Sakana Fuguはそれ自体が小規模なモデルであり、LLMを呼び出すことを学習します（左）。学習の過程で自分自身を呼び出すことも習得でき、これにより推論時スケーリングが実現します（右）。なお、図では説明のためにシングルステップのルーティングとして示していますが、実際のSakana Fuguが実現するオーケストレーションはより適応的かつ複雑です。</i><sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></p>
+
+<p><br /></p>
+
+<h2 id="集合知によりaiの限界を押し広げる"><strong>集合知により、AIの限界を押し広げる</strong></h2>
+
+<p>Sakana AIでは、AIの可能性を最大限活かすには、一つの大きなモデルではなく、役割の異なる複数のエージェントが協力し合うことが最も有望な方法だと考え、研究開発を進めてきました。</p>
+
+<p><a href="/evolutionary-model-merge-jp/">「進化的モデルマージ」</a>では、多様なオープンソースモデルを組み合わせることで、どの単独モデルも持っていなかった能力を引き出せることを示しました。<a href="/ai-scientist-nature-jp/">「AIサイエンティスト」</a>では、複数のAIエージェントが協調することで、科学研究のプロセス全体を自律的に進められることを実証しました。<a href="/shinka-evolve/">「ShinkaEvolve」</a>では、LLMが生成したプログラムに対して進化的な探索を行うことで、人間が書いたものよりも優れたアルゴリズムを発見できることを示しました。そして<a href="/ab-mcts-jp/">「AB-MCTS」</a>では、複数のフロンティアモデルが木探索を通じて協力することで、単独のモデルを大きく上回る性能を発揮できることを明らかにしました。</p>
+
+<p><strong>Sakana Fuguは、こうした研究の方向性をひとつのプロダクトとして形にしたものです。</strong></p>
+
+<p><br /></p>
+
+<h2 id="sakana-fuguとは"><strong>Sakana Fuguとは</strong></h2>
+
+<p>これまで、複数の基盤モデルを活用する際には、複数のAPIキーを使い分ける必要がありました。モデルによって得意分野が違うため、タスクごとに最適なモデルを選ぶ必要があるからです。しかしこの運用は、コスト面でも効率面でも負担が大きく、さらにモデルの強みは領域単位ではなく問題ごとに異なることも多いため、ユーザー側で細かく最適化するのは容易ではありません。</p>
+
+<p>こうした課題を解決すべく、Sakana Fuguを開発しました。Sakana Fuguは、どのモデルをどう組み合わせて使うかを固定のルールで決めるのではなく、問題に応じて最適なエージェントの組み合わせと協調の仕方を、モデルのプールの中から動的に選び出します。しかも、人間のドメイン知識では思いつきにくいような効率的な協調方法を、自律的に学習していくのが特徴です。Sakana Fuguのモデルは、私たちのICLR 2026採択論文（<a href="https://arxiv.org/abs/2512.04695">Trinity</a> および<a href="https://arxiv.org/abs/2512.04388">Conductor</a>）をベースとしており、さらなる性能向上とユーザー体験の向上に向けて手法を改良しています。</p>
+
+<p>こうした適応的なオーケストレーションによって、Sakana Fuguは既存のベンチマーク上でも高い性能を発揮します。以下は結果の一部です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>タスク</strong></th>
+      <th style="text-align: left"><strong>Gemini 3.1 (high)</strong></th>
+      <th style="text-align: left"><strong>GPT 5.4 (high)</strong></th>
+      <th style="text-align: left"><strong>Opus 4.6 (max)</strong></th>
+      <th style="text-align: left"><strong>fugu-mini 🐟</strong></th>
+      <th style="text-align: left"><strong>fugu-ultra 🐡</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">GPQAD</td>
+      <td style="text-align: left">94.4</td>
+      <td style="text-align: left">90.9</td>
+      <td style="text-align: left">92.7</td>
+      <td style="text-align: left">92.4</td>
+      <td style="text-align: left"><strong>95.1</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LCBv6</td>
+      <td style="text-align: left">90.3</td>
+      <td style="text-align: left">92.1</td>
+      <td style="text-align: left">92.4</td>
+      <td style="text-align: left">90.4</td>
+      <td style="text-align: left"><strong>93.2</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SWEPro</td>
+      <td style="text-align: left">48.4</td>
+      <td style="text-align: left">51.2</td>
+      <td style="text-align: left"><em>53.4</em> ＊</td>
+      <td style="text-align: left">51.3</td>
+      <td style="text-align: left"><strong>54.2</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>各ベンチマークタスクごとのスコア：＊はAnthropic独自の検証用フレームワークを使用した自己申告スコア。SWEPro の評価には mini-swe-agent のスキャフォールドを使用。Anthropic が公表している Opus の最大思考モードのスコアについては、当社での評価試行中に頻繁にタイムアウトが発生したため、Anthropic 公式の報告値を採用。</em></p>
+
+<p><br /></p>
+
+<h2 id="sakanafuguの使い方"><strong>Sakana Fuguの使い方</strong></h2>
+
+<p>Sakana FuguはAPIで利用できます。OpenAI形式のエンドポイントとの互換性があり、いまGPT、Gemini、ClaudeなどのAPIをお使いの方は、既存のワークフローをほとんど変えずにそのまま導入いただけます。いつものインターフェースの背後で、Sakana Fuguがモデル間の協調の組み立て、役割の割り当て、サブタスクの振り分けまでを自動で行います。</p>
+
+<p>ラインナップは2種類を予定しています。レイテンシを重視した「Sakana Fugu Mini 🐟」と、フルのモデルプールを活用する「<strong>Sakana Fugu Ultra 🐡</strong>」です。深い推論を求めるタスクにはUltraが適しています。</p>
+
+<p><br /></p>
+
+<h2 id="βテスター募集"><strong>βテスター募集</strong></h2>
+
+<p>今回のβテストでは、さまざまな分野の研究者・エンジニアの方にご参加いただきたいと考えています。社内ではまだ試せていない領域でSakana Fuguがどのような性能を発揮するのか、どこに課題があるのか、そしてこうしたシステムに対して現場でどのようなニーズがあるのかを、皆さまと一緒に見つけていくことが目的です。</p>
+
+<p>OpenCodeやCodexといったコーディングアシスタントで基盤モデルのAPIを活用されている方、あるいはご自身のエンジニアリング業務やビジネス領域のプロジェクトで、Sakana Fuguが性能や可能性の面で新しい選択肢になりうるかを試してみたい方は、ぜひご応募ください。</p>
+
+<p><strong>👉 <a href="https://forms.gle/BtKkhc2CfLKk1dvNA">βテストに申し込む</a></strong></p>
+
+<p><br /></p>
+
+<hr />
+
+<h3 id="関連論文"><strong>関連論文</strong></h3>
+
+<p><a href="/assets/fugu-beta/TRINITY_poster.pdf"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/TRINITY_poster.png" style="width: 100%;" /></a>
+Xu, Sun, Schwendeman, Nielsen, Cetin, Tang. <em>TRINITY: An Evolved LLM Coordinator.</em> ICLR 2026.</p>
+
+<p><a href="https://arxiv.org/abs/2512.04695">https://arxiv.org/abs/2512.04695</a></p>
+
+<p><a href="/assets/fugu-beta/conductor_poster.pdf"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/fugu-beta/conductor_poster.png" style="width: 100%;" /></a></p>
+
+<p>Nielsen, Cetin, Schwendeman, Sun, Xu, Tang. <em>Learning to Orchestrate Agents in Natural Language with the Conductor.</em> ICLR 2026.</p>
+
+<p><a href="https://arxiv.org/abs/2512.04388">https://arxiv.org/abs/2512.04388</a></p>
+
+<hr />
+
+<p><br /></p>
+
+<h3 id="footnotes">Footnotes</h3>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>One result from our papers points to an interesting future direction. When a Fugu model is allowed to call itself recursively, reading its own prior output as context and deciding whether to revise its coordination strategy, a new form of test-time scaling emerges. The model recognizes when its first attempt fell short and spins up a corrective workflow. The depth of recursion becomes a tunable compute axis at inference time, requiring no retraining. A small model, by reading itself, can iterate toward answers that neither it nor any of its workers could reach in a single pass. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><em>Self-reported score with custom Anthropic scaffold.</em> SWEPro were evaluated with the mini-swe-agent scaffold. However, we use the scores reported by Anthropic for Opus with the max thinking efforts due to frequent timeouts during our evaluation trials. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p><strong>自己呼び出しがもたらす、新しい推論時スケーリング</strong>　Sakana Fuguが自分自身の出力を入力として読み込み、協調のしかたを見直しながら再帰的に自分を呼び出せるようにしたところ、新しいタイプの推論時スケーリングが現れることがわかりました。モデル自身が「最初の答えでは不十分だった」と気づき、修正のためのワークフローを自ら立ち上げるのです。再帰の深さは推論時に調整でき、再学習は必要ありません。小さなモデルであっても、自分自身の出力を読み返すことによって、1回の推論では到達できなかった答えへとたどり着けるようになります。 <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  
+</article>
+
+
+
+<footer>
+  <div>&copy; <a href="/">Sakana AI 株式会社</a></div>
+  <nav><a href="https://www.linkedin.com/company/sakana-ai/" ><svg aria-label="LinkedIn" class="icon"><use xlink:href="/assets/fontawesome/icons.svg#linkedin"></use></svg></a><a href="https://twitter.com/SakanaAILabs" ><svg aria-label="Twitter" class="icon"><use xlink:href="/assets/fontawesome/icons.svg#twitter"></use></svg></a></nav>
+
+</footer>
+
+
+<script src="/js/blazy_init.js"></script>
+</html>

@@ -1,0 +1,25 @@
+packet_id: sakana_fugu_codex_cli_agent_behavior_2026_05_14
+created_at: 2026-05-14
+timezone: Asia/Taipei
+canonical_report: experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/2026-05-14-sakana-fugu-codex-cli-behavior-report.md
+idea_record: ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml
+source_logs:
+  - copied_path: experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/source-logs/2026-05-13-ubuntu-fugu-ultra-phase2-validation-source.md
+    original_path: /Users/iKev/Downloads/codex-fugu-log-ubuntu-260513-01.md
+    sha256: e299c4dc069da14500c53a6560961e0359c589c354f85cf0d2efc19e2850a31f
+    line_count: 437
+    role: primary fugu-ultra long-horizon validation run
+  - copied_path: experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/source-logs/2026-05-13-ubuntu-gpt55-phase2-handoff-source.md
+    original_path: /Users/iKev/Downloads/codex-log-ubuntu-260513-01.md
+    sha256: 251cb34a13a59271dad34b617e0807684b0cd64851da8e5451f3ee667a48bfe4
+    line_count: 546
+    role: gpt-5.5 state-compression handoff comparison
+  - copied_path: experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/source-logs/2026-05-14-mac-gpt55-git-publish-source.md
+    original_path: /Users/iKev/Downloads/codex-log-mac-260514-01.md
+    sha256: 56b6928cf050491cde329bb355ac528751b4d45f9ab61f25f0d9c4cea95c0c56
+    line_count: 2006
+    role: gpt-5.5 publish and bounded validation comparison
+evidence_standard:
+  fact: directly observed in the supplied logs or current copied files
+  inference: reasoned interpretation from log sequence and cited research
+  recommendation: proposed harness, model, or evaluation improvement

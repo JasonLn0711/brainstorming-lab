@@ -1,0 +1,196 @@
+packet_id: sakana_fugu_codex_cli_agent_behavior_2026_05_14
+created_at: 2026-05-14
+timezone: Asia/Taipei
+paper_count: 17
+official_snapshot_count: 14
+papers:
+  - id: wildclawbench_2605_10912
+    title: "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation"
+    year: 2026
+    type: long_horizon_native_runtime_agent_benchmark
+    url: https://arxiv.org/abs/2605.10912
+    downloaded_path: papers/arxiv-2605.10912-wildclawbench.pdf
+    relevance: closest benchmark-level match for CLI harness, real tools, long-horizon tasks, side-effect grading, and harness sensitivity
+  - id: longcli_bench_2602_14337
+    title: "LongCLI-Bench: A Preliminary Benchmark and Study for Long-horizon Agentic Programming in Command-Line Interfaces"
+    year: 2026
+    type: long_horizon_cli_programming_benchmark
+    url: https://arxiv.org/abs/2602.14337
+    downloaded_path: papers/arxiv-2602.14337-longcli-bench.pdf
+    relevance: closest programming CLI benchmark for fail-to-pass, pass-to-pass, step-level progress, and early-stage stalls
+  - id: agent_eval_survey_2503_16416
+    title: "Survey on Evaluation of LLM-based Agents"
+    year: 2026
+    type: survey
+    url: https://arxiv.org/abs/2503.16416
+    downloaded_path: papers/arxiv-2503.16416-agent-evaluation-survey.pdf
+    relevance: broad taxonomy for planning, tool use, application benchmarks, generalist agents, frameworks, cost, safety, and robustness
+  - id: atbench_codex_2604_14858
+    title: "Benchmarks for Trajectory Safety Evaluation and Diagnosis in OpenClaw and Codex: ATBench-Claw and ATBench-Codex"
+    year: 2026
+    type: trajectory_safety_benchmark
+    url: https://arxiv.org/abs/2604.14858
+    downloaded_path: papers/arxiv-2604.14858-atbench-codex.pdf
+    relevance: closest safety/proof-boundary match for Codex-runtime trajectories, repositories, shells, patches, dependencies, approvals, and runtime policy
+  - id: reliability_science_2603_29231
+    title: "Beyond pass@1: A Reliability Science Framework for Long-Horizon LLM Agents"
+    year: 2026
+    type: long_horizon_reliability_science
+    url: https://arxiv.org/abs/2603.29231
+    downloaded_path: papers/arxiv-2603.29231-reliability-science-framework.pdf
+    relevance: defines Reliability Decay Curve, Variance Amplification Factor, Graceful Degradation Score, and Meltdown Onset Point for diagnosing long-horizon drift and repeated-tool-loop failures
+  - id: memory_survey_2603_07670
+    title: "Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers"
+    year: 2026
+    type: memory_survey
+    url: https://arxiv.org/abs/2603.07670
+    downloaded_path: papers/arxiv-2603.07670-memory-survey.pdf
+    relevance: best conceptual map for write-manage-read memory, context compression, retrieval stores, reflective memory, hierarchical virtual context, and policy-learned management
+  - id: ama_bench_2602_22769
+    title: "AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications"
+    year: 2026
+    type: long_horizon_agent_memory_benchmark
+    url: https://arxiv.org/abs/2602.22769
+    downloaded_path: papers/arxiv-2602.22769-ama-bench.pdf
+    relevance: evaluates agent memory over real/synthetic trajectories and highlights causality/objective-information gaps
+  - id: memex_rl_2603_04257
+    title: "Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory"
+    year: 2026
+    type: indexed_experience_memory
+    url: https://arxiv.org/abs/2603.04257
+    downloaded_path: papers/arxiv-2603.04257-memex-rl.pdf
+    relevance: directly addresses long tool-output trajectories by indexing full-fidelity evidence while keeping working context compact
+  - id: memory_as_action_2510_12635
+    title: "Memory as Action: Autonomous Context Curation for Long-Horizon Agentic Tasks"
+    year: 2026
+    type: context_curation_policy
+    url: https://arxiv.org/abs/2510.12635
+    downloaded_path: papers/arxiv-2510.12635-memory-as-action.pdf
+    relevance: treats context editing as learned action, matching the Fugu failure mode of attention dilution and missing selective memory
+  - id: agentic_memory_2601_01885
+    title: "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents"
+    year: 2026
+    type: unified_agent_memory
+    url: https://arxiv.org/abs/2601.01885
+    downloaded_path: papers/arxiv-2601.01885-agentic-memory.pdf
+    relevance: useful contrast for model-policy-level memory operations such as store, retrieve, update, summarize, discard
+  - id: memoryagentbench_2507_05257
+    title: "Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions"
+    year: 2026
+    type: memory_agent_benchmark
+    url: https://arxiv.org/abs/2507.05257
+    downloaded_path: papers/arxiv-2507.05257-memoryagentbench.pdf
+    relevance: defines memory-agent competencies such as retrieval, test-time learning, long-range understanding, and selective forgetting
+  - id: llma_mem_2604_03295
+    title: "Scaling Teams or Scaling Time? Memory Enabled Lifelong Learning in LLM Multi-Agent Systems"
+    year: 2026
+    type: multi_agent_memory_scaling
+    url: https://arxiv.org/abs/2604.03295
+    downloaded_path: papers/arxiv-2604.03295-llma-mem.pdf
+    relevance: connects team size, lifelong memory, cost, and multi-agent scaling, which maps to Fugu's orchestration risk
+  - id: conductor_2512_04388
+    title: "Learning to Orchestrate Agents in Natural Language with the Conductor"
+    year: 2026
+    type: multi_agent_orchestration
+    url: https://arxiv.org/abs/2512.04388
+    downloaded_path: papers/arxiv-2512.04388-conductor.pdf
+    relevance: closest technical basis for Fugu-style learned coordination, worker selection, topology design, and recursive self-selection
+  - id: trinity_2512_04695
+    title: "TRINITY: An Evolved LLM Coordinator"
+    year: 2026
+    type: multi_agent_coordinator
+    url: https://arxiv.org/abs/2512.04695
+    downloaded_path: papers/arxiv-2512.04695-trinity.pdf
+    relevance: useful for comparing Fugu's coordinator lineage and the tradeoff between benchmark gains and orchestration opacity
+  - id: context_engineering_2604_04258
+    title: "Context Engineering: A Practitioner Methodology for Structured Human-AI Collaboration"
+    year: 2026
+    type: context_methodology
+    url: https://arxiv.org/abs/2604.04258
+    downloaded_path: papers/arxiv-2604.04258-context-engineering.pdf
+    relevance: closest human-agent context package comparison for Claude, ChatGPT, Cowork, and Codex workflows
+  - id: terminal_bench_2601_11868
+    title: "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces"
+    year: 2026
+    type: terminal_agent_benchmark
+    url: https://arxiv.org/abs/2601.11868
+    downloaded_path: papers/arxiv-2601.11868-terminal-bench.pdf
+    relevance: closest terminal-task benchmark for hard realistic command-line workflows, complementing WildClawBench and LongCLI-Bench
+  - id: terminal_task_guideline_2604_28093
+    title: "What Makes a Good Terminal-Agent Benchmark Task: A Guideline for Adversarial, Difficult, and Legible Evaluation Design"
+    year: 2026
+    type: terminal_agent_benchmark_design_guideline
+    url: https://arxiv.org/abs/2604.28093
+    downloaded_path: papers/arxiv-2604.28093-terminal-agent-benchmark-task-guideline.pdf
+    relevance: explains adversarial, difficult, and legible terminal-agent task design and reward-hackable benchmark failure modes, useful for converting this case into a fair future benchmark
+official_snapshots:
+  - id: sakana_fugu_beta
+    title: "Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model"
+    url: https://sakana.ai/fugu-beta/
+    downloaded_path: official-snapshots/sakana-fugu-beta.html
+    relevance: primary source for Fugu's product positioning, OpenAI-format compatibility, Mini/Ultra distinction, recursive self-call, and beta evaluation request
+  - id: anthropic_long_running_harnesses
+    title: "Effective harnesses for long-running agents"
+    url: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+    downloaded_path: official-snapshots/anthropic-effective-harnesses-for-long-running-agents.html
+    relevance: best practical reference for progress files, initializer agents, incremental work, git history, and cross-context-window handoff
+  - id: anthropic_agent_evals
+    title: "Demystifying evals for AI agents"
+    url: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+    downloaded_path: official-snapshots/anthropic-demystifying-evals-for-ai-agents.html
+    relevance: grader taxonomy for transcript, outcome, code-based, model-based, and human evaluation
+  - id: openai_trace_grading
+    title: "Trace grading"
+    url: https://developers.openai.com/api/docs/guides/trace-grading
+    downloaded_path: official-snapshots/openai-trace-grading.html
+    relevance: official trace-eval framing for decision/tool/reasoning trajectories and targeted orchestration improvements
+  - id: openai_eval_skills
+    title: "Testing Agent Skills Systematically with Evals"
+    url: https://developers.openai.com/blog/eval-skills
+    downloaded_path: official-snapshots/openai-eval-skills.html
+    relevance: practical prompt-to-captured-run-to-checks-to-score pattern for Codex skill and agent behavior evaluation
+  - id: openai_codex_agents_md
+    title: "Custom instructions with AGENTS.md"
+    url: https://developers.openai.com/codex/guides/agents-md
+    downloaded_path: official-snapshots/openai-codex-agents-md.html
+    relevance: primary source for why Codex hierarchical instructions are not equivalent to task memory
+  - id: openai_codex_agent_loop
+    title: "Unrolling the Codex agent loop"
+    url: https://openai.com/index/unrolling-the-codex-agent-loop/
+    downloaded_path: official-snapshots/openai-unrolling-codex-agent-loop.html
+    relevance: primary source for Codex tool-output accumulation, context-window management, and compaction framing
+  - id: openai_gpt55_latest_model
+    title: "Using GPT-5.5"
+    url: https://developers.openai.com/api/docs/guides/latest-model
+    downloaded_path: official-snapshots/openai-gpt55-latest-model.html
+    relevance: official guide for outcome-first prompting, success criteria, allowed side effects, evidence rules, output shape, and reasoning-effort tradeoffs in tool-heavy workflows
+  - id: openai_agent_improvement_loop
+    title: "Build an Agent Improvement Loop with Traces, Evals, and Codex"
+    url: https://developers.openai.com/cookbook/examples/agents_sdk/agent_improvement_loop
+    downloaded_path: official-snapshots/openai-agent-improvement-loop.html
+    relevance: official workflow for using real traces, feedback, evals, and harness changes to improve agent behavior
+  - id: openai_compaction
+    title: "Compaction"
+    url: https://developers.openai.com/api/docs/guides/compaction
+    downloaded_path: official-snapshots/openai-compaction.html
+    relevance: official context-management source for how long-running workflows compress conversation state, and why compaction is not the same as auditable project memory
+  - id: anthropic_effective_context_engineering
+    title: "Effective context engineering for AI agents"
+    url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+    downloaded_path: official-snapshots/anthropic-effective-context-engineering-for-ai-agents.html
+    relevance: practical context-engineering source for compaction, structured note-taking, and subagent architecture in long-running agents
+  - id: anthropic_claude_code
+    title: "Claude Code"
+    url: https://www.anthropic.com/product/claude-code
+    downloaded_path: official-snapshots/anthropic-claude-code.html
+    relevance: product reference for Claude's agentic coding system and committed-code workflow comparison
+  - id: anthropic_claude_cowork
+    title: "Claude Cowork"
+    url: https://www.anthropic.com/product/claude-cowork
+    downloaded_path: official-snapshots/anthropic-claude-cowork.html
+    relevance: product reference for coworker-style agentic knowledge-work workflows beyond coding
+  - id: opencode_home
+    title: "OpenCode"
+    url: https://opencode.ai/
+    downloaded_path: official-snapshots/opencode-home.html
+    relevance: product reference for an open-source terminal/IDE/desktop coding agent and multi-provider harness comparison

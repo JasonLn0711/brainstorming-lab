@@ -1,0 +1,122 @@
+id: idea_000027
+title: "Long-horizon agent behavior evaluation for Codex CLI orchestration"
+created_at: 2026-05-14
+type: hypothesis
+tags:
+  - ai-agent-evaluation
+  - codex-cli
+  - fugu-ultra
+  - long-horizon
+  - memory
+  - context-engineering
+  - security-lab
+  - trace-evaluation
+  - harness-design
+  - token-efficiency
+  - agent-reliability
+status: execution_ready
+problem_statement:
+  raw: "How should long-horizon AI agent behavior in Codex CLI be evaluated when a model such as Sakana Fugu Ultra can do substantial technical exploration but fails to converge, preserve task state, or produce the required official validation artifact?"
+  normalized: "Given long-running Codex CLI agent sessions that combine external model endpoints, shell/Docker/debugger tools, large raw outputs, context compaction, and security-lab validation boundaries, optimize a trace-based evaluation and harness method that distinguishes exploration ability, task-state management, proof validity, token efficiency, drift, and official outcome completion under constraints of long context, multi-agent orchestration opacity, command side effects, incomplete local environment, and human review capacity."
+  structure:
+    given: "long-running Codex CLI sessions using model endpoints such as Fugu Ultra, GPT-5.5, Claude Code, or Cowork-style agent systems"
+    optimize: "trace-based behavior evaluation, state compression, validation gating, and harness design for long-horizon agent reliability"
+    constraints:
+      - "long context pressure"
+      - "raw tool-output growth"
+      - "Codex compaction limits"
+      - "OpenAI-compatible third-party model opacity"
+      - "multi-agent orchestration recursion"
+      - "shell and Docker side effects"
+      - "official proof boundaries"
+      - "security-lab safety rules"
+      - "human review bandwidth"
+      - "token budget"
+      - "reproducible evidence packets"
+summary: "A trace-forensics and harness-design research line using the 2026-05-13/14 Codex logs as evidence. The core hypothesis is that long-horizon agent failure should be evaluated at the trajectory, memory, proof-boundary, and harness levels, not only by final answer quality. Fugu Ultra showed strong exploration but weak state compression and validation closure; GPT-5.5 comparison logs showed stronger handoff/publish discipline. The same-environment Ubuntu comparison is useful for state-management analysis but remains an unfair solving benchmark because Fugu was asked to validate the exploit while GPT-5.5 was asked to write a handoff. The Mac ARM64 GPT-5.5 completion attempt further strengthens the state-discipline conclusion because it repaired a harder host environment, performed deeper negative validation, preserved artifacts, and pushed a clean repo checkpoint without claiming full-credit success."
+human_note: experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/2026-05-14-sakana-fugu-codex-cli-behavior-report.md
+assumptions:
+  - "Long-horizon agent failure often comes from task-state drift and weak harness design, not only from lack of model intelligence."
+  - "Codex AGENTS.md hierarchy is instruction discovery, not a complete episodic or task-state memory system."
+  - "OpenAI-compatible model endpoints can hide internal orchestration choices from the outer Codex harness."
+  - "Multi-agent orchestration can increase exploration power while also increasing retry, recursion, and token-amplification risk."
+  - "Security-lab agent evaluation must separate sanity checks, bypasses, crashes, and official validation artifacts."
+  - "A useful agent-behavior report needs copied source logs, checksums, extracted evidence, method taxonomy, and a next experimental design."
+evidence:
+  - "2026-05-14 packet created at experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/ with renamed copied logs, source manifest, evidence index, and formal Traditional Chinese behavior report."
+  - "Fugu Ultra source log records token usage total=6,319,482, input=6,136,936, cached input=23,226,988, output=182,546, reasoning=3,437,721, with no official IC-side /shared/success.txt completion evidence."
+  - "Fugu Ultra source log shows meaningful repo/lab/binary/Docker/coredump/libc/gadget analysis, so the failure mode is not absence of technical exploration."
+  - "Fugu Ultra source log shows manual /backdoor execution, which is valid as sanity check only and invalid as official proof."
+  - "Fugu Ultra source log shows overflow/coredump evidence and bounded text-section sweep, but does not turn these into an early stable state ledger."
+  - "Fugu Ultra source log eventually refuses to claim completion, but its plan status previously marked success-evidence-related work complete, showing self-report calibration drift."
+  - "GPT-5.5 Ubuntu handoff log created a FACT/THEORY/next-step `HANDOFF_PHASE2.md` style artifact, demonstrating state compression as a comparison behavior."
+  - "Same-environment comparison added on 2026-05-14: both Fugu Ultra and GPT-5.5 ran under Codex v0.130.0 in the same `nycu_network_security_practice_114-2` repo/Phase-II problem family, but with different task objectives."
+  - "Same-environment comparison supports a state-management conclusion: Fugu behaved like a high-exploration recursive solver, while GPT-5.5 behaved like a state-compression and handoff generator."
+  - "GPT-5.5 Mac log shows bounded git publish flow, environment blocker classification, validation limitation reporting, and a durable checkpoint push."
+  - "Mac ARM64 GPT-5.5 completion attempt started from a harder host state: Docker/qemu/gdb/capstone were unavailable or broken, yet the run installed QEMU/Colima/Docker, added Lima x86 guest agents, and started an x86_64 QEMU Colima profile."
+  - "Mac ARM64 GPT-5.5 completion attempt rebuilt a linux/amd64 `IC_PHASE2` validation path, confirmed no `/shared/success.txt`, verified NX blocks direct stack shellcode, and ran a 10,328-candidate one-shot text-section sweep with no success."
+  - "Mac ARM64 GPT-5.5 completion attempt converted negative evidence into repo artifacts: `PHASE2_COMPLETION_ATTEMPT_2026-05-14.md`, `run_phase2_one_shot_sweep.py`, documentation/audit/handoff updates, commit `ab319c0`, push to remote `main`, and clean worktree."
+  - "Mac ARM64 GPT-5.5 run used total=1,098,226 and reasoning=52,062 tokens, far below the Fugu Ultra total=6,319,482 and reasoning=3,437,721 run despite higher host friction."
+  - "Official OpenAI Codex docs say AGENTS.md is layered project/global guidance with `project_doc_max_bytes`, supporting the distinction between instruction hierarchy and task memory."
+  - "OpenAI Codex loop documentation describes tool outputs being appended and context compaction once prompt size grows, matching the observed pressure from raw tool output."
+  - "Reference layer expanded with OpenAI Compaction, Anthropic effective context engineering, Claude Code, Claude Cowork, OpenCode, and Terminal-Bench to support the final model-plus-harness evaluation framing."
+  - "2026-05-14 LaTeX report added under `experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/latex/`, with BibTeX bibliography, compiled PDF, 17 downloaded paper PDFs, and 14 official/product snapshots."
+  - "Additional 2026 references downloaded for reliability science and terminal-agent benchmark task design: arXiv 2603.29231 and arXiv 2604.28093."
+  - "2026-05-14 future research roadmap added at `experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/future-research-directions.md`, framing the line as Long-Horizon Stateful Agent Reliability and prioritizing failure taxonomy, external memory protocol, drift detection, model-plus-harness comparison, and stateful cybersecurity agent evaluation."
+  - "Sakana Fugu beta announcement describes Fugu as an OpenAI-format compatible multi-agent orchestration system with Mini and Ultra variants and dynamic coordination."
+  - "2026 memory and long-horizon agent literature supports evaluating write-manage-read memory, native-runtime trajectories, tool-result clearing, compaction, and progress artifacts."
+baseline: []
+metrics:
+  - "official success rate"
+  - "invalid proof rate"
+  - "tokens per successful run"
+  - "reasoning tokens per useful evidence artifact"
+  - "tool calls per successful run"
+  - "duplicate command rate"
+  - "failed hypothesis retry rate"
+  - "no-new-evidence streak length"
+  - "drift point"
+  - "plan-outcome contradiction rate"
+  - "progress artifact handoff quality"
+insights: []
+connections:
+  - idea_000019
+  - idea_000020
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 11
+  testability_score: 11/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 8
+  connection_strength_score: 8/10
+  novelty: 2
+  novelty_score: 2/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 83/100
+maturity_level: execution_ready
+next_steps:
+  - "Create `agent_behavior_eval_protocol.md` as the next durable artifact: task definition, official success oracle, allowed/forbidden proof types, external memory artifacts, drift/loop/token metrics, model comparison matrix, scoring rubric, and minimal repeatable workflow."
+  - "Run one controlled Fugu Ultra retry with `phase2_state.json`, tool-output file backing, and loop governor enabled."
+  - "Run a matched GPT-5.5 baseline under the same prompt, same starting repo state, and same tool budget."
+  - "Run a Fugu Ultra handoff-only task from the same starting state to fairly compare memory compression against the GPT-5.5 handoff log."
+  - "Run Fugu Ultra and GPT-5.5 continuation tasks from the same `HANDOFF_PHASE2.md` to test whether handoff quality changes solving behavior."
+  - "Run a controlled Mac ARM64 vs Ubuntu native harness comparison with the same prompt and same starting artifact state to separate host-friction effects from model behavior."
+  - "Score both runs for official success, invalid proof rate, token cost, drift point, and progress artifact quality."
+source:
+  - conversation
+  - experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/source-logs/2026-05-13-ubuntu-fugu-ultra-phase2-validation-source.md
+  - experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/source-logs/2026-05-13-ubuntu-gpt55-phase2-handoff-source.md
+  - experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior/source-logs/2026-05-14-mac-gpt55-git-publish-source.md
+maturity_action: "generate experiment plan"
+normalization_status: validated
