@@ -17,17 +17,18 @@ Raw PDFs and extracted text are archived local-only under `system-hub` with owne
 - Outcome so far: awarded 114 academic-year Ministry of Education doctoral scholarship through the NYCU college/department route.
 - Award period stated in the award notice: 2025-09-01 to 2026-08-31.
 - Active next deadline: 2026-05-20, renewal review / annual evaluation and MOE bonus-application materials must be uploaded to the specified Google Form.
-- Jason's internal deadline: 2026-05-13, finish packet preparation and ask Prof. Wu tonight for a 2026-05-14 school/lab signature time; 2026-05-15 remains the latest internal ready-to-route fallback before the weekend.
-- Current missing operational check: whether the 2026-03-16 matching-fund statement was fully handled by the department/advisor route, and whether the 2026-05-20 renewal packet has been signed, routed, and uploaded.
+- Jason's internal deadline: 2026-05-13, finish packet preparation and ask Prof. Wu for a 2026-05-14 school/lab signature time; 2026-05-15 remains the latest ready-to-route fallback before the weekend, except the final labor-insurance refresh that must happen after 2026-05-18.
+- Current missing operational check: whether the 2026-03-16 matching-fund statement was fully handled by the department/advisor route, whether the 2026-05-20 renewal packet has been signed, routed, includes the institute director's seal / `所長蓋章`, has a post-2026-05-18 labor-insurance record, and has been uploaded.
 - 2026-05-13 current-machine update: the May renewal attachments are now archived locally under the planning repo ignored folder `.local/admin/2026-05-nycu-doctoral-scholarship-renewal/`; student-side form prefill, supporting-report draft, works-output section, evidence checklist, advisor message, advisor-section helper, upload checklist, Google Form answer sheet, completion matrix, and office-routing note are prepared there.
-- 2026-05-13 advisor-routing update: Jason manually sent Prof. Wu a LINE review/signature request at 04:43 with the renewal application form PDF and supporting-review report PDF attached. Prof. Wu replied at 06:03 that he would sign later and returned the signed renewal application form PDF at 08:12. Next gates are Thursday lab printout with Guan-Ting, institute-office director signature or seal routing, college routing, Google Form upload, and receipt capture.
+- 2026-05-13 advisor-routing update: Jason manually sent Prof. Wu a LINE review/signature request at 04:43 with the renewal application form PDF and supporting-review report PDF attached. Prof. Wu replied at 06:03 that he would sign later and returned the signed renewal application form PDF at 08:12. Next gates are lab printout with Guan-Ting, institute-office director signature or seal routing, college routing, Google Form upload, and receipt capture.
+- 2026-05-14 office-call update: at 16:10 Jason recorded that the uploaded renewal materials must include the institute director's seal / `所長蓋章`, and that the labor-insurance record must be from after 2026-05-18. At 16:11, Jason pulled the paper packet back for scanning / rework.
 
 ## FIRST PRINCIPLE Decision Record
 
-- Scarce resource: signature-routing time, not the final Google Form upload click.
+- Scarce resource: signature-routing time, seal/scan handling, and the dated labor-insurance evidence window, not the final Google Form upload click.
 - External deadline: 2026-05-20 is the official upload deadline.
 - Internal deadline: 2026-05-15 is the packet-readiness deadline so advisor, department, and college review can happen before the official deadline.
-- Canonical output by Friday: ready-to-sign evaluation form, supporting-PDF evidence checklist, labor-insurance status, and routing note.
+- Canonical output by Friday: ready-to-sign evaluation form, supporting-PDF evidence checklist, seal/scan routing note, and a queued post-2026-05-18 labor-insurance refresh.
 - Boundary: do not place raw identity, payment, labor-insurance, or signature files in git; keep those in the private local archive.
 
 ROC date conversion used here:
@@ -90,6 +91,7 @@ Gmail connector coverage:
 | 2026-05-11 | Renewal review and bonus-application notice | Institute forwarded renewal review / annual evaluation and MOE bonus application. Student upload deadline is 2026-05-20. Department/college review committee name reply deadline is 2026-05-15 for units. | `SRC-LOCAL-07`, `SRC-GMAIL-10` |
 | 2026-05-13 | Guan-Ting LINE routing clarification | Guan-Ting confirmed the procedure should start early: after Prof. Wu finishes comments/signature, students still need to bring the paper `定期評量報告表` for department/institute office signature or seal routing; paper delivery to the college office is due by 2026-05-20 before leaving work. Jason said this should be handled today, will go to the lab tomorrow, and proposed going together; Guan-Ting agreed. | User-provided LINE screenshot/transcript |
 | 2026-05-13 04:43-08:26 | Prof. Wu LINE advisor-routing completion | Jason sent Prof. Wu a concise review/signature request and attached the renewal application form PDF plus supporting-review report PDF. Prof. Wu replied at 06:03 that he would sign later, returned the signed renewal application form PDF at 08:12, Jason thanked him at 08:25, and Prof. Wu replied with a sticker at 08:26. Tracked record keeps only routing status; raw PDFs and LINE evidence remain local-only. | User-provided LINE transcript |
+| 2026-05-14 16:10 | Institute-office phone update | Jason recorded that the uploaded renewal materials must include the institute director's seal / `所長蓋章`, and that the labor-insurance record must be from after 2026-05-18. At `16:11`, Jason pulled the paper packet back for scanning / rework. | User-provided note; raw scan/evidence stays local-only |
 
 ## Application Packet
 
@@ -213,27 +215,28 @@ International and language evidence:
 ## Active Renewal Packet Checklist
 
 Official deadline: 2026-05-20 before the Google Form deadline in the May 11 email; paper `定期評量報告表` also needs delivery to the college office before leaving work that day.
-Internal deadline: 2026-05-13 for packet preparation and Prof. Wu scheduling message; 2026-05-15 remains the latest ready-to-route fallback before the weekend.
+Internal deadline: 2026-05-13 for packet preparation and Prof. Wu scheduling message; 2026-05-15 remains the latest ready-to-route fallback before the weekend, except the final labor-insurance refresh that must happen after 2026-05-18.
 
 - [ ] Confirm whether Jason will apply for 115 academic-year renewal.
 - [x] Locate the actual May renewal email attachments / evaluation form from Gmail, Downloads, or the correct private archive.
 - [x] Fill known student-side fields in a local copy of the regular evaluation report form.
 - [x] Draft the supporting report body and prepare one supporting PDF assembly plan in the order requested:
-  - labor-insurance record with correct query/download period,
+  - labor-insurance record with correct query/download period; after the 2026-05-14 office call, the final record must be refreshed after 2026-05-18,
   - annual learning grades / transcript evidence,
   - doctoral research reflection,
   - academic research results,
   - works/output evidence,
   - industry collaboration execution status, if any,
   - international activity participation report/evidence, if any.
-- [ ] Download current labor-insurance record.
+- [x] Download and file the initial working labor-insurance record.
+- [ ] After 2026-05-18, refresh the labor-insurance record for final Google Form upload.
 - [ ] Download current transcript/grade evidence.
 - [ ] Merge final supporting PDF after the private evidence files exist.
 - [x] Route evaluation report to advisor for comments, recommendation score, renewal consent, and signature.
   - Sent to Prof. Wu on LINE at 2026-05-13 04:43 with the renewal application form PDF and supporting-review report PDF.
   - Prof. Wu returned the signed renewal application form PDF at 2026-05-13 08:12.
-- [>] Route to department/program meeting or responsible unit for consent/signature.
-  - Next action: on 2026-05-14, print the signed form with Guan-Ting in the lab, then bring it to the institute office for director signature or seal.
+- [>] Route to department/program meeting or responsible unit for consent/signature and institute director seal / `所長蓋章`.
+  - Office-call update at 2026-05-14 16:10: final upload packet must include the seal, and Jason pulled the paper packet back at 16:11 for scanning / rework.
 - [ ] Route to college for consent/signature if required before upload.
 - [x] Message Prof. Wu on 2026-05-13 to ask for review/signature.
   - Manual LINE send completed at 04:43.
@@ -253,7 +256,7 @@ Target by Friday `2026-05-15`: the renewal packet should be ready for advisor / 
 | 2026-05-12 Tue | Scope and evidence map locked | Decide renewal intent, list required form fields, list supporting evidence already available, and identify missing evidence. |
 | 2026-05-13 Wed | Draft packet body | Draft the regular evaluation report content and outline the single supporting PDF in the required order. |
 | 2026-05-14 Thu | Evidence bundle assembled | Add transcript/grade evidence, research-output evidence, works/output evidence, international activity evidence if applicable, and check bonus eligibility. |
-| 2026-05-15 Fri | Ready-to-route packet | Produce a ready-to-sign evaluation form plus supporting PDF checklist; send/prepare advisor routing note and record any blocker before the official `2026-05-20` upload deadline. |
+| 2026-05-15 Fri | Ready-to-route packet | Produce a ready-to-sign / ready-to-seal evaluation form plus supporting PDF checklist; prepare scan route and queue the post-`2026-05-18` labor-insurance refresh before the official `2026-05-20` upload deadline. |
 
 ## Operational Lessons
 
