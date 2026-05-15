@@ -99,6 +99,11 @@ evidence:
   tokens, and 3,437,721 reasoning tokens. The visible trace showed strong repo navigation,
   tool use, and official IC-side success-boundary awareness, but no captured official
   IC-created /shared/success.txt before the cutoff.'
+- 'Continuation of the same 2026-05-13 fugu-ultra Project II run: Codex reported another
+  3,498,745 total tokens, 3,401,000 input tokens, 11,627,390 cached input tokens,
+  97,745 output tokens, 1,404,888 reasoning tokens, and 1h20m03s elapsed. The run
+  ended with success_exists=no and an honest failure report rather than official IC-created
+  /shared/success.txt.'
 - 2026-05-13 user-provided GPT follow-up analysis framed the same trace as agentic
   software engineering plus long-context task execution, with context compaction,
   goal-directed persistence, workflow consistency, world-model limits, and long-term
@@ -123,6 +128,10 @@ metrics:
 - Preservation of proof obligations, forbidden actions, and hidden assumptions after
   summarization.
 - Drift rate after one or more compaction boundaries.
+- 'Proof-first plan integrity: whether a plan item can be marked complete only when
+  its proof artifact or explicit failure report exists.'
+- 'Exploration inertia: commands/tokens spent after the current best hypothesis stops
+  reducing uncertainty.'
 insights:
 - Research value comes from policy learning or policy search, not from the number
   of agents.
@@ -168,6 +177,14 @@ insights:
 - 'The capability boundary should stay explicit: the trace suggests high-grade workflow
   autocomplete plus reasoning scaffolding, but does not prove a true OS or exploitation
   world model, original vulnerability-class discovery, or stable long-term memory.'
+- 'The continuation sharpens the long-agent lesson: an honest failure report is useful,
+  but not equivalent to success. The conductor must distinguish process progress,
+  validation failure, and proof artifacts as separate states.'
+- Plan-completion semantics matter. If the UI marks broad steps complete while the
+  central proof artifact is absent, the orchestration layer needs a proof-first critic
+  that blocks false closure.
+- The combined pasted records crossed 9.8M reported total tokens without Project II
+  success, making context allocation and stopping policy first-class research variables.
 connections:
 - idea_000001
 - idea_000005
@@ -207,6 +224,8 @@ next_steps:
 - 'Add a hard-budget fugu-ultra fixture: same clean repo snapshot, same prompt, fixed
   time cap, command cap, token/cost cap, explicit stop condition, raw transcript local-only,
   and tracked analysis that separates process competence from final proof.'
+- 'Add proof-first completion semantics to the fixture: a task can close only with
+  a validated proof artifact or an explicit minimal failure report.'
 - Verify the Conductor and Trinity paper-level claims against primary sources before
   citing them as research evidence.
 - Use idea_000007 as the scam-research application surface for the learned-conductor
@@ -232,6 +251,7 @@ source:
 - LINE conversation with 吳冠廷 on 2026-05-13
 - Sakana Fugu User Manual PDF in local Downloads
 - planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-fugu-ultra-codex-cli-project-ii-test/source.md
+- planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-fugu-ultra-codex-cli-project-ii-continuation/source.md
 - planning-everything-track/data/knowledge/ai-systems/agent-workflows/learning-notes/2026-05-13-fugu-ultra-codex-cli-project-ii-analysis.md
 - planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-gpt-followup-fugu-ultra-agentic-security-analysis/source.md
 - https://www.microsoft.com/en-us/research/project/autogen/
@@ -436,3 +456,39 @@ evaluation_log:
     obligations, next command, and stop rule.'
   - Do not overclaim this as a true world model. Treat it as evidence of persistent
     workflow behavior and a prompt to design better memory/ledger evaluations.
+- date: 2026-05-13
+  platform: Codex CLI
+  model: fugu-ultra
+  reasoning_effort: high
+  source_summary_path: planning-everything-track/data/knowledge/ai-systems/agent-workflows/sources/2026-05-13-fugu-ultra-codex-cli-project-ii-continuation/source.md
+  analysis_path: planning-everything-track/data/knowledge/ai-systems/agent-workflows/learning-notes/2026-05-13-fugu-ultra-codex-cli-project-ii-analysis.md
+  raw_transcript_boundary: local-only under planning-everything-track/.local/sakana/2026-05-13-fugu-ultra-codex-cli-project-ii-continuation;
+    do not copy raw beta output, private manual links, keys, or exploit details into
+    tracked brainstorming notes.
+  task_shape: Continue the previous Project II Phase II validation run to final status.
+  token_usage_reported:
+    total: 3498745
+    input: 3401000
+    cached_input: 11627390
+    output: 97745
+    reasoning: 1404888
+  elapsed: 1h20m03s
+  observed_strengths:
+  - preserved the boundary that official IC-side success is required
+  - produced an explicit failure report instead of claiming success
+  - updated the course scaffold README, completion audit, payload candidate, tests,
+    and validation log
+  - ran static checks and Python compile/import sanity checks
+  observed_limits:
+  - final validation still reported success_exists=no
+  - no official IC-created /shared/success.txt
+  - pytest was unavailable in the shell environment
+  - another high-cost continuation still did not produce the proof artifact
+  - plan items were marked complete despite the central success condition failing
+  idea_update:
+  - Treat this as a stronger negative/partial pressure test than the initial cutoff
+    excerpt because it reached an honest failure endpoint.
+  - Future conductor evaluations must score proof-first plan integrity and honest
+    failure quality separately from task success.
+  - The next Fugu comparison should include a meta-critic that can stop broad exploration
+    when uncertainty is no longer dropping fast enough.
