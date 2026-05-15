@@ -1,12 +1,14 @@
 # Sakana Fugu Ultra x Codex CLI Long-Horizon Agent Behavior Report
 
+Author: Jason Chia-Sheng Lin, Ph.D. Student, Institute of Biophotonics, National Yang Ming Chiao Tung University
+
 Date: 2026-05-14
 
 Subject: Sakana AI `fugu-ultra high` running a long Project II Phase II validation task inside OpenAI Codex CLI v0.130.0.
 
 Evidence base: the three copied Codex logs preserved in `source-logs/`, plus the packet-level evidence index, source manifest, report sources, and generated PDF.
 
-## Abstract and Introduction
+## Introduction
 
 In this report, I analyze Sakana AI `fugu-ultra high` running a long Project II Phase II validation task inside OpenAI Codex CLI v0.130.0. I use a first-person research voice because I am making a defensible judgment from observable logs, artifacts, token usage, git state, and validation boundaries. I separate verified facts from interpretation, and I state clearly which claims I do not make.
 
@@ -177,7 +179,87 @@ These scores describe behavior profiles, not absolute model intelligence.
 
 My conclusion from this table is not “GPT-5.5 solved the exploit.” It did not. My conclusion is that GPT-5.5 managed the unsolved state more professionally.
 
-## 9. What I Conclude and What I Do Not Conclude
+## 9. Beyond Pass/Fail: Evaluating the Quality of Unfinished Agent States
+
+Traditional agent benchmarks often over-emphasize binary completion: a run either solves the task or it does not. I consider that insufficient for long-horizon agent systems. Long tasks frequently end in partially solved states: environment-recovery states, validated negative evidence, handoff artifacts, constrained hypothesis spaces, or unfinished debugging trajectories. These states are not equivalent.
+
+My central claim in this section is:
+
+> A long-horizon agent should not only be evaluated by whether it reaches the goal, but also by whether it leaves the search space in a lower-entropy state.
+
+### 9.1 Unfinished State and Failure Quality
+
+I define an **unfinished agent state** as the set of artifacts, verified facts, negative evidence, environment state, reasoning compression, and continuation constraints left behind after a non-completed run.
+
+I define **failure quality** as the degree to which an unsuccessful run reduces uncertainty for future runs. A high-quality failure narrows the hypothesis space, eliminates dead ends, preserves evidence, improves reproducibility, and increases continuation readiness. A low-quality failure repeats exploration, increases context entropy, loses evidence provenance, or leaves ambiguous completion state.
+
+| Run | Binary outcome | Unfinished-state quality |
+| --- | --- | --- |
+| Ubuntu Fugu Ultra | Unfinished | High exploration, but low convergence and high active-context entropy |
+| Ubuntu GPT-5.5 handoff | Unfinished | High state compression through explicit FACT / THEORY / REPORTED-UNVERIFIED separation |
+| Mac ARM64 GPT-5.5 | Unfinished | High negative-evidence preservation, environment reconstruction, reproducible harnessing, and clean repo closeout |
+
+None of the three runs solved the exploit. Yet the engineering value of their unfinished states was not equal. This is the central evaluation signal that a binary pass/fail benchmark would discard.
+
+### 9.2 Capability Failure Versus Harness Governance Failure
+
+I do not interpret the Fugu trajectory as a pure capability failure. It is also a harness-governance failure. The run lacked hard budget gates, no-new-evidence stop rules, forced checkpointing, duplicate-command detection, and proof-boundary gates strong enough to convert exploration into durable state.
+
+> This is not only a model problem. It is a harness governance problem.
+
+In this case, a stronger governance layer would have required periodic external state compression, a failed-hypothesis ledger, explicit proof-boundary checks before declaring progress, and a rule that extended exploration must earn new evidence rather than merely produce more trace.
+
+### 9.3 Entropy Reduction and Marginal Evidence Yield
+
+In this report, entropy means the uncertainty remaining about the environment, exploit surface, failed hypotheses, valid proof boundaries, and next-step action space. A useful long-horizon agent reduces that entropy over time. A drifting agent may continue spending tokens while reducing little additional uncertainty.
+
+```mermaid
+flowchart LR
+  A["Exploration effort rises"] --> B["New evidence increases"]
+  B --> C["Marginal evidence yield slows"]
+  C --> D["Weak governance: context entropy rises"]
+  C --> E["Strong governance: state is externalized"]
+  D --> F["Agent drift / repeated exploration"]
+  E --> G["Reusable handoff / lower-entropy state"]
+```
+
+The Fugu run reduced uncertainty about ELF structure, coredump behavior, libc mappings, runtime mitigations, and plausible gadget paths. However, this reduction was partially offset by repeated exploration, weak state compression, and token amplification. GPT-5.5 reduced entropy more efficiently by compressing verified facts, preserving negative evidence, and externalizing continuation state into repository artifacts.
+
+### 9.4 Handoff Artifact Quality Rubric
+
+To make this evaluation repeatable, I propose a 100-point handoff artifact quality rubric:
+
+| Dimension | Points | What I would score |
+| --- | ---: | --- |
+| Objective clarity | 10 | Is the final success condition explicit and testable? |
+| Proof boundary | 15 | Does the artifact distinguish official proof from invalid or partial proof? |
+| Verified facts | 15 | Are confirmed facts separated from speculation and stale reports? |
+| Failed paths | 15 | Are dead ends recorded with enough detail to prevent reruns? |
+| Negative evidence | 15 | Are failed tests reproducible, bounded, and tied to observable outcomes? |
+| Reproducible commands | 10 | Can the next agent rebuild the environment or rerun checks? |
+| Next-action contract | 10 | Does the artifact narrow the next hypothesis or decision gate? |
+| Repository hygiene | 10 | Are files organized, committed, and easy to locate? |
+
+This rubric evaluates what remains after the run, not only what happened during the run. It makes continuation readiness a first-class metric.
+
+### 9.5 Evaluation Dimensions Beyond Binary Completion
+
+| Metric | Description |
+| --- | --- |
+| Completion rate | Whether the final task was solved |
+| False-completion rate | Whether the agent incorrectly claimed success |
+| State compression quality | How well verified state was externalized into durable artifacts |
+| Negative-evidence preservation | Whether failed paths were recorded in a reusable form |
+| Continuation readiness | How easily a next agent can resume without rediscovery |
+| Entropy reduction | How much uncertainty was removed from the environment, hypothesis space, and proof boundary |
+| Marginal evidence yield | Useful evidence gained per additional token, tool call, or time block |
+| Drift resistance | Ability to avoid recursive rediscovery and generic status regression |
+| Proof-boundary discipline | Separation of official proof, sanity checks, partial progress, and speculation |
+| Repo hygiene | Clarity of artifact organization, commits, and handoff paths |
+
+This framework matters because future agents will operate in scientific workflows, software engineering, cybersecurity labs, autonomous debugging, and infrastructure recovery. In these domains, an agent that fails honestly and leaves reusable state may be more valuable than an agent that produces an unverifiable success claim.
+
+## 10. What I Conclude and What I Do Not Conclude
 
 I conclude:
 
@@ -198,7 +280,7 @@ The sharper claim is:
 
 > Fugu Ultra lost control of long-horizon state; GPT-5.5 preserved state better. The decisive difference in these logs is not solved-vs-unsolved exploit outcome, but the quality of the unfinished state left behind.
 
-## 10. Next Fair Experiment Matrix
+## 11. Next Fair Experiment Matrix
 
 I recommend the next test avoid wasting tokens on repeated Docker/Colima bootstrap and instead start from the latest durable artifacts.
 
@@ -211,7 +293,7 @@ I recommend the next test avoid wasting tokens on repeated Docker/Colima bootstr
 
 The key metrics should be official success rate, false-completion rate, tokens per useful evidence item, duplicate-command rate, failed-hypothesis retry rate, no-new-evidence streak, artifact quality, repo hygiene, and time-to-official-validation.
 
-## 11. Final Conclusion
+## 12. Final Conclusion
 
 My final conclusion is:
 

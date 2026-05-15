@@ -31,7 +31,7 @@
 \sloppy
 
 \title{\bfseries Sakana Fugu Ultra \texorpdfstring{$\times$}{x} Codex CLI\\Long-Horizon Agent Behavior Report}
-\author{Codex local research packet\\\small experiments/2026-05-14-sakana-fugu-codex-cli-agent-behavior}
+\author{Jason Chia-Sheng Lin\\\small Ph.D. Student, Institute of Biophotonics\\\small National Yang Ming Chiao Tung University}
 \date{2026-05-14}
 
 \begin{document}
@@ -44,7 +44,7 @@ I analyze Sakana AI \code{fugu-ultra high} running a long Project II Phase II va
 \tableofcontents
 \newpage
 
-\section{Abstract and Introduction}
+\section{Introduction}
 
 I write this report in the first person because I am making a defensible research judgment from observable logs, artifacts, token usage, git state, and validation boundaries. I separate verified facts from interpretation, and I state clearly which claims I do not make.
 
@@ -64,9 +64,9 @@ I reject EC-side success-file creation, manual \artifact{/backdoor} execution, s
 \toprule
 Evidence type & Copied log & How I use it\\
 \midrule
-Primary Fugu behavior log & \path{source-logs/2026-05-13-ubuntu-fugu-ultra-phase2-validation-source.md} & I analyze token amplification, technical exploration, state drift, and unfinished official success.\\
-GPT-5.5 handoff contrast & \path{source-logs/2026-05-13-ubuntu-gpt55-phase2-handoff-source.md} & I compare state compression and verified-fact handoff behavior.\\
-GPT-5.5 Mac validation contrast & \path{source-logs/2026-05-14-mac-gpt55-git-publish-source.md} & I compare host recovery, deeper negative validation, artifact preservation, and git closeout.\\
+Primary Fugu behavior log & Ubuntu Fugu Ultra Phase II validation source log in \path{source-logs/}. & I analyze token amplification, technical exploration, state drift, and unfinished official success.\\
+GPT-5.5 handoff contrast & Ubuntu GPT-5.5 Phase II handoff source log in \path{source-logs/}. & I compare state compression and verified-fact handoff behavior.\\
+GPT-5.5 Mac validation contrast & Mac ARM64 GPT-5.5 validation and publish source log in \path{source-logs/}. & I compare host recovery, deeper negative validation, artifact preservation, and git closeout.\\
 \bottomrule
 \end{longtable}
 
@@ -250,6 +250,117 @@ Final exploit success & 0/5 & N/A & 0/5\\
 \end{longtable}
 
 My conclusion from this table is not that GPT-5.5 solved the exploit. It did not. My conclusion is that GPT-5.5 managed the unsolved state more professionally.
+
+\section{Beyond Pass/Fail: Evaluating the Quality of Unfinished Agent States}
+
+Traditional agent benchmarks often over-emphasize binary completion: a run either solves the task or it does not. I consider that insufficient for long-horizon agent systems. Long tasks frequently end in partially solved states: environment-recovery states, validated negative evidence, handoff artifacts, constrained hypothesis spaces, or unfinished debugging trajectories. These states are not equivalent.
+
+My central claim in this section is:
+
+\begin{quote}
+A long-horizon agent should not only be evaluated by whether it reaches the goal, but also by whether it leaves the search space in a lower-entropy state.
+\end{quote}
+
+\subsection{Unfinished State and Failure Quality}
+
+I define an \finding{unfinished agent state} as the set of artifacts, verified facts, negative evidence, environment state, reasoning compression, and continuation constraints left behind after a non-completed run.
+
+I define \finding{failure quality} as the degree to which an unsuccessful run reduces uncertainty for future runs. A high-quality failure narrows the hypothesis space, eliminates dead ends, preserves evidence, improves reproducibility, and increases continuation readiness. A low-quality failure repeats exploration, increases context entropy, loses evidence provenance, or leaves ambiguous completion state.
+
+\begin{longtable}{L{0.30\linewidth} L{0.30\linewidth} L{0.30\linewidth}}
+\toprule
+Run & Binary outcome & Unfinished-state quality\\
+\midrule
+Ubuntu Fugu Ultra & Unfinished & High exploration, but low convergence and high active-context entropy.\\
+Ubuntu GPT-5.5 handoff & Unfinished & High state compression through explicit FACT / THEORY / REPORTED-UNVERIFIED separation.\\
+Mac ARM64 GPT-5.5 & Unfinished & High negative-evidence preservation, environment reconstruction, reproducible harnessing, and clean repo closeout.\\
+\bottomrule
+\end{longtable}
+
+None of the three runs solved the exploit. Yet the engineering value of their unfinished states was not equal. This is the central evaluation signal that a binary pass/fail benchmark would discard.
+
+\subsection{Capability Failure Versus Harness Governance Failure}
+
+I do not interpret the Fugu trajectory as a pure capability failure. It is also a harness-governance failure. The run lacked hard budget gates, no-new-evidence stop rules, forced checkpointing, duplicate-command detection, and proof-boundary gates strong enough to convert exploration into durable state.
+
+\begin{quote}
+This is not only a model problem. It is a harness governance problem.
+\end{quote}
+
+In this case, a stronger governance layer would have required periodic external state compression, a failed-hypothesis ledger, explicit proof-boundary checks before declaring progress, and a rule that extended exploration must earn new evidence rather than merely produce more trace.
+
+\subsection{Entropy Reduction and Marginal Evidence Yield}
+
+In this report, entropy means the uncertainty remaining about the environment, exploit surface, failed hypotheses, valid proof boundaries, and next-step action space. A useful long-horizon agent reduces that entropy over time. A drifting agent may continue spending tokens while reducing little additional uncertainty.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.92\linewidth,
+  height=6.2cm,
+  xmin=0,
+  xmax=10,
+  ymin=0,
+  ymax=10,
+  xlabel={cumulative exploration effort},
+  ylabel={relative level},
+  legend style={at={(0.5,-0.16)},anchor=north,legend columns=2},
+  grid=both,
+  major grid style={draw=gray!25}
+]
+\addplot[blue!70!black, thick, smooth] coordinates {(0,0.5) (1,2.2) (2,3.8) (3,4.8) (4,5.35) (5,5.6) (6,5.75) (7,5.85) (8,5.9) (9,5.92) (10,5.93)};
+\addplot[orange!80!black, thick, smooth] coordinates {(0,1.2) (1,1.1) (2,1.0) (3,1.2) (4,1.8) (5,2.8) (6,4.0) (7,5.4) (8,6.9) (9,8.0) (10,8.8)};
+\addplot[green!45!black, thick, dashed, smooth] coordinates {(0,0.3) (1,1.7) (2,2.9) (3,3.8) (4,4.5) (5,5.0) (6,5.4) (7,5.75) (8,6.05) (9,6.3) (10,6.5)};
+\legend{useful evidence, context entropy under weak governance, reusable state under strong governance}
+\end{axis}
+\end{tikzpicture}
+\caption{Conceptual entropy curve: after marginal evidence yield declines, weak governance lets context entropy dominate; strong governance externalizes state before drift compounds.}
+\end{figure}
+
+The Fugu run reduced uncertainty about ELF structure, coredump behavior, libc mappings, runtime mitigations, and plausible gadget paths. However, this reduction was partially offset by repeated exploration, weak state compression, and token amplification. GPT-5.5 reduced entropy more efficiently by compressing verified facts, preserving negative evidence, and externalizing continuation state into repository artifacts.
+
+\subsection{Handoff Artifact Quality Rubric}
+
+To make this evaluation repeatable, I propose a 100-point handoff artifact quality rubric:
+
+\begin{longtable}{L{0.36\linewidth} L{0.12\linewidth} L{0.42\linewidth}}
+\toprule
+Dimension & Points & What I would score\\
+\midrule
+Objective clarity & 10 & Is the final success condition explicit and testable?\\
+Proof boundary & 15 & Does the artifact distinguish official proof from invalid or partial proof?\\
+Verified facts & 15 & Are confirmed facts separated from speculation and stale reports?\\
+Failed paths & 15 & Are dead ends recorded with enough detail to prevent reruns?\\
+Negative evidence & 15 & Are failed tests reproducible, bounded, and tied to observable outcomes?\\
+Reproducible commands & 10 & Can the next agent rebuild the environment or rerun checks?\\
+Next-action contract & 10 & Does the artifact narrow the next hypothesis or decision gate?\\
+Repository hygiene & 10 & Are files organized, committed, and easy to locate?\\
+\bottomrule
+\end{longtable}
+
+This rubric evaluates what remains after the run, not only what happened during the run. It makes continuation readiness a first-class metric.
+
+\subsection{Evaluation Dimensions Beyond Binary Completion}
+
+\begin{longtable}{L{0.32\linewidth} L{0.58\linewidth}}
+\toprule
+Metric & Description\\
+\midrule
+Completion rate & Whether the final task was solved.\\
+False-completion rate & Whether the agent incorrectly claimed success.\\
+State compression quality & How well verified state was externalized into durable artifacts.\\
+Negative-evidence preservation & Whether failed paths were recorded in a reusable form.\\
+Continuation readiness & How easily a next agent can resume without rediscovery.\\
+Entropy reduction & How much uncertainty was removed from the environment, hypothesis space, and proof boundary.\\
+Marginal evidence yield & Useful evidence gained per additional token, tool call, or time block.\\
+Drift resistance & Ability to avoid recursive rediscovery and generic status regression.\\
+Proof-boundary discipline & Separation of official proof, sanity checks, partial progress, and speculation.\\
+Repo hygiene & Clarity of artifact organization, commits, and handoff paths.\\
+\bottomrule
+\end{longtable}
+
+This framework matters because future agents will operate in scientific workflows, software engineering, cybersecurity labs, autonomous debugging, and infrastructure recovery. In these domains, an agent that fails honestly and leaves reusable state may be more valuable than an agent that produces an unverifiable success claim.
 
 \section{Claims I Make and Claims I Reject}
 
