@@ -9,15 +9,18 @@ agent behavior, memory/context pressure, and Project II Phase II validation.
 
 | File | Purpose |
 | --- | --- |
-| `2026-05-14-sakana-fugu-codex-cli-behavior-report.md` | Formal Traditional Chinese research report and method review |
+| `2026-05-14-sakana-fugu-codex-cli-behavior-report.md` | Formal Taiwan Traditional Chinese research report and method review, written in first-person research voice |
+| `2026-05-14-sakana-fugu-codex-cli-behavior-report.en.md` | English companion report, written in the same first-person research voice |
 | `evidence-index.md` | Extracted log evidence with line references |
 | `source-manifest.yaml` | Copied source-log inventory and SHA-256 checksums |
 | `source-logs/` | Renamed copies of the original Downloads logs |
 | `references/` | Downloaded related literature and official-method snapshots |
 | `future-research-directions.md` | First-principles research roadmap and next-attempt menu |
 | `latex/fugu_codex_agent_behavior_report.tex` | LaTeX version of the formal report |
+| `latex/fugu_codex_agent_behavior_report_en.tex` | English LaTeX version of the formal report |
 | `latex/fugu_codex_agent_behavior_report.bib` | BibTeX bibliography for the LaTeX report |
 | `latex/build/fugu_codex_agent_behavior_report.pdf` | Locally compiled PDF output |
+| `latex/build/fugu_codex_agent_behavior_report_en.pdf` | Locally compiled English PDF output |
 
 ## Source Log Copies
 
