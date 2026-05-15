@@ -682,7 +682,7 @@
       "source": "idea_000001",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.2417,
+      "similarity": 0.2371,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -970,7 +970,7 @@
       "source": "idea_000005",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.1328,
+      "similarity": 0.1308,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1087,7 +1087,7 @@
       "source": "idea_000007",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.4903,
+      "similarity": 0.4831,
       "shared_tags": [
         "conductor",
         "learned-orchestration",
@@ -1226,7 +1226,7 @@
       "source": "idea_000008",
       "target": "idea_000011",
       "weight": 1.0,
-      "similarity": 0.3018,
+      "similarity": 0.2994,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1236,7 +1236,7 @@
       "source": "idea_000008",
       "target": "idea_000012",
       "weight": 1.0,
-      "similarity": 0.2755,
+      "similarity": 0.2786,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1246,7 +1246,7 @@
       "source": "idea_000008",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2088,
+      "similarity": 0.2077,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1256,7 +1256,7 @@
       "source": "idea_000008",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.3326,
+      "similarity": 0.3297,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1266,7 +1266,7 @@
       "source": "idea_000008",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.3586,
+      "similarity": 0.3554,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1276,7 +1276,7 @@
       "source": "idea_000008",
       "target": "idea_000019",
       "weight": 1.0,
-      "similarity": 0.4628,
+      "similarity": 0.458,
       "shared_tags": [
         "codex-cli",
         "research-workflow"
@@ -1290,7 +1290,7 @@
       "source": "idea_000008",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.4247,
+      "similarity": 0.4274,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1300,7 +1300,7 @@
       "source": "idea_000008",
       "target": "idea_000022",
       "weight": 1.0,
-      "similarity": 0.2808,
+      "similarity": 0.284,
       "shared_tags": [
         "evaluation"
       ],
