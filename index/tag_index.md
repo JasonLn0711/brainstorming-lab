@@ -12,9 +12,17 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## agent-reliability
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
+
 ## agentic-ai
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## ai-agent-evaluation
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
 ## ai-agents
 
@@ -26,7 +34,7 @@
 
 ## ai-economy
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## ai-engineering-workstation
 
@@ -69,12 +77,20 @@
 ## ai-security
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## ai-security-learning
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## ai-summary
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
+
+## ai-systems-engineering
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## ai-triage
 
@@ -90,6 +106,10 @@
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## anti-jamming
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
 ## apparent-support
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
@@ -98,6 +118,10 @@
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
+## artifact-validation
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
 ## asr
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -105,10 +129,15 @@
 ## auditability
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## auto-research
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
+
+## automation
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## backup
 
@@ -130,6 +159,14 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## ble
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
+## bluetooth
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
 ## bounded-rationality
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -140,7 +177,7 @@
 
 ## career
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## citation-absorption-gap
 
@@ -170,6 +207,7 @@
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
 ## cognition-factory
 
@@ -211,6 +249,7 @@
 ## context-engineering
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
 ## control-loop
 
@@ -230,11 +269,15 @@
 
 ## cross-domain
 
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## cross-lingual-search
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
+## cyber-physical-security
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## cybercrime-content
 
@@ -243,7 +286,7 @@
 
 ## cybercrime-investigation
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## cybersecurity
 
@@ -251,7 +294,7 @@
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## data-acquisition-strategy
 
@@ -266,7 +309,7 @@
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
 ## defensive-buffering
@@ -293,6 +336,10 @@
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
+## devops-for-research
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
 ## digital-cognitive-twin
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -305,7 +352,7 @@
 
 ## digital-labor
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## dinov2
 
@@ -327,6 +374,10 @@
 ## dotfiles
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## drone-security
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
 ## dsp
 
@@ -351,6 +402,10 @@
 ## effective-evidence-collapse
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
+## electronic-warfare
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
 ## embedding-discovery
 
@@ -453,7 +508,7 @@
 ## first-principles
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## flow-based-system
 
@@ -474,6 +529,7 @@
 ## fugu-ultra
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
 ## generative-search
 
@@ -486,6 +542,10 @@
 ## git-run-tracking
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
+
+## gnss
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
 ## governance
 
@@ -503,7 +563,11 @@
 ## hardware
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
+## harness-design
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
 ## healthcare
 
@@ -704,6 +768,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## long-horizon
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
+
 ## long-run-agent-evaluation
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -727,6 +795,10 @@
 ## medical-ai
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## memory
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
 ## mental-state-inference
 
@@ -763,7 +835,7 @@
 
 ## mosquito-control
 
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## multi-agent
 
@@ -773,6 +845,10 @@
 ## multimodal-fusion
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## nerd-font
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## network-design
 
@@ -789,6 +865,10 @@
 ## novelty-analysis
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## npm
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## object-detection
 
@@ -814,9 +894,25 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## package-json
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
 ## paper-quality
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## paper-writing
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## paperops
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## path-management
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
 ## personal-ops
 
@@ -824,7 +920,7 @@
 
 ## personal-positioning
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## personality-density
 
@@ -858,11 +954,15 @@
 
 ## platform-economics
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## portal-check
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## portfolio-strategy
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## pragmatic-alignment
 
@@ -891,6 +991,14 @@
 ## product-observation
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## prompt-engineering
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## protocol-security
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
 ## provenance-aware-retrieval
 
@@ -928,9 +1036,17 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## real-world-deployment
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
 ## recursive-contamination
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
+## release-engineering
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## repo-architecture
 
@@ -943,11 +1059,16 @@
 ## reproducibility
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## research-candidate
 
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## research-ci
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## research-endurance
 
@@ -987,14 +1108,27 @@
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
+## reviewer-simulation
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## rf
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
 ## rf-detr
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## rf-forensics
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
 ## safety
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
 ## scam-content
 
@@ -1010,9 +1144,17 @@
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
+## scientific-release-engineering
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
 ## scientometrics
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## sdr
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
 ## search-engine-reliability
 
@@ -1035,6 +1177,10 @@
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
+## security-lab
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
+
 ## self-directed-data-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -1049,7 +1195,7 @@
 
 ## sensing
 
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## session-ledger
 
@@ -1062,7 +1208,7 @@
 ## side-project
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 
 ## signal-market
 
@@ -1083,7 +1229,7 @@
 
 ## software-architecture
 
-- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 84/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+- `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
 ## source-displacement
@@ -1098,13 +1244,25 @@
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
+## spectrum-awareness
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
 ## sre
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## starship
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
 ## state-abstraction
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+
+## state-machine
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## state-space-models
 
@@ -1121,6 +1279,14 @@
 ## streaming-intelligence
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## submission-engineering
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## submission-portal
+
+- `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
 ## support-fragility
 
@@ -1142,6 +1308,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## system-thinking
+
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
 ## systems-thinking
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
@@ -1149,7 +1319,7 @@
 
 ## taiwan-ai-supply-chain
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## task-graph
 
@@ -1174,6 +1344,14 @@
 ## tmux
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## token-efficiency
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
+
+## trace-evaluation
+
+- `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
 ## traceability
 
@@ -1209,7 +1387,7 @@
 
 ## us-software-platforms
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## user-trust
 
@@ -1217,7 +1395,7 @@
 
 ## value-capture
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## venue-fit
 
@@ -1251,6 +1429,18 @@
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
+## wifi
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
+## wireless-ids
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
+## wireless-security
+
+- `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
 ## workflow
 
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
@@ -1259,7 +1449,7 @@
 
 ## workflow-agents
 
-- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 88/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
 ## workflow-consistency
 
@@ -1284,3 +1474,7 @@
 ## yolo
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## zsh
+
+- `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
