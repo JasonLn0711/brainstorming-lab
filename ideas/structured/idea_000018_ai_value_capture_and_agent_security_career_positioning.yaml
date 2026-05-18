@@ -230,6 +230,7 @@ connections:
 - idea_000028
 - idea_000030
 - idea_000032
+- idea_000033
 role: idea
 value:
   impact: high

@@ -1,0 +1,287 @@
+id: idea_000033
+title: Product-constrained PhD engineering research OS
+created_at: '2026-05-18'
+type: project
+tags:
+- phd-training
+- product-oriented-lab
+- engineering-research-os
+- software-engineering
+- systems-engineering
+- research-identity
+- methodology
+- reflection-loop
+- abstraction-loop
+- postmortem
+- ai-systems
+- operational-ai
+- human-in-the-loop
+- governance
+- career-strategy
+status: execution_ready
+problem_statement:
+  raw: Given a PhD life where company product work often displaces protected research
+    time, convert product coding, demos, integration work, stakeholder pressure, deployment
+    friction, and failures into deliberate software-engineering and systems-engineering
+    training rather than treating them as research loss.
+  normalized: Given a product-constrained PhD environment, optimize a personal engineering
+    research OS that converts product delivery into reusable research judgment, system
+    design maturity, and a defensible intellectual territory under constraints of
+    fragmented time, advisor/company demands, unclear publishability, demo pressure,
+    stakeholder conflict, AI-tool distraction, limited formal coursework, and the
+    risk of becoming a high-capability tool-person PhD.
+  structure:
+    given: a product-constrained PhD environment with limited protected research time
+    optimize: a personal engineering research OS that turns product delivery into
+      research judgment, system design maturity, and intellectual territory
+    constraints:
+    - fragmented research time
+    - advisor and company product demands
+    - demo and delivery pressure
+    - unclear publishability
+    - stakeholder conflict
+    - limited formal software/system engineering coursework
+    - AI tool and framework distraction
+    - risk of becoming a high-capability tool-person PhD
+summary: 'Product work is not automatically research, but it can become research material
+  if every delivery loop has a reflection, abstraction, postmortem, and theory-extraction
+  loop. The useful response to a product-oriented PhD lab is to build an Engineering
+  Research OS: ADRs, failure postmortems, system requirement notes, experiment registry,
+  technical-debt tracking, assumption logs, evaluation rubrics, deployment-constraint
+  register, and a research-question backlog. The strategic boundary is to avoid becoming
+  only the person who can debug, integrate, demo, and rescue projects; the product
+  work must repeatedly compress into one main research identity around operational
+  AI decision systems under real-world constraints.'
+source_note_zh: 博士班如果被公司產品需求切碎，真正的突破不是逃離所有產品工作，而是把每個產品任務轉譯成工程知識資產：為什麼這個需求卡住、哪個系統邊界不清楚、哪個
+  failure pattern 重複出現、哪些 trade-off 可以一般化、最後能不能形成自己的方法論。
+human_note: ideas/2026-05-18-product-constrained-phd-engineering-research-os.md
+assumptions:
+- The current lab behaves more like a product-oriented or industry-facing PhD environment
+  than a pure paper-first lab.
+- Product work becomes research only when it is deliberately abstracted; delivery
+  alone does not create research identity.
+- Self-directed software engineering and systems engineering learning can be grounded
+  in real product artifacts instead of only coursework.
+- The user's existing strengths in AI systems, cybersecurity, OSINT, workflow observation,
+  governance, and evidence-chain thinking can become a distinctive research wedge.
+- The largest risk is not lack of effort, but becoming a high-capability tool-person
+  PhD who completes many tasks without owning a problem space.
+- A main axis is needed so company tasks, medical AI, cyber workflows, agent systems,
+  and governance work all return to the same intellectual territory.
+- Reflection, abstraction, postmortem, and theory extraction must be scheduled as
+  real work, not left as a feeling after coding.
+- 'Formal coursework can help, but the user''s immediate training loop should be artifact-first:
+  architecture decisions, failure logs, requirements, tests, and evaluation boundaries.'
+- AI-era tool novelty creates a dopamine trap; deep accumulation requires pursuing
+  the same class of problems over multiple years.
+evidence:
+- '2026-05-18 user reflection: PhD research time is scarce because the advisor''s
+  outside company often pulls students toward product work rather than research.'
+- '2026-05-18 user proposal: embed software-engineering and systems-engineering course-like
+  thinking directly into product coding and self-directed learning.'
+- Existing brainstorming-lab records already emphasize problem definition, implementation
+  friction, AI systems engineering, real-world deployment, governance, auditability,
+  and AI security.
+- The local repo practice already includes version-control discipline, claim boundaries,
+  structured repo architecture, reproducibility checks, safety gates, context management,
+  reviewer mindset, and Idea OS maturity scoring.
+- Product lanes such as ASR plus LLM triage, medical workflow support, agent reliability,
+  portal/checklist automation, and AI assurance repeatedly surface real deployment
+  constraints rather than toy benchmark-only issues.
+- Prior Idea OS records identify AI Systems Engineering for Real-world Deployment
+  and AI System Security/Governance as stronger personal positioning than generic
+  model training.
+baseline:
+- 'Delivery-only loop: build the requested product feature, fix bugs, demo it, then
+  move on without extracting a reusable lesson.'
+- 'Company-task queue: allow external product requests to define the entire PhD identity.'
+- 'Course-shopping loop: collect software engineering vocabulary without applying
+  it to current artifacts.'
+- 'Tool novelty loop: chase new models, frameworks, agents, or terminals while losing
+  the main research thread.'
+- 'Pure resentment loop: treat product work only as stolen research time and miss
+  the field evidence inside it.'
+- 'Generic portfolio loop: build many demos but no signature method, framework, benchmark,
+  or worldview.'
+metrics:
+- Each substantial product feature creates at least one ADR or decision note naming
+  the alternatives, trade-off, chosen boundary, and rollback condition.
+- 'Each serious failure creates a short postmortem: trigger, impact, root cause, missing
+  signal, fix, prevention, and research question.'
+- Every product-to-research extraction card names one system constraint, one repeated
+  failure pattern, one possible generalized principle, and one smallest test.
+- Weekly review distinguishes delivery output from extracted engineering knowledge.
+- 'Monthly output includes at least one reusable artifact: framework, evaluation rubric,
+  architecture pattern, benchmark fixture, failure taxonomy, or governance checklist.'
+- Quarterly review checks whether the work still supports one main axis instead of
+  expanding into unrelated tasks.
+- 'A new product request is mapped to a research lens before implementation begins:
+  reliability, human workflow, uncertainty, governance, latency, auditability, or
+  deployment constraint.'
+- The user can explain the same project as product value, engineering lesson, research
+  question, and career evidence.
+insights:
+- Product work is not the enemy of research; unabstracted product work is.
+- A product-oriented PhD should not blindly imitate a pure-theory PhD schedule.
+- The scarce resource is not task volume but abstraction time and intellectual territory.
+- Being useful to a company can hide the risk of becoming useful but intellectually
+  unowned.
+- 'Research identity comes from a worldview: which failures you notice, which trade-offs
+  you measure, and which constraints you repeatedly formalize.'
+- Software engineering and systems engineering are not only courses; they are habits
+  of documenting decisions, interfaces, state, failure modes, verification, and operations.
+- A real product is a field site for AI systems research when its messy constraints
+  are captured instead of erased.
+- The deeper skill being built is decision ability in high-pressure, ambiguous, multi-stakeholder
+  systems.
+- Deep accumulation zones matter more than short bursts of learning many unrelated
+  tools.
+connections:
+- idea_000012
+- idea_000015
+- idea_000018
+- idea_000019
+- idea_000020
+- idea_000032
+- ideas/taiwan-academic-research-team-scale-structure-incentives.md
+role: idea
+value:
+  impact: high
+  feasibility: high
+first_principle:
+  scarce_resource: abstraction time and intellectual territory, not raw product-task
+    throughput
+  core_object: a repeatable product-work-to-research-methodology conversion loop
+  not_the_core:
+  - doing every company task faster
+  - avoiding all product work
+  - collecting course vocabulary without artifact practice
+  - chasing every new AI tool
+  - treating demos as research evidence by default
+  core_question: How can a product-constrained PhD turn messy delivery work into a
+    coherent research identity and systems-engineering methodology?
+  smallest_useful_unit: one Product-to-Research Extraction Card written after a real
+    feature, bug, demo, or failure.
+  decision_boundary: Use product work as a research field site only when the resulting
+    artifact names a constraint, trade-off, failure pattern, evaluation hook, and
+    possible generalized lesson.
+main_axis_candidates:
+- Human-in-the-loop AI decision systems under real-world constraints
+- Operational AI systems for high-stakes environments
+- AI-assisted decision workflows with governance and uncertainty control
+- Evidence-centric AI systems for review, triage, and operational assurance
+engineering_research_os:
+  input_events:
+  - product feature request
+  - bug or outage
+  - demo pressure
+  - stakeholder disagreement
+  - deployment limitation
+  - latency or reliability failure
+  - AI model, prompt, agent, or workflow drift
+  core_artifacts:
+  - name: Architecture Decision Record
+    purpose: capture a technical choice, alternatives, trade-offs, boundary, and rollback
+      condition
+  - name: Failure Postmortem
+    purpose: turn bugs and breakdowns into recurring failure patterns and prevention
+      mechanisms
+  - name: System Requirement Note
+    purpose: separate stakeholder need, functional requirement, nonfunctional constraint,
+      and verification path
+  - name: Assumption Log
+    purpose: record what the system currently believes about users, data, models,
+      runtime, and workflow
+  - name: Evaluation Rubric
+    purpose: make success measurable beyond demo completion
+  - name: Deployment Constraint Register
+    purpose: track latency, compute, privacy, governance, integration, and human-review
+      limits
+  - name: Research Question Backlog
+    purpose: store generalized questions extracted from product friction
+  - name: Technical Debt Register
+    purpose: separate speed debt, architecture debt, data debt, and governance debt
+  loops:
+  - 'delivery loop: implement the requested product increment'
+  - 'reflection loop: record what was hard, ambiguous, slow, risky, or repeated'
+  - 'abstraction loop: translate the event into a system pattern, trade-off, or failure
+    mode'
+  - 'theory-extraction loop: decide whether the pattern can become a framework, evaluation,
+    paper seed, or reusable engineering method'
+product_to_research_translation:
+- product_problem: LLM context explosion
+  research_lens: long-context memory management and context-governance failure
+- product_problem: agent drift
+  research_lens: agent reliability, traceability, and stop-condition design
+- product_problem: questionnaire too long
+  research_lens: cognitive load modeling and adaptive questioning
+- product_problem: ASR latency
+  research_lens: streaming inference, edge optimization, and degraded-mode operation
+- product_problem: physician distrust of AI
+  research_lens: trust calibration, explainability boundaries, and human-in-the-loop
+    review
+- product_problem: triage flow design
+  research_lens: adaptive decision systems under uncertainty
+- product_problem: kiosk or device integration
+  research_lens: cyber-physical AI systems and operational resilience
+- product_problem: reviewer fatigue
+  research_lens: human-AI collaboration and workload-aware evaluation
+- product_problem: multi-model orchestration
+  research_lens: distributed AI workflow reliability and observability
+pressure_test:
+  setting: One week is dominated by company product tasks, a demo, and bug fixes,
+    leaving almost no protected paper-writing block.
+  expected_failure_mode: The user produces many commits and features but no research
+    artifact, no extracted pattern, and no clearer thesis identity.
+  smallest_observable_test: After one product feature or failure, write a one-page
+    Product-to-Research Extraction Card.
+  pass_metric: The card names the product event, affected actor, system constraint,
+    repeated failure pattern, decision trade-off, possible generalized principle,
+    and one smallest next test.
+  revise_or_kill_signal: If three consecutive product events cannot produce a meaningful
+    card, the work is probably too operational or too disconnected from the user's
+    research axis.
+deep_accumulation_zones:
+- uncertainty-aware AI workflows
+- adaptive questioning systems
+- human trust calibration
+- operational AI governance
+- agent memory and context reliability
+- AI triage and evidence-centric review systems
+- software/system engineering methods for real-world AI deployment
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 11
+  testability_score: 11/15
+  evidence_support: 15
+  evidence_support_score: 15/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 96/100
+maturity_level: execution_ready
+next_steps:
+- Write the first Product-to-Research Extraction Card for the next real product feature,
+  bug, or demo pressure event.
+- Choose one main-axis wording and use it as the lens for the next four weeks of product
+  tasks.
+- Create lightweight templates for ADR, failure postmortem, assumption log, and evaluation
+  rubric if this idea becomes scheduled work.
+- At weekly review, separate what was delivered from what was abstracted into reusable
+  engineering research knowledge.
+source:
+- conversation
+- idea_000012
+- idea_000018
+- idea_000019
+- idea_000032
+maturity_action: generate experiment plan
+normalization_status: validated

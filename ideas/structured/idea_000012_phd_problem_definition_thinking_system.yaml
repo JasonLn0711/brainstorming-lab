@@ -85,6 +85,7 @@ connections:
   - idea_000019
   - idea_000020
   - idea_000029
+  - idea_000033
   - weekly-paper-lab/papers/2026-W19-aris-autonomous-research/paper.yaml
 role: idea
 value:
