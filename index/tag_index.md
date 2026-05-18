@@ -20,6 +20,10 @@
 
 - `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
+## agent-security
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
 ## agentic-ai
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
@@ -31,6 +35,10 @@
 ## ai-agents
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## ai-assurance
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## ai-crawler-opt-out
 
@@ -83,6 +91,7 @@
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## ai-security-learning
 
@@ -100,6 +109,7 @@
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## ai-workflow
 
@@ -142,10 +152,15 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## asr-security
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
 ## auditability
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## auto-research
 
@@ -595,6 +610,10 @@
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
 
+## gmlp
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
 ## gnss
 
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
@@ -603,6 +622,7 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## gpu-rendering
 
@@ -662,6 +682,7 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## human-llm-rule-comparison
 
@@ -866,6 +887,7 @@
 ## medical-ai
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## memory
 
@@ -895,6 +917,10 @@
 ## misinformation
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
+## mitre-atlas
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## ml-systems
 
@@ -928,6 +954,10 @@
 ## network-design
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
+## nist-ai-rmf
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## nlp
 
@@ -972,6 +1002,10 @@
 ## outlier-detection
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## owasp-llm
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## package-json
 
@@ -1115,6 +1149,10 @@
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
+## rag-security
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
 ## real-time-ai
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -1220,6 +1258,10 @@
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
+
+## safety-case
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## scam-content
 
@@ -1443,6 +1485,10 @@
 ## theory-of-mind
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## threat-modeling
+
+- `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
 ## tmux
 
