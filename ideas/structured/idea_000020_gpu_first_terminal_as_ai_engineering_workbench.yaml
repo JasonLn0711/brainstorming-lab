@@ -6,6 +6,11 @@ tags:
 - terminal
 - gpu-rendering
 - ghostty
+- zsh
+- starship
+- nerd-font
+- prompt-engineering
+- path-management
 - ubuntu
 - ai-workflow
 - developer-tools
@@ -147,6 +152,14 @@ assumptions:
   reasoning traces.
 - A Ghostty + zsh + Starship + Codex CLI setup is not merely a prettier terminal;
   it is the front door to a personal AI engineering workstation.
+- 'Starship should be treated as an engineering context layer, not a decorative prompt:
+  it visualizes the shell waiting state by surfacing repo, branch, runtime, environment,
+  and command-result context at the point where the next command will be chosen.'
+- Nerd Font installation is a functional dependency for prompt legibility because
+  branch, runtime, and segment icons become ambiguous or broken when glyph coverage
+  is missing.
+- 'Ghostty visual reproduction on Ubuntu 24 depends on a layered stack: terminal emulator,
+  shell, prompt engine, font, theme, and shell initialization state.'
 - If shell, PATH, npm global binaries, Codex CLI, Starship, Ghostty config, and aliases
   exist only as local mutations, the machine becomes useful but unexplained and hard
   to rebuild.
@@ -231,6 +244,22 @@ evidence:
 - '2026-05-12 user synthesis: the real next step is to freeze the working Ghostty
   + zsh + Starship + Codex CLI setup into traceable knowledge before installing more
   tools.'
+- '2026-05-18 user setup note: the target Ghostty screen is a composed stack of Ghostty,
+  zsh, Starship, a Nerd Font such as JetBrainsMono Nerd Font, and a color theme such
+  as Dracula, Tokyo Night, or Catppuccin; Starship supplies the repo, git branch,
+  Node runtime, and prompt symbols.'
+- '2026-05-18 user setup note: Ubuntu 24 reproduction must distinguish installed zsh
+  from the active login shell; chsh requires a full logout or reboot, while running
+  zsh manually is only a temporary interactive session.'
+- '2026-05-18 user setup note: Starship failures often reduce to either starship not
+  being installed, ~/.local/bin missing from PATH, or eval "$(starship init zsh)"
+  not actually being loaded from ~/.zshrc.'
+- '2026-05-18 user synthesis: Starship is a shell waiting-state visualization layer
+  that converts hidden context into an environment dashboard: repo, branch, runtime,
+  Python/Node/Docker/Kubernetes/Conda/AWS state, and command success or failure.'
+- '2026-05-18 user synthesis: terminal customization matters only when it improves
+  engineering context awareness, prevents wrong-branch or wrong-runtime mistakes,
+  and supports AI systems, MLOps, infra, cybersecurity, and DevOps workflows.'
 baseline:
 - Treat terminal choice as cosmetic preference and never measure rendering/input latency.
 - Use Ubuntu default terminal without comparing Ghostty, Kitty, Alacritty, WezTerm,
@@ -289,6 +318,12 @@ metrics:
 - 'Workstation reproducibility: zsh, Ghostty, Starship, npm global PATH, Codex CLI
   path, aliases, and bootstrap decisions can be reconstructed from versioned dotfiles
   and logs.'
+- 'Prompt context coverage: the prompt visibly reports project directory, git branch,
+  dirty state where configured, runtime version, shell command result, and enough
+  icons/text to remain legible with the selected font.'
+- 'Glyph reliability: Nerd Font icons for git branch, Node/runtime, and prompt segments
+  render as intended in Ghostty rather than appearing as mojibake, missing boxes,
+  or ambiguous fallback glyphs.'
 - 'Environment health coverage: check_dev_env.sh reports shell state, PATH entries,
   core tool paths, and versions for zsh, starship, ghostty, git, node, npm, codex,
   docker, python3, and uv.'
@@ -335,6 +370,11 @@ insights:
   Docker, uv, VSCode, and GitHub are roles inside that system.
 - 'The immediate engineering value is not more visual polish but lower-friction recovery:
   can the user explain, rebuild, validate, and safely extend the machine?'
+- 'The visible Ghostty prompt is the last mile of several invisible layers; if it
+  does not change, debug in order: current shell, ~/.zshrc loading, PATH, starship
+  binary, Starship init line, font availability, then Ghostty config.'
+- Prompt icons are not cosmetic when they encode branch/runtime state, but they become
+  harmful if font fallback makes the display ambiguous.
 - Shell initialization bugs are workstation architecture bugs because AI workflows
   often fail differently in Ghostty, VSCode, tmux, bash, zsh, and Codex.
 - A workstation log converts debugging pain into future operational knowledge.
@@ -376,9 +416,15 @@ maturity_level: execution_ready
 next_steps:
 - Create a workstation log entry for the 2026-05-12 Ghostty + zsh + Starship + Codex
   CLI setup, including the Codex PATH fix and shell-initialization lesson.
+- 'Extend the workstation log with the 2026-05-18 Ghostty reproduction checklist:
+  zsh login shell, Starship installation and PATH, ~/.zshrc init, JetBrainsMono Nerd
+  Font installation, Ghostty font/theme config, and expected failure symptoms.'
 - Create a minimal dotfiles-workstation repo skeleton with README.md, zsh/.zshrc,
   ghostty/config, starship/starship.toml, scripts/bootstrap_ubuntu24.sh, scripts/check_dev_env.sh,
   and docs/workstation_decisions.md.
+- 'Add a minimal starship/starship.toml that preserves the high-signal prompt fields:
+  directory, git branch, runtime version, and command character, before adding more
+  decorative modules.'
 - Write check_dev_env.sh to report shell state, PATH markers, core tool locations,
   and versions.
 - Add a minimal scripts/dev_status.sh pattern to the highest-value repos before relying
@@ -478,6 +524,8 @@ workstation_governance:
     Ghostty: terminal display and interaction layer
     Zsh: interactive command environment
     Starship: repo/context-aware prompt
+    Nerd Font: glyph coverage for branch, runtime, and prompt symbols
+    Theme: color contrast and visual grouping for terminal context
     tmux: long-running session, SSH, and recovery infrastructure
     Git: version control, checkpoints, rollback, and remote sync
     Codex: AI coding and repo-maintenance collaborator

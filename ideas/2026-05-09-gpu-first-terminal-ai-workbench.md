@@ -889,3 +889,206 @@ If it becomes active, the output should be a small developer-workbench benchmark
 not a broad terminal review or brand preference essay.
 
 The benchmark should measure both rendering behavior and session-ledger quality.
+
+## 2026-05-18 Update: Ghostty Screen Reproduction As Workstation Layering
+
+The target Ghostty screen is not one setting. It is a stack:
+
+```text
+Ghostty terminal
++ zsh shell
++ Starship prompt engine
++ Nerd Font glyph coverage
++ color theme
++ PATH and shell initialization state
+```
+
+The visible prompt such as:
+
+```text
+urology-ai-previsit-demo on main via v26.0.0
+```
+
+is mostly Starship reading project context:
+
+- current directory or repo name
+- git branch
+- runtime version such as Node.js
+- command success or failure state
+- prompt character and segment styling
+
+The first-principles frame is:
+
+```text
+terminal = input -> shell -> command execution
+prompt = shell waiting-state visualization
+Starship = environment/context detection layer at the command boundary
+```
+
+So the value is not only aesthetics. The value is that the terminal becomes a
+small runtime dashboard. It reduces mistakes such as using the wrong repo, wrong
+branch, wrong Node/Python environment, wrong Docker or cloud context, or an
+unloaded PATH.
+
+## Practical Ubuntu 24 Recipe
+
+The minimal reproduction path is:
+
+1. Install and activate zsh.
+
+```bash
+zsh --version
+sudo apt update
+sudo apt install zsh -y
+chsh -s "$(which zsh)"
+```
+
+Then fully log out or reboot. A new terminal must report zsh as the login shell:
+
+```bash
+echo "$SHELL"
+```
+
+For temporary testing only:
+
+```bash
+zsh
+echo "$0"
+```
+
+2. Install Ghostty.
+
+```bash
+sudo snap install ghostty --classic
+ghostty --version
+```
+
+3. Install Starship.
+
+```bash
+curl -sS https://starship.rs/install.sh | sh
+which starship
+starship --version
+```
+
+If `which starship` is empty or `starship: command not found`, check PATH:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+The durable version belongs in `~/.zshrc` before Starship init:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(starship init zsh)"
+```
+
+Reload:
+
+```bash
+source ~/.zshrc
+```
+
+4. Install a Nerd Font for prompt glyphs.
+
+```bash
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+unzip JetBrainsMono.zip
+fc-cache -fv
+```
+
+Without a Nerd Font, branch/runtime icons may appear as boxes, mojibake, or
+ambiguous fallback glyphs.
+
+5. Configure Ghostty.
+
+```ini
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+theme = Dracula
+background-opacity = 0.95
+```
+
+Theme candidates for this visual style:
+
+- Dracula
+- Tokyo Night
+- Catppuccin
+
+6. Keep Starship minimal before adding decoration.
+
+```toml
+add_newline = false
+
+format = """
+$directory\
+$git_branch\
+$nodejs\
+$character
+"""
+
+[directory]
+style = "cyan"
+
+[git_branch]
+symbol = "branch "
+style = "purple"
+
+[nodejs]
+symbol = "node "
+style = "yellow"
+
+[character]
+success_symbol = ">"
+error_symbol = ">"
+```
+
+The icon version can be added after the Nerd Font is confirmed. Until then,
+plain text symbols are easier to debug.
+
+## Debug Order
+
+If the prompt does not change, debug the stack in this order:
+
+1. Is the current interactive shell really zsh?
+2. Is `~/.zshrc` being loaded?
+3. Is `~/.local/bin` in PATH?
+4. Does `which starship` return a binary?
+5. Does `~/.zshrc` contain `eval "$(starship init zsh)"`?
+6. Does Ghostty use the expected Nerd Font?
+7. Does Ghostty load the expected config file?
+
+This order matters because many visual failures are actually environment
+initialization failures.
+
+## Engineering Meaning
+
+Starship is a prompt engine, but in this workbench it should be treated as a
+context-awareness layer:
+
+- repo awareness
+- branch awareness
+- runtime awareness
+- environment awareness
+- command-result awareness
+
+That is why this belongs in the workstation idea rather than only a UI note.
+The terminal is becoming a cockpit for AI systems engineering, MLOps, infra,
+cybersecurity, DevOps, and research automation.
+
+The durable output should be a dotfiles/workstation record, not only a pretty
+local terminal:
+
+```text
+zsh/.zshrc
+ghostty/config
+starship/starship.toml
+scripts/check_dev_env.sh
+docs/workstation_decisions.md
+```
+
+The next concrete action is to freeze this setup into a workstation log and a
+minimal dotfiles repo before adding more tools.
