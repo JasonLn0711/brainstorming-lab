@@ -1,0 +1,305 @@
+id: idea_000032
+title: MITRE ATLAS based AI system assurance for triage prototypes
+created_at: '2026-05-18'
+type: project
+tags:
+- mitre-atlas
+- ai-security
+- ai-assurance
+- threat-modeling
+- owasp-llm
+- nist-ai-rmf
+- gmlp
+- medical-ai
+- ai-triage
+- asr-security
+- rag-security
+- agent-security
+- auditability
+- human-in-the-loop
+- governance
+- safety-case
+status: execution_ready
+problem_statement:
+  raw: Given AI triage, ASR+LLM, RAG, agent, or medical workflow prototypes, add a
+    professional AI system assurance layer by mapping components, threat surfaces,
+    trust boundaries, mitigations, human oversight, and audit evidence to MITRE ATLAS,
+    OWASP LLM/GenAI security guidance, NIST AI RMF, and medical AI GMLP principles.
+  normalized: Given an AI-enabled decision workflow, optimize security credibility
+    and operational assurance by converting it from a model/demo artifact into a threat-modeled,
+    governed, auditable prototype under constraints of prompt injection, adversarial
+    audio, retrieval poisoning, model supply chain risk, hallucination, human overreliance,
+    privacy, clinical workflow safety, and domain expert review.
+  structure:
+    given: an AI-enabled decision workflow such as AI triage, ASR+LLM, RAG, or agentic
+      assistance
+    optimize: security credibility, operational assurance, and reviewer trust
+    constraints:
+    - prompt injection and indirect prompt injection
+    - adversarial audio and replay
+    - retrieval poisoning and fake guidelines
+    - model supply chain and model theft
+    - hallucination and unsafe recommendation
+    - human overreliance
+    - privacy and sensitive data
+    - clinical workflow safety
+    - audit trail completeness
+    - domain expert review
+summary: 'MITRE ATLAS can turn an AI app demo into a security-research-grade prototype
+  by giving the system a shared threat language: tactics, techniques, mitigations,
+  and case studies for AI-enabled systems. The useful move is to combine ATLAS with
+  OWASP GenAI/LLM guidance for application-layer vulnerabilities, NIST AI RMF for
+  risk/governance framing, and FDA/Health Canada/MHRA GMLP principles for medical
+  AI lifecycle discipline. For an AI triage or ASR+LLM workflow, the output should
+  be a threat model, trust-boundary map, mitigation matrix, human-in-the-loop design,
+  and audit-evidence checklist.'
+source_note_zh: MITRE ATLAS 的價值不是拿來裝飾簡報，而是把 AI 系統從『可以跑的 demo』提升成『知道自己會怎麼被攻擊、怎麼失效、誰要審查、證據怎麼保存』的
+  assurance prototype。
+human_note: ideas/2026-05-18-mitre-atlas-ai-system-assurance.md
+assumptions:
+- MITRE ATLAS is best used as a threat taxonomy and shared language for adversary
+  behavior against AI-enabled systems, not as a complete governance framework by itself.
+- 'OWASP GenAI/LLM guidance is more application-layer and developer-operational: prompt
+  injection, insecure output handling, supply chain, excessive agency, sensitive information
+  disclosure, overreliance, and model theft.'
+- NIST AI RMF is a broader risk-management umbrella for trustworthy and responsible
+  AI, not a narrow attack-technique catalog.
+- FDA/Health Canada/MHRA GMLP is relevant when the AI system starts to look like medical-device
+  or clinical decision-support software, especially around lifecycle, data, intended
+  use, human-AI team performance, monitoring, and retraining risk.
+- A student AI demo becomes more professional when it can show threat model, mitigations,
+  human oversight, audit logs, and residual risk, not only accuracy and UI.
+- For medical triage, fully autonomous decision-making should stay out of scope; physician
+  review and explicit uncertainty handling are core design requirements.
+- The most useful first artifact is a component-by-component assurance matrix, not
+  a generic list of frameworks.
+evidence:
+- '2026-05-18 user synthesis: MITRE ATLAS, OWASP, and NIST make AI triage, LLM agents,
+  ASR+LLM systems, medical AI workflows, and AI investigation systems look like professional
+  AI security research rather than software demos.'
+- MITRE ATLAS data repository states that ATLAS contains tactics, techniques, mitigations,
+  case studies, and related data used by the ATLAS website and tools.
+- MITRE states ATLAS is a globally accessible living knowledge base of adversary tactics
+  and techniques based on real-world attack observations and realistic demonstrations
+  from AI red teams and security groups.
+- MITRE CTID 2026 update describes ATLAS as a knowledge base for adversary tactics,
+  techniques, and mitigations targeting AI-enabled systems, with expanded agentic
+  AI and LLM threat coverage.
+- OWASP GenAI Security Project identifies, mitigates, and documents security and safety
+  risks for generative AI technologies including LLMs, agentic AI systems, and AI-driven
+  applications.
+- NIST AI RMF 1.0 is intended to help organizations designing, developing, deploying,
+  or using AI systems manage AI risks and promote trustworthy and responsible AI.
+- FDA/Health Canada/MHRA GMLP guiding principles are relevant for medical AI development
+  and include human-AI team performance, intended use, monitoring, and retraining-risk
+  management.
+baseline:
+- AI demo shows model accuracy, a frontend, and a short workflow but has no threat
+  model.
+- Security section only says prompt injection is possible, without mapping components,
+  attack surface, mitigations, or audit evidence.
+- Medical AI prototype recommends actions without physician review, uncertainty display,
+  or escalation boundary.
+- RAG system treats all retrieved documents as equally trusted.
+- ASR pipeline assumes audio transcripts are ground truth.
+- Agent tool use has no least-privilege design, action approval, or tool-call audit
+  log.
+- Governance is added as an afterthought instead of being part of the prototype architecture.
+metrics:
+- Every AI system component has at least one mapped attack surface, trust boundary,
+  mitigation, audit point, and residual-risk note.
+- The assurance matrix includes ATLAS technique/category references where relevant,
+  OWASP LLM/GenAI risks, NIST AI RMF governance framing, and medical GMLP links where
+  clinical workflow applies.
+- ASR, LLM, RAG, vital sign input, UI, decision engine, and human review are separately
+  threat-modeled.
+- Prompt injection, adversarial audio, retrieval poisoning, fake vital signs, hallucination,
+  overreliance, model theft, and supply-chain risks each have a test or review fixture.
+- System output includes uncertainty and physician-review boundaries rather than autonomous
+  diagnosis or treatment advice.
+- Audit log captures input source, model/prompt version, retrieved evidence IDs, generated
+  recommendation, risk flags, reviewer action, override reason, and timestamp.
+- Residual risk is explicitly stated; the prototype does not imply complete security.
+insights:
+- MITRE ATLAS is a map for adversarial AI behavior; OWASP is closer to application-layer
+  LLM/agent risk; NIST AI RMF is governance/risk-management framing; GMLP is medical
+  AI lifecycle discipline.
+- The professional leap is not adding a security appendix; it is making threat modeling
+  visible in the system architecture.
+- 'AI security is a system lifecycle problem: data, model, retrieval, prompts, tools,
+  UI, user behavior, audit, and monitoring all matter.'
+- Medical AI assurance is especially about human-AI team performance and overreliance,
+  not only model sensitivity/specificity.
+- 'Forensic thinking is a differentiator: decision traces, evidence chains, provenance,
+  and auditability are not optional polish.'
+- The student's positioning can become AI System Security + AI Governance + Operational
+  AI Assurance.
+connections:
+- idea_000001
+- idea_000002
+- idea_000011
+- idea_000015
+- idea_000018
+- idea_000019
+role: idea
+value:
+  impact: high
+  feasibility: high
+first_principle:
+  scarce_resource: trustworthy operational evidence, not model output
+  core_object: AI system assurance case
+  not_the_core:
+  - decorating a demo with framework names
+  - treating accuracy as the whole evaluation
+  - claiming complete security
+  - autonomous medical recommendation
+  - generic cybersecurity checklist without AI-specific lifecycle mapping
+  smallest_useful_unit: one AI triage assurance matrix mapping components to threats,
+    mitigations, trust boundaries, audit points, human oversight, and residual risk
+  decision_boundary: Use MITRE ATLAS/OWASP/NIST/GMLP to make the prototype reviewable
+    and auditable; do not use them to imply regulatory clearance or clinical safety.
+framework_roles:
+  mitre_atlas:
+    role: AI adversary tactics, techniques, mitigations, and case-study knowledge
+      base.
+    use_in_project: Map AI-specific attack paths such as poisoning, evasion, model
+      theft, prompt injection, supply-chain compromise, and agent/tool abuse.
+    not_for: Complete governance, clinical validation, or proof of safety by itself.
+  owasp_genai_llm:
+    role: Developer-facing security risks for LLM, generative AI, agentic AI, and
+      AI-driven applications.
+    use_in_project: Checklist for prompt injection, insecure output handling, sensitive
+      information disclosure, excessive agency, supply-chain risk, overreliance, and
+      model theft.
+  nist_ai_rmf:
+    role: Voluntary risk-management framework for trustworthy and responsible AI.
+    use_in_project: Governance framing for mapping, measuring, managing, and governing
+      AI risks across lifecycle.
+  fda_gmlp:
+    role: Medical AI/ML lifecycle discipline and human-AI team performance guidance.
+    use_in_project: Boundary reference for clinical relevance, intended use, data
+      separation, representative datasets, monitoring, and retraining-risk management.
+ai_triage_threat_model_seed:
+  asr:
+    attacks:
+    - adversarial audio
+    - replay or fake voice
+    - noisy environment manipulation
+    controls:
+    - confidence threshold
+    - audio/transcript mismatch flag
+    - human confirmation for safety-critical symptoms
+    - raw-audio retention policy or hash-only audit boundary
+  llm:
+    attacks:
+    - direct prompt injection
+    - instruction conflict
+    - hallucinated medical advice
+    controls:
+    - system-task boundary
+    - structured output schema
+    - no autonomous diagnosis/treatment
+    - clinician review
+  rag:
+    attacks:
+    - retrieval poisoning
+    - fake guideline insertion
+    - citation manipulation
+    controls:
+    - trusted-source registry
+    - document provenance
+    - evidence tier labels
+    - citation verification
+  vital_sign_input:
+    attacks:
+    - sensor spoofing
+    - manual entry manipulation
+    - delayed or stale signal
+    controls:
+    - source timestamp
+    - plausibility check
+    - manual review flag
+    - device/source provenance
+  ui_workflow:
+    attacks:
+    - misleading interaction
+    - overreliance on AI confidence
+    - missing override reason
+    controls:
+    - uncertainty display
+    - review/override button
+    - reason capture
+    - clear escalation boundary
+  agent_tools:
+    attacks:
+    - unauthorized action
+    - tool hijack
+    - data exfiltration
+    controls:
+    - least privilege
+    - approval gate
+    - tool-call audit log
+    - deny default for external side effects
+deliverable_shape:
+- Component diagram
+- Trust-boundary map
+- ATLAS/OWASP threat mapping table
+- NIST AI RMF governance notes
+- GMLP/medical workflow boundary notes
+- Mitigation and residual-risk matrix
+- Human-in-the-loop workflow
+- Audit evidence checklist
+- Small red-team/evaluation fixtures
+pressure_test:
+  setting: A reviewer sees an AI triage demo and asks whether it is only a UI/model
+    prototype or a credible AI security/governance artifact.
+  expected_failure_mode: The project lists MITRE ATLAS and OWASP by name but cannot
+    show any component-level mapping, mitigations, logs, or residual-risk decisions.
+  smallest_observable_test: 'Create one two-page assurance packet for the triage pipeline:
+    component, attack surface, trust boundary, ATLAS/OWASP mapping, mitigation, audit
+    evidence, human review point, and residual risk.'
+  decision_metric: Pass if a security or medical informatics reviewer can trace how
+    ASR, LLM, RAG, vital signs, UI, and tools are protected or escalated without relying
+    on vague framework references.
+source_links:
+- https://atlas.mitre.org/
+- https://github.com/mitre-atlas/atlas-data
+- https://www.mitre.org/news-insights/news-release/mitre-and-microsoft-collaborate-address-generative-ai-security-risks
+- https://ctid.mitre.org/blog/2026/05/06/secure-ai-v2-release/
+- https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
+- https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 15
+  evidence_support_score: 15/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 92/100
+maturity_level: execution_ready
+next_steps:
+- Create a two-page AI triage assurance packet using the component/threat/mitigation/audit/residual-risk
+  matrix.
+- Map ASR, LLM, RAG, vital signs, UI, and agent tools against MITRE ATLAS and OWASP
+  LLM/GenAI risks.
+- Add a minimal red-team fixture for prompt injection, adversarial audio placeholder,
+  retrieval poisoning placeholder, fake vital-sign input, and overreliance review.
+- Define the audit-log schema needed to reconstruct why a triage recommendation or
+  question was generated.
+- 'Write the human-in-the-loop boundary: what AI may suggest, what requires clinician
+  review, and what is out of scope.'
+source:
+- conversation
+- web_verification_2026-05-18
+maturity_action: generate experiment plan

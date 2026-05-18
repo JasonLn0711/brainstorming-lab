@@ -135,6 +135,7 @@ connections:
   - idea_000012
   - idea_000018
   - idea_000020
+  - idea_000032
 role: idea
 value:
   impact: medium
