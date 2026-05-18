@@ -1,290 +1,484 @@
 id: idea_000022
-title: "YOLO-to-foundation-vision reliable deployment decision system"
+title: YOLO-to-foundation-vision reliable deployment decision system
 created_at: 2026-05-11
 type: hypothesis
 tags:
-  - computer-vision
-  - yolo
-  - dinov2
-  - detr
-  - rf-detr
-  - surveillance
-  - anomaly-detection
-  - ml-systems
-  - edge-deployment
-  - evaluation
-  - uncertainty
-  - human-in-the-loop
-  - representation-learning
-  - object-detection
-  - decision-system
-  - mamba
-  - state-space-models
-  - video-understanding
-  - streaming-intelligence
-  - bicycle-reid
-  - object-reid
-  - identity-persistence
-  - multimodal-fusion
-  - tracking
+- computer-vision
+- yolo
+- dinov2
+- detr
+- rf-detr
+- surveillance
+- anomaly-detection
+- ml-systems
+- edge-deployment
+- evaluation
+- uncertainty
+- human-in-the-loop
+- representation-learning
+- object-detection
+- decision-system
+- mamba
+- state-space-models
+- video-understanding
+- streaming-intelligence
+- bicycle-reid
+- object-reid
+- identity-persistence
+- multimodal-fusion
+- tracking
 status: execution_ready
 problem_statement:
-  raw: "YOLO experiments usually fail not because the model cannot run, but because detection reliability collapses under the user's data, scene, hardware, deployment target, operational decision thresholds, and identity-persistence needs."
-  normalized: "Given real-world surveillance and anomaly-detection vision pipelines that start from YOLO-style object detection and may extend into DETR-style transformer detectors, Mamba/SSM temporal memory, or bicycle/object ReID in dense campus scenes, optimize a reliable deployment decision system that combines fast detection, representation learning, long-video state modeling, identity persistence, uncertainty-aware evaluation, and human review under constraints of dataset shift, label quality, small objects, occlusion, class imbalance, attention or sequence-scaling cost, latency, edge hardware, annotation cost, synthetic-real gaps, closed-world categories, near-duplicate object appearance, and production false-alarm tolerance."
+  raw: YOLO experiments usually fail not because the model cannot run, but because
+    detection reliability collapses under the user's data, scene, hardware, deployment
+    target, operational decision thresholds, and identity-persistence needs.
+  normalized: Given real-world surveillance and anomaly-detection vision pipelines
+    that start from YOLO-style object detection and may extend into DETR-style transformer
+    detectors, Mamba/SSM temporal memory, or bicycle/object ReID in dense campus scenes,
+    optimize a reliable deployment decision system that combines fast detection, representation
+    learning, long-video state modeling, identity persistence, uncertainty-aware evaluation,
+    and human review under constraints of dataset shift, label quality, small objects,
+    occlusion, class imbalance, attention or sequence-scaling cost, latency, edge
+    hardware, annotation cost, synthetic-real gaps, closed-world categories, near-duplicate
+    object appearance, and production false-alarm tolerance.
   structure:
-    given: "real-world surveillance and anomaly-detection vision pipelines that start from YOLO-style object detection and may extend into DETR-style transformer detectors, Mamba/SSM temporal memory, or bicycle/object ReID in dense campus scenes"
-    optimize: "a reliable deployment decision system that combines fast detection, representation learning, long-video state modeling, identity persistence, uncertainty-aware evaluation, and human review"
+    given: real-world surveillance and anomaly-detection vision pipelines that start
+      from YOLO-style object detection and may extend into DETR-style transformer
+      detectors, Mamba/SSM temporal memory, or bicycle/object ReID in dense campus
+      scenes
+    optimize: a reliable deployment decision system that combines fast detection,
+      representation learning, long-video state modeling, identity persistence, uncertainty-aware
+      evaluation, and human review
     constraints:
-      - "dataset shift"
-      - "label quality"
-      - "small-object detection"
-      - occlusion
-      - "class imbalance"
-      - "false-positive and false-negative tradeoffs"
-      - "attention or sequence-scaling cost"
-      - "latency and throughput"
-      - "edge hardware limits"
-      - "annotation cost"
-      - "synthetic-real gap"
-      - "closed-world label assumptions"
-      - "near-duplicate object appearance"
-      - "production decision accountability"
-summary: "The useful research object is not 'which detector is best', but why a YOLO-like or DETR-like detector can report high mAP while failing in the user's real scene, and how to build a multi-stage vision decision system around that failure. A concrete pressure test is a National Taiwan University-style campus bike lot: detecting bicycles is easy, but identifying which one is the user's bike is an identity-persistence and ReID problem. YOLO remains valuable for fast perception and edge deployment; ViT/DINOv2/CLIP/ReID-style embeddings may help distinguish appearance signatures; DETR/RF-DETR-style transformer detectors point toward more end-to-end object-set reasoning but introduce optimization, memory, attention, query-matching, export, and deployment risks. Mamba/SSM-style models are a plausible research branch for long video, streaming surveillance, and temporal state modeling, but should be treated as a complementary inductive bias rather than a drop-in replacement for every attention module. The practical hypothesis is a hybrid system: YOLO/DETR for perception candidates, foundation vision or ReID features for identity and scene understanding, tracking and Mamba/SSM-style temporal modules for persistence, location/time priors and optional identity signals such as QR/RFID/Bluetooth/AirTag for disambiguation, deployment-aligned metrics for threshold decisions, and human-in-the-loop review for uncertain matches."
+    - dataset shift
+    - label quality
+    - small-object detection
+    - occlusion
+    - class imbalance
+    - false-positive and false-negative tradeoffs
+    - attention or sequence-scaling cost
+    - latency and throughput
+    - edge hardware limits
+    - annotation cost
+    - synthetic-real gap
+    - closed-world label assumptions
+    - near-duplicate object appearance
+    - production decision accountability
+summary: 'The useful research object is not ''which detector is best'', but why a
+  YOLO-like or DETR-like detector can report high mAP while failing in the user''s
+  real scene, and how to build a multi-stage vision decision system around that failure.
+  A concrete pressure test is a National Taiwan University-style campus bike lot:
+  detecting bicycles is easy, but identifying which one is the user''s bike is an
+  identity-persistence and ReID problem. YOLO remains valuable for fast perception
+  and edge deployment; ViT/DINOv2/CLIP/ReID-style embeddings may help distinguish
+  appearance signatures; DETR/RF-DETR-style transformer detectors point toward more
+  end-to-end object-set reasoning but introduce optimization, memory, attention, query-matching,
+  export, and deployment risks. Mamba/SSM-style models are a plausible research branch
+  for long video, streaming surveillance, and temporal state modeling, but should
+  be treated as a complementary inductive bias rather than a drop-in replacement for
+  every attention module. The practical hypothesis is a hybrid system: YOLO/DETR for
+  perception candidates, foundation vision or ReID features for identity and scene
+  understanding, tracking and Mamba/SSM-style temporal modules for persistence, location/time
+  priors and optional identity signals such as QR/RFID/Bluetooth/AirTag for disambiguation,
+  deployment-aligned metrics for threshold decisions, and human-in-the-loop review
+  for uncertain matches.'
 first_principle:
-  scarce_resource: "reliable operational decision evidence under distribution shift, not model architecture novelty"
+  scarce_resource: reliable operational decision evidence under distribution shift,
+    not model architecture novelty
   not_the_core:
-    - "getting YOLO to run"
-    - "choosing a model only by leaderboard mAP"
-    - "replacing Transformer with Mamba because linear scaling sounds newer"
-    - "treating object detection as the whole surveillance problem"
-    - "assuming COCO pretraining solves domain adaptation"
-    - "assuming synthetic data replaces real deployment evidence"
-    - "optimizing a detector without latency, threshold, and review-cost constraints"
-    - "expecting visual detection alone to identify one specific bicycle among hundreds of similar bicycles"
-  core_question: "How can a vision system remain useful when the real world violates the detector's labels, training distribution, hardware assumptions, temporal assumptions, and closed-world categories?"
-  canonical_home: "brainstorming-lab owns the research hypothesis, failure taxonomy, system design, and smallest experiment."
-  planning_boundary: "planning-everything-track should only receive a short bridge if this becomes scheduled work: title, ID, score, next test, path, and capacity note."
-  smallest_next_test: "Build a small CCTV/anomaly-style evaluation matrix plus a bicycle-ReID case study comparing YOLO-only detection against YOLO plus DINOv2/CLIP/ReID feature matching, a DETR/RF-DETR-style detector path, and a lightweight temporal-state baseline across day/night, blur, occlusion, small objects, crowded scenes, class-imbalance slices, short event clips, and near-duplicate bicycle identities."
-  kill_condition: "Park the idea if the hybrid representation, temporal, or ReID layer does not produce clearer error diagnosis, better out-of-domain recall, lower review burden, better event understanding, higher top-k identity retrieval, or more deployment-aligned threshold decisions than a well-tuned YOLO baseline plus human search."
+  - getting YOLO to run
+  - choosing a model only by leaderboard mAP
+  - replacing Transformer with Mamba because linear scaling sounds newer
+  - treating object detection as the whole surveillance problem
+  - assuming COCO pretraining solves domain adaptation
+  - assuming synthetic data replaces real deployment evidence
+  - optimizing a detector without latency, threshold, and review-cost constraints
+  - expecting visual detection alone to identify one specific bicycle among hundreds
+    of similar bicycles
+  core_question: How can a vision system remain useful when the real world violates
+    the detector's labels, training distribution, hardware assumptions, temporal assumptions,
+    and closed-world categories?
+  canonical_home: brainstorming-lab owns the research hypothesis, failure taxonomy,
+    system design, and smallest experiment.
+  planning_boundary: 'planning-everything-track should only receive a short bridge
+    if this becomes scheduled work: title, ID, score, next test, path, and capacity
+    note.'
+  smallest_next_test: Build a small CCTV/anomaly-style evaluation matrix plus a bicycle-ReID
+    case study comparing YOLO-only detection against YOLO plus DINOv2/CLIP/ReID feature
+    matching, a DETR/RF-DETR-style detector path, and a lightweight temporal-state
+    baseline across day/night, blur, occlusion, small objects, crowded scenes, class-imbalance
+    slices, short event clips, and near-duplicate bicycle identities.
+  kill_condition: Park the idea if the hybrid representation, temporal, or ReID layer
+    does not produce clearer error diagnosis, better out-of-domain recall, lower review
+    burden, better event understanding, higher top-k identity retrieval, or more deployment-aligned
+    threshold decisions than a well-tuned YOLO baseline plus human search.
 assumptions:
-  - "Most first YOLO failures come from data distribution, annotation quality, evaluation design, and deployment reality rather than the detector architecture alone."
-  - "A detector can show high training and validation scores while failing in production if validation is too similar to the training scene."
-  - "Small objects, occlusion, crowded scenes, and rare classes are recurring failure modes for closed-world detection systems."
-  - "mAP is insufficient when the actual task is security, anomaly detection, industrial inspection, or real-time alerting."
-  - "Deployment metrics must include latency, throughput, memory, power, thermal behavior, false-alarm cost, miss cost, and human review capacity."
-  - "ViT/DINOv2-style self-supervised representations may help when labels are scarce, domains shift, or the task needs anomaly-like normal-pattern reasoning."
-  - "Transformer detector lines such as DETR and RF-DETR are relevant because they move object detection toward learned set prediction and richer global relations, but they still face speed, data, and deployment tradeoffs."
-  - "The user's surveillance, anomaly, cyber, and AI-systems background makes the deeper question decision reliability under uncertainty, not only bounding-box accuracy."
-  - "YOLO should not be discarded; it remains a strong fast-perception module inside a larger decision pipeline."
-  - "A useful system should know when to abstain, escalate, or request review, not only emit boxes and confidences."
-  - "DETR/RF-DETR experiments may fail for reasons that are different from YOLO: optimization instability, attention memory cost, object-query matching, export compatibility, and weaker deployment maturity."
-  - "Mamba/SSM-style architectures may be useful for long sequence and streaming video memory, but they are not automatically better at explicit object relation lookup or small-object localization."
-  - "The likely robust architecture is hybrid: detector for spatial candidates, representation model for semantic robustness, temporal memory for pattern evolution, and a decision layer for uncertainty and review."
-  - "In dense bicycle parking environments, object detection is not enough because the target question is identity persistence: whether the currently observed bicycle is the same physical object as a previously registered bicycle."
-  - "Bicycle ReID will be harder than car or person ReID in some campus scenes because many bikes share color, frame shape, baskets, locks, and parking context."
-  - "The most realistic bicycle-identification system is human-AI hybrid: AI narrows hundreds of detected bicycles to a small ranked candidate set, and a human confirms using distinctive details."
-  - "Pure vision should be fused with priors or identity signals when available: usual parking location, time, track history, QR tag, RFID, Bluetooth, UWB, AirTag-like locator, or a deliberately visible sticker."
+- Most first YOLO failures come from data distribution, annotation quality, evaluation
+  design, and deployment reality rather than the detector architecture alone.
+- A detector can show high training and validation scores while failing in production
+  if validation is too similar to the training scene.
+- Small objects, occlusion, crowded scenes, and rare classes are recurring failure
+  modes for closed-world detection systems.
+- mAP is insufficient when the actual task is security, anomaly detection, industrial
+  inspection, or real-time alerting.
+- Deployment metrics must include latency, throughput, memory, power, thermal behavior,
+  false-alarm cost, miss cost, and human review capacity.
+- ViT/DINOv2-style self-supervised representations may help when labels are scarce,
+  domains shift, or the task needs anomaly-like normal-pattern reasoning.
+- Transformer detector lines such as DETR and RF-DETR are relevant because they move
+  object detection toward learned set prediction and richer global relations, but
+  they still face speed, data, and deployment tradeoffs.
+- The user's surveillance, anomaly, cyber, and AI-systems background makes the deeper
+  question decision reliability under uncertainty, not only bounding-box accuracy.
+- YOLO should not be discarded; it remains a strong fast-perception module inside
+  a larger decision pipeline.
+- A useful system should know when to abstain, escalate, or request review, not only
+  emit boxes and confidences.
+- 'DETR/RF-DETR experiments may fail for reasons that are different from YOLO: optimization
+  instability, attention memory cost, object-query matching, export compatibility,
+  and weaker deployment maturity.'
+- Mamba/SSM-style architectures may be useful for long sequence and streaming video
+  memory, but they are not automatically better at explicit object relation lookup
+  or small-object localization.
+- 'The likely robust architecture is hybrid: detector for spatial candidates, representation
+  model for semantic robustness, temporal memory for pattern evolution, and a decision
+  layer for uncertainty and review.'
+- 'In dense bicycle parking environments, object detection is not enough because the
+  target question is identity persistence: whether the currently observed bicycle
+  is the same physical object as a previously registered bicycle.'
+- Bicycle ReID will be harder than car or person ReID in some campus scenes because
+  many bikes share color, frame shape, baskets, locks, and parking context.
+- 'The most realistic bicycle-identification system is human-AI hybrid: AI narrows
+  hundreds of detected bicycles to a small ranked candidate set, and a human confirms
+  using distinctive details.'
+- 'Pure vision should be fused with priors or identity signals when available: usual
+  parking location, time, track history, QR tag, RFID, Bluetooth, UWB, AirTag-like
+  locator, or a deliberately visible sticker.'
 evidence:
-  - "2026-05-11 user observation: YOLO experiment pain is often data, annotation, experiment design, and deployment reality rather than model startup."
-  - "2026-05-11 user observation: dataset problems include low data volume, narrow angles, similar lighting, similar backgrounds, and validation sets that do not represent real deployment."
-  - "2026-05-11 user observation: production distribution shift includes night, rain, CCTV noise, motion blur, compression artifacts, fixed versus changed cameras, and resolution differences."
-  - "2026-05-11 user observation: bounding-box label inconsistency includes boxes too large or small, head-only versus full-body rules, and inconsistent occlusion standards."
-  - "2026-05-11 user observation: class imbalance makes rare classes such as guns, falling persons, anomalies, medical signs, defects, or security events hard to recall."
-  - "2026-05-11 user observation: small-object detection is difficult because downsampling can erase tiny features and motivates multi-scale fusion, attention, super-resolution, and slicing inference."
-  - "2026-05-11 user observation: occlusion and crowded scenes can cause duplicate detections, missed detections, and collapsed boxes."
-  - "2026-05-11 user observation: deployment thresholds create a precision-recall tradeoff, especially for security systems where false alarms and missed events both have cost."
-  - "2026-05-11 user observation: high mAP can still yield an unusable system if latency, memory, GPU load, edge compatibility, or FPS fail."
-  - "2026-05-11 user observation: full real-time pipeline includes video decoding, resizing, preprocessing, tracking, postprocessing, database writes, and alert sending, not only inference speed."
-  - "2026-05-11 user observation: DINOv2 and related self-supervised representation models may help low-label adaptation, domain robustness, and anomaly reasoning because they learn reusable visual representations rather than only supervised labels."
-  - "2026-05-11 user observation: DINOv2/ViT can be heavier, slower, more data-hungry, and sometimes less spatially precise than optimized CNN detectors."
-  - "2026-05-11 user observation: practical systems may combine YOLO for fast perception with ViT/DINOv2/foundation features for higher-level scene understanding."
-  - "2026-05-11 user observation: DETR reframes detection as object-set prediction and reduces hand-crafted anchors/NMS-style heuristics, while early DETR suffered from slow convergence, weak small-object performance, and deployment speed issues."
-  - "2026-05-11 user observation: RF-DETR can be treated as a practical DETR-family direction aimed at speed, usability, and production-oriented training, but this was not externally verified in this capture."
-  - "2026-05-11 user synthesis: the deeper future direction is scene understanding, object relations, behavior understanding, decision support, world modeling, uncertainty, evidence pipelines, trust, and human-in-the-loop systems."
-  - "2026-05-11 user observation: DETR/RF-DETR experiments may show unstable training, loss not descending, mAP stalling, or results jumping because transformer detector optimization has fewer CNN-like local and anchor priors."
-  - "2026-05-11 user observation: transformer detectors can hit GPU memory limits at high resolution because attention cost grows with token count."
-  - "2026-05-11 user observation: transformer detectors can struggle with tiny objects because ViT patching and global representation may lose fine spatial detail."
-  - "2026-05-11 user observation: DETR-style models can be harder than YOLO to deploy because PyTorch execution may work while ONNX, TensorRT, dynamic shapes, custom attention, or unsupported operators fail."
-  - "2026-05-11 user observation: DETR object queries can become confused in crowded scenes, with multiple queries competing for the same object or some queries never learning useful roles."
-  - "2026-05-11 user observation: RF-DETR remains a single-image detector, so surveillance, anomaly, and behavior tasks still need tracking, temporal modeling, action recognition, or video understanding."
-  - "2026-05-11 user observation: Mamba/SSM architectures are attractive because they target transformer attention scaling and can approach linear sequence complexity."
-  - "2026-05-11 user observation: Mamba may be especially relevant for high-resolution vision, video, long CCTV streams, and temporal anomaly evolution, but replacing DETR attention directly is nontrivial because DETR uses cross-attention, object queries, decoder interaction, and bipartite matching."
-  - "2026-05-11 user synthesis: future surveillance AI may separate perception with YOLO/DETR, temporal memory with Mamba/SSM, reasoning with LLM/VLM, and decision with an agent or human-in-the-loop system."
-  - "2026-05-11 user observation: in real campuses such as National Taiwan University, bicycle density can be high enough that the hard problem is not detecting bicycles but identifying which bicycle is the user's."
-  - "2026-05-11 user observation: YOLO can detect bicycle boxes but does not by itself know bicycle identity; object detection is not identity recognition."
-  - "2026-05-11 user observation: the appropriate technical frame is object ReID, using a bicycle appearance embedding built from details such as frame color, front basket, stickers, seat, bottle holder, lock position, scratches, and reflectors."
-  - "2026-05-11 user observation: a practical bicycle search pipeline would detect all bicycles, extract ViT/DINOv2/CLIP/ReID embeddings, compare against a personal bicycle database with cosine similarity, and return top candidates."
-  - "2026-05-11 user observation: campus bicycles may be visually near-duplicate, so location, time, tracking, distinctive tags, and human confirmation become important signals."
-  - "2026-05-11 user observation: occlusion, partial visibility, rain, night, CCTV noise, blur, and compression can degrade bicycle ReID embeddings."
-  - "2026-05-11 user observation: production-grade identity recovery may require multimodal fusion such as Bluetooth, RFID, UWB, AirTag-like locator, GPS, or camera fusion because direct identity signals can outperform pure appearance matching."
-  - "2026-05-11 user synthesis: bicycle identification is an identity persistence problem, connecting detection, tracking, memory, world models, persistent identity, and embodied AI."
+- '2026-05-11 user observation: YOLO experiment pain is often data, annotation, experiment
+  design, and deployment reality rather than model startup.'
+- '2026-05-11 user observation: dataset problems include low data volume, narrow angles,
+  similar lighting, similar backgrounds, and validation sets that do not represent
+  real deployment.'
+- '2026-05-11 user observation: production distribution shift includes night, rain,
+  CCTV noise, motion blur, compression artifacts, fixed versus changed cameras, and
+  resolution differences.'
+- '2026-05-11 user observation: bounding-box label inconsistency includes boxes too
+  large or small, head-only versus full-body rules, and inconsistent occlusion standards.'
+- '2026-05-11 user observation: class imbalance makes rare classes such as guns, falling
+  persons, anomalies, medical signs, defects, or security events hard to recall.'
+- '2026-05-11 user observation: small-object detection is difficult because downsampling
+  can erase tiny features and motivates multi-scale fusion, attention, super-resolution,
+  and slicing inference.'
+- '2026-05-11 user observation: occlusion and crowded scenes can cause duplicate detections,
+  missed detections, and collapsed boxes.'
+- '2026-05-11 user observation: deployment thresholds create a precision-recall tradeoff,
+  especially for security systems where false alarms and missed events both have cost.'
+- '2026-05-11 user observation: high mAP can still yield an unusable system if latency,
+  memory, GPU load, edge compatibility, or FPS fail.'
+- '2026-05-11 user observation: full real-time pipeline includes video decoding, resizing,
+  preprocessing, tracking, postprocessing, database writes, and alert sending, not
+  only inference speed.'
+- '2026-05-11 user observation: DINOv2 and related self-supervised representation
+  models may help low-label adaptation, domain robustness, and anomaly reasoning because
+  they learn reusable visual representations rather than only supervised labels.'
+- '2026-05-11 user observation: DINOv2/ViT can be heavier, slower, more data-hungry,
+  and sometimes less spatially precise than optimized CNN detectors.'
+- '2026-05-11 user observation: practical systems may combine YOLO for fast perception
+  with ViT/DINOv2/foundation features for higher-level scene understanding.'
+- '2026-05-11 user observation: DETR reframes detection as object-set prediction and
+  reduces hand-crafted anchors/NMS-style heuristics, while early DETR suffered from
+  slow convergence, weak small-object performance, and deployment speed issues.'
+- '2026-05-11 user observation: RF-DETR can be treated as a practical DETR-family
+  direction aimed at speed, usability, and production-oriented training, but this
+  was not externally verified in this capture.'
+- '2026-05-11 user synthesis: the deeper future direction is scene understanding,
+  object relations, behavior understanding, decision support, world modeling, uncertainty,
+  evidence pipelines, trust, and human-in-the-loop systems.'
+- '2026-05-11 user observation: DETR/RF-DETR experiments may show unstable training,
+  loss not descending, mAP stalling, or results jumping because transformer detector
+  optimization has fewer CNN-like local and anchor priors.'
+- '2026-05-11 user observation: transformer detectors can hit GPU memory limits at
+  high resolution because attention cost grows with token count.'
+- '2026-05-11 user observation: transformer detectors can struggle with tiny objects
+  because ViT patching and global representation may lose fine spatial detail.'
+- '2026-05-11 user observation: DETR-style models can be harder than YOLO to deploy
+  because PyTorch execution may work while ONNX, TensorRT, dynamic shapes, custom
+  attention, or unsupported operators fail.'
+- '2026-05-11 user observation: DETR object queries can become confused in crowded
+  scenes, with multiple queries competing for the same object or some queries never
+  learning useful roles.'
+- '2026-05-11 user observation: RF-DETR remains a single-image detector, so surveillance,
+  anomaly, and behavior tasks still need tracking, temporal modeling, action recognition,
+  or video understanding.'
+- '2026-05-11 user observation: Mamba/SSM architectures are attractive because they
+  target transformer attention scaling and can approach linear sequence complexity.'
+- '2026-05-11 user observation: Mamba may be especially relevant for high-resolution
+  vision, video, long CCTV streams, and temporal anomaly evolution, but replacing
+  DETR attention directly is nontrivial because DETR uses cross-attention, object
+  queries, decoder interaction, and bipartite matching.'
+- '2026-05-11 user synthesis: future surveillance AI may separate perception with
+  YOLO/DETR, temporal memory with Mamba/SSM, reasoning with LLM/VLM, and decision
+  with an agent or human-in-the-loop system.'
+- '2026-05-11 user observation: in real campuses such as National Taiwan University,
+  bicycle density can be high enough that the hard problem is not detecting bicycles
+  but identifying which bicycle is the user''s.'
+- '2026-05-11 user observation: YOLO can detect bicycle boxes but does not by itself
+  know bicycle identity; object detection is not identity recognition.'
+- '2026-05-11 user observation: the appropriate technical frame is object ReID, using
+  a bicycle appearance embedding built from details such as frame color, front basket,
+  stickers, seat, bottle holder, lock position, scratches, and reflectors.'
+- '2026-05-11 user observation: a practical bicycle search pipeline would detect all
+  bicycles, extract ViT/DINOv2/CLIP/ReID embeddings, compare against a personal bicycle
+  database with cosine similarity, and return top candidates.'
+- '2026-05-11 user observation: campus bicycles may be visually near-duplicate, so
+  location, time, tracking, distinctive tags, and human confirmation become important
+  signals.'
+- '2026-05-11 user observation: occlusion, partial visibility, rain, night, CCTV noise,
+  blur, and compression can degrade bicycle ReID embeddings.'
+- '2026-05-11 user observation: production-grade identity recovery may require multimodal
+  fusion such as Bluetooth, RFID, UWB, AirTag-like locator, GPS, or camera fusion
+  because direct identity signals can outperform pure appearance matching.'
+- '2026-05-11 user synthesis: bicycle identification is an identity persistence problem,
+  connecting detection, tracking, memory, world models, persistent identity, and embodied
+  AI.'
 baseline:
-  - "Train YOLO on a small custom dataset, report mAP, and deploy without distribution-slice testing."
-  - "Use one validation split that shares camera, lighting, background, and compression conditions with training."
-  - "Treat annotation as a one-time data-prep task instead of measuring inter-annotator consistency and box-policy drift."
-  - "Tune confidence threshold globally without class-specific costs, review capacity, or deployment alert budget."
-  - "Optimize only detector accuracy and ignore end-to-end pipeline FPS, video decoding, tracking, storage, alerting, and edge power constraints."
-  - "Add synthetic data without measuring synthetic-real transfer failure."
-  - "Use COCO-pretrained fine-tuning without checking whether the target domain violates the pretrained feature assumptions."
-  - "Switch from YOLO to a foundation or transformer model because it is newer, without proving it improves the target bottleneck."
-  - "Switch from DETR attention to Mamba/SSM because of linear complexity without testing object localization, relation reasoning, and small-object retention."
-  - "Treat unknown events as impossible because the detector only knows predefined classes."
-  - "Run a bicycle detector over a campus bike lot and assume the correct bicycle can be found from detection boxes alone."
-  - "Use pure visual similarity without recording usual parking area, time window, camera view, occlusion level, or distinctive user-provided bike details."
-  - "Require fully automated bicycle identity recognition even when a top-5 human confirmation workflow would solve the practical problem with lower risk."
+- Train YOLO on a small custom dataset, report mAP, and deploy without distribution-slice
+  testing.
+- Use one validation split that shares camera, lighting, background, and compression
+  conditions with training.
+- Treat annotation as a one-time data-prep task instead of measuring inter-annotator
+  consistency and box-policy drift.
+- Tune confidence threshold globally without class-specific costs, review capacity,
+  or deployment alert budget.
+- Optimize only detector accuracy and ignore end-to-end pipeline FPS, video decoding,
+  tracking, storage, alerting, and edge power constraints.
+- Add synthetic data without measuring synthetic-real transfer failure.
+- Use COCO-pretrained fine-tuning without checking whether the target domain violates
+  the pretrained feature assumptions.
+- Switch from YOLO to a foundation or transformer model because it is newer, without
+  proving it improves the target bottleneck.
+- Switch from DETR attention to Mamba/SSM because of linear complexity without testing
+  object localization, relation reasoning, and small-object retention.
+- Treat unknown events as impossible because the detector only knows predefined classes.
+- Run a bicycle detector over a campus bike lot and assume the correct bicycle can
+  be found from detection boxes alone.
+- Use pure visual similarity without recording usual parking area, time window, camera
+  view, occlusion level, or distinctive user-provided bike details.
+- Require fully automated bicycle identity recognition even when a top-5 human confirmation
+  workflow would solve the practical problem with lower risk.
 metrics:
-  - "mAP by deployment slice: day, night, rain, blur, compression, camera identity, resolution, and background type."
-  - "Rare-class recall and miss rate for high-cost classes."
-  - "False alarms per camera-hour or per operational shift."
-  - "Human review burden per true event found."
-  - "Small-object recall by pixel size bucket."
-  - "Occlusion robustness by visible-area bucket."
-  - "Annotation consistency: box IoU agreement, class agreement, and policy disagreement rate across annotators."
-  - "Calibration: confidence reliability and threshold stability across domains."
-  - "End-to-end latency including decoding, resize, preprocessing, inference, tracking, postprocessing, storage, and alerting."
-  - "Edge-device FPS, memory use, thermal throttling, and power draw."
-  - "Out-of-domain performance drop relative to in-domain validation."
-  - "Unknown or anomaly escalation quality: how often the system abstains, flags uncertainty, or routes to human review."
-  - "Hybrid gain: improvement from DINOv2/ViT/DETR-style features over YOLO-only on error diagnosis, recall, calibration, or review burden."
-  - "DETR training stability: seed variance, convergence time, stalled-loss rate, and query-utilization health."
-  - "GPU and deployment cost: peak VRAM, throughput, export success, TensorRT/ONNX compatibility, dynamic-shape failures, and unsupported operator count."
-  - "Query behavior: duplicate-query rate, inactive-query rate, crowded-scene assignment errors, and missed-object clusters."
-  - "Temporal understanding: event-level recall, false event alarms, track continuity, action-transition detection, and time-to-alert."
-  - "Mamba/SSM candidate value: memory scaling, long-clip latency, temporal drift detection, small-object retention, and explicit object-relation loss versus attention baselines."
-  - "Bicycle ReID retrieval quality: top-1, top-5, and top-10 correct-bike retrieval rate."
-  - "Candidate reduction: number of bicycles reduced from total detections to a human-review shortlist."
-  - "Near-duplicate robustness: accuracy among bikes with similar color, frame type, baskets, and locks."
-  - "Partial ReID robustness: retrieval quality when only front, side, rear, basket, lock, or partial frame is visible."
-  - "Location-prior gain: improvement when usual parking zone, timestamp, and camera identity are included."
-  - "Multimodal identity gain: improvement from QR/RFID/Bluetooth/UWB/AirTag-like identity signals over vision-only matching."
-  - "Human confirmation time: time for a user to confirm the correct bike from top-k ranked candidates."
+- 'mAP by deployment slice: day, night, rain, blur, compression, camera identity,
+  resolution, and background type.'
+- Rare-class recall and miss rate for high-cost classes.
+- False alarms per camera-hour or per operational shift.
+- Human review burden per true event found.
+- Small-object recall by pixel size bucket.
+- Occlusion robustness by visible-area bucket.
+- 'Annotation consistency: box IoU agreement, class agreement, and policy disagreement
+  rate across annotators.'
+- 'Calibration: confidence reliability and threshold stability across domains.'
+- End-to-end latency including decoding, resize, preprocessing, inference, tracking,
+  postprocessing, storage, and alerting.
+- Edge-device FPS, memory use, thermal throttling, and power draw.
+- Out-of-domain performance drop relative to in-domain validation.
+- 'Unknown or anomaly escalation quality: how often the system abstains, flags uncertainty,
+  or routes to human review.'
+- 'Hybrid gain: improvement from DINOv2/ViT/DETR-style features over YOLO-only on
+  error diagnosis, recall, calibration, or review burden.'
+- 'DETR training stability: seed variance, convergence time, stalled-loss rate, and
+  query-utilization health.'
+- 'GPU and deployment cost: peak VRAM, throughput, export success, TensorRT/ONNX compatibility,
+  dynamic-shape failures, and unsupported operator count.'
+- 'Query behavior: duplicate-query rate, inactive-query rate, crowded-scene assignment
+  errors, and missed-object clusters.'
+- 'Temporal understanding: event-level recall, false event alarms, track continuity,
+  action-transition detection, and time-to-alert.'
+- 'Mamba/SSM candidate value: memory scaling, long-clip latency, temporal drift detection,
+  small-object retention, and explicit object-relation loss versus attention baselines.'
+- 'Bicycle ReID retrieval quality: top-1, top-5, and top-10 correct-bike retrieval
+  rate.'
+- 'Candidate reduction: number of bicycles reduced from total detections to a human-review
+  shortlist.'
+- 'Near-duplicate robustness: accuracy among bikes with similar color, frame type,
+  baskets, and locks.'
+- 'Partial ReID robustness: retrieval quality when only front, side, rear, basket,
+  lock, or partial frame is visible.'
+- 'Location-prior gain: improvement when usual parking zone, timestamp, and camera
+  identity are included.'
+- 'Multimodal identity gain: improvement from QR/RFID/Bluetooth/UWB/AirTag-like identity
+  signals over vision-only matching.'
+- 'Human confirmation time: time for a user to confirm the correct bike from top-k
+  ranked candidates.'
 insights:
-  - "The detector is only one module; the actual object is a deployment decision pipeline."
-  - "YOLO's strength is fast, mature perception; its weakness is reliance on labeled closed-world categories and deployment-matched data."
-  - "DINOv2-style representation learning is attractive when the system needs robust visual similarity, normal-pattern modeling, or low-label adaptation."
-  - "DETR-style models are strategically important because they move detection toward learned global object relations, but practical deployment still decides usefulness."
-  - "The key research move is to make failure visible: which slice failed, why it failed, whether it is data, label, domain, threshold, pipeline, or hardware."
-  - "Security and anomaly detection need decision reliability under uncertainty more than perfect object naming."
-  - "A hybrid system should separate fast detection, representation review, temporal/context reasoning, threshold policy, and human escalation."
-  - "The future-facing question is how to transform object boxes into trustworthy scene-level evidence."
-  - "DETR changes the failure mode: the hard parts shift toward representation, optimization, query assignment, memory, and deployment tooling."
-  - "Mamba/SSM should be evaluated as an inductive-bias choice for streaming and long-horizon state, not as a universal transformer replacement."
-  - "Detection is the perception layer; surveillance and anomaly research need temporal state, uncertainty, evidence preservation, and accountable decisions."
-  - "The NTU bike-lot case makes the difference between detection and identity concrete: detecting every bicycle is useful only if the system can preserve or recover which physical bicycle is which."
-  - "Bicycle ReID turns the system from object detection into persistent object identity under occlusion, viewpoint shift, and near-duplicate appearance."
-  - "The practical target should be top-k search assistance, not perfect automatic identity recognition."
-  - "A cheap physical identity signal can beat a sophisticated vision model when many objects look nearly identical."
+- The detector is only one module; the actual object is a deployment decision pipeline.
+- YOLO's strength is fast, mature perception; its weakness is reliance on labeled
+  closed-world categories and deployment-matched data.
+- DINOv2-style representation learning is attractive when the system needs robust
+  visual similarity, normal-pattern modeling, or low-label adaptation.
+- DETR-style models are strategically important because they move detection toward
+  learned global object relations, but practical deployment still decides usefulness.
+- 'The key research move is to make failure visible: which slice failed, why it failed,
+  whether it is data, label, domain, threshold, pipeline, or hardware.'
+- Security and anomaly detection need decision reliability under uncertainty more
+  than perfect object naming.
+- A hybrid system should separate fast detection, representation review, temporal/context
+  reasoning, threshold policy, and human escalation.
+- The future-facing question is how to transform object boxes into trustworthy scene-level
+  evidence.
+- 'DETR changes the failure mode: the hard parts shift toward representation, optimization,
+  query assignment, memory, and deployment tooling.'
+- Mamba/SSM should be evaluated as an inductive-bias choice for streaming and long-horizon
+  state, not as a universal transformer replacement.
+- Detection is the perception layer; surveillance and anomaly research need temporal
+  state, uncertainty, evidence preservation, and accountable decisions.
+- 'The NTU bike-lot case makes the difference between detection and identity concrete:
+  detecting every bicycle is useful only if the system can preserve or recover which
+  physical bicycle is which.'
+- Bicycle ReID turns the system from object detection into persistent object identity
+  under occlusion, viewpoint shift, and near-duplicate appearance.
+- The practical target should be top-k search assistance, not perfect automatic identity
+  recognition.
+- A cheap physical identity signal can beat a sophisticated vision model when many
+  objects look nearly identical.
 connections:
-  - idea_000004
-  - idea_000007
-  - idea_000008
-  - idea_000019
+- idea_000004
+- idea_000007
+- idea_000008
+- idea_000019
+- idea_000028
 role: idea
 value:
   impact: high
   feasibility: medium
 system_sketch:
   candidate_pipeline:
-    - "Video ingestion: decode, sample, resize, and preserve deployment metadata."
-    - "Fast perception: YOLO or similar detector creates object candidates and coarse alerts."
-    - "Representation review: DINOv2/ViT features compare scene regions against normal patterns, hard negatives, and target-domain examples."
-    - "Transformer candidate path: DETR/RF-DETR-style detector is tested as an alternate or second-stage detector where global relations matter."
-    - "Temporal memory path: Mamba/SSM, tracker, temporal transformer, or action-recognition baseline estimates behavior, persistence, and context shifts across clips."
-    - "Identity path: ReID, DINOv2/CLIP embeddings, location/time priors, and optional physical identity tags rank candidate identities for human confirmation."
-    - "Decision layer: thresholds, abstention, escalation, and human review are tuned by operational cost."
-    - "Evidence ledger: every alert stores frame slice, model outputs, confidence, feature similarity, threshold policy, latency, and review outcome."
+  - 'Video ingestion: decode, sample, resize, and preserve deployment metadata.'
+  - 'Fast perception: YOLO or similar detector creates object candidates and coarse
+    alerts.'
+  - 'Representation review: DINOv2/ViT features compare scene regions against normal
+    patterns, hard negatives, and target-domain examples.'
+  - 'Transformer candidate path: DETR/RF-DETR-style detector is tested as an alternate
+    or second-stage detector where global relations matter.'
+  - 'Temporal memory path: Mamba/SSM, tracker, temporal transformer, or action-recognition
+    baseline estimates behavior, persistence, and context shifts across clips.'
+  - 'Identity path: ReID, DINOv2/CLIP embeddings, location/time priors, and optional
+    physical identity tags rank candidate identities for human confirmation.'
+  - 'Decision layer: thresholds, abstention, escalation, and human review are tuned
+    by operational cost.'
+  - 'Evidence ledger: every alert stores frame slice, model outputs, confidence, feature
+    similarity, threshold policy, latency, and review outcome.'
   expected_failure_taxonomy:
     data:
-      - "too few examples"
-      - "narrow capture conditions"
-      - "deployment distribution shift"
-      - "synthetic-real gap"
+    - too few examples
+    - narrow capture conditions
+    - deployment distribution shift
+    - synthetic-real gap
     labels:
-      - "inconsistent box policy"
-      - "class ambiguity"
-      - "occlusion policy drift"
-      - "rare-class underlabeling"
+    - inconsistent box policy
+    - class ambiguity
+    - occlusion policy drift
+    - rare-class underlabeling
     model:
-      - "small-object feature loss"
-      - "closed-world category failure"
-      - "domain-inappropriate pretraining"
-      - "confidence miscalibration"
-      - "DETR optimization instability"
-      - "object-query collapse or duplication"
-      - "attention collapse to background or a single region"
-      - "Mamba/SSM state smoothing that erases tiny events"
+    - small-object feature loss
+    - closed-world category failure
+    - domain-inappropriate pretraining
+    - confidence miscalibration
+    - DETR optimization instability
+    - object-query collapse or duplication
+    - attention collapse to background or a single region
+    - Mamba/SSM state smoothing that erases tiny events
     system:
-      - "pipeline latency"
-      - "edge memory or thermal limit"
-      - "ONNX or TensorRT export failure"
-      - "unsupported custom attention or dynamic-shape operators"
-      - "threshold-review mismatch"
-      - "alert fatigue"
-      - "missing evidence trail"
+    - pipeline latency
+    - edge memory or thermal limit
+    - ONNX or TensorRT export failure
+    - unsupported custom attention or dynamic-shape operators
+    - threshold-review mismatch
+    - alert fatigue
+    - missing evidence trail
     temporal:
-      - "single-frame detection cannot distinguish event evolution"
-      - "track fragmentation"
-      - "action transition missed"
-      - "long-stream context lost"
+    - single-frame detection cannot distinguish event evolution
+    - track fragmentation
+    - action transition missed
+    - long-stream context lost
     identity:
-      - "object detected but identity unknown"
-      - "near-duplicate bicycles share the same visual features"
-      - "partial view hides distinctive stickers, locks, or scratches"
-      - "appearance changes after accessories move or lighting changes"
-      - "identity confidence too low for automatic decision"
+    - object detected but identity unknown
+    - near-duplicate bicycles share the same visual features
+    - partial view hides distinctive stickers, locks, or scratches
+    - appearance changes after accessories move or lighting changes
+    - identity confidence too low for automatic decision
   architecture_hypotheses:
-    - name: "YOLO-first production baseline"
-      role: "fast real-time perception and deployment anchor"
-      risk: "closed-world category failure and weak scene understanding"
-    - name: "DETR/RF-DETR candidate detector"
-      role: "object-set prediction and global relation candidate path"
-      risk: "training instability, GPU memory, small-object weakness, query matching, and deployment export issues"
-    - name: "DINOv2/ViT representation review"
-      role: "semantic feature review, hard-negative filtering, domain-shift diagnosis, and anomaly scoring"
-      risk: "latency, spatial precision, and hardware cost"
-    - name: "Mamba/SSM temporal memory"
-      role: "long-video state, streaming anomaly evolution, and low-latency temporal pattern tracking"
-      risk: "2D spatial encoding, object-boundary precision, small-object retention, and weaker explicit relation lookup"
-    - name: "Bicycle ReID and identity-prior layer"
-      role: "recover persistent identity for one target bicycle among many similar bicycles using appearance embedding, location/time priors, track history, and optional physical tags"
-      risk: "near-duplicate bikes, occlusion, lighting change, privacy constraints, and false confidence from weak visual matches"
-    - name: "Human decision layer"
-      role: "uncertainty-aware escalation, alert review, evidence audit, and threshold governance"
-      risk: "review burden, alert fatigue, and unclear accountability"
+  - name: YOLO-first production baseline
+    role: fast real-time perception and deployment anchor
+    risk: closed-world category failure and weak scene understanding
+  - name: DETR/RF-DETR candidate detector
+    role: object-set prediction and global relation candidate path
+    risk: training instability, GPU memory, small-object weakness, query matching,
+      and deployment export issues
+  - name: DINOv2/ViT representation review
+    role: semantic feature review, hard-negative filtering, domain-shift diagnosis,
+      and anomaly scoring
+    risk: latency, spatial precision, and hardware cost
+  - name: Mamba/SSM temporal memory
+    role: long-video state, streaming anomaly evolution, and low-latency temporal
+      pattern tracking
+    risk: 2D spatial encoding, object-boundary precision, small-object retention,
+      and weaker explicit relation lookup
+  - name: Bicycle ReID and identity-prior layer
+    role: recover persistent identity for one target bicycle among many similar bicycles
+      using appearance embedding, location/time priors, track history, and optional
+      physical tags
+    risk: near-duplicate bikes, occlusion, lighting change, privacy constraints, and
+      false confidence from weak visual matches
+  - name: Human decision layer
+    role: uncertainty-aware escalation, alert review, evidence audit, and threshold
+      governance
+    risk: review burden, alert fatigue, and unclear accountability
 case_studies:
   ntu_bicycle_reid:
-    problem: "In a dense National Taiwan University-style bicycle parking environment, the system must find the user's bicycle among hundreds of detected bicycles."
+    problem: In a dense National Taiwan University-style bicycle parking environment,
+      the system must find the user's bicycle among hundreds of detected bicycles.
     distinction:
-      detection_question: "Where are the bicycles?"
-      identity_question: "Which detected bicycle is the same physical object as the user's registered bicycle?"
+      detection_question: Where are the bicycles?
+      identity_question: Which detected bicycle is the same physical object as the
+        user's registered bicycle?
     proposed_pipeline:
-      - "Register the user's bicycle with multiple clean photos from front, side, rear, basket/handlebar, seat, lock, sticker, and any distinctive marks."
-      - "Detect all bicycles in the current scene with YOLO, RF-DETR, RT-DETR, or another detector."
-      - "Crop detected bicycle candidates and extract appearance embeddings with DINOv2, CLIP, ViT, or a bicycle/vehicle ReID network."
-      - "Rank candidates with cosine similarity against the registered bicycle gallery."
-      - "Fuse location and time priors: usual parking zone, camera identity, last seen timestamp, and expected movement path."
-      - "Use tracking when the bike is observed entering or leaving the area."
-      - "Optionally add physical identity signals: QR tag, RFID, Bluetooth, UWB, AirTag-like locator, sticker, or high-contrast marker."
-      - "Return a top-k shortlist for human confirmation rather than an unqualified automatic identity claim."
+    - Register the user's bicycle with multiple clean photos from front, side, rear,
+      basket/handlebar, seat, lock, sticker, and any distinctive marks.
+    - Detect all bicycles in the current scene with YOLO, RF-DETR, RT-DETR, or another
+      detector.
+    - Crop detected bicycle candidates and extract appearance embeddings with DINOv2,
+      CLIP, ViT, or a bicycle/vehicle ReID network.
+    - Rank candidates with cosine similarity against the registered bicycle gallery.
+    - 'Fuse location and time priors: usual parking zone, camera identity, last seen
+      timestamp, and expected movement path.'
+    - Use tracking when the bike is observed entering or leaving the area.
+    - 'Optionally add physical identity signals: QR tag, RFID, Bluetooth, UWB, AirTag-like
+      locator, sticker, or high-contrast marker.'
+    - Return a top-k shortlist for human confirmation rather than an unqualified automatic
+      identity claim.
     likely_hard_cases:
-      - "many black commuter bikes with baskets"
-      - "same-brand or same-model Giant/Merida-style bikes"
-      - "U-bike-like near-duplicate designs"
-      - "occluded bikes parked in dense rows"
-      - "night, rain, motion blur, CCTV noise, and compression artifacts"
-      - "partial views where only basket, wheel, or handlebar is visible"
-      - "accessories moved or removed after registration"
+    - many black commuter bikes with baskets
+    - same-brand or same-model Giant/Merida-style bikes
+    - U-bike-like near-duplicate designs
+    - occluded bikes parked in dense rows
+    - night, rain, motion blur, CCTV noise, and compression artifacts
+    - partial views where only basket, wheel, or handlebar is visible
+    - accessories moved or removed after registration
     privacy_boundary:
-      - "Prefer user-owned bicycle registration and local inference."
-      - "Avoid identifying unrelated people."
-      - "Store only bicycle crops, embeddings, location priors, and human-confirmed outcomes needed for the user's search task."
-      - "Do not turn the case study into generalized campus surveillance without explicit governance."
+    - Prefer user-owned bicycle registration and local inference.
+    - Avoid identifying unrelated people.
+    - Store only bicycle crops, embeddings, location priors, and human-confirmed outcomes
+      needed for the user's search task.
+    - Do not turn the case study into generalized campus surveillance without explicit
+      governance.
     smallest_test:
-      - "Create a small personal bicycle gallery with 8 to 12 photos of one bicycle."
-      - "Collect or simulate 50 to 100 candidate bicycle crops from a dense parking scene."
-      - "Measure whether DINOv2/CLIP/ReID embeddings can place the correct bicycle in top-5."
-      - "Repeat with partial crops and similar-looking negative bicycles."
-      - "Add a location prior and compare top-k improvement."
+    - Create a small personal bicycle gallery with 8 to 12 photos of one bicycle.
+    - Collect or simulate 50 to 100 candidate bicycle crops from a dense parking scene.
+    - Measure whether DINOv2/CLIP/ReID embeddings can place the correct bicycle in
+      top-5.
+    - Repeat with partial crops and similar-looking negative bicycles.
+    - Add a location prior and compare top-k improvement.
 maturity:
   problem_clarity: 15
   problem_clarity_score: 15/15
@@ -305,31 +499,53 @@ maturity:
 maturity_score: 89/100
 maturity_level: execution_ready
 next_steps:
-  - "Create a one-page failure taxonomy table for YOLO experiments: data, label, model, evaluation, deployment, and decision-policy failures."
-  - "Extend the table with DETR/RF-DETR-specific failures: unstable optimization, GPU memory, small objects, query matching, crowded scenes, export compatibility, and missing temporal understanding."
-  - "Add a separate Mamba/SSM hypothesis row that states what would be tested: long-video memory, streaming latency, event evolution, and whether compressed state loses small events."
-  - "Define a minimal target scenario: CCTV/anomaly/security, industrial defect, or another single domain before collecting benchmarks."
-  - "Select one YOLO baseline, one DETR/RF-DETR-style detector path, one representation-review baseline, and one temporal baseline before adding more models."
-  - "Build an evaluation matrix with at least seven stress slices: small object, occlusion, night or low light, compression or blur, rare class, crowded scene, and short event clip."
-  - "Measure mAP plus deployment metrics: recall by class, false alarms per hour, latency, edge FPS, memory, and review burden."
-  - "For DETR/RF-DETR, record convergence stability, seed variance, query utilization, attention failure cases, export failures, and peak VRAM."
-  - "For Mamba/SSM, record sequence length scaling, long-clip latency, temporal drift detection, and whether tiny or brief events vanish from the state."
-  - "Add calibration and abstention analysis: identify when the system should escalate instead of making a confident wrong decision."
-  - "Test whether DINOv2/ViT features improve error explanation, domain-shift robustness, anomaly scoring, or hard-negative filtering."
-  - "Keep Mamba/SSM as a temporal-memory branch unless a specific detector architecture requires replacing attention inside the detector."
-  - "Write a small research brief connecting this idea to surveillance anomaly detection and trustworthy decision pipelines."
+- 'Create a one-page failure taxonomy table for YOLO experiments: data, label, model,
+  evaluation, deployment, and decision-policy failures.'
+- 'Extend the table with DETR/RF-DETR-specific failures: unstable optimization, GPU
+  memory, small objects, query matching, crowded scenes, export compatibility, and
+  missing temporal understanding.'
+- 'Add a separate Mamba/SSM hypothesis row that states what would be tested: long-video
+  memory, streaming latency, event evolution, and whether compressed state loses small
+  events.'
+- 'Define a minimal target scenario: CCTV/anomaly/security, industrial defect, or
+  another single domain before collecting benchmarks.'
+- Select one YOLO baseline, one DETR/RF-DETR-style detector path, one representation-review
+  baseline, and one temporal baseline before adding more models.
+- 'Build an evaluation matrix with at least seven stress slices: small object, occlusion,
+  night or low light, compression or blur, rare class, crowded scene, and short event
+  clip.'
+- 'Measure mAP plus deployment metrics: recall by class, false alarms per hour, latency,
+  edge FPS, memory, and review burden.'
+- For DETR/RF-DETR, record convergence stability, seed variance, query utilization,
+  attention failure cases, export failures, and peak VRAM.
+- For Mamba/SSM, record sequence length scaling, long-clip latency, temporal drift
+  detection, and whether tiny or brief events vanish from the state.
+- 'Add calibration and abstention analysis: identify when the system should escalate
+  instead of making a confident wrong decision.'
+- Test whether DINOv2/ViT features improve error explanation, domain-shift robustness,
+  anomaly scoring, or hard-negative filtering.
+- Keep Mamba/SSM as a temporal-memory branch unless a specific detector architecture
+  requires replacing attention inside the detector.
+- Write a small research brief connecting this idea to surveillance anomaly detection
+  and trustworthy decision pipelines.
 source:
-  - conversation
+- conversation
 external_sources_checked: []
 evidence_gaps:
-  - "No external source verification was performed during initial capture."
-  - "Need current RF-DETR primary documentation or paper/source check before making strong claims about RF-DETR capabilities."
-  - "Need primary-source verification for current Vision Mamba, VMamba, MambaVision, VideoMamba, and related SSM vision claims before treating them as validated options."
-  - "Need concrete target domain and dataset before scoring feasibility higher."
-  - "Need actual YOLO baseline run and deployment-slice evaluation rather than conceptual failure taxonomy only."
-  - "Need actual DETR/RF-DETR run logs before claiming training instability or deployment friction for the target environment."
-  - "Need benchmark of DINOv2 feature extraction cost on the intended hardware."
-  - "Need benchmark of Mamba/SSM temporal modeling cost and accuracy on the intended clip length and hardware."
-  - "Need definition of human review budget and false-alarm tolerance for the chosen application."
-maturity_action: "generate experiment plan"
+- No external source verification was performed during initial capture.
+- Need current RF-DETR primary documentation or paper/source check before making strong
+  claims about RF-DETR capabilities.
+- Need primary-source verification for current Vision Mamba, VMamba, MambaVision,
+  VideoMamba, and related SSM vision claims before treating them as validated options.
+- Need concrete target domain and dataset before scoring feasibility higher.
+- Need actual YOLO baseline run and deployment-slice evaluation rather than conceptual
+  failure taxonomy only.
+- Need actual DETR/RF-DETR run logs before claiming training instability or deployment
+  friction for the target environment.
+- Need benchmark of DINOv2 feature extraction cost on the intended hardware.
+- Need benchmark of Mamba/SSM temporal modeling cost and accuracy on the intended
+  clip length and hardware.
+- Need definition of human review budget and false-alarm tolerance for the chosen
+  application.
+maturity_action: generate experiment plan
 normalization_status: validated
