@@ -3,6 +3,7 @@
 | ID | Title | Maturity | Level | Status | Next Step | Path |
 | --- | --- | ---: | --- | --- | --- | --- |
 | `idea_000008` | Learned conductor for medical AI research workflows | 97/100 | `execution_ready` | `execution_ready` | After W20 fixed gates, define one private bounded beta test plan that compares Fugu-style orchestration against a fixed pipeline under cost, latency, verification, abstention, checkpoint quality, and valid proof-artifact constraints. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
+| `idea_000033` | Product-constrained PhD engineering research OS | 96/100 | `execution_ready` | `execution_ready` | Write the first Product-to-Research Extraction Card for the next real product feature, bug, or demo pressure event. | `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml` |
 | `idea_000018` | AI Value Capture And Agent Security Career Positioning | 95/100 | `execution_ready` | `execution_ready` | Turn the 2026-05-18 learning path into a one-page AI Systems Engineering for Real-world Deployment roadmap with security included as a core layer. | `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml` |
 | `idea_000020` | GPU-first terminal as AI engineering workbench | 95/100 | `execution_ready` | `execution_ready` | Create a workstation log entry for the 2026-05-12 Ghostty + zsh + Starship + Codex CLI setup, including the Codex PATH fix and shell-initialization lesson. | `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml` |
 | `idea_000016` | LLM Literature Mental State Understanding | 94/100 | `execution_ready` | `execution_ready` | Draft HanmeiBench v0.1 with 60 candidate stimuli, source route, license status, direct alternative, why-not-direct hypothesis, and negative-control pairing. | `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml` |
@@ -69,3 +70,4 @@
 - idea_000030 - Quaternion spatial rotation representation for embodied AI systems - 80/100 - research_candidate
 - idea_000031 - AI-assisted ancient language decipherment and script archaeology - 88/100 - execution_ready
 - idea_000032 - MITRE ATLAS based AI system assurance for triage prototypes - 92/100 - execution_ready
+- idea_000033 - Product-constrained PhD engineering research OS - 96/100 - execution_ready
