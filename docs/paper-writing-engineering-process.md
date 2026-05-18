@@ -582,6 +582,24 @@ Appendix 放：
 - implementation detail
 - defensive boundary catalog
 
+## Submission Engineering / PaperOps
+
+Manuscript repo 的 `npm run ready` 應該被視為本機 release gate，不是投稿動作。
+
+`npm` 在這裡的角色是讀取 `package.json` 裡的 `scripts`，把 LaTeX build、claim check、voice check、portal packet check、artifact check、whitespace check 等流程串成可重跑的本機檢查。
+
+`portal` 指期刊投稿網站；`portal:check` 或 `portal:dryrun` 只應檢查本機為投稿網站準備的 mapping、runbook、declaration、file list、deviation log，不應登入外部系統或送出投稿。
+
+一個 PaperOps-ready repo 應該至少保護：
+
+- submission state：`draft -> internal-review -> pre-submission -> portal-ready -> submitted -> revision -> camera-ready`
+- artifact manifest：記錄 manuscript、title page、figures、supplementary、cover letter、declarations 的 hash、大小、來源命令與時間
+- portal dry run：檢查 title、abstract、keywords、author metadata、funding、COI、AI-use declaration、PDF size、supplementary list
+- reviewer redteam：找 overclaim、unsupported causal language、missing baseline、ethical ambiguity、synthetic/public boundary confusion
+- deviation log：記錄每個刻意例外與不一致為什麼被接受
+
+Boundary：本機 automation 可以準備、檢查、稽核 submission packet；最後登入 portal、預覽、按 submit 必須是人類明確確認。
+
 ## Reusable Prompt For Future Drafting
 
 ```text

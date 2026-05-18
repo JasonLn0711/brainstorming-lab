@@ -390,6 +390,7 @@ connections:
 - idea_000015
 - idea_000017
 - idea_000019
+- idea_000029
 role: idea
 value:
   impact: medium

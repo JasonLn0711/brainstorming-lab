@@ -1,0 +1,252 @@
+id: idea_000029
+title: PaperOps scientific submission release engineering
+created_at: '2026-05-18'
+type: hypothesis
+tags:
+- paperops
+- research-ci
+- scientific-release-engineering
+- submission-engineering
+- release-engineering
+- npm
+- package-json
+- automation
+- artifact-validation
+- portal-check
+- submission-portal
+- reviewer-simulation
+- reproducibility
+- auditability
+- paper-writing
+- devops-for-research
+- state-machine
+status: execution_ready
+problem_statement:
+  raw: Given a manuscript or submission repo with LaTeX files, versioned docs, portal
+    packets, declarations, author checklists, and deadline pressure, design local
+    automation gates so final submission artifacts are reproducible, auditable, submission-ready,
+    maintainable, and handoff-ready without confusing local checks with actual journal
+    submission.
+  normalized: Given a manuscript or submission repo, optimize scientific release integrity
+    and submission readiness through local automation, state tracking, artifact validation,
+    portal dry runs, and reviewer-risk checks under constraints of coauthor edits,
+    fatigue, version drift, portal field mismatch, declaration errors, and human-owned
+    final submission.
+  structure:
+    given: a manuscript or submission repo with files, checklists, scripts, and portal-facing
+      documents
+    optimize: scientific release integrity and submission readiness
+    constraints:
+    - coauthor edits
+    - deadline fatigue
+    - version drift
+    - portal field mismatch
+    - artifact naming and checksum mismatch
+    - author, funding, COI, and AI-use declaration errors
+    - human-owned final submission
+summary: PaperOps treats a research submission like a careful release process. `npm
+  run ready` is a local automation gate that reads `package.json` scripts and checks
+  version, voice, LaTeX build, portal packet, checklist, whitespace, and artifact
+  consistency; it does not submit to the journal. The deeper opportunity is a reproducible
+  submission engineering layer with a submission state machine, artifact hash lock,
+  portal dry run, reviewer simulation, deviation log, and explicit human submit boundary.
+source_note_zh: npm run ready 的價值不是按一個漂亮指令，而是把人的記憶、注意力與投稿最後一天的高風險步驟，轉成 repo 可以重跑、可審計、可交接的本機
+  gate。
+human_note: ideas/2026-05-18-paperops-scientific-submission-release-engineering.md
+assumptions:
+- '`npm` is useful here as a project automation runner, not because the manuscript
+  itself must be a JavaScript application.'
+- '`package.json` can act as a repo-local command map: it defines repeatable scripts
+  such as `ready`, `portal:check`, `latex:build`, `artifact:freeze`, and `reviewer:redteam`.'
+- '`npm run ready` should be understood as a local health check, not a journal submission
+  action.'
+- '`portal` means the external journal submission system; `portal:check` only checks
+  local portal-facing files such as mapping, runbook, checklist, and deviation log.'
+- 'The highest-risk failure near submission may be process drift rather than scientific
+  content: wrong file, mismatched title, missing declaration, anonymous metadata leak,
+  or inconsistent abstract.'
+- Automation should reduce cognitive load but preserve a final human-owned submission
+  decision.
+- PaperOps is valuable because AI-era papers increasingly include code, model cards,
+  supplementary files, governance declarations, reproducibility artifacts, and reviewer-facing
+  evidence packets.
+evidence:
+- '2026-05-18 user explanation: `npm run` is local repo automation based on `package.json`
+  scripts, and `npm run ready` runs the repo''s complete local checks.'
+- '2026-05-18 user explanation: `portal` means the journal submission website, while
+  `portal:check` only checks local preparation files and does not log in or submit.'
+- 'Observed failure modes from manuscript work: version mismatch, cover-letter/abstract
+  inconsistency, title-page metadata problems, supplementary-file omissions, checklist
+  gaps, and last-day panic submission.'
+- Existing brainstorming-lab paper-writing process already separates claim, evidence,
+  method, appendix, reviewer questions, and contribution-to-evidence mapping.
+- Existing journal-intelligence idea already frames reviewer-risk prediction and venue-fit
+  evidence as more useful than fake acceptance probability.
+baseline:
+- Manual submission checklist maintained only in memory or scattered notes.
+- Treating GitHub, local repo readiness, and actual portal submission as one vague
+  action.
+- Final-day panic submit after coauthor changes without a full rebuilt artifact packet.
+- No frozen manifest or hash record for the files actually submitted.
+- Reviewer-risk checks done only informally after the paper is already packaged.
+- Portal fields copied manually without a local mapping between manuscript text, author
+  metadata, declarations, and upload files.
+metrics:
+- '`npm run ready` passes after all manuscript, packet, checklist, and whitespace
+  gates complete.'
+- 'Submission state is explicit: draft, internal-review, pre-submission, portal-ready,
+  submitted, revision, or camera-ready.'
+- Artifact manifest records hashes, filenames, sizes, source paths, build command,
+  and timestamp for the submission packet.
+- Portal dry run verifies title length, abstract word count, keyword count, author
+  fields, funding/COI/AI-use declarations, file naming, PDF size, and supplementary
+  list.
+- Reviewer simulation produces concrete unsupported-claim, overclaim, missing-baseline,
+  ethical-boundary, or venue-fit issues.
+- Deviation log records every intentional mismatch or exception before final submit.
+- No local script can perform external portal submission without an explicit human
+  action outside the repo.
+insights:
+- '`npm` is best explained as the Node.js ecosystem''s package manager and project
+  command runner, similar in role to `pip` for Python packages and `apt` for Ubuntu
+  packages, but with first-class repo-local scripts.'
+- '`package.json` is the project identity card and command map: it says what the project
+  needs and what commands can be run in a repeatable way.'
+- '`npm run ready` is a release gate for research work: it shifts memory and attention
+  from the author into a repeatable system.'
+- PaperOps reframes manuscript submission as scientific release engineering rather
+  than only writing.
+- 'The important boundary is semantic: local readiness is not external submission.'
+- The hidden value is reducing coordination failure, cognitive load, and version ambiguity
+  under deadline pressure.
+- Reviewer simulation should not promise acceptance; it should expose claim-risk and
+  evidence gaps before upload.
+- 'A good PaperOps pipeline is governance-aware: it helps with reproducibility, auditability,
+  handoff, and declaration accuracy.'
+connections:
+- idea_000012
+- idea_000014
+- idea_000019
+- idea_000020
+role: idea
+value:
+  impact: high
+  feasibility: high
+first_principle:
+  scarce_resource: author attention, submission-cycle trust, reviewer trust, and final-packet
+    integrity
+  core_object: a reproducible and auditable submission release path
+  not_the_core:
+  - making papers look technically sophisticated
+  - automating actual portal submission
+  - using npm because the manuscript is a JavaScript app
+  - adding gates that do not block real failure modes
+  - acceptance-probability theater
+  smallest_useful_unit: one repo-local `ready` gate that validates build, packet,
+    declarations, portal mapping, and artifact manifest for one target submission
+  decision_boundary: Use PaperOps to prepare and audit the submission packet; keep
+    final portal submit as an explicit human action.
+npm_concepts_for_students:
+  npm: Node.js ecosystem package manager and command runner.
+  package_json: 'Project identity card plus automation map: dependencies, scripts,
+    version, and project metadata.'
+  npm_install: Installs dependencies declared by the project.
+  npm_run: Runs a named script from `package.json`.
+  npm_run_ready: Runs the repo's total local readiness gate; it does not submit anything
+    externally.
+  portal_check: Checks local portal-facing documents and mappings; it does not log
+    in to a journal system.
+real_world_instances:
+  frontend_site: '`npm install` installs React/Vite dependencies; `npm run dev` starts
+    a local development server.'
+  backend_api: '`npm install express` adds an API framework; `npm run start` launches
+    the service.'
+  test_system: '`npm run test` runs Jest, Vitest, or another test runner to catch
+    regressions.'
+  formatting_gate: '`npm run format` may run Prettier so a team shares one code style.'
+  manuscript_repo: '`npm run ready` can build LaTeX, check claims, validate portal
+    packet files, and confirm the submission artifact set.'
+paperops_modules:
+  submission_state_machine:
+    states:
+    - draft
+    - internal-review
+    - pre-submission
+    - portal-ready
+    - submitted
+    - revision
+    - camera-ready
+    purpose: Make it impossible to confuse drafting, local readiness, portal readiness,
+      and completed submission.
+  artifact_hash_lock:
+    command_candidate: npm run artifact:freeze
+    purpose: Generate a manifest with hashes for the exact manuscript, title page,
+      figures, supplementary files, cover letter, declarations, and rebuttal artifacts.
+  portal_dry_run:
+    command_candidate: npm run portal:dryrun
+    purpose: Check portal-facing fields and file constraints before the human enters
+      the external journal system.
+  reviewer_simulation:
+    command_candidate: npm run reviewer:redteam
+    purpose: Find overclaim, unsupported causal language, vague novelty, missing baseline,
+      ethical ambiguity, synthetic/public boundary confusion, and reviewer workload
+      risks.
+  deviation_log:
+    purpose: Record intentional exceptions and mismatches so future agents or coauthors
+      know what was accepted and why.
+pressure_test:
+  setting: Final 24 hours before journal submission after a coauthor edits the title,
+    abstract, figure exports, and AI-use declaration.
+  expected_failure_mode: The repo appears clean, but portal fields, uploaded files,
+    and manuscript metadata drift apart; the author may submit the wrong PDF or miss
+    a declaration.
+  smallest_observable_test: Create a local fixture submission packet, run `npm run
+    ready`, run a prototype artifact manifest check, and manually compare the dry-run
+    portal mapping against the packet.
+  decision_metric: Pass if the pipeline catches mismatched title/abstract, missing
+    declaration, PDF rebuild drift, and missing supplementary file without requiring
+    the author to remember those checks manually.
+safety_boundary:
+  allowed:
+  - local validation
+  - artifact checks
+  - portal mapping
+  - dry-run checklist
+  - reviewer-risk simulation
+  - manifest and deviation logs
+  not_allowed:
+  - automatic external journal submission
+  - credential handling
+  - bypassing author confirmation
+  - pretending reviewer simulation predicts acceptance
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 12
+  testability_score: 12/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 88/100
+maturity_level: execution_ready
+next_steps:
+- Prototype a small `paperops-ready.md` or `submission-state.yaml` for one manuscript
+  repo with states, required artifacts, and blocked transitions.
+- Design a minimal artifact manifest schema with path, role, hash, size, source command,
+  and intended portal field.
+- Draft a `portal:dryrun` checklist that validates fields locally but cannot submit
+  externally.
+- Define a reviewer-risk rubric that reports actionable claim and evidence problems
+  rather than fake acceptance probability.
+source:
+- conversation
+maturity_action: generate experiment plan
