@@ -112,6 +112,7 @@ insights:
 connections:
 - idea_000009
 - idea_000028
+- idea_000030
 role: idea
 value:
   impact: medium
