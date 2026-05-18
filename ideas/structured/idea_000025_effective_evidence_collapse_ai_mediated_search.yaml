@@ -434,6 +434,7 @@ connections:
   - idea_000023
   - idea_000024
   - idea_000026
+  - idea_000031
 role: idea
 value:
   impact: high
