@@ -1,5 +1,9 @@
 # Tag Index
 
+## 3d-rotation
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
 ## action-perception-loop
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -118,6 +122,10 @@
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
 
+## ar-vr
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
 ## artifact-validation
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
@@ -228,6 +236,10 @@
 ## computational-scientometrics
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## computer-graphics
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## computer-vision
 
@@ -375,6 +387,10 @@
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
+## drone
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
 ## drone-security
 
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
@@ -410,6 +426,10 @@
 ## embedding-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## embodied-ai
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## embodied-learning
 
@@ -535,9 +555,17 @@
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
+## geometry
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
 ## ghostty
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## gimbal-lock
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## git-run-tracking
 
@@ -639,6 +667,10 @@
 ## implementation-friction
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## imu
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## independent-evidence
 
@@ -787,6 +819,10 @@
 ## mamba
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## math-foundation
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## meaning-making
 
@@ -964,6 +1000,10 @@
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 
+## pose-estimation
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
 ## pragmatic-alignment
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -1015,6 +1055,10 @@
 ## publication-workflow
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## quaternion
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## query-strategy-generator
 
@@ -1124,6 +1168,10 @@
 
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
+## robotics
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
 ## safety
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
@@ -1215,6 +1263,10 @@
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
+## slam
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
 ## slime-mold
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
@@ -1243,6 +1295,10 @@
 ## source-laundering
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
+## spatial-ai
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## spectrum-awareness
 
@@ -1470,6 +1526,10 @@
 ## workstation-governance
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## world-model
+
+- `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
 ## yolo
 
