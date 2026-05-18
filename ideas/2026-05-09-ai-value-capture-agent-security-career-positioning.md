@@ -458,3 +458,290 @@ AI Security / Agentic AI Engineer with cybercrime investigation background
 
 原因：第一個最能直接展示 AI agent security；第二個最貼近資安工作流程；第三個最能把警政與科技犯罪背景轉成可見產品能力。
 
+## 2026-05-18 Update: AI Systems Engineering Includes Security
+
+Question:
+
+```text
+AI Systems Engineering for Real-world Deployment 有包含資安嗎？
+```
+
+Answer:
+
+```text
+有，而且是自然包含。
+```
+
+理由很直接：只要 AI 進入真實世界，它就不再只是 notebook 裡的模型。它會碰到：
+
+- 使用者
+- 權限
+- API
+- 資料
+- 網路
+- 日誌
+- 部署
+- model supply chain
+- prompt injection
+- privacy
+- auditability
+- human review
+- 有些系統還會碰到 sensor、RF、robot、drone、車輛、IoT
+
+所以資安不是外加的裝飾。它是 real-world AI system 的可靠性條件。
+
+一句話：
+
+```text
+AI Systems Engineering for Real-world Deployment
+= 把 AI 放進真實世界，並讓它在不可信環境中仍可控、可稽核、可恢復。
+```
+
+這本身就是資安問題。
+
+## Security First Principle
+
+不要把資安一開始理解成：
+
+```text
+Kali Linux / exploit / CTF / red team 工具
+```
+
+那些只是資安的一部分。
+
+更底層的定義是：
+
+```text
+資安 = 讓系統在不可信世界中仍可信地運作
+```
+
+對 AI 時代更精準地說：
+
+```text
+AI security = 讓 AI pipeline、model、agent、data、tool、workflow、deployment
+在可被攻擊、可被污染、可失效的環境裡仍可控、可驗證、可追責。
+```
+
+## Why AI + Drone + RF Matters, But Not First
+
+「AI + 無人系統 + RF」會變大，是因為 AI 正在離開乾淨資料集，進入空氣、感測器、通訊、延遲、干擾和對抗。
+
+Drone 是濃縮版：
+
+- camera vision
+- GPS / GNSS
+- obstacle avoidance
+- wireless control link
+- video downlink
+- telemetry
+- sensor fusion
+- autonomous planning
+- fail-safe policy
+
+AI 是大腦，RF 是神經系統。
+
+但這不代表現在要直接跳去電子戰、HackRF、GNU Radio 或 FPGA。
+
+目前更好的順序是：
+
+```text
+先建立系統架構感
+再建立安全思維
+最後再進 RF / SDR / cyber-physical security
+```
+
+否則很容易變成「玩訊號」，但沒有能力設計可靠系統。
+
+## From Zero: Security Learning Route
+
+### Phase 1: Normal Systems First
+
+先學系統正常怎麼運作。
+
+因為你不知道正常系統怎麼運作，就不知道怎麼判斷它壞在哪。
+
+要補：
+
+- Linux process, permission, filesystem, service, SSH, logs, systemd
+- TCP / UDP / DNS / HTTP / TLS / socket
+- REST API / WebSocket
+- frontend / backend boundary
+- session / cookie / JWT / OAuth
+- CORS / rate limit
+- Docker / docker compose
+- logging / monitoring
+- nginx / reverse proxy
+- model serving basics
+
+最適合你的 side project：
+
+```text
+ASR streaming server
+or
+AI triage service
+```
+
+不要只做模型。要做：
+
+```text
+microphone / audio input
+-> WebSocket / API
+-> ASR
+-> LLM or decision module
+-> audit log
+-> human review
+-> Docker compose
+-> runbook
+```
+
+### Phase 2: Security Foundations
+
+再學系統怎麼被破壞。
+
+要補：
+
+- threat modeling
+- authentication
+- authorization
+- access control
+- least privilege
+- secrets management
+- OWASP Top 10
+- SQL injection
+- XSS
+- SSRF
+- auth bypass
+- logging and incident review
+- rollback
+
+此時的目標不是變成 exploit developer。
+
+目標是：
+
+```text
+看懂一個 web / AI system 的信任邊界在哪裡。
+```
+
+### Phase 3: AI Security
+
+這時候才會真正有感。
+
+因為你已經懂 web、system、deployment、networking。
+
+AI security 要補：
+
+- prompt injection
+- indirect prompt injection
+- adversarial or misleading audio
+- fake / poisoned document
+- RAG provenance
+- hallucination boundary
+- model supply chain
+- tool over-permission
+- excessive agency
+- data exfiltration
+- human-in-the-loop control
+- auditability
+
+把它放回你的 triage system：
+
+| Risk | Defensive question |
+| --- | --- |
+| Patient says "ignore previous instructions" | Can the system preserve task boundary? |
+| Fake medical document enters RAG | Can the system track provenance and evidence level? |
+| Audio is replayed or misleading | Can ASR uncertainty and human review catch it? |
+| Sensitive health data leaks | Are access, logs, retention, and redaction explicit? |
+| LLM hallucinates advice | Does the system abstain and route to clinician review? |
+| Embedding/model changes silently | Are versions and evals traceable? |
+
+This is exactly why your triage / ASR work is a strong classroom for AI security.
+
+## Phase 4: Cyber-Physical Branch Later
+
+After the above is stable, then RF / SDR / drone security makes sense.
+
+At that point learn:
+
+- frequency
+- modulation
+- bandwidth
+- noise
+- SNR
+- OFDM
+- passive SDR observation
+- GNSS resilience
+- wireless IDS
+- anti-drone sensing
+- sensor fusion
+- degraded mode
+
+Boundary:
+
+```text
+先做 receive-only / defensive / forensic / resilience。
+不要先做 jammer 或 active interference。
+```
+
+## Practical Main Axis
+
+The main axis should stay:
+
+```text
+AI Systems Engineering for Real-world Deployment
+```
+
+Security is not a separate hobby. It is one of the core layers.
+
+The learning ladder:
+
+```text
+Linux
+-> Networking
+-> Web architecture
+-> System design
+-> DevOps
+-> AI deployment
+-> Security
+-> AI security
+-> Cyber-physical / RF branch
+```
+
+## Scope Guard
+
+The biggest risk is not lack of ambition.
+
+The biggest risk is range explosion:
+
+```text
+today SDR
+tomorrow FPGA
+next day electronic warfare
+next week Kubernetes
+then model training
+then red team tools
+```
+
+Keep the rule:
+
+```text
+Main axis first.
+One layer at a time.
+Every layer must attach to a working project.
+```
+
+Immediate next project slice:
+
+```text
+Build one security-aware ASR / triage service slice:
+- WebSocket or API input
+- Docker compose
+- structured logs
+- auth boundary
+- rate limit
+- prompt-injection test
+- fake-document test
+- audit trail
+- human review note
+```
+
+That is more valuable right now than buying SDR hardware or learning random attack tools.

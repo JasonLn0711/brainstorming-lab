@@ -18,6 +18,11 @@ tags:
 - portfolio-strategy
 - personal-positioning
 - first-principles
+- ai-systems-engineering
+- real-world-deployment
+- system-thinking
+- ai-security-learning
+- cyber-physical-security
 status: execution_ready
 problem_statement:
   raw: Given that Taiwan AI supply-chain equities have strongly reflected the first
@@ -87,6 +92,18 @@ assumptions:
   both AI implementation and risk control.
 - Investment claims should remain citation leads and hypotheses unless refreshed with
   current data before use.
+- AI Systems Engineering for Real-world Deployment naturally includes security because
+  deployed AI systems must handle authentication, authorization, privacy, data integrity,
+  prompt injection, model misuse, infrastructure exposure, supply chain risk, and
+  auditability.
+- Security should be taught as making systems reliable in an untrusted world, not
+  as a shortcut into attack tools, CTF tricks, or exploit demos.
+- 'A CS student should learn how normal systems work before learning how they break:
+  Linux, networking, web architecture, DevOps, observability, and system design are
+  the foundation for useful security work.'
+- RF, SDR, and drone security are important future branches, but the user's current
+  mainline should remain AI systems, deployment, and AI security before going deep
+  into RF engineering.
 evidence:
 - '2026-05-09 user thesis: Taiwan stocks have outperformed because the AI revolution
   is still early and infrastructure bottlenecks are being priced first; later value
@@ -110,6 +127,18 @@ evidence:
 - Existing local Idea OS records already emphasize cybersecurity review assist, governed
   triage, workflow policy learning, learned conductor systems, statement-interview
   workflows, problem definition, and human-AI cognitive OS.
+- '2026-05-18 user synthesis: AI plus unmanned systems plus RF matters because AI
+  entering the real world must handle sensors, wireless communication, realtime decisions,
+  unstable environments, interference, and adversarial conditions.'
+- '2026-05-18 user synthesis: drone systems compress many real-world AI problems:
+  camera vision, GNSS navigation, obstacle avoidance, wireless communication, remote
+  coordination, sensor fusion, and autonomous planning.'
+- '2026-05-18 user learning-path question: the current best main axis is AI Systems
+  Engineering for Real-world Deployment, and the user asked whether this naturally
+  includes cybersecurity.'
+- '2026-05-18 user learning-path synthesis: AI-era security should begin from Linux,
+  networking, web architecture, system design, DevOps, AI deployment, and then AI
+  security, not from offensive tools.'
 baseline:
 - 'Generic AI career framing: become an ML engineer or prompt engineer without a domain
   wedge.'
@@ -123,6 +152,17 @@ baseline:
   or shareholder profit.'
 - 'Tool-demo portfolio: build a chatbot or RAG app without security controls, workflow
   state, auditability, or domain evidence.'
+- 'Security-as-tooling shortcut: begin with Kali, Metasploit, exploit demos, or red-team
+  aesthetics before understanding how Linux, networking, HTTP, identity, logs, and
+  deployments normally work.'
+- 'AI-security-as-jailbreak-only framing: treat AI security as prompt tricks while
+  ignoring authentication, authorization, data provenance, infrastructure, supply
+  chain, privacy, audit logs, and rollback.'
+- 'RF distraction path: jump from drone or jammer curiosity into HackRF, GNU Radio,
+  FPGA, or electronic warfare vocabulary before building systems, networking, and
+  architecture foundations.'
+- 'Model-only deployment path: build ASR, RAG, or triage models without threat model,
+  privacy boundary, incident log, human override, or degraded-mode behavior.'
 metrics:
 - Can the thesis separate gross economic value, consumer surplus, revenue capture,
   profit capture, and market capitalization?
@@ -138,6 +178,14 @@ metrics:
   applied AI, and cybersecurity interviewers?
 - Can the note avoid direct investment advice while preserving the market-structure
   insight?
+- Can the learning path explain why AI Systems Engineering for Real-world Deployment
+  includes cybersecurity without diluting the main axis?
+- 'Can the user map each security topic to a concrete system layer: Linux, network,
+  web/API, identity, deployment, AI pipeline, agent workflow, or cyber-physical edge?'
+- Can the user build one ASR/triage side project with auth, rate limits, audit logs,
+  privacy boundary, prompt-injection tests, and failure handling?
+- Can RF/drone curiosity be parked as a future branch until the systems, networking,
+  deployment, and security basics are stable?
 insights:
 - 'The short phrase for the thesis is: Taiwan rose on AI construction rights; the
   next stage fights over AI taxation rights.'
@@ -157,6 +205,19 @@ insights:
   and security failure modes.'
 - Do not sell the user as a generalist AI beginner; sell the intersection of agentic
   AI, cybersecurity, cybercrime investigation, and workflow governance.
+- 'AI Systems Engineering for Real-world Deployment is already a security path: once
+  AI touches real users, data, sensors, APIs, tools, workflows, and physical environments,
+  security becomes part of reliability.'
+- The useful definition of cybersecurity for this path is making complex systems trustworthy
+  under adversarial, noisy, partial, and failure-prone conditions.
+- 'The right beginner sequence is normal operation before attack: Linux, networking,
+  web/API identity, logs, deployment, observability, and only then OWASP, threat modeling,
+  AI security, and agent security.'
+- The user's triage and ASR work is a better security classroom than abstract tool
+  hopping because it naturally exposes privacy, prompt injection, adversarial audio,
+  fake documents, hallucination, audit trails, and human trust.
+- RF/drone/SDR belongs as a later cyber-physical branch of the same main axis, not
+  as a replacement for the mainline.
 connections:
 - idea_000002
 - idea_000007
@@ -164,7 +225,9 @@ connections:
 - idea_000011
 - idea_000012
 - idea_000014
+- idea_000015
 - idea_000017
+- idea_000028
 role: idea
 value:
   impact: high
@@ -308,6 +371,97 @@ required_capabilities:
   - ONNX_Runtime
   - TensorRT
   - OpenVINO
+learning_path_from_zero:
+  main_axis: AI Systems Engineering for Real-world Deployment
+  security_answer: Security is included by default because deployed AI systems operate
+    in an untrusted world with users, data, APIs, permissions, logs, infrastructure,
+    adversarial inputs, and sometimes sensors or physical effects.
+  first_principle: Security is not primarily tool usage. Security is the discipline
+    of making a system remain trustworthy when inputs, users, dependencies, data,
+    networks, and environments cannot be fully trusted.
+  phase_1_normal_systems:
+    goal: Learn how systems normally work before studying how they fail.
+    topics:
+    - Linux processes, permissions, filesystems, services, SSH, logs, systemd, environment
+      variables
+    - TCP, UDP, DNS, HTTP, TLS, sockets, NAT, proxy, VPN, WebSocket
+    - Web architecture, frontend/backend boundaries, REST, cookies, sessions, JWT,
+      OAuth, CORS, rate limiting
+    - Docker, docker compose, CI/CD, deployment, logging, monitoring, nginx, model
+      serving
+    practice_project: Build a small streaming ASR or triage service with WebSocket
+      input, API boundaries, logs, Docker compose, and one deployment/runbook.
+  phase_2_security_foundations:
+    goal: Understand how normal systems are broken only after the normal path is clear.
+    topics:
+    - threat modeling
+    - authentication and authorization
+    - access control and least privilege
+    - secrets management
+    - OWASP Top 10
+    - SQL injection, XSS, SSRF, auth bypass, insecure deserialization at a conceptual
+      and defensive level
+    - logging, audit trail, incident review, and rollback
+    practice_project: Add auth, rate limits, audit logs, input validation, and a simple
+      threat model to the ASR or triage service.
+  phase_3_ai_security:
+    goal: Apply security thinking to AI pipelines, LLMs, RAG, ASR, agents, and model
+      serving.
+    topics:
+    - prompt injection and indirect prompt injection
+    - adversarial or misleading audio input
+    - fake or poisoned medical documents
+    - RAG provenance and citation reliability
+    - model hallucination boundaries
+    - tool permissions and excessive agency
+    - data poisoning and model supply chain
+    - privacy, auditability, and human-in-the-loop control
+    practice_project: Create an AI triage threat model and evaluation fixture with
+      prompt-injection cases, fake-document cases, ASR failure cases, abstain mode,
+      and doctor-review logs.
+  phase_4_cyber_physical_branch:
+    goal: Enter RF, SDR, drone, and cyber-physical security only after systems and
+      security foundations are stable.
+    topics:
+    - sensor fusion
+    - degraded mode
+    - resilient networking
+    - GNSS trust and fallback
+    - passive SDR observation
+    - RF incident taxonomy
+    - wireless IDS
+    - anti-drone sensing
+    boundary: Study passive observation, resilience, and forensics first; do not jump
+      into jammer construction or active interference.
+  scope_guard:
+    warning: The user's main risk is range explosion, not lack of ambition.
+    rule: Keep the main axis as AI Systems Engineering for Real-world Deployment,
+      then add one security layer at a time.
+    not_now:
+    - deep RF engineering
+    - FPGA
+    - broad electronic warfare
+    - Kubernetes-first learning
+    - exploit-development identity as the primary route
+  triage_security_map:
+  - risk: Prompt injection from patient speech or documents
+    defensive_question: Can the system preserve the clinical task boundary and flag
+      suspicious instructions instead of obeying them?
+  - risk: Fake or poisoned medical document
+    defensive_question: Can the system track provenance, source trust, and evidence
+      level before using a document?
+  - risk: Adversarial, replayed, or misleading audio
+    defensive_question: Can ASR uncertainty, speaker/source context, and human review
+      prevent silent trust in bad transcripts?
+  - risk: Privacy and sensitive health data exposure
+    defensive_question: Are access control, logging, retention, redaction, and local-only
+      boundaries explicit?
+  - risk: Hallucinated medical reasoning
+    defensive_question: Does the system abstain, route to clinician review, and log
+      claim boundaries instead of giving autonomous advice?
+  - risk: Model or dependency supply-chain drift
+    defensive_question: Are model versions, prompts, embeddings, containers, and eval
+      results traceable?
 geography_and_company_map:
   united_states:
     thesis: largest platform and taxation-right pool because of frontier models, cloud,
@@ -554,6 +708,15 @@ source_links:
   url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
   status: Checked 2026-05-09.
 next_steps:
+- Turn the 2026-05-18 learning path into a one-page AI Systems Engineering for Real-world
+  Deployment roadmap with security included as a core layer.
+- 'Build the first security-aware ASR or triage service slice: WebSocket or API input,
+  Docker compose, structured logs, auth boundary, rate limit, prompt-injection test,
+  and audit trail.'
+- Write a threat model for the current triage system covering prompt injection, fake
+  documents, adversarial audio, privacy, hallucination, and model supply-chain drift.
+- Park RF/SDR/drone learning as a later cyber-physical branch until the systems, networking,
+  web, DevOps, and AI-security foundations are stable.
 - 'Pick one 4-6 week portfolio sprint: Agentic SOC Copilot or MCP / Agent Security
   Lab.'
 - Create a one-page job-positioning packet with target title, target company list,
@@ -575,8 +738,8 @@ maturity:
   problem_clarity_score: 15/15
   boundary_definition: 10
   boundary_definition_score: 10/10
-  testability: 11
-  testability_score: 11/15
+  testability: 15
+  testability_score: 15/15
   evidence_support: 12
   evidence_support_score: 12/15
   connection_strength: 10
@@ -585,7 +748,7 @@ maturity:
   novelty_score: 8/10
   feasibility: 15
   feasibility_score: 15/15
-  research_potential: 7
-  research_potential_score: 7/10
-maturity_score: 88/100
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 95/100
 maturity_level: execution_ready
