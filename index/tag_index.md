@@ -246,6 +246,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## clinic-workflow
+
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
+
 ## codex-cli
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -589,6 +593,10 @@
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
+## follow-up
+
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
+
 ## forensic-defensibility
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
@@ -665,6 +673,7 @@
 ## healthcare
 
 - `idea_000001` - Healthcare AI triage copilot (`research_candidate`, 75/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
 ## hermes-agent
 
@@ -677,6 +686,10 @@
 ## high-school-explainer
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## his-emr-boundary
+
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
 ## human-ai-collaboration
 
@@ -836,6 +849,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## line-messaging
+
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
+
 ## linguistics
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
@@ -914,6 +931,10 @@
 ## mental-state-inference
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## mermaid-system-design
+
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
 ## meta-engineering
 
@@ -1052,6 +1073,10 @@
 ## path-management
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## patient-crm
+
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
 ## personal-ops
 
@@ -1199,6 +1224,7 @@
 ## real-world-deployment
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
 ## recursive-contamination
 
@@ -1585,6 +1611,10 @@
 ## uncertainty-tolerance
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## urology
+
+- `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
 ## us-software-platforms
 

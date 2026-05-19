@@ -1,0 +1,314 @@
+id: idea_000034
+title: LINE-based Urology Follow-up CRM
+created_at: '2026-05-19'
+type: project
+tags:
+- healthcare
+- urology
+- patient-crm
+- follow-up
+- real-world-deployment
+- line-messaging
+- clinic-workflow
+- his-emr-boundary
+- mermaid-system-design
+status: execution_ready
+problem_statement:
+  raw: Given outpatient clinics where care often stops after the patient leaves the
+    consultation room, build the smallest follow-up CRM that keeps medication reminders,
+    symptom check-ins, and return-visit reminders visible to clinic staff without
+    becoming a full HIS, EMR, or clinical AI system.
+  normalized: Given post-visit outpatient follow-up gaps, optimize a clinic-grade
+    patient follow-up workflow under constraints of MVP scope, privacy, staff usability,
+    messaging reliability, no autonomous diagnosis, no full HIS/EMR integration, and
+    future AI extensibility.
+  structure:
+    given: post-visit outpatient follow-up gaps in small clinics
+    optimize: a clinic-grade patient follow-up workflow
+    constraints:
+    - MVP scope
+    - privacy and consent boundary
+    - staff usability
+    - messaging reliability
+    - no autonomous diagnosis
+    - no full HIS or EMR integration in v1
+    - future AI extensibility
+summary: 'A LINE-based urology follow-up CRM MVP for clinic workflow management: create
+  a patient follow-up record after a visit, schedule medication reminders, send symptom
+  check-ins, remind return visits, and show follow-up status to staff. The product
+  wedge is not medical AI or a full hospital system; it is retention, adherence, and
+  continuity of care after the patient leaves the clinic. AI can later support adaptive
+  follow-up routing, non-adherence detection, and explainable workflow suggestions,
+  but v1 should stay operational and demoable.'
+source_note_zh: 點子核心：病人離開診間後，醫療流程常常斷掉。MVP 不做完整 HIS、EMR、FHIR 或診斷 AI，而是做診所等級 Follow-up
+  CRM：病人建立、LINE/SMS/Email 回診提醒、吃藥提醒、症狀改善追蹤、回診狀態。第一個合理版本可聚焦在 LINE-based Urology Follow-up
+  CRM。這次記錄同時保留 CRM 定義、HIS/EMR/CRM 邊界、real-world instances，以及 urology previsit demo + HIS
+  + EMR + CRM 的 Mermaid diagrams；但先不把它同步或綁進現有 planning。
+human_note: ideas/2026-05-19-line-based-urology-follow-up-crm.md
+capture_policy:
+  capture_status: planning_bridge_recorded
+  planning_sync: linked_on_2026-05-19
+  planning_repo_update: locator_status_capacity_only
+  current_system_linkage: planning_bridge_only
+  reason: User later asked to use FIRST PRINCIPLE and connect the CRM material to planning day notes and relevant locator docs.
+  allowed_next_action: Keep the detailed brainstorm in this Idea OS record; planning may carry only short locator/status/capacity lines until a scoped execution request exists.
+  planning_bridge_paths:
+  - ../planning-everything-track/weeks/2026-W21/days/2026-05-19.md
+  - ../planning-everything-track/weeks/2026-W21/weekly-plan.md
+  - ../planning-everything-track/data/projects/2026-04-urology-ai-previsit-interview.md
+  - ../planning-everything-track/data/projects/2026-05-lianyi-deep-cultivation-plan.md
+  - ../planning-everything-track/docs/15-brainstorming-repo-bridge.md
+assumptions:
+- Small clinics have a concrete pain point around missed follow-up, weak chronic-condition
+  tracking, and patient retention.
+- A workflow CRM is easier to validate and adopt than a diagnostic AI product.
+- LINE is a plausible first messaging channel in Taiwan-facing clinic workflows, while
+  SMS and email can remain later adapters.
+- The first version can use synthetic or manually entered demo data and avoid storing
+  real patient data.
+- Clinic staff need a simple operational dashboard more than a complex AI explanation
+  screen in v1.
+- The system should record status and responses, not infer diagnosis or treatment.
+- Future AI value should be attached to routing and workflow suggestions, not autonomous
+  clinical decisions.
+evidence:
+- '2026-05-19 user-provided idea: CRM patient management for return-visit reminders,
+  medication-time tracking, and follow-up status is highly feasible as an MVP.'
+- 'User framing: the current research/product axis is AI Systems Engineering for Real-world
+  Deployment, not building a full hospital HIS.'
+- 'User-provided MVP cut: patient creation, return-visit reminder, medication reminder,
+  and follow-up status.'
+- 'User-provided workflow: after BPH visit and Tamsulosin prescription, system sends
+  Day 1 medication reminder, Day 3 symptom check-in, Day 7 follow-up, and Day 14 return-visit
+  reminder.'
+- The prompt includes a possible future relation with the existing urology previsit
+  demo, HIS, EMR, and CRM; as of 2026-05-19 it is linked into planning as locator/status
+  only, not as a new execution lane.
+baseline:
+- Full HIS or EMR build, which is too broad for MVP validation.
+- Full clinical AI diagnosis product, which is harder to validate, regulate, and adopt.
+- Manual phone-call follow-up by clinic staff without structured status tracking.
+- Calendar-only reminders that do not capture symptom response, non-response, or return-visit
+  status.
+- Generic CRM that lacks clinical follow-up timing, medication adherence, and safety
+  boundary language.
+metrics:
+- Percentage of patients with a created follow-up plan before leaving the clinic.
+- Reminder delivery success rate by channel.
+- Patient response rate to Day 3 and Day 7 check-ins.
+- Return-visit completion rate compared with a manual baseline.
+- Staff time needed to create and review a follow-up plan.
+- Number of missed, late, or unresolved follow-up items per week.
+- Count of cases requiring staff escalation because of non-response or worsening self-report.
+insights:
+- The minimum product is a medical workflow management system, not medical AI.
+- The wedge is patient retention and continuity after the visit, not the reminder
+  feature alone.
+- Urology is a good first specialty because chronic symptoms, medication response,
+  and return visits are concrete and easy to explain.
+- A demo should show the staff action of pressing "Create Follow-up" after a visit,
+  then the automatic timeline.
+- AI should enter only after the workflow is observable: adaptive reminder frequency,
+    adaptive questionnaires, non-adherence detection, and explainable workflow suggestions.
+- The research value is operational AI systems under real-world deployment constraints: usability,
+    reliability, privacy, accountability, and human review.
+connections: []
+role: idea
+value:
+  impact: high
+  feasibility: high
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 6
+  evidence_support_score: 6/15
+  connection_strength: 2
+  connection_strength_score: 2/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 81/100
+maturity_level: execution_ready
+next_steps:
+- 'Write a one-page MVP spec for a synthetic LINE-based urology follow-up CRM: roles,
+  data fields, reminder timeline, safety boundary, and demo script.'
+- 'Build a clickable or local prototype with synthetic patient records only: patient
+  list, create follow-up, timeline, message preview, and follow-up status dashboard.'
+- 'Pressure-test the MVP against one messy scenario: BPH patient does not answer Day
+  3 and reports no improvement on Day 7; define what staff sees and what the system
+  must not claim.'
+- Decide whether this should become a new execution repo or an extension branch beside
+  the existing urology demo after the MVP spec is stable.
+source:
+- conversation
+maturity_action: generate experiment plan
+first_principle:
+  scarce_resource: clinic continuity after the visit, not model sophistication
+  core_object: a follow-up workflow that keeps patients, reminders, symptoms, and
+    return visits visible to staff
+  not_the_core:
+  - full HIS
+  - full EMR
+  - autonomous diagnosis
+  - autonomous treatment recommendation
+  - full FHIR interoperability
+  - hospital-wide platform
+  core_question: Can a small clinic understand, trust, and try a minimal follow-up
+    CRM today?
+  smallest_useful_unit: one follow-up plan created after one synthetic urology visit
+    with medication reminders, symptom check-ins, and return-visit reminder.
+  decision_boundary: Keep v1 as workflow CRM; add AI only when the baseline workflow
+    has observable events and clear human-review decisions.
+mvp_v1:
+  roles:
+  - clinic staff
+  - physician
+  - patient
+  patient_fields:
+  - name
+  - phone_or_line_id
+  - condition
+  - medication
+  - return_visit_date
+  - consent_status
+  workflow:
+  - visit closes with diagnosis, medication, and return-visit target
+  - staff creates follow-up plan
+  - system schedules medication and return-visit reminders
+  - system sends Day 3 and Day 7 symptom check-ins
+  - staff dashboard shows improved, not improved, no response, returned, or overdue
+  notification_channels:
+  - LINE Messaging API first
+  - SMS later
+  - email later
+  explicit_non_goals:
+  - clinical diagnosis
+  - triage decision
+  - medication change recommendation
+  - real patient data in prototype
+  - HIS or EMR integration
+his_emr_boundary:
+  short_rule: HIS manages hospital or clinic operations; EMR manages the patient's
+    medical record; this CRM manages post-visit follow-up workflow.
+  his:
+    full_name: Hospital Information System
+    chinese: 醫院資訊系統
+    owns:
+    - registration
+    - check-in queue
+    - billing and insurance flow
+    - inpatient bed management
+    - pharmacy routing
+    - lab and imaging scheduling
+    - administrative reports
+    - next-visit appointment logistics
+    real_world_example: A urology patient registers, checks in, receives a visit number,
+      pays, gets prescription routing, schedules exams if needed, and books a return
+      visit.
+  emr:
+    full_name: Electronic Medical Record
+    chinese: 電子病歷
+    owns:
+    - chief complaint
+    - history
+    - medication and allergy history
+    - diagnosis
+    - SOAP note
+    - lab results
+    - imaging reports
+    - physician orders
+    - treatment and follow-up plan
+    real_world_example: A physician records frequent urination, nocturia, BPH assessment,
+      Tamsulosin order, and a two-week return plan.
+  follow_up_crm:
+    owns:
+    - medication reminders
+    - symptom check-ins
+    - return-visit reminders
+    - response status
+    - no-response or overdue queue
+    - staff-visible post-visit follow-up summary
+    positioning: A patient follow-up CRM layer outside HIS and EMR.
+  mvp_integration_rule:
+  - Do not start by integrating formal HIS or EMR.
+  - Use manual staff entry for synthetic or demo data first.
+  - Consider read-only HIS or EMR data only after workflow validation.
+  - Consider EMR write-back last because it increases clinical and compliance responsibility.
+crm_definition:
+  short_rule: CRM means Customer Relationship Management; in this medical version,
+    it manages the long-running relationship and interaction lifecycle between the
+    patient and the clinic rather than the medical record itself.
+  owns:
+  - contact route and interaction history
+  - next contact schedule
+  - return-visit and medication reminder state
+  - response, no-response, overdue, and retention signals
+  - staff follow-up queue
+  real_world_instances:
+  - domain: healthcare
+    example: Urology clinic tracks BPH follow-up, medication reminders, symptom improvement,
+      missed return visits, and staff callbacks.
+  - domain: insurance
+    example: Agent CRM tracks last contact, family or policy context, renewal timing,
+      birthday greetings, and next follow-up reminders.
+  - domain: automotive
+    example: Tesla-like sales CRM tracks model interest, test drive, order status,
+      cancellation, and follow-up messaging.
+  - domain: streaming
+    example: Netflix-like engagement CRM tracks viewing, inactivity, churn risk, and
+      personalized re-engagement.
+  - domain: education
+    example: School retention CRM tracks absence, payment, academic risk, counseling
+      outreach, and possible leave of absence.
+system_diagrams_recorded:
+- 'system overview connecting patient, previsit frontend, backend, AI engine, CRM, HIS, EMR, and app database'
+- patient previsit to post-visit follow-up flow
+- HIS, EMR, CRM, and urology previsit demo boundary diagram
+- sequence diagram for data flow among patient, UI, API, AI, HIS, EMR, CRM, and doctor
+- MVP architecture using mock HIS/EMR data, SQLite/PostgreSQL, CRM module, and LINE Messaging API
+- 'one-line positioning diagram: HIS knows who is coming, Previsit AI understands the problem, EMR records what happened medically, CRM tracks what should happen next'
+phases:
+- phase: Phase 1
+  horizon: 2 to 4 weeks
+  scope:
+  - patient management
+  - LINE notification mock or adapter
+  - return-visit reminder
+  - medication reminder
+  - SQLite
+- phase: Phase 2
+  scope:
+  - symptom tracking
+  - questionnaire
+  - staff dashboard
+- phase: Phase 3
+  scope:
+  - AI follow-up suggestion
+  - non-adherence risk scoring
+  - adaptive routing
+- phase: Phase 4
+  scope:
+  - FHIR or EMR integration after workflow validation
+real_world_pressure_test:
+  setting: A small urology clinic uses the system for BPH follow-up after prescribing
+    Tamsulosin and setting a 14-day return visit.
+  expected_failure_modes:
+  - patient ignores Day 3 check-in
+  - patient reports no improvement on Day 7
+  - staff dashboard becomes too noisy
+  - reminder channel fails or patient changes contact route
+  - system wording sounds like medical advice rather than follow-up support
+  smallest_observable_test: Run five synthetic patient timelines and measure whether
+    staff can identify who is improved, not improved, no-response, returned, or overdue
+    within one minute.
+  confirm_or_kill_metric: Continue only if a non-technical reviewer can understand
+    the workflow, safety boundary, and next staff action without the system making
+    clinical claims.
+normalization_status: validated

@@ -182,8 +182,8 @@
       "id": "idea_000010",
       "title": "AI-assisted smart mosquito trap",
       "status": "execution_ready",
-      "maturity_score": "84/100",
-      "maturity_score_raw": 84,
+      "maturity_score": "86/100",
+      "maturity_score_raw": 86,
       "maturity_level": "execution_ready",
       "tags": [
         "hardware",
@@ -403,8 +403,8 @@
       "id": "idea_000018",
       "title": "AI Value Capture And Agent Security Career Positioning",
       "status": "execution_ready",
-      "maturity_score": "88/100",
-      "maturity_score_raw": 88,
+      "maturity_score": "95/100",
+      "maturity_score_raw": 95,
       "maturity_level": "execution_ready",
       "tags": [
         "ai-economy",
@@ -421,7 +421,12 @@
         "cybercrime-investigation",
         "portfolio-strategy",
         "personal-positioning",
-        "first-principles"
+        "first-principles",
+        "ai-systems-engineering",
+        "real-world-deployment",
+        "system-thinking",
+        "ai-security-learning",
+        "cyber-physical-security"
       ],
       "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml"
     },
@@ -457,6 +462,11 @@
         "terminal",
         "gpu-rendering",
         "ghostty",
+        "zsh",
+        "starship",
+        "nerd-font",
+        "prompt-engineering",
+        "path-management",
         "ubuntu",
         "ai-workflow",
         "developer-tools",
@@ -649,6 +659,208 @@
         "provenance-aware-retrieval"
       ],
       "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml"
+    },
+    {
+      "id": "idea_000027",
+      "title": "Long-horizon agent behavior evaluation for Codex CLI orchestration",
+      "status": "execution_ready",
+      "maturity_score": "83/100",
+      "maturity_score_raw": 83,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "ai-agent-evaluation",
+        "codex-cli",
+        "fugu-ultra",
+        "long-horizon",
+        "memory",
+        "context-engineering",
+        "security-lab",
+        "trace-evaluation",
+        "harness-design",
+        "token-efficiency",
+        "agent-reliability"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml"
+    },
+    {
+      "id": "idea_000028",
+      "title": "Defensive RF interference and drone resilience research",
+      "status": "execution_ready",
+      "maturity_score": "89/100",
+      "maturity_score_raw": 89,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "wireless-security",
+        "rf",
+        "sdr",
+        "drone-security",
+        "anti-jamming",
+        "gnss",
+        "bluetooth",
+        "ble",
+        "wifi",
+        "electronic-warfare",
+        "rf-forensics",
+        "safety",
+        "wireless-ids",
+        "protocol-security",
+        "spectrum-awareness"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml"
+    },
+    {
+      "id": "idea_000029",
+      "title": "PaperOps scientific submission release engineering",
+      "status": "execution_ready",
+      "maturity_score": "88/100",
+      "maturity_score_raw": 88,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "paperops",
+        "research-ci",
+        "scientific-release-engineering",
+        "submission-engineering",
+        "release-engineering",
+        "npm",
+        "package-json",
+        "automation",
+        "artifact-validation",
+        "portal-check",
+        "submission-portal",
+        "reviewer-simulation",
+        "reproducibility",
+        "auditability",
+        "paper-writing",
+        "devops-for-research",
+        "state-machine"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml"
+    },
+    {
+      "id": "idea_000030",
+      "title": "Quaternion spatial rotation representation for embodied AI systems",
+      "status": "research_candidate",
+      "maturity_score": "80/100",
+      "maturity_score_raw": 80,
+      "maturity_level": "research_candidate",
+      "tags": [
+        "quaternion",
+        "3d-rotation",
+        "spatial-ai",
+        "robotics",
+        "drone",
+        "imu",
+        "slam",
+        "ar-vr",
+        "computer-graphics",
+        "world-model",
+        "pose-estimation",
+        "geometry",
+        "math-foundation",
+        "embodied-ai",
+        "gimbal-lock"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml"
+    },
+    {
+      "id": "idea_000031",
+      "title": "AI-assisted ancient language decipherment and script archaeology",
+      "status": "execution_ready",
+      "maturity_score": "88/100",
+      "maturity_score_raw": 88,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "ancient-languages",
+        "decipherment",
+        "digital-humanities",
+        "low-resource-ai",
+        "archaeology",
+        "nlp",
+        "deep-learning",
+        "llm",
+        "multimodal-ai",
+        "knowledge-graph",
+        "weak-signal-analysis",
+        "script-analysis",
+        "epigraphy",
+        "linguistics",
+        "grounding",
+        "uncertainty"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml"
+    },
+    {
+      "id": "idea_000032",
+      "title": "MITRE ATLAS based AI system assurance for triage prototypes",
+      "status": "execution_ready",
+      "maturity_score": "92/100",
+      "maturity_score_raw": 92,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "mitre-atlas",
+        "ai-security",
+        "ai-assurance",
+        "threat-modeling",
+        "owasp-llm",
+        "nist-ai-rmf",
+        "gmlp",
+        "medical-ai",
+        "ai-triage",
+        "asr-security",
+        "rag-security",
+        "agent-security",
+        "auditability",
+        "human-in-the-loop",
+        "governance",
+        "safety-case"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml"
+    },
+    {
+      "id": "idea_000033",
+      "title": "Product-constrained PhD engineering research OS",
+      "status": "execution_ready",
+      "maturity_score": "96/100",
+      "maturity_score_raw": 96,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "phd-training",
+        "product-oriented-lab",
+        "engineering-research-os",
+        "software-engineering",
+        "systems-engineering",
+        "research-identity",
+        "methodology",
+        "reflection-loop",
+        "abstraction-loop",
+        "postmortem",
+        "ai-systems",
+        "operational-ai",
+        "human-in-the-loop",
+        "governance",
+        "career-strategy"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml"
+    },
+    {
+      "id": "idea_000034",
+      "title": "LINE-based Urology Follow-up CRM",
+      "status": "execution_ready",
+      "maturity_score": "81/100",
+      "maturity_score_raw": 81,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "healthcare",
+        "urology",
+        "patient-crm",
+        "follow-up",
+        "real-world-deployment",
+        "line-messaging",
+        "clinic-workflow",
+        "his-emr-boundary",
+        "mermaid-system-design"
+      ],
+      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml"
     }
   ],
   "edges": [
@@ -686,6 +898,31 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000001",
+      "target": "idea_000032",
+      "weight": 1.0,
+      "similarity": 0.3795,
+      "shared_tags": [
+        "ai-triage"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000001",
+      "target": "idea_000034",
+      "weight": 0.6,
+      "similarity": 0.1796,
+      "shared_tags": [
+        "healthcare"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -763,7 +1000,7 @@
       "source": "idea_000002",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.1992,
+      "similarity": 0.199,
       "shared_tags": [
         "cybersecurity"
       ],
@@ -776,7 +1013,7 @@
       "source": "idea_000002",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.133,
+      "similarity": 0.128,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -790,6 +1027,29 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000002",
+      "target": "idea_000028",
+      "weight": 1.0,
+      "similarity": 0.0825,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000002",
+      "target": "idea_000032",
+      "weight": 1.0,
+      "similarity": 0.2123,
+      "shared_tags": [
+        "ai-triage"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
       ]
     },
     {
@@ -860,7 +1120,7 @@
       "source": "idea_000003",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.1179,
+      "similarity": 0.1153,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -909,7 +1169,7 @@
       "source": "idea_000004",
       "target": "idea_000018",
       "weight": 0.6,
-      "similarity": 0.0969,
+      "similarity": 0.0861,
       "shared_tags": [
         "cybersecurity"
       ],
@@ -935,6 +1195,16 @@
       "target": "idea_000023",
       "weight": 1.0,
       "similarity": 0.1551,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000004",
+      "target": "idea_000028",
+      "weight": 1.0,
+      "similarity": 0.1166,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1025,7 +1295,7 @@
       "source": "idea_000005",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.0827,
+      "similarity": 0.0779,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1077,7 +1347,7 @@
       "source": "idea_000006",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.1387,
+      "similarity": 0.1336,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1179,7 +1449,7 @@
       "source": "idea_000007",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.2394,
+      "similarity": 0.2352,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1217,6 +1487,16 @@
       "target": "idea_000023",
       "weight": 1.0,
       "similarity": 0.2114,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000007",
+      "target": "idea_000031",
+      "weight": 1.0,
+      "similarity": 0.2028,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1266,7 +1546,7 @@
       "source": "idea_000008",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.3554,
+      "similarity": 0.369,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1290,7 +1570,7 @@
       "source": "idea_000008",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.4274,
+      "similarity": 0.4182,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1310,6 +1590,31 @@
       ]
     },
     {
+      "source": "idea_000008",
+      "target": "idea_000027",
+      "weight": 0.6,
+      "similarity": 0.5604,
+      "shared_tags": [
+        "codex-cli",
+        "fugu-ultra"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000008",
+      "target": "idea_000032",
+      "weight": 0.6,
+      "similarity": 0.3207,
+      "shared_tags": [
+        "medical-ai"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000009",
       "target": "idea_000010",
       "weight": 1.0,
@@ -1321,6 +1626,18 @@
       ],
       "reasons": [
         "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000009",
+      "target": "idea_000028",
+      "weight": 0.6,
+      "similarity": 0.1734,
+      "shared_tags": [
+        "safety"
+      ],
+      "reasons": [
         "shared_tags"
       ]
     },
@@ -1350,6 +1667,29 @@
       ]
     },
     {
+      "source": "idea_000010",
+      "target": "idea_000028",
+      "weight": 1.0,
+      "similarity": 0.1552,
+      "shared_tags": [
+        "safety"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000010",
+      "target": "idea_000030",
+      "weight": 1.0,
+      "similarity": 0.1126,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000011",
       "target": "idea_000012",
       "weight": 1.0,
@@ -1363,7 +1703,7 @@
       "source": "idea_000011",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.231,
+      "similarity": 0.2542,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1430,6 +1770,44 @@
       ]
     },
     {
+      "source": "idea_000011",
+      "target": "idea_000029",
+      "weight": 0.6,
+      "similarity": 0.1455,
+      "shared_tags": [
+        "auditability"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000011",
+      "target": "idea_000032",
+      "weight": 1.0,
+      "similarity": 0.2578,
+      "shared_tags": [
+        "auditability",
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000011",
+      "target": "idea_000033",
+      "weight": 0.6,
+      "similarity": 0.1763,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000012",
       "target": "idea_000013",
       "weight": 1.0,
@@ -1486,7 +1864,7 @@
       "source": "idea_000012",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.1877,
+      "similarity": 0.2193,
       "shared_tags": [
         "first-principles"
       ],
@@ -1509,17 +1887,40 @@
       "source": "idea_000012",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.2194,
+      "similarity": 0.2122,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
       ]
     },
     {
+      "source": "idea_000012",
+      "target": "idea_000029",
+      "weight": 1.0,
+      "similarity": 0.1485,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000012",
+      "target": "idea_000033",
+      "weight": 1.0,
+      "similarity": 0.388,
+      "shared_tags": [
+        "phd-training"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000013",
       "target": "idea_000018",
       "weight": 0.6,
-      "similarity": 0.175,
+      "similarity": 0.1953,
       "shared_tags": [
         "ai-security",
         "cybersecurity"
@@ -1544,9 +1945,34 @@
       "source": "idea_000013",
       "target": "idea_000020",
       "weight": 0.6,
-      "similarity": 0.1359,
+      "similarity": 0.1333,
       "shared_tags": [
         "ai-security"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000013",
+      "target": "idea_000032",
+      "weight": 0.6,
+      "similarity": 0.1552,
+      "shared_tags": [
+        "ai-security",
+        "governance"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000013",
+      "target": "idea_000033",
+      "weight": 0.6,
+      "similarity": 0.1382,
+      "shared_tags": [
+        "governance"
       ],
       "reasons": [
         "shared_tags"
@@ -1576,7 +2002,7 @@
       "source": "idea_000014",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.1725,
+      "similarity": 0.1763,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1586,7 +2012,7 @@
       "source": "idea_000014",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.1811,
+      "similarity": 0.1751,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1613,16 +2039,68 @@
       ]
     },
     {
+      "source": "idea_000014",
+      "target": "idea_000029",
+      "weight": 1.0,
+      "similarity": 0.2911,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000015",
+      "target": "idea_000018",
+      "weight": 1.0,
+      "similarity": 0.3506,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000015",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.3149,
+      "similarity": 0.305,
       "shared_tags": [
         "distributed-systems"
       ],
       "reasons": [
         "manual_connection",
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000015",
+      "target": "idea_000031",
+      "weight": 0.6,
+      "similarity": 0.2021,
+      "shared_tags": [
+        "low-resource-ai"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000015",
+      "target": "idea_000032",
+      "weight": 1.0,
+      "similarity": 0.2958,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000015",
+      "target": "idea_000033",
+      "weight": 1.0,
+      "similarity": 0.3451,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     },
     {
@@ -1638,10 +2116,23 @@
       ]
     },
     {
+      "source": "idea_000016",
+      "target": "idea_000031",
+      "weight": 1.0,
+      "similarity": 0.2549,
+      "shared_tags": [
+        "llm"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000017",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.4334,
+      "similarity": 0.4388,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1651,7 +2142,41 @@
       "source": "idea_000017",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.4418,
+      "similarity": 0.4221,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000017",
+      "target": "idea_000031",
+      "weight": 0.6,
+      "similarity": 0.2333,
+      "shared_tags": [
+        "knowledge-graph"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000018",
+      "target": "idea_000020",
+      "weight": 0.6,
+      "similarity": 0.4992,
+      "shared_tags": [
+        "ai-security"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000018",
+      "target": "idea_000028",
+      "weight": 1.0,
+      "similarity": 0.2441,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1659,11 +2184,44 @@
     },
     {
       "source": "idea_000018",
-      "target": "idea_000020",
-      "weight": 0.6,
-      "similarity": 0.4614,
+      "target": "idea_000030",
+      "weight": 1.0,
+      "similarity": 0.3194,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000018",
+      "target": "idea_000032",
+      "weight": 1.0,
+      "similarity": 0.6403,
       "shared_tags": [
         "ai-security"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000018",
+      "target": "idea_000033",
+      "weight": 1.0,
+      "similarity": 0.3806,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000018",
+      "target": "idea_000034",
+      "weight": 0.6,
+      "similarity": 0.2367,
+      "shared_tags": [
+        "real-world-deployment"
       ],
       "reasons": [
         "shared_tags"
@@ -1673,7 +2231,7 @@
       "source": "idea_000019",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.4079,
+      "similarity": 0.3919,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1707,6 +2265,169 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000027",
+      "weight": 1.0,
+      "similarity": 0.2886,
+      "shared_tags": [
+        "codex-cli"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000029",
+      "weight": 1.0,
+      "similarity": 0.2574,
+      "shared_tags": [
+        "reproducibility"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000031",
+      "weight": 1.0,
+      "similarity": 0.2007,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000032",
+      "weight": 1.0,
+      "similarity": 0.3174,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000033",
+      "weight": 1.0,
+      "similarity": 0.3761,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000020",
+      "target": "idea_000027",
+      "weight": 1.0,
+      "similarity": 0.3522,
+      "shared_tags": [
+        "context-engineering"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000020",
+      "target": "idea_000029",
+      "weight": 1.0,
+      "similarity": 0.233,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000020",
+      "target": "idea_000032",
+      "weight": 0.6,
+      "similarity": 0.3905,
+      "shared_tags": [
+        "ai-security"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000020",
+      "target": "idea_000033",
+      "weight": 1.0,
+      "similarity": 0.3541,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000022",
+      "target": "idea_000028",
+      "weight": 1.0,
+      "similarity": 0.23,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000022",
+      "target": "idea_000030",
+      "weight": 1.0,
+      "similarity": 0.1899,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000022",
+      "target": "idea_000031",
+      "weight": 0.6,
+      "similarity": 0.1725,
+      "shared_tags": [
+        "uncertainty"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000022",
+      "target": "idea_000032",
+      "weight": 0.6,
+      "similarity": 0.1432,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000022",
+      "target": "idea_000033",
+      "weight": 0.6,
+      "similarity": 0.2058,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -1802,6 +2523,52 @@
         "evidence-provenance",
         "information-retrieval",
         "rag"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000025",
+      "target": "idea_000031",
+      "weight": 1.0,
+      "similarity": 0.2238,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000028",
+      "target": "idea_000030",
+      "weight": 1.0,
+      "similarity": 0.1309,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000029",
+      "target": "idea_000032",
+      "weight": 0.6,
+      "similarity": 0.0981,
+      "shared_tags": [
+        "auditability"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000032",
+      "target": "idea_000033",
+      "weight": 1.0,
+      "similarity": 0.2797,
+      "shared_tags": [
+        "governance",
+        "human-in-the-loop"
       ],
       "reasons": [
         "manual_connection",
