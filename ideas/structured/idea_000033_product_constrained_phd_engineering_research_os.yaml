@@ -91,6 +91,13 @@ evidence:
 - Prior Idea OS records identify AI Systems Engineering for Real-world Deployment
   and AI System Security/Governance as stronger personal positioning than generic
   model training.
+- '2026-05-21 startup-cost observation: annual personnel cost of NTD 7 million
+  for a Taiwan AI engineering startup is low to lower-middle, usually supporting
+  only a 3-5 person compressed team unless founder labor, lab subsidy, government
+  funding, or unusually efficient talent reduces burn.'
+- The cost observation reframes company-shaped PhD work as exposure to talent
+  bottlenecks, architecture ownership scarcity, demo-to-product failure, and
+  commercial problem-definition pressure rather than only a technical-task queue.
 baseline:
 - 'Delivery-only loop: build the requested product feature, fix bugs, demo it, then
   move on without extracting a reusable lesson.'
@@ -136,6 +143,9 @@ insights:
   systems.
 - Deep accumulation zones matter more than short bursts of learning many unrelated
   tools.
+- Personnel cost and burn-rate pressure are not background business facts; they
+  shape system architecture, team structure, scope discipline, and which engineering
+  decisions can survive past a demo.
 connections:
 - idea_000012
 - idea_000015
@@ -149,8 +159,8 @@ value:
   impact: high
   feasibility: high
 first_principle:
-  scarce_resource: abstraction time and intellectual territory, not raw product-task
-    throughput
+  scarce_resource: abstraction time, intellectual territory, and architecture-owner
+    bandwidth, not raw product-task throughput
   core_object: a repeatable product-work-to-research-methodology conversion loop
   not_the_core:
   - doing every company task faster
@@ -158,6 +168,8 @@ first_principle:
   - collecting course vocabulary without artifact practice
   - chasing every new AI tool
   - treating demos as research evidence by default
+  - treating AI startup runway as only a money question instead of a scope and
+    team-design constraint
   core_question: How can a product-constrained PhD turn messy delivery work into a
     coherent research identity and systems-engineering methodology?
   smallest_useful_unit: one Product-to-Research Extraction Card written after a real
@@ -165,6 +177,9 @@ first_principle:
   decision_boundary: Use product work as a research field site only when the resulting
     artifact names a constraint, trade-off, failure pattern, evaluation hook, and
     possible generalized lesson.
+  cost_boundary: If a Taiwan AI startup's annual people budget is around NTD 7
+    million, assume severe scope discipline is required unless strong founder labor,
+    lab subsidy, government funding, or unusually efficient talent is present.
 main_axis_candidates:
 - Human-in-the-loop AI decision systems under real-world constraints
 - Operational AI systems for high-stakes environments
@@ -277,11 +292,15 @@ next_steps:
   rubric if this idea becomes scheduled work.
 - At weekly review, separate what was delivered from what was abstracted into reusable
   engineering research knowledge.
+- For company-shaped AI work, estimate people budget, team size, architecture-owner
+  count, business model type, and whether the work produces reusable artifacts or
+  only demos.
 source:
 - conversation
 - idea_000012
 - idea_000018
 - idea_000019
 - idea_000032
+- ideas/2026-05-21-taiwan-ai-startup-personnel-cost-700m-twd.md
 maturity_action: generate experiment plan
 normalization_status: validated
