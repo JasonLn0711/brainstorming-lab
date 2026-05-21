@@ -166,30 +166,6 @@ merge_candidate_0006:
 merge_candidate_0007:
   candidate_id: merge_candidate_0007
   ideas:
-  - idea_000001
-  - idea_000002
-  merge_type: cluster_merge
-  merge_score: 61/100
-  confidence: medium
-  reason:
-  - 'shared tags: ai-triage, evidence-routing'
-  - manual connection exists
-  - roles or methods are complementary
-  recommended_action: create_cluster
-  decision: suggest_cluster
-  subscores:
-    normalized_problem_similarity: 3/25
-    semantic_similarity: 7/15
-    tag_overlap: 8/10
-    complementary_value: 18/20
-    evidence_alignment: 5/10
-    complexity_control: 20/20
-  shared_tags:
-  - ai-triage
-  - evidence-routing
-merge_candidate_0008:
-  candidate_id: merge_candidate_0008
-  ideas:
   - idea_000003
   - idea_000005
   merge_type: cluster_merge
@@ -212,8 +188,8 @@ merge_candidate_0008:
   - decision-system
   - planning-bridge
   - workflow
-merge_candidate_0009:
-  candidate_id: merge_candidate_0009
+merge_candidate_0008:
+  candidate_id: merge_candidate_0008
   ideas:
   - idea_000025
   - idea_000026
@@ -239,8 +215,8 @@ merge_candidate_0009:
   - evidence-provenance
   - information-retrieval
   - rag
-merge_candidate_0010:
-  candidate_id: merge_candidate_0010
+merge_candidate_0009:
+  candidate_id: merge_candidate_0009
   ideas:
   - idea_000009
   - idea_000010
@@ -264,8 +240,8 @@ merge_candidate_0010:
   - hardware
   - safety
   - side-project
-merge_candidate_0011:
-  candidate_id: merge_candidate_0011
+merge_candidate_0010:
+  candidate_id: merge_candidate_0010
   ideas:
   - idea_000002
   - idea_000007
@@ -288,8 +264,8 @@ merge_candidate_0011:
   shared_tags:
   - cybersecurity
   - reviewer-assist
-merge_candidate_0012:
-  candidate_id: merge_candidate_0012
+merge_candidate_0011:
+  candidate_id: merge_candidate_0011
   ideas:
   - idea_000007
   - idea_000008
@@ -313,8 +289,8 @@ merge_candidate_0012:
   - conductor
   - learned-orchestration
   - multi-agent
-merge_candidate_0013:
-  candidate_id: merge_candidate_0013
+merge_candidate_0012:
+  candidate_id: merge_candidate_0012
   ideas:
   - idea_000008
   - idea_000019
@@ -337,8 +313,8 @@ merge_candidate_0013:
   shared_tags:
   - codex-cli
   - research-workflow
-merge_candidate_0014:
-  candidate_id: merge_candidate_0014
+merge_candidate_0013:
+  candidate_id: merge_candidate_0013
   ideas:
   - idea_000018
   - idea_000032
@@ -361,6 +337,30 @@ merge_candidate_0014:
     complexity_control: 10/20
   shared_tags:
   - ai-security
+merge_candidate_0014:
+  candidate_id: merge_candidate_0014
+  ideas:
+  - idea_000001
+  - idea_000002
+  merge_type: cluster_merge
+  merge_score: 52/100
+  confidence: low
+  reason:
+  - 'shared tags: ai-triage, evidence-routing'
+  - manual connection exists
+  - roles or methods are complementary
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 4/15
+    tag_overlap: 8/10
+    complementary_value: 18/20
+    evidence_alignment: 5/10
+    complexity_control: 15/20
+  shared_tags:
+  - ai-triage
+  - evidence-routing
 merge_candidate_0015:
   candidate_id: merge_candidate_0015
   ideas:
@@ -459,29 +459,6 @@ merge_candidate_0018:
 merge_candidate_0019:
   candidate_id: merge_candidate_0019
   ideas:
-  - idea_000001
-  - idea_000032
-  merge_type: cluster_merge
-  merge_score: 51/100
-  confidence: low
-  reason:
-  - 'shared tags: ai-triage'
-  - manual connection exists
-  - roles or methods are complementary
-  recommended_action: keep_related
-  decision: keep_related
-  subscores:
-    normalized_problem_similarity: 3/25
-    semantic_similarity: 6/15
-    tag_overlap: 4/10
-    complementary_value: 18/20
-    evidence_alignment: 5/10
-    complexity_control: 15/20
-  shared_tags:
-  - ai-triage
-merge_candidate_0020:
-  candidate_id: merge_candidate_0020
-  ideas:
   - idea_000012
   - idea_000033
   merge_type: cluster_merge
@@ -502,8 +479,8 @@ merge_candidate_0020:
     complexity_control: 10/20
   shared_tags:
   - phd-training
-merge_candidate_0021:
-  candidate_id: merge_candidate_0021
+merge_candidate_0020:
+  candidate_id: merge_candidate_0020
   ideas:
   - idea_000008
   - idea_000027
@@ -525,8 +502,54 @@ merge_candidate_0021:
   shared_tags:
   - codex-cli
   - fugu-ultra
+merge_candidate_0021:
+  candidate_id: merge_candidate_0021
+  ideas:
+  - idea_000001
+  - idea_000015
+  merge_type: cluster_merge
+  merge_score: 49/100
+  confidence: low
+  reason:
+  - 'shared tags: asr'
+  - manual connection exists
+  - roles or methods are complementary
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 5/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+  - asr
 merge_candidate_0022:
   candidate_id: merge_candidate_0022
+  ideas:
+  - idea_000001
+  - idea_000032
+  merge_type: cluster_merge
+  merge_score: 49/100
+  confidence: low
+  reason:
+  - 'shared tags: ai-triage'
+  - manual connection exists
+  - roles or methods are complementary
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 3/25
+    semantic_similarity: 4/15
+    tag_overlap: 4/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 10/20
+  shared_tags:
+  - ai-triage
+merge_candidate_0023:
+  candidate_id: merge_candidate_0023
   ideas:
   - idea_000004
   - idea_000007
@@ -549,8 +572,8 @@ merge_candidate_0022:
   shared_tags:
   - cybersecurity
   - research-candidate
-merge_candidate_0023:
-  candidate_id: merge_candidate_0023
+merge_candidate_0024:
+  candidate_id: merge_candidate_0024
   ideas:
   - idea_000015
   - idea_000020
@@ -572,8 +595,8 @@ merge_candidate_0023:
     complexity_control: 10/20
   shared_tags:
   - distributed-systems
-merge_candidate_0024:
-  candidate_id: merge_candidate_0024
+merge_candidate_0025:
+  candidate_id: merge_candidate_0025
   ideas:
   - idea_000019
   - idea_000032
@@ -595,8 +618,8 @@ merge_candidate_0024:
     complexity_control: 10/20
   shared_tags:
   - governance
-merge_candidate_0025:
-  candidate_id: merge_candidate_0025
+merge_candidate_0026:
+  candidate_id: merge_candidate_0026
   ideas:
   - idea_000019
   - idea_000033
@@ -618,8 +641,8 @@ merge_candidate_0025:
     complexity_control: 10/20
   shared_tags:
   - governance
-merge_candidate_0026:
-  candidate_id: merge_candidate_0026
+merge_candidate_0027:
+  candidate_id: merge_candidate_0027
   ideas:
   - idea_000020
   - idea_000027
@@ -641,8 +664,8 @@ merge_candidate_0026:
     complexity_control: 10/20
   shared_tags:
   - context-engineering
-merge_candidate_0027:
-  candidate_id: merge_candidate_0027
+merge_candidate_0028:
+  candidate_id: merge_candidate_0028
   ideas:
   - idea_000005
   - idea_000017
@@ -664,8 +687,8 @@ merge_candidate_0027:
     complexity_control: 15/20
   shared_tags:
   - planning-bridge
-merge_candidate_0028:
-  candidate_id: merge_candidate_0028
+merge_candidate_0029:
+  candidate_id: merge_candidate_0029
   ideas:
   - idea_000019
   - idea_000027
@@ -687,27 +710,6 @@ merge_candidate_0028:
     complexity_control: 10/20
   shared_tags:
   - codex-cli
-merge_candidate_0029:
-  candidate_id: merge_candidate_0029
-  ideas:
-  - idea_000001
-  - idea_000004
-  merge_type: cluster_merge
-  merge_score: 47/100
-  confidence: low
-  reason:
-  - 'shared tags: evidence-routing'
-  recommended_action: keep_related
-  decision: keep_related
-  subscores:
-    normalized_problem_similarity: 4/25
-    semantic_similarity: 5/15
-    tag_overlap: 4/10
-    complementary_value: 8/20
-    evidence_alignment: 6/10
-    complexity_control: 20/20
-  shared_tags:
-  - evidence-routing
 merge_candidate_0030:
   candidate_id: merge_candidate_0030
   ideas:
@@ -1416,10 +1418,10 @@ merge_candidate_0061:
 merge_candidate_0062:
   candidate_id: merge_candidate_0062
   ideas:
-  - idea_000004
-  - idea_000028
+  - idea_000020
+  - idea_000033
   merge_type: cluster_merge
-  merge_score: 40/100
+  merge_score: 41/100
   confidence: low
   reason:
   - manual connection exists
@@ -1427,18 +1429,18 @@ merge_candidate_0062:
   recommended_action: keep_related
   decision: keep_related
   subscores:
-    normalized_problem_similarity: 4/25
-    semantic_similarity: 2/15
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 6/15
     tag_overlap: 0/10
     complementary_value: 18/20
-    evidence_alignment: 5/10
-    complexity_control: 11/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
   shared_tags: []
 merge_candidate_0063:
   candidate_id: merge_candidate_0063
   ideas:
-  - idea_000007
-  - idea_000014
+  - idea_000001
+  - idea_000008
   merge_type: cluster_merge
   merge_score: 40/100
   confidence: low
@@ -1458,8 +1460,8 @@ merge_candidate_0063:
 merge_candidate_0064:
   candidate_id: merge_candidate_0064
   ideas:
-  - idea_000007
-  - idea_000019
+  - idea_000004
+  - idea_000028
   merge_type: cluster_merge
   merge_score: 40/100
   confidence: low
@@ -1469,18 +1471,18 @@ merge_candidate_0064:
   recommended_action: keep_related
   decision: keep_related
   subscores:
-    normalized_problem_similarity: 1/25
-    semantic_similarity: 5/15
+    normalized_problem_similarity: 4/25
+    semantic_similarity: 2/15
     tag_overlap: 0/10
     complementary_value: 18/20
-    evidence_alignment: 10/10
-    complexity_control: 6/20
+    evidence_alignment: 5/10
+    complexity_control: 11/20
   shared_tags: []
 merge_candidate_0065:
   candidate_id: merge_candidate_0065
   ideas:
-  - idea_000011
-  - idea_000018
+  - idea_000007
+  - idea_000014
   merge_type: cluster_merge
   merge_score: 40/100
   confidence: low
@@ -1500,6 +1502,48 @@ merge_candidate_0065:
 merge_candidate_0066:
   candidate_id: merge_candidate_0066
   ideas:
+  - idea_000007
+  - idea_000019
+  merge_type: cluster_merge
+  merge_score: 40/100
+  confidence: low
+  reason:
+  - manual connection exists
+  - roles or methods are complementary
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 1/25
+    semantic_similarity: 5/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0067:
+  candidate_id: merge_candidate_0067
+  ideas:
+  - idea_000011
+  - idea_000018
+  merge_type: cluster_merge
+  merge_score: 40/100
+  confidence: low
+  reason:
+  - manual connection exists
+  - roles or methods are complementary
+  recommended_action: keep_related
+  decision: keep_related
+  subscores:
+    normalized_problem_similarity: 2/25
+    semantic_similarity: 4/15
+    tag_overlap: 0/10
+    complementary_value: 18/20
+    evidence_alignment: 10/10
+    complexity_control: 6/20
+  shared_tags: []
+merge_candidate_0068:
+  candidate_id: merge_candidate_0068
+  ideas:
   - idea_000011
   - idea_000022
   merge_type: cluster_merge
@@ -1518,8 +1562,8 @@ merge_candidate_0066:
     complexity_control: 10/20
   shared_tags:
   - human-in-the-loop
-merge_candidate_0067:
-  candidate_id: merge_candidate_0067
+merge_candidate_0069:
+  candidate_id: merge_candidate_0069
   ideas:
   - idea_000011
   - idea_000033
@@ -1539,8 +1583,8 @@ merge_candidate_0067:
     complexity_control: 10/20
   shared_tags:
   - human-in-the-loop
-merge_candidate_0068:
-  candidate_id: merge_candidate_0068
+merge_candidate_0070:
+  candidate_id: merge_candidate_0070
   ideas:
   - idea_000012
   - idea_000014
@@ -1560,8 +1604,8 @@ merge_candidate_0068:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0069:
-  candidate_id: merge_candidate_0069
+merge_candidate_0071:
+  candidate_id: merge_candidate_0071
   ideas:
   - idea_000013
   - idea_000032
@@ -1582,8 +1626,8 @@ merge_candidate_0069:
   shared_tags:
   - ai-security
   - governance
-merge_candidate_0070:
-  candidate_id: merge_candidate_0070
+merge_candidate_0072:
+  candidate_id: merge_candidate_0072
   ideas:
   - idea_000015
   - idea_000018
@@ -1603,8 +1647,8 @@ merge_candidate_0070:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0071:
-  candidate_id: merge_candidate_0071
+merge_candidate_0073:
+  candidate_id: merge_candidate_0073
   ideas:
   - idea_000015
   - idea_000031
@@ -1624,8 +1668,8 @@ merge_candidate_0071:
     complexity_control: 10/20
   shared_tags:
   - low-resource-ai
-merge_candidate_0072:
-  candidate_id: merge_candidate_0072
+merge_candidate_0074:
+  candidate_id: merge_candidate_0074
   ideas:
   - idea_000017
   - idea_000031
@@ -1645,8 +1689,8 @@ merge_candidate_0072:
     complexity_control: 10/20
   shared_tags:
   - knowledge-graph
-merge_candidate_0073:
-  candidate_id: merge_candidate_0073
+merge_candidate_0075:
+  candidate_id: merge_candidate_0075
   ideas:
   - idea_000018
   - idea_000030
@@ -1666,8 +1710,8 @@ merge_candidate_0073:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0074:
-  candidate_id: merge_candidate_0074
+merge_candidate_0076:
+  candidate_id: merge_candidate_0076
   ideas:
   - idea_000019
   - idea_000023
@@ -1687,29 +1731,8 @@ merge_candidate_0074:
     evidence_alignment: 10/10
     complexity_control: 6/20
   shared_tags: []
-merge_candidate_0075:
-  candidate_id: merge_candidate_0075
-  ideas:
-  - idea_000020
-  - idea_000033
-  merge_type: cluster_merge
-  merge_score: 40/100
-  confidence: low
-  reason:
-  - manual connection exists
-  - roles or methods are complementary
-  recommended_action: keep_related
-  decision: keep_related
-  subscores:
-    normalized_problem_similarity: 1/25
-    semantic_similarity: 5/15
-    tag_overlap: 0/10
-    complementary_value: 18/20
-    evidence_alignment: 10/10
-    complexity_control: 6/20
-  shared_tags: []
-merge_candidate_0076:
-  candidate_id: merge_candidate_0076
+merge_candidate_0077:
+  candidate_id: merge_candidate_0077
   ideas:
   - idea_000022
   - idea_000031
@@ -1729,8 +1752,8 @@ merge_candidate_0076:
     complexity_control: 10/20
   shared_tags:
   - uncertainty
-merge_candidate_0077:
-  candidate_id: merge_candidate_0077
+merge_candidate_0078:
+  candidate_id: merge_candidate_0078
   ideas:
   - idea_000022
   - idea_000033

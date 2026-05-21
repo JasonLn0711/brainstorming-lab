@@ -31,26 +31,26 @@ cluster_0001:
     evidence_support: 8/15
     feasibility: 11/15
 cluster_0002:
-  theme: evidence-routing / ai-triage / cybersecurity
+  theme: cybersecurity / evidence-routing / ai-triage
   cluster_type: research_cluster
   ideas:
-  - idea_000001
   - idea_000002
   - idea_000004
-  normalized_problem: Given overloaded clinical intake, optimize which cases need
-    human review first under constraints of safety, audit constraints.
-  average_maturity_score: 72/100
-  cluster_score: 62/100
+  normalized_problem: Given noisy activity logs, identify anomalies worth human review
+    under limited reviewer time and uncertain ground truth, optimize review-worthy
+    candidate discovery under constraints of limited reviewer time, uncertain ground
+    truth.
+  average_maturity_score: 70/100
+  cluster_score: 63/100
   reason:
-  - 'shared tags: ai-triage, evidence-routing'
+  - 'shared tags: cybersecurity, evidence-routing'
   - manual connection exists
   - roles or methods are complementary
-  - 'shared tags: cybersecurity, evidence-routing'
   recommendation: evaluate as research candidate
   averages:
     testability: 7/15
     evidence_support: 9/15
-    feasibility: 11/15
+    feasibility: 8/15
 cluster_0003:
   theme: decision-system / planning-bridge / workflow
   cluster_type: research_cluster

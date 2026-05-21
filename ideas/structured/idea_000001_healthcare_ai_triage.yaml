@@ -1,34 +1,89 @@
 id: idea_000001
-title: "Healthcare AI triage copilot"
+title: Healthcare AI triage copilot
 created_at: 2026-05-04
 type: project
 tags:
-  - healthcare
-  - ai-triage
-  - evidence-routing
-  - human-review
-status: research_candidate
+- healthcare
+- ai-triage
+- evidence-routing
+- human-review
+- asr
+- multimodal-audio
+- clinical-intake
+status: execution_ready
 problem_statement:
-  raw: "Given overloaded clinical intake, optimize which cases need human review first under safety and audit constraints."
-  normalized: "Given overloaded clinical intake, optimize which cases need human review first under constraints of safety, audit constraints."
+  raw: Given overloaded clinical intake and ASR-driven patient speech input, optimize
+    safe symptom understanding and human review routing under safety, audit, privacy,
+    and transcript-error constraints.
+  normalized: Given overloaded clinical intake and noisy ASR-driven patient speech
+    input, optimize safe symptom understanding, uncertainty handling, and human review
+    routing under constraints of safety, auditability, privacy, transcript error,
+    accent variation, near-homophone clinical terms, and clinician oversight.
   structure:
-    given: "overloaded clinical intake"
-    optimize: "which cases need human review first"
+    given: overloaded clinical intake with patient speech input
+    optimize: safe symptom understanding, uncertainty handling, and which cases need
+      human review first
     constraints:
-      - safety
-      - "audit constraints"
-summary: "A clinical triage assistant that structures patient intake, flags uncertainty, and routes cases to clinicians with evidence rather than replacing medical judgment."
+    - safety
+    - auditability
+    - privacy
+    - ASR transcript error
+    - accent and pronunciation variation
+    - near-homophone clinical symptom terms
+    - clinician oversight
+summary: 'A clinical triage assistant that structures patient intake, flags uncertainty,
+  and routes cases to clinicians with evidence rather than replacing medical judgment.
+  The current sharp failure mode is ASR-driven semantic drift: a plausible-sounding
+  but wrong transcript can push embedding retrieval toward unrelated terms, causing
+  the question-answer flow to miss the intended symptom. A safer architecture treats
+  native audio-capable multimodal models such as Gemma 4 E2B/E4B as candidate audio
+  semantic verifiers beside ASR, not as autonomous medical decision makers. The next
+  bold experiment is to test Gemma 4 E2B as the primary short-audio interpreter and
+  measure whether direct audio-to-structured-intake reduces ASR-induced semantic drift
+  without increasing silent clinical over-correction.'
 assumptions:
-  - "The useful output is safer prioritization, not autonomous diagnosis."
-  - "Clinicians need provenance and uncertainty markers more than another chat surface."
-  - "A small synthetic workflow can test review-burden reduction before any real patient data."
+- The useful output is safer prioritization, not autonomous diagnosis.
+- Clinicians need provenance and uncertainty markers more than another chat surface.
+- A small synthetic workflow can test review-burden reduction before any real patient
+  data.
+- ASR transcripts are useful but cannot be treated as ground truth when the downstream
+  matcher depends on embeddings or symptom-keyword similarity.
+- A native-audio multimodal model may use speech acoustics plus clinical prompt context
+  to recover the intended symptom better than a text-only LLM reading a bad transcript.
+- The multimodal model can reduce ASR semantic drift, but it can also hallucinate,
+  normalize away uncertainty, or overfit to the prompt; disagreement must trigger
+  confirmation rather than silent correction.
+- For clinical intake, the safe product behavior is ask-to-confirm or route-to-human
+  when ASR and audio interpretation disagree.
+- A direct-audio Gemma 4 E2B path is experimentally valid only on synthetic or consented
+  short clips, fixed schemas, and staff-review boundaries; success in this setting
+  does not imply production clinical deployment.
+- Removing traditional ASR from the primary path removes one visible artifact, so
+  the model must still produce a model-understood transcript or short evidence trace
+  for audit.
 insights:
-  - "This idea shares the same reviewer-assist pattern as cybersecurity candidate review."
-  - "The first metric should be reduction in time-to-first-safe-action."
+- This idea shares the same reviewer-assist pattern as cybersecurity candidate review.
+- The first metric should be reduction in time-to-first-safe-action.
+- The key issue is not only word error rate; it is symptom-level semantic error after
+  transcript noise enters retrieval or embedding matching.
+- 'A dual-track audio pipeline can separate transcript generation from symptom interpretation:
+  ASR provides readable evidence, while an audio-understanding model provides a second
+  semantic hypothesis.'
+- The model should output symptom candidates, uncertainty, and the exact confirmation
+  question, not a final diagnosis.
+- A good clarification question is narrow and confirmatory, such as asking whether
+  the patient meant burning pain during urination.
+- 'The direct-replacement experiment should be judged against downstream safety, not
+  only transcript quality: correct symptom, correct next question, negation handling,
+  and whether uncertainty becomes staff review or patient confirmation.'
+- A strong result would justify making Gemma the primary short-answer interpreter
+  in a bounded demo; it would still require transcript-like trace logging and high-risk
+  staff-review gates.
 connections:
-  - idea_000002
-  - idea_000008
-  - idea_000032
+- idea_000002
+- idea_000008
+- idea_000015
+- idea_000032
 value:
   impact: high
   feasibility: medium
@@ -37,30 +92,178 @@ maturity:
   problem_clarity_score: 15/15
   boundary_definition: 10
   boundary_definition_score: 10/10
-  testability: 7
-  testability_score: 7/15
-  evidence_support: 9
-  evidence_support_score: 9/15
-  connection_strength: 7
-  connection_strength_score: 7/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
   novelty: 8
   novelty_score: 8/10
   feasibility: 15
   feasibility_score: 15/15
-  research_potential: 4
-  research_potential_score: 4/10
+  research_potential: 10
+  research_potential_score: 10/10
 next_steps:
-  - "Create a synthetic intake fixture and define reviewer-burden metrics."
+- Create the direct-audio experiment packet and synthetic fixture manifest for Gemma
+  4 E2B primary interpretation.
+- Compare ASR-only retrieval, text LLM over noisy transcript, Gemma direct audio,
+  and hybrid disagreement-gate paths on symptom-candidate accuracy and unsafe-silent-correction
+  rate.
+- 'Define the disagreement gate: when ASR transcript and audio verifier differ, ask
+  a confirmatory question or route to staff review.'
 source:
-  - conversation
-  - observation
+- conversation
+- observation
+- 2026-05-21 user observation from hospital AI triage collaboration
 normalization_status: validated
 role: idea
-baseline: []
-metrics: []
+baseline:
+- ASR transcript is embedded directly and matched to the nearest symptom or question
+  answer without an audio-side verification path.
+- A text-only LLM receives the wrong transcript and attempts to infer the patient
+  meaning from unrelated words.
+- The system silently accepts the top embedding match even when transcript confidence,
+  semantic fit, or clinical plausibility is weak.
+- All ambiguous speech is handled by generic fallback text instead of a symptom-specific
+  confirmation question.
+- Gemma 4 E2B directly receives audio and emits structured intake fields without an
+  ASR transcript in the primary path.
+metrics:
+- Symptom-candidate top-1 and top-3 accuracy under controlled ASR substitutions.
+- 'Semantic drift rate: cases where transcript embedding retrieves an unrelated symptom
+  family.'
+- Disagreement detection rate between ASR transcript interpretation and audio-verifier
+  interpretation.
+- 'Unsafe silent-correction rate: cases where the system changes the meaning without
+  asking the patient or staff to confirm.'
+- 'Clarification efficiency: percent of uncertain cases resolved by one narrow confirmation
+  question.'
+- 'Clinician review burden: number of cases routed to staff and time needed to verify
+  the structured symptom summary.'
+- Latency from patient speech end to next safe question.
+- 'Audit completeness: raw audio reference ID, transcript, audio-verifier hypothesis,
+  confidence, disagreement reason, confirmation question, and reviewer action are
+  traceable.'
+- Direct-audio JSON-valid rate and schema-repair rate.
+- Direct-audio primary-path win rate against ASR-only retrieval on controlled semantic-drift
+  cases.
+- High-risk miss rate for chest pain, dyspnea, low SpO2 context, severe dizziness,
+  and other staff-review triggers.
+- Negation handling accuracy for answers such as "I do not have chest pain."
+- 'Model-understood-transcript audit quality: whether a reviewer can reconstruct what
+  the model thought it heard.'
 evidence:
-  - conversation
-  - observation
-maturity_score: 75/100
-maturity_level: research_candidate
-maturity_action: "evaluate cluster readiness"
+- conversation
+- observation
+- '2026-05-21 observed failure mode: ASR can misrecognize patient speech into unrelated
+  terms, causing embedding-based matching or Q&A routing to miss the intended answer.'
+- Official Google Gemma 4 blog states E2B and E4B include native audio input for speech
+  recognition and understanding; this supports testing them as audio semantic verifiers.
+- Gemma 3n official docs describe audio input handling for speech recognition, translation,
+  and audio data analysis, supporting the broader design pattern of on-device audio
+  understanding.
+- '2026-05-21 user experiment proposal: test whether Gemma 4 E2B can replace ASR as
+  the primary short-audio interpreter for hospital AI triage Q&A, while logging enough
+  evidence to judge safety.'
+candidate_architecture:
+  role: audio semantic verifier beside ASR
+  flow:
+  - step: patient_speech
+    output: audio clip with consent-safe local reference ID
+  - step: asr_transcript
+    output: readable transcript plus ASR confidence if available
+  - step: native_audio_model_interpretation
+    output: symptom candidates, uncertainty, and clinically bounded rationale
+  - step: semantic_matcher
+    output: ranked structured symptom candidates from transcript and audio paths
+  - step: disagreement_gate
+    output: confirm, ask clarification, or route to staff review
+  - step: staff_review_summary
+    output: auditable intake summary with uncertainty and provenance
+  safe_rule: Do not replace ASR with a multimodal model as the only source of truth;
+    use agreement and confirmation to manage uncertainty.
+  example_failure:
+    spoken: I have burning when I pee.
+    bad_asr: I have birding when I pay.
+    intended_symptom: dysuria or burning urination
+    safe_response: Ask the patient to confirm whether they meant burning pain during
+      urination.
+direct_audio_primary_experiment:
+  packet: experiments/2026-05-21-gemma-e2b-direct-audio-triage/README.md
+  first_principle:
+    scarce_resource: safe understanding of short patient symptom answers under noisy
+      audio and limited clinician attention
+    bottleneck_hypothesis: traditional ASR can convert a near-correct utterance into
+      semantically unrelated text, causing embedding retrieval and question routing
+      to fail before the LLM sees the real signal
+    experimental_move: let Gemma 4 E2B listen directly and emit bounded structured
+      intake fields, then compare it against ASR-driven and hybrid paths
+    non_goal: prove clinical deployment readiness or remove staff review
+  arms:
+  - id: A
+    name: ASR transcript to retrieval
+    purpose: current baseline for transcript-driven semantic drift
+  - id: B
+    name: text LLM over bad transcript
+    purpose: measure whether a text-only repair step can recover from ASR drift
+  - id: C
+    name: Gemma 4 E2B direct audio to structured intake
+    purpose: test the bold replacement hypothesis
+  - id: D
+    name: Gemma direct audio plus ASR disagreement gate
+    purpose: safety comparator and likely production fallback
+  required_output_fields:
+  - model_understood_transcript
+  - primary_symptom_candidate
+  - symptom_candidates
+  - structured_fields
+  - decision
+  - next_question
+  - uncertainty_reason
+  - safety_boundary
+  promotion_rule: Gemma direct audio can become the primary demo interpreter only
+    if it improves symptom-level accuracy and semantic-drift recovery while keeping
+    unsafe silent correction, high-risk misses, invalid JSON, and latency below preset
+    thresholds.
+  kill_or_revise_rule: If direct audio confidently invents clinical meaning, misses
+    negation, or suppresses uncertainty instead of asking confirmation, keep it as
+    a verifier only and do not replace ASR.
+pressure_tests:
+- name: ASR semantic drift fixture
+  setting: A hospital triage kiosk or tablet receives short English symptom answers
+    from non-native speakers in a noisy registration area.
+  expected_failure_mode: ASR outputs plausible unrelated words, and embedding retrieval
+    maps the answer to an unrelated symptom or question branch.
+  smallest_observable_test: Record or synthesize 30 short symptom utterances with
+    controlled noise/accent variants and paired corrupted transcripts, then run ASR-only,
+    text-only, and audio-verifier pipelines.
+  metric_or_decision: Promote the verifier only if it lowers unrelated symptom retrieval
+    and unsafe silent correction without increasing latency or hallucinated confirmations
+    beyond the preset safety threshold.
+- name: Confirm-before-correct clinical boundary
+  setting: Patient gives a short symptom answer containing a near-homophone or accent-sensitive
+    medical term.
+  expected_failure_mode: The model corrects the phrase into a clinical term that fits
+    the prompt but was not actually said.
+  smallest_observable_test: Use paired audio cases where the correct answer and a
+    tempting clinical near-neighbor are both plausible; require the system to ask
+    a narrow confirmation question.
+  metric_or_decision: Keep the design only if disagreement cases produce confirmatory
+    questions or staff-review routing rather than unsupported structured symptoms.
+- name: Direct-audio primary interpreter stress test
+  setting: A synthetic hospital triage kiosk experiment uses short patient audio clips
+    with accents, noise, negation, vague symptoms, near-homophones, and high-risk
+    trigger phrases.
+  expected_failure_mode: Gemma direct audio may produce a fluent structured symptom
+    that is clinically plausible but not grounded in the audio, making the error less
+    visible than an ASR typo.
+  smallest_observable_test: Run the same 30 to 50 audio cases through ASR-only, text-over-bad-transcript,
+    Gemma direct audio, and hybrid disagreement-gate arms with fixed prompts and JSON
+    schema validation.
+  metric_or_decision: Promote direct audio only if it beats ASR-only on symptom-level
+    semantic drift and does not increase unsafe silent correction, high-risk misses,
+    invalid JSON, or p95 latency beyond the preset threshold.
+maturity_score: 95/100
+maturity_level: execution_ready
+maturity_action: generate experiment plan

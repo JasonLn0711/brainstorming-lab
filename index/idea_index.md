@@ -4,6 +4,7 @@
 | --- | --- | ---: | --- | --- | --- | --- |
 | `idea_000008` | Learned conductor for medical AI research workflows | 97/100 | `execution_ready` | `execution_ready` | After W20 fixed gates, define one private bounded beta test plan that compares Fugu-style orchestration against a fixed pipeline under cost, latency, verification, abstention, checkpoint quality, and valid proof-artifact constraints. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
 | `idea_000033` | Product-constrained PhD engineering research OS | 96/100 | `execution_ready` | `execution_ready` | Write the first Product-to-Research Extraction Card for the next real product feature, bug, or demo pressure event. | `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml` |
+| `idea_000001` | Healthcare AI triage copilot | 95/100 | `execution_ready` | `execution_ready` | Create the direct-audio experiment packet and synthetic fixture manifest for Gemma 4 E2B primary interpretation. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
 | `idea_000018` | AI Value Capture And Agent Security Career Positioning | 95/100 | `execution_ready` | `execution_ready` | Turn the 2026-05-18 learning path into a one-page AI Systems Engineering for Real-world Deployment roadmap with security included as a core layer. | `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml` |
 | `idea_000020` | GPU-first terminal as AI engineering workbench | 95/100 | `execution_ready` | `execution_ready` | Create a workstation log entry for the 2026-05-12 Ghostty + zsh + Starship + Codex CLI setup, including the Codex PATH fix and shell-initialization lesson. | `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml` |
 | `idea_000016` | LLM Literature Mental State Understanding | 94/100 | `execution_ready` | `execution_ready` | Draft HanmeiBench v0.1 with 60 candidate stimuli, source route, license status, direct alternative, why-not-direct hypothesis, and negative-control pairing. | `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml` |
@@ -27,7 +28,6 @@
 | `idea_000030` | Quaternion spatial rotation representation for embodied AI systems | 80/100 | `research_candidate` | `research_candidate` | Write a small no-notebook CLI quaternion fixture that rotates one vector using Euler angles and unit quaternions, with explicit frame convention. | `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml` |
 | `idea_000017` | Externalized cognition OS for human-AI planning | 78/100 | `research_candidate` | `research_candidate` | Write a one-page architecture note comparing human memory, external memory, and AI context roles in the current repo system. | `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml` |
 | `idea_000025` | Effective evidence collapse in AI-mediated search | 77/100 | `research_candidate` | `research_candidate` | Write the one-page Effective Evidence Collapse definition with the two key distinctions: visible sources versus independent evidence, and displayed citations versus evidence dependence. | `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml` |
-| `idea_000001` | Healthcare AI triage copilot | 75/100 | `research_candidate` | `research_candidate` | Create a synthetic intake fixture and define reviewer-burden metrics. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
 | `idea_000021` | Physarum flow model for adaptive scam-candidate routing | 74/100 | `research_candidate` | `research_candidate` | Write a one-page formal objective that separates exact shortest-path search from adaptive candidate-region discovery. | `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml` |
 | `idea_000004` | Anomaly detection research watch | 73/100 | `research_candidate` | `research_candidate` | Define one public or synthetic anomaly fixture and one review packet format. | `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml` |
 | `idea_000026` | Synthetic consensus and source laundering in AI-generated web pollution | 71/100 | `research_candidate` | `research_candidate` | Write the one-page definition of synthetic consensus, source laundering, truthful derivative pollution, and web pollution as evidential distortion. | `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml` |
@@ -39,7 +39,7 @@
 
 ## Compact View
 
-- idea_000001 - Healthcare AI triage copilot - 75/100 - research_candidate
+- idea_000001 - Healthcare AI triage copilot - 95/100 - execution_ready
 - idea_000002 - Cybersecurity reviewer assist layer - 68/100 - research_candidate
 - idea_000003 - Decision load scheduler - 58/100 - structured
 - idea_000004 - Anomaly detection research watch - 73/100 - research_candidate
