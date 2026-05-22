@@ -3,17 +3,20 @@
     {
       "id": "idea_000001",
       "title": "Healthcare AI triage copilot",
-      "status": "research_candidate",
-      "maturity_score": "75/100",
-      "maturity_score_raw": 75,
-      "maturity_level": "research_candidate",
+      "status": "execution_ready",
+      "maturity_score": "95/100",
+      "maturity_score_raw": 95,
+      "maturity_level": "execution_ready",
       "tags": [
         "healthcare",
         "ai-triage",
         "evidence-routing",
-        "human-review"
+        "human-review",
+        "asr",
+        "multimodal-audio",
+        "clinical-intake"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
     },
     {
       "id": "idea_000002",
@@ -28,7 +31,7 @@
         "reviewer-assist",
         "evidence-routing"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
     },
     {
       "id": "idea_000003",
@@ -43,7 +46,7 @@
         "cognitive-load",
         "workflow"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
     },
     {
       "id": "idea_000004",
@@ -58,7 +61,7 @@
         "research-candidate",
         "evidence-routing"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000004_anomaly_detection_research_watch.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000004_anomaly_detection_research_watch.yaml"
     },
     {
       "id": "idea_000005",
@@ -73,7 +76,7 @@
         "planning-bridge",
         "decision-system"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
     },
     {
       "id": "idea_000006",
@@ -88,7 +91,7 @@
         "workflow",
         "approval-gate"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000006_openclaw_personal_ops_node.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000006_openclaw_personal_ops_node.yaml"
     },
     {
       "id": "idea_000007",
@@ -137,7 +140,7 @@
         "control-loop",
         "bounded-rationality"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml"
     },
     {
       "id": "idea_000008",
@@ -161,7 +164,7 @@
         "state-abstraction",
         "workflow-consistency"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml"
     },
     {
       "id": "idea_000009",
@@ -176,7 +179,7 @@
         "safety",
         "side-project"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml"
     },
     {
       "id": "idea_000010",
@@ -195,7 +198,7 @@
         "software-architecture",
         "cross-domain"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml"
     },
     {
       "id": "idea_000011",
@@ -216,7 +219,7 @@
         "human-in-the-loop",
         "local-llm"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml"
     },
     {
       "id": "idea_000012",
@@ -240,7 +243,7 @@
         "embodied-learning",
         "lecture-practice"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml"
     },
     {
       "id": "idea_000013",
@@ -259,7 +262,7 @@
         "endpoint-management",
         "lenovo-ldo"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml"
     },
     {
       "id": "idea_000014",
@@ -294,7 +297,7 @@
         "computational-scientometrics",
         "high-school-explainer"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000014_journal_intelligence_system.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000014_journal_intelligence_system.yaml"
     },
     {
       "id": "idea_000015",
@@ -328,7 +331,7 @@
         "infrastructure-engineering",
         "sre"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml"
     },
     {
       "id": "idea_000016",
@@ -369,7 +372,7 @@
         "pragmatic-alignment",
         "ai-safety"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml"
     },
     {
       "id": "idea_000017",
@@ -397,7 +400,7 @@
         "descriptive-understanding",
         "existential-understanding"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml"
     },
     {
       "id": "idea_000018",
@@ -428,7 +431,7 @@
         "ai-security-learning",
         "cyber-physical-security"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml"
     },
     {
       "id": "idea_000019",
@@ -449,7 +452,7 @@
         "soft-control",
         "git-run-tracking"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml"
     },
     {
       "id": "idea_000020",
@@ -492,7 +495,7 @@
         "secrets-management",
         "backup"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml"
     },
     {
       "id": "idea_000021",
@@ -511,7 +514,7 @@
         "network-design",
         "dynamic-graph"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml"
     },
     {
       "id": "idea_000022",
@@ -546,7 +549,7 @@
         "multimodal-fusion",
         "tracking"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml"
     },
     {
       "id": "idea_000023",
@@ -575,7 +578,7 @@
         "cybercrime-content",
         "scam-content"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml"
     },
     {
       "id": "idea_000024",
@@ -603,7 +606,7 @@
         "ecosystem-knowledge-pollution",
         "human-source-scarcity-index"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml"
     },
     {
       "id": "idea_000025",
@@ -631,7 +634,7 @@
         "evidence-void",
         "ai-crawler-opt-out"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml"
     },
     {
       "id": "idea_000026",
@@ -658,7 +661,7 @@
         "digital-forensics",
         "provenance-aware-retrieval"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml"
     },
     {
       "id": "idea_000027",
@@ -680,7 +683,7 @@
         "token-efficiency",
         "agent-reliability"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml"
     },
     {
       "id": "idea_000028",
@@ -706,7 +709,7 @@
         "protocol-security",
         "spectrum-awareness"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml"
     },
     {
       "id": "idea_000029",
@@ -734,7 +737,7 @@
         "devops-for-research",
         "state-machine"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml"
     },
     {
       "id": "idea_000030",
@@ -760,7 +763,7 @@
         "embodied-ai",
         "gimbal-lock"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml"
     },
     {
       "id": "idea_000031",
@@ -787,7 +790,7 @@
         "grounding",
         "uncertainty"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml"
     },
     {
       "id": "idea_000032",
@@ -814,7 +817,7 @@
         "governance",
         "safety-case"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml"
     },
     {
       "id": "idea_000033",
@@ -840,7 +843,7 @@
         "governance",
         "career-strategy"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml"
     },
     {
       "id": "idea_000034",
@@ -860,7 +863,94 @@
         "his-emr-boundary",
         "mermaid-system-design"
       ],
-      "path": "/home/jnclaw/every_on_git_jnclaw/phd-life-system/brainstorming-lab/ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml"
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml"
+    },
+    {
+      "id": "idea_000035",
+      "title": "AI-mediated harmful interaction trajectory modeling",
+      "status": "execution_ready",
+      "maturity_score": "94/100",
+      "maturity_score_raw": 94,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "scam-research",
+        "harmful-interaction",
+        "influence-dynamics",
+        "interaction-trajectory",
+        "adaptive-manipulation",
+        "semantic-grounding",
+        "low-resource-ai",
+        "self-supervised-learning",
+        "multimodal-ai",
+        "asr",
+        "governance",
+        "reviewer-assist",
+        "behavior-graph",
+        "temporal-modeling",
+        "temporal-interaction-graph",
+        "decision-autonomy",
+        "influence-transparency",
+        "hard-negative",
+        "interaction-structure-reconstruction",
+        "interaction-phase-transition",
+        "escalation-dynamics",
+        "trust-state-evolution",
+        "conversation-topology",
+        "complex-systems",
+        "agent-based-modeling",
+        "review-scarcity",
+        "ai-safety"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml"
+    },
+    {
+      "id": "idea_000036",
+      "title": "165 antifraud victim cognitive-state interaction modeling",
+      "status": "execution_ready",
+      "maturity_score": "97/100",
+      "maturity_score_raw": 97,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "scam-research",
+        "165-antifraud",
+        "consultation-call",
+        "speech-data",
+        "acoustic-intelligence",
+        "paralinguistics",
+        "interaction-science",
+        "interaction-structure-reconstruction",
+        "temporal-dynamics",
+        "trust-state-evolution",
+        "belief-transition",
+        "institutional-capacity",
+        "review-scarcity",
+        "ai-governance",
+        "sensitive-data",
+        "public-private-boundary",
+        "synthetic-release",
+        "human-in-the-loop",
+        "victim-cognitive-state",
+        "cognitive-security",
+        "behavioral-signal-modeling",
+        "manipulation-state-detection",
+        "human-vulnerability-dynamics",
+        "representation-discovery",
+        "paper-framework",
+        "cognitive-vulnerability-modeling",
+        "q1-paper-design",
+        "selection-bias",
+        "sampling-bias",
+        "survivorship-bias",
+        "help-seeking-population",
+        "institutional-verification",
+        "intervention-boundary",
+        "reversible-window",
+        "cognitive-security-triage",
+        "help-seeking-signal",
+        "moral-framing-risk",
+        "adaptive-coping"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml"
     }
   ],
   "edges": [
@@ -868,7 +958,7 @@
       "source": "idea_000001",
       "target": "idea_000002",
       "weight": 1.0,
-      "similarity": 0.4476,
+      "similarity": 0.2358,
       "shared_tags": [
         "ai-triage",
         "evidence-routing"
@@ -882,7 +972,7 @@
       "source": "idea_000001",
       "target": "idea_000004",
       "weight": 0.6,
-      "similarity": 0.3095,
+      "similarity": 0.188,
       "shared_tags": [
         "evidence-routing"
       ],
@@ -894,7 +984,7 @@
       "source": "idea_000001",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.2371,
+      "similarity": 0.2357,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -902,9 +992,22 @@
     },
     {
       "source": "idea_000001",
+      "target": "idea_000015",
+      "weight": 1.0,
+      "similarity": 0.3299,
+      "shared_tags": [
+        "asr"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000001",
       "target": "idea_000032",
       "weight": 1.0,
-      "similarity": 0.3795,
+      "similarity": 0.2867,
       "shared_tags": [
         "ai-triage"
       ],
@@ -917,9 +1020,21 @@
       "source": "idea_000001",
       "target": "idea_000034",
       "weight": 0.6,
-      "similarity": 0.1796,
+      "similarity": 0.1896,
       "shared_tags": [
         "healthcare"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000001",
+      "target": "idea_000035",
+      "weight": 0.6,
+      "similarity": 0.2677,
+      "shared_tags": [
+        "asr"
       ],
       "reasons": [
         "shared_tags"
@@ -1049,6 +1164,18 @@
       ],
       "reasons": [
         "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000002",
+      "target": "idea_000035",
+      "weight": 0.6,
+      "similarity": 0.2442,
+      "shared_tags": [
+        "reviewer-assist"
+      ],
+      "reasons": [
         "shared_tags"
       ]
     },
@@ -1240,7 +1367,7 @@
       "source": "idea_000005",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.1308,
+      "similarity": 0.1309,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1337,7 +1464,7 @@
       "source": "idea_000006",
       "target": "idea_000019",
       "weight": 1.0,
-      "similarity": 0.1496,
+      "similarity": 0.1497,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1357,7 +1484,7 @@
       "source": "idea_000007",
       "target": "idea_000008",
       "weight": 1.0,
-      "similarity": 0.4831,
+      "similarity": 0.4828,
       "shared_tags": [
         "conductor",
         "learned-orchestration",
@@ -1439,7 +1566,7 @@
       "source": "idea_000007",
       "target": "idea_000019",
       "weight": 1.0,
-      "similarity": 0.3273,
+      "similarity": 0.3269,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1459,7 +1586,7 @@
       "source": "idea_000007",
       "target": "idea_000021",
       "weight": 1.0,
-      "similarity": 0.3723,
+      "similarity": 0.3719,
       "shared_tags": [
         "scam-research",
         "signal-market"
@@ -1503,10 +1630,38 @@
       ]
     },
     {
+      "source": "idea_000007",
+      "target": "idea_000035",
+      "weight": 1.0,
+      "similarity": 0.3385,
+      "shared_tags": [
+        "behavior-graph",
+        "reviewer-assist",
+        "scam-research"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000007",
+      "target": "idea_000036",
+      "weight": 1.0,
+      "similarity": 0.2698,
+      "shared_tags": [
+        "scam-research"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000008",
       "target": "idea_000011",
       "weight": 1.0,
-      "similarity": 0.2994,
+      "similarity": 0.2966,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1516,7 +1671,7 @@
       "source": "idea_000008",
       "target": "idea_000012",
       "weight": 1.0,
-      "similarity": 0.2786,
+      "similarity": 0.2788,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1526,7 +1681,7 @@
       "source": "idea_000008",
       "target": "idea_000014",
       "weight": 1.0,
-      "similarity": 0.2077,
+      "similarity": 0.2078,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1536,7 +1691,7 @@
       "source": "idea_000008",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.3297,
+      "similarity": 0.33,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1546,7 +1701,7 @@
       "source": "idea_000008",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.369,
+      "similarity": 0.3693,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1556,7 +1711,7 @@
       "source": "idea_000008",
       "target": "idea_000019",
       "weight": 1.0,
-      "similarity": 0.458,
+      "similarity": 0.4571,
       "shared_tags": [
         "codex-cli",
         "research-workflow"
@@ -1570,7 +1725,7 @@
       "source": "idea_000008",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.4182,
+      "similarity": 0.4185,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1580,7 +1735,7 @@
       "source": "idea_000008",
       "target": "idea_000022",
       "weight": 1.0,
-      "similarity": 0.284,
+      "similarity": 0.2842,
       "shared_tags": [
         "evaluation"
       ],
@@ -1593,7 +1748,7 @@
       "source": "idea_000008",
       "target": "idea_000027",
       "weight": 0.6,
-      "similarity": 0.5604,
+      "similarity": 0.5609,
       "shared_tags": [
         "codex-cli",
         "fugu-ultra"
@@ -1606,7 +1761,7 @@
       "source": "idea_000008",
       "target": "idea_000032",
       "weight": 0.6,
-      "similarity": 0.3207,
+      "similarity": 0.3209,
       "shared_tags": [
         "medical-ai"
       ],
@@ -1799,11 +1954,24 @@
       "source": "idea_000011",
       "target": "idea_000033",
       "weight": 0.6,
-      "similarity": 0.1763,
+      "similarity": 0.1845,
       "shared_tags": [
         "human-in-the-loop"
       ],
       "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000011",
+      "target": "idea_000036",
+      "weight": 1.0,
+      "similarity": 0.1964,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "manual_connection",
         "shared_tags"
       ]
     },
@@ -1877,7 +2045,7 @@
       "source": "idea_000012",
       "target": "idea_000019",
       "weight": 1.0,
-      "similarity": 0.3081,
+      "similarity": 0.3084,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -1907,7 +2075,7 @@
       "source": "idea_000012",
       "target": "idea_000033",
       "weight": 1.0,
-      "similarity": 0.388,
+      "similarity": 0.3902,
       "shared_tags": [
         "phd-training"
       ],
@@ -1933,7 +2101,7 @@
       "source": "idea_000013",
       "target": "idea_000019",
       "weight": 0.6,
-      "similarity": 0.1065,
+      "similarity": 0.1027,
       "shared_tags": [
         "governance"
       ],
@@ -1970,7 +2138,19 @@
       "source": "idea_000013",
       "target": "idea_000033",
       "weight": 0.6,
-      "similarity": 0.1382,
+      "similarity": 0.1415,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000013",
+      "target": "idea_000035",
+      "weight": 0.6,
+      "similarity": 0.1378,
       "shared_tags": [
         "governance"
       ],
@@ -2049,6 +2229,18 @@
       ]
     },
     {
+      "source": "idea_000014",
+      "target": "idea_000036",
+      "weight": 0.6,
+      "similarity": 0.2031,
+      "shared_tags": [
+        "ai-governance"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000015",
       "target": "idea_000018",
       "weight": 1.0,
@@ -2097,7 +2289,31 @@
       "source": "idea_000015",
       "target": "idea_000033",
       "weight": 1.0,
-      "similarity": 0.3451,
+      "similarity": 0.3579,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000015",
+      "target": "idea_000035",
+      "weight": 1.0,
+      "similarity": 0.3217,
+      "shared_tags": [
+        "asr",
+        "low-resource-ai"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000015",
+      "target": "idea_000036",
+      "weight": 1.0,
+      "similarity": 0.2464,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2122,6 +2338,20 @@
       "similarity": 0.2549,
       "shared_tags": [
         "llm"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000016",
+      "target": "idea_000035",
+      "weight": 1.0,
+      "similarity": 0.3482,
+      "shared_tags": [
+        "ai-safety",
+        "semantic-grounding"
       ],
       "reasons": [
         "manual_connection",
@@ -2209,7 +2439,7 @@
       "source": "idea_000018",
       "target": "idea_000033",
       "weight": 1.0,
-      "similarity": 0.3806,
+      "similarity": 0.3985,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2219,7 +2449,7 @@
       "source": "idea_000018",
       "target": "idea_000034",
       "weight": 0.6,
-      "similarity": 0.2367,
+      "similarity": 0.2611,
       "shared_tags": [
         "real-world-deployment"
       ],
@@ -2231,7 +2461,7 @@
       "source": "idea_000019",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.3919,
+      "similarity": 0.3922,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2241,7 +2471,7 @@
       "source": "idea_000019",
       "target": "idea_000022",
       "weight": 1.0,
-      "similarity": 0.2009,
+      "similarity": 0.2011,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2251,7 +2481,7 @@
       "source": "idea_000019",
       "target": "idea_000023",
       "weight": 1.0,
-      "similarity": 0.3058,
+      "similarity": 0.3061,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2261,7 +2491,7 @@
       "source": "idea_000019",
       "target": "idea_000024",
       "weight": 1.0,
-      "similarity": 0.2803,
+      "similarity": 0.2805,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2271,7 +2501,7 @@
       "source": "idea_000019",
       "target": "idea_000027",
       "weight": 1.0,
-      "similarity": 0.2886,
+      "similarity": 0.2889,
       "shared_tags": [
         "codex-cli"
       ],
@@ -2284,7 +2514,7 @@
       "source": "idea_000019",
       "target": "idea_000029",
       "weight": 1.0,
-      "similarity": 0.2574,
+      "similarity": 0.2576,
       "shared_tags": [
         "reproducibility"
       ],
@@ -2297,7 +2527,7 @@
       "source": "idea_000019",
       "target": "idea_000031",
       "weight": 1.0,
-      "similarity": 0.2007,
+      "similarity": 0.2008,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2307,7 +2537,7 @@
       "source": "idea_000019",
       "target": "idea_000032",
       "weight": 1.0,
-      "similarity": 0.3174,
+      "similarity": 0.3177,
       "shared_tags": [
         "governance"
       ],
@@ -2320,12 +2550,24 @@
       "source": "idea_000019",
       "target": "idea_000033",
       "weight": 1.0,
-      "similarity": 0.3761,
+      "similarity": 0.3801,
       "shared_tags": [
         "governance"
       ],
       "reasons": [
         "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000035",
+      "weight": 0.6,
+      "similarity": 0.2809,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
         "shared_tags"
       ]
     },
@@ -2368,10 +2610,35 @@
       "source": "idea_000020",
       "target": "idea_000033",
       "weight": 1.0,
-      "similarity": 0.3541,
+      "similarity": 0.371,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000021",
+      "target": "idea_000035",
+      "weight": 1.0,
+      "similarity": 0.2992,
+      "shared_tags": [
+        "scam-research"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000021",
+      "target": "idea_000036",
+      "weight": 0.6,
+      "similarity": 0.1941,
+      "shared_tags": [
+        "scam-research"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -2422,7 +2689,19 @@
       "source": "idea_000022",
       "target": "idea_000033",
       "weight": 0.6,
-      "similarity": 0.2058,
+      "similarity": 0.2233,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000022",
+      "target": "idea_000036",
+      "weight": 0.6,
+      "similarity": 0.243,
       "shared_tags": [
         "human-in-the-loop"
       ],
@@ -2477,6 +2756,18 @@
       ],
       "reasons": [
         "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000023",
+      "target": "idea_000035",
+      "weight": 0.6,
+      "similarity": 0.2986,
+      "shared_tags": [
+        "ai-safety"
+      ],
+      "reasons": [
         "shared_tags"
       ]
     },
@@ -2562,13 +2853,93 @@
       ]
     },
     {
+      "source": "idea_000031",
+      "target": "idea_000035",
+      "weight": 1.0,
+      "similarity": 0.2915,
+      "shared_tags": [
+        "low-resource-ai",
+        "multimodal-ai"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000032",
       "target": "idea_000033",
       "weight": 1.0,
-      "similarity": 0.2797,
+      "similarity": 0.2948,
       "shared_tags": [
         "governance",
         "human-in-the-loop"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000032",
+      "target": "idea_000035",
+      "weight": 1.0,
+      "similarity": 0.3214,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000032",
+      "target": "idea_000036",
+      "weight": 1.0,
+      "similarity": 0.2262,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000033",
+      "target": "idea_000035",
+      "weight": 0.6,
+      "similarity": 0.2736,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000033",
+      "target": "idea_000036",
+      "weight": 0.6,
+      "similarity": 0.1945,
+      "shared_tags": [
+        "human-in-the-loop"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000035",
+      "target": "idea_000036",
+      "weight": 1.0,
+      "similarity": 0.509,
+      "shared_tags": [
+        "interaction-structure-reconstruction",
+        "review-scarcity",
+        "scam-research",
+        "trust-state-evolution"
       ],
       "reasons": [
         "manual_connection",
