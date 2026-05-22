@@ -1,0 +1,671 @@
+id: idea_000036
+title: "165 antifraud victim cognitive-state interaction modeling"
+created_at: 2026-05-22
+type: hypothesis
+tags:
+  - scam-research
+  - 165-antifraud
+  - consultation-call
+  - speech-data
+  - acoustic-intelligence
+  - paralinguistics
+  - interaction-science
+  - interaction-structure-reconstruction
+  - temporal-dynamics
+  - trust-state-evolution
+  - belief-transition
+  - institutional-capacity
+  - review-scarcity
+  - ai-governance
+  - sensitive-data
+  - public-private-boundary
+  - synthetic-release
+  - human-in-the-loop
+  - victim-cognitive-state
+  - cognitive-security
+  - behavioral-signal-modeling
+  - manipulation-state-detection
+  - human-vulnerability-dynamics
+  - representation-discovery
+  - paper-framework
+  - cognitive-vulnerability-modeling
+  - q1-paper-design
+  - selection-bias
+  - sampling-bias
+  - survivorship-bias
+  - help-seeking-population
+  - institutional-verification
+  - intervention-boundary
+  - reversible-window
+  - cognitive-security-triage
+  - help-seeking-signal
+  - moral-framing-risk
+  - adaptive-coping
+status: execution_ready
+problem_statement:
+  raw: "Given a hypothetical or authorized dataset of 30 hours of 165 antifraud hotline audio conversations between police officers and citizens, decide how to study victim cognitive state and manipulation aftermath without reducing the data to scammer audio, ASR, speech classification, or scam/not-scam labels."
+  normalized: "Given high-sensitive 165 antifraud consultation audio where citizens call after possible manipulation, optimize victim cognitive-state modeling, interaction-level representation discovery, acoustic/behavioral signal analysis, officer intervention analysis, and institutional-capacity research under constraints of small data volume, uncertain ground truth, privacy, de-identification, voice sensitivity, officer/victim safety, public-private separation, claim discipline, IRB/ethics review, and no raw evidence in git."
+  structure:
+    given: "30 hours of high-value officer-citizen antifraud consultation audio showing citizens after possible manipulation"
+    optimize: "victim cognitive-state modeling and interaction-level representation discovery"
+    constraints:
+      - "30 hours is too small for commodity large-model training"
+      - "the data is likely not clean ground truth for scam/not-scam labels"
+      - "some callers may be truly scammed, suspicious, anxious, delusional, or simply asking normal questions"
+      - "165 callers are a selected help-seeking population, not a representative sample of all scam victims or all manipulated people"
+      - "the most deeply isolated or cognitively captured victims may be least likely to call 165"
+      - "raw audio is highly sensitive institutional data"
+      - "voices are biometric and personally identifying"
+      - "victim narratives may contain financial, family, location, account, phone, and case details"
+      - "officer procedure and institutional practice may be sensitive"
+      - "ASR transcripts are derived evidence, not ground truth"
+      - "public release should use synthetic exemplars, aggregate metrics, and redacted schemas"
+      - "no final scam, legal, or officer-performance judgment should be automated"
+      - "ethics, access control, retention, anonymization, and claim boundaries must be defined before analysis"
+summary: "A 30-hour 165 antifraud hotline audio corpus should be treated primarily as help-seeking victim cognitive-state data, not as scammer-speech data, a small ASR dataset, or a scam classifier benchmark. Most people assume antifraud models need scammer audio, but hotline data captures the downstream cognitive state of people who may have been manipulated and still seek institutional verification: confusion, anxiety, authority overtrust, rationalization, time pressure, attention narrowing, dependency, emotional oscillation, and resistance to external challenge. These traces can appear in voice, pauses, speaking rate, question form, topic shifts, uncertainty patterns, and interaction dynamics. The first research object should be representation discovery for cognitive vulnerability and manipulation aftermath dynamics within the help-seeking institutional interface, with selection bias, institutional response, and data governance as central boundaries."
+source_note_zh: "這份 165 語音資料的重點不是詐騙集團語音，而是受害者認知狀態資料。真正留下痕跡的地方，很多時候不是詐騙者說了什麼，而是民眾被影響後呈現出的 confusion、anxiety、authority overtrust、rationalization、attention narrowing、dependency、emotional oscillation。這更接近 AI for cognitive security。"
+human_note: ideas/2026-05-22-165-antifraud-consultation-interaction-science.md
+assumptions:
+  - "Thirty hours is enough for deep qualitative coding, pilot annotation, state-transition analysis, acoustic feature exploration, and governance-method framing, but not enough to compete as a general speech or scam-classifier benchmark."
+  - "Officer-citizen consultation calls contain rare interaction states: suspicion, reassurance seeking, uncertainty reduction, belief revision, panic, rationalization, and intervention acceptance or resistance."
+  - "The officer side is as important as the citizen side because dynamic questioning, calming, information elicitation, and escalation choices shape outcomes."
+  - "Audio is not merely a route to transcript; hesitation, silence, speaking-rate change, overlap, pitch instability, stress bursts, and interruption patterns can carry risk and cognitive-load signals."
+  - "The strongest first contribution is a framework and codebook for high-risk consultation interaction, not a predictive leaderboard."
+  - "Institutional capacity is part of the object: if AI-mediated scams increase call volume, review scarcity, attention collapse, inconsistent triage, and delayed intervention become governance failure modes."
+  - "Public research must be designed around restricted-data governance from the start."
+  - "The absence of scammer audio is not a weakness; it shifts the research object from scammer speech to manipulation aftermath in the citizen's cognitive and interaction state."
+  - "Victim cognitive state may be more stable across changing scam scripts than surface scam content."
+  - "Binary ground truth is weak in 165 consultation calls because callers may be true victims, suspicious non-victims, anxious people, delusional callers, or normal advice seekers."
+  - "The correct first move is representation discovery, clustering, trajectory analysis, and self-supervised interaction embedding, not hard binary labeling."
+  - "The 165 hotline population is filtered by help-seeking behavior, institutional trust, remaining doubt, access to external information, and willingness to verify."
+  - "The deepest manipulation cases may be underrepresented because people who are fully isolated or cognitively captured may not call 165 at all."
+  - "Intervention effectiveness, institutional resource allocation, and human worth must be separated; limited resources can justify intervention-boundary research but never claims about who is worth protecting."
+  - "Non-help-seeking does not mean unprotectable; it may reflect institutional distrust, fear, manipulation depth, social isolation, stigma, dependency, or loss of external reality calibration."
+  - "165 may capture a reversible window where uncertainty, verification seeking, and institutional contact still make intervention possible."
+evidence:
+  - "2026-05-22 user idea: if the user has 30 hours of 165 antifraud hotline police-citizen audio, the right first move is to define the phenomenon and treat the corpus as high-value interaction data."
+  - "2026-05-22 user idea: the valuable dimensions include officer side, victim side, dynamic questioning, escalation process, uncertainty evolution, acoustic stress, and institutional capacity."
+  - "Prior idea_000035: the locked broader frame is AI-mediated harmful interaction trajectory modeling through interaction structure reconstruction before semantics."
+  - "Prior idea_000015: audio systems should not collapse into transcript-only analysis because voice, timing, latency, and noisy real-world signals matter."
+  - "Prior idea_000007: scam research should optimize high-value behavior discovery per reviewer hour while preserving governance-safe evidence handling."
+  - "Prior idea_000011: law-enforcement-adjacent interview systems require officer control, non-leading boundaries, auditability, and no raw sensitive case evidence in the brainstorming repo."
+  - "2026-05-22 user refinement: the main value is victim cognitive-state data, because scam harm often leaves traces in citizens' confusion, anxiety, authority overtrust, rationalization, time pressure, defense against external challenge, attention narrowing, dependency, and emotional oscillation."
+  - "2026-05-22 user refinement: the wrong direction is audio to transcript to classifier, because ASR errors, dialect, hesitation, fragmented speech, overlap, and emotional speech can destroy token-level signals."
+  - "2026-05-22 user refinement: the stronger direction is multilayer interaction representation: acoustic layer, interaction dynamics, cognitive state modeling, and institutional response."
+  - "2026-05-22 paper-framing refinement: the paper should protect one core problem and avoid scope drift into ASR, generic scam classification, chatbots, multimodal LLM demos, or broad AI-governance simulation."
+  - "2026-05-22 paper-framing refinement: the strongest paper identity is interaction-centered cognitive vulnerability modeling, where scam is the case study, cognitive security is the larger scientific frame, interaction is the object, AI is the analysis tool, and institutional response is the deployment context."
+  - "2026-05-22 selection-bias refinement: 165 callers are a selected help-seeking population; the paper must not claim to represent all scam victims, and should instead study help-seeking institutional verification interactions."
+  - "2026-05-23 moral-boundary refinement: the paper must avoid moving from intervention feasibility to human worth; the valid question is which intervention boundary is most effective under finite institutional resources."
+  - "2026-05-23 help-seeking refinement: help-seeking itself can be treated as a measurable cognitive-security signal because it may indicate self-awareness, uncertainty recognition, residual institutional trust, cognitive openness, and remaining external verification capacity."
+  - "Sax Institute Evidence Check on mental-health help-seeking proposes help-seeking as an adaptive coping process involving external assistance for a concern."
+  - "Fraga Dominguez and Storey systematic review on elder-abuse help-seeking highlights underreporting and help-seeking barriers, supporting the claim that victims who seek help are a selected population."
+baseline:
+  - "Treat the 30 hours as an ASR dataset and report transcript word error rate."
+  - "Treat the data as a speech emotion classification dataset."
+  - "Fine-tune a BERT, Whisper, or LLM pipeline for scam/not-scam labels."
+  - "Build an accuracy leaderboard that ignores interaction structure, intervention timing, and institutional capacity."
+  - "Use full transcripts as public evidence without a de-identification and release protocol."
+  - "Analyze only citizen language and ignore officer questioning strategy and institutional triage constraints."
+  - "Assume text semantics is enough and discard acoustic hesitation, silence, overlap, speaking rate, and stress markers."
+  - "Assume antifraud modeling requires scammer voice and therefore undervalue victim-side cognitive-state data."
+  - "Force early binary ground truth even though the hotline population mixes true victims, anxious callers, suspicious callers, delusional cases, and normal consultation."
+  - "Convert speech to text and train a classifier while losing dialect, hesitation, fragmented speech, overlap, emotional speech, pauses, and turn-taking."
+  - "Treat 165 callers as representative of all scam victims or all manipulated people."
+  - "Hide selection bias in a limitation paragraph instead of using it to define the actual study population."
+  - "Frame non-help-seeking people as not worth protecting."
+  - "Confuse intervention effectiveness with human worth or protectability."
+  - "Use cognitive-security triage as moral triage rather than timing and resource-allocation analysis."
+metrics:
+  - "Can a codebook identify interaction states such as initial suspicion, trust in scammer, uncertainty, reassurance seeking, panic, rationalization, information disclosure, officer trust, and intervention acceptance?"
+  - "Can interaction state transitions be reconstructed by turn, time window, or topic shift without relying only on scam keywords?"
+  - "Which officer question types produce sudden information gain, clarification, shutdown, resistance, or trust transfer?"
+  - "Do acoustic markers such as hesitation, silence duration, speaking rate, pitch instability, interruption, overlap, and stress burst correlate with high-risk or deep-manipulation states?"
+  - "Can trajectories distinguish already-paid, not-yet-paid, successfully-stopped, and unresolved consultation outcomes?"
+  - "Can the method estimate officer review burden, triage bottlenecks, escalation delay, and capacity threshold under higher call volume?"
+  - "Can public outputs remain useful while exposing only aggregate metrics, codebooks, synthetic exemplars, and redacted protocols?"
+  - "Can the method model cognitive vulnerability levels such as confusion, panic, dependency, suggestibility, emotional overload, and verification resistance?"
+  - "Can latent structure discovery reveal stable cognitive-state clusters without forcing scam/not-scam labels?"
+  - "Can acoustic precursors of panic, overload, or verification resistance be detected before the transcript clearly states risk?"
+  - "Can conversation repair failure be quantified through repeated questions, unresolved topics, fixation, and failed alternative explanations?"
+  - "Can effective officer intervention patterns be identified through changes in caller uncertainty, grounding, information disclosure, and action readiness?"
+  - "Can the study characterize the help-seeking population separately from non-calling, isolated, or fully captured victims?"
+  - "Can help-seeking behavior itself be modeled as an interaction signal: willingness to verify, remaining doubt, institutional trust, or partial escape from isolation?"
+  - "Can the study distinguish intervention feasibility, institutional resource allocation, and human worth in the research framing?"
+  - "Can the study identify a reversible intervention window where cognitive capture is not complete and external verification still works?"
+  - "Can help-seeking thresholds be operationalized through uncertainty, verification seeking, trust displacement, and willingness to accept institutional contact?"
+insights:
+  - "The rare value of the corpus is not size; it is ecological validity in high-risk help-seeking interaction."
+  - "The right first unit is the interaction trajectory, not a sentence, transcript, or call-level scam label."
+  - "Officer questions can be studied as intervention instruments: some questions increase information, some calm panic, some trigger resistance or shutdown."
+  - "Belief transition is central: callers may move from trust in scammer to doubt, from certainty to confusion, from panic to action, or from rationalization to acceptance of intervention."
+  - "Acoustic intelligence is a differentiator because Mandarin/Taiwanese hotline voice interactions may reveal overload and stress that transcripts hide."
+  - "Institutional capacity turns the dataset into a TFSC-style governance object: review scarcity, attention collapse, escalation bottlenecks, and reconstructability decay under AI-scaled scams."
+  - "A publishable path may be a framework plus restricted-data diagnostic plus synthetic public fixture, not a release of raw calls."
+  - "The dataset's biggest value is that it captures the human aftermath of manipulation, not necessarily the manipulator's script."
+  - "Scam types change, but manipulated cognitive states may share cross-scam structure."
+  - "The research line is closer to AI for cognitive security than traditional cybersecurity."
+  - "The future attack surface may be human cognition itself, not only software vulnerabilities."
+  - "Officer intervention is part of the signal: too-early challenge or command-like authority may increase defensiveness, while gradual reframing, emotional grounding, and indirect questioning may work better."
+  - "The paper's strongest contribution is a new problem framing plus a checkable representation framework, not a larger technical stack."
+  - "Conceptual coherence matters more than adding ASR, LLM, multimodal, simulation, and governance components into one overloaded manuscript."
+  - "The 165 corpus is not a general victim population; it is a help-seeking interaction window where callers still have enough doubt, access, or institutional trust to seek external verification."
+  - "Selection bias does not invalidate the study if the claim is narrowed honestly; it changes the object from all scam victims to help-seeking anti-fraud interactions."
+  - "The most dangerous manipulation stage may be invisible to 165 data because fully isolated or cognitively captured people may not call."
+  - "Help-seeking behavior itself can become part of the theory: it may indicate a manipulation progression stage rather than a sampling defect only."
+  - "The moral framing risk is substantial: the paper must never imply that people who do not seek help are less worthy of protection."
+  - "The more defensible research question is which intervention boundary is most effective under finite institutional resources."
+  - "165 help-seeking callers may be valuable precisely because they sit near the manipulation/recovery boundary, where cognitive oscillation, persuasion instability, and intervention response are observable."
+  - "This makes the study closer to cognitive-security triage: not deciding whose life matters, but identifying when and how intervention can still change the trajectory."
+connections:
+  - idea_000007
+  - idea_000011
+  - idea_000015
+  - idea_000032
+  - idea_000035
+role: idea
+value:
+  impact: high
+  feasibility: medium
+first_principle:
+  scarce_resource: "ethically usable, reviewer-reconstructable evidence of victim cognitive state after possible manipulation"
+  core_object: "victim cognitive-state dynamics in help-seeking 165 antifraud consultation interactions"
+  not_the_core:
+    - "scammer voice dataset"
+    - "ASR benchmark"
+    - "speech emotion leaderboard"
+    - "BERT fine-tuning"
+    - "Whisper plus LLM demo"
+    - "scam/not-scam classifier"
+    - "public release of raw audio or full transcripts"
+    - "automated legal, scam, victim, or officer judgment"
+  smallest_useful_unit: "a restricted 10-call pilot annotation packet focused on cognitive state, acoustic markers, interaction dynamics, officer intervention, and public-safe synthetic exemplars."
+  decision_boundary: "Use real calls only for authorized restricted analysis; publish codebooks, aggregate findings, redacted protocols, and synthetic examples unless an ethics-approved release path exists; never generalize 165 callers to all scam victims."
+paper_framework:
+  working_title: "AI-based interaction representation for cognitive vulnerability dynamics in anti-fraud hotline conversations"
+  paper_identity: "interaction-centered cognitive vulnerability modeling"
+  advisor_alignment: "Follow Rao teacher's lesson by defining the single smallest valid core problem before adding tools, systems, or governance expansion."
+  one_sentence_claim: "This paper shows that manipulated cognitive-state dynamics can be studied within help-seeking anti-fraud hotline conversations by proposing an interaction-centered representation framework and validating it through restricted pilot annotation, trajectory analysis, selection-boundary and reversible-window analysis, and public-safe synthetic exemplars."
+  central_reviewer_memory: "The stable signal is not the scam script itself, but the interaction dynamics and cognitive vulnerability patterns shown by manipulated or uncertain callers who still seek institutional verification."
+  only_core_problem: "How can AI represent cognitive vulnerability dynamics from acoustic, conversational, and intervention signals in help-seeking anti-fraud hotline interactions without relying on scammer audio, brittle content labels, or claims about all victims?"
+  main_method: "A multilayer interaction representation framework that reconstructs acoustic dynamics, interaction structure, cognitive vulnerability states, and officer intervention timing as a temporal trajectory."
+  main_evidence_stack:
+    - "restricted 10-call pilot annotation packet, or synthetic exemplar calls before real-data approval"
+    - "human-readable codebook for caller state, officer action, phase transition, repair failure, and outcome state"
+    - "trajectory maps showing phase transitions, information-gain moments, closure, resistance, and intervention timing"
+    - "selection-boundary analysis explaining who is visible to 165 and who may be missing"
+    - "reversible-window analysis distinguishing intervention timing from moral worth"
+    - "exploratory acoustic and turn-taking feature summaries"
+    - "public-safe synthetic examples and aggregate metrics"
+  main_contribution_sentence: "We define an interaction-centered representation framework for modeling cognitive vulnerability dynamics in help-seeking anti-fraud hotline conversations, separating manipulation aftermath signals from scam content detection while making the population-selection boundary explicit."
+  novelty_is_not:
+    - "a higher-accuracy scam classifier"
+    - "a new ASR system"
+    - "a chatbot or anti-fraud assistant"
+    - "a multimodal LLM demo"
+    - "a universal AI-governance theory"
+  novelty_is:
+    - "reframing victim-side hotline audio as cognitive-state and interaction-trajectory data"
+    - "operationalizing cognitive vulnerability as observable acoustic and interaction signals"
+    - "separating representation discovery from premature binary scam labels"
+    - "linking officer intervention timing to state transition rather than treating officers as transcript background"
+    - "showing a public-safe evidence architecture for sensitive institutional speech data"
+    - "turning help-seeking selection bias into an explicit institutional-intervention boundary"
+    - "treating help-seeking itself as a measurable cognitive-security signal without making human-worth claims"
+  abstract_contract:
+    problem: "Real-world fraud evolves quickly across scripts, domains, and languages, making content-level scam detection brittle."
+    gap: "Most anti-fraud modeling focuses on scam content or binary labels, while the help-seeking victim-side cognitive and interaction state after manipulation remains under-modeled and often confused with all-victim representation."
+    method: "The paper proposes an interaction-centered representation framework over acoustic dynamics, interaction structure, cognitive vulnerability signals, and institutional intervention."
+    result: "The initial evidence should show whether restricted pilot annotation, selection-boundary analysis, reversible-window analysis, and trajectory reconstruction can expose stable vulnerability, repair-failure, and intervention patterns without raw-data release."
+    contribution_boundary: "The contribution is a framework and restricted diagnostic protocol, not a production detector, legal judgment system, or public raw-audio dataset."
+  section_plan:
+    section_1_introduction:
+      purpose: "Establish the real-world problem: scams mutate, AI can personalize persuasion, and token-level detection becomes brittle."
+      key_move: "Introduce the punchline that stable signals may lie in interaction dynamics after manipulation, not in scam scripts."
+    section_2_problem_reframing:
+      purpose: "Declare that the paper is not scam content detection but cognitive-state-oriented interaction modeling."
+      key_move: "Explain token-centric limits, semantic drift, ASR brittleness, multilingual instability, uncertain labels, and help-seeking selection bias."
+    section_3_theoretical_perspective:
+      purpose: "Justify why interaction patterns are meaningful without becoming a psychology paper."
+      key_move: "Use cognitive overload, bounded rationality, manipulation dynamics, help-seeking as adaptive coping, conversational asymmetry, and institutional intervention as supporting lenses."
+    section_4_dataset_and_representation_design:
+      purpose: "Describe the 165 hotline corpus as restricted high-value help-seeking interaction data and define the representation layers."
+      key_move: "Separate acoustic dynamics, interaction structure, cognitive vulnerability signals, officer intervention, and population-selection boundary."
+    section_5_representation_learning:
+      purpose: "Explain why reliable labels are hard and why self-supervised or weakly supervised representation discovery is appropriate."
+      key_move: "Use trajectory embedding, clustering, contrastive or predictive objectives, and human-readable codebook comparison as analysis tools."
+    section_6_interaction_trajectory_analysis:
+      purpose: "Analyze manipulation as temporal evolution rather than sentence classification."
+      key_move: "Map panic increase, uncertainty persistence, closure, stabilizing intervention, repair failure, and resistance trajectories."
+    section_7_institutional_implications:
+      purpose: "Connect the result to cognitive-security systems, review scarcity, hotline triage, and institutional overload."
+      key_move: "Frame this as cognitive-security triage and intervention timing, not as moral ranking of who is worth protecting."
+    section_8_limitations:
+      purpose: "Protect claim discipline."
+      key_move: "State that the data is not direct scammer-victim interaction, labels are uncertain, callers are a selected help-seeking population, the most isolated victims may be missing, sampling is institutional, and ethics restrict release."
+  concrete_method_sequence:
+    - "Step 0: Write the one-page paper contract with the one-sentence claim, not-this-paper list, and contribution-to-evidence map."
+    - "Step 1: Build the ethics and data-governance protocol before touching raw audio."
+    - "Step 2: Create a codebook for caller cognitive state, officer intervention, acoustic marker, repair failure, phase transition, and outcome state."
+    - "Step 3: Define the help-seeking population boundary: who can appear in 165 calls, who is likely missing, and what claims are therefore invalid."
+    - "Step 4: Define the moral framing guardrail: intervention effectiveness is not human worth, and non-help-seeking is not unprotectability."
+    - "Step 5: Run a 10-call restricted pilot, or synthetic exemplar calls if real-data approval is not ready."
+    - "Step 6: Segment each call by turn, 30-second window, topic shift, or phase transition."
+    - "Step 7: Annotate observable interaction traits without assigning medical, legal, deception, final scam truth, or moral worth."
+    - "Step 8: Extract acoustic and turn-taking features that do not require raw public release."
+    - "Step 9: Construct temporal interaction graphs and trajectory summaries."
+    - "Step 10: Explore self-supervised or weakly supervised trajectory embeddings and clustering as secondary analysis, not the paper's conceptual center."
+    - "Step 11: Validate with inter-coder agreement, qualitative trajectory audit, selection-boundary audit, reversible-window audit, synthetic examples, and aggregate statistics."
+    - "Step 12: Write institutional implications only after the representation framework and evidence chain are clear."
+  reviewer_question_list:
+    - "What exactly is cognitive vulnerability in this paper, and how is it operationalized without overclaiming psychology?"
+    - "Why can a study without scammer audio still contribute to anti-fraud research?"
+    - "Why is this not just speech emotion recognition, ASR, or scam classification?"
+    - "How can the paper validate cognitive-state dynamics without clean ground-truth scam labels?"
+    - "Who is visible in 165 hotline data, who is missing, and how does selection bias limit the claims?"
+    - "How does the paper avoid implying that non-help-seeking people are less worthy of protection?"
+    - "What is the reversible intervention window, and how is it observed without overclaiming?"
+    - "How are privacy, voice biometrics, institutional sensitivity, and public reproducibility handled?"
+    - "What evidence shows that interaction dynamics are more stable or useful than content alone?"
+    - "What is the boundary between AI-assisted analysis and automated judgment?"
+  contribution_to_evidence_map:
+    contribution_1_reframe_dataset:
+      contribution: "We reframe 165 hotline audio as help-seeking victim cognitive-state and interaction-trajectory data rather than scammer-speech data."
+      method_section: "Dataset and representation design"
+      evidence_section: "Corpus characterization, selection-boundary analysis, call-state taxonomy, and public-safe examples"
+      claim_boundary: "Does not claim the corpus represents all scam interactions, all manipulated people, or fully isolated victims."
+    contribution_2_define_representation:
+      contribution: "We define a multilayer representation for acoustic dynamics, interaction structure, cognitive vulnerability signals, and officer intervention timing."
+      method_section: "Representation framework"
+      evidence_section: "Codebook, annotated pilot packet, trajectory maps, and feature inventory"
+      claim_boundary: "Does not claim acoustic stress equals deception, victim status, or legal truth."
+    contribution_3_show_trajectory_analysis:
+      contribution: "We show how cognitive vulnerability can be studied as temporal phase transition rather than sentence-level classification."
+      method_section: "Trajectory reconstruction procedure"
+      evidence_section: "Phase-transition examples, repair-failure maps, and intervention timing analysis"
+      claim_boundary: "Does not claim production prediction accuracy."
+    contribution_4_public_safe_protocol:
+      contribution: "We design a privacy-preserving evidence path for sensitive institutional speech research."
+      method_section: "Governance and release protocol"
+      evidence_section: "Synthetic exemplars, aggregate metrics, and claim-boundary table"
+      claim_boundary: "Does not release raw voices, full transcripts, or identifying institutional evidence."
+    contribution_5_selection_boundary:
+      contribution: "We define the 165 hotline population as a help-seeking institutional verification population and treat help-seeking behavior as part of the interaction phenomenon."
+      method_section: "Population boundary and institutional interface"
+      evidence_section: "Selection-bias ledger, inclusion/exclusion logic, and trajectory interpretation notes"
+      claim_boundary: "Does not infer the behavior of non-callers or deeply isolated victims without external evidence."
+    contribution_6_reversible_window:
+      contribution: "We formulate 165 hotline interaction as a reversible intervention window where uncertainty, verification seeking, and trust displacement may still allow trajectory change."
+      method_section: "Intervention boundary framework"
+      evidence_section: "Trajectory phase transitions, officer intervention timing, and help-seeking signal annotations"
+      claim_boundary: "Does not claim that people outside this window are unworthy, unreachable, or permanently captured."
+  figure_1_plan:
+    goal: "Let a reviewer understand the paper in 10 seconds."
+    panels:
+      - "Panel A: Scam scripts mutate, so content-level detection is brittle."
+      - "Panel B: Help-seeking hotline callers expose a reversible-window interface where uncertainty and external verification are still observable."
+      - "Panel C: The framework reconstructs acoustic, interaction, cognitive-state, and officer-intervention layers over time."
+      - "Panel D: Output is trajectory representation, restricted diagnostics, synthetic public exemplars, and claim-bounded institutional implications."
+  scope_guardrails:
+    include:
+      - "victim-side cognitive-state modeling"
+      - "interaction structure reconstruction"
+      - "acoustic and paralinguistic markers as exploratory signals"
+      - "officer intervention timing"
+      - "help-seeking population boundary"
+      - "restricted-data governance and public-safe evidence"
+    exclude:
+      - "world model"
+      - "agent society"
+      - "full governance-collapse simulation"
+      - "universal scam ontology"
+      - "LLM fine-tuning as the main contribution"
+      - "general production fraud detector"
+      - "claiming medical, legal, or final victim truth"
+      - "claiming representativeness for all scam victims"
+victim_cognitive_state_focus:
+  thesis: "Antifraud hotline calls are valuable because they show the citizen's cognitive state after influence, not because they necessarily contain scammer audio."
+  cognitive_state_markers:
+    - "cognitive confusion"
+    - "high anxiety"
+    - "authority overtrust"
+    - "repeated rationalization"
+    - "time pressure"
+    - "defense against external challenge"
+    - "attention narrowing"
+    - dependency
+    - "emotional oscillation"
+  observable_surfaces:
+    - voice
+    - "pause pattern"
+    - "speaking rate"
+    - "question form"
+    - "emotion switching"
+    - "conversation structure"
+    - "topic transition"
+    - "uncertainty pattern"
+  field_positioning:
+    - "cognitive security"
+    - "behavioral signal modeling"
+    - "manipulation-state detection"
+    - "human vulnerability dynamics"
+ground_truth_boundary:
+  warning: "165 hotline calls are not clean binary ground truth."
+  possible_call_types:
+    - "true scam victim"
+    - "suspicious but not scammed"
+    - "anxious caller"
+    - "delusional or non-scam belief case"
+    - "normal consultation"
+    - "insufficient information"
+  implication: "Do not force early scam/not-scam labels; begin with latent structure discovery and calibrated uncertainty."
+selection_bias_boundary:
+  warning: "165 callers are not a representative sample of all scam victims."
+  bias_types:
+    - "selection bias"
+    - "sampling bias"
+    - "survivorship bias"
+    - "help-seeking interface bias"
+  visible_population:
+    - "people who still have enough doubt to seek verification"
+    - "people who can still access external information"
+    - "people who are not fully isolated from institutions or family"
+    - "people who retain some willingness to challenge the scammer narrative"
+    - "people who still trust or can approach the 165 institutional interface"
+  likely_missing_population:
+    - "fully isolated victims"
+    - "deeply cognitively captured victims"
+    - "people who completely trust the scammer narrative"
+    - "people who reject external verification"
+    - "people who lack access, time, language comfort, or institutional trust to call"
+  reframed_population: "help-seeking anti-fraud interaction population"
+  theoretical_turn: "Help-seeking behavior is not merely sampling noise; it may indicate a manipulation progression stage where doubt, external verification, and institutional contact are still possible."
+  claim_boundary:
+    safe:
+      - "The study characterizes observable cognitive vulnerability dynamics among 165 help-seeking callers."
+      - "The study analyzes the institutional intervention boundary where people contact an anti-fraud hotline."
+      - "The study can compare trajectories within the help-seeking population."
+    unsafe:
+      - "The study represents all scam victims."
+      - "The study captures the most deeply manipulated or isolated victims."
+      - "The study estimates population prevalence of cognitive vulnerability."
+      - "The study proves how non-callers behave."
+  paper_value: "This limitation can become part of the contribution because it clarifies that hotline data studies institutional verification interactions, not the full victim universe."
+intervention_boundary_framework:
+  core_question: "Under finite institutional resources, which interaction stages and intervention boundaries are most effective for changing a harmful trajectory?"
+  keep_separate:
+    intervention_effectiveness: "Whether a specific intervention can still change the cognitive or behavioral trajectory at a given stage."
+    institutional_resource_allocation: "How scarce officer attention, time, escalation capacity, and review infrastructure should be deployed."
+    human_worth_or_protectability: "Never a model output, ranking target, or research claim."
+  moral_framing_guardrail:
+    safe_language:
+      - "intervention timing"
+      - "intervention feasibility"
+      - "institutional resource allocation"
+      - "help-seeking threshold"
+      - "reversible window"
+      - "cognitive-state transition"
+      - "cognitive-security triage"
+    unsafe_language:
+      - "not worth protecting"
+      - "too gullible to save"
+      - "unprotectable people"
+      - "low-value victims"
+      - "moral deservingness"
+  reversible_window_hypothesis:
+    definition: "A stage in which cognitive capture is not complete and the person still shows uncertainty, verification seeking, or openness to institutional reality-checking."
+    observable_signals:
+      - "caller initiates or accepts external verification"
+      - "caller expresses doubt or oscillates between scammer and officer frames"
+      - "caller can still answer grounding or timeline-reconstruction questions"
+      - "caller can temporarily suspend scammer authority"
+      - "caller shows trust displacement from suspicious actor toward institutional actor"
+      - "caller can translate officer explanation into action readiness"
+    caution: "Absence of these signals in 165 data does not prove a person is unreachable; it may reflect that the person is outside this institutional observation channel."
+  help_seeking_as_signal:
+    interpretation: "Help-seeking itself may indicate adaptive coping, uncertainty recognition, residual institutional trust, cognitive openness, and remaining external verification capacity."
+    use_in_paper: "Treat help-seeking as an observable cognitive-security signal at the institutional interface, not as a moral quality."
+  cognitive_security_triage:
+    meaning: "Prioritize intervention timing and support routes under scarcity."
+    not_meaning: "Do not rank human worth, deservingness, or legal victim status."
+  literature_anchors:
+    - source: "Rickwood, Thomas, and Bradford / Sax Institute Evidence Check on help-seeking measures in mental health"
+      relevance: "Supports help-seeking as an adaptive coping process involving external assistance for a concern."
+    - source: "Fraga Dominguez and Storey, Help-Seeking Behavior in Victims of Elder Abuse: A Systematic Review"
+      relevance: "Supports underreporting and help-seeking barriers as reasons help-seeking populations are selected rather than representative."
+research_layers:
+  layer_1_acoustic_layer:
+    question: "What does the voice reveal before transcript semantics?"
+    features:
+      - pitch
+      - energy
+      - "speaking rate"
+      - "pause pattern"
+      - interruption
+      - jitter
+      - "turn-taking latency"
+    hypothesis: "Manipulated or cognitively overloaded callers may show acoustic changes before explicit content reveals risk."
+    output: "acoustic precursor and paralinguistic marker inventory"
+  layer_2_interaction_dynamics:
+    question: "How is the conversation organized as an interaction graph?"
+    focus:
+      - "caller initial state"
+      - "trust transfer from scammer or suspicious actor to officer"
+      - "information-gain moments"
+      - "officer question patterns"
+      - "shutdown or resistance patterns"
+      - "successful intervention trajectory"
+      - "already-paid or high-risk trajectory"
+      - "who dominates the conversation"
+      - "which topics fail to close"
+      - "whether the caller fixates on one authority"
+      - "whether alternative explanations are rejected"
+    output: "temporal interaction graph and conversation repair map"
+  layer_3_cognitive_state_modeling:
+    question: "What is the caller's current cognitive vulnerability level?"
+    states:
+      - confusion
+      - panic
+      - dependency
+      - suggestibility
+      - "emotional overload"
+      - "verification resistance"
+    output: "manipulation aftermath state representation"
+  layer_4_institutional_response:
+    question: "Which officer interventions help shift cognitive state toward verification and action?"
+    intervention_patterns:
+      potentially_risky:
+        - "too-fast denial"
+        - "too-early challenge"
+        - "command-like authority"
+      potentially_effective:
+        - "gradual reframing"
+        - "emotional grounding"
+        - "indirect questioning"
+        - "timeline reconstruction"
+        - "alternative explanation testing"
+    output: "anti-fraud conversational intervention modeling"
+  layer_5_ai_governance_institutional_capacity:
+    question: "When AI-mediated scam volume scales, how does hotline review capacity fail?"
+    variables:
+      - "officer review capacity"
+      - fatigue
+      - "attention collapse"
+      - "inconsistent judgment"
+      - "triage overload"
+      - "escalation bottleneck"
+      - "delayed intervention"
+      - "reconstructability decay"
+    output: "review-scarcity and institutional-overload model"
+representation_discovery_agenda:
+  principle: "Do representation discovery before predictive modeling."
+  research_questions:
+    - "Do people affected by scams show stable latent interaction patterns?"
+    - "Does vulnerability change over time within a call?"
+    - "Does panic have acoustic precursors?"
+    - "Can conversation repair failure be quantified?"
+    - "Do effective interventions have reproducible interaction patterns?"
+  methods:
+    - clustering
+    - "trajectory analysis"
+    - "self-supervised interaction embedding"
+    - "acoustic plus interaction feature fusion"
+    - "human-readable codebook comparison"
+interaction_state_codebook_seed:
+  caller_states:
+    - "initial suspicion"
+    - "trust in scammer or suspicious actor"
+    - confusion
+    - anxiety
+    - panic
+    - rationalization
+    - "information withholding"
+    - "reassurance seeking"
+    - "belief revision"
+    - "action readiness"
+    - "authority overtrust"
+    - "verification resistance"
+    - dependency
+    - "attention narrowing"
+    - "emotional oscillation"
+  officer_actions:
+    - calming
+    - "identity or scenario clarification"
+    - "timeline reconstruction"
+    - "payment or credential check"
+    - "risk explanation"
+    - "verification instruction"
+    - "intervention instruction"
+    - "escalation routing"
+    - "non-leading information elicitation"
+    - "gradual reframing"
+    - "emotional grounding"
+    - "alternative explanation testing"
+  outcome_states:
+    - "not yet paid"
+    - "already paid"
+    - "successfully stopped"
+    - "needs escalation"
+    - unresolved
+    - "insufficient information"
+  phase_transitions:
+    - "caller trusts scammer to caller doubts scammer"
+    - "caller panic to caller can follow officer instruction"
+    - "caller rationalization to caller accepts intervention"
+    - "low information to actionable timeline"
+    - "uncertain risk to high-risk escalation"
+acoustic_feature_seed:
+  turn_level:
+    - "speech rate"
+    - "pause duration"
+    - "filled pauses"
+    - overlap
+    - interruptions
+    - "response latency"
+  voice_quality:
+    - "pitch instability"
+    - "volume burst"
+    - "tremor-like instability"
+    - breathiness
+    - "prosodic flattening"
+  interaction_level:
+    - "turn-taking asymmetry"
+    - "officer interruption timing"
+    - "caller repair attempts"
+    - "topic shift timing"
+    - "silence after key risk question"
+interaction_dynamics_seed:
+  graph_questions:
+    - "who leads the conversation"
+    - "who repeats questions"
+    - "which topics fail to close"
+    - "where fixation appears"
+    - "where external challenge is defended against"
+    - "where alternative explanation fails"
+  repair_failure_markers:
+    - "repeated unresolved question"
+    - "same authority cited after correction"
+    - "topic returns to scammer's frame"
+    - "caller cannot restate officer explanation"
+    - "verification instruction is acknowledged but not adopted"
+governance_boundary:
+  data_classification: "high-sensitive institutional audio and derived transcript data"
+  raw_data_policy:
+    - "do not store raw audio in this git repo"
+    - "do not store full transcripts in this git repo"
+    - "do not store phone numbers, names, account data, addresses, case IDs, or officer identifiers in public/tracked files"
+    - "treat voice as biometric personal data"
+  restricted_workspace_requirements:
+    - "access control"
+    - "audit log"
+    - "retention schedule"
+    - "de-identification and redaction protocol"
+    - "speaker-role pseudonymization"
+    - "IRB or ethics review"
+    - "data-use agreement"
+    - "claim-review checklist"
+  public_release_strategy:
+    - "aggregate metrics"
+    - "annotation codebook"
+    - "redacted methodology"
+    - "synthetic exemplar calls"
+    - "public-safe figures"
+    - "no raw voices"
+    - "no direct identifiable quotes unless explicitly approved and de-identified"
+claim_discipline:
+  safe_claims:
+    - "This dataset supports restricted diagnostic analysis of consultation interaction structure."
+    - "This dataset supports analysis of help-seeking anti-fraud interactions, not all scam victim states."
+    - "The study can propose a codebook for interaction state transitions and intervention timing."
+    - "Acoustic features may provide exploratory markers of stress, uncertainty, or overload."
+    - "The study models cognitive-state and interaction patterns, not truth, deception, or victim blame."
+    - "Public artifacts can demonstrate method using synthetic exemplars."
+  unsafe_claims:
+    - "The model detects all scams."
+    - "Thirty hours is enough for a general production classifier."
+    - "165 callers represent all scam victims."
+    - "The study captures the most deeply isolated or cognitively captured victims."
+    - "Officer or citizen behavior can be judged automatically."
+    - "Acoustic stress equals deception or victim status."
+    - "Caller confusion proves they are scammed."
+    - "A binary label fully captures hotline reality."
+    - "Raw 165 calls can be publicly released after simple anonymization."
+pressure_test:
+  setting: "A restricted pilot using 10 authorized 165 consultation calls sampled across not-yet-paid, already-paid, successfully-stopped, unresolved, and high-anxiety cases."
+  expected_failure_mode: "The work collapses into ASR cleanup, call-level labels, or overgeneralized victim claims, or creates privacy risk by storing transcripts and voice-derived identifiers in the wrong place."
+  smallest_observable_test: "Create a redacted annotation packet that segments each call into turns or 30-second windows, labels cognitive state, officer action, interaction dynamics, acoustic markers, information-gain moments, repair failure, outcome state, and selection-boundary notes, then publishes only aggregate schema plus synthetic exemplars."
+  decision_metric: "Pass if two reviewers can apply the codebook consistently, latent patterns emerge without forcing scam/not-scam labels, intervention timing becomes visible, selection bias is explicitly bounded, and no raw audio/transcript or identifying detail enters git."
+next_steps:
+  - "Rewrite the one-page problem definition around victim cognitive-state modeling and AI for cognitive security, not scammer audio or scam classification."
+  - "Add the help-seeking population boundary to the one-page paper contract: 165 callers are not all scam victims, but a selected institutional verification population."
+  - "Draft the cognitive-state codebook: confusion, panic, dependency, suggestibility, emotional overload, verification resistance, authority overtrust, rationalization, attention narrowing, and emotional oscillation."
+  - "Define the four-layer representation: acoustic layer, interaction dynamics, cognitive state modeling, and institutional response."
+  - "Design a 10-call restricted pilot annotation packet; if real access is not approved, build synthetic exemplar calls first."
+  - "Define which artifacts are allowed in git: schema, aggregate metrics, synthetic examples, and redacted methods only."
+  - "Use latent structure discovery before any binary label or predictive model."
+source:
+  - conversation
+  - ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml
+  - ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml
+  - ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml
+  - ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml
+  - ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 97/100
+maturity_level: execution_ready
+maturity_action: "generate experiment plan"
