@@ -62,9 +62,7 @@ assumptions:
   action.'
 - '`portal` means the external journal submission system; `portal:check` only checks
   local portal-facing files such as mapping, runbook, checklist, and deviation log.'
-- 'The highest-risk failure near submission may be process drift rather than scientific
-  content: wrong file, mismatched title, missing declaration, anonymous metadata leak,
-  or inconsistent abstract.'
+- 'The highest-risk failure near submission may be process drift rather than scientific content: wrong file, mismatched title, missing declaration, anonymous metadata leak, or inconsistent abstract.'
 - Automation should reduce cognitive load but preserve a final human-owned submission
   decision.
 - PaperOps is valuable because AI-era papers increasingly include code, model cards,
