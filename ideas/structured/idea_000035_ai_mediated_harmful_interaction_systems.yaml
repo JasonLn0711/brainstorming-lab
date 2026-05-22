@@ -1,0 +1,434 @@
+id: idea_000035
+title: "AI-mediated harmful interaction trajectory modeling"
+created_at: 2026-05-22
+type: hypothesis
+tags:
+  - scam-research
+  - harmful-interaction
+  - influence-dynamics
+  - interaction-trajectory
+  - adaptive-manipulation
+  - semantic-grounding
+  - low-resource-ai
+  - self-supervised-learning
+  - multimodal-ai
+  - asr
+  - governance
+  - reviewer-assist
+  - behavior-graph
+  - temporal-modeling
+  - temporal-interaction-graph
+  - decision-autonomy
+  - influence-transparency
+  - hard-negative
+  - interaction-structure-reconstruction
+  - interaction-phase-transition
+  - escalation-dynamics
+  - trust-state-evolution
+  - conversation-topology
+  - complex-systems
+  - agent-based-modeling
+  - review-scarcity
+  - ai-safety
+status: execution_ready
+problem_statement:
+  raw: "Given that animal communication, low-resource meaning inference, and modern scam or persuasion systems often lack stable label pairs, ask whether the useful research object is not direct translation or scam classification but latent interaction dynamics that can be inferred from sequence structure, context, behavior outcomes, and longitudinal changes. The locked scope is AI-mediated harmful interaction trajectory modeling, focused only on interaction structure reconstruction."
+  normalized: "Given high-impact communication where surface tokens are unstable, labels are sparse, ASR may distort text, and meaning emerges through interaction outcomes, optimize reconstruction of harmful interaction structure under constraints of no semantic interpretation as the first task, non-binary scam boundaries, adaptive manipulation, cross-language variation, multimodal signals, privacy, limited reviewer labor, hard-negative protection, scope explosion, and no automated final fraud determination."
+  structure:
+    given: "high-impact human or animal communication streams whose meaning is not reliably recoverable from paired labels or single-message text"
+    optimize: "interaction structure reconstruction for latent harmful influence trajectories"
+    constraints:
+      - "do not start with semantic understanding"
+      - "do not train a large model as the first move"
+      - "do not frame the project as another scam classifier"
+      - "missing or sparse label pairs"
+      - "surface wording changes quickly"
+      - "ASR and OCR may distort token-level evidence"
+      - "persuasion and scam risk form an influence gradient, not a clean binary"
+      - "harmful interaction often unfolds over days or weeks"
+      - "benign marketing, mentorship, fandom, religion, politics, and sales can look superficially similar"
+      - "adaptive AI agents may personalize manipulation in real time"
+      - "privacy and consent boundaries limit raw evidence collection"
+      - "human reviewers need reconstructable evidence, not black-box suspicion"
+      - "the system must not make final legal or enforcement determinations"
+      - "hard negatives with legitimate urgency, authority, mentorship, politics, religion, marketing, and family support must be preserved"
+summary: "Locked scope: AI-mediated harmful interaction trajectory modeling. The first task is only interaction structure reconstruction, not semantic understanding, not LLM fine-tuning, and not a general scam detector. The research object is how interaction phase transitions, escalation dynamics, and trust-state evolution can be reconstructed from conversation topology, timing, response patterns, channel migration, verification suppression, dependency reinforcement, and commitment escalation. The deeper governance question can come later: how scaled AI-mediated interaction changes human decision processes faster than institutions can review and reconstruct them."
+source_note_zh: "鎖定範圍：AI-mediated harmful interaction trajectory modeling。第一件事只做 interaction structure reconstruction，先不碰 semantics、不先 train 大模型、不做一般 scam classifier。核心只研究 interaction phase transition、escalation dynamics、trust-state evolution。"
+human_note: ideas/2026-05-22-ai-mediated-harmful-interaction-systems.md
+assumptions:
+  - "In animal communication, direct label pairs such as whale sound to human sentence are usually unavailable; the first useful target is functional structure rather than literal translation."
+  - "In scam and persuasion analysis, surface wording changes faster than supervised labels can remain stable."
+  - "Token-level semantics are insufficient when the core risk is how an interaction changes trust, urgency, dependency, and willingness to verify."
+  - "Harmful influence should be treated as a gradient that includes scams, coercive marketing, political persuasion, cult-like dependency, manipulative livestreams, and high-pressure investment communities."
+  - "Longitudinal manipulation can begin with ordinary conversation and only later escalate into financial, emotional, or privacy harm."
+  - "ASR, OCR, translation, and embedding errors make single-text pipelines brittle; trajectory-level and behavior-graph features may be more robust."
+  - "Adaptive AI raises the risk from fixed scam scripts to real-time manipulation systems that change strategy based on the target person's reactions."
+  - "A safe research system should surface risk patterns for human review and influence transparency, not decide guilt, fraud, takedown, warning, or enforcement."
+  - "The deeper measurement object may be autonomy compression: whether the target has fewer practical options to pause, verify, consult outsiders, challenge authority, or exit without emotional penalty."
+  - "The strongest benchmark will be dominated by hard negatives, because legitimate urgency, legitimate authority, emotional support, activism, religion, mentoring, and sales can share surface cues with manipulative interaction."
+  - "Structure is the first stable object because wording can change while escalation pattern, pressure timing, trust-building sequence, and migration path are harder to fully hide."
+  - "The relationship itself can be modeled as a latent state machine: stranger, rapport, trust, attachment, isolation, extraction, and recovery or collapse."
+  - "The five-layer research stack should be problem definition, structure-first reconstruction, temporal modeling, institutional capacity/review-scarcity analysis, and later simulation."
+evidence:
+  - "2026-05-22 brainstorm: the user connected unsupervised animal communication, cross-modal alignment, emergent communication decoding, and the impossibility of whale-to-human label pairs to scam detection."
+  - "2026-05-22 brainstorm: the user identified the shared principle that semantics may come from environment interaction and behavior outcomes rather than text."
+  - "2026-05-22 brainstorm: the user reframed scam detection from keywords and binary labels toward interaction dynamics such as trust building, urgency, isolation, authority illusion, challenge avoidance, and rationalization."
+  - "Prior-project observation from idea_000007: scam research value is better measured as high-information behavior discovery per reviewer hour than raw candidate count."
+  - "Prior-project observation from idea_000021: adaptive flow and dynamic graph models may fit noisy scam-candidate discovery better than fixed shortest-path or fixed source-arm workflows."
+  - "Prior idea_000031 analogy: low-grounding decipherment problems should first rank structure hypotheses and preserve uncertainty rather than produce confident translations."
+  - "Prior idea_000015 observation: voice understanding pipelines must survive noisy input, ASR errors, latency, and system-level constraints rather than assuming clean transcripts."
+  - "2026-05-22 follow-up synthesis: the core research claim should be that scam-like harm is a longitudinal influence trajectory that erodes decision autonomy, rather than a static text classification problem."
+  - "PreScam arXiv 2605.12243, checked 2026-05-22: conversational scams unfold through multi-turn manipulation; the benchmark structures 177,989 reports into 11,573 scam instances, annotates scammer psychological actions and victim responses, and finds current models still struggle with progression modeling."
+  - "Nature Human Behaviour 2025, checked 2026-05-22: conversational LLM persuasion matters because direct dialogue and personalization can lower the historic cost of tailoring persuasive messages."
+  - "Scientific Reports 2024, checked 2026-05-22: generative AI can automate personalized persuasion by combining psychological-profile inference with message generation."
+  - "Love as Bait 2025, checked 2026-05-22: online romance scams often last months or years, use flexible non-linear crime scripts, build dependency, and revisit grooming when victims resist."
+  - "2026-05-22 scope-lock note: the user explicitly chose 'AI-mediated harmful interaction trajectory modeling' as the locked framing and narrowed the first task to interaction structure reconstruction, excluding semantics as the initial object."
+baseline:
+  - "Keyword lists, blacklists, and static scam phrase matching."
+  - "A supervised scam/non-scam text classifier trained on yesterday's scripts."
+  - "Single-message embedding similarity against known scams."
+  - "ASR to transcript to text classifier without modeling transcript uncertainty or downstream decision drift."
+  - "Treating persuasion, marketing, legitimate mentorship, and scam as a binary label without influence-gradient or hard-negative review."
+  - "Asking an LLM to judge whether a conversation is a scam without reconstructable interaction evidence."
+  - "Treating AI safety risk as bad generated content rather than adaptive manipulation of the human decision process."
+  - "A detector that flags urgency, authority, or intimacy directly as scam risk without testing hard negatives where those signals are legitimate."
+  - "A temporal model that predicts risk but cannot show which turn-level changes made the target less able to verify, pause, challenge, or exit."
+  - "Starting with LLM fine-tuning, embedding retrieval, or a scam classifier before defining harmful interaction dynamics."
+  - "Treating ASR/NLP engineering as the primary contribution when the real contribution is interaction-system reconstruction."
+  - "Jumping directly to broad AI governance instead of using one narrow reconstructable trajectory task."
+metrics:
+  - "Can the system surface risk from trajectory features before explicit money requests, private-channel migration, or direct scam keywords appear?"
+  - "Does the explanation identify concrete dynamics such as authority concentration, urgency compression, isolation escalation, challenge deflection, commitment escalation, and verification suppression?"
+  - "Does performance remain useful under paraphrase, language shift, ASR errors, OCR noise, and topic changes?"
+  - "Does the system reduce reviewer minutes per useful candidate while preserving hard-negative protection for benign persuasion and legitimate communities?"
+  - "Can a human reviewer reconstruct why a trajectory was flagged from turn-level evidence without accepting a black-box label?"
+  - "Can the method distinguish influence transparency signals from final fraud determination?"
+  - "Does it model longitudinal change across sessions rather than overfitting to one message?"
+  - "Does it improve calibration when the right output is watch, ask for context, park, or escalate to human review rather than scam/not-scam?"
+  - "Can the method measure decision-autonomy erosion: reduced external verification, increased exit cost, dependence on one authority, and loss of challenge options?"
+  - "Do hard-negative cases keep false-positive pressure low when urgency, authority, emotion, or privacy are legitimate?"
+  - "Can the trajectory graph identify when risk shifts from ordinary persuasion to autonomy compression before money, credential, privacy, or action extraction?"
+  - "Can the method reconstruct interaction phase transitions without reading message semantics?"
+  - "Can it identify escalation dynamics from timing, turn-taking, topic transition, question avoidance, channel migration, and dominance patterns?"
+  - "Can it model trust-state evolution as a latent state trajectory rather than a single score?"
+insights:
+  - "The animal-communication analogy is useful because it shows why direct translation may be the wrong first target; functional structure can be observable before literal semantics are known."
+  - "For scams, the parallel move is to stop asking only what a message means and ask what the interaction is doing to the target person's options, emotions, verification behavior, and dependency."
+  - "The strongest unit is not a token or post but a trajectory: public contact, rapport, channel migration, authority construction, uncertainty reduction, urgency, commitment, and extraction."
+  - "Harm can emerge from interaction dynamics even when each isolated message is plausibly benign."
+  - "Influence transparency is a better long-term object than binary scam detection because many real systems sit between ordinary persuasion and criminal fraud."
+  - "The model does not need full semantic understanding if it can predict and explain risky behavioral outcomes with calibrated uncertainty."
+  - "A future AI-mediated scam system may be dangerous because it adapts the manipulation policy in real time, not because it has a better static script."
+  - "This connects scam research, ASR brittleness, multimodal grounding, agentic AI governance, and reconstructability into one high-impact interaction-systems frame."
+  - "The key question is not only whether the message is false; it is whether the interaction is narrowing the target's ability to make an independent decision."
+  - "A temporal interaction graph should represent actors, channels, trust transfer, urgency escalation, private-channel migration, verification suppression, challenge deflection, dependency signals, commitment requests, and extraction attempts."
+  - "The research should avoid producing a manipulation playbook. Its safe object is a reviewer-facing evidence schema and influence-transparency rubric."
+  - "The user's comparative advantage is the combination of cybercrime, governance, AI systems, reviewer burden, institutional failure, and real-world deployment constraints."
+  - "The most dangerous scope failure is trying to do world models, AGI, social governance, scam detection, ASR, NLP, agents, and LLMs all at once."
+  - "The near-term paper should be narrow enough to say: we reconstruct interaction structure before semantics."
+  - "The larger TFSC-style contribution is institutional: when AI interaction scale exceeds review capacity, reconstructability decays and governance latency becomes a failure mode."
+connections:
+  - idea_000007
+  - idea_000015
+  - idea_000016
+  - idea_000021
+  - idea_000031
+  - idea_000032
+  - idea_000036
+role: idea
+value:
+  impact: high
+  feasibility: medium
+first_principle:
+  scarce_resource: "reviewer-reconstructable evidence about how an interaction changes a human decision process"
+  core_object: "interaction structure reconstruction for latent harmful interaction trajectories"
+  not_the_core:
+    - "bigger keyword lists"
+    - "one-message scam classification"
+    - "semantic understanding as the first task"
+    - "LLM fine-tuning as the first task"
+    - "embedding retrieval as the main contribution"
+    - "broad AI interaction governance without a narrow reconstructable object"
+    - "direct animal-to-human or scam-to-label translation"
+    - "black-box suspicion scores"
+    - "final legal fraud determination"
+    - "automated enforcement, takedown, warning, or public accusation"
+    - "collecting sensitive raw conversations without a local-only or consent policy"
+  smallest_useful_unit: "one synthetic or consent-safe longitudinal fixture that compares benign persuasion, high-pressure persuasion, and scam-like manipulation across turn-level trajectory features."
+  decision_boundary: "Use the system for influence transparency, triage, and human-review support; do not use it as an autonomous fraud judge or manipulation playbook."
+  research_claim_en: "Before interpreting semantics, AI-mediated harmful interaction research should reconstruct trajectory structure: phase transitions, escalation dynamics, and trust-state evolution."
+  research_claim_zh: "在理解語意之前，AI-mediated harmful interaction 研究應先重建互動軌跡結構：phase transition、escalation dynamics、trust-state evolution。"
+scope_lock:
+  locked_name: "AI-mediated harmful interaction trajectory modeling"
+  only_first_task: "interaction structure reconstruction"
+  initial_exclusions:
+    - "semantic interpretation"
+    - "large-model training"
+    - "LLM fine-tuning"
+    - "generic scam classifier"
+    - "embedding retrieval as the main result"
+    - "production fraud detection"
+    - "broad AI governance without a narrow empirical object"
+  first_research_objects:
+    - "interaction phase transition"
+    - "escalation dynamics"
+    - "trust-state evolution"
+  one_sentence_scope: "Reconstruct how an AI-mediated interaction changes structural state over time before asking what the words mean."
+  anti_scope_explosion_rule: "If a proposed next step does not improve structure reconstruction, phase-transition detection, escalation modeling, or trust-state tracking, park it."
+decision_autonomy_erosion:
+  definition: "A measurable reduction in the target's practical ability to pause, verify, ask outsiders, challenge authority, reject urgency, or exit without emotional, social, or financial penalty."
+  observable_signals:
+    - "external verification becomes discouraged or framed as betrayal"
+    - "the target is moved from public or accountable spaces into private channels"
+    - "the interaction imposes time pressure before independent review can happen"
+    - "authority becomes concentrated in one actor, guru, mentor, platform, or group"
+    - "doubt is reframed as weakness, disloyalty, lack of courage, or lack of sophistication"
+    - "commitments escalate from attention to identity, secrecy, money, credentials, privacy, or irreversible action"
+  output_label: "influence transparency signal, not final scam determination"
+conceptual_translation:
+  animal_communication_lesson:
+    frame: "communication protocol reverse engineering before translation"
+    useful_targets:
+      - turn-taking
+      - "group coordination"
+      - "warning or distress function"
+      - "identity signature"
+      - "grammar-like sequence hierarchy"
+      - "behavior outcome after signal"
+  scam_detection_lesson:
+    frame: "harmful influence trajectory modeling before final scam classification"
+    useful_targets:
+      - "trust-grooming sequence"
+      - "authority illusion construction"
+      - "channel migration from public to private"
+      - "urgency compression"
+      - "verification suppression"
+      - "challenge deflection"
+      - "commitment escalation"
+      - "emotional steering"
+      - "dependency formation"
+research_question: "Can a reviewer-assist system detect and explain harmful influence trajectories across language, modality, and script variation before explicit scam keywords appear, while preserving hard-negative protection and avoiding autonomous enforcement claims?"
+research_positioning:
+  not_classifier: "Do not frame the contribution as a bigger scam classifier."
+  primary_frame: "AI-mediated harmful interaction trajectory modeling."
+  core_shift:
+    from: "static text classification"
+    to: "interaction structure reconstruction before semantics"
+  tfsc_connection: "The idea connects to review scarcity, reconstructability, runtime governance, institutional overload, and agentic AI because adaptive interaction systems can change human decisions faster than institutions can reconstruct and review them."
+  contribution_shape:
+    - "define harmful interaction dynamics before scam detection"
+    - "define interaction primitive taxonomy"
+    - "reconstruct structure without relying on semantic labels"
+    - "define decision-autonomy erosion as a measurable risk object"
+    - "define a temporal interaction graph schema for influence trajectories"
+    - "build a synthetic or consent-safe fixture with strong hard negatives"
+    - "compare keyword, single-message embedding, and trajectory-feature baselines"
+    - "produce reviewer-reconstructable evidence rather than black-box accusation"
+observation_schema_seed:
+  unit: "interaction turn or event"
+  fields:
+    - actor_role
+    - channel
+    - modality
+    - public_or_private_context
+    - topic_state
+    - authority_claim
+    - reward_promise
+    - urgency_signal
+    - isolation_signal
+    - challenge_response
+    - verification_invitation_or_suppression
+    - commitment_request
+    - emotional_steering
+    - uncertainty_acknowledgment
+    - relationship_dependency_signal
+    - outcome_after_turn
+    - reviewer_evidence_note
+trajectory_features:
+  - authority_concentration
+  - urgency_compression
+  - isolation_escalation
+  - channel_migration
+  - reciprocity_asymmetry
+  - challenge_deflection
+  - verification_suppression
+  - commitment_escalation
+  - dependency_formation
+  - reward_promise_intensification
+  - emotional_volatility_steering
+  - story_repair_after_doubt
+  - external_review_blocking
+interaction_primitive_taxonomy:
+  purpose: "Define the building blocks of harmful interaction dynamics before any semantic classifier is trained."
+  primitives:
+    - "urgency escalation"
+    - "authority assertion"
+    - "emotional synchronization"
+    - "dependency reinforcement"
+    - "verification suppression"
+    - "isolation transition"
+    - "reciprocity imbalance"
+    - "reward baiting"
+    - "uncertainty masking"
+    - "compliance steering"
+conversation_topology_features:
+  semantics_light_features:
+    - "turn-taking pattern"
+    - "response latency"
+    - "question avoidance"
+    - "topic transition entropy"
+    - "conversational dominance"
+    - "channel migration path"
+    - "commitment request timing"
+    - "emotional phase transition"
+  rationale: "These features may remain more stable than wording when actors change script, language, or topic."
+latent_state_machine_seed:
+  states:
+    - stranger
+    - rapport_building
+    - trust_established
+    - emotional_attachment
+    - isolation
+    - commitment_pressure
+    - extraction_attempt
+    - continuation_or_recovery
+  transition_focus:
+    - "what signal moves the relationship to a higher-pressure state"
+    - "what signal suppresses verification or exit"
+    - "what signal increases dependency or commitment"
+    - "what signal appears before extraction"
+temporal_interaction_graph:
+  nodes:
+    - "person or account"
+    - channel
+    - claim
+    - "authority source"
+    - commitment
+    - "verification source"
+    - "money, credential, privacy, or action request"
+  edges:
+    - "trust transfer"
+    - "channel migration"
+    - "authority delegation"
+    - "urgency escalation"
+    - "verification suppression"
+    - "challenge deflection"
+    - "dependency reinforcement"
+    - "commitment escalation"
+    - "extraction attempt"
+  time_axis:
+    unit: "turn, day, or session"
+    purpose: "capture slow grooming and delayed escalation that single-message models miss"
+five_layer_research_stack:
+  layer_1_problem_definition:
+    question: "What is harmful interaction dynamics?"
+    output: "interaction primitive taxonomy and boundary conditions"
+  layer_2_structure_before_semantics:
+    question: "Can structure reveal phase transition and escalation before meaning is interpreted?"
+    output: "conversation topology and structure-reconstruction fixture"
+  layer_3_temporal_modeling:
+    question: "Can the relationship be modeled as latent state evolution?"
+    output: "temporal graph, sequential influence model, or state-transition system"
+  layer_4_institutional_capacity:
+    question: "When interaction scale exceeds review capacity, how do institutions fail?"
+    output: "review scarcity threshold, reconstructability decay, governance latency model"
+  layer_5_simulation:
+    question: "How do agent trust, fatigue, review capacity, susceptibility, social connectivity, and verification behavior interact at scale?"
+    output: "large-scale interaction simulation after the narrow reconstruction task is stable"
+knowledge_roadmap:
+  interaction_social_dynamics:
+    - "persuasion theory"
+    - "behavioral economics"
+    - "social psychology"
+    - "influence dynamics"
+    - "cult recruitment"
+    - "trust systems"
+    - "cognitive overload"
+  complex_systems:
+    - "network science"
+    - "system dynamics"
+    - "graph processes"
+    - emergence
+    - "agent-based modeling"
+  representation_learning:
+    - "contrastive learning"
+    - "self-supervised learning"
+    - "sequence representation"
+    - "latent dynamics"
+    - "multimodal alignment"
+    - "representation of interaction structure rather than SOTA model chasing"
+hard_negative_fixture:
+  purpose: "Prevent the system from becoming a moral panic machine that treats ordinary persuasion, care, or authority as scam."
+  required_cases:
+    - "normal mentor giving urgent but legitimate advice"
+    - "family member requesting money during a real emergency"
+    - "legal marketing or sales funnel with clear opt-out"
+    - "investment education without private extraction or verification suppression"
+    - "political or community mobilization with public accountability"
+    - "religious or support-community recruitment without isolation or secrecy"
+    - "emotional support relationship without money, secrecy, or dependency exploitation"
+    - "legitimate professional authority that encourages second opinions"
+  pass_condition: "The system should not flag urgency, intimacy, or authority alone; risk should require a trajectory pattern such as isolation plus verification suppression plus commitment escalation."
+pressure_test:
+  setting: "A 30-day mixed LINE, Threads, voice-note, and private-message scenario where legitimate mentors, aggressive marketers, fan/community organizers, and scam-like actors all use friendly language, topic shifts, and occasional investment or opportunity talk."
+  expected_failure_mode: "A token classifier either misses slow grooming because no explicit scam words appear, or overflags legitimate persuasion because it cannot separate influence gradient, consent, external verification, and reviewer-visible hard negatives."
+  smallest_observable_test: "Build a consent-safe or synthetic 12-trajectory fixture with turn-level annotations for influence dynamics, ASR/OCR/noise variants, benign hard negatives, and delayed escalation. Compare keyword, single-message embedding, and trajectory-feature baselines."
+  decision_metric: "Pass if the trajectory model or rubric surfaces review-worthy risk earlier than explicit extraction requests, gives reconstructable evidence, keeps benign hard-negative false positives low enough for review, and reduces reviewer time per useful candidate compared with single-message baselines."
+safety_and_governance_boundary:
+  allowed:
+    - "defensive research framing"
+    - "synthetic or consent-safe fixtures"
+    - "influence transparency labels"
+    - "human-review triage"
+    - "reconstructable evidence logs"
+    - "aggregate-only reporting when linked to real scam research"
+  disallowed:
+    - "optimized scam scripts"
+    - "targeting guidance"
+    - "evasion guidance"
+    - "autonomous scam or fraud determinations"
+    - "enforcement, takedown, public-warning, or accusation decisions"
+    - "storing sensitive raw conversations in git"
+    - "step-by-step manipulation optimization"
+    - "advice for bypassing suspicion, platform review, or victim resistance"
+next_steps:
+  - "Write the one-page locked problem definition for AI-mediated harmful interaction trajectory modeling."
+  - "Define the interaction primitive taxonomy: urgency escalation, authority assertion, emotional synchronization, dependency reinforcement, verification suppression, isolation transition, reciprocity imbalance, reward baiting, uncertainty masking, and compliance steering."
+  - "Build the first semantics-light structure reconstruction fixture using turn-taking, response latency, question avoidance, topic transition entropy, dominance, migration path, phase transition, escalation dynamics, and trust-state evolution."
+  - "Represent the relationship as a latent state machine from stranger to rapport, trust, attachment, isolation, commitment pressure, and extraction attempt."
+  - "Park LLM fine-tuning, embedding retrieval, and broad governance simulation until the structure reconstruction fixture is stable."
+  - "Decide whether this should stay as a research lens inside brainstorming-lab or graduate later into a controlled project repo linked to scam-research work."
+source:
+  - conversation
+  - ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml
+  - ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml
+  - ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml
+  - ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml
+  - ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml
+  - ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml
+source_links:
+  - "https://arxiv.org/abs/2605.12243"
+  - "https://www.nature.com/articles/s41562-025-02194-6"
+  - "https://www.nature.com/articles/s41598-024-53755-0"
+  - "https://journals.sagepub.com/doi/10.1177/15248380251361046"
+  - "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0337208"
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 94/100
+maturity_level: execution_ready
+maturity_action: "generate experiment plan"

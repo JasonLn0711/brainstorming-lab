@@ -79,6 +79,7 @@ insights:
   not only route length.
 connections:
 - idea_000007
+- idea_000035
 role: idea
 value:
   impact: high
