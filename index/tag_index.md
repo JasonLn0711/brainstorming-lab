@@ -3,6 +3,7 @@
 ## 165-antifraud
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## 3d-rotation
 
@@ -184,6 +185,7 @@
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## asr-security
 
@@ -413,6 +415,18 @@
 ## data-acquisition-strategy
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## data-centric-ai
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
+## data-curation
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
+## data-governance
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## decipherment
 
@@ -1067,6 +1081,10 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## mandarin-asr
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## manipulation-state-detection
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
@@ -1155,9 +1173,17 @@
 
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 
+## multimodal-datasets
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## multimodal-fusion
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## nemo-curator
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## nerd-font
 
@@ -1190,6 +1216,10 @@
 ## npm
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## nvidia
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## object-detection
 
@@ -1492,6 +1522,7 @@
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 - `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## reviewer-assist
 
@@ -1694,6 +1725,10 @@
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## speech-governance
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## sre
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -1750,6 +1785,10 @@
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
+## synthetic-data
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## synthetic-data-contamination
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
@@ -1786,6 +1825,10 @@
 ## teaching
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
+## telephone-speech
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## temporal-dynamics
 
@@ -1864,6 +1907,10 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+
+## uncertainty-aware-asr
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## uncertainty-tolerance
 
