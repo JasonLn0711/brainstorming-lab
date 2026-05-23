@@ -89,6 +89,7 @@
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## ai-humanities
 
@@ -308,6 +309,7 @@
 ## cognitive-security
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## cognitive-security-triage
 
@@ -519,6 +521,10 @@
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
+## early-warning-systems
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+
 ## ecosystem-knowledge-pollution
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
@@ -691,6 +697,10 @@
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
+## geopolitical-risk
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+
 ## ghostty
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
@@ -768,6 +778,11 @@
 ## hidden-mental-state
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## hidden-state-modeling
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## high-school-explainer
 
@@ -882,9 +897,17 @@
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## institutional-stress
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
 ## institutional-verification
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## intelligence-analysis
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
 
 ## interaction-phase-transition
 
@@ -947,6 +970,10 @@
 ## latency
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## latent-state-inference
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## law-enforcement
 
@@ -1183,6 +1210,11 @@
 ## operational-ai
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+
+## osint
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## other-minds-problem
 
@@ -1459,6 +1491,7 @@
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## reviewer-assist
 
@@ -1806,6 +1839,10 @@
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
+## triage
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
 ## trust-calibration
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
@@ -1880,6 +1917,10 @@
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
 
+## weak-signals
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+
 ## web-pollution
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
@@ -1933,6 +1974,10 @@
 ## world-model
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
+## world-modeling
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## yolo
 

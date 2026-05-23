@@ -1428,6 +1428,8 @@ connections:
   - idea_000031
   - idea_000035
   - idea_000036
+  - idea_000037
+  - idea_000038
 value:
   impact: high
   feasibility: high

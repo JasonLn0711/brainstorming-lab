@@ -1,0 +1,95 @@
+id: idea_000037
+title: "Pizza Index as weak-signal OSINT hidden-state modeling"
+created_at: 2026-05-23
+type: hypothesis
+tags:
+  - osint
+  - weak-signals
+  - hidden-state-modeling
+  - early-warning-systems
+  - geopolitical-risk
+  - intelligence-analysis
+status: research_candidate
+problem_statement:
+  raw: "Can informal signals such as the Pentagon Pizza Index be treated scientifically as proxy observations of hidden geopolitical or institutional stress states?"
+  normalized: "Given noisy public proxy signals such as pizza-order spikes, official schedule changes, military movements, travel advisories, market reactions, and shipping-risk indicators, estimate whether a latent crisis-preparation state is changing under constraints of weak ground truth, high false-positive risk, media amplification, and pattern overfitting."
+  structure:
+    given: "noisy public proxy signals around possible geopolitical crisis preparation"
+    optimize: "calibrated early-warning inference about a hidden state"
+    constraints:
+      - "weak or delayed ground truth"
+      - "high false-positive risk"
+      - "social-media amplification of weak signals"
+      - "correlation-causation confusion"
+      - "base-rate neglect"
+summary: "A research note that reframes the Pizza Index as a weak-signal OSINT case study: useful as a proxy only when tied to ground truth, time-series validation, base-rate-aware statistics, multi-signal fusion, and falsifiable calibration."
+assumptions:
+  - "Pizza-order or nightlife anomalies are proxy signals, not direct evidence of military action."
+  - "The useful scientific object is the latent state behind the observable signal, such as crisis-mode staffing, geopolitical tension, or institutional high-pressure decision posture."
+  - "A single weak signal should trigger curiosity and structured monitoring rather than a conclusion."
+  - "Multi-signal fusion is more reliable when signals are operationally independent."
+  - "Any model must track false positives, precision, recall, calibration, and lead time."
+evidence:
+  - "User-provided news summary: Pentagon-area pizza-order reports rose while Trump reportedly cancelled a private family event and said staying in Washington was important."
+  - "User-provided historical context: the Pizza Index has circulated in Washington as informal OSINT folklore, including claims around Operation Desert Storm and the U.S. invasion of Panama."
+  - "User-provided analytical frame: escalation concern is better grounded in U.S.-Iran negotiation deterioration and regional risk indicators than in pizza orders alone."
+  - "Analogous scientific domains: epidemic search trends, market sentiment, cyber traffic anomalies, vibration-based fault prediction, ICU early deterioration signals, and intelligence weak-signal analysis."
+baseline:
+  - "Normal hourly and day-of-week pizza-order traffic near relevant government buildings."
+  - "Normal local bar and restaurant traffic under weather, sports, holiday, outage, and tourism conditions."
+  - "Historical crisis and non-crisis windows with comparable media attention."
+  - "Control locations that should not respond to Pentagon or White House crisis staffing."
+metrics:
+  - "P(Event | PizzaSpike)"
+  - "P(PizzaSpike | Event)"
+  - "Lead time between proxy anomaly and validated event."
+  - "False-positive rate over ordinary high-demand evenings."
+  - "Precision, recall, calibration, and Brier score for event-probability estimates."
+  - "Signal independence score across food orders, official travel, military posture, markets, shipping insurance, and public advisories."
+insights:
+  - "The Pizza Index is valuable mainly as a teaching example for proxy-signal reasoning, not as standalone intelligence."
+  - "The central failure mode is pattern overfitting: unrelated weak signals are assembled into a coherent story too early."
+  - "Base-rate neglect is the key statistical trap: many pizza spikes may have no corresponding military event."
+  - "High-confidence escalation inference should look for official and market-confirmed signals such as evacuation orders, carrier movement, travel advisory upgrades, oil and insurance anomalies, readiness posture, and allied synchronization."
+  - "The same research structure applies to AI governance, institutional collapse, cybercrime triage, review scarcity, and other settings where the real state is hidden and observations are noisy."
+connections:
+  - idea_000004
+  - idea_000007
+  - idea_000038
+role: idea
+value:
+  impact: high
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 12
+  testability_score: 12/15
+  evidence_support: 6
+  evidence_support_score: 6/15
+  connection_strength: 4
+  connection_strength_score: 4/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 74/100
+maturity_level: research_candidate
+next_steps:
+  - "Create a small historical event table with 10 to 20 crisis and non-crisis windows, then define what observable proxy signals would have been available before each event."
+  - "Draft a falsifiability rule: a proxy spike above baseline without a validated security event inside a defined window counts as a false positive."
+  - "Write a one-page Bayesian weak-signal rubric that separates proxy observation, latent-state hypothesis, alternative explanations, and decision threshold."
+source:
+  - conversation
+  - ideas/2026-05-23-pizza-index-weak-signal-osint-hidden-state-modeling.md
+maturity_action: "evaluate cluster readiness"
+pressure_test:
+  setting: "A public OSINT dashboard notices pizza-order spikes near the Pentagon during a week of U.S.-Iran negotiation tension and social-media speculation."
+  expected_failure_mode: "Analysts overfit a coherent crisis story from weak signals that may come from sports events, weather, outages, ordinary late work, or platform noise."
+  smallest_observable_test: "Compare the proxy spike against local baselines, control neighborhoods, official advisories, military movement, oil price, shipping insurance, and a 48-hour event outcome window."
+  confirm_revise_or_kill_metric: "Keep the hypothesis only if multi-signal fusion improves calibrated event prediction over baseline without an unacceptable false-positive rate."
+normalization_status: validated
