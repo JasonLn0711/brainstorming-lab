@@ -105,6 +105,15 @@ Do not add a rule just because an idea is exciting. Add a rule when it prevents 
 - Avoid vague names like `notes.md` unless the parent folder provides enough context.
 - Keep sensitive material out unless a local-only policy is explicitly documented.
 
+## Document Voice Rules
+
+- Write repo documents in an affirmative, confident, and generous voice.
+- Frame constraints as clear ownership, scope, evidence, and next-action guidance.
+- Prefer positive formulations such as "this repo owns", "use this path", "the next test is", and "the boundary is".
+- When a limit matters, state the constructive reason and the working alternative.
+- Replace hesitation-driven caveats with evidence-backed boundaries, decision criteria, and explicit review triggers.
+- Keep critique direct and useful: name the assumption, pressure-test it, and identify the smallest test that would clarify it.
+
 ## Legacy Markdown Notes
 
 The repo now treats YAML Idea OS records as canonical, but this checkout also
@@ -177,11 +186,12 @@ Current important legacy Markdown notes:
 - Every contribution must start with a strong verb, name a concrete scientific object, and map to a method section plus evidence artifact.
 - Method sections must define input, output, assumptions, definitions, procedure or algorithm, failure conditions, and reproducibility path.
 - Every result table must include a take-away sentence that states what claim the table supports.
-- Claim boundaries must be explicit, but detailed ledgers, role tables, and defensive exclusion lists should move to appendix unless needed to understand the method.
+- Claim boundaries must be explicit, while detailed ledgers, role tables, and scope-boundary lists belong in the appendix when the main text already carries the method.
 
 ## Safety Note
 
-For security or AI-safety brainstorms, keep notes defensive and research-oriented.
+For security or AI-safety brainstorms, keep notes protective, research-oriented,
+and focused on responsible evaluation.
 
 Prefer:
 - threat models
