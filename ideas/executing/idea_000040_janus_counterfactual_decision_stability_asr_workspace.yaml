@@ -1,0 +1,864 @@
+id: idea_000040
+title: JANUS Counterfactual Decision-Stability ASR Workspace
+created_at: '2026-05-25'
+type: project
+tags:
+- janus
+- cds-asr
+- counterfactual-decision-stability
+- asr
+- high-stakes-conversation
+- call-center-ai
+- scam-escalation
+- risk-atom
+- counterfactual-transcripts
+- ceis
+- recovery-policy
+- evidence-chain-governance
+- split-aware-evaluation
+- human-risk-atom-audit
+- paper-scope-control
+- semantic-consequence-quantification
+- aggregate-operational-drift
+- expected-operational-harm
+- social-sensing-instrument
+- social-risk-measurement
+- measurement-integrity
+- sensitive-data-boundary
+status: executing
+problem_statement:
+  raw: 'Given JANUS high-stakes call-center ASR data, define the short-term paper
+    as Counterfactual Decision-Stability ASR: test whether downstream risk decisions
+    remain stable under plausible ASR transcript alternatives, rather than treating
+    fine-tuning Whisper or improving CER/WER as the main contribution.'
+  normalized: Given high-stakes conversational decision systems that depend on imperfect
+    ASR hypotheses, optimize decision-stability evaluation under constraints of plausible
+    transcript alternatives, risk-atom extraction, split-aware metrics, human audit
+    capacity, sensitive local data handling, publishable evidence-chain readiness,
+    and paper scope discipline.
+  structure:
+    given: high-stakes call-center conversations whose downstream risk decisions depend
+      on ASR hypotheses
+    optimize: decision-stability evaluation under plausible transcript alternatives
+    constraints:
+    - plausible ASR n-best, confidence, and timestamp alternatives
+    - risk-atom extraction and human-reviewable labels
+    - downstream label flips, unsafe downrouting, and high-risk misses
+    - CEIS and split-aware metric inputs
+    - constrained recovery or conservative machine action
+    - selected-300 human risk-atom audit capacity
+    - sensitive audio, call data, and filename boundaries
+    - publishable evidence-chain readiness
+    - one-paper thesis discipline
+summary: 'JANUS CDS-ASR is a local research workspace and paper axis for testing whether
+  high-stakes conversational decisions remain stable when ASR produces plausible alternative
+  transcripts. Whisper, Breeze-ASR, and legacy ASR models are hypothesis generators,
+  not the main contribution. The paper-facing contribution is uncertainty propagation
+  into downstream decision stability: audio to ASR hypotheses, risk atoms, counterfactual
+  transcript alternatives, CEIS and decision-stability scoring, then constrained recovery
+  or conservative machine action. The central paper must stay anchored to one sentence:
+  propose and evaluate a method for testing decision stability under ASR uncertainty
+  in high-stakes conversational decision systems.'
+source_note_zh: 這個 repo 的核心不是「整理資料夾」或「跑 ASR baseline」，而是把 JANUS 高風險通話資料正式收斂成 CDS-ASR：測試
+  ASR 不確定性下，下游高風險決策是否穩定。Whisper fine-tuning、Breeze-ASR、六模型比較、recovery policy、human
+  audit、evidence-chain gate 都是 supporting evidence；主角只能是 decision stability under
+  plausible transcript alternatives。
+human_note: ideas/2026-05-25-janus-counterfactual-decision-stability-asr-workspace.md
+capture_policy:
+  canonical_execution_home: JANUS local research workspace
+  brainstorming_role: Preserve the thesis, scope controls, risk analysis, and next
+    decision gates without copying sensitive audio, call records, or transcript-bearing
+    review sheets into this repo.
+  planning_sync: not_requested
+  planning_boundary: If planning is updated later, keep only title, idea ID, status,
+    maturity score, next gate, canonical path, and capacity note.
+  sensitive_data_boundary:
+  - Treat audio, call data, transcript-bearing sheets, and call filenames as sensitive.
+  - Keep local-only artifacts in the JANUS workspace ignored areas; do not copy them
+    into brainstorming or planning.
+  - Store only aggregate evidence, protocol names, script entrypoints, and non-sensitive
+    repo map references here.
+assumptions:
+- The strongest short-term paper is not an ASR benchmark, but a decision-stability
+  method for high-stakes conversational systems under ASR uncertainty.
+- Whisper large-v2, Whisper small, Breeze-ASR-25 base, Breeze-ASR-26, legacy partial
+  encoder, and legacy LoRA are useful as comparable ASR hypothesis generators.
+- CER/WER remain useful input-quality metrics, but the primary paper claim depends
+  on downstream stability signals such as label flips, unsafe downrouting, high-risk
+  misses, CEIS, and recovery decisions.
+- Human risk-atom review is a formal evidence layer separate from transcript ground-truth
+  review; accepted manifest transcripts can remain WER/CER references.
+- Evidence-chain readiness and publishability checks should stay machine-checkable
+  so the paper does not advance claims before the selected-300 human audit and objective-level
+  gates are complete.
+- Recovery policy evidence is valuable, but it should support the CDS-ASR thesis rather
+  than become a second uncontrolled research platform.
+- Complexity growth is the main execution risk because audit, recovery, predictor,
+  annotation, split-aware, proxy, and publishability layers can each expand into their
+  own subsystem.
+- A large internal exploration system can be valuable if it is periodically compressed
+  into a research map with separable paper lanes, evidence status, and convergence
+  gates.
+- The repo can keep future-paper possibilities alive without exposing every subsystem
+  in Paper 1; paper-facing scope should be selected from the research map only after
+  the relevant lane has a clear thesis, metric, and evidence chain.
+evidence:
+- 'User-provided workspace framing on 2026-05-25: the single short-term paper axis
+  is Counterfactual Decision-Stability ASR.'
+- 'User-provided guardrail: the paper is not about fine-tuning Whisper, another ASR
+  benchmark, small CER gains, or a human-review workflow.'
+- 'User-provided runtime flow: audio -> ASR transcript plus confidence/n-best/timestamps
+  -> risk atom extraction -> plausible counterfactual transcript alternatives -> downstream
+  decision stability / CEIS -> automatic constrained recovery or conservative machine
+  action.'
+- Repo architecture already includes source archive organization, extracted part normalization,
+  inventory, review flags, a purpose-oriented data library, Whisper and Breeze-ASR
+  workspaces, experiment registry, semantic-risk-ASR subsystem, recovery policy subsystem,
+  annotation subsystem, and evidence-chain subsystem.
+- The JANUS dataset workspace already contains a canonical 258-row test split, a selected-300
+  high-stakes audit surface, and a real-world call-center decision workflow where
+  review burden and downstream accountability are part of the evidence target.
+- 'Current aggregate 258-row split comparison includes six ASR hypothesis generators:
+  legacy partial encoder, legacy LoRA, Breeze-ASR-25 base, Breeze-ASR-26, Whisper
+  large-v2, and Whisper small.'
+- Current evidence-chain gate reports ok=true but paper_ready=false because selected-300
+  human risk-atom audit review remains 0/30 risk/decision row reviews and 0/90 model
+  assessments reviewed.
+- Current publishable evidence audit reports publishable_ready=false because objective
+  5 is review_pending and objectives 4/6 remain proxy-only.
+- Split-aware metric input generation and selected-300 metric-predictor proxy analysis
+  compare WER/CER/SRES/CEIS against downstream label flips, unsafe downrouting, high-risk
+  misses, and low-WER danger counts.
+- The human risk-atom audit protocol is batchified, measurable, refreshable, and explicitly
+  separate from transcript ground-truth scoring.
+- The WER audit records that paper-facing ASR tables should use cer_zh_micro as the
+  primary surface metric and wer_zh_jieba_micro only as supplemental segmented-word
+  evidence.
+baseline:
+- Train Whisper, report WER/CER, compare ASR baselines, and frame the work as an ASR
+  benchmark.
+- Treat a single transcript as ground truth for downstream decisions without propagating
+  plausible ASR alternatives.
+- Run aggregate ASR metrics without split-aware high-stakes analysis.
+- Treat recovery policy as the main result before proving the decision-instability
+  measurement layer.
+- Use ad hoc human review notes that cannot be audited, batched, validated, or refreshed.
+- Let every subsystem grow independently until the reviewer cannot state the paper's
+  contribution in one sentence.
+metrics:
+- Decision instability rate under plausible ASR counterfactual transcript alternatives.
+- CEIS score distribution by split and model family.
+- Label-flip rate between transcript alternatives and ASR hypothesis generators.
+- Unsafe downrouting rate and high-risk miss rate on high-stakes subsets.
+- Low-CER or low-WER danger count, where surface ASR quality looks acceptable but
+  downstream decision risk changes.
+- Semantic consequence distortion between ground-truth meaning and ASR-derived meaning
+  for high-risk fields such as amount, transfer status, account disclosure, app installation,
+  meeting arrangement, and escalation cues.
+- Aggregate operational drift, measured as the gap between ground-truth aggregate
+  risk quantities and ASR-derived aggregate risk quantities over a time window, split,
+  model, or high-stakes subset.
+- Social sensing measurement integrity, measured as whether ASR-derived aggregate
+  signals preserve direction, rank, magnitude tier, and high-risk tails of ground-truth
+  social-risk signals.
+- Risk-weighted semantic atom error, where filler-word mistakes receive low weight
+  and decision-controlling risk-atom mistakes receive high weight.
+- Expected Operational Harm proxy, expressed as error probability multiplied by operational
+  consequence for each risk-bearing field or action.
+- 'Human risk-atom audit completion: 30/30 row-level risk/decision reviews and 90/90
+  model-level assessments for the selected-300 gate.'
+- 'Evidence-chain readiness status from machine-checkable gates: paper_ready and publishable_ready.'
+- Recovery policy effectiveness after the selected-300 and human audit gates are complete.
+- 'Scope-control health: every new subsystem must map to the one-sentence CDS-ASR
+  thesis or remain parked.'
+insights:
+- The research shift is from transcription accuracy to uncertainty propagation into
+  downstream decisions.
+- Multiple ASR systems matter because CDS-ASR needs plausible transcript generators,
+  not because the paper is a leaderboard.
+- 'Evidence-chain governance is a publishability control: it keeps claims aligned
+  with reviewed evidence, objective gates, and audit completeness.'
+- The selected-300 human risk-atom audit is the main human evidence layer; transcript
+  ground-truth review should not be reopened unless a new field requires it.
+- 'Recovery policy belongs after instability measurement: it demonstrates conservative
+  handling when decision confidence is unstable.'
+- 'The reviewer-facing story must remain simple: high-stakes voice systems need to
+  know whether decisions survive plausible ASR alternatives.'
+- Complexity is a real research risk. Audit, recovery, predictor, annotation, and
+  split-aware systems are supporting apparatus, not independent contribution centers.
+- The issue is not complexity itself; the issue is complexity without knowledge compression.
+  Subsystems should be periodically abstracted into higher-level research constructs
+  such as uncertainty generation, uncertainty propagation, decision instability, recovery,
+  auditability, governance, and metric validity.
+- 'Research compression is the skill of turning the workspace from code, scripts,
+  folders, and pipelines into a reviewer-comprehensible latent research structure:
+  pain point, mechanism, evidence, thesis, and paper lane.'
+- 'Semantic consequence quantification is the next layer above decision-stability
+  scoring: it asks how far ASR-derived meaning, totals, risk fields, and operational
+  actions drift from the ground-truth case meaning, not only whether the transcript
+  contains token errors.'
+- ASR can behave like a social sensing instrument. If it systematically undercounts
+  or misreads risk-bearing fields, aggregate dashboards, escalation distributions,
+  and resource allocation can drift even when per-sample WER looks acceptable.
+- 'The social sensing instrument frame explains why aggregate drift matters: in a
+  high-stakes hotline, ASR is part of the measurement chain that turns individual
+  calls into social-risk signals, not only a transcript generator.'
+connections:
+- idea_000001
+- idea_000011
+- idea_000015
+- idea_000021
+- idea_000029
+- idea_000032
+role: idea
+value:
+  impact: high
+  feasibility: high
+first_principle:
+  scarce_resource: reviewer-comprehensible evidence for downstream decision stability
+    under ASR uncertainty
+  core_object: CDS-ASR as a method and evidence chain for testing high-stakes decision
+    stability under plausible transcript alternatives
+  not_the_core:
+  - Whisper fine-tuning as the main contribution
+  - another ASR benchmark
+  - a small CER improvement paper
+  - a generic human-review workflow paper
+  - an unconstrained recovery-policy platform
+  - an engineering universe without one thesis
+  single_sentence_thesis: We propose a method to test whether high-stakes voice-system
+    decisions remain stable under plausible ASR transcript alternatives.
+  supporting_layers:
+  - six-model ASR hypothesis ecosystem
+  - risk-atom extraction
+  - counterfactual transcript generation
+  - CEIS and split-aware decision-stability metrics
+  - human risk-atom audit
+  - evidence-chain readiness and publishability gates
+  - constrained recovery policy evaluation
+  decision_boundary: A subsystem may grow only when it strengthens the single CDS-ASR
+    thesis, closes a publishability gate, or reduces reviewer ambiguity.
+paper_scope_control:
+  main_claim: CDS-ASR evaluates downstream decision stability under plausible ASR
+    alternatives in high-stakes conversational decision systems.
+  positive_positioning:
+  - The work defines a decision-stability evaluation layer above ASR.
+  - The work uses ASR models as hypothesis generators for downstream risk evaluation.
+  - The work supports conservative machine action when transcript uncertainty affects
+    decision stability.
+  - The work provides machine-checkable evidence readiness for paper claims.
+  support_not_center:
+  - Whisper and Breeze-ASR baselines
+  - six-model aggregate matrix
+  - split-aware WER/CER/SRES/CEIS tables
+  - recovery policy proxy
+  - human-review batching UI and scripts
+  - publication readiness scripts
+  reviewer_question: Given plausible ASR alternatives, can the proposed CDS-ASR evidence
+    chain identify when a high-stakes downstream decision is stable, unstable, or
+    requires conservative action?
+current_gate_status:
+  workspace_version: v2.5.9
+  short_term_axis: Counterfactual Decision-Stability ASR
+  asr_hypothesis_generators:
+  - legacy partial encoder
+  - legacy LoRA
+  - Breeze-ASR-25 base
+  - Breeze-ASR-26
+  - Whisper large-v2
+  - Whisper small
+  current_candidate: legacy partial encoder
+  evidence_chain:
+    ok: true
+    paper_ready: false
+    publishable_ready: false
+    blocker: selected-300 human risk-atom audit remains incomplete
+  human_audit_progress:
+    row_reviews: 0/30
+    model_assessments: 0/90
+    first_batch: critical_or_high_risk_missed rows 1-6 with 18 model assessments
+    status: batch_pending
+  transcript_ground_truth: accepted for WER/CER scoring
+  pending_review_surface: CDS/risk-atom labels and model-level reviewer assessments
+  metric_policy:
+    primary_surface_metric: cer_zh_micro
+    supplemental_metric: wer_zh_jieba_micro
+    legacy_warning: pre-audit whitespace WER fields are not paper-facing evidence
+next_gate_sequence:
+- Complete comparable 258-row baselines without changing the paper thesis.
+- Keep split-aware metric inputs as the bridge from ASR quality to decision risk.
+- Run or refresh the selected-300 high-stakes main experiment.
+- Complete the selected-300 human risk-atom audit in batches, starting with critical_or_high_risk_missed
+  and unsafe_downrouting.
+- Refresh validation, aggregate review status, human-reviewed predictor outputs, evidence-chain
+  readiness, and objective-level publishability in one recorded pass.
+- Evaluate recovery policies only after the selected-300 and human-audit gates make
+  the instability evidence publishable.
+real_world_pressure_test:
+  setting: A high-stakes Mandarin or Taiwan Traditional Chinese call-center case where
+    ASR alternatives differ in a few risk-bearing phrases, and the downstream system
+    may either escalate the case, downroute it, or take conservative machine action.
+  expected_failure_mode: Surface CER/WER appears acceptable, but a risk atom changes
+    enough to flip the downstream decision or create unsafe downrouting.
+  smallest_observable_test: For one selected batch, compare model hypotheses, risk
+    atoms, counterfactual alternatives, CEIS, label flips, and reviewer assessment
+    without exposing sensitive transcripts outside local-only artifacts.
+  decision_metric: The idea is strengthened if CDS-ASR flags unstable cases that aggregate
+    CER/WER would miss and the human audit confirms the risk-atom or decision concern.
+complexity_containment:
+  rule: 'Every new subsystem must answer one of three questions: does it generate
+    plausible ASR alternatives, measure decision stability, or make the evidence chain
+    publishable?'
+  park_when:
+  - The subsystem creates a new contribution that cannot be explained as support for
+    CDS-ASR.
+  - The subsystem requires a new evaluation layer before the selected-300 audit is
+    complete.
+  - The subsystem improves engineering elegance without changing claim-evidence alignment.
+  allowed_growth:
+  - scripts that close current evidence gates
+  - aggregate tables needed by paper claims
+  - reviewer-facing explanation of CDS-ASR, CEIS, and conservative action
+  - local-only tools that reduce human audit burden without changing the sensitive-data
+    boundary
+research_program_strategy:
+  exploration_mode:
+    purpose: Let the local JANUS workspace grow as an internal research mine where
+      multiple paper lanes can emerge from the same evidence infrastructure.
+    allowed_behavior:
+    - keep subsystem prototypes, proxy analyses, and local-only review tools inside
+      the workspace while evidence is still immature
+    - record what each subsystem tests, what evidence it has, and which higher-level
+      construct it belongs to
+    - postpone public paper framing for lanes that do not yet have a single-sentence
+      claim and publishable evidence gate
+    risk_control: Internal exploration must not become public-facing scope until it
+      has been compressed into a paper lane with thesis, baseline, metric, evidence,
+      and boundary.
+  convergence_mode:
+    purpose: Select one paper lane at a time and hide unrelated system complexity
+      from the paper narrative.
+    rule: Paper convergence starts by choosing one core question, one method object,
+      one evidence stack, and one claim boundary.
+    output: A paper lane packet with title candidate, single-sentence thesis, claim-to-evidence
+      map, included subsystems, excluded subsystems, appendix candidates, and next
+      validation gate.
+  knowledge_compression_rule: 'Do not only add subsystems. Compress them upward into
+    reusable research constructs: uncertainty generation, uncertainty propagation,
+    decision instability, conservative recovery, audit scarcity, evidence governance,
+    and metric validity.'
+research_compression_method:
+  definition: Turn a large exploratory system into a research core that is understandable,
+    describable, testable, and publishable.
+  north_star_question: How can high-stakes AI systems maintain auditable, safe, and
+    stable decisions under uncertain inputs?
+  latent_research_structure:
+  - surface_item: WER/CER
+    deep_structure: transcript uncertainty
+    paper_role: input-quality evidence, not sufficient safety evidence
+  - surface_item: downstream label flips
+    deep_structure: decision instability
+    paper_role: main result signal for CDS-ASR
+  - surface_item: unsafe downrouting
+    deep_structure: operational harm under uncertainty
+    paper_role: high-stakes failure mode and safety metric
+  - surface_item: recovery policy
+    deep_structure: uncertainty-aware safety control
+    paper_role: method extension or future paper lane
+  - surface_item: evidence-chain audit
+    deep_structure: reconstructability and accountability
+    paper_role: claim-evidence governance and publication readiness
+  theory_chain:
+  - transcript uncertainty
+  - semantic uncertainty
+  - risk interpretation instability
+  - operational decision instability
+  - potential downstream harm
+  - need for recovery and governance
+  research_layers:
+    engineering:
+      description: Dataset loaders, configs, batch scripts, inventories, registries,
+        local-only artifacts, and repo plumbing.
+      paper_role: Usually methods appendix, reproducibility note, or invisible infrastructure.
+    experimental_evidence:
+      description: WER/CER, CEIS, label flips, high-risk misses, unsafe downrouting,
+        low-WER danger counts, and human-reviewed assessments.
+      paper_role: Results and evidence tables.
+    research_mechanism:
+      description: Counterfactual transcript alternatives, risk atoms, split-aware
+        metric inputs, constrained recovery, and evidence-chain gates.
+      paper_role: Methodology and evaluation design.
+    theory_thesis:
+      description: ASR accuracy alone is insufficient for high-stakes voice AI because
+        transcript uncertainty can propagate into semantic uncertainty and operational
+        decision instability.
+      paper_role: Core contribution and introduction-level claim.
+  compression_questions:
+  - What pain point does this subsystem address if implementation details are removed?
+  - Which higher-level uncertainty, decision, harm, recovery, or governance construct
+    does it instantiate?
+  - Is this subsystem Paper 1 core, Paper 1 support, a future paper lane, appendix
+    material, or an internal tool?
+  - What evidence would make this construct publishable instead of only interesting?
+  - What baseline would a reviewer expect?
+  - What claim boundary prevents over-selling the subsystem?
+  publishable_core_test:
+    understandable: A reviewer can state the problem in one sentence.
+    describable: The method has named inputs, outputs, assumptions, and failure conditions.
+    testable: The evidence has metrics, baselines, splits, and human-review status.
+    submittable: The claim has public/private artifact boundaries and a publishability
+      gate.
+paper_cutting_method:
+  rule: Cut papers by core question and evidence stack, not by directory, script,
+    or subsystem count.
+  portfolio_view:
+    paper_1: CDS-ASR, focused on decision stability under transcript uncertainty.
+    paper_2: Low-WER danger phenomenon, focused on metric validity and semantic-risk
+      mismatch.
+    paper_3: Recovery policies, focused on uncertainty-aware conservative routing.
+    paper_4: Human review scarcity, focused on auditability under limited reviewers.
+    paper_5: Evidence-chain governance, focused on machine-checkable AI evidence readiness.
+  anti_pattern: A paper that lists many subsystems without compressing them into one
+    latent research structure will read as engineering sprawl.
+  positive_pattern: A paper that names one latent structure, shows observable phenomena,
+    and maps each subsystem to a claim-evidence role becomes a research contribution.
+research_narrative_strategy:
+  rao_guidance_summary: A paper can be technically balanced but still fail to attract
+    attention if it does not show why the reader should care. The narrative should
+    begin with a real-world or anticipated problem, cite evidence that the problem
+    matters, summarize existing approaches with citations, explain the remaining gap,
+    then introduce a new framing and validation path.
+  narrative_arc:
+  - stage: real_world_problem
+    purpose: Establish that high-stakes conversational AI is becoming operationally
+      relevant and that ASR errors can affect downstream actions, not only transcripts.
+    janus_version: High-risk AI systems may make dangerous operational decisions while
+      surface ASR quality appears acceptable.
+    citation_need:
+    - adoption of voice or conversational AI in high-stakes settings
+    - operational use cases such as healthcare, finance, customer service, government,
+      fraud prevention, or call-center assistance
+    - evidence that ASR errors or speech-interface errors can propagate into downstream
+      task failure
+  - stage: existing_methods
+    purpose: Show what the field already uses to evaluate speech systems.
+    janus_version: Current evaluation commonly emphasizes WER, CER, confidence, benchmark
+      accuracy, and human review.
+    citation_need:
+    - standard ASR metrics and benchmark practice
+    - confidence estimation or uncertainty estimation in ASR
+    - human-in-the-loop review or speech system evaluation practice
+  - stage: fundamental_gap
+    purpose: Shift from method improvement to problem reframing.
+    janus_version: Existing evaluation often measures transcript accuracy, but does
+      not directly test whether plausible transcript alternatives change downstream
+      decisions.
+    citation_need:
+    - evidence or prior arguments that WER/CER are incomplete proxies for semantic
+      or task-level correctness
+    - downstream speech understanding, semantic error, or task-oriented evaluation
+      literature
+    - safety or reliability literature on metric mismatch and operational risk
+  - stage: new_framing
+    purpose: Introduce CDS-ASR as a new problem framing, not only a new metric.
+    janus_version: High-stakes conversational AI should evaluate decision stability
+      under plausible ASR alternatives, not only transcript accuracy.
+    citation_need:
+    - related counterfactual evaluation or robustness literature
+    - safety-critical AI evaluation and uncertainty propagation literature
+    - governance or accountability literature where decision traces matter
+  - stage: validation
+    purpose: Connect methods and results to the real-world problem.
+    janus_version: CEIS, label flips, unsafe downrouting, high-risk misses, human
+      risk-atom audit, and recovery policy evidence test whether transcript uncertainty
+      changes operational decisions.
+    citation_need:
+    - dataset or domain context citations where public
+    - baseline ASR model citations
+    - human audit, inter-rater, or expert review methodology references as needed
+  narrative_thesis_options:
+  - High-stakes voice systems need to know whether operational decisions remain stable
+    under plausible ASR transcript alternatives.
+  - ASR accuracy alone is insufficient for evaluating safety-critical conversational
+    AI because small transcript uncertainty can propagate into downstream decision
+    instability.
+  - CDS-ASR reframes speech evaluation from transcript correctness to decision stability
+    under plausible transcript alternatives.
+  low_level_to_high_level_rewrites:
+  - low_level: We build CEIS.
+    high_level: Existing ASR metrics do not show whether transcript uncertainty changes
+      downstream decisions, so CEIS measures operational decision stability.
+  - low_level: We compare six ASR models.
+    high_level: Multiple ASR systems provide plausible transcript hypotheses for testing
+      whether downstream risk decisions survive ASR uncertainty.
+  - low_level: We implement recovery policies.
+    high_level: When decision stability fails, conservative recovery policies provide
+      a bounded path from uncertainty detection to safer machine action.
+  - low_level: We run a human audit.
+    high_level: Human risk-atom review anchors decision-stability claims to accountable
+      evidence rather than unverified proxy metrics.
+  citation_policy:
+    rule: Do not use dramatic or unsupported claims. Every real-world problem claim,
+      existing-method summary, and gap claim needs citation support before manuscript
+      use.
+    positive_scope_language:
+    - In high-stakes conversational systems, transcript uncertainty can propagate
+      into downstream operational instability.
+    - The study evaluates decision stability under plausible ASR alternatives.
+    - Recovery and governance are treated as bounded scope controls, not proof of
+      production readiness.
+    avoid:
+    - AI catastrophe claims
+    - unsupported claims that all current ASR evaluation is wrong
+    - implying production safety without a separate validation path
+  consequence_driven_narrative:
+    core_shift: Do not stop at metric mismatch. Move from metric problem, to false
+      system belief, to unsafe deployment assumption, to operational failure mode,
+      to human or organizational cost.
+    why_metric_gap_is_not_enough: A new metric becomes meaningful only when the paper
+      shows what decision the old metric would make people trust, why that trust is
+      fragile, and which high-stakes action can change as a result.
+    deployment_illusion: Organizations may treat low CER/WER, high confidence, or
+      clean benchmark performance as evidence that a downstream voice-AI workflow
+      is operationally reliable. CDS-ASR tests that belief directly by asking whether
+      plausible transcripts preserve the downstream action.
+    consequence_chain:
+    - metric_problem: Surface ASR metrics look acceptable.
+      wrong_system_belief: The voice-AI workflow appears reliable enough to automate
+        or de-prioritize review.
+      operational_failure: A high-risk case can be downrouted, missed, or assigned
+        the wrong escalation state.
+      cost_surface: Response can be delayed, review burden can shift to operators,
+        and the organization can gain unearned confidence in automation.
+    operational_translation:
+    - technical_term: unsafe downrouting
+      operational_language: High-risk cases are incorrectly lowered in handling priority.
+    - technical_term: decision instability
+      operational_language: Plausible transcripts for the same call lead to different
+        machine actions.
+    - technical_term: low-WER danger case
+      operational_language: The transcript appears nearly correct, but the downstream
+        decision is still unsafe or unstable.
+    - technical_term: risk-atom miss
+      operational_language: A small transcript difference removes or alters a key
+        risk-bearing element that controls escalation.
+    impact_ladder:
+    - level: weak
+      wording: WER does not reflect decision stability.
+      reviewer_reaction: The reader may accept the statement but not feel why it matters.
+    - level: medium
+      wording: Low-WER transcripts can still cause downstream risk misclassification.
+      reviewer_reaction: The reader sees task-level relevance, but the operational
+        consequence is still abstract.
+    - level: strong
+      wording: Transcript-level correctness does not guarantee operational safety
+        because a system can miss high-risk cases, lower priority incorrectly, or
+        change escalation under plausible ASR alternatives.
+      reviewer_reaction: The reader can connect metric mismatch to deployment risk.
+    - level: vivid
+      wording: A few ASR word differences can make a high-risk scam-support call look
+        like low-risk general consultation and prevent timely escalation.
+      reviewer_reaction: The reader can picture the failure mode, provided the paper
+        supports it with de-identified or synthetic-safe evidence.
+    manuscript_punchlines:
+    - The dangerous case is not only visibly bad ASR; it is a system that appears
+      normal while the downstream action has already changed.
+    - Low transcript error rates can create a deployment illusion when operational
+      decisions remain unstable.
+    - CDS-ASR turns transcript uncertainty into an auditable test of whether the intended
+      operational action survives plausible ASR alternatives.
+    claim_boundary: Frame this as evidence-backed deployment-risk evaluation, not
+      proof that all voice-AI deployments are unsafe and not proof of production readiness
+      without a separate validation path.
+  semantic_consequence_quantification:
+    core_question: How much real-world meaning or operational quantity changes when
+      decisions are computed from ASR-derived meaning instead of ground-truth case
+      meaning?
+    distinction_from_wer: WER counts transcript surface edits; semantic consequence
+      quantification measures decision-relevant distortion, such as amount errors,
+      transfer-status flips, risk-atom misses, priority changes, and aggregate drift.
+    amount_example:
+      ground_truth_meaning: A caller reports a high monetary loss.
+      asr_derived_meaning: The ASR hypothesis changes the amount by one or more orders
+        of magnitude.
+      operational_effect: Severity, escalation urgency, case statistics, and resource
+        allocation can shift even if the word-level transcript difference is small.
+      boundary: Use only when amount fields can be extracted, normalized, and compared
+        against accepted local references; otherwise treat amount distortion as an
+        illustrative submetric, not the whole paper.
+    measurement_families:
+    - name: field_distortion
+      definition: Compare ground-truth and ASR-derived values for structured risk
+        fields, such as amount, transfer completion, credential disclosure, app installation,
+        meeting plan, and callback channel.
+      examples:
+      - absolute amount error
+      - relative amount error
+      - risk-threshold crossing
+      - boolean status flip
+    - name: decision_consequence
+      definition: Compare decisions derived from ground-truth meaning versus ASR-derived
+        meaning.
+      examples:
+      - escalation flip
+      - unsafe downrouting
+      - high-risk miss
+      - conservative-action trigger
+    - name: aggregate_operational_drift
+      definition: Sum or average ground-truth risk quantities and ASR-derived risk
+        quantities over many cases, then measure the gap by model, split, time window,
+        or high-stakes subset.
+      examples:
+      - total reported-loss drift
+      - high-risk case count drift
+      - escalation distribution drift
+      - resource-allocation signal drift
+    - name: risk_weighted_semantic_evaluation
+      definition: Weight transcript or semantic errors by how much they control downstream
+        risk and action.
+      examples:
+      - filler-word error has low weight
+      - action-status flip has high weight
+      - amount order-of-magnitude error has high weight
+      - escalation cue deletion has high weight
+    - name: expected_operational_harm_proxy
+      definition: Estimate expected harm as error probability times operational consequence
+        for risk-bearing fields, while keeping the result as a proxy until domain-validated.
+      examples:
+      - probability of amount error multiplied by severity-tier change
+      - probability of transfer-status flip multiplied by escalation cost
+      - probability of risk-atom miss multiplied by unsafe downrouting cost
+    additional_blind_spots_to_track:
+    - human transcript illusion, where fluent low-WER ASR makes reviewers overtrust
+      a semantically distorted transcript
+    - error asymmetry, where trivial filler mistakes and risk-controlling semantic
+      flips should not receive equal evaluation weight
+    - systematic bias, where a model repeatedly underestimates or overestimates risk-bearing
+      quantities across many cases
+    - calibration gap, where ASR confidence appears high even on fields that control
+      downstream action
+    - coverage gap, where only some cases contain extractable monetary or structured
+      risk fields, requiring split-aware reporting rather than universal claims
+    social_sensing_instrument_frame:
+      definition: A social sensing instrument is a measurement pipeline that uses
+        human-generated signals to infer the state of a social system, such as risk
+        patterns, emerging events, fraud activity, public-health signals, or service
+        demand.
+      janus_interpretation: A high-stakes anti-scam hotline can act as a social-risk
+        sensing surface because callers report transfer status, fraud scripts, monetary
+        loss, contact channels, app downloads, account exposure, and escalation cues.
+      asr_role: In this setting, ASR is not merely a transcription layer. It is part
+        of the sensing chain that converts audio into measurable social-risk signals.
+      measurement_integrity_risk: If ASR systematically distorts risk-bearing content,
+        the resulting dashboard, aggregate statistics, escalation distribution, and
+        resource-allocation signals can drift from the ground-truth case reality.
+      examples:
+      - search-query trends used as public-health signals
+      - social-media event detection from rapid crowd reports
+      - fraud monitoring from transaction-behavior anomalies
+      - emergency or hotline calls as public-safety sensing surfaces
+      paper_role: Use this as framing for why semantic consequence and aggregate drift
+        matter; keep Paper 1 centered on CDS-ASR decision stability.
+      citation_needs:
+      - computational social sensing or social signal processing
+      - crisis informatics and social-media event detection
+      - measurement bias or data quality in computational social science
+      - public-safety, emergency-call, or hotline analytics where public citations
+        exist
+      boundary: Do not claim JANUS measures all social fraud activity. Claim only
+        that the ASR pipeline participates in a bounded social-risk measurement surface
+        for the available high-stakes call data.
+    claim_boundary: This layer should support CDS-ASR by quantifying consequence,
+      not replace the core decision-stability thesis or become unconstrained metric
+      engineering.
+research_map:
+  root_construct: uncertainty propagation into operational decisions
+  branches:
+    uncertainty_generation:
+      includes:
+      - ASR n-best hypotheses
+      - confidence and timestamp alternatives
+      - CER/WER and segmented Mandarin metrics
+      - plausible transcript alternatives
+      paper_lane: ASR uncertainty or conversational ASR robustness
+      status: supporting Paper 1, possible future lane
+    uncertainty_propagation:
+      includes:
+      - risk atom extraction
+      - counterfactual transcript alternatives
+      - transcript-to-decision pathways
+      paper_lane: CDS-ASR core
+      status: Paper 1 center
+    decision_instability:
+      includes:
+      - CEIS
+      - downstream label flips
+      - unsafe downrouting
+      - high-risk misses
+      paper_lane: safety-critical conversational AI reliability
+      status: Paper 1 center
+    recovery_policies:
+      includes:
+      - automatic constrained recovery
+      - conservative machine action
+      - fallback decision rules
+      paper_lane: uncertainty-aware runtime control or AI fallback systems
+      status: future lane unless needed as Paper 1 supporting evidence
+    auditability:
+      includes:
+      - selected-300 human risk-atom audit
+      - batch review protocol
+      - model-level reviewer assessment
+      paper_lane: human-AI oversight under review scarcity
+      status: evidence layer for Paper 1, possible future methods paper
+    governance:
+      includes:
+      - evidence-chain readiness
+      - objective-level publishability audit
+      - claim-to-evidence gates
+      paper_lane: AI governance or research evidence engineering
+      status: internal quality system and possible future PaperOps-style lane
+    metric_validity:
+      includes:
+      - low-WER danger cases
+      - WER/CER versus downstream harm mismatch
+      - SRES/CEIS predictor analysis
+      - semantic consequence quantification
+      - aggregate operational drift
+      - risk-weighted semantic evaluation
+      paper_lane: why WER is insufficient for high-stakes voice AI
+      status: strong future-paper candidate after human-reviewed evidence is available
+    social_sensing_measurement_integrity:
+      includes:
+      - hotline conversations as social-risk signals
+      - ASR-derived aggregate risk statistics
+      - measurement integrity under semantic distortion
+      - social-risk dashboard drift
+      - bounded public-safety sensing interpretation
+      paper_lane: AI-mediated social-risk sensing and measurement integrity
+      status: conceptual framing for Paper 1 and possible future paper lane after
+        aggregate evidence exists
+paper_lane_candidates:
+- lane_id: paper_1_cds_asr
+  title_shape: Counterfactual Decision-Stability ASR for high-stakes conversational
+    decision systems
+  core_question: Do high-stakes downstream decisions remain stable under plausible
+    ASR transcript alternatives?
+  included_subsystems:
+  - ASR hypothesis generators
+  - risk atoms
+  - counterfactual transcript alternatives
+  - CEIS and decision-stability scoring
+  - selected-300 human audit evidence
+  - constrained recovery as supporting evidence
+  current_role: short-term paper center
+- lane_id: paper_2_metric_validity
+  title_shape: Low-WER danger cases and metric validity for high-stakes voice AI
+  core_question: When do surface ASR metrics fail to predict downstream decision harm?
+  included_subsystems:
+  - WER/CER audit
+  - low-WER danger counts
+  - SRES/CEIS predictor analysis
+  - human-reviewed downstream risk labels
+  current_role: future lane after Paper 1 evidence is mature
+- lane_id: paper_3_recovery_policy
+  title_shape: Conservative recovery policies for unstable conversational AI decisions
+  core_question: How should a machine act when transcript uncertainty makes downstream
+    decisions unstable?
+  included_subsystems:
+  - constrained recovery
+  - conservative machine action
+  - unsafe downrouting prevention
+  - human override or escalation rules
+  current_role: future lane; keep as support until instability measurement is publishable
+- lane_id: paper_4_human_audit_governance
+  title_shape: Human risk-atom audit systems for evidence-scarce high-stakes AI evaluation
+  core_question: How can limited human review be batched, validated, and connected
+    to publishable AI safety claims?
+  included_subsystems:
+  - selected-300 audit protocol
+  - batch status audit
+  - response template validation
+  - evidence-chain refresh
+  current_role: future lane or methods appendix
+- lane_id: paper_5_asr_robustness
+  title_shape: ASR uncertainty generation for high-stakes Mandarin call-center data
+  core_question: Which ASR hypothesis generators produce plausible alternatives that
+    matter for downstream risk?
+  included_subsystems:
+  - six-model ASR matrix
+  - n-best and confidence surfaces
+  - Traditional Chinese locale gates
+  - split-aware ASR metrics
+  current_role: baseline and hypothesis-generation support for Paper 1
+lane_promotion_gates:
+- Every candidate paper lane needs one single-sentence thesis.
+- Every lane needs a claim-to-evidence map with script/output paths and current gate
+  status.
+- Every lane needs at least one baseline that a reviewer would accept.
+- Every lane needs a metric that is not just engineering progress.
+- Every lane needs a sensitive-data boundary and a public/private artifact split.
+- Future-paper lanes should be parked unless they either close a Paper 1 gate or have
+  their own publishable evidence stack.
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 97/100
+maturity_level: execution_ready
+next_steps:
+- Record the one-sentence paper thesis at the top of the JANUS paper-facing README,
+  story outline, and roadmap so every subsystem maps back to CDS-ASR.
+- Complete the first selected-300 human audit batch response, run strict dry-run,
+  then write and refresh the evidence chain only after the response passes validation.
+- 'Create a claim-to-evidence map with three columns: paper claim, supporting script/output,
+  and current gate status.'
+- Define the input/output contract for one paper-facing CDS-ASR experiment fixture
+  before expanding any new subsystem.
+- Add a JANUS research-map table that marks each subsystem as Paper 1 core, Paper
+  1 support, future paper lane, appendix, or internal tool.
+- Create a research-compression table that maps each subsystem from surface implementation
+  to deep structure, paper role, required evidence, and claim boundary.
+- 'Draft a citation-backed research narrative map with five rows: real-world problem,
+  existing methods, fundamental gap, new framing, and validation evidence.'
+- Add a consequence-to-evidence table mapping each metric gap to the false system
+  belief, operational failure mode, JANUS evidence artifact, and claim boundary.
+- Add a semantic-consequence table for any extractable high-risk fields, starting
+  with amount distortion only if the amount field can be normalized and compared safely;
+  otherwise use transfer status, risk-atom presence, escalation cue, or decision label
+  as the first field.
+- Prototype aggregate operational drift reporting with aggregate-only outputs, such
+  as total-loss drift, high-risk-count drift, escalation-distribution drift, and unsafe-downrouting
+  drift by ASR hypothesis generator.
+- Draft a citation map for the social sensing instrument framing, including computational
+  social sensing, crisis informatics, measurement bias, and bounded hotline analytics.
+- Add one measurement-integrity paragraph to the paper story outline only after it
+  is tied to aggregate drift evidence, not as a broad claim about society.
+- Draft one reviewer-facing synthetic, non-sensitive vignette for a low-WER danger
+  case and unsafe downrouting scenario; use it as narrative illustration only after
+  evidence supports it.
+- Rewrite low-level method descriptions into problem-driven claims before they enter
+  any abstract, introduction, or paper-facing story outline.
+- For each future-paper lane, write only a one-paragraph thesis and promotion gate;
+  do not start new experiments until the selected-300 Paper 1 evidence gate advances.
+- Freeze recovery policy work as supporting evidence until selected-300 human-reviewed
+  instability evidence is available.
+- Prepare a reviewer-facing figure that shows ASR alternatives flowing into risk atoms,
+  counterfactual alternatives, CEIS, decision stability, and conservative action.
+source:
+- conversation
+normalization_status: validated
+maturity_action: generate experiment plan

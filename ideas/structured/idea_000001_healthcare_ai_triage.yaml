@@ -86,6 +86,7 @@ connections:
 - idea_000032
 - idea_000038
 - idea_000039
+- idea_000040
 value:
   impact: high
   feasibility: medium

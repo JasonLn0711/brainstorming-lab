@@ -80,6 +80,7 @@ insights:
 connections:
 - idea_000007
 - idea_000035
+- idea_000040
 role: idea
 value:
   impact: high

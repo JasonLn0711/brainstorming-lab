@@ -90,6 +90,7 @@ connections:
   - idea_000012
   - idea_000032
   - idea_000036
+  - idea_000040
 role: idea
 value:
   impact: high
