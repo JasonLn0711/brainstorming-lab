@@ -34,6 +34,8 @@ connections:
 - idea_000002
 - idea_000007
 - idea_000028
+- idea_000037
+- idea_000038
 value:
   impact: medium
   feasibility: medium

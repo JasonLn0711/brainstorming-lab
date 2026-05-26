@@ -107,14 +107,12 @@ insights:
   without breaking under composition, interpolation, or control?'
 - Euler angles are good for UI and human explanation; quaternions are often better
   for internal state and smooth rotation.
-- 'Gimbal lock is a systems failure: the representation loses a degree of freedom
-  at a critical configuration.'
+- 'Gimbal lock is a systems failure: the representation loses a degree of freedom at a critical configuration.'
 - For drones and spacecraft, orientation is not decoration; it is control state.
 - For AR/VR, small orientation errors become human-visible discomfort.
 - For AI world models, spatial intelligence needs pose, frame, transform, and uncertainty,
   not only object labels.
-- 'Quaternions are a concrete example of why math foundations matter for AI systems
-  engineering: the right representation changes what can be built reliably.'
+- 'Quaternions are a concrete example of why math foundations matter for AI systems engineering: the right representation changes what can be built reliably.'
 connections:
 - idea_000010
 - idea_000018

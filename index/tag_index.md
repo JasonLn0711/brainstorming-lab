@@ -1,5 +1,10 @@
 # Tag Index
 
+## 165-antifraud
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## 3d-rotation
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
@@ -8,13 +13,25 @@
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 
+## acoustic-intelligence
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## action-perception-loop
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
 ## active-learning
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
+## adaptive-coping
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## adaptive-manipulation
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## adaptive-routing
 
@@ -23,6 +40,10 @@
 ## aesthetics
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## agent-based-modeling
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## agent-reliability
 
@@ -35,6 +56,10 @@
 ## agentic-ai
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## aggregate-operational-drift
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## ai-agent-evaluation
 
@@ -72,6 +97,8 @@
 ## ai-governance
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## ai-humanities
 
@@ -89,6 +116,7 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## ai-scientist
 
@@ -164,6 +192,9 @@
 
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## asr-security
 
@@ -181,7 +212,7 @@
 
 ## autoencoder
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## automation
 
@@ -198,6 +229,15 @@
 ## behavior-graph
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
+## behavioral-signal-modeling
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## belief-transition
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## benchmark-design
 
@@ -219,6 +259,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## call-center-ai
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## candidate-stubs
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -230,6 +274,14 @@
 ## career-strategy
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+
+## cds-asr
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
+## ceis
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## citation-absorption-gap
 
@@ -261,7 +313,7 @@
 
 ## clinical-ai
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## clinical-intake
 
@@ -284,6 +336,23 @@
 ## cognitive-load
 
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
+
+## cognitive-security
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
+## cognitive-security-triage
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## cognitive-vulnerability-modeling
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## complex-systems
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## compliance
 
@@ -310,6 +379,10 @@
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
+## consultation-call
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## context-compaction
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -323,21 +396,33 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## conversation-topology
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
 ## coordination-cost
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
 ## coreset
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## cost-normalized-benchmark
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
+## counterfactual-decision-stability
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## counterfactual-provenance-ablation
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
+## counterfactual-transcripts
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## cross-domain
 
@@ -372,13 +457,22 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## data-centric-ai
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## data-curation
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
+## data-governance
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## dataset-governance
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## decipherment
 
@@ -387,6 +481,10 @@
 ## decision-architecture
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## decision-autonomy
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## decision-system
 
@@ -483,6 +581,10 @@
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
+## early-warning-systems
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+
 ## ecosystem-knowledge-pollution
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
@@ -531,6 +633,10 @@
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
 
+## escalation-dynamics
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
 ## evaluation
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -543,6 +649,10 @@
 ## evidence-chain
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
+## evidence-chain-governance
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## evidence-density
 
@@ -569,9 +679,13 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## expected-operational-harm
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## experiment-design
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## experimental-design
 
@@ -655,6 +769,10 @@
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
+## geopolitical-risk
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+
 ## ghostty
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
@@ -681,6 +799,7 @@
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## gpu-rendering
 
@@ -694,10 +813,18 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## hard-negative
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
 ## hardware
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
+## harmful-interaction
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## harness-design
 
@@ -708,6 +835,14 @@
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
+## help-seeking-population
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## help-seeking-signal
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## hermes-agent
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
@@ -716,9 +851,18 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## hidden-state-modeling
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
 ## high-school-explainer
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## high-stakes-conversation
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## his-emr-boundary
 
@@ -747,6 +891,7 @@
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## human-llm-rule-comparison
 
@@ -755,6 +900,10 @@
 ## human-review
 
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+
+## human-risk-atom-audit
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## human-source-scarcity
 
@@ -768,6 +917,10 @@
 ## human-value
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## human-vulnerability-dynamics
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## hybrid-intelligence
 
@@ -793,6 +946,14 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## influence-dynamics
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
+## influence-transparency
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
 ## information-efficiency
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -812,9 +973,46 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## institutional-capacity
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## institutional-stress
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
+## institutional-verification
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## intelligence-analysis
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+
+## interaction-phase-transition
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
+## interaction-science
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## interaction-structure-reconstruction
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## interaction-trajectory
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
 ## interpretation
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## intervention-boundary
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## ios-audio
 
@@ -827,6 +1025,10 @@
 ## iso-27001
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
+## janus
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## journal-intelligence
 
@@ -852,6 +1054,10 @@
 ## latency
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## latent-state-inference
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## law-enforcement
 
@@ -939,14 +1145,23 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## mamba
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## mandarin-asr
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
+## manipulation-state-detection
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## masked-autoencoder
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## math-foundation
 
@@ -956,6 +1171,10 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## measurement-integrity
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## medical-ai
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -963,7 +1182,7 @@
 
 ## medical-imaging
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## memory
 
@@ -1014,6 +1233,10 @@
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
+## moral-framing-risk
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## mosquito-control
 
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
@@ -1026,14 +1249,23 @@
 ## multimodal-ai
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## multimodal-audio
 
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 
+## multimodal-datasets
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## multimodal-fusion
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## nemo-curator
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## nerd-font
 
@@ -1067,6 +1299,10 @@
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
+## nvidia
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## object-detection
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
@@ -1087,6 +1323,11 @@
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 
+## osint
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
 ## other-minds-problem
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -1103,9 +1344,17 @@
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
+## paper-framework
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## paper-quality
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## paper-scope-control
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## paper-writing
 
@@ -1114,6 +1363,10 @@
 ## paperops
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## paralinguistics
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## path-management
 
@@ -1230,6 +1483,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## public-private-boundary
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## publication-strategy
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
@@ -1237,6 +1494,10 @@
 ## publication-workflow
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## q1-paper-design
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## quaternion
 
@@ -1271,6 +1532,10 @@
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 - `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
+## recovery-policy
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## recursive-contamination
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
@@ -1287,10 +1552,14 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## representation-discovery
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## representation-learning
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## reproducibility
 
@@ -1335,10 +1604,22 @@
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 
+## reversible-window
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## review-scarcity
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## reviewer-assist
 
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## reviewer-ecosystem-modeling
 
@@ -1364,6 +1645,10 @@
 
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
+## risk-atom
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## robotics
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
@@ -1378,15 +1663,25 @@
 
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 
+## sampling-bias
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## scam-content
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
+## scam-escalation
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## scientific-culture
 
@@ -1433,6 +1728,10 @@
 
 - `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
+## selection-bias
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## self-directed-data-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -1443,15 +1742,29 @@
 
 ## self-supervised-learning
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
+## semantic-consequence-quantification
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## semantic-grounding
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## sensing
 
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
+## sensitive-data
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## sensitive-data-boundary
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## session-ledger
 
@@ -1478,6 +1791,14 @@
 ## slime-mold
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
+## social-risk-measurement
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
+## social-sensing-instrument
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 
 ## sociology-of-science
 
@@ -1516,6 +1837,18 @@
 
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
+## speech-data
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## speech-governance
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
+## split-aware-evaluation
+
+- `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
 ## sre
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -1542,7 +1875,7 @@
 
 ## stopping-rule
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## strategy-learner
 
@@ -1562,7 +1895,7 @@
 
 ## submodular-optimization
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## support-fragility
 
@@ -1572,13 +1905,25 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## survivorship-bias
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
 ## synthetic-consensus
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
 
+## synthetic-data
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
 ## synthetic-data-contamination
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
+## synthetic-release
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## system-design
 
@@ -1608,6 +1953,22 @@
 ## teaching
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
+## telephone-speech
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
+## temporal-dynamics
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## temporal-interaction-graph
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
+## temporal-modeling
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
 ## terminal
 
@@ -1649,6 +2010,10 @@
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
+## triage
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
 ## trust-calibration
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
@@ -1656,6 +2021,11 @@
 ## trust-formation
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## trust-state-evolution
+
+- `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## ubuntu
 
@@ -1665,6 +2035,10 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+
+## uncertainty-aware-asr
+
+- `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## uncertainty-tolerance
 
@@ -1684,7 +2058,7 @@
 
 ## vae
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## value-capture
 
@@ -1697,6 +2071,10 @@
 ## verification
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## victim-cognitive-state
+
+- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## video-understanding
 
@@ -1716,11 +2094,15 @@
 
 ## vq-vae
 
-- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+- `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## weak-signal-analysis
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+
+## weak-signals
+
+- `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
 
 ## web-pollution
 
@@ -1775,6 +2157,10 @@
 ## world-model
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
+## world-modeling
+
+- `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## yolo
 
