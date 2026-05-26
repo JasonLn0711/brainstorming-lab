@@ -12,6 +12,10 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## active-learning
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## adaptive-routing
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
@@ -175,6 +179,10 @@
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
 
+## autoencoder
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## automation
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
@@ -251,6 +259,10 @@
 
 - `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
+## clinical-ai
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## clinical-intake
 
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
@@ -315,6 +327,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## coreset
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## cost-normalized-benchmark
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -355,6 +371,14 @@
 ## data-acquisition-strategy
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## data-curation
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
+## dataset-governance
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## decipherment
 
@@ -544,6 +568,10 @@
 ## existential-understanding
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## experiment-design
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## experimental-design
 
@@ -916,6 +944,10 @@
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 
+## masked-autoencoder
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## math-foundation
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
@@ -928,6 +960,10 @@
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
+## medical-imaging
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## memory
 
@@ -1254,6 +1290,7 @@
 ## representation-learning
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## reproducibility
 
@@ -1404,6 +1441,10 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## self-supervised-learning
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## semantic-grounding
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
@@ -1499,6 +1540,10 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
+## stopping-rule
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## strategy-learner
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -1514,6 +1559,10 @@
 ## submission-portal
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## submodular-optimization
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## support-fragility
 
@@ -1633,6 +1682,10 @@
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
+## vae
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
 ## value-capture
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
@@ -1660,6 +1713,10 @@
 ## voip
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## vq-vae
+
+- `idea_000035` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000035_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
 ## weak-signal-analysis
 
