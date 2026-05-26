@@ -112,7 +112,8 @@ insights:
     adaptive questionnaires, non-adherence detection, and explainable workflow suggestions.
 - The research value is operational AI systems under real-world deployment constraints: usability,
     reliability, privacy, accountability, and human review.
-connections: []
+connections:
+- idea_000042
 role: idea
 value:
   impact: high

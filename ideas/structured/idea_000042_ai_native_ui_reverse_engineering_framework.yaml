@@ -1,0 +1,226 @@
+id: idea_000042
+title: AI-native UI reverse engineering framework
+created_at: '2026-05-26'
+type: hypothesis
+tags:
+- ai-native-design
+- ui-reverse-engineering
+- ux-system-design
+- frontend-learning
+- deterministic-specification
+- prompt-engineering
+- visual-hierarchy
+- spacing-system
+- semantic-color
+- medical-ux
+- human-factors
+- low-cognitive-load
+status: execution_ready
+problem_statement:
+  raw: The user wants a concrete way to look at a strong UI layout, understand how
+    it works, describe it precisely, and then ask Codex or another AI system to turn
+    the observation into frontend code, despite not having prior frontend programming
+    background.
+  normalized: Given a non-frontend builder who can recognize strong UI examples, optimize
+    a repeatable UI reverse-engineering workflow that converts visual observation
+    into deterministic layout, hierarchy, spacing, color, information-density, and
+    cognitive-load specifications that AI coding agents can implement under constraints
+    of limited frontend vocabulary, reproducible prompts, domain-specific human factors,
+    and verifiable rendered output.
+  structure:
+    given: a non-frontend builder who sees strong UI examples and wants to reproduce
+      the design logic
+    optimize: a repeatable observation-to-spec-to-code workflow for AI-assisted frontend
+      implementation
+    constraints:
+    - limited frontend coding background
+    - limited visual-design vocabulary at the start
+    - prompts must be specific enough for Codex or AI coding agents
+    - specifications must be deterministic rather than aesthetic-only
+    - medical or kiosk UI must reduce anxiety and cognitive load
+    - rendered output must be inspected, not trusted only from code
+summary: 'The useful idea is not "learn frontend first." The useful capability is
+  translating visual design into executable engineering language. A builder can learn
+  to observe UI through layers: layout, visual hierarchy, spacing rhythm, semantic
+  color roles, information density, and cognitive load. Those observations become
+  deterministic specifications for AI agents: canvas constraints, layout model, focus
+  order, spacing scale, color roles, typography, grouping, interaction states, and
+  avoid-list. This turns a good UI screenshot from inspiration into a reproducible
+  product-design artifact.'
+source_note_zh: 這次想法的核心不是「先學會前端工程」，而是建立一套 UI reverse engineering framework：看到好的 UI
+  後，不只說好看，而是拆成 layout、visual hierarchy、spacing、semantic color、information density、cognitive
+  load， 再把觀察轉成 deterministic specification，讓 Codex 或 AI coding agent 可以照規格實作並檢查畫面。
+first_principle:
+  scarce_resource: clear design specification, not frontend syntax
+  core_question: How can a non-frontend builder convert a good UI into an implementable
+    AI prompt and verifiable frontend spec?
+  not_the_core:
+  - memorizing CSS properties before understanding layout intent
+  - asking AI for a generic beautiful dashboard
+  - copying colors without understanding semantic roles
+  - treating screenshots as style inspiration only
+  - trusting generated code without rendered inspection
+  reusable_rule: Observe UI as attention routing plus constraint design, then write
+    the prompt as a deterministic specification before asking an AI agent to code.
+  smallest_next_test: Pick one medical summary UI screenshot and write a one-page
+    UI observation spec that includes layout, hierarchy, spacing, color roles, information
+    density, cognitive-load goal, avoid-list, and implementation prompt.
+  kill_condition: Park the framework if the observation template does not produce
+    more consistent AI-generated UI than a generic "make it beautiful" prompt.
+assumptions:
+- A beginner can make useful UI progress by learning design observation vocabulary
+  before learning full frontend engineering.
+- AI coding agents respond better to layout, hierarchy, spacing, and role-based color
+  constraints than to broad aesthetic instructions.
+- Medical UI quality depends heavily on cognitive load and emotional safety, not only
+  visual polish.
+- An 8pt spacing system is a practical first approximation for turning screenshots
+  into implementable spacing constraints.
+- The same observation framework can support PM work, UX critique, product specs,
+  and frontend implementation prompts.
+- Rendered inspection and screenshot comparison are necessary because AI-generated
+  code may satisfy text instructions while failing visually.
+evidence:
+- '2026-05-26 user idea: the missing skill is a UI reverse engineering framework,
+  not coding alone.'
+- '2026-05-26 user idea: the target workflow is observe UI, decompose UI, describe
+  UI, and convert description into deterministic specification.'
+- '2026-05-26 user idea: a strong medical summary layout can be decomposed by layout,
+  visual hierarchy, spacing, color roles, information density, and cognitive load.'
+- '2026-05-26 user idea: good AI prompts name card-based layout, fixed canvas, 8pt
+  spacing, calm/trustworthy/non-panic style, primary heart-rate alert focus, secondary
+  vital signs, and avoid high-saturation red or crowded information.'
+- Existing idea_000034 needs patient-facing and staff-facing healthcare UI where low
+  cognitive load and clear grouping matter.
+- Existing idea_000032 already treats UI as one layer in medical AI assurance, where
+  human oversight, auditability, and overreliance risk matter.
+baseline:
+- Ask AI to "make a beautiful medical dashboard" without constraints.
+- Copy a screenshot visually without understanding layout, spacing, or attention routing.
+- Learn frontend syntax in isolation before learning what the UI should communicate.
+- Use a generic component library without semantic color, hierarchy, or human-factors
+  decisions.
+metrics:
+- 'Prompt specificity score: number of explicit constraints for layout, hierarchy,
+  spacing, color, density, and human factors.'
+- Visual match quality after one AI generation pass.
+- Number of manual correction turns needed before the rendered UI matches the intended
+  structure.
+- Readability on elderly or kiosk-sized displays.
+- 'Cognitive-load review: whether primary action, warning, and secondary information
+  are visually separable within five seconds.'
+- 'Reusability: whether the observation template can be applied to a second UI example.'
+insights:
+- UI is attention routing; visual hierarchy determines what the user sees first, second,
+  and third.
+- Spacing is a design system, not empty decoration.
+- Color should be described by semantic role, not only hue.
+- Medical UX should avoid panic while still making risk visible.
+- A strong AI coding prompt is closer to an architecture spec than a taste request.
+- The user can become an AI-native UX system designer before becoming a full frontend
+  engineer.
+connections:
+- idea_000018
+- idea_000029
+- idea_000032
+- idea_000034
+connection_notes:
+- id: idea_000018
+  relation: career_capability
+  note: UI-to-spec translation supports AI product engineering and value-capture positioning
+    beyond pure coding.
+- id: idea_000029
+  relation: engineering_process
+  note: 'Deterministic UI specification resembles paper/release engineering: define
+    the claim, artifact, checks, and reviewer-facing evidence.'
+- id: idea_000032
+  relation: medical_ai_assurance
+  note: Medical AI demos need UI layers that route attention without overclaiming
+    or increasing patient anxiety.
+- id: idea_000034
+  relation: product_design_input
+  note: The urology follow-up CRM will need calm, grouped, low-cognitive-load staff
+    and patient UI surfaces.
+role: idea
+value:
+  impact: high
+  feasibility: high
+  novelty: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 9
+  connection_strength_score: 9/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 10
+  feasibility_score: 10/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 83/100
+maturity_level: execution_ready
+ui_observation_template:
+  layout:
+  - overall composition
+  - grid or stack model
+  - content width and canvas ratio
+  - card and section structure
+  visual_hierarchy:
+  - first visual focus
+  - second visual focus
+  - primary action
+  - secondary information
+  spacing:
+  - spacing scale
+  - card padding
+  - section gap
+  - icon-to-text gap
+  - line height
+  color_roles:
+  - trust color
+  - warning color
+  - success color
+  - neutral information color
+  - background anxiety-reduction color
+  information_density:
+  - grouping strategy
+  - wording limit
+  - icon support
+  - whitespace strategy
+  cognitive_load:
+  - target user mental state
+  - panic reducers
+  - avoid-list
+  - accessibility and readability
+  ai_prompt_contract:
+  - canvas and responsive constraints
+  - layout system
+  - semantic tokens
+  - states and interactions
+  - verification checklist
+prompt_pattern:
+  bad_prompt: Make a beautiful medical dashboard.
+  good_prompt: Build a low-cognitive-load medical summary page with a card-based layout,
+    4:3 fixed canvas, 8pt spacing system, calm and trustworthy style, primary focus
+    on heart-rate alert, secondary vital-sign cards, semantic colors for warning,
+    safe, neutral, and trust roles, clear grouping, elderly-readable typography, no
+    high-saturation red, no excessive animation, and no crowded clinical wording.
+next_steps:
+- Create `docs/ui-reverse-engineering-framework.md` as the reusable observation template
+  and prompt contract.
+- Apply the template to one concrete medical UI screenshot or mockup and write the
+  resulting AI implementation prompt.
+- Build one tiny static HTML prototype from the prompt and compare the rendered layout
+  against the observation spec.
+- 'Add a checklist for Codex: inspect screenshot, write spec, implement, screenshot-test,
+  revise spacing/hierarchy, then commit.'
+source:
+- conversation
+maturity_action: generate experiment plan
+normalization_status: validated
