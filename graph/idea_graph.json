@@ -1072,6 +1072,29 @@
         "experiment-design"
       ],
       "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml"
+    },
+    {
+      "id": "idea_000042",
+      "title": "AI-native UI reverse engineering framework",
+      "status": "execution_ready",
+      "maturity_score": "82/100",
+      "maturity_score_raw": 82,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "ai-native-design",
+        "ui-reverse-engineering",
+        "ux-system-design",
+        "frontend-learning",
+        "deterministic-specification",
+        "prompt-engineering",
+        "visual-hierarchy",
+        "spacing-system",
+        "semantic-color",
+        "medical-ux",
+        "human-factors",
+        "low-cognitive-load"
+      ],
+      "path": "/home/jnln3799/every_on_git_ubuntu/brainstorming-lab/ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml"
     }
   ],
   "edges": [
@@ -2723,6 +2746,16 @@
       ]
     },
     {
+      "source": "idea_000018",
+      "target": "idea_000042",
+      "weight": 1.0,
+      "similarity": 0.3263,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000019",
       "target": "idea_000020",
       "weight": 1.0,
@@ -2879,6 +2912,18 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000020",
+      "target": "idea_000042",
+      "weight": 0.6,
+      "similarity": 0.324,
+      "shared_tags": [
+        "prompt-engineering"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -3151,6 +3196,16 @@
       ]
     },
     {
+      "source": "idea_000029",
+      "target": "idea_000042",
+      "weight": 1.0,
+      "similarity": 0.1407,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000031",
       "target": "idea_000035",
       "weight": 1.0,
@@ -3225,6 +3280,16 @@
       ]
     },
     {
+      "source": "idea_000032",
+      "target": "idea_000042",
+      "weight": 1.0,
+      "similarity": 0.3334,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000033",
       "target": "idea_000035",
       "weight": 0.6,
@@ -3246,6 +3311,16 @@
       ],
       "reasons": [
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000034",
+      "target": "idea_000042",
+      "weight": 1.0,
+      "similarity": 0.1761,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     },
     {

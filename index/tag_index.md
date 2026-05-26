@@ -108,6 +108,10 @@
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
+## ai-native-design
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
 ## ai-os
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
@@ -510,6 +514,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## deterministic-specification
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
 ## detr
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
@@ -748,6 +756,10 @@
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
+## frontend-learning
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
 ## fsi-di
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
@@ -884,6 +896,10 @@
 ## human-computer-interaction
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## human-factors
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## human-in-the-loop
 
@@ -1141,6 +1157,10 @@
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
+## low-cognitive-load
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
 ## low-resource-ai
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
@@ -1183,6 +1203,10 @@
 ## medical-imaging
 
 - `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
+## medical-ux
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## memory
 
@@ -1470,6 +1494,7 @@
 ## prompt-engineering
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## protocol-security
 
@@ -1745,6 +1770,10 @@
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
 
+## semantic-color
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
 ## semantic-consequence-quantification
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
@@ -1828,6 +1857,10 @@
 ## source-laundering
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+
+## spacing-system
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## spatial-ai
 
@@ -2031,6 +2064,10 @@
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
+## ui-reverse-engineering
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
 ## uncertainty
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
@@ -2056,6 +2093,10 @@
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
+## ux-system-design
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
 ## vae
 
 - `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
@@ -2079,6 +2120,10 @@
 ## video-understanding
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## visual-hierarchy
+
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## voice-enhancement
 
