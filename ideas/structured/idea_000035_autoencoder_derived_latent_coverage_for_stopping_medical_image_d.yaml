@@ -1,0 +1,290 @@
+id: idea_000035
+title: Autoencoder-derived latent coverage for stopping medical image data collection
+created_at: '2026-05-22'
+type: hypothesis
+tags:
+- medical-imaging
+- self-supervised-learning
+- autoencoder
+- vae
+- masked-autoencoder
+- vq-vae
+- data-curation
+- active-learning
+- coreset
+- submodular-optimization
+- stopping-rule
+- clinical-ai
+- dataset-governance
+- representation-learning
+- experiment-design
+status: execution_ready
+problem_statement:
+  raw: The user's linked brainstorm asks whether an autoencoder family model can replace
+    a foundation model as the first practical Omega gate for deciding whether a medical
+    image dataset is sufficiently covered, whether new samples are useful, and when
+    data collection should stop.
+  normalized: Given a medical image collection pipeline with expensive labels and
+    a pool of unlabeled candidate images, optimize a domain-specific data sufficiency
+    gate that uses AE/VAE/MAE latent coverage, metadata coverage, density-aware novelty,
+    outlier risk, cost-aware marginal gain, and downstream validation to decide which
+    samples to collect next and when to stop collecting, under constraints of privacy,
+    no external foundation-model dependency, limited labels, scanner/protocol variation,
+    artifact noise, clinical task mismatch, annotation cost, and false-stop risk.
+  structure:
+    given: a medical image collection pipeline with expensive labels and a pool of
+      unlabeled candidate images
+    optimize: a domain-specific data sufficiency gate for sample selection and stopping
+      decisions
+    constraints:
+    - no external foundation-model dependency for the first MVP
+    - limited labeled data
+    - privacy and hospital-local deployment boundaries
+    - scanner, protocol, sequence, voxel spacing, and site variation
+    - motion artifact, low SNR, bias field, blank slices, and incomplete scans
+    - reconstruction objectives may learn pixel or scanner shortcuts rather than clinical
+      utility
+    - rare-but-useful cases must be separated from garbage outliers
+    - downstream segmentation or classification value must be validated externally
+    - false stop and over-collection costs must be measured
+summary: 'The useful idea is not "use reconstruction error to detect anomalies." The
+  useful research object is a domain-specific medical-image data sufficiency estimator:
+  train AE/VAE/MAE-style self-supervised representations on hospital-local unlabeled
+  images, combine the latent representation with metadata and quality features, use
+  density-aware coreset/submodular coverage to estimate marginal gain, and calibrate
+  the stopping rule against downstream learning curves and external validation. A
+  rigorous version treats AE-only universal Omega as out of scope, because an autoencoder
+  can estimate coverage of the observed data manifold but cannot alone know which
+  cases are clinically useful.
+
+  '
+first_principle:
+  scarce_resource: expensive clinical data collection and annotation cycles, not model
+    architecture novelty
+  core_question: When can a medical AI team stop collecting images without leaving
+    important distribution or task-performance gaps uncovered?
+  not_the_core:
+  - using reconstruction error as a single magic novelty score
+  - building a universal medical image discriminator
+  - proving that autoencoders are newer than foundation models
+  - maximizing diversity while accidentally selecting artifacts and bad protocols
+  - reporting only final Dice or AUC without measuring false stop and over-collection
+  reusable_rule: Treat self-supervised latent coverage as a data-governance signal,
+    then verify it with downstream learning curves, external validation, and human
+    review of rare cases.
+  smallest_next_test: Run a retrospective replay on one domain such as prostate MRI
+    or brain MRI, starting from 500 images and adding 100-image batches, then compare
+    random, metadata-stratified, radiomics coreset, AE, VAE, MAE, and full Omega-AE
+    selection by n95, false-stop rate, over-collection cost, and external validation
+    performance.
+  kill_condition: Park the idea if latent coverage gain does not correlate with downstream
+    gain, if false stops remain high after metadata and density penalties, or if a
+    simple metadata-stratified/radiomics coreset reaches the same n95 with less cost
+    and clearer explanation.
+assumptions:
+- Autoencoders can estimate how well the current dataset covers the observed medical
+  image manifold, but cannot by themselves estimate clinical task value.
+- A foundation-model-free MVP is valuable because it can run inside a hospital boundary
+  without external pretrained weights.
+- Metadata and quality features are not optional; scanner vendor, sequence, voxel
+  spacing, slice thickness, orientation, SNR proxy, artifact proxy, and blank-slice
+  signals should not be inferred only from pixels.
+- Reconstruction error alone is weak because autoencoders may reconstruct abnormal
+  or irrelevant samples too well.
+- Density-aware novelty is safer than farthest-point selection because the farthest
+  point may be artifact, protocol error, or incomplete data.
+- VAE or beta-VAE is especially relevant because it exposes latent distribution and
+  uncertainty, not just a deterministic embedding.
+- MAE can learn stronger representations than vanilla AE, but may need more unlabeled
+  data or a 2.5D/patch-level design for an initial medical image pool.
+- VQ-VAE/codebook coverage may make data coverage explainable to clinicians and data
+  engineers.
+- Diffusion autoencoder variants are research-interesting but too heavy for first
+  MVP.
+- The contribution should be framed as stopping data collection, not only active learning
+  sample selection.
+evidence:
+- '2026-05-22 linked ChatGPT brainstorm title: "影像資料集最優化".'
+- '2026-05-22 linked brainstorm synthesis: AE-based Omega is plausible as a domain-specific
+  data sufficiency gate, while AE-only universal Omega is weak.'
+- '2026-05-22 linked brainstorm synthesis: the strongest version combines AE/VAE/MAE
+  latent coverage, metadata, coreset/submodular stopping, and downstream validation.'
+- 2026-05-22 linked brainstorm warned that reconstruction error alone is not enough
+  because autoencoders can learn shortcuts and reconstruct outliers.
+- 2026-05-22 linked brainstorm proposed retrospective replay on a complete medical
+  image pool such as prostate MRI or brain MRI.
+- 2026-05-22 linked brainstorm named n95, correlation between coverage gain and downstream
+  gain, false-stop rate, and over-collection cost as gate-specific metrics.
+- Existing Idea OS record idea_000022 already frames vision reliability as a deployment
+  and data-distribution problem, not only model choice.
+- Existing Idea OS record idea_000008 provides a medical-AI research workflow context
+  where evidence gates and reproducible experiment loops matter.
+baseline:
+- Random sampling from the unlabeled candidate pool.
+- Metadata-stratified sampling by modality, sequence, scanner vendor, voxel spacing,
+  slice thickness, orientation, and site.
+- Radiomics or handcrafted-feature coreset.
+- Vanilla convolutional AE latent coreset.
+- Denoising AE latent coreset.
+- VAE or beta-VAE latent coreset.
+- MAE latent coreset.
+- VQ-VAE codebook coverage.
+- Full Omega-AE with latent coverage, metadata, density, outlier penalty, cost, and
+  downstream uncertainty.
+metrics:
+- n95, meaning the number of collected samples needed to reach 95 percent of full-data
+  downstream performance.
+- External validation Dice, AUC, calibration error, and subgroup performance.
+- Correlation between coverage gain and downstream performance gain.
+- False-stop rate, when the gate recommends stopping but later data improves external
+  validation materially.
+- Over-collection cost, when the gate recommends continuing but later data adds no
+  meaningful performance.
+- Human review yield for rare-but-useful cases versus garbage outliers.
+- Annotation cost per marginal downstream gain.
+- Coverage of metadata strata, quality strata, latent clusters, and VQ-style visual
+  codes.
+insights:
+- The research contribution is a stopping-decision module, not an autoencoder paper
+  by itself.
+- AE-only novelty is too fragile; useful novelty must be density-aware and cost-aware.
+- A hospital-local self-supervised gate may be more deployable than a foundation-model
+  gate for a first paper or prototype.
+- A good gate should output "collect", "skip as redundant", "review as possible rare
+  subgroup", "reject as likely artifact", or "stop after repeated low marginal gain",
+  not only a scalar novelty score.
+- The idea is strongest when framed as data governance and sample-efficiency evidence
+  for medical AI, with human review for ambiguous rare cases.
+connections:
+- idea_000008
+- idea_000022
+- idea_000032
+connection_notes:
+- id: idea_000008
+  relation: complements
+  note: Medical AI research workflows need evidence gates; Omega-AE can be one concrete
+    data sufficiency gate.
+- id: idea_000022
+  relation: shares_failure_model
+  note: Both ideas treat vision performance as a data distribution, evaluation, and
+    deployment decision problem rather than only architecture selection.
+- id: idea_000032
+  relation: governance_context
+  note: Medical AI assurance needs representative data, monitoring, and retraining-risk
+    management; a stopping gate could supply evidence for those controls.
+role: research_seed
+value:
+  impact: high
+  feasibility: medium-high
+  novelty: medium-high if framed around stopping and calibration, low if framed as
+    AE latent diversity alone
+model_variant_judgment:
+- variant: Vanilla AE latent diversity
+  feasibility: high
+  novelty: low
+  use: baseline only
+- variant: Denoising AE plus metadata
+  feasibility: high
+  novelty: medium-low
+  use: stable MVP representation
+- variant: VAE or beta-VAE gate
+  feasibility: medium-high
+  novelty: medium
+  use: novelty, density, and uncertainty estimation
+- variant: MAE from scratch
+  feasibility: medium
+  novelty: medium
+  use: stronger representation if enough unlabeled images exist
+- variant: VQ-VAE codebook coverage
+  feasibility: medium
+  novelty: medium-high
+  use: explainable coverage dictionary
+- variant: Diffusion AE
+  feasibility: medium-low
+  novelty: high
+  use: later-stage research branch, not first MVP
+pressure_test:
+  setting: Retrospective replay on a complete prostate MRI or brain MRI pool with
+    hidden full-data performance.
+  expected_failure_modes:
+  - AE latent space learns scanner/site/protocol artifacts instead of clinical task
+    variation.
+  - Farthest-point or high-novelty sampling chases bad scans, motion artifacts, or
+    metadata errors.
+  - Coverage gain plateaus even though downstream external validation still improves.
+  - The gate stops too early for rare pathology or underrepresented subgroup cases.
+  - Metadata-stratified sampling beats Omega-AE, making the neural component unnecessary.
+  smallest_observable_test: Start with 500 images, add 100-image batches by each baseline
+    strategy, retrain the same downstream model per round, and compare performance
+    curves against full-data performance.
+  confirming_metric: Omega-AE reaches n95 with substantially fewer samples than random
+    and metadata-only baselines while keeping false-stop rate low on external validation.
+  revise_or_kill_metric: Revise or park if coverage gain fails to predict downstream
+    gain, if false-stop rate is unacceptable, or if metadata-only/radiomics baselines
+    are equally good.
+experiment_plan:
+- Choose one narrow domain first, preferably prostate MRI or brain MRI, and define
+  the downstream task before touching model variants.
+- Build a clean feature table with DICOM-derived metadata, quality proxies, and image
+  identity fields before training AE models.
+- Train vanilla AE, denoising AE, VAE/beta-VAE, and a small MAE/patch-MAE under the
+  same preprocessing split.
+- Build selection functions for random, metadata-stratified, radiomics coreset, AE
+  coreset, VAE coreset, MAE coreset, and Omega-AE.
+- Fit a downstream segmentation or classification model after each replay round and
+  record n95, external validation performance, calibration, false stops, and review
+  burden.
+- Add a clinician/data-review step only for high-novelty low-density cases to classify
+  rare-but-useful versus garbage outlier.
+out_of_scope:
+- A universal medical image discriminator.
+- A claim that AE reconstruction error alone proves data sufficiency.
+- Production clinical deployment.
+- Patient-identifiable raw evidence in this repo.
+- Large checkpoints, private datasets, or generated run artifacts in git.
+evidence_gaps:
+- Need a concrete dataset identity and task before moving from concept to implementation.
+- Need primary-source literature notes for VAAL, AE-based medical active learning,
+  MAE medical imaging, VQ-VAE/codebook coverage, and diffusion AE variants.
+- Need agreement on whether the target is segmentation, classification, anomaly triage,
+  or data-governance reporting.
+- Need a small no-PHI fixture or public dataset substitute for initial script validation.
+- Need clinician or domain-review criteria for rare-but-useful versus artifact/outlier.
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 15
+  evidence_support_score: 15/15
+  connection_strength: 7
+  connection_strength_score: 7/10
+  novelty: 5
+  novelty_score: 5/10
+  feasibility: 9
+  feasibility_score: 9/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 83/100
+maturity_level: execution_ready
+next_steps:
+- Add a literature source note for active learning with autoencoder latent spaces
+  in medical imaging.
+- Select one non-sensitive public or synthetic medical-imaging-like dataset fixture
+  for replay-script development.
+- Define the first replay table schema with sample_id, metadata, quality features,
+  latent vectors, selected_round, downstream metric, external_split, and review label.
+- Decide whether prostate MRI, brain MRI, or another image domain is the first canonical
+  pressure-test setting.
+source:
+- conversation
+- https://chatgpt.com/s/t_6a0f3c317ec481918164f62a9f41e76a
+source_capture:
+  link_title: 影像資料集最優化
+  captured_at: '2026-05-22'
+  access_note: Public page HTML exposed the shared conversation title and embedded
+    conversation text; no private credentials were used.
+maturity_action: generate experiment plan
+normalization_status: validated
