@@ -104,13 +104,17 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## ai-local-services
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
 ## ai-mediated-search
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 
 ## ai-native-design
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## ai-os
 
@@ -199,6 +203,7 @@
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## asr-security
 
@@ -396,6 +401,10 @@
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 - `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
 
+## continuous-batching
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
 ## control-loop
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
@@ -516,7 +525,7 @@
 
 ## deterministic-specification
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## detr
 
@@ -758,7 +767,7 @@
 
 ## frontend-learning
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## fsi-di
 
@@ -812,6 +821,10 @@
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
+## gpu-inference
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## gpu-rendering
 
@@ -899,7 +912,7 @@
 
 ## human-factors
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## human-in-the-loop
 
@@ -961,6 +974,10 @@
 ## indirect-expression
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## inference-engine
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## influence-dynamics
 
@@ -1128,6 +1145,11 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
+## local-ai-gateway
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## local-first
 
@@ -1159,7 +1181,7 @@
 
 ## low-cognitive-load
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## low-resource-ai
 
@@ -1178,6 +1200,10 @@
 ## manipulation-state-detection
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## manuscript-narrative
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## masked-autoencoder
 
@@ -1206,7 +1232,7 @@
 
 ## medical-ux
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## memory
 
@@ -1256,6 +1282,18 @@
 ## model-collapse
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
+## model-manager
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
+## model-serving
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
+## moe
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## moral-framing-risk
 
@@ -1383,6 +1421,7 @@
 ## paper-writing
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## paperops
 
@@ -1491,10 +1530,14 @@
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 
+## production-architecture
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
 ## prompt-engineering
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## protocol-security
 
@@ -1621,6 +1664,10 @@
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
 
+## resource-governance
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
 ## retrieval-collapse
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
@@ -1678,6 +1725,10 @@
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
+## rtx-5080
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
 ## safety
 
 - `idea_000009` - Safe Tesla coil insect-trap teaching demo (`research_candidate`, 68/100) - `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml`
@@ -1707,6 +1758,10 @@
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## scheduler
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## scientific-culture
 
@@ -1772,7 +1827,7 @@
 
 ## semantic-color
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## semantic-consequence-quantification
 
@@ -1812,6 +1867,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
+## single-gpu-workstation
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## slam
 
@@ -1860,7 +1919,7 @@
 
 ## spacing-system
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## spatial-ai
 
@@ -2066,7 +2125,7 @@
 
 ## ui-reverse-engineering
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## uncertainty
 
@@ -2095,7 +2154,7 @@
 
 ## ux-system-design
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## vae
 
@@ -2123,7 +2182,7 @@
 
 ## visual-hierarchy
 
-- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 82/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
 
 ## voice-enhancement
 
@@ -2140,6 +2199,10 @@
 ## vq-vae
 
 - `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
+
+## vram
+
+- `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
 ## weak-signal-analysis
 
