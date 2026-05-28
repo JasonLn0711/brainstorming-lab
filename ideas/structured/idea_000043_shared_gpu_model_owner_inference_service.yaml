@@ -1,0 +1,494 @@
+id: idea_000043
+title: Shared GPU model-owner inference service
+created_at: '2026-05-28'
+type: hypothesis
+tags:
+- gpu-inference
+- model-serving
+- vram
+- asr
+- llm
+- moe
+- scheduler
+- production-architecture
+- continuous-batching
+- resource-governance
+- inference-engine
+- local-ai-gateway
+- rtx-5080
+- single-gpu-workstation
+- ai-local-services
+- model-manager
+- paper-writing
+- manuscript-narrative
+status: execution_ready
+problem_statement:
+  raw: 使用者觀察到同一支 ASR 在兩個 Python process、worker、service instance 或 demo 邊界中被載入兩次時，GPU
+    會配置兩份模型權重與執行期記憶體，導致 VRAM 幾乎倍增； 進一步追問到 H100/H200 server、LLM、MoE 與多人共用場景時，核心問題變成：為什麼模型不能只載入一次，
+    讓多個 request 排程進同一個模型 owner 使用？2026-05-28 的後續收斂把場景從一櫃 H100/H200 降到使用者目前的 RTX 5080
+    單機工作站：每個 project 不再各自載 ASR 或語言模型，而是改成呼叫本機常駐的 Local AI Gateway / Model Service。
+  normalized: Given multiple users, APIs, UI sessions, ASR tasks, LLM calls, and MoE
+    inference workloads on a single RTX 5080 workstation or later shared GPU servers,
+    optimize a model-serving architecture that keeps model weights owned by long-lived
+    local inference services while routing project requests through a localhost API,
+    queues, batching, admission control, and per-request state isolation, under constraints
+    of CUDA process-local memory ownership, single-GPU VRAM limits, KV-cache growth,
+    activation and workspace buffers, concurrency, fault isolation, latency SLOs,
+    GPU topology, model size, and operational observability.
+  structure:
+    given: 多個本機 project 與未來多使用者服務都需要呼叫 ASR、LLM、embedding 或 MoE 推論
+    optimize: 模型只載一次、request 可排程與 batch、VRAM 使用可預測、吞吐量與延遲可控
+    constraints:
+    - CUDA context and PyTorch allocator are process-local
+    - current first target is a single RTX 5080 workstation, not a rack-scale GPU
+      cluster
+    - model weights can be shared by service ownership, but per-request runtime state
+      still grows
+    - LLM KV cache scales with context length and concurrent requests
+    - ASR has encoder buffers, decoder states, mel features, activations, beam search
+      cache, and CUDA workspaces
+    - MoE may reduce active compute while still requiring expert weights to be placed
+      across GPU memory or GPU groups
+    - multi-worker frameworks can accidentally duplicate model owners
+    - production serving needs fault isolation, admission control, backpressure, and
+      latency SLOs
+summary: 這個想法把「同一支模型被載入兩次而吃掉雙倍 VRAM」提升成一個可研究與可工程化的架構問題：GPU 模型應該是常駐資產，由單一或受控數量的 inference
+  service 擁有；project 請求只是排隊、batch、route、限流與回傳結果的工作。最新收斂是先把 RTX 5080 當成本機小型 AI server：每個
+  project 不再自己 `load_model()`，而是呼叫 localhost 上的 Local AI Gateway，例如 `/asr/transcribe`、`/llm/chat`、`/embed`、`/health`、`/models/status`。
+  最小原理是分清楚 model owner 與 request owner。ASR、LLM、embedding、reranker、MoE service 都應該各自成為受控模型
+  owner，而不是讓 UI、API、worker、Celery task 或多個 uvicorn/gunicorn worker 各自 import 並 `.to("cuda")`。研究價值在於把
+  VRAM 節省、continuous batching、KV-cache 管理、MoE expert placement、queue discipline、GPU
+  topology 與 production observability 合成為一個 shared GPU inference governance pattern。
+human_note: ideas/2026-05-28-shared-gpu-model-owner-inference-service.md
+first_principle:
+  scarce_resource: GPU VRAM, model-load latency, request scheduling capacity, and
+    operational predictability, not the number of Python workers that can import a
+    model
+  core_question: How should a multi-user AI system separate model ownership from user
+    request ownership so one loaded model can serve many requests without duplicating
+    VRAM across process boundaries?
+  not_the_core:
+  - adding an in-process singleton while the real duplication happens across processes
+  - assuming same model name implies GPU memory sharing
+  - letting UI sessions, API workers, job workers, and demos each load the same checkpoint
+  - treating MoE as automatic VRAM savings
+  - measuring only model weight memory while ignoring KV cache, activations, buffers,
+    and workspace memory
+  reusable_rule: Production GPU inference should make the model owner explicit. Callers
+    send work to the owner; they do not load the model themselves.
+  local_first_rule: Treat the RTX 5080 machine as a small local AI server. Each project
+    should call a localhost model service; projects should not directly load shared
+    ASR, LLM, or embedding models.
+  project_rule: Project code owns business logic and sends tasks. Model services own
+    GPU model loading, queueing, model status, and VRAM-sensitive execution.
+  smallest_next_test: 'On the RTX 5080 workstation, build one Local AI Gateway prototype:
+    path A runs two small project scripts that each load the same ASR or small LLM;
+    path B runs one resident local model service and two project clients that call
+    it over localhost. Compare peak VRAM, cold-start time, p50/p95 latency, queue
+    depth, and failure behavior.'
+  kill_condition: Park the research angle if existing vLLM, SGLang, Triton, or TensorRT-LLM
+    already covers the target workload with no unresolved scheduling, observability,
+    deployment-boundary, or mixed-model service problem worth studying.
+assumptions:
+- GPU memory allocation for PyTorch/CUDA inference is normally process-local, so two
+  Python processes loading the same checkpoint produce two model allocations.
+- A Python singleton only prevents duplicate loading inside one process; it does not
+  solve duplicate model ownership across uvicorn workers, gunicorn workers, Celery
+  workers, Streamlit sessions, replicas, or separately started demo scripts.
+- The useful production boundary is `many callers -> API/router -> inference service
+  -> model owner -> GPU`, not `each caller imports model`.
+- Model weights are only one component of VRAM. Runtime buffers, activations, ASR
+  decoder state, LLM KV cache, beam-search state, CUDA workspace, and allocator fragmentation
+  must be planned explicitly.
+- Continuous batching can increase throughput for LLM service because many requests
+  share one engine loop, while each request keeps its own state.
+- MoE saves active computation for selected experts, but expert weights and routing
+  placement can still require substantial GPU memory.
+- 'H100/H200-scale servers need GPU topology-aware placement: tensor parallelism,
+  pipeline parallelism, expert parallelism, model pools, and request routing all affect
+  whether memory is saved or wasted.'
+- A shared model-owner service must still protect fault isolation. One bad request,
+  long context, malformed audio, or oversized batch should not starve the whole server.
+- The strongest reusable contribution is an architecture and measurement discipline,
+  not a custom ASR wrapper alone.
+- On the user's current RTX 5080 workstation, the practical first win is to stop project-level
+  duplicate model loading before optimizing rack-scale serving.
+- A local gateway can preserve future portability because projects learn one API boundary
+  while the model location can later move from localhost to a lab server or cloud
+  GPU host.
+- The first service should solve the most painful repeated-load path, likely ASR,
+  before adding LLM, embedding, reranker, TTS, or a generalized model manager.
+- LLM service should reuse an established local server when possible, such as vLLM,
+  llama.cpp server, Ollama, or SGLang, preferably behind an OpenAI-compatible API.
+- ASR is a good candidate for a custom FastAPI wrapper because audio upload, long-file
+  jobs, segmentation, speaker prompts, and transcript formats are project-specific.
+evidence:
+- '2026-05-28 user observation: calling the same ASR loader from two process or worker
+  boundaries can load two ASR copies and nearly double VRAM.'
+- '2026-05-28 user diagnosis: CUDA and PyTorch do not automatically merge model allocations
+  just because the checkpoint name is the same.'
+- '2026-05-28 user synthesis: the desired architecture is one resident ASR service
+  with a queue or semaphore, while other components send audio paths or bytes instead
+  of loading the model.'
+- '2026-05-28 user extension: on H100/H200 servers with LLM and MoE workloads, many
+  users should call the same loaded model rather than each loading a duplicate copy.'
+- '2026-05-28 user refinement: before thinking about a rack of H100/H200 servers,
+  the immediate target is a single RTX 5080 workstation where each project currently
+  loads its own ASR or language model.'
+- '2026-05-28 user refinement: future projects should call one independent local ASR
+  or language-model service instead of directly loading the model inside every project.'
+- '2026-05-28 user continuation: the practical folder shape is an ai-local-services
+  workspace with asr_service, llm_service, and shared clients, while every project
+  imports clients instead of model loaders.'
+- '2026-05-28 user continuation: the phased path is ASR service first, LLM service
+  second, embedding/reranker third, and a unified model manager only after model residency
+  pressure becomes real.'
+- '2026-05-28 user continuation: the teacher emphasized that a technically stable
+  paper still needs an attractive first-page narrative: cited real-world problem,
+  cited current solution landscape, remaining gap, new viewpoint, and return to the
+  opening problem.'
+- 'Candidate citation: PyTorch multiprocessing documentation distinguishes CPU shared
+  memory behavior from CUDA multiprocessing constraints, supporting the claim that
+  model sharing across Python process boundaries is not automatic.'
+- 'Candidate citation: the vLLM/PagedAttention paper frames LLM serving throughput
+  as a memory-management and batching problem, especially around KV-cache fragmentation
+  and request scheduling.'
+- 'Candidate citation: NVIDIA Triton documentation frames dynamic batching and concurrent
+  model execution as serving-level resource utilization mechanisms.'
+- 'Candidate citation: Ollama documentation supports the practical local-LLM boundary
+  of exposing local models through an OpenAI-compatible API.'
+- Existing production serving patterns include vLLM, SGLang, Triton Inference Server,
+  TensorRT-LLM, Ray Serve, KServe, and model-pool routers.
+- Existing Idea OS record idea_000040 frames ASR workspace decisions as evidence and
+  orchestration problems, not only model selection.
+- Existing Idea OS record idea_000015 covers voice enhancement and real-time audio
+  inference constraints that can pressure model-serving boundaries.
+- Existing Idea OS record idea_000020 frames GPU-first local AI workstations as governed
+  infrastructure with observability and session boundaries.
+baseline:
+- Each UI session, API worker, or job worker directly loads the ASR or LLM model.
+- In-process singleton loader inside one Python process.
+- Local single-GPU FastAPI gateway with `/asr/transcribe`, `/llm/chat`, `/embed`,
+  `/health`, and `/models/status`.
+- Dedicated ASR service on localhost, with startup-time model load, `/health`, `/transcribe`,
+  and a semaphore for one GPU task at a time.
+- OpenAI-compatible local LLM server through vLLM, llama.cpp server, Ollama, or SGLang.
+- Single FastAPI model-owner service with asyncio queue and GPU semaphore.
+- vLLM OpenAI-compatible LLM server with continuous batching.
+- SGLang server for structured LLM serving and batching.
+- NVIDIA Triton Inference Server for mixed-model serving.
+- TensorRT-LLM engine for optimized LLM deployment.
+- Ray Serve or KServe model router for multi-service deployment.
+- MoE deployment with tensor, pipeline, and expert parallel placement across multiple
+  H100/H200 GPUs.
+metrics:
+- Peak VRAM and steady-state VRAM per active request.
+- Cold-start time and warm request latency.
+- Requests per second under fixed p50 and p95 latency budgets.
+- Queue depth, wait time, timeout rate, and backpressure behavior.
+- KV-cache memory per token and per concurrent LLM request.
+- ASR runtime memory per audio length and decoding strategy.
+- GPU utilization, memory fragmentation, and allocator reserve behavior.
+- Duplicate model-owner count per host, container, worker, and replica.
+- Fault isolation result when one request is malformed, oversized, or slow.
+- Cost per 1,000 requests under naive multi-process loading versus shared model-owner
+  serving.
+- Number of projects migrated from direct model loading to localhost client calls.
+- Time to switch a project from local RTX 5080 service to remote GPU service without
+  changing project business logic.
+- Count of direct `load_model()`, `.to("cuda")`, Whisper, ASR, LLM, embedding, and
+  reranker imports removed from project code.
+- First-token or first-transcript latency after service warm start compared with project-level
+  cold loading.
+insights:
+- The core abstraction is not "load model once" but "make model ownership a service
+  boundary."
+- Weight sharing is achievable by routing requests to one owner; runtime state remains
+  request-specific and must be scheduled.
+- Many accidental VRAM explosions come from deployment multiplication, not model size
+  alone.
+- Demo code usually optimizes convenience by importing the model where it is used;
+  production code optimizes ownership by making inference a resident service.
+- MoE should be evaluated as a compute and routing design, with VRAM placement measured
+  separately.
+- 'The architecture question becomes stronger when linked to admission control: who
+  gets the GPU now, what waits, what batches, what is rejected, and what evidence
+  proves the policy works?'
+- 'The first useful implementation should be boring: localhost API, one ASR worker,
+  one LLM worker, health endpoint, model status endpoint, queue, and a small shared
+  Python client.'
+- The project code should own business logic; the Local AI Gateway should own model
+  loading, GPU scheduling, logs, cache, and model-version reporting.
+- On a single RTX 5080, not every model should be resident at once. Keep the most-used
+  small model resident, load large models on demand, and make heavy ASR/LLM jobs mutually
+  exclusive when VRAM pressure is high.
+- A local model service is not extra bureaucracy when there is only one GPU; it is
+  the boundary that prevents every project from becoming its own GPU owner.
+- 'The first migration target should be code search: find direct model loaders in
+  active projects, replace them with `ai_clients.asr.transcribe` or `ai_clients.llm.chat`,
+  and keep the server as the only place that touches GPU model objects.'
+connections:
+- idea_000015
+- idea_000020
+- idea_000039
+- idea_000040
+connection_notes:
+- id: idea_000015
+  relation: audio_runtime_context
+  note: Layered voice enhancement and ASR-style audio inference need a stable serving
+    boundary when latency and GPU memory matter.
+- id: idea_000020
+  relation: infrastructure_governance
+  note: GPU-first workstations and servers both need explicit ownership, observability,
+    and operational rituals for AI workloads.
+- id: idea_000039
+  relation: ai_infrastructure_line
+  note: Data-centric AI governance infrastructure connects with model-serving governance
+    when production pipelines need measurable resource controls.
+- id: idea_000040
+  relation: asr_architecture_extension
+  note: JANUS ASR workspace can use this as the deployment boundary for shared ASR
+    model ownership and request scheduling.
+role: research_seed
+value:
+  impact: high
+  feasibility: high
+  novelty: medium if framed as a general model-owner governance pattern; low if framed
+    as only "use vLLM" or "make a singleton"
+architecture_pattern:
+  demo_antipattern:
+  - UI loads ASR model
+  - API worker loads ASR model
+  - background worker loads ASR model
+  - hot reload or multi-worker server loads extra copies
+  local_5080_pattern:
+  - Project A calls localhost API
+  - Project B calls localhost API
+  - Project C calls localhost API
+  - Local AI Gateway exposes ASR, LLM, embedding, health, and model-status endpoints
+  - resident model workers own RTX 5080 model loading and GPU queueing
+  production_pattern:
+  - UI, API, and job workers send request payloads only
+  - ASR, LLM, embedding, and reranker services are separate model owners
+  - queue, semaphore, batching, admission control, and timeouts live at the owner
+    boundary
+  - metrics expose VRAM, queue, latency, throughput, and rejected work
+local_5080_profile:
+  target_machine: RTX 5080 workstation as a local AI server
+  workspace_shape:
+  - ~/ai-local-services/asr_service/server.py
+  - ~/ai-local-services/asr_service/model_loader.py
+  - ~/ai-local-services/asr_service/queue.py
+  - ~/ai-local-services/llm_service/server.py
+  - ~/ai-local-services/llm_service/model_loader.py
+  - ~/ai-local-services/clients/asr_client.py
+  - ~/ai-local-services/clients/llm_client.py
+  first_services:
+  - local_asr_server.py
+  - local_llm_server.py
+  - local_embedding_server.py
+  gateway_endpoints:
+  - /asr/transcribe
+  - /llm/chat
+  - /embed
+  - /health
+  - /models/status
+  project_contract:
+  - Projects call the local client or HTTP API.
+  - Projects do not directly call shared model loaders.
+  - Projects do not call `.to("cuda")` for shared ASR, LLM, embedding, reranker, or
+    TTS models.
+  - Model service reports loaded model name, version, device, queue depth, and VRAM
+    status.
+  residency_policy:
+  - Keep the most-used small model resident.
+  - Load occasional large models on demand.
+  - Use a queue or semaphore so heavy ASR and LLM jobs do not fight for one GPU.
+  - Keep the API boundary stable so localhost can later become a remote GPU server.
+  phased_roadmap:
+  - 'Phase 1: ASR service with /health, /transcribe, startup model load, one-GPU-task
+    semaphore, JSON transcript response, and shared asr_client.py.'
+  - 'Phase 2: LLM service through an OpenAI-compatible local server such as vLLM,
+    llama.cpp server, Ollama, or SGLang.'
+  - 'Phase 3: embedding and reranker service with batching where useful.'
+  - 'Phase 4: model manager for residency, lazy loading, unloading, and VRAM-aware
+    policy after multiple resident services become painful.'
+  model_manager_trigger:
+  - More than two resident services regularly exceed comfortable VRAM headroom.
+  - Large occasional models are useful but should not stay loaded.
+  - Users need `/models/status` to show loaded, warming, unloading, queued, and failed
+    states.
+  - A single service crash or stale model state starts affecting multiple projects.
+paper_narrative:
+  teacher_rule: 'A paper can be technically balanced but still fail to attract readers.
+    The first
+
+    page should open with a cited real-world or credible near-future problem, then
+
+    fairly summarize cited current solutions, identify the remaining gap with a clear
+
+    reason, introduce the new viewpoint or architecture, and return to the opening
+
+    problem with a claim-evidence-aligned contribution.
+
+    '
+  opening_problem:
+    claim: 'Single-GPU AI workstations are becoming practical development environments
+
+      for ASR, local LLM, embedding, RAG, medical demo, and research workflows, but
+
+      project-level model loading turns each script into an independent GPU owner.
+
+      This wastes scarce VRAM, repeats cold-start cost, and makes scheduling invisible.
+
+      '
+    evidence_needed:
+    - PyTorch CUDA multiprocessing and shared-memory documentation.
+    - Local AI workstation or small-lab GPU workflow examples from the user's projects.
+    - Measured RTX 5080 baseline showing two project scripts load duplicate ASR or
+      LLM model copies.
+  current_solution_landscape:
+    enablement: 'Existing inference-serving systems already show the right direction:
+      serving
+
+      engines own models, batch requests, expose APIs, and manage GPU utilization.
+
+      vLLM addresses LLM KV-cache memory and scheduling; Triton supports dynamic
+
+      batching and concurrent model execution; local LLM tools such as Ollama can
+
+      expose local models through OpenAI-compatible APIs.
+
+      '
+    citation_targets:
+    - PyTorch multiprocessing CUDA documentation.
+    - vLLM / PagedAttention paper.
+    - NVIDIA Triton dynamic batching documentation.
+    - Ollama OpenAI compatibility documentation.
+  remaining_gap:
+    claim: 'These systems solve important serving problems, but they do not by themselves
+
+      give a single-user research workstation a migration discipline for many small
+
+      projects that currently import ASR, LLM, embedding, or reranker models directly.
+
+      The missing object is a local model-owner boundary plus a staged migration rule:
+
+      ASR service first, LLM service second, embedding/reranker third, and model manager
+
+      only after residency pressure appears.
+
+      '
+  proposed_viewpoint:
+    claim: 'Treat the RTX 5080 workstation as a local AI server. Projects send tasks;
+      model
+
+      services own GPU models. This reframes the problem from "how do I load a model
+
+      inside each project?" to "which local service owns this model, how is work queued,
+
+      and what evidence shows VRAM and latency improved?"
+
+      '
+  contribution_statement:
+    draft: 'This work proposes a local model-owner architecture for single-GPU AI
+      research
+
+      workstations, starting with a resident ASR service and shared project clients,
+
+      then extending to OpenAI-compatible local LLM serving and model residency policy.
+
+      The contribution is a migration and measurement pattern that reduces duplicate
+
+      model ownership while preserving project-level simplicity.
+
+      '
+  validation_path:
+    first_experiment: 'Compare two active projects that directly load the same ASR
+      model against two
+
+      project clients calling one resident ASR service. Measure peak VRAM, warm-start
+
+      latency, queue depth, p50/p95 latency, and failure behavior.
+
+      '
+    paper_boundary: 'The first claim should be workstation-level and evidence-backed.
+      Do not claim
+
+      a new general-purpose serving engine unless the benchmark extends beyond the
+
+      local RTX 5080 ASR/LLM migration pattern.
+
+      '
+pressure_test:
+  setting: One RTX 5080 workstation serving concurrent ASR, LLM, or embedding requests
+    from several local projects through localhost.
+  expected_failure_modes:
+  - Developer thinks singleton solved the issue, but uvicorn or gunicorn workers still
+    duplicate GPU owners.
+  - Shared service saves model weight memory but p95 latency worsens because there
+    is no batching or admission control.
+  - Long LLM contexts consume KV cache and crowd out short requests.
+  - Audio requests of different lengths cause head-of-line blocking.
+  - MoE deployment saves active compute but still exceeds memory because expert weights
+    are placed inefficiently.
+  - A crashed model-owner service becomes a single point of failure without health
+    checks and restart policy.
+  - Too many resident model workers still exceed RTX 5080 VRAM, so the system needs
+    a residency policy instead of keeping everything loaded.
+  - Project clients bypass the gateway and quietly reintroduce direct `load_model()`
+    calls.
+  - The first design tries to build a full model manager before proving that one ASR
+    service reduces duplicate VRAM use.
+  smallest_observable_test: Run two deployment variants with the same model and the
+    same synthetic request trace. Record process count, model-owner count, peak VRAM,
+    p50/p95 latency, throughput, queue depth, timeout rate, and GPU utilization.
+  confirming_metric: Shared model-owner serving reduces duplicate weight memory by
+    at least one model copy while preserving or improving throughput under the target
+    p95 latency budget.
+  revision_metric: If VRAM savings appear but latency or reliability worsens, revise
+    the design around batching, queue discipline, request classes, and timeout policy.
+  kill_metric: If an off-the-shelf serving engine already meets memory, latency, fault
+    isolation, and observability needs for the target workload, document the deployment
+    recipe and stop treating this as a new research build.
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 12
+  testability_score: 12/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 2
+  novelty_score: 2/10
+  feasibility: 12
+  feasibility_score: 12/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 83/100
+maturity_level: execution_ready
+next_steps:
+- Select the first local RTX 5080 workload for the prototype, preferably ASR if the
+  current pain came from duplicate ASR loading.
+- Create `~/ai-local-services/asr_service` with startup model loading, `/health`,
+  `/transcribe`, a GPU semaphore, and JSON response format.
+- Create a tiny shared Python client package or module that projects import instead
+  of importing model loaders.
+- Search the active projects for direct ASR or LLM loading and mark the first one
+  to migrate to the local client.
+- Create a minimal naive multi-project deployment and a shared model-owner deployment
+  with identical request traces.
+- Record VRAM, process count, latency, queue depth, throughput, and failure behavior.
+- Decide whether the next artifact should be a reusable deployment recipe, a JANUS
+  ASR serving boundary, or a broader GPU inference governance note.
+source:
+- 2026-05-28 user brainstorm in Taiwanese Mandarin about duplicate ASR loading, shared
+  GPU model ownership, H100/H200 servers, LLMs, and MoE inference.
+- 2026-05-28 user continuation narrowing the first implementation to a single RTX
+  5080 workstation and a localhost model service used by multiple projects.
+- 2026-05-28 user continuation defining `~/ai-local-services`, project clients, ASR-first
+  implementation, OpenAI-compatible local LLM serving, and model-manager deferral.
+maturity_action: generate experiment plan
