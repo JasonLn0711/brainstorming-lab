@@ -144,6 +144,7 @@ connections:
 - idea_000019
 - idea_000025
 - idea_000035
+- idea_000044
 role: idea
 value:
   impact: high
@@ -274,3 +275,4 @@ source:
 - conversation
 - web_verification_2026-05-18
 maturity_action: generate experiment plan
+normalization_status: validated

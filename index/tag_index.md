@@ -35,7 +35,7 @@
 
 ## adaptive-routing
 
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## aesthetics
 
@@ -499,6 +499,10 @@
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
+## decision-stability
+
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
+
 ## decision-system
 
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
@@ -596,7 +600,7 @@
 
 ## dynamic-graph
 
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## early-warning-systems
 
@@ -663,6 +667,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## evidence-audit
+
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
+
 ## evidence-chain
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
@@ -681,6 +689,7 @@
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
 
 ## evidence-routing
 
@@ -755,7 +764,7 @@
 
 ## flow-based-system
 
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## follow-up
 
@@ -829,6 +838,14 @@
 ## gpu-rendering
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
+
+## graph-compression
+
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
+
+## graph-packets
+
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
 
 ## grounding
 
@@ -1075,6 +1092,7 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
 
 ## knowledge-systems
 
@@ -1335,7 +1353,7 @@
 
 ## network-design
 
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## nist-ai-rmf
 
@@ -1466,7 +1484,7 @@
 
 ## physarum
 
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## physics-education
 
@@ -1755,13 +1773,17 @@
 ## scam-research
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## scheduler
 
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
+## scientific-claim-verification
+
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
 
 ## scientific-culture
 
@@ -1866,7 +1888,7 @@
 ## signal-market
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
 ## single-gpu-workstation
 
@@ -1878,7 +1900,11 @@
 
 ## slime-mold
 
-- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 74/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+- `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
+
+## small-language-models
+
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
 
 ## social-risk-measurement
 
@@ -2118,6 +2144,10 @@
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## trustworthy-rag
+
+- `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
 
 ## ubuntu
 
