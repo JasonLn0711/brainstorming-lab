@@ -10,6 +10,40 @@
 
 論文不是把做過的事情全部寫出來。論文的任務是讓陌生 reviewer 在有限時間內相信：問題重要、現有方法不足、方法合理、證據支撐主張、限制被誠實處理。
 
+## Global Voice Rule
+
+所有論文、計畫書、研究摘要、reviewer-facing 回覆、lab sync brief、stakeholder-facing 文字，都預設使用自信且非防禦式的語氣。
+
+硬規則：
+
+```text
+claim -> evidence -> contribution -> boundary -> next implication
+```
+
+先講正面主張、證據、貢獻，再精準劃邊界。不要先道歉，不要先退讓，不要把 novel contribution 藏在限制、資料治理、倫理防衛、claim boundary 後面。
+
+禁止的寫作姿勢：
+
+- apology-first opening
+- self-erasing disclaimer
+- preemptive retreat
+- 把「只有」「只是」「不能完全」「限制很多」放在主張前面
+- 讓 boundary paragraph 變成主文的主要聲音
+
+自信不是 overclaim。自信是 claim、evidence、boundary 對齊後，文字不再需要防衛式姿態。
+
+弱寫法：
+
+```text
+This study has many limitations and only uses public-safe synthetic evidence, so it cannot fully validate operational deployment.
+```
+
+強寫法：
+
+```text
+This study is bounded by design. The public-safe evidence layers test mechanism behavior and schema transfer, while operational field performance remains the next validation target.
+```
+
 ## First Principle
 
 開始寫全文前，先回答一題：
@@ -623,6 +657,11 @@ Then revise:
 - Introduction: six paragraphs
 - Method: schema, definitions, algorithm, labels, failure modes
 - Results: result -> interpretation -> supported claim
-- Limitation: limitation -> future validation
+- Limitation: confident boundary -> future validation
 - Conclusion: one remembered sentence
+
+Voice rule:
+- Use confident, non-defensive prose.
+- Lead with claim, evidence, and contribution before boundary.
+- Boundary language protects the claim; it does not apologize for the work.
 ```
