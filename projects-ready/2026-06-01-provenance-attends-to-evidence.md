@@ -64,8 +64,25 @@ paper-3-provenance-attends-to-evidence/
 - Project locator: `../planning-everything-track/data/projects/2026-06-provenance-attends-to-evidence.md`.
 - Day-note bridge: `../planning-everything-track/weeks/2026-W23/days/2026-06-01.md`.
 - Capacity impact: paper incubation is active but bounded; W23 does not open a broad experiment sprint while WISA, CDE, coursework, and June 7 deadlines remain active.
-- Next action: freeze schema v0 and create the `PB-EGP-50` record manifest after the early-June fixed academic cluster is safe.
+- Next action: keep the existing paper repo as the canonical owner and advance only through validated evidence gates.
 - Review date: 2026-06-08.
+
+## 2026-06-04 Status Refresh
+
+The `Decision Atom + Ontology + Evidence Packet` phrasing is a useful memory
+label, but the research line should lead with the stronger scientific object:
+PB-EGP for the first paper and Support-Transfer Validation for the next-paper
+DecisionAtom branch. This does not require another future-research repo.
+
+Current ownership remains:
+- execution: `../paper-3-provenance-attends-to-evidence`;
+- source reasoning and graduation history: this brainstorming packet plus
+  `idea_000044`;
+- planning: locator, capacity boundary, current gate, and next action only.
+
+The next-paper STV branch is gated on human adjudication and certificate-validity
+evidence before gold generation, pEDA, baselines, method claims, manuscript
+claims, or full benchmark expansion.
 
 ## Move Checklist
 
@@ -74,5 +91,7 @@ paper-3-provenance-attends-to-evidence/
 - [x] Add execution README, AGENTS, schemas, pilot plan, metrics, baselines, audit rubric, and tests.
 - [x] Add planning locator/status.
 - [x] Keep full brainstorming detail in `brainstorming-lab`.
-- [ ] Build `PB-EGP-50` record manifest.
-- [ ] Run first baseline/model pilot.
+- [x] Build `PB-EGP-50` record manifest.
+- [x] Run first baseline/model pilot and human-audit pass.
+- [x] Record DecisionAtom-STV as the next-paper route inside the existing paper repo.
+- [ ] Intake adjudicator rows and check STV claim gates.
