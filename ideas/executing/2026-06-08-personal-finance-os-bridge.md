@@ -43,4 +43,3 @@ personal-finance-os = finance records / policies / reviews / decisions
 
 Only reopen this bridge if a finance-system extension needs real option
 comparison before implementation.
-
