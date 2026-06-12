@@ -1,0 +1,323 @@
+id: idea_000047
+title: Insurance customer conversation simulator for sales training
+created_at: '2026-06-12'
+type: project
+tags:
+- insurance-simulation
+- customer-simulator
+- role-play
+- sales-training
+- evaluation
+- prompt-engineering
+- conversation-design
+- persona-simulation
+- state-machine
+- fine-tuning-readiness
+- taiwan-insurance
+- compliance-sensitive-training
+status: research_candidate
+problem_statement:
+  raw: Jason wants to use an LLM as a realistic insurance customer for conversation
+    practice, and needs to know whether to fine-tune or design a system prompt.
+  normalized: Given the need to simulate realistic Taiwanese insurance prospect conversations
+    for sales-practice training, optimize a controllable customer simulator that preserves
+    persona consistency, information withholding, objection realism, emotional dynamics,
+    compliance sensitivity, and post-conversation evaluation under constraints of
+    limited initial training data, role-play drift, overly helpful assistant behavior,
+    voice-conversation latency, insurance compliance boundaries, and the need to collect
+    high-quality transcripts before fine-tuning.
+  structure:
+    given: a trainee wants to practice insurance sales conversations with an LLM customer
+    optimize: realistic, controllable, evaluable customer-simulator behavior
+    constraints:
+    - first version has no high-quality domain transcript dataset
+    - LLMs tend to become overly helpful, rational, and assistant-like during role-play
+    - multi-turn conversations can cause persona drift and context degradation
+    - insurance conversations involve price sensitivity, family decision-making, trust,
+      objection handling, and compliance-sensitive claims
+    - voice-mode simulation requires short, interruptible, human-paced responses
+    - the simulator should not provide formal insurance advice or act as a licensed
+      salesperson
+summary: The first version should not fine-tune. The correct first artifact is a controlled
+  simulator built from a strong system/developer prompt, hidden scenario cards, a
+  conversation state machine, few-shot examples, and a post-conversation evaluator.
+  Realism comes less from generic insurance knowledge and more from stable modeling
+  of a person with life background, incomplete information, budget pressure, suspicion
+  toward sales pressure, family constraints, hidden motivation, and delayed disclosure.
+  Fine-tuning becomes valuable only after prompt-based simulation has exposed persistent
+  failures and after 100 to 300+ high-quality, annotated multi-turn transcripts exist.
+source_note_zh: 這次想法的核心是：先不要 fine-tune。逼真的保險客戶模擬要先靠 system prompt、隱藏角色卡、對話狀態機、few-shot
+  examples 與事後評分器建立可控 simulator。等累積足夠高品質對話紀錄，再考慮 fine-tuning。
+human_note: ideas/2026-06-12-insurance-customer-conversation-simulator.md
+first_principle:
+  scarce_resource: high-quality, behaviorally realistic insurance customer conversation
+    data
+  core_object: a controllable customer simulator for sales-practice conversation training
+  not_the_core:
+  - fine-tuning before data exists
+  - a generic insurance Q&A assistant
+  - a coaching model that simultaneously role-plays and evaluates
+  - a model that helps the salesperson close too easily
+  - a formal insurance advice engine
+  - a production compliance or suitability system
+  smallest_useful_unit: 10 scenario cards, one customer-simulator prompt, one state
+    machine, one evaluator prompt, and 20 recorded practice conversations scored by
+    a fixed scorecard.
+  decision_boundary: Use prompt engineering and evaluation first; consider fine-tuning
+    only after repeated prompt failures are observed and a labeled transcript corpus
+    exists.
+real_world_pressure_test:
+  setting: A trainee runs a 12-turn voice-style insurance needs-discovery practice
+    session with a simulated 38-year-old Taiwanese parent who has mortgage pressure,
+    employer group insurance, and suspicion toward sales pressure.
+  expected_failure_mode: The simulator may become too helpful, reveal the hidden family-risk
+    concern too early, accept a product recommendation too easily, speak in long formal
+    paragraphs, or start coaching the salesperson during the live role-play.
+  smallest_observable_test: Run 20 scripted practice sessions across 10 scenario cards;
+    ask one human reviewer to label each customer turn for naturalness, disclosure
+    timing, objection realism, persona consistency, and role contamination.
+  confirming_metric: At least 80% of sessions keep persona consistency through 10
+    turns, fewer than 20% of customer turns contain assistant-like coaching, and at
+    least 70% of hidden motivations are revealed only after needs-discovery questions
+    rather than at the opening.
+  revise_or_kill_rule: Revise prompts and state transitions if role contamination
+    or over-disclosure exceeds thresholds; consider fine-tuning only if the same failure
+    persists after scenario-card and few-shot revisions.
+assumptions:
+- The user's goal is training realism, not automated insurance advice.
+- Realistic customer behavior depends on incomplete information, selective disclosure,
+  social pressure, trust dynamics, budget constraints, family decision-making, and
+  objection patterns.
+- One LLM should not simultaneously be the customer, controller, and coach because
+  the role-play surface tends to become assistant-like.
+- A hidden scenario card can create stable customer behavior without exposing all
+  information to the salesperson.
+- A simple trust/state machine can keep the conversation more stable than a static
+  persona prompt alone.
+- Few-shot examples are necessary because the desired customer style is short, colloquial,
+  partial, and sometimes resistant.
+- Fine-tuning should start only after prompt-based simulation produces reusable failure
+  cases and labeled target behavior.
+- Voice-mode simulation requires stricter length and pacing limits than text chat.
+- 'Insurance compliance boundaries should be expressed as scope controls: the simulator
+  can express doubt, misunderstanding, objections, and suspicion, but should not give
+  formal product advice.'
+evidence:
+- 2026-06-12 user asked how to make an LLM act as an insurance customer for realistic
+  human conversation practice, and whether to use fine-tuning or a system prompt.
+- '2026-06-12 recommendation: first version should use system prompt plus hidden role
+  card plus conversation state machine plus post-conversation evaluator.'
+- '2026-06-12 recommendation: realism comes from life context, budget pressure, doubts,
+  emotional state, incomplete information, and delayed disclosure rather than from
+  broad insurance knowledge.'
+- '2026-06-12 recommendation: separate Customer Simulator, Scenario Controller, and
+  Coach/Evaluator roles.'
+- '2026-06-12 recommendation: avoid one model that role-plays and coaches at the same
+  time, because it becomes too rational, cooperative, and assistant-like.'
+- '2026-06-12 recommendation: use state labels such as cold, guarded, engaged, skeptical,
+  and qualified_interest.'
+- '2026-06-12 recommendation: use examples that contrast good consultative questioning
+  with pushy sales behavior.'
+- '2026-06-12 recommendation: use a scorecard for naturalness, persona consistency,
+  information withholding, objection realism, emotional dynamics, sales resistance,
+  compliance sensitivity, and 10+ turn stability.'
+- '2026-06-12 recommendation: treat fine-tuning as second-stage work after 100 to
+  300+ high-quality transcripts, not as the first move.'
+- '2026-06-12 source-boundary note: OpenAI fine-tuning availability and provider route
+  should be rechecked against current official docs before implementation decisions.'
+baseline:
+- 'Write a single prompt: ''please act as an insurance customer'' and expect realism.'
+- Fine-tune immediately without a transcript dataset or evaluation rubric.
+- Let the same model role-play the customer and give coaching feedback during the
+  live conversation.
+- Build a generic insurance knowledge bot rather than a hesitant, incomplete, budget-constrained
+  human customer.
+- Measure quality only by asking whether the answer 'feels realistic'.
+- Use single-turn Q&A examples instead of full multi-turn scenarios.
+- Let the customer reveal all hidden motivations at the beginning.
+- Let the customer accept a proposal too quickly, which trains unrealistic sales behavior.
+metrics:
+- 'Naturalness: responses sound like short Taiwanese spoken conversation rather than
+  formal analysis.'
+- 'Persona consistency: age, family, job, income pressure, existing insurance, and
+  objections remain coherent over 10+ turns.'
+- 'Information withholding: hidden motivations and private constraints are revealed
+  gradually, only after trust-building questions.'
+- 'Objection realism: price, spouse/family discussion, group insurance, payout distrust,
+  commission suspicion, and fixed-cost pressure arise naturally.'
+- 'Emotional dynamics: customer becomes more guarded after pushy sales behavior and
+  more engaged after respectful needs discovery.'
+- 'Sales resistance: customer does not move to immediate closing too easily.'
+- 'Compliance sensitivity: customer challenges exaggerated claims, guaranteed payout
+  language, guaranteed returns, borrowing to buy insurance, and vague risk explanations.'
+- 'Conversation length stability: after 10 to 12 rounds, the persona remains stable
+  and does not turn into a coach.'
+- 'Voice pacing: in voice mode, most replies stay within 1 to 2 sentences and roughly
+  12 seconds.'
+- 'Training usefulness: evaluator can identify whether the salesperson asked needs
+  questions, handled objections, respected budget, and avoided overclaiming.'
+insights:
+- The simulator should train the salesperson to discover needs rather than reward
+  early product pitching.
+- A realistic prospect often does not know what they need, has not read existing policies
+  carefully, and starts from price or trust concerns.
+- The hidden motivation is valuable precisely because it is not revealed at the start.
+- A static persona prompt is weaker than a persona prompt plus state update rules.
+- Good simulation behavior includes hesitation, uncertainty, family consultation,
+  topic shifts, and partial answers.
+- The core dataset is not insurance facts; it is scenario cards plus high-quality
+  transcripts plus behavior labels.
+- The first engineering milestone is an evaluation harness, not a fine-tuned model.
+- Fine-tuning should learn the desired customer speech rhythm, resistance pattern,
+  and disclosure timing after prompt-based examples exist.
+- For Taiwan insurance practice, scenario cards should include family responsibility,
+  housing loans, group insurance assumptions, healthcare coverage uncertainty, and
+  investment-linked product caution.
+- A future product can separate trainee-facing coaching from customer-facing simulation
+  so that the live role-play stays immersive.
+connections:
+- idea_000011
+- idea_000016
+- idea_000017
+- idea_000034
+- idea_000035
+- idea_000038
+role: idea
+value:
+  impact: medium
+  feasibility: high
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 11
+  testability_score: 11/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 7
+  feasibility_score: 7/15
+  research_potential: 7
+  research_potential_score: 7/10
+maturity_score: 77/100
+maturity_level: research_candidate
+system_design:
+  roles:
+  - name: Customer Simulator
+    responsibility: Only outputs what the insurance prospect would say; does not coach,
+      evaluate, explain the task, or summarize the sales process.
+  - name: Scenario Controller
+    responsibility: Creates hidden scenario cards with persona, budget, existing policy
+      uncertainty, real worry, objection stack, trust threshold, and disclosure schedule.
+  - name: Coach Evaluator
+    responsibility: Runs after the conversation and scores the salesperson's discovery
+      quality, objection handling, pacing, compliance discipline, and next-step proposal.
+  state_machine:
+  - state: cold
+    behavior: Short guarded replies; says they are only looking around or just want
+      to understand.
+  - state: guarded
+    behavior: Willing to answer but avoids detailed finance, family, and health information.
+  - state: engaged
+    behavior: Begins to discuss family, mortgage, child, budget, and existing coverage
+      uncertainty after good questions.
+  - state: skeptical
+    behavior: Questions motives and terms after pushy closing, exaggerated claims,
+      or vague guarantees.
+  - state: qualified_interest
+    behavior: Willing to review a proposal, while still preserving spouse/family discussion
+      and no same-day decision.
+  transition_rules:
+  - Needs discovery, existing-policy questions, budget respect, and risk explanation
+    can move the customer toward engaged.
+  - Product-first pitching, pressure to decide today, guaranteed language, or avoiding
+    exclusions can move the customer toward skeptical.
+  - Acknowledging limitations, explaining next review steps, and asking permission
+    can move the customer toward qualified_interest.
+prompt_pattern:
+  core_instruction: You are a Taiwanese insurance prospect. You are not an AI assistant,
+    not a coach, and not a licensed insurance advisor. Output only what the customer
+    would say.
+  realism_rules:
+  - Reply in 1 to 3 short sentences.
+  - Use spoken style rather than formal analysis.
+  - Do not reveal all background information at once.
+  - Do not organize the salesperson's workflow for them.
+  - Say 'I am not sure', 'I need to ask my spouse', or 'I have not read that policy
+    carefully' when appropriate.
+  - Become more defensive when the salesperson pushes too early.
+  - Become more open when the salesperson asks concrete needs, family, budget, and
+    existing-coverage questions.
+  hidden_persona_example:
+    name: Mr. Chen
+    age: 38
+    location: New Taipei
+    job: technology-company engineer
+    family: married, one 5-year-old child
+    income_pressure: household monthly income around NTD 150,000, but mortgage pressure
+      is high
+    existing_insurance: basic medical insurance and employer group insurance, but
+      coverage details are unclear
+    personality: rational, cautious, dislikes being sold to
+    hidden_motivation: worried that illness or accident would leave family with mortgage
+      and child education costs
+fine_tuning_gate:
+  do_not_fine_tune_first: true
+  prompt_first_reason: Current need is behavior control and scenario design, not domain-knowledge
+    compression.
+  consider_fine_tuning_when:
+  - The prompt is already strong but the model still sounds too much like an assistant.
+  - Many customer types must be generated with consistent style and resistance patterns.
+  - At least 100 high-quality multi-turn transcripts exist; 300 to 1000 is a stronger
+    target for robust behavior.
+  - Transcripts are labeled for naturalness, persona consistency, objection realism,
+    and role drift.
+  - The provider's current fine-tuning support and data policies have been rechecked.
+  training_format_note: In chat-format supervised fine-tuning, the insurance customer
+    is the assistant role and the salesperson is the user role.
+dataset_schema:
+  fields:
+  - scenario_id
+  - customer_persona
+  - hidden_goal
+  - insurance_context
+  - existing_policy_status
+  - budget_constraint
+  - risk_tolerance
+  - trust_level_start
+  - main_objections
+  - conversation_transcript
+  - final_customer_state
+  - quality_score
+  customer_types:
+  - young single worker
+  - married without children
+  - married with young children
+  - mortgage-pressure household
+  - self-employed worker
+  - high-income but anti-insurance customer
+  - customer with bad claim experience
+  - customer with family medical history but avoids discussing health risk
+  insurance_contexts:
+  - medical insurance
+  - actual-expense reimbursement
+  - life insurance
+  - disability or long-term care
+  - accident insurance
+  - investment-linked policy with explicit risk and suitability caution
+next_steps:
+- Write 10 hidden scenario cards covering different Taiwanese insurance-customer types.
+- Implement a Customer Simulator prompt and a separate Evaluator prompt.
+- Run 20 practice conversations and manually score them with the scorecard.
+- 'Collect failure cases: assistant-like replies, too-easy closing, over-disclosure,
+  persona drift, long voice replies, and weak objection handling.'
+- Revise state transitions and few-shot examples before considering any fine-tuning.
+- After 100+ scored transcripts, decide whether fine-tuning is justified.
+source:
+- 2026-06-12 user conversation in brainstorming-lab
+maturity_action: evaluate cluster readiness
+normalization_status: validated
