@@ -139,6 +139,32 @@ Useful research angle:
 Decision systems need institutional correction paths, not only better prediction.
 ```
 
+## 2026-07-22 Extension: Norm-Equivalent Implementation
+
+[Jason's private Fuji-kō reflection](../../inner-archive/thoughts/2026-07-22-fujiko-norm-equivalent-design-and-alternative-implementation.md) adds a second institutional function beside local correction: a community can preserve a norm's purpose while recognizing another valid form of participation.
+
+The working mechanism is:
+
+```text
+protected purpose
+-> original performance form
+-> non-delegable personal responsibility
+-> representative, pooled, symbolic, temporal, or certification substitute
+-> legitimate recognition
+-> fair burden sharing and audit
+-> universal-adoption test
+```
+
+Fuji-kō is useful here as a bounded historical prompt: high travel cost, collective funding, representative pilgrimage, and local Fuji mounds show how physical, economic, organizational, and symbolic layers can be recombined. The research question is broader:
+
+```text
+When may an institution treat a different procedure as the same meaningful participation without eroding the value the norm protects?
+```
+
+This extends the existing hybrid-governance thesis. Local institutions may do more than add context after a central decision; they may also authorize legitimate equivalence, distribute burdens, preserve meaning, and keep participation open under real constraints.
+
+Evidence boundary: the accessible shrine and Agency for Cultural Affairs records support the high-cost journey, pooled representative mechanism, and local Fuji-mound layer. Claims that illness or disaster relief came from a uniform Fuji-kō fund remain specific-source questions rather than a general property of all confraternities.
+
 ## Candidate Research Directions
 
 ### Local Knowledge vs Central Optimization
@@ -207,4 +233,3 @@ Promotion criteria:
 - it produces a reusable architecture for AI governance, smart-city design, or institutional repair
 - it becomes a cited section in a paper, proposal, talk, or essay
 - it yields a concrete experiment about local correction, traceability, or decision repair
-
