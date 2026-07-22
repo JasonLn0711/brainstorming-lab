@@ -169,3 +169,23 @@ When evaluating a Taiwan AI startup or lab-company project, estimate:
 5. whether current work is producing reusable artifacts or only demos.
 
 If the budget is around NTD 7 million, assume severe scope discipline is required unless there is strong founder labor, lab subsidy, government funding, or unusually efficient talent.
+
+## 2026-07-22 Extension: Market Scale, Productization, and Value Capture
+
+The personnel-cost question sits inside a larger system. A Taiwan AI company can have enough cash for a small team and still lack a scalable business when its effective market is fragmented, each deployment requires substantial customization, or customer relationships and pricing power belong elsewhere.
+
+A stronger diagnostic now uses seven linked conditions:
+
+1. effective market;
+2. product repeatability;
+3. global distribution;
+4. delivery capacity and total implementation cost;
+5. growth capital;
+6. talent density and career value;
+7. value capture through pricing, IP, data, customer relationships, and recurring revenue.
+
+This reframes the earlier cost observation. Low salaries and talent loss can be downstream effects of a project-based, low-margin model rather than isolated labor-market problems. Export access expands demand, while productization and value capture determine whether that demand funds better talent, durable R&D, and continued expansion.
+
+The strongest Taiwan position is likely to use local manufacturing, semiconductor, medical, security, and enterprise settings as demanding validation environments and lighthouse-customer sources, then package the resulting domain knowledge into repeatable products for global niches. The smallest next test remains company-specific: estimate all seven conditions for one Taiwan B2B software or AI firm and identify the binding constraint.
+
+Source boundary: Jason's complete first-person reflection and supplied analysis remain private in `inner-archive`; this file carries only the reusable industry model. Related private locator: `../../inner-archive/thoughts/2026-07-22-taiwan-small-market-global-scale-and-software-value-capture.md`.
