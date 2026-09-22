@@ -22,6 +22,14 @@ Raw PDFs and extracted text are archived local-only under `system-hub` with owne
 - 2026-05-13 current-machine update: the May renewal attachments are now archived locally under the planning repo ignored folder `.local/admin/2026-05-nycu-doctoral-scholarship-renewal/`; student-side form prefill, supporting-report draft, works-output section, evidence checklist, advisor message, advisor-section helper, upload checklist, Google Form answer sheet, completion matrix, and office-routing note are prepared there.
 - 2026-05-13 advisor-routing update: Jason manually sent Prof. Wu a LINE review/signature request at 04:43 with the renewal application form PDF and supporting-review report PDF attached. Prof. Wu replied at 06:03 that he would sign later and returned the signed renewal application form PDF at 08:12. Next gates are lab printout with Guan-Ting, institute-office director signature or seal routing, college routing, Google Form upload, and receipt capture.
 - 2026-05-14 office-call update: at 16:10 Jason recorded that the uploaded renewal materials must include the institute director's seal / `所長蓋章`, and that the labor-insurance record must be from after 2026-05-18. At 16:11, Jason pulled the paper packet back for scanning / rework.
+- 2026-09-07 evidence update: the matching 100-page portfolio PDF is preserved
+  as an owner-only `archived_source_candidate` in `system-hub`, and its
+  eight-file extraction／audit bundle is preserved under the career repo's
+  ignored `.local/evidence/` custody. The 100-page PDF differs from the known
+  69-page submitted packet. This update strengthens source-to-claim
+  traceability; the recorded award and renewal statuses remain unchanged. The
+  privacy-safe map and claim gates live in the
+  [career source record](../../../career-application-system/sources/resume/2025-10-14-nycu-doctoral-scholarship-portfolio/source.md).
 
 ## FIRST PRINCIPLE Decision Record
 
@@ -43,6 +51,9 @@ Local files moved from Downloads:
 - 7 Gmail/PDF source files were renamed and moved into the local archive.
 - `pdftotext -layout` extraction was saved under the archive's `extracted-text/`.
 - SHA-256 checksums were saved in `manifest.sha256`.
+- The 100-page portfolio source candidate is now archived beside the 69-page
+  submitted packet and listed in `manifest.sha256`; `SRC-LOCAL-09` and
+  `SRC-LOCAL-10` preserve the source-versus-derivative relationship.
 
 Gmail connector coverage:
 
@@ -79,6 +90,7 @@ Gmail connector coverage:
 | 2025-10-08 | Institute forwarded the application notice | Institute of Biophotonics told interested students to email Ms. Kuan by 2025-10-19 23:59 and cc the institute office. | `SRC-GMAIL-02` |
 | 2025-10-09 | Scholarship briefing PPT circulated | Prof. Wu forwarded the 2025-10-09 scholarship briefing PDF from the college route. | `SRC-GMAIL-03` |
 | 2025-10-14 17:31 | Jason submitted the application packet | Jason sent a single merged PDF titled for the 114 doctoral scholarship application to the college contact, with department office, advisor, and related contacts copied. | `SRC-LOCAL-02`, `SRC-GMAIL-05` |
+| 2025-10-14 source candidate, archived 2026-09-07 | 100-page portfolio preserved and mapped | The source PDF matching the extraction bundle was archived locally. It is distinct from the known 69-page submitted packet; exact sent-attachment identity remains a reconciliation gate. | `SRC-LOCAL-09`, `SRC-LOCAL-10` |
 | 2025-10-14 17:42 | College confirmed receipt and paper route | College replied that pages 1-3 of the application form should be printed and sent to the institute office for director seal, then transmitted to the college office. | `SRC-LOCAL-02` |
 | 2025-11-07 09:57 | Student data spreadsheet requested | College asked students to fill the student data summary spreadsheet and place payment-account supporting material on worksheet 2 by 2025-11-10 14:00. | `SRC-LOCAL-03` |
 | 2025-11-07 12:55 | Jason returned the data spreadsheet | Jason replied that the spreadsheet was filled and the payment-account supporting material was placed on worksheet 2. | `SRC-LOCAL-03`, `SRC-GMAIL-06` |

@@ -1,0 +1,492 @@
+id: idea_000044
+title: Provenance-bounded graph packets for stable small-model decision support
+created_at: '2026-06-01'
+type: hypothesis
+tags:
+- knowledge-graph
+- graph-compression
+- small-language-models
+- evidence-provenance
+- decision-stability
+- scientific-claim-verification
+- trustworthy-rag
+- graph-packets
+- evidence-audit
+status: execution_ready
+problem_statement:
+  raw: The broad label Knowledge Graph Compression + SLM is too generic and will be
+    judged as ordinary GraphRAG, KGQA, graph summarization, or context compression.
+    The stronger research object is a provenance-bounded compressed evidence graph
+    packet that lets small language models reason inside an auditable evidence boundary.
+  normalized: Given large evidence graphs and small language models with limited context
+    budgets, construct compressed evidence graph packets that preserve source spans,
+    support relations, evidence force, lineage depth, uncertainty, counterevidence,
+    and decision boundaries under constraints of token budget, reviewer auditability,
+    unsupported-claim risk, and crowded GraphRAG/KGQA baselines.
+  structure:
+    given: large evidence graphs and small language models with limited context budgets
+    optimize: evidence-preserving graph packet construction for stable small-model
+      decision support
+    constraints:
+    - token budget
+    - unsupported-claim risk
+    - provenance and citation-lineage loss
+    - uncertainty and counterevidence loss during compression
+    - reviewer pressure to distinguish from ordinary GraphRAG
+    - need for auditable decision boundaries
+summary: Expert review recommends narrowing the broad KG Compression + SLM direction
+  into provenance-bounded evidence graph packets for stable small-model decision support.
+  The first paper should focus on scientific-paper claim audit with SciFact-style
+  records, compare raw text, top-k retrieval, generic summary, uncompressed graph
+  neighborhoods, random/centrality pruning, and provenance-bounded graph packets,
+  and evaluate unsupported-claim rate, provenance retention, citation lineage, answer
+  correctness, uncertainty preservation, and decision stability. Direction A is the
+  first paper; Direction C is the downstream evaluation layer; Direction B and Direction
+  D remain later roadmap items.
+source_note_zh: 專家建議不要把這條線命名為一般的 Knowledge Graph Compression + SLM，而要收斂成 provenance-bounded
+  evidence graph packets for stable small-model decision support。第一篇只做 A + C 的最小版本：provenance-preserving
+  compression、SLM answer discipline、decision stability。B 的 pheromone/dynamic compression
+  與 D 的 ancient-script symbolic KG compression 先放 roadmap。
+assumptions:
+- A generic KG Compression + SLM title will be reviewed against GraphRAG, KGQA, graph
+  summarization, and context compression baselines.
+- The differentiated scientific object is not the graph itself, but the compressed
+  evidence graph packet that preserves evidence boundaries for a small model.
+- Citation presence is not the same as evidence support; packet fields must preserve
+  evidence force and lineage.
+- Small-model decision support should be evaluated by evidence discipline and stability,
+  not only answer accuracy.
+- Scientific-paper claim audit is a cleaner first domain than cybercrime/scam evidence
+  or ancient-script symbolic hypothesis ranking.
+- Direction B is better treated as adaptive retrieval, graph signal processing, or
+  agent memory for a later paper.
+- Direction D is distinctive but requires domain expertise and should be a later testbed.
+evidence:
+- Expert response recorded in expert-review-packets/2026-06-01-kg-compression-slm/07_expert_review_response.md.
+- Expert decision record summarized in expert-review-packets/2026-06-01-kg-compression-slm/08_decision_record.md.
+- Expert methodology response recorded in expert-review-packets/2026-06-01-kg-compression-slm/09_data_benchmark_experiment_review.md.
+- Executable experiment design summarized in expert-review-packets/2026-06-01-kg-compression-slm/10_experiment_design_record.md.
+- Second narrowing review recorded in expert-review-packets/2026-06-01-kg-compression-slm/11_expert_second_narrowing_review.md.
+- Final narrowed pilot plan summarized in expert-review-packets/2026-06-01-kg-compression-slm/12_narrowed_pilot_plan.md.
+- Existing packet sources map this line to externalized cognition, evidence provenance,
+  hidden-state thinking, transformer succinctness, pheromone/Physarum routing, journal
+  intelligence, and JANUS research compression.
+baseline:
+- raw text context plus SLM
+- generic summary plus SLM
+- top-k retrieved text plus SLM
+- uncompressed graph neighborhood plus SLM
+- random graph pruning plus SLM
+- centrality-based graph pruning plus SLM
+- gold human or dataset label reference
+- larger LLM reference model as ceiling, not gold truth
+metrics:
+- unsupported-claim rate
+- provenance retention
+- citation lineage preservation
+- answer or decision correctness
+- uncertainty preservation
+- decision stability or label flip rate
+- context token budget
+- compression ratio
+- human audit time
+- counterevidence retention
+- abstention correctness
+insights:
+- The first contribution should be framed as evidence-preserving graph packet construction,
+  not generic KG compression.
+- The packet is a bounded reasoning substrate for SLMs, not merely a retrieved subgraph
+  or summary.
+- Compression must preserve source_span, support_relation, evidence_force, lineage_depth,
+  uncertainty, and counterevidence_flag.
+- The first paper should demonstrate that evidence-boundary preservation matters under
+  a fixed or lower token budget.
+- The strongest defense against the GraphRAG-plus-JSON critique is a compression objective,
+  ablation, and metrics for provenance, uncertainty, and counterevidence preservation.
+- The near-term action is to start a pilot now, but only with A + C minimal version.
+- 'The first paper must narrow again: prove measurable evidence-discipline gains under
+  a fixed token budget, not a broad GraphRAG, meeting-decision, dynamic-memory, or
+  latent-state system.'
+- The hardest reviewer risk is the claim that the method is GraphRAG plus JSON formatting
+  plus citation prompting; the defense must include flat evidence list, context compression,
+  serialization perturbation, relation-hidden packet, and predicted-track results.
+connections:
+- idea_000014
+- idea_000017
+- idea_000021
+- idea_000023
+- idea_000031
+- idea_000038
+- idea_000040
+role: idea
+value:
+  impact: high
+  feasibility: high
+first_principle:
+  scarce_resource: evidence boundary preservation under small-model context constraints
+  core_object: provenance-bounded compressed evidence graph packet
+  not_the_core:
+  - generic KG compression
+  - generic GraphRAG
+  - KGQA accuracy only
+  - graph summarization for storage or rule-mining efficiency
+  - citation formatting without evidence-force preservation
+  smallest_useful_unit: 30 to 50 scientific claim audit records converted into provenance-bounded
+    graph packets and evaluated against raw text, top-k text, generic summary, uncompressed
+    graph, and pruning baselines
+  decision_boundary: Pursue the pilot after narrowing; keep dynamic pheromone compression
+    and low-resource symbolic KG compression as roadmap items.
+research_plan:
+  recommended_title: 'Provenance-Bounded Graph Packets: Evidence-Preserving Context
+    Construction for Stable Small-Model Decision Support'
+  first_domain: scientific-paper claim audit using SciFact-style claim/evidence records
+  first_paper_scope: Direction A plus minimal Direction C evaluation
+  later_lanes:
+  - 'Paper 2: Latent-state evidence graph packets for high-risk workflow triage'
+  - 'Paper 3: Adaptive / pheromone graph packet selection under repeated expert feedback'
+  - 'Paper 4: Low-resource symbolic hypothesis ranking with multimodal evidence graph
+    packets'
+  required_fields:
+  - source_span
+  - support_relation
+  - evidence_force
+  - lineage_depth
+  - uncertainty
+  - counterevidence_flag
+  three_month_action_plan:
+  - Week 1-2: freeze packet schema, annotation rubric, and 40-record SciFact pilot
+      set.
+  - Week 3-4: implement graph construction and six baselines.
+  - Week 5-6: run two SLMs with fixed prompts, repeated seeds, and context-order perturbations.
+  - Week 7-8: human audit unsupported claims, provenance retention, uncertainty preservation.
+  - Week 9-10: run ablations removing provenance, uncertainty, counterevidence, and
+      compression log fields.
+  - Week 11-12: write paper draft with claim-boundary section, related-work differentiation,
+      and failure analysis.
+data_strategy:
+  primary_decision: Use public datasets for the first paper main experiment; use private
+    or self-owned data only as a case study or later external validation.
+  layers:
+  - name: public_datasets
+    role: main experiment, quantitative evidence, reproducibility, reviewer comparison
+    first_choices:
+    - SciFact
+    - FEVEROUS
+  secondary_choices:
+  - Qasper
+  - PubMedQA
+  structured_scientific_supplement:
+  - SciTab
+  - name: controlled_synthetic_or_semi_synthetic_stress_set
+    role: compression mechanism testing, counterevidence retention, distractor nodes,
+      label flip, perturbation tests
+  - name: self_owned_or_private_data
+    role: external validity case study, real workflow demonstration, later paper
+    boundary: Do not use as first-paper main evidence unless de-identification, ethics
+      review, data access, and annotation protocols are ready.
+  meeting_extension:
+    datasets:
+    - QMSum
+    - MeetingBank
+    role: second experiment or later paper after adding provenance, decision-span,
+      action-item, speaker-role, uncertainty, and evidence-support annotations.
+derived_benchmark:
+  working_name: PB-EGP-50
+  full_name: Provenance-Bounded Evidence Graph Packet Benchmark
+  source_datasets:
+  - SciFact
+  - FEVEROUS
+  - Qasper
+  record_fields:
+  - claim_or_question
+  - source_document
+  - gold_evidence_span
+  - gold_decision_label
+  - gold_lineage_path
+  - gold_counterevidence_or_conflict
+  - gold_boundary_note
+  - candidate_evidence_graph
+  - compressed_packet
+  - model_output
+  - audit_annotation
+  first_pilot_size: 40-50 public records
+  formal_paper_size_guidance:
+    workshop_or_short: 50-100 records
+    stronger_nlp_ir_kg_paper: 200-500 records
+    recommended_main: 300 SciFact records
+    recommended_structured_supplement: 100 SciTab or FEVEROUS records
+    recommended_external: 50 Qasper records
+    optional_meeting_extension: 30 QMSum / MeetingBank records with manual provenance
+      annotation
+experiment_design:
+  main_question: Under a fixed token budget, can provenance-preserving compressed
+    evidence graph packets help sub-10B SLMs produce fewer unsupported claims, retain
+    more evidence lineage, and maintain more stable decision labels than raw text,
+    summaries, retrieval snippets, or generic graph pruning?
+  pilot:
+    records: 50
+    suggested_mix:
+    - 30 SciFact support/refute records
+    - 10-20 FEVEROUS insufficient, mixed, or table-evidence records
+    models:
+    - 1 primary sub-10B SLM
+    - 1 larger reference model
+    temperature: 0
+    token_budgets:
+    - 1024 or 2048 first
+    narrowed_scope: Use one token budget first, 5-6 context conditions, 2 perturbations,
+      and full human audit on primary SLM outputs.
+  context_conditions:
+  - raw text + SLM
+  - equal-budget raw text + SLM
+  - top-k retrieved text + SLM
+  - generic summary + SLM
+  - flat evidence list + SLM
+  - context compression baseline + SLM
+  - uncompressed graph neighborhood + SLM
+  - random graph pruning + SLM
+  - centrality-based graph pruning + SLM
+  - provenance-bounded compressed graph packet + SLM
+  - GraphRAG-style subgraph retrieval + SLM
+  - oracle evidence packet + SLM
+  - larger LLM reference with same context
+  graph_schema:
+    node_types:
+    - Claim
+    - EvidenceSpan
+    - SourceDocument
+    - Entity / Concept
+    - Method
+    - Result
+    - Limitation
+    - Uncertainty
+    - CounterEvidence
+    edge_types:
+    - mentions
+    - reports
+    - measures
+    - compares
+    - derived_from
+    - cites
+    - qualifies
+    - contradicts
+    - supports_candidate
+    - refutes_candidate
+    - source_lineage
+    required_fields:
+    - claim_id
+    - source_id
+    - source_type
+    - span_id
+    - span_text
+    - source_offset / sentence_id / table_cell_id
+    - source_date
+    - source_authority_or_origin
+    - lineage_path
+    - candidate_relation
+    - evidence_force
+    - scope_of_support
+    - uncertainty_tag
+    - uncertainty_level
+    - limitation_note
+    - risk_boundary
+    - abstention_condition
+    - counterevidence_flag
+    - compression_reason
+    - retained_reason
+    - dropped_reason
+    - audit_reconstruction_pointer
+  compression_method:
+    first_version: interpretable constrained budgeted greedy compressor
+    hard_constraints:
+    - retain at least one source lineage path for each retained claim
+    - retain direct evidence spans before background nodes
+    - retain counterevidence if present
+    - retain uncertainty and limitation nodes
+    - retain source type and span id
+    - do not merge claims with different evidence force
+    soft_objectives:
+    - maximize task relevance
+    - maximize evidence coverage
+    - maximize source diversity
+    - minimize redundant background
+    - minimize token length
+  tracks:
+  - name: Oracle graph compression
+    role: upper-bound test for compression and packet schema using gold evidence spans
+    boundary: Do not claim end-to-end deployability from oracle-only results.
+  - name: Predicted graph compression
+    role: practical usability test using retrieval and extraction to build candidate
+      graphs
+    components:
+    - BM25 / dense retrieval
+    - NLI model or small LLM candidate relation labeling
+    - entity / concept extraction
+    - packet compression
+  - name: Relation-hidden packet
+    role: leakage-control test where source spans, lineage, uncertainty, and source
+      type are retained while support/refute relation labels are removed
+    boundary: Test whether the SLM can still decide without gold-label leakage.
+  perturbations:
+  - evidence order shuffle
+  - JSON field order shuffle
+  - serialization change
+  - field-name perturbation
+  - irrelevant distractor nodes
+  - low-authority related source
+  - reduced budget
+  - counterevidence stress
+  - prompt paraphrase
+  ablations:
+  - full packet
+  - remove provenance
+  - remove uncertainty
+  - remove counterevidence
+  - remove compression log
+  - remove graph relation labels
+  - remove source type
+  - flat evidence list, no graph relation
+  - gold evidence spans only
+  - predicted evidence spans only
+  - same packet without JSON structure
+  - relation-hidden packet
+  - equal-token summary
+evaluation_protocol:
+  primary_metrics:
+  - unsupported-claim rate
+  - provenance / citation validity
+  - decision correctness
+  - decision stability under non-evidential perturbation
+  secondary_metrics:
+  - uncertainty preservation
+  - counterevidence retention
+  - human audit time
+  - compression ratio
+  - context token budget
+  - ROUGE
+  - BERTScore
+  - QAFactEval
+  - SummaC
+  - AlignScore
+  - FActScore-style factuality
+  - RAGAS / ARES faithfulness
+  unsupported_claim_labels:
+  - SUPPORTED_BY_CITED_SPAN
+  - SUPPORTED_BY_PACKET_BUT_BAD_CITATION
+  - CONTRADICTED_BY_EVIDENCE
+  - NOT_IN_PACKET
+  - OVERGENERALIZED
+  - UNCERTAIN_BUT_STATED_AS_CERTAIN
+  - UNVERIFIABLE_OR_EXTERNAL_KNOWLEDGE
+  stability_metrics:
+    invariance_stability: 1 - label flip rate under non-evidential perturbations
+    evidence_sensitivity: correct adjustment rate under evidential perturbations
+  human_audit:
+    mode: blinded audit
+    annotators: at least two for formal study
+    score_items:
+    - decision label correctness
+    - atomic claim support
+    - citation support
+    - uncertainty retention
+    - overclaim
+    - missed counterevidence
+    - audit time
+    agreement:
+    - Cohen's kappa
+    - Krippendorff's alpha
+    - percent agreement
+    - adjudicated final label
+  statistics:
+  - McNemar test or paired bootstrap for decision correctness
+  - Wilcoxon signed-rank test or paired bootstrap for unsupported-claim rate
+  - paired bootstrap confidence interval for provenance retention
+  - paired comparison across perturbations for label flip rate
+  - Wilcoxon signed-rank test for audit time
+  - mixed-effects model as auxiliary analysis for repeated measures
+  - Holm-Bonferroni or Benjamini-Hochberg correction for multiple comparisons
+  - report effect sizes and confidence intervals, not only p-values
+go_no_go_gate:
+  go: packet beats top-k retrieved text on unsupported-claim rate, beats generic summary
+    on provenance retention, beats flat evidence list or context compression on at
+    least one primary metric, preserves decision correctness, beats key ablations,
+    and shows gains in predicted-track setting.
+  revise: packet lowers unsupported claims but loses uncertainty; packet improves
+    provenance but hurts correctness; benefit only appears with relation labels; benefit
+    disappears under serialization perturbation; human audit agreement is low; or
+    small model ignores citation / uncertainty fields.
+  stop_or_reframe: top-k text plus strong prompt equals packet; flat evidence list
+    equals packet; context compression baseline equals packet; oracle packet works
+    but predicted packet fails badly; full packet does not beat remove-provenance
+    or remove-uncertainty ablations; gains come only from leaking support/refute labels;
+    counterevidence is systematically dropped; or human audit cannot reliably apply
+    the rubric.
+  target_thresholds:
+    unsupported_claim_rate_relative_reduction: '>=20% against top-k text or generic
+      summary'
+    provenance_retention_absolute_gain: '>=10 points'
+    decision_correctness_drop: <=3 points
+    label_flip_rate_reduction: '>=10-15%'
+    counterevidence_retention_on_stress_subset: '>=75%'
+  minimum_paper_success: Under the same token budget, provenance-bounded compressed
+    graph packets produce lower unsupported-claim rates and higher provenance retention
+    than generic summary, top-k text, and centrality-pruned graph, without reducing
+    decision correctness.
+  stronger_success: packet has lower label flip rate under perturbation
+  strongest_success: packet reduces human audit time while preserving counterevidence
+    and uncertainty
+claim_boundaries:
+  avoid:
+  - SLM can verify truth
+  - compression universally improves reasoning
+  - GraphRAG is replaced
+  - KG is ground truth
+  - provenance equals correctness
+  - citation presence equals evidence support
+  - clinical, legal, or security deployment readiness
+  - ancient-script decipherment
+  positive_scope:
+  - In bounded evidence-audit tasks, provenance-preserving compressed graph packets
+    can reduce unsupported claims and improve evidence-lineage retention for small
+    language models under a fixed context budget.
+  - Decision stability is a useful evaluation target for small-model expert support
+    because correctness alone misses unsupported overreach and evidence-boundary failures.
+next_steps:
+- Freeze an EPC-Packet v0 schema with required provenance and uncertainty fields.
+- Build a 30 to 50 record SciFact-style claim audit pilot.
+- Implement raw text, generic summary, top-k text, uncompressed graph neighborhood,
+  random pruning, centrality pruning, and provenance-bounded packet baselines.
+- Run two sub-10B SLMs and one larger reference model with fixed prompts and perturbation
+  tests.
+- Audit unsupported claims, provenance retention, uncertainty preservation, and label
+  stability.
+- Keep pheromone/dynamic compression and low-resource symbolic testbeds as roadmap,
+  not first-paper scope.
+source:
+- expert-review-packets/2026-06-01-kg-compression-slm/07_expert_review_response.md
+- expert-review-packets/2026-06-01-kg-compression-slm/08_decision_record.md
+- expert-review-packets/2026-06-01-kg-compression-slm/09_data_benchmark_experiment_review.md
+- expert-review-packets/2026-06-01-kg-compression-slm/10_experiment_design_record.md
+- expert-review-packets/2026-06-01-kg-compression-slm/11_expert_second_narrowing_review.md
+- expert-review-packets/2026-06-01-kg-compression-slm/12_narrowed_pilot_plan.md
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 12
+  evidence_support_score: 12/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 7
+  feasibility_score: 7/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 89/100
+maturity_level: execution_ready
+maturity_action: generate experiment plan
+normalization_status: validated

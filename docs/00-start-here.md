@@ -13,6 +13,7 @@ Use this repo when an idea needs more thinking room than a daily note.
 | Idea may become a project | Create `projects-ready/YYYY-MM-DD-project-slug.md` |
 | Idea may become a paper | Use `docs/paper-writing-engineering-process.md` before drafting |
 | Idea is an evidence-provenance / RAG trust paper line | Check `docs/synthetic-consensus-research-line.md` and the `idea_000023`-`idea_000026` cluster |
+| Idea is about Decision Atoms, ontology, evidence packets, PB-EGP, or Support-Transfer Validation | Route through `projects-ready/2026-06-01-provenance-attends-to-evidence.md` and the existing `../paper-3-provenance-attends-to-evidence` repo before considering any new repo |
 | Personal/admin record needs structured retrieval | Keep a redacted summary in `docs/personal-admin/`; keep raw private files in `~/system-hub/admin/inventory/`; sync only deadline/status to planning |
 | Project is real | Move execution into a new standalone repo |
 | Lesson is reusable | Promote a distilled note into `planning-everything-track/data/knowledge/` |
