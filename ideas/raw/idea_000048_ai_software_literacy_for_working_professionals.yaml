@@ -1,0 +1,70 @@
+id: idea_000048
+title: "在職初學者的 AI 輔助軟體開發素養"
+created_at: 2026-09-22
+type: hypothesis
+tags:
+  - education
+  - software-literacy
+  - ai-assisted-development
+  - working-professionals
+status: raw
+problem_statement:
+  raw: "如何讓零基礎、工作繁忙且課後練習時間有限的在職學生，理解軟體並使用AI製作、修改及驗收工作小工具？"
+  normalized: "在低先備、有限練習時間及資料保密限制下，提升學生定義需求、讀懂程式、測試與修復小工具的獨立能力。"
+  structure:
+    given: "Jason的TA現場觀察；尚無班級需求量化調查"
+    optimize: "學生在有限時間內可解釋、修改與驗收的小工具能力"
+    constraints:
+      - "零或低程式基礎"
+      - "工作與課務負荷"
+      - "設備與AI費用"
+      - "使用合成資料"
+      - "不承諾零練習即可熟練"
+summary: "Jason倡議程式設計與軟體系統架構基礎實作課，培養低先備執法人員讀碼、需求、AI協作、驗收與交接能力。18週A／B候選的時數、課外負擔與評量仍待比較；未核定、未排程。"
+assumptions:
+  - "語法之外的需求拆解、程式閱讀與驗收是重要瓶頸，待小型任務診斷。"
+  - "螺旋式專案教學可能比先完整講授工程理論更適合此群體，尚未有比較結果。"
+  - "8至10週及課後30至60分鐘為設計候選，並非已證實可行。"
+  - "3學分18週、每週3節且約三分之二課內操作，為最新完整學期候選；課外15至20分鐘是建議。先前8至10週／課外30至60分鐘保留為替代歷史，均未驗證可行性。"
+  - "後續B方案為每週3小時、課後1至2小時及20／20／40／20評量；與A方案每週3節、課後15至20分鐘及40／20／30／10不同，兩者待比較，沒有默認採用較高負擔。"
+evidence:
+  - "Jason於2026-09-22明確回報今天擔任TA及提出現場心得。"
+  - "所附既有分析為討論素材，未確認逐句作者；課程來源另做2026-09-22官方頁面查核。"
+  - "9/22 21:40–21:45顧同學提供委託程式開發者依辦案流程製作的小工具案例；自述單位使用與線下操作。已被動讀取兩頁HTML及作品集JSON，未測試功能或法律適用。"
+  - "9/22 Jason明確提出增設課名、低先備執法人員對象與Codex／Claude Code開發小工具目標；所附18週草案是待議設計。官方招生頁確認專班全名與系統性資通訊教育宗旨，未證明班級多數人的背景比例。"
+  - "9/22再次提供心得及PRIMM／CSV課程變體；保存為B候選，PRIMM與Python官方教材受眾已查核，尚無本專班試教成效。"
+baseline:
+  - "既有Python微學分課程"
+  - "OCW自主學習"
+  - "既有課程加一個工程／AI驗收橋接單元"
+  - "完整新課提案"
+metrics:
+  - "是否能說明輸入／輸出、找到資料路徑、發現植入錯誤並測試修正"
+  - "首次成功耗時、教師介入次數、課後負擔與隔次保留能力"
+insights:
+  - "9/22補充：先建立可驗證小工具能力，再銜接資料分析與統計判讀，依需求進入資料探勘／ML／DL；AI用途與限制可提早教，路徑依實作診斷分流。"
+  - "核心主張為把工作需求轉成可驗收工具；不以程式行數、代理產量或語法背誦替代學習證據。"
+connections: []
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity: {}
+maturity_score: 0/100
+maturity_level: raw
+next_steps:
+  - "未排程：以課前合成資料實作診斷確認程式、資料與工程瓶頸，讓具備能力者進階或免修；課方先決定正式銜接課或既有課程基礎實作時段及支援容量。"
+  - "未排程：先確認學員可用課外時間、3節與3小時的課務定義、個人讀碼可否使用AI及評量方案，再與課方決定是否採四次小規模試教；現有觀察不提高成熟度或新增工時。"
+source:
+  - ideas/2026-09-22-foundations-before-model-courses.md
+  - "2026-09-22使用者提供的TA心得與所附課程分析"
+  - ideas/2026-09-22-ai-software-literacy-for-working-professionals.md
+  - ideas/2026-09-22-ai-software-literacy-source-check.md
+  - ../nycu-115-1-coursework/cscm30018/reflections/2026-09-22-working-students-software-literacy.md
+  - ideas/2026-09-22-police-workflow-tools-teaching-case.md
+  - ../nycu-115-1-coursework/cscm30018/coordination/2026-09-22-gu-workflow-tools/notes.md
+  - ideas/2026-09-22-programming-software-systems-course-draft.md
+  - ideas/2026-09-22-programming-course-official-sources.md
+  - ideas/2026-09-22-programming-course-primm-variant.md
+maturity_action: "include in graph and clustering"
+capture_note: "發布前核對遠端，原暫用idea_000044與遠端研究構想衝突，改用idea_000048並更新本次全部引用；成熟度0/100表示尚未評估；raw是收件狀態，Planning parked表示本週不排執行。new_idea CLI受既有YAML解析錯誤阻塞，本筆沿用store模板／序列化，ID以全庫明示id欄位核對。"
