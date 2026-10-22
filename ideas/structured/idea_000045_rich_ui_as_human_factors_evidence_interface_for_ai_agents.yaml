@@ -1,0 +1,255 @@
+id: idea_000045
+title: Rich UI as human-factors evidence interface for AI agents
+created_at: '2026-06-09'
+type: hypothesis
+tags:
+- rich-ui
+- ai-native-design
+- human-factors
+- cognitive-load
+- evidence-traceability
+- medical-ux
+- staff-review
+- clinical-intake
+- asr
+- trustworthy-ai
+- interaction-design
+- decision-support
+status: execution_ready
+problem_statement:
+  raw: Rich UI is more than visual decoration; in AI agent, medical intake, and ASR-supported
+    systems, richer interface components may directly improve user comprehension,
+    evidence traceability, staff-review speed, and trust calibration compared with
+    plain text or raw JSON outputs.
+  normalized: Given AI agent workflows that currently expose important state through
+    plain text, chat transcripts, JSON, or linear summaries, optimize a Rich UI evidence
+    interface that combines text, cards, timelines, charts, buttons, maps, media,
+    and trace components under constraints of cognitive load, clinical safety, auditability,
+    accessibility, staff-review burden, privacy, latency, and claim-evidence alignment.
+  structure:
+    given: AI agent, medical intake, and ASR-supported workflows that need human review
+      and user understanding
+    optimize: a Rich UI layer that improves comprehension, decision speed, evidence
+      traceability, and trust calibration
+    constraints:
+    - cognitive load
+    - clinical safety
+    - staff-review workflow
+    - evidence traceability
+    - accessibility
+    - privacy and consent boundaries
+    - latency and implementation cost
+    - claim-evidence alignment
+summary: 'Rich UI should be treated as an evidence and action interface, not only
+  as a prettier presentation layer. The important capability is turning AI outputs
+  into inspectable objects: symptom timelines, vital-sign trends, risk-factor cards,
+  question-flow graphs, staff-review summaries, uncertainty badges, and evidence traces.
+  In medical intake and ASR workflows, this interface can lower cognitive load, improve
+  reading speed, encourage completion, reduce operational errors, and make model reasoning
+  reviewable without asking users to parse raw JSON or long chat text.'
+source_note_zh: 這次想法的核心是把 Rich UI 視為 AI 系統的人因工程與 evidence interface。重點不是「畫面比較漂亮」，
+  而是讓使用者、醫護人員、reviewer 可以更快看到狀態、風險、下一步、證據來源與不確定性。對動態問診、ASR 研究、AI Agent 來說，Rich UI
+  可能比模型能力本身更直接影響使用者感受到的可信度、可解釋性與工作效率。
+first_principle:
+  scarce_resource: human attention during review and decision support
+  core_question: Which interface objects make an AI system's evidence, uncertainty,
+    and next action faster to inspect than plain text or JSON?
+  not_the_core:
+  - adding decorative cards without changing decision quality
+  - replacing clinical judgment with visually persuasive summaries
+  - maximizing animation or media richness
+  - hiding uncertainty behind polished presentation
+  - treating Rich UI as a landing-page aesthetic problem
+  reusable_rule: Design Rich UI as attention routing plus evidence packaging; every
+    component should make one decision, trace, uncertainty, or next action easier
+    to inspect.
+  smallest_next_test: Convert one dynamic medical-intake summary from plain JSON/text
+    into a Rich UI mockup with symptom timeline, risk-factor cards, staff-review summary,
+    and evidence trace, then compare review speed and error detection against the
+    text baseline.
+  kill_condition: Park the idea if Rich UI improves perceived polish but does not
+    improve review speed, field completion, trace inspection, or error detection in
+    a small controlled task.
+assumptions:
+- Users understand multi-part information faster when it is grouped into stable visual
+  objects such as cards, tables, timelines, charts, and action buttons.
+- Medical staff need quick evidence inspection more than another paragraph-style AI
+  answer.
+- Patient-facing intake can improve completion willingness when questions, progress,
+  and reason-for-asking are visible in a low-cognitive-load interface.
+- ASR and agent systems need trace components that expose transcript, model interpretation,
+  uncertainty, confirmation question, and reviewer action.
+- Rich UI can increase trustworthiness only when it keeps uncertainty and evidence
+  visible instead of making weak outputs look authoritative.
+- A small static or interactive prototype can test human-factors value before building
+  a full production UI.
+evidence:
+- '2026-06-09 user idea: Rich UI combines text, images, cards, charts, buttons, and
+  interactive components so users can get more information without leaving the page.'
+- '2026-06-09 user idea: examples include weather cards, stock charts, sports scores,
+  maps, restaurant cards, product cards, calculators, math visualization, and image
+  carousels.'
+- '2026-06-09 user idea: human-factors benefits include lower cognitive load, faster
+  information absorption, lower reading cost, more exploration willingness, and lower
+  operation error rate.'
+- '2026-06-09 user idea: for AI agents, medical intake systems, and ASR research,
+  Rich UI affects clinician reading speed, patient answer willingness, agent explainability,
+  evidence traceability, and decision trustworthiness.'
+- '2026-06-09 user idea: dynamic medical-intake systems should expose symptom timelines,
+  vital-sign trends, risk-factor cards, question-flow graphs, staff-review summary
+  cards, and evidence traces rather than only JSON or text questions.'
+- Existing idea_000042 provides a UI reverse-engineering method for converting strong
+  visual interfaces into deterministic implementation specs.
+- Existing idea_000001 and idea_000040 define medical triage and ASR-review contexts
+  where uncertainty, transcript evidence, confirmation, and staff review are core
+  product behaviors.
+baseline:
+- Plain text answer or chat transcript only.
+- Raw JSON output shown directly to staff or patients.
+- Linear staff summary with no visible evidence trace.
+- Form UI that asks questions without showing progress, risk rationale, or review
+  status.
+- Dashboard decoration that adds cards and icons but does not expose uncertainty,
+  provenance, or next action.
+metrics:
+- Review time for staff to identify the next safe action.
+- Error-detection rate when the AI summary contains an incorrect field or ASR drift.
+- Patient completion rate and drop-off point in intake flow.
+- Number of clarification turns needed to resolve uncertainty.
+- 'Trace inspection completeness: whether reviewer can find source answer, transcript,
+  model interpretation, uncertainty, and reviewer action.'
+- Cognitive-load rating after the task.
+- 'Miscalibrated trust rate: cases where visual polish causes users to accept weak
+  or unsupported outputs.'
+- Accessibility checks for text size, color contrast, keyboard interaction, and mobile
+  layout.
+insights:
+- Rich UI is an information architecture for human attention, not a skin over model
+  output.
+- 'The valuable unit is a decision object: a card, timeline item, graph node, or trace
+  row that answers one review question.'
+- Evidence traceability should be visible at the same layer as the recommendation,
+  because hidden provenance increases reviewer burden.
+- In clinical UI, calm presentation and visible uncertainty need to coexist.
+- 'The interface can become the audit surface: source, model interpretation, confidence,
+  confirmation, and staff action can be inspectable without opening logs.'
+- Human-factors value can be tested with small controlled tasks before model changes.
+connections:
+- idea_000001
+- idea_000032
+- idea_000034
+- idea_000040
+- idea_000042
+connection_notes:
+- id: idea_000001
+  relation: medical_triage_interface
+  note: Healthcare triage needs rich review surfaces for symptom timelines, uncertainty,
+    and staff-review action.
+- id: idea_000032
+  relation: assurance_surface
+  note: AI system assurance needs user-facing provenance, uncertainty, and review
+    state instead of hidden logs only.
+- id: idea_000034
+  relation: urology_product_ui
+  note: Urology follow-up workflows can use cards, question flow, and staff summaries
+    to reduce patient and staff burden.
+- id: idea_000040
+  relation: asr_traceability
+  note: ASR decision stability work needs visual traces for transcript, semantic interpretation,
+    disagreement, and confirmation.
+- id: idea_000042
+  relation: design_method
+  note: The UI reverse-engineering framework can convert this Rich UI thesis into
+    deterministic implementation prompts and screenshot-tested prototypes.
+role: idea
+value:
+  impact: high
+  feasibility: high
+  novelty: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 9
+  evidence_support_score: 9/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 15
+  feasibility_score: 15/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 92/100
+maturity_level: execution_ready
+rich_ui_component_hypotheses:
+- component: symptom_timeline
+  decision_value: Helps staff see onset, progression, and missing time anchors.
+  risk_control: Keeps patient-entered evidence separate from inferred chronology.
+- component: vital_sign_trend
+  decision_value: Makes numeric change and threshold crossing easier to inspect than
+    prose.
+  risk_control: Requires source labels and measurement-time visibility.
+- component: risk_factor_cards
+  decision_value: Groups risk signals into inspectable factors instead of burying
+    them in a paragraph.
+  risk_control: Shows missing or patient-denied factors explicitly when clinically
+    relevant.
+- component: question_flow_graph
+  decision_value: Shows why the agent asked the next question and where uncertainty
+    remains.
+  risk_control: Prevents the flow from looking like a diagnosis path by labeling it
+    as intake support.
+- component: staff_review_summary_card
+  decision_value: Gives clinicians a compact next-action surface.
+  risk_control: Includes uncertainty, source evidence, and review action rather than
+    final autonomous judgment.
+- component: evidence_trace_panel
+  decision_value: Lets reviewers inspect source answer, transcript, model interpretation,
+    and confirmation state.
+  risk_control: Supports audit without exposing sensitive raw data beyond the approved
+    review context.
+pressure_tests:
+- name: Medical intake review speed test
+  setting: A staff reviewer compares two synthetic patient intake cases, one rendered
+    as plain text or JSON and one rendered as Rich UI.
+  expected_failure_mode: The rich version looks polished but staff still miss an incorrect
+    symptom, missing vital sign, or unsafe next action.
+  smallest_observable_test: Create 6 synthetic cases with seeded errors and measure
+    time-to-first-safe-action plus seeded-error detection across plain and rich formats.
+  metric_or_decision: Continue only if Rich UI improves review speed or error detection
+    without increasing miscalibrated trust.
+- name: ASR disagreement trace test
+  setting: A noisy short-answer intake flow has a transcript hypothesis, a direct-audio
+    semantic hypothesis, and a disagreement gate.
+  expected_failure_mode: The UI hides the disagreement and users trust the polished
+    summary instead of confirming the symptom.
+  smallest_observable_test: Build a trace panel for 10 synthetic ASR-drift examples
+    and ask reviewers to identify the correct confirmation action.
+  metric_or_decision: Keep the pattern only if reviewers can locate transcript, interpretation,
+    uncertainty reason, and next confirmation action within a preset time.
+- name: Patient completion burden test
+  setting: A patient-facing previsit form asks adaptive symptom questions on mobile.
+  expected_failure_mode: Rich components create more scrolling, distraction, or anxiety
+    than a direct question flow.
+  smallest_observable_test: Compare a simple text form with a rich adaptive form on
+    5 synthetic tasks and collect completion time, drop-off point, and cognitive-load
+    rating.
+  metric_or_decision: Use Rich UI only for components that improve completion or clarity
+    without increasing anxiety or abandonment.
+next_steps:
+- Draft a one-page Rich UI evidence-interface checklist for AI agent and medical-intake
+  surfaces.
+- Build a static prototype comparing plain JSON/text summary against symptom timeline,
+  risk-factor cards, staff-review summary, and evidence trace.
+- Define a small synthetic task set with seeded ASR drift and missing-field errors.
+- Measure review speed, seeded-error detection, trace inspection completeness, and
+  miscalibrated trust.
+- Connect the checklist back to the UI reverse-engineering prompt contract in idea_000042.
+source:
+- conversation
+normalization_status: validated
+maturity_action: generate experiment plan
