@@ -140,6 +140,7 @@ connections:
 - idea_000034
 - idea_000040
 - idea_000042
+- idea_000048
 connection_notes:
 - id: idea_000001
   relation: medical_triage_interface

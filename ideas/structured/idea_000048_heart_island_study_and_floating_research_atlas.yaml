@@ -1,0 +1,110 @@
+id: idea_000048
+title: Heart Island study and floating research atlas
+created_at: '2026-10-22'
+type: concept
+tags:
+- ui-reverse-engineering
+- frontend-learning
+- evidence-traceability
+- threejs
+- personal-website
+status: structured
+problem_statement:
+  raw: Jason wants a detailed study of HEART Island and a personal floating-island
+    site, with a Notion/Kairos-inspired readable homepage.
+  normalized: Given an existing public SvelteKit portfolio and visitors with limited
+    attention, optimize evidence-backed discovery through a readable homepage and
+    optional floating-island view under constraints of mobile performance, accessibility,
+    public-only content and low maintenance.
+  structure:
+    given: an existing public SvelteKit portfolio and visitors with limited attention
+    optimize: evidence-backed discovery through a readable homepage and optional floating-island
+      view
+    constraints:
+    - mobile performance
+    - accessibility
+    - public-only content
+    - low maintenance
+summary: 已完成原站公開前端分析與個人懸浮六島設計筆記；採首頁閱讀入口加 /islands/，網站實作與發布尚未啟動。
+assumptions:
+- Six thematic islands may improve orientation; this is not yet a measured usability
+  result.
+- The existing public content can supply initial exhibits after freshness review.
+evidence:
+- 2026-10-22 user selected personal research islands, fantasy miniature floating islands,
+  and a teaching-plus-engineering note structure.
+- 'Public source snapshot hashes and ID-reference checks: ideas/2026-10-22-heart-island-floating-research-atlas/source-manifest.json'
+- 'Browser observation: traffic topic, school-zone detail, F6 relation and YouBike
+  search; desktop and 390x844 viewport.'
+- Existing website package and content inspected; no website build or code change
+  performed.
+baseline:
+- Current text-first portfolio homepage and direct research/project/teaching links.
+metrics:
+- Visitor can reach a public work detail through either text or 3D without losing
+  contribution/status context.
+- Frame-time and lifecycle budgets are defined in the engineering spec and remain
+  unmeasured.
+insights:
+- A single public content source should drive both readable lists and spatial exhibits.
+- Floating parent groups require anchors, labels and routes to share a consistent
+  transform.
+connections:
+- idea_000042
+- idea_000045
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 8
+  testability_score: 8/15
+  evidence_support: 6
+  evidence_support_score: 6/15
+  connection_strength: 7
+  connection_strength_score: 7/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 4
+  feasibility_score: 4/15
+  research_potential: 5
+  research_potential_score: 5/10
+maturity_score: 65/100
+maturity_level: research_candidate
+next_steps:
+- 審閱首頁與三筆公開內容映射；另行啟動網站三島切片，不自動排程。
+source:
+- ideas/2026-10-22-heart-island-floating-research-atlas/01-source-and-evidence.md
+- https://puma.taipei/heart-island
+- https://learn.cs-kairos.com/
+maturity_action: evaluate cluster readiness
+first_principle:
+  scarce_resource: visitor attention, public trust and maintenance time
+  canonical_home: brainstorming-lab owns research and design; JasonLn0711.github.io
+    owns future implementation
+  next_gate: Review homepage first screen and three public content mappings before
+    activating a three-island slice
+  scope_control: documentation complete; website implementation and publication not
+    activated
+companion_note: ideas/2026-10-22-heart-island-floating-research-atlas/README.md
+activation_status: exploration_only
+implementation_status: not_started
+publication_status: not_published
+pressure_test:
+  setting: A first-time visitor using a narrow phone screen needs to find one research
+    contribution and one project evidence link.
+  expected_failure: Overlapping labels, panels or camera motion hide content and delay
+    reading.
+  smallest_test: After separate implementation activation, compare the same two retrieval
+    tasks in the text list and three-island slice.
+  decision: Keep 3D optional; simplify or park it if users cannot complete the tasks
+    or device budgets fail.
+  status: not_run
+normalization_status: validated
+status_basis: User adopted a documented design direction. Automated maturity_level=research_candidate
+  is a heuristic; keep lifecycle structured and activation_status=exploration_only
+  until a separate implementation decision.

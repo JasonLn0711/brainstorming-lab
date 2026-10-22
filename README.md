@@ -10,6 +10,13 @@ It turns loose thinking into computable idea records:
 raw ideas -> structured ideas -> clusters -> research candidates -> execution bridge -> feedback -> improved ideas
 ```
 
+## Website architecture study
+
+[HEART Island study and Jason floating research atlas](ideas/2026-10-22-heart-island-floating-research-atlas/README.md)
+contains the public-source architecture analysis, teaching notes, a Kairos-inspired
+homepage design, and the six-island concept (`idea_000048`, 2026-10-22).
+Website implementation remains unactivated in the existing portfolio repo.
+
 ## First Principle
 
 Ideas are data, not only text.
