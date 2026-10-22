@@ -1,0 +1,133 @@
+{
+  "scope": "public client resources; local reference-cache is git-ignored; hashes identify exact observed bytes, not deployment history",
+  "resources": [
+    {
+      "file": "index.html",
+      "url": "https://puma.taipei/heart-island",
+      "retrieved_at": "2026-10-22T12:26:38.267251+00:00",
+      "bytes": 9765,
+      "lines": 37,
+      "sha256": "16941eee9628470a8408c9ac21cb335158a85c2b4fac7f63e86dde69a8bf02ef"
+    },
+    {
+      "file": "app.js",
+      "url": "https://puma.taipei/heart-island-assets/app.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:38.407211+00:00",
+      "bytes": 112050,
+      "lines": 2177,
+      "sha256": "0f45160cf0c740c3bd602b13ac8441c79a866d3a17b2e7833cf7b18e1d5d143f"
+    },
+    {
+      "file": "ui.css",
+      "url": "https://puma.taipei/heart-island-assets/ui.css?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:38.163585+00:00",
+      "bytes": 56250,
+      "lines": 1539,
+      "sha256": "9f230eb2cdf6451e6146e0c1ee441a9c420d2a3576461ef3833100707acaf149"
+    },
+    {
+      "file": "policies.json",
+      "url": "https://puma.taipei/heart-island-assets/policies.json?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:38.457062+00:00",
+      "bytes": 159069,
+      "lines": 6153,
+      "sha256": "de4a6aa30671691c94c0eec78970dcbe8e087dbb4706d3c2ea820d81fd9bb66f"
+    },
+    {
+      "file": "kit.js",
+      "url": "https://puma.taipei/heart-island-assets/kit.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:38.593600+00:00",
+      "bytes": 6362,
+      "lines": 133,
+      "sha256": "5b06281db1fa5c7699382bc23201a9e6d9ec2f22c182c6694d814afd5244ad53"
+    },
+    {
+      "file": "scene-models.js",
+      "url": "https://puma.taipei/heart-island-assets/scene-models.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:38.717303+00:00",
+      "bytes": 32158,
+      "lines": 674,
+      "sha256": "0d2a6b55397b0aaa9f5afa774ce0e980b707954481e0341ccac9c60eaef0f933"
+    },
+    {
+      "file": "models-extra.js",
+      "url": "https://puma.taipei/heart-island-assets/models-extra.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:38.859607+00:00",
+      "bytes": 38257,
+      "lines": 676,
+      "sha256": "34150ebf0ee1b73c48ddd30fd3433e995c2381de71a6563fa0c584c9ff19d00f"
+    },
+    {
+      "file": "world.js",
+      "url": "https://puma.taipei/heart-island-assets/world.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:38.902333+00:00",
+      "bytes": 26996,
+      "lines": 704,
+      "sha256": "aed714971c1bfe116eaa1c7915b5ba8b681e4994e55bee4c179496d655a7b602"
+    },
+    {
+      "file": "environment.js",
+      "url": "https://puma.taipei/heart-island-assets/environment.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:39.032945+00:00",
+      "bytes": 25383,
+      "lines": 557,
+      "sha256": "0917a46c13746767a5359d0a43299abc782142456eda9a231c0066afe3db86eb"
+    },
+    {
+      "file": "people.js",
+      "url": "https://puma.taipei/heart-island-assets/people.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:39.162969+00:00",
+      "bytes": 34092,
+      "lines": 749,
+      "sha256": "6d9a89368628f4e99596375f20f6a5963d291dad3705f50b0c5f7b1c95bb1de4"
+    },
+    {
+      "file": "decor.js",
+      "url": "https://puma.taipei/heart-island-assets/decor.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:39.433362+00:00",
+      "bytes": 72982,
+      "lines": 1431,
+      "sha256": "0be29f34602bd2d939bf55eae1bb176fca3651ea66d85117d0cb54152a1ed43b"
+    },
+    {
+      "file": "decor-items.js",
+      "url": "https://puma.taipei/heart-island-assets/decor-items.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:39.329850+00:00",
+      "bytes": 12351,
+      "lines": 104,
+      "sha256": "7e26015c7bcf3fda853c0b35e58337d251ecf6436fed1c3e30dacbf06881ab04"
+    },
+    {
+      "file": "icons.js",
+      "url": "https://puma.taipei/heart-island-assets/icons.js?v=20261022-3",
+      "retrieved_at": "2026-10-22T12:26:39.458503+00:00",
+      "bytes": 2092,
+      "lines": 22,
+      "sha256": "656609c027a11c6565a5050c1456c1075ba0c62cb8f6f611225e3bde79effb77"
+    },
+    {
+      "file": "three.module.js",
+      "url": "https://puma.taipei/heart-island-assets/vendor/three/build/three.module.js",
+      "retrieved_at": "2026-10-22T12:26:40.309034+00:00",
+      "bytes": 1272972,
+      "lines": 53044,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "file": "kairos-index.html",
+      "url": "https://learn.cs-kairos.com/",
+      "retrieved_at": "2026-10-22T12:26:39.787469+00:00",
+      "bytes": 3100,
+      "lines": 1,
+      "sha256": "1f0b4144e4878f9e7e28f918bf547a65a22d1bc09a057d050553c361d44f5c72"
+    },
+    {
+      "file": "kairos-style.css",
+      "url": "https://learn.cs-kairos.com/style.css",
+      "retrieved_at": "2026-10-22T12:26:40.003364+00:00",
+      "bytes": 8394,
+      "lines": 6,
+      "sha256": "09f6fd0a960e5e6d48cfbb79c0e2ba85638a5a63bc6e9c21ed88e19b5cb07512"
+    }
+  ]
+}
