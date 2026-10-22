@@ -94,6 +94,12 @@ companion_note: ideas/2026-10-22-heart-island-floating-research-atlas/README.md
 activation_status: exploration_only
 implementation_status: not_started
 publication_status: not_published
+publication_scope: website implementation and deployment
+documentation_publication:
+  status: published
+  commit: e9c2a3150d2a11fd5fbe0ed5c6ea1aa534ebe0dc
+  remote_target: origin/main
+  verified_divergence: "0 0"
 pressure_test:
   setting: A first-time visitor using a narrow phone screen needs to find one research
     contribution and one project evidence link.
