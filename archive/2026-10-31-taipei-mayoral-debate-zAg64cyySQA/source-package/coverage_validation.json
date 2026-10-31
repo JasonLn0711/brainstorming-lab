@@ -1,0 +1,9 @@
+{
+  "covered_start": 1399,
+  "covered_end": 3653,
+  "segments": 2255,
+  "groups": 223,
+  "no_gaps_or_duplicates": true,
+  "evidence_paths_exist": true,
+  "scope": "Routing and evidence-gap identification only; not all claims verified; pre-event 1-1398 excluded"
+}

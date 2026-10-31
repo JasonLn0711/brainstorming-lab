@@ -1,0 +1,887 @@
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/icon.png">
+    <title>
+        &#x9053;&#x5B89;&#x7E3D;&#x52D5;&#x54E1;
+    </title>
+            <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrapMODA.min.css?v=VEgr8lRzTWpHn-SisNfhf98NujExspZC3KOhZsrfNSQ" />
+    <link rel="stylesheet" href="/lib/fontawesome-pro-5.5.0-web/css/all.min.css" />
+
+        
+        
+            <link rel="stylesheet" href="/css/site.min.css?v=q1UUFxxLdepRVUM9BXcdRF-Ez3B-weG9byOOKyzpT4E" />
+        
+
+            <script src="/lib/jquery/dist/jquery.min.js"></script>
+            <script src="/lib/jquery-cookie/jquery.cookie.min.js"></script>
+            <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="/lib/popper/popper.min.js"></script>
+            <script src="/lib/fontawesome-pro-5.5.0-web/js/all.min.js"></script>
+            <script src="/js/site.min.js?v=dRfK6J8-lU9to3gRyZk9V6e2jrkKKNJpvLo4I5N5dbQ"></script>
+
+    <script src="/lib/proj4/proj4.js"></script>
+    <link href="/lib/openlayers/olModa.css" rel="stylesheet" />
+    <script src="/lib/openlayers/ol.js"></script>
+    <script src="/js/ycUtil.js?v=x9dkwwUQJFv8GZACA7ty6wi_i_JH7VEYw57t4b8t2Ho"></script>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <input id="hfUpdateDate" name="hfUpdateDate" type="hidden" value="115/10/27" />
+    <input id="hfBaseUrl" name="hfBaseUrl" type="hidden" value="" />
+    <input id="hfMaxYearMonth" name="hfMaxYearMonth" type="hidden" value="11508" />
+    <input id="hfBaseYear" name="hfBaseYear" type="hidden" value="112" />
+    <input id="hfMapMaxYearMonth" name="hfMapMaxYearMonth" type="hidden" value="11508" />
+    <input id="hfFastViewHasMonthStart" name="hfFastViewHasMonthStart" type="hidden" value="0" />
+    <input id="hfOnlinePeopleRefreshMinute" name="hfOnlinePeopleRefreshMinute" type="hidden" value="3" />
+    <input id="hfDashboardDataRange" name="hfDashboardDataRange" type="hidden" value="112-114&#x5E74;&#x3001;115&#x5E74;1-8&#x6708;&#x67E5;&#x8A62;&#x7D50;&#x679C;&#x70BA;&#x521D;&#x4F30;&#x503C;" />
+    <input id="hfNoMeaningValue" name="hfNoMeaningValue" type="hidden" value="-9999999999" />
+    <input id="hfShowAnnounce" name="hfShowAnnounce" type="hidden" value="" />
+    <input id="hfPwayYM" name="hfPwayYM" type="hidden" value="11508" />
+    <div id="wrapper">
+
+
+        <div>
+            <main role="main" class="pb-3">
+                <!-- Header -->
+                    <header id="header">
+                        <div class="inner text-center">
+                            <!-- Logo -->
+                            <a class="logo" href="/">
+                                <span class="symbol"><img src="/images/icon.png" alt="icon.png" /></span><h2 class="title">&#x9053;&#x5B89;&#x7E3D;&#x52D5;&#x54E1;</h2>
+                            </a>
+                            <!-- Nav -->
+                            <div class="text-center mt-3 mb-3 d-none d-sm-block">
+                                <a class=" btn btn-link collapsed bSubMenu btn-3D btn-danger border-custom mr-3" href="#collapseTopics" data-toggle="collapse" data-target="#collapseTopics" aria-expanded="false" aria-controls="collapseTopics">
+                                    <i class="fal fa-chart-area"></i> 主題分析
+                                    <span class="visually-hidden sr-only">主題分析</span>
+                                </a>
+                                <a class=" btn btn-3D btn-danger border-custom mr-3" href="/Dashboard/Custom?type=%E7%B5%B1%E8%A8%88%E5%BF%AB%E8%A6%BD"><i class="fal fa-newspaper"></i><span class="visually-hidden sr-only">統計快覽</span> 統計快覽</a>
+                                <a class="
+ btn btn-link collapsed bSubMenu btn-3D btn-danger border-custom mr-3" href="#collapseCityArea" data-toggle="collapse" data-target="#collapseCityArea" aria-expanded="false" aria-controls="collapseCityArea">                                <i class="fal fa-chart-bar"></i> 縣市鄉鎮與國道
+                                
+                            </a>
+                            <a class="
+ btn btn-link collapsed bSubMenu btn-3D btn-danger border-custom mr-3" href="#collapseTrend" data-toggle="collapse" data-target="#collapseTrend" aria-expanded="false" aria-controls="collapseTrend">                                <i class="fal fa-chart-area"></i> 趨勢分析
+                            </a>
+                            <a class="active btn btn-3D btn-danger border-custom mr-3" href="/AccLocCbi"><i class="fal fa-map"></i><span class="visually-hidden sr-only">肇事熱點</span> 肇事熱點</a>
+                            <a class=" btn btn-3D btn-danger border-custom mr-3" href="/SchoolHotSpots"><i class="fal fa-school"></i><span class="visually-hidden sr-only">學校周邊熱點</span> 學校周邊熱點</a>
+                        </div>
+
+                        <div id="ForMobile" class="text-center mb-1 d-block d-sm-none ">
+                            <a class="
+                                   btn btn-link collapsed bSubMenu btn-sm btn-white" href="#collapseTopics" data-toggle="collapse" data-target="#collapseTopics" aria-expanded="false" aria-controls="collapseTopics">
+                                <i class="fal fa-chart-area fa-3x"></i><br />
+                                <span class="d-none d-sm-block mt-1">主題分析<br />&nbsp;</span><span class="d-block d-sm-none mt-1">主&nbsp;&nbsp;題</span>
+                            </a>
+
+                            <a class=" btn btn-sm btn-white " href="/Dashboard/Custom?type=%E7%B5%B1%E8%A8%88%E5%BF%AB%E8%A6%BD">
+                                <i class="fal fa-newspaper fa-3x"></i><br />
+                                <span class="d-none d-sm-block mt-1">統計快覽<br />&nbsp;</span><span class="d-block d-sm-none mt-1">快&nbsp;&nbsp;覽</span>
+                            </a>
+                            <a class="
+ btn btn-link collapsed bSubMenu btn-sm btn-white" href="#collapseCityArea" data-toggle="collapse" data-target="#collapseCityArea" aria-expanded="false" aria-controls="collapseCityArea">                                <i class="fal fa-chart-bar fa-3x"></i> <br />
+                                <span class="d-none d-sm-block mt-1">鄕鎮市區<br />與國道</span><span class="d-block d-sm-none mt-1">區&nbsp;&nbsp;域</span>
+                            </a>
+                            <a class="
+ btn btn-link collapsed bSubMenu btn-sm btn-white" href="#collapseTrend" data-toggle="collapse" data-target="#collapseTrend" aria-expanded="false" aria-controls="collapseTrend">                                <i class="fal fa-chart-area fa-3x"></i> <br />
+                                <span class="d-none d-sm-block mt-1">趨勢分析<br />&nbsp;</span><span class="d-block d-sm-none mt-1">趨&nbsp;&nbsp;勢</span>
+                            </a>
+                            <br class="TooSmall" />
+                            <a class="active btn btn-sm btn-white" href="/AccLocCbi">
+                                <i class="fal fa-map fa-3x"></i><br />
+                                <span class="d-none d-sm-block mt-1">肇事熱點<br />&nbsp;</span><span class="d-block d-sm-none mt-1">熱&nbsp;&nbsp;點</span>
+                            </a>
+                            <a class=" btn btn-sm btn-white" href="/SchoolHotSpots">
+                                <i class="fal fa-school fa-3x"></i><br />
+                                <span class="d-none d-sm-block mt-1">學校周邊<br />熱點</span><span class="d-block d-sm-none mt-1">學&nbsp;&nbsp;校</span>
+                            </a>
+                            </div>
+
+                        <div class="accordion mt-1" id="accordionSubMenu">
+                            <div id="collapseTopics" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSubMenu">
+                                <div class="d-sm-flex">
+                                    <div class="flex-fill accordion-border">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                年齡
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Ieok26&amp;type=%E5%85%92%E7%AB%A5(0-12%E6%AD%B2)">兒童(0-12)</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Ieok26&amp;type=%E5%B0%91%E5%B9%B4(13-17%E6%AD%B2)">少年(13-17)</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Ieok26&amp;type=%E5%B9%B4%E8%BC%95%E4%BA%BA(18-24%E6%AD%B2)">年輕(18-24)</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Ieok26&amp;type=%E6%88%90%E5%B9%B4%E4%BA%BA(25-64%E6%AD%B2)">成年(25-64)</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Ieok26&amp;type=%E9%AB%98%E9%BD%A1%E8%80%85(65%E6%AD%B2%E4%BB%A5%E4%B8%8A)">高齡者(65歲以上)</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Ieok26&amp;type=%E5%85%A8%E9%83%A8">全部</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-fill accordion-border">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                運具
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Age&amp;type=%E6%A9%9F%E8%BB%8A">機車</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Age&amp;type=%E8%A1%8C%E4%BA%BA">行人</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Age&amp;type=%E8%85%B3%E8%B8%8F%E8%87%AA%E8%A1%8C%E8%BB%8A">腳踏自行車</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Age&amp;type=%E9%9B%BB%E5%8B%95%E8%BC%94%E5%8A%A9%E8%87%AA%E8%A1%8C%E8%BB%8A">電動輔助自行車</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Age&amp;type=%E5%BE%AE%E5%9E%8B%E9%9B%BB%E5%8B%95%E4%BA%8C%E8%BC%AA%E8%BB%8A">微型電動二輪車</a></li>
+                                                    <li class="list-group-item"><a href="/AccCauseOrder?type=%E5%A4%A7%E5%9E%8B%E8%BB%8A%E6%B6%89%E5%85%A5%E6%A1%88%E4%BB%B6">大型車案件</a></li>
+                                                    <li class="list-group-item"><a href="/AccCauseOrder?type=%E5%A4%A7%E5%9E%8B%E8%BB%8A%E5%B7%A6%E5%8F%B3%E8%BD%89">大型車左右轉</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-fill accordion-border">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                其他
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item"><a href="/AccAgeI26CauseOrder?type=%E8%82%87%E5%9B%A0%E5%88%86%E6%9E%90">肇因分析</a></li>
+                                                    <li class="list-group-item"><a href="/AccOrder?Order=Ieok09&amp;type=%E4%BA%8B%E6%95%85%E4%BD%8D%E7%BD%AE">事故位置</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseCityArea" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSubMenu">
+                                <div class="d-sm-flex">
+                                    <div class="flex-fill accordion-border">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                統計圖
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item"><a href="/Dashboard/Custom?type=30%E6%97%A5%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B8">30日死亡人數</a></li>
+                                                    <li class="list-group-item"><a href="/Dashboard/Custom?type=%E7%B8%A3%E5%B8%82%E6%AF%8F%E5%8D%81%E8%90%AC%E4%BA%BA%E6%AD%BB(%E5%82%B7)%E6%95%B8">縣市每十萬人死(傷)數</a></li>
+                                                    <li class="list-group-item"><a href="/Dashboard/Custom?type=%E9%84%89%E9%8E%AE%E5%B8%82%E5%8D%80%E6%AF%8F%E5%8D%83%E4%BA%BA%E6%AD%BB(%E5%82%B7)%E6%95%B8">鄉鎮市區每千人死(傷)數</a></li>
+                                                    <li class="list-group-item"><a href="/Dashboard/Custom?type=%E8%BC%83%E4%B8%8A%E5%B9%B4%E5%90%8C%E6%9C%9F%E5%A2%9E%E6%B8%9B%E6%95%B8(%E7%8E%87)">較上年同期增減數(率)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-fill accordion-border">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                趨勢圖
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item"><a href="/Dashboard/Custom?type=%E6%AD%B7%E5%B9%B4%E6%AF%94%E8%BC%83">歷年比較</a></li>
+                                                    <li class="list-group-item"><a href="/Dashboard/Custom?type=%E8%BF%9112%E5%80%8B%E6%9C%88%E5%A2%9E%E6%B8%9B%E5%80%BC">近12個月增減值</a></li>
+                                                    <li class="list-group-item"><a href="/Dashboard/Custom?type=%E8%BF%9112%E5%80%8B%E6%9C%88%E5%90%8C%E6%9C%88%E6%AF%94%E8%BC%83">近12個月同月比較</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseTrend" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubMenu">
+                                <div class="accordion-border">
+                                    <div class="d-card card">
+                                        <div class="card-header">
+                                            趨勢分析
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="/Dashboard/Custom?type=%E8%BF%91%E4%BA%94%E5%B9%B4%E9%80%90%E6%9C%88%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B6%A8%E5%8B%A2">近五年逐月交通事故趨勢</a></li>
+                                                <li class="list-group-item"><a href="/Dashboard/Custom?type=%E8%BF%9112%E5%80%8B%E6%9C%8830%E6%97%A5%E6%AD%BB%E5%82%B7%E4%BA%BA%E6%95%B8%E8%B6%A8%E5%8B%A2%E5%9C%96">近12個月30日死傷人數趨勢圖</a></li>
+                                                <li class="list-group-item"><a href="/Dashboard/Custom?type=%E6%AF%8F%E6%9C%8830%E6%97%A5%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B8">每月30日死亡人數</a></li>
+                                                <li class="list-group-item"><a href="/Dashboard/Custom?type=%E7%B5%B1%E8%A8%88%E5%BF%AB%E8%A6%BD%E5%9C%96%E8%A1%A8">歷年趨勢</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row marquee-style marquee-background bg-light border border-grey mx-auto">
+                        <marquee class="col-lg-12" scrollamount="3.5" onmouseover="this.stop()" onmouseout="this.start()">
+                            <font style="color:#ff9933;"></font>
+                                <font>115年1-8月死亡 1,777人(每日 7.40人)，機車騎士死亡 1,055人，高齡者死亡 790人，路口事故死亡 769 人，酒駕事故死亡 76人，<span class='text-danger'>「路口慢看停，行人停看聽」</span></font>
+                        </marquee>
+                    </div>
+                </header>
+                
+
+
+<link href="/css/ycMaps.min.css?v=T8vLUKqBI4OL-EpWuW9uPJUK6qvQm7nqXCPNhX15id4" rel="stylesheet" />
+
+<script src="/lib/popper/popper.min.js"></script>
+<script src="/lib/popper/tooltip.min.js"></script>
+<script src="/lib/DataTables/DataTablesWithExporting.min.js"></script>
+
+
+    <script src="/js/Maps.min.js?v=mwVJTMKbEOCXGBj_m4mWCUMgdm5AfeMJREbP7WM7hN4"></script>
+    <script src="/js/AccCbisIndex.min.js?v=1-keWhpuZklVflm11uVctmBcG09JRPHBFW5Xylc6TO0"></script>
+    <link href="/css/AccCbisIndex.min.css?v=_6lmOndCevCRdYKX36mT18G0NExEQd2sna4DSD2rA-Y" rel="stylesheet" />
+
+<form action="/AccLocCbi" method="post">
+    <input id="hfMaxYear" name="hfMaxYear" type="hidden" value="115" />
+    <div id="main" class="container">
+        <div class="pl-3">
+            <div class="cond row">
+                <div class="col-lg-10">
+                    <div class="d-flex row flex-wrap">
+                        <div class="mr-1 mb-1">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">年度</div>
+                                </div>
+                                <select id="ddlCyear" name="ddlCyear" class="form-control" aria-label="年度"><option value="115">115&#x5E74;</option>
+<option value="114">114&#x5E74;</option>
+<option value="113">113&#x5E74;</option>
+<option value="112">112&#x5E74;</option>
+<option value="111">111&#x5E74;</option>
+<option value="110">110&#x5E74;</option>
+<option value="109">109&#x5E74;</option>
+<option value="108">108&#x5E74;</option>
+<option value="107">107&#x5E74;</option>
+<option value="106">106&#x5E74;</option>
+</select>
+                            </div>
+                        </div>
+                        <div class="mr-1 mb-1 d-none">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">月份</div>
+                                </div>
+                                <select id="ddlMonth" name="ddlMonth" class="form-control" aria-label="月份"><option value="ALL">&#x5168;&#x90E8;</option>
+<option value="01">01&#x6708;</option>
+<option value="02">02&#x6708;</option>
+<option value="03">03&#x6708;</option>
+<option value="04">04&#x6708;</option>
+<option value="05">05&#x6708;</option>
+<option value="06">06&#x6708;</option>
+<option value="07">07&#x6708;</option>
+<option value="08">08&#x6708;</option>
+<option value="09">09&#x6708;</option>
+<option value="10">10&#x6708;</option>
+<option value="11">11&#x6708;</option>
+<option value="12">12&#x6708;</option>
+</select>
+                            </div>
+                        </div>
+                        <div class="mr-1 mb-1">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">縣市</div>
+                                </div>
+                                <select id="ddlCity" name="ddlCity" class="form-control" aria-label="權責單位"><option value="&#x57FA;&#x9686;&#x5E02;">&#x57FA;&#x9686;&#x5E02;</option>
+<option selected="selected" value="&#x81FA;&#x5317;&#x5E02;">&#x81FA;&#x5317;&#x5E02;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;">&#x65B0;&#x5317;&#x5E02;</option>
+<option value="&#x6843;&#x5712;&#x5E02;">&#x6843;&#x5712;&#x5E02;</option>
+<option value="&#x65B0;&#x7AF9;&#x5E02;">&#x65B0;&#x7AF9;&#x5E02;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;">&#x65B0;&#x7AF9;&#x7E23;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;">&#x82D7;&#x6817;&#x7E23;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;">&#x81FA;&#x4E2D;&#x5E02;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;">&#x5F70;&#x5316;&#x7E23;</option>
+<option value="&#x5357;&#x6295;&#x7E23;">&#x5357;&#x6295;&#x7E23;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;">&#x96F2;&#x6797;&#x7E23;</option>
+<option value="&#x5609;&#x7FA9;&#x5E02;">&#x5609;&#x7FA9;&#x5E02;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;">&#x5609;&#x7FA9;&#x7E23;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;">&#x81FA;&#x5357;&#x5E02;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;">&#x9AD8;&#x96C4;&#x5E02;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;">&#x5C4F;&#x6771;&#x7E23;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;">&#x5B9C;&#x862D;&#x7E23;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;">&#x82B1;&#x84EE;&#x7E23;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;">&#x81FA;&#x6771;&#x7E23;</option>
+<option value="&#x6F8E;&#x6E56;&#x7E23;">&#x6F8E;&#x6E56;&#x7E23;</option>
+<option value="&#x91D1;&#x9580;&#x7E23;">&#x91D1;&#x9580;&#x7E23;</option>
+<option value="&#x9023;&#x6C5F;&#x7E23;">&#x9023;&#x6C5F;&#x7E23;</option>
+</select>
+                            </div>
+                        </div>
+                        <div class="mr-1 mb-1">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">鄉鎮市區</div>
+                                </div>
+                                <select id="ddlArea" name="ddlArea" class="form-control" aria-label="鄉鎮市區"><option value="ALL">&#x5168;&#x90E8;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x6210;&#x529F;&#x93AE;">&#x81FA;&#x6771;&#x7E23;|&#x6210;&#x529F;&#x93AE;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x4F73;&#x51AC;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x4F73;&#x51AC;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x9EA5;&#x5BEE;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x9EA5;&#x5BEE;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x7DA0;&#x5CF6;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x7DA0;&#x5CF6;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x862D;&#x5DBC;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x862D;&#x5DBC;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x7530;&#x4E2D;&#x93AE;">&#x5F70;&#x5316;&#x7E23;|&#x7530;&#x4E2D;&#x93AE;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x793E;&#x982D;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x793E;&#x982D;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x7AF9;&#x7530;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x7AF9;&#x7530;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x842C;&#x4E39;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x842C;&#x4E39;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x4E09;&#x7063;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x4E09;&#x7063;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x5CE8;&#x7709;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x5CE8;&#x7709;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x5357;&#x5E84;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x5357;&#x5E84;&#x9109;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5357;&#x5C6F;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5357;&#x5C6F;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x70CF;&#x65E5;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x70CF;&#x65E5;&#x5340;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x592A;&#x4FDD;&#x5E02;">&#x5609;&#x7FA9;&#x7E23;|&#x592A;&#x4FDD;&#x5E02;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x4E2D;&#x57D4;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x4E2D;&#x57D4;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x756A;&#x8DEF;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x756A;&#x8DEF;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x6C34;&#x4E0A;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x6C34;&#x4E0A;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x54E1;&#x6797;&#x5E02;">&#x5F70;&#x5316;&#x7E23;|&#x54E1;&#x6797;&#x5E02;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x65D7;&#x6D25;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x65D7;&#x6D25;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5C0F;&#x6E2F;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5C0F;&#x6E2F;&#x5340;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x8607;&#x6FB3;&#x93AE;">&#x5B9C;&#x862D;&#x7E23;|&#x8607;&#x6FB3;&#x93AE;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x4E94;&#x7D50;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x4E94;&#x7D50;&#x9109;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x5B9C;&#x862D;&#x5E02;">&#x5B9C;&#x862D;&#x7E23;|&#x5B9C;&#x862D;&#x5E02;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x58EF;&#x570D;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x58EF;&#x570D;&#x9109;</option>
+<option value="&#x9023;&#x6C5F;&#x7E23;|&#x5357;&#x7AFF;&#x9109;">&#x9023;&#x6C5F;&#x7E23;|&#x5357;&#x7AFF;&#x9109;</option>
+<option value="&#x9023;&#x6C5F;&#x7E23;|&#x5317;&#x7AFF;&#x9109;">&#x9023;&#x6C5F;&#x7E23;|&#x5317;&#x7AFF;&#x9109;</option>
+<option value="&#x9023;&#x6C5F;&#x7E23;|&#x8392;&#x5149;&#x9109;">&#x9023;&#x6C5F;&#x7E23;|&#x8392;&#x5149;&#x9109;</option>
+<option value="&#x9023;&#x6C5F;&#x7E23;|&#x6771;&#x5F15;&#x9109;">&#x9023;&#x6C5F;&#x7E23;|&#x6771;&#x5F15;&#x9109;</option>
+<option value="&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x5BE7;&#x9109;">&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x5BE7;&#x9109;</option>
+<option value="&#x91D1;&#x9580;&#x7E23;|&#x70CF;&#x5775;&#x9109;">&#x91D1;&#x9580;&#x7E23;|&#x70CF;&#x5775;&#x9109;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x7F85;&#x6771;&#x93AE;">&#x5B9C;&#x862D;&#x7E23;|&#x7F85;&#x6771;&#x93AE;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x54E1;&#x5C71;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x54E1;&#x5C71;&#x9109;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x51AC;&#x5C71;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x51AC;&#x5C71;&#x9109;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x4E09;&#x661F;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x4E09;&#x661F;&#x9109;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x5927;&#x540C;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x5927;&#x540C;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x7AF9;&#x6771;&#x93AE;">&#x65B0;&#x7AF9;&#x7E23;|&#x7AF9;&#x6771;&#x93AE;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x65B0;&#x57D4;&#x93AE;">&#x65B0;&#x7AF9;&#x7E23;|&#x65B0;&#x57D4;&#x93AE;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x95DC;&#x897F;&#x93AE;">&#x65B0;&#x7AF9;&#x7E23;|&#x95DC;&#x897F;&#x93AE;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x6E56;&#x53E3;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x6E56;&#x53E3;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x828E;&#x6797;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x828E;&#x6797;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x6A6B;&#x5C71;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x6A6B;&#x5C71;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x5317;&#x57D4;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x5317;&#x57D4;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x5BF6;&#x5C71;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x5BF6;&#x5C71;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x5C16;&#x77F3;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x5C16;&#x77F3;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x4E94;&#x5CF0;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x4E94;&#x5CF0;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x82D7;&#x6817;&#x5E02;">&#x82D7;&#x6817;&#x7E23;|&#x82D7;&#x6817;&#x5E02;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x5353;&#x862D;&#x93AE;">&#x82D7;&#x6817;&#x7E23;|&#x5353;&#x862D;&#x93AE;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x5927;&#x6E56;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x5927;&#x6E56;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x516C;&#x9928;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x516C;&#x9928;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x9285;&#x947C;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x9285;&#x947C;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x982D;&#x5C4B;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x982D;&#x5C4B;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x4E09;&#x7FA9;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x4E09;&#x7FA9;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x897F;&#x6E56;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x897F;&#x6E56;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x9020;&#x6A4B;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x9020;&#x6A4B;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x7345;&#x6F6D;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x7345;&#x6F6D;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x6CF0;&#x5B89;&#x9109;">&#x82D7;&#x6817;&#x7E23;|&#x6CF0;&#x5B89;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x5F70;&#x5316;&#x5E02;">&#x5F70;&#x5316;&#x7E23;|&#x5F70;&#x5316;&#x5E02;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x548C;&#x7F8E;&#x93AE;">&#x5F70;&#x5316;&#x7E23;|&#x548C;&#x7F8E;&#x93AE;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x7DDA;&#x897F;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x7DDA;&#x897F;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x4F38;&#x6E2F;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x4F38;&#x6E2F;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x79C0;&#x6C34;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x79C0;&#x6C34;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x82B1;&#x58C7;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x82B1;&#x58C7;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x82AC;&#x5712;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x82AC;&#x5712;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x6EAA;&#x6E56;&#x93AE;">&#x5F70;&#x5316;&#x7E23;|&#x6EAA;&#x6E56;&#x93AE;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x6771;&#x77F3;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x6771;&#x77F3;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x5927;&#x6751;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x5927;&#x6751;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x57D4;&#x9E7D;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x57D4;&#x9E7D;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x57D4;&#x5FC3;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x57D4;&#x5FC3;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x6C38;&#x9756;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x6C38;&#x9756;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x4E8C;&#x6C34;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x4E8C;&#x6C34;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x4E8C;&#x6797;&#x93AE;">&#x5F70;&#x5316;&#x7E23;|&#x4E8C;&#x6797;&#x93AE;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x57E4;&#x982D;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x57E4;&#x982D;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x82B3;&#x82D1;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x82B3;&#x82D1;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x5927;&#x57CE;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x5927;&#x57CE;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x7AF9;&#x5858;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x7AF9;&#x5858;&#x9109;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x6EAA;&#x5DDE;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x6EAA;&#x5DDE;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x5357;&#x6295;&#x5E02;">&#x5357;&#x6295;&#x7E23;|&#x5357;&#x6295;&#x5E02;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x57D4;&#x91CC;&#x93AE;">&#x5357;&#x6295;&#x7E23;|&#x57D4;&#x91CC;&#x93AE;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x8349;&#x5C6F;&#x93AE;">&#x5357;&#x6295;&#x7E23;|&#x8349;&#x5C6F;&#x93AE;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x7AF9;&#x5C71;&#x93AE;">&#x5357;&#x6295;&#x7E23;|&#x7AF9;&#x5C71;&#x93AE;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x96C6;&#x96C6;&#x93AE;">&#x5357;&#x6295;&#x7E23;|&#x96C6;&#x96C6;&#x93AE;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x540D;&#x9593;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x540D;&#x9593;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x9E7F;&#x8C37;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x9E7F;&#x8C37;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x4E2D;&#x5BEE;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x4E2D;&#x5BEE;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x9B5A;&#x6C60;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x9B5A;&#x6C60;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x570B;&#x59D3;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x570B;&#x59D3;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x6C34;&#x91CC;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x6C34;&#x91CC;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x4FE1;&#x7FA9;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x4FE1;&#x7FA9;&#x9109;</option>
+<option value="&#x5357;&#x6295;&#x7E23;|&#x4EC1;&#x611B;&#x9109;">&#x5357;&#x6295;&#x7E23;|&#x4EC1;&#x611B;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x6597;&#x516D;&#x5E02;">&#x96F2;&#x6797;&#x7E23;|&#x6597;&#x516D;&#x5E02;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x6597;&#x5357;&#x93AE;">&#x96F2;&#x6797;&#x7E23;|&#x6597;&#x5357;&#x93AE;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x864E;&#x5C3E;&#x93AE;">&#x96F2;&#x6797;&#x7E23;|&#x864E;&#x5C3E;&#x93AE;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x897F;&#x87BA;&#x93AE;">&#x96F2;&#x6797;&#x7E23;|&#x897F;&#x87BA;&#x93AE;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x571F;&#x5EAB;&#x93AE;">&#x96F2;&#x6797;&#x7E23;|&#x571F;&#x5EAB;&#x93AE;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x5317;&#x6E2F;&#x93AE;">&#x96F2;&#x6797;&#x7E23;|&#x5317;&#x6E2F;&#x93AE;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x53E4;&#x5751;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x53E4;&#x5751;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x5927;&#x57E4;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x5927;&#x57E4;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x83BF;&#x6850;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x83BF;&#x6850;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x6797;&#x5167;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x6797;&#x5167;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x4E8C;&#x5D19;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x4E8C;&#x5D19;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x5D19;&#x80CC;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x5D19;&#x80CC;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x6771;&#x52E2;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x6771;&#x52E2;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x8912;&#x5FE0;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x8912;&#x5FE0;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x5143;&#x9577;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x5143;&#x9577;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x6C34;&#x6797;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x6C34;&#x6797;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x6734;&#x5B50;&#x5E02;">&#x5609;&#x7FA9;&#x7E23;|&#x6734;&#x5B50;&#x5E02;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x5927;&#x6797;&#x93AE;">&#x5609;&#x7FA9;&#x7E23;|&#x5927;&#x6797;&#x93AE;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x6C11;&#x96C4;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x6C11;&#x96C4;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x6EAA;&#x53E3;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x6EAA;&#x53E3;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x65B0;&#x6E2F;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x65B0;&#x6E2F;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x516D;&#x8173;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x516D;&#x8173;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x7FA9;&#x7AF9;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x7FA9;&#x7AF9;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x9E7F;&#x8349;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x9E7F;&#x8349;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x7AF9;&#x5D0E;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x7AF9;&#x5D0E;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x6885;&#x5C71;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x6885;&#x5C71;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x5927;&#x57D4;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x5927;&#x57D4;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x963F;&#x91CC;&#x5C71;&#x9109;">&#x5609;&#x7FA9;&#x7E23;|&#x963F;&#x91CC;&#x5C71;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x5C4F;&#x6771;&#x5E02;">&#x5C4F;&#x6771;&#x7E23;|&#x5C4F;&#x6771;&#x5E02;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x6F6E;&#x5DDE;&#x93AE;">&#x5C4F;&#x6771;&#x7E23;|&#x6F6E;&#x5DDE;&#x93AE;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x9577;&#x6CBB;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x9577;&#x6CBB;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x9E9F;&#x6D1B;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x9E9F;&#x6D1B;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x4E5D;&#x5982;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x4E5D;&#x5982;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x91CC;&#x6E2F;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x91CC;&#x6E2F;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x9E7D;&#x57D4;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x9E7D;&#x57D4;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x9AD8;&#x6A39;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x9AD8;&#x6A39;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x842C;&#x5DD2;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x842C;&#x5DD2;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x5167;&#x57D4;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x5167;&#x57D4;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x65B0;&#x57E4;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x65B0;&#x57E4;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x5D01;&#x9802;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x5D01;&#x9802;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x5357;&#x5DDE;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x5357;&#x5DDE;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x7409;&#x7403;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x7409;&#x7403;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x4E09;&#x5730;&#x9580;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x4E09;&#x5730;&#x9580;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x9727;&#x81FA;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x9727;&#x81FA;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x746A;&#x5BB6;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x746A;&#x5BB6;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x6CF0;&#x6B66;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x6CF0;&#x6B66;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x4F86;&#x7FA9;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x4F86;&#x7FA9;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x6625;&#x65E5;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x6625;&#x65E5;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x7345;&#x5B50;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x7345;&#x5B50;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x9E7F;&#x91CE;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x9E7F;&#x91CE;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x6C60;&#x4E0A;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x6C60;&#x4E0A;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x5EF6;&#x5E73;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x5EF6;&#x5E73;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x9CF3;&#x6797;&#x93AE;">&#x82B1;&#x84EE;&#x7E23;|&#x9CF3;&#x6797;&#x93AE;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x5149;&#x5FA9;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x5149;&#x5FA9;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x745E;&#x7A57;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x745E;&#x7A57;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x5BCC;&#x91CC;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x5BCC;&#x91CC;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x842C;&#x69AE;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x842C;&#x69AE;&#x9109;</option>
+<option value="&#x6F8E;&#x6E56;&#x7E23;|&#x99AC;&#x516C;&#x5E02;">&#x6F8E;&#x6E56;&#x7E23;|&#x99AC;&#x516C;&#x5E02;</option>
+<option value="&#x6F8E;&#x6E56;&#x7E23;|&#x6E56;&#x897F;&#x9109;">&#x6F8E;&#x6E56;&#x7E23;|&#x6E56;&#x897F;&#x9109;</option>
+<option value="&#x6F8E;&#x6E56;&#x7E23;|&#x767D;&#x6C99;&#x9109;">&#x6F8E;&#x6E56;&#x7E23;|&#x767D;&#x6C99;&#x9109;</option>
+<option value="&#x6F8E;&#x6E56;&#x7E23;|&#x897F;&#x5DBC;&#x9109;">&#x6F8E;&#x6E56;&#x7E23;|&#x897F;&#x5DBC;&#x9109;</option>
+<option value="&#x6F8E;&#x6E56;&#x7E23;|&#x671B;&#x5B89;&#x9109;">&#x6F8E;&#x6E56;&#x7E23;|&#x671B;&#x5B89;&#x9109;</option>
+<option value="&#x6F8E;&#x6E56;&#x7E23;|&#x4E03;&#x7F8E;&#x9109;">&#x6F8E;&#x6E56;&#x7E23;|&#x4E03;&#x7F8E;&#x9109;</option>
+<option value="&#x57FA;&#x9686;&#x5E02;|&#x6696;&#x6696;&#x5340;">&#x57FA;&#x9686;&#x5E02;|&#x6696;&#x6696;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x5927;&#x5B89;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x5927;&#x5B89;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x6587;&#x5C71;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x6587;&#x5C71;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x9E7D;&#x57D5;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x9E7D;&#x57D5;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x4E09;&#x6C11;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x4E09;&#x6C11;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x65B0;&#x8208;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x65B0;&#x8208;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x524D;&#x91D1;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x524D;&#x91D1;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x82D3;&#x96C5;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x82D3;&#x96C5;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x524D;&#x93AE;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x524D;&#x93AE;&#x5340;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x91D1;&#x5CF0;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x91D1;&#x5CF0;&#x9109;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x982D;&#x57CE;&#x93AE;">&#x5B9C;&#x862D;&#x7E23;|&#x982D;&#x57CE;&#x93AE;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x5357;&#x6FB3;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x5357;&#x6FB3;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x7AF9;&#x5317;&#x5E02;">&#x65B0;&#x7AF9;&#x7E23;|&#x7AF9;&#x5317;&#x5E02;</option>
+<option value="&#x65B0;&#x7AF9;&#x7E23;|&#x65B0;&#x8C50;&#x9109;">&#x65B0;&#x7AF9;&#x7E23;|&#x65B0;&#x8C50;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x82D1;&#x88E1;&#x93AE;">&#x82D7;&#x6817;&#x7E23;|&#x82D1;&#x88E1;&#x93AE;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x901A;&#x9704;&#x93AE;">&#x82D7;&#x6817;&#x7E23;|&#x901A;&#x9704;&#x93AE;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x7AF9;&#x5357;&#x93AE;">&#x82D7;&#x6817;&#x7E23;|&#x7AF9;&#x5357;&#x93AE;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x5F8C;&#x9F8D;&#x93AE;">&#x82D7;&#x6817;&#x7E23;|&#x5F8C;&#x9F8D;&#x93AE;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x9E7F;&#x6E2F;&#x93AE;">&#x5F70;&#x5316;&#x7E23;|&#x9E7F;&#x6E2F;&#x93AE;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x798F;&#x8208;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x798F;&#x8208;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x81FA;&#x897F;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x81FA;&#x897F;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x56DB;&#x6E56;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x56DB;&#x6E56;&#x9109;</option>
+<option value="&#x96F2;&#x6797;&#x7E23;|&#x53E3;&#x6E56;&#x9109;">&#x96F2;&#x6797;&#x7E23;|&#x53E3;&#x6E56;&#x9109;</option>
+<option value="&#x5609;&#x7FA9;&#x7E23;|&#x5E03;&#x888B;&#x93AE;">&#x5609;&#x7FA9;&#x7E23;|&#x5E03;&#x888B;&#x93AE;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x6771;&#x6E2F;&#x93AE;">&#x5C4F;&#x6771;&#x7E23;|&#x6771;&#x6E2F;&#x93AE;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x6046;&#x6625;&#x93AE;">&#x5C4F;&#x6771;&#x7E23;|&#x6046;&#x6625;&#x93AE;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x678B;&#x5BEE;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x678B;&#x5BEE;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x65B0;&#x5712;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x65B0;&#x5712;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x6797;&#x908A;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x6797;&#x908A;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x8ECA;&#x57CE;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x8ECA;&#x57CE;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x6EFF;&#x5DDE;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x6EFF;&#x5DDE;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x678B;&#x5C71;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x678B;&#x5C71;&#x9109;</option>
+<option value="&#x5C4F;&#x6771;&#x7E23;|&#x7261;&#x4E39;&#x9109;">&#x5C4F;&#x6771;&#x7E23;|&#x7261;&#x4E39;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x81FA;&#x6771;&#x5E02;">&#x81FA;&#x6771;&#x7E23;|&#x81FA;&#x6771;&#x5E02;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x5351;&#x5357;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x5351;&#x5357;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x6771;&#x6CB3;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x6771;&#x6CB3;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x9577;&#x6FF1;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x9577;&#x6FF1;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x592A;&#x9EBB;&#x91CC;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x592A;&#x9EBB;&#x91CC;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x5409;&#x5B89;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x5409;&#x5B89;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x58FD;&#x8C50;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x58FD;&#x8C50;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x8C50;&#x6FF1;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x8C50;&#x6FF1;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x79C0;&#x6797;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x79C0;&#x6797;&#x9109;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6960;&#x6893;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6960;&#x6893;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x9CF3;&#x5C71;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x9CF3;&#x5C71;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5927;&#x5BEE;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5927;&#x5BEE;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5927;&#x6A39;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5927;&#x6A39;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5927;&#x793E;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5927;&#x793E;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x4EC1;&#x6B66;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x4EC1;&#x6B66;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x9CE5;&#x677E;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x9CE5;&#x677E;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5CA1;&#x5C71;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5CA1;&#x5C71;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6A4B;&#x982D;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6A4B;&#x982D;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x71D5;&#x5DE2;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x71D5;&#x5DE2;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x7530;&#x5BEE;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x7530;&#x5BEE;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x963F;&#x84EE;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x963F;&#x84EE;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x8DEF;&#x7AF9;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x8DEF;&#x7AF9;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6E56;&#x5167;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6E56;&#x5167;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x65D7;&#x5C71;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x65D7;&#x5C71;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x7F8E;&#x6FC3;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x7F8E;&#x6FC3;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x516D;&#x9F9C;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x516D;&#x9F9C;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x7532;&#x4ED9;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x7532;&#x4ED9;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6749;&#x6797;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6749;&#x6797;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5167;&#x9580;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5167;&#x9580;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x8302;&#x6797;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x8302;&#x6797;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6843;&#x6E90;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6843;&#x6E90;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x90A3;&#x746A;&#x590F;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x90A3;&#x746A;&#x590F;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x6C38;&#x548C;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x6C38;&#x548C;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x65B0;&#x5E97;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x65B0;&#x5E97;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x571F;&#x57CE;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x571F;&#x57CE;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x8606;&#x6D32;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x8606;&#x6D32;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x4E94;&#x80A1;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x4E94;&#x80A1;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x576A;&#x6797;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x576A;&#x6797;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x5E73;&#x6EAA;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x5E73;&#x6EAA;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x70CF;&#x4F86;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x70CF;&#x4F86;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x4E2D;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x4E2D;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x6771;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x6771;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5357;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5357;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x897F;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x897F;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5317;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5317;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x897F;&#x5C6F;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x897F;&#x5C6F;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5317;&#x5C6F;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5317;&#x5C6F;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x8C50;&#x539F;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x8C50;&#x539F;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x6771;&#x52E2;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x6771;&#x52E2;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x6C99;&#x9E7F;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x6C99;&#x9E7F;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x540E;&#x91CC;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x540E;&#x91CC;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x795E;&#x5CA1;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x795E;&#x5CA1;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x6F6D;&#x5B50;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x6F6D;&#x5B50;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x96C5;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x96C5;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x65B0;&#x793E;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x65B0;&#x793E;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x77F3;&#x5CA1;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x77F3;&#x5CA1;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5916;&#x57D4;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5916;&#x57D4;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x809A;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x809A;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x9727;&#x5CF0;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x9727;&#x5CF0;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x592A;&#x5E73;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x592A;&#x5E73;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x91CC;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x91CC;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x548C;&#x5E73;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x548C;&#x5E73;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x65B0;&#x71DF;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x65B0;&#x71DF;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x9E7D;&#x6C34;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x9E7D;&#x6C34;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x767D;&#x6CB3;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x767D;&#x6CB3;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x67F3;&#x71DF;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x67F3;&#x71DF;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5F8C;&#x58C1;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5F8C;&#x58C1;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x6771;&#x5C71;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x6771;&#x5C71;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x9EBB;&#x8C46;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x9EBB;&#x8C46;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x4E0B;&#x71DF;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x4E0B;&#x71DF;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x516D;&#x7532;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x516D;&#x7532;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5B98;&#x7530;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5B98;&#x7530;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5927;&#x5167;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5927;&#x5167;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x4F73;&#x91CC;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x4F73;&#x91CC;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5B78;&#x7532;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5B78;&#x7532;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x897F;&#x6E2F;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x897F;&#x6E2F;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x65B0;&#x5316;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x65B0;&#x5316;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x65B0;&#x5E02;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x65B0;&#x5E02;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5B89;&#x5B9A;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5B89;&#x5B9A;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x7389;&#x4E95;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x7389;&#x4E95;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x6960;&#x897F;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x6960;&#x897F;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5357;&#x5316;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5357;&#x5316;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5DE6;&#x93AE;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5DE6;&#x93AE;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x4EC1;&#x5FB7;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x4EC1;&#x5FB7;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x6B78;&#x4EC1;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x6B78;&#x4EC1;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x95DC;&#x5EDF;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x95DC;&#x5EDF;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x9F8D;&#x5D0E;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x9F8D;&#x5D0E;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x6C38;&#x5EB7;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x6C38;&#x5EB7;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5317;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5317;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6797;&#x5712;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6797;&#x5712;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x8304;&#x8423;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x8304;&#x8423;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6C38;&#x5B89;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6C38;&#x5B89;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5F4C;&#x9640;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5F4C;&#x9640;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x6893;&#x5B98;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x6893;&#x5B98;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x6DE1;&#x6C34;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x6DE1;&#x6C34;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x745E;&#x82B3;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x745E;&#x82B3;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x6797;&#x53E3;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x6797;&#x53E3;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x4E09;&#x829D;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x4E09;&#x829D;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x516B;&#x91CC;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x516B;&#x91CC;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x7532;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x7532;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x5B89;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x5927;&#x5B89;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x9F8D;&#x4E95;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x9F8D;&#x4E95;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x4E03;&#x80A1;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x4E03;&#x80A1;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5C07;&#x8ECD;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5C07;&#x8ECD;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5317;&#x9580;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5317;&#x9580;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5B89;&#x5357;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5B89;&#x5357;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x8606;&#x7AF9;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x8606;&#x7AF9;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x9F9C;&#x5C71;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x9F9C;&#x5C71;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x9F8D;&#x6F6D;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x9F8D;&#x6F6D;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x5FA9;&#x8208;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x5FA9;&#x8208;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x89C0;&#x97F3;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x89C0;&#x97F3;&#x5340;</option>
+<option value="&#x5609;&#x7FA9;&#x5E02;|&#x6771;&#x5340;">&#x5609;&#x7FA9;&#x5E02;|&#x6771;&#x5340;</option>
+<option value="&#x5609;&#x7FA9;&#x5E02;|&#x897F;&#x5340;">&#x5609;&#x7FA9;&#x5E02;|&#x897F;&#x5340;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x9054;&#x4EC1;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x9054;&#x4EC1;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x5927;&#x6B66;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x5927;&#x6B66;&#x9109;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x95DC;&#x5C71;&#x93AE;">&#x81FA;&#x6771;&#x7E23;|&#x95DC;&#x5C71;&#x93AE;</option>
+<option value="&#x81FA;&#x6771;&#x7E23;|&#x6D77;&#x7AEF;&#x9109;">&#x81FA;&#x6771;&#x7E23;|&#x6D77;&#x7AEF;&#x9109;</option>
+<option value="&#x65B0;&#x7AF9;&#x5E02;|&#x5317;&#x5340;">&#x65B0;&#x7AF9;&#x5E02;|&#x5317;&#x5340;</option>
+<option value="&#x65B0;&#x7AF9;&#x5E02;|&#x9999;&#x5C71;&#x5340;">&#x65B0;&#x7AF9;&#x5E02;|&#x9999;&#x5C71;&#x5340;</option>
+<option value="&#x65B0;&#x7AF9;&#x5E02;|&#x6771;&#x5340;">&#x65B0;&#x7AF9;&#x5E02;|&#x6771;&#x5340;</option>
+<option value="&#x5B9C;&#x862D;&#x7E23;|&#x7901;&#x6EAA;&#x9109;">&#x5B9C;&#x862D;&#x7E23;|&#x7901;&#x6EAA;&#x9109;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x7389;&#x91CC;&#x93AE;">&#x82B1;&#x84EE;&#x7E23;|&#x7389;&#x91CC;&#x93AE;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x5353;&#x6EAA;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x5353;&#x6EAA;&#x9109;</option>
+<option value="&#x82D7;&#x6817;&#x7E23;|&#x982D;&#x4EFD;&#x5E02;">&#x82D7;&#x6817;&#x7E23;|&#x982D;&#x4EFD;&#x5E02;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x6E05;&#x6C34;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x6E05;&#x6C34;&#x5340;</option>
+<option value="&#x81FA;&#x4E2D;&#x5E02;|&#x68A7;&#x68F2;&#x5340;">&#x81FA;&#x4E2D;&#x5E02;|&#x68A7;&#x68F2;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5357;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5357;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x6771;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x6771;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5B89;&#x5E73;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5B89;&#x5E73;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x4E2D;&#x897F;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x4E2D;&#x897F;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x5927;&#x6EAA;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x5927;&#x6EAA;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x516B;&#x5FB7;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x516B;&#x5FB7;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x4E2D;&#x58E2;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x4E2D;&#x58E2;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x6843;&#x5712;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x6843;&#x5712;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x5927;&#x5712;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x5927;&#x5712;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x65B0;&#x5C4B;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x65B0;&#x5C4B;&#x5340;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x694A;&#x6885;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x694A;&#x6885;&#x5340;</option>
+<option value="&#x57FA;&#x9686;&#x5E02;|&#x4E03;&#x5835;&#x5340;">&#x57FA;&#x9686;&#x5E02;|&#x4E03;&#x5835;&#x5340;</option>
+<option value="&#x57FA;&#x9686;&#x5E02;|&#x4EC1;&#x611B;&#x5340;">&#x57FA;&#x9686;&#x5E02;|&#x4EC1;&#x611B;&#x5340;</option>
+<option value="&#x57FA;&#x9686;&#x5E02;|&#x4FE1;&#x7FA9;&#x5340;">&#x57FA;&#x9686;&#x5E02;|&#x4FE1;&#x7FA9;&#x5340;</option>
+<option value="&#x57FA;&#x9686;&#x5E02;|&#x4E2D;&#x6B63;&#x5340;">&#x57FA;&#x9686;&#x5E02;|&#x4E2D;&#x6B63;&#x5340;</option>
+<option value="&#x57FA;&#x9686;&#x5E02;|&#x4E2D;&#x5C71;&#x5340;">&#x57FA;&#x9686;&#x5E02;|&#x4E2D;&#x5C71;&#x5340;</option>
+<option value="&#x57FA;&#x9686;&#x5E02;|&#x5B89;&#x6A02;&#x5340;">&#x57FA;&#x9686;&#x5E02;|&#x5B89;&#x6A02;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x4E09;&#x5CFD;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x4E09;&#x5CFD;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x9DAF;&#x6B4C;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x9DAF;&#x6B4C;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x4E2D;&#x548C;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x4E2D;&#x548C;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x6A39;&#x6797;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x6A39;&#x6797;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x6DF1;&#x5751;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x6DF1;&#x5751;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x677F;&#x6A4B;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x677F;&#x6A4B;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x77F3;&#x7887;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x77F3;&#x7887;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x65B0;&#x838A;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x65B0;&#x838A;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x6CF0;&#x5C71;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x6CF0;&#x5C71;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x4E09;&#x91CD;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x4E09;&#x91CD;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x96D9;&#x6EAA;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x96D9;&#x6EAA;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x8CA2;&#x5BEE;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x8CA2;&#x5BEE;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x6C50;&#x6B62;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x6C50;&#x6B62;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x842C;&#x91CC;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x842C;&#x91CC;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x91D1;&#x5C71;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x91D1;&#x5C71;&#x5340;</option>
+<option value="&#x65B0;&#x5317;&#x5E02;|&#x77F3;&#x9580;&#x5340;">&#x65B0;&#x5317;&#x5E02;|&#x77F3;&#x9580;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x4FE1;&#x7FA9;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x4FE1;&#x7FA9;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x842C;&#x83EF;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x842C;&#x83EF;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x4E2D;&#x6B63;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x4E2D;&#x6B63;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x5357;&#x6E2F;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x5357;&#x6E2F;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x677E;&#x5C71;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x677E;&#x5C71;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x5927;&#x540C;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x5927;&#x540C;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x4E2D;&#x5C71;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x4E2D;&#x5C71;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x5167;&#x6E56;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x5167;&#x6E56;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x58EB;&#x6797;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x58EB;&#x6797;&#x5340;</option>
+<option value="&#x81FA;&#x5317;&#x5E02;|&#x5317;&#x6295;&#x5340;">&#x81FA;&#x5317;&#x5E02;|&#x5317;&#x6295;&#x5340;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x82B1;&#x84EE;&#x5E02;">&#x82B1;&#x84EE;&#x7E23;|&#x82B1;&#x84EE;&#x5E02;</option>
+<option value="&#x82B1;&#x84EE;&#x7E23;|&#x65B0;&#x57CE;&#x9109;">&#x82B1;&#x84EE;&#x7E23;|&#x65B0;&#x57CE;&#x9109;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5584;&#x5316;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5584;&#x5316;&#x5340;</option>
+<option value="&#x81FA;&#x5357;&#x5E02;|&#x5C71;&#x4E0A;&#x5340;">&#x81FA;&#x5357;&#x5E02;|&#x5C71;&#x4E0A;&#x5340;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x5317;&#x6597;&#x93AE;">&#x5F70;&#x5316;&#x7E23;|&#x5317;&#x6597;&#x93AE;</option>
+<option value="&#x5F70;&#x5316;&#x7E23;|&#x7530;&#x5C3E;&#x9109;">&#x5F70;&#x5316;&#x7E23;|&#x7530;&#x5C3E;&#x9109;</option>
+<option value="&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x57CE;&#x93AE;">&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x57CE;&#x93AE;</option>
+<option value="&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x6C99;&#x93AE;">&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x6C99;&#x93AE;</option>
+<option value="&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x6E56;&#x93AE;">&#x91D1;&#x9580;&#x7E23;|&#x91D1;&#x6E56;&#x93AE;</option>
+<option value="&#x91D1;&#x9580;&#x7E23;|&#x70C8;&#x5DBC;&#x9109;">&#x91D1;&#x9580;&#x7E23;|&#x70C8;&#x5DBC;&#x9109;</option>
+<option value="&#x6843;&#x5712;&#x5E02;|&#x5E73;&#x93AE;&#x5340;">&#x6843;&#x5712;&#x5E02;|&#x5E73;&#x93AE;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x9F13;&#x5C71;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x9F13;&#x5C71;&#x5340;</option>
+<option value="&#x9AD8;&#x96C4;&#x5E02;|&#x5DE6;&#x71DF;&#x5340;">&#x9AD8;&#x96C4;&#x5E02;|&#x5DE6;&#x71DF;&#x5340;</option>
+</select>
+                            </div>
+                        </div>
+                        <div class="mr-1 mb-1">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">計算方式</div>
+                                </div>
+                                <select id="ddlCalculation" name="ddlCalculation" class="form-control" aria-label="計算方式"><option value="CBI">CBI</option>
+<option value="&#x4EF6;&#x6578;">&#x4EF6;&#x6578;</option>
+<option value="&#x6B7B;&#x4EA1;&#x4EBA;&#x6578;">&#x6B7B;&#x4EA1;&#x4EBA;&#x6578;</option>
+<option value="&#x53D7;&#x50B7;&#x4EBA;&#x6578;">&#x53D7;&#x50B7;&#x4EBA;&#x6578;</option>
+</select>
+                            </div>
+                        </div>
+                        <div class="mr-1 mb-1">
+                            <a id="bSearch" href="#" class="btn btn-sm btn-primary mr-1">確定</a>
+                            <button type="button" class="btn btn-outline-info btn-sm float-right  d-block d-lg-none" data-toggle="modal" data-target="#DocModal">
+                                <i class="fas fa-info"></i>
+                                <span class="visually-hidden sr-only">操作說明</span>
+                                操作說明
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-outline-info btn-sm float-right d-none d-lg-block" data-toggle="modal" data-target="#DocModal">
+                        <i class="fas fa-info"></i>
+                        <span class="visually-hidden sr-only">操作說明</span>
+                        操作說明
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="DocModal" tabindex="-1" role="dialog" aria-labelledby="DocModal" aria-hidden="true" style="z-index:6000">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title"><h5>肇事熱點功能操作說明</h5></div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselDocIndicators" class="carousel slide d-none d-md-block" data-ride="carousel" data-interval="0">
+                            <ol class="carousel-indicators d-none">
+                                <li data-target="#carouselDocIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselDocIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselDocIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselDocIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselDocIndicators" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="w-100" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(電腦版)/投影片1.JPG" alt="肇事熱點功能操作說明(手機版)/投影片1" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="w-100" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(電腦版)/投影片2.JPG" alt="肇事熱點功能操作說明(手機版)/投影片2" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="w-100" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(電腦版)/投影片3.JPG" alt="肇事熱點功能操作說明(手機版)/投影片3" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="w-100" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(電腦版)/投影片4.JPG" alt="肇事熱點功能操作說明(手機版)/投影片4" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="w-100" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(電腦版)/投影片5.JPG" alt="肇事熱點功能操作說明(手機版)/投影片5" />
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselDocIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselDocIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div id="carouselDocIndicatorsPhone" class="carousel slide d-block d-md-none" data-ride="carousel" data-interval="0">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselDocIndicatorsPhone" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselDocIndicatorsPhone" data-slide-to="1"></li>
+                                <li data-target="#carouselDocIndicatorsPhone" data-slide-to="2"></li>
+                                <li data-target="#carouselDocIndicatorsPhone" data-slide-to="3"></li>
+                                <li data-target="#carouselDocIndicatorsPhone" data-slide-to="4"></li>
+                                <li data-target="#carouselDocIndicatorsPhone" data-slide-to="5"></li>
+
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item text-center active">
+                                    <img class="w-75" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(手機版)/投影片1.JPG" alt="肇事熱點功能操作說明(手機版)/投影片1" />
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="w-75" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(手機版)/投影片2.JPG" alt="肇事熱點功能操作說明(手機版)/投影片2" />
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="w-75" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(手機版)/投影片3.JPG" alt="肇事熱點功能操作說明(手機版)/投影片3" />
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="w-75" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(手機版)/投影片4.JPG" alt="肇事熱點功能操作說明(手機版)/投影片4" />
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="w-75" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(手機版)/投影片5.JPG" alt="肇事熱點功能操作說明(手機版)/投影片5" />
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <img class="w-75" src="/images/系統操作說明圖檔(電腦與手機板)/肇事熱點功能操作說明(手機版)/投影片6.JPG" alt="肇事熱點功能操作說明(手機版)/投影片6" />
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselDocIndicatorsPhone" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselDocIndicatorsPhone" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="checkbox" id="ckTodayNotShow" class="mb-2 mt-2" />
+                        <label for="ckTodayNotShow" class="mt-2">已了解，下次不用再顯示</label>
+                        <button type="button" class="btn btn-sm btn-secondary float-right text-nowrap" data-dismiss="modal">跳過操作說明</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="d-map">
+            <div id="map"></div>
+        </div>
+        <div id="MapDataDescription" class="card d-flex flex-row" >
+            <div style="width:130px;">資料說明：</div>
+            <div style="padding-left:12px;">
+                <ul style="list-style-type: decimal;padding-left: 10px;margin:0;">
+                    <li>本畫面初次顯示的熱點，係以相對嚴重指標CBI精神，產生所選範圍之事故熱點，使用者亦可選擇[件數]、[死亡人數]、[受傷人數]產製排列，其中件數係指警政署死亡(A1)及受傷(A2)案件，不包含財損案件(A3)。</li><li>CBI(指標合值)＝SRI(相對頻率指標值)+SSI(相對嚴重度指標值)； SRI：案件數/最高案件數； SSI ：EPDO/最大EPDO值；<br />EPDO(事故當量)＝30日死亡人數 x 9.5 + 受傷人數 x 3.5 + 案件數。</li><li>肇事熱點包含路口及路段，惟以路口為優先排列。本系統所定義之路口，係實質兩條道路以上重疊的｢交岔路口｣地理區塊及｢路口附近｣所構成之範圍，其中路口附近定義為轉角處向路口外延伸10公尺以內之範圍，路口亦包含圓環之事故案件。</li><li>本事故資料來源為警政署交通事故檔；定位方式係以案件發生地址，利用圖資輔助定位，因涉及地址文字書寫之完整性，與實際交通事故發生位址與可標定數量，容有誤差。</li>
+                </ul>
+            </div>
+        </div>
+        <table id="tbMain" class="table table-bordered d-none">
+            <thead>
+                <tr class="bg-primary text-white">
+                    <th scope="col">項<br>次</th>
+                    <th class="d-none d-sm-table-cell" scope="col">鄉鎮<br>市區</th>
+                    <th scope="col">地點</th>
+                    <th scope="col">死<br>亡</th>
+                    <th scope="col">受<br>傷</th>
+                    <th scope="col">件<br>數</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8P00tbmoqLpEo5YhNOB4iffL5MzzC15gg_DzVYwtSXYvLp-LLQGvVUu13eMOzdND1sV-5vEIPGFDUDXB9fhygPDN_uDbQNxx9BIS1c8hdDof2ef-uXeorecJ2S71QEKWhVuXOWkck-TdgplSn0CQ0kE" /></form>
+            </main>
+        </div>
+    </div>
+    <!-- Footer -->
+        <footer id="footer" class="text-center">
+            <ul class="copyright">
+                <li>
+                    <p>交通部路政及道安司</p>
+                    <p>© 2020 copyrights. All Rights Reserved.</p>
+                    <p>維護廠商：晏晟科技股份有限公司</p>
+                    <p class="d-sm-inline-flex">瀏覽人次：<span id="HistoryPeopleSpan"></span> ; 線上人數： <span id="OnlinePeopleSpan"></span></p>
+                    <br /><p>
+                        相關網站連結：
+                        <a href="https://168.motc.gov.tw/" target="_blank">168交通安全入口網</a>
+                        <a href="https://statis.motc.gov.tw/motc/Statistics/Display?Seq=898&lang=zh-Hant-TW" target="_blank">交通部統計查詢網</a>
+                        <a href="https://ba.npa.gov.tw" target="_blank">警政署統計查詢網</a>
+                    </p>
+                </li>
+            </ul>
+        </footer>
+    <div id="Msg" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">訊息</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="mdAnnounce" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/Announce.png?v=20261031023507984085" class="img-thumbnail img-fluid" alt="Announce">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    
+</body>
+</html>

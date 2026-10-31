@@ -1,0 +1,10 @@
+{
+  "reviewed_segments": [
+    1399,
+    3653
+  ],
+  "status": "direct_text_reading_complete",
+  "method": "direct_text_reading_and_targeted_ASR",
+  "full_audio_listening": false,
+  "next_segment": null
+}

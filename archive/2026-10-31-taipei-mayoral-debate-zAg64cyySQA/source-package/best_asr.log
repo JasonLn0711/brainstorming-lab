@@ -1,0 +1,40 @@
+Loading Breeze-ASR-25
+/home/jnclaw/Downloads/YouTube_zAg64cyySQA/transcribe_best.py:28: DeprecationWarning: Segment._asdict() method is deprecated, use dataclasses.asdict(Segment) instead
+  raw.write(json.dumps(segment._asdict(), ensure_ascii=False) + '\n'); raw.flush()
+100 segments; audio position 00:06:25,150
+200 segments; audio position 00:10:42,280
+300 segments; audio position 00:17:21,820
+400 segments; audio position 00:20:48,960
+500 segments; audio position 00:25:08,550
+600 segments; audio position 00:31:17,820
+700 segments; audio position 00:35:14,310
+800 segments; audio position 00:40:44,860
+900 segments; audio position 00:45:26,060
+1000 segments; audio position 00:50:10,460
+1100 segments; audio position 00:55:16,410
+1200 segments; audio position 01:01:55,580
+1300 segments; audio position 01:08:15,640
+1400 segments; audio position 01:29:41,230
+1500 segments; audio position 01:34:22,470
+1600 segments; audio position 01:38:35,130
+1700 segments; audio position 01:42:45,910
+1800 segments; audio position 01:47:27,810
+1900 segments; audio position 01:57:27,280
+2000 segments; audio position 02:01:27,340
+2100 segments; audio position 02:05:33,840
+2200 segments; audio position 02:09:40,740
+2300 segments; audio position 02:13:57,600
+2400 segments; audio position 02:17:50,800
+2500 segments; audio position 02:27:30,100
+2600 segments; audio position 02:31:44,040
+2700 segments; audio position 02:36:10,220
+2800 segments; audio position 02:40:27,940
+2900 segments; audio position 02:44:42,020
+3000 segments; audio position 02:53:33,770
+3100 segments; audio position 02:57:44,910
+3200 segments; audio position 03:02:19,750
+3300 segments; audio position 03:06:45,330
+3400 segments; audio position 03:15:19,990
+3500 segments; audio position 03:19:48,170
+3600 segments; audio position 03:23:55,050
+Completed

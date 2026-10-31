@@ -1,0 +1,202 @@
+{
+  "1399": {
+    "original_text": "歡迎收看由 TVBS 電視台及三立電視共同聯合主辦的 2026 台北市長候選人電視辯論會",
+    "original_start": 5016.38,
+    "original_end": 5379.15,
+    "start": 5369.28,
+    "end": 5378.88,
+    "evidence": "best_timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  "1838": {
+    "original_text": "馬上回來",
+    "original_start": 6546.85,
+    "original_end": 6866.8,
+    "start": 6546.85,
+    "end": 6547.48,
+    "evidence": "best_timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  "2422": {
+    "original_text": "休息一下馬上回來",
+    "original_start": 8315.28,
+    "original_end": 8636.02,
+    "start": 8315.28,
+    "end": 8316.76,
+    "evidence": "best_timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  "2423": {
+    "original_text": "26 台北市長候選人電視辯論會",
+    "original_start": 8636.02,
+    "original_end": 8638.54,
+    "start": 8635.0,
+    "end": 8638.32,
+    "evidence": "best_timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false,
+    "text": "歡迎回到 2026 台北市長候選人電視辯論會"
+  },
+  "2967": {
+    "original_text": "歡迎回到 2026 台北市長候選人電視辯論會",
+    "original_start": 10054.51,
+    "original_end": 10317.49,
+    "start": 10313.3,
+    "end": 10317.22,
+    "evidence": "best_timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  "3632": {
+    "original_text": "歡迎回到 2026 台北市長候選人電視辯論會",
+    "original_start": 12315.21,
+    "original_end": 12482.83,
+    "start": 12478.66,
+    "end": 12482.56,
+    "evidence": "best_timing_tail.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  "3652": {
+    "original_text": "我們再會",
+    "original_start": 12540.07,
+    "original_end": 12607.78,
+    "start": 12540.07,
+    "end": 12540.86,
+    "evidence": "best_timing_tail.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  "3653": {
+    "original_text": "除了藍營民眾黨的張志豪也前往力挺帶出街頭",
+    "original_start": 12607.78,
+    "original_end": 12611.7,
+    "start": 12608.46,
+    "end": 12611.44,
+    "evidence": "best_timing_tail.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false,
+    "review_note": "Tail appears to begin another program; proper name and final words differ between passes. Retain primary ASR wording pending confirmation."
+  },
+  "1610": {
+    "original_text": "惡劣的問題",
+    "text": "兒虐的問題",
+    "evidence": "Original AAC transcript and adjacent discussion of institutions, suspension, and social workers.",
+    "method": "context_and_alternate_asr",
+    "human_listening": false
+  },
+  "1926": {
+    "original_text": "我問你的幾個 11 件案例你都沒有回答",
+    "text": "我問你的幾個實際案例你都沒有回答",
+    "evidence": "best_lexical_review_2.jsonl",
+    "method": "short_clip_ASR_and_context",
+    "human_listening": false
+  },
+  "2079": {
+    "original_text": "劉慧",
+    "text": "流會",
+    "evidence": "best_lexical_review_2.jsonl",
+    "method": "short_clip_ASR_and_context",
+    "human_listening": false
+  },
+  "736": {
+    "original_text": "所以完整的訪問內容其實大家看到我母親也已經慢慢接手了",
+    "text": "所以完整的訪問內容其實大家看到我母親也已經慢慢接受了",
+    "evidence": "best_lexical_review_5.jsonl; web_sources_096.json; https://www.nownews.com/news/6888101",
+    "method": "short_clip_ASR_and_contemporaneous_reporting",
+    "human_listening": false
+  },
+  "761": {
+    "original_text": "所以這次他有邀請雅妮",
+    "original_start": 2342.42,
+    "original_end": 2345.26,
+    "text": "所以這次他有邀請Yakira",
+    "evidence": "best_lexical_review_5.jsonl; web_sources_099.json; https://www.crntt.tw/doc/docDetailCreate.jsp?coluid=1&docid=160283638&kindid=0",
+    "method": "short_clip_ASR_and_contemporaneous_reporting",
+    "human_listening": false
+  },
+  "762": {
+    "original_text": "雅妮",
+    "original_start": 2345.26,
+    "original_end": 2346.46,
+    "text": "Yakira",
+    "evidence": "best_lexical_review_5.jsonl; web_sources_099.json; https://www.crntt.tw/doc/docDetailCreate.jsp?coluid=1&docid=160283638&kindid=0",
+    "method": "short_clip_ASR_and_contemporaneous_reporting",
+    "human_listening": false
+  },
+  "2860": {
+    "original_text": "就是希望松基建議這對整個城市發展是有利的市民共同的期待",
+    "original_start": 9779.26,
+    "original_end": 9784.66,
+    "text": "就是希望松機遷移這對整個城市發展是有利的市民共同的期待",
+    "evidence": "best_lexical_review_6.jsonl; web_sources_100.json",
+    "method": "short_clip_ASR_and_official_context",
+    "human_listening": false
+  },
+  "1930": {
+    "original_text": "而且我們康樂街第一個 7599 專案也已經完成公告章也已經簽約了",
+    "original_start": 7112.68,
+    "original_end": 7118.14,
+    "text": "而且我們康樂街第一個 7599 專案也已經完成公告招商也已經簽約了",
+    "evidence": "web_sources_101.json; https://www.ftnn.com.tw/news/591726; https://www.knews.com.tw/news/A67D351B5D30D9D46E6079BD4655D045",
+    "method": "contemporaneous_reported_wording_and_context",
+    "human_listening": false
+  },
+  "2837": {
+    "original_text": "7 年的 AI 方案 9 月上線 11 月就要停止",
+    "original_start": 9718.82,
+    "original_end": 9722.22,
+    "text": "青年的 AI 方案 9 月上線 11 月就要停止",
+    "evidence": "web_sources_100.json; web_sources_102.json; https://news.ttv.com.tw/news/11510310001200W; https://www.taisounds.com/news/content/71/297116",
+    "method": "contemporaneous_reported_wording_and_policy_name",
+    "human_listening": false
+  },
+  "2851": {
+    "original_text": "還是說現在突然提到職盲搬出來",
+    "original_start": 9754.1,
+    "original_end": 9756.54,
+    "text": "還是說現在突然提到急忙搬出來",
+    "evidence": "web_sources_103.json; https://news.ttv.com.tw/news/11510310001200W",
+    "method": "contemporaneous_reported_wording_and_context",
+    "human_listening": false
+  },
+  "3274": {
+    "original_text": "像是年間 63 年以前的建物",
+    "original_start": 11137.37,
+    "original_end": 11139.45,
+    "text": "像是民國 63 年以前的建物",
+    "evidence": "web_sources_104.json; web_sources_105.json; https://udn.com/news/story/124652/9848892",
+    "method": "contemporaneous_reported_wording_and_official_policy",
+    "human_listening": false
+  },
+  "2136": {
+    "original_text": "所謂委員我想請問",
+    "original_start": 7622.06,
+    "original_end": 7624.06,
+    "text": "沈委員我想請問",
+    "evidence": "web_sources_146.json; https://ctinews.com/news/items/9pWzXLJMxv; https://news.nextapple.com/politics/20261031/198838040A6A22D400B63DA036B935CD",
+    "method": "contemporaneous_reported_wording_and_context",
+    "human_listening": false
+  },
+  "2893": {
+    "original_text": "2026 除了重啟核電",
+    "original_start": 9861.54,
+    "original_end": 9863.94,
+    "text": "2026 突然重啟核電",
+    "evidence": "web_sources_172.json; Yahoo 當日松機遷移辯論報導",
+    "method": "contemporaneous_reported_wording_and_context",
+    "human_listening": false
+  },
+  "3084": {
+    "original_text": "不用擔心租約到就要翻到轉學區",
+    "original_start": 10621.37,
+    "original_end": 10624.69,
+    "text": "不用擔心租約到就要煩惱轉學區",
+    "evidence": "web_sources_179.json; Yahoo 台北市長辯論》4年後的台北會變怎樣？ 蔣萬安描繪可能場景; https://www.mirrordaily.news/story/94881",
+    "method": "contemporaneous_reported_wording_and_context",
+    "human_listening": false
+  }
+}

@@ -1,0 +1,1 @@
+PASS: timestamp rollover; lexical replacement preserves disputed wording and numbers; missing complete ASR receipt rejects generation; no final correction receipt created.

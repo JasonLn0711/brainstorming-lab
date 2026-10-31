@@ -1,0 +1,15 @@
+{
+  "source_url": "https://ctinews.com/news/items/MyWkpAY2a6",
+  "retrieved_at_utc": "2026-10-31T07:31:56.540840+00:00",
+  "retrieval": "urllib.request HTTP GET",
+  "http_status": 200,
+  "file": "cti_housing_vision_source.html",
+  "sha256": "3ba2aed2f8943314473fa94cab26b3de18b90f56be92149f7fec9fd4d4e5c797",
+  "bytes": 226484,
+  "findings": {
+    "contains_concluding_phrase": true,
+    "contains_lease_term": false,
+    "contains_school_district": false
+  },
+  "scope": "News report text; not audio verification or independent policy outcome validation"
+}

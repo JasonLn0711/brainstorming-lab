@@ -1,0 +1,7 @@
+{
+  "model": "/home/jnclaw/.cache/huggingface/hub/models--SoybeanMilk--faster-whisper-Breeze-ASR-25/snapshots/85be11de5f67aaa6a92e931622f1c2b55cc1dd3a",
+  "ranges": 13,
+  "status": "completed",
+  "purpose": "correction_candidates_only",
+  "human_listening": false
+}

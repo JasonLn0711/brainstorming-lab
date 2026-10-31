@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://health.gov.taipei/News_Content.aspx?n=BB5A41BA1E6CA260&s=EB4792FC9C8E3DBA&sms=72544237BBE4C5F6",
+    "file": "chengyuan_notice_0908.html",
+    "sha256": "83e095b764a1ae731cd995aceed338792213b28c948553b00416f3c66dab6f60"
+  },
+  {
+    "url": "https://health.gov.taipei/News_Content.aspx?n=BB5A41BA1E6CA260&s=27105732CFA2BEAA&sms=72544237BBE4C5F6",
+    "file": "chengyuan_result_0918.html",
+    "sha256": "ff0818b0e4673645520ada8e77c7aee9eced4efd77ae832e1e5312a6b2b79931"
+  }
+]

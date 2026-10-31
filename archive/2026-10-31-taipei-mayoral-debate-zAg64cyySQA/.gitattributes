@@ -1,0 +1,2 @@
+# Preserve source bytes, including original whitespace and line endings.
+source-package/** -text -whitespace

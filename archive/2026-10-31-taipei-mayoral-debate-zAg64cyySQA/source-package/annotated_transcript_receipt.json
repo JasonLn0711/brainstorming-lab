@@ -1,0 +1,23 @@
+{
+  "status": "draft",
+  "segments": 3653,
+  "text_matches_corrected_jsonl": true,
+  "factcheck_groups": 223,
+  "explicit_uncertain_segments": 7,
+  "automatic_quality_flags": 195,
+  "full_audio_listening": false,
+  "all_claims_verified": false,
+  "source_sha256": "c570850842ad3f422b66e1561e170c694ebf7a8527467bdd4e8ecbe0a048b401",
+  "output_sha256": "0e760a667048122e32a2c199fa95f5db7d1ec32b6e979de703ac99627695655f",
+  "pre_event_reviewed_range": [
+    1,
+    55
+  ],
+  "pre_event_classified_ranges": [
+    [
+      1,
+      1398
+    ]
+  ],
+  "pre_event_classification_scope": "Text review and evidence routing; not full listening or all claims verified"
+}
