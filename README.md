@@ -17,6 +17,11 @@ contains the public-source architecture analysis, teaching notes, a Kairos-inspi
 homepage design, and the six-island concept (`idea_000048`, 2026-10-22).
 Website implementation remains unactivated in the existing portfolio repo.
 
+## Debate analysis archive
+
+[Taipei mayoral debate source and analysis package](archive/2026-10-31-taipei-mayoral-debate-zAg64cyySQA/README.md) preserves 394 non-audio files with a categorized catalog and checksum inventory.
+Planning records the handoff and review gate; the sharing text remains a draft.
+
 ## First Principle
 
 Ideas are data, not only text.
