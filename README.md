@@ -157,3 +157,11 @@ pytest -q
    drafting and revision rules.
 5. Use `docs/real-world-pressure-tests.md` before promoting mature ideas.
 6. Inspect `index/idea_index.md` for the current idea database.
+
+## November 4 publication review
+
+The [Planning status receipt](../planning-everything-track/data/projects/2026-04-brainstorming-lab.md#brainstorming-publication-2026-11-04)
+connects the published website study and debate archive to the
+[November 4 day note](../planning-everything-track/weeks/2026-W45/days/2026-11-04.md#brainstorming-publication-2026-11-04).
+Detailed sources and review gates remain in the canonical folders linked above.
+This review adds no experiment, website implementation, or scheduled research block.
