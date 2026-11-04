@@ -1,0 +1,65 @@
+id: idea_000050
+title: Kairos Live — private execution locator
+created_at: '2026-11-04'
+type: project
+status: archived
+tags:
+- private-execution
+- interaction-platform
+problem_statement:
+  raw: A reusable audience-interaction project has a separate private execution owner.
+  normalized: Route project implementation and review to its private canonical owner.
+  structure:
+    given: a project with private execution records
+    optimize: clear ownership and retrieval
+    constraints:
+    - private implementation and evidence remain owner-controlled
+summary: Public routing metadata only. The private execution repository owns design,
+  implementation, evidence and subsequent decisions.
+assumptions:
+- Access to the private execution owner is managed separately.
+evidence:
+- The project owner designated an independent private repository.
+baseline: []
+metrics: []
+insights:
+- This public index carries a locator rather than private project material.
+connections: []
+role: private execution locator
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 6
+  boundary_definition_score: 6/10
+  testability: 0
+  testability_score: 0/15
+  evidence_support: 0
+  evidence_support_score: 0/15
+  connection_strength: 0
+  connection_strength_score: 0/10
+  novelty: 8
+  novelty_score: 8/10
+  feasibility: 0
+  feasibility_score: 0/15
+  research_potential: 2
+  research_potential_score: 2/10
+maturity_score: 31/100
+maturity_level: emerging
+next_steps:
+- Consult the private canonical owner for current scope and any authorized continuation.
+source:
+- ideas/2026-11-04-cs-kairos-live/README.md
+human_note: ideas/2026-11-04-cs-kairos-live/README.md
+first_principle:
+  scarce_resource: owner attention and source custody
+  canonical_home: private kairos-live execution repository
+  planning_role: private status and capacity record
+  scope_control: public locator only; private content retained by owner
+  next_gate: owner-managed continuation
+activation:
+  decision: owner_controlled_private_execution
+  scope: archived public routing record
+execution_home: ../kairos-live
+repository: https://github.com/JasonLn0711/kairos-live
+normalization_status: validated
+maturity_action: clarify and normalize problem statement

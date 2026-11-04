@@ -165,3 +165,7 @@ connects the published website study and debate archive to the
 [November 4 day note](../planning-everything-track/weeks/2026-W45/days/2026-11-04.md#brainstorming-publication-2026-11-04).
 Detailed sources and review gates remain in the canonical folders linked above.
 This review adds no experiment, website implementation, or scheduled research block.
+
+## Private execution locator
+
+[Kairos Live](ideas/2026-11-04-cs-kairos-live/README.md) is an archived routing record for an independent private execution repository. This public index contains ownership metadata only.

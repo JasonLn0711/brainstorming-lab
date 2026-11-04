@@ -1091,6 +1091,10 @@
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
+## interaction-platform
+
+- `idea_000050` - Kairos Live — private execution locator (`emerging`, 31/100) - `ideas/archived/idea_000050_cs_kairos_live.yaml`
+
 ## interaction-science
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
@@ -1584,6 +1588,10 @@
 ## predictive-processing
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## private-execution
+
+- `idea_000050` - Kairos Live — private execution locator (`emerging`, 31/100) - `ideas/archived/idea_000050_cs_kairos_live.yaml`
 
 ## problem-definition
 

@@ -49,6 +49,7 @@
 | `idea_000006` | OpenClaw personal ops node | 60/100 | `structured` | `structured` | Write one bounded design note in second-brain-openclaw before any implementation or purchase. | `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml` |
 | `idea_000003` | Decision load scheduler | 58/100 | `structured` | `structured` | Compare weekly selections against the planning repo daily and weekly notes for one week. | `ideas/structured/idea_000003_decision_load_scheduler.yaml` |
 | `idea_000005` | Workflow optimization feedback loop | 57/100 | `structured` | `structured` | Run one daily-note suggestion and feedback pull using explicit marker blocks. | `ideas/structured/idea_000005_workflow_optimization_loop.yaml` |
+| `idea_000050` | Kairos Live — private execution locator | 31/100 | `emerging` | `archived` | Consult the private canonical owner for current scope and any authorized continuation. | `ideas/archived/idea_000050_cs_kairos_live.yaml` |
 | `idea_000048` | 在職初學者的 AI 輔助軟體開發素養 | 0/100 | `raw` | `raw` | 未排程：以課前合成資料實作診斷確認程式、資料與工程瓶頸，讓具備能力者進階或免修；課方先決定正式銜接課或既有課程基礎實作時段及支援容量。 | `ideas/raw/idea_000048_ai_software_literacy_for_working_professionals.yaml` |
 
 ## Compact View
@@ -101,3 +102,4 @@
 - idea_000047 - Insurance customer conversation simulator for sales training - 77/100 - research_candidate
 - idea_000048 - 在職初學者的 AI 輔助軟體開發素養 - 0/100 - raw
 - idea_000048 - Heart Island study and floating research atlas - 65/100 - research_candidate
+- idea_000050 - Kairos Live — private execution locator - 31/100 - emerging
