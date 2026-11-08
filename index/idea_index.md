@@ -51,6 +51,8 @@
 | `idea_000005` | Workflow optimization feedback loop | 57/100 | `structured` | `structured` | Run one daily-note suggestion and feedback pull using explicit marker blocks. | `ideas/structured/idea_000005_workflow_optimization_loop.yaml` |
 | `idea_000050` | Kairos Live — private execution locator | 31/100 | `emerging` | `archived` | Consult the private canonical owner for current scope and any authorized continuation. | `ideas/archived/idea_000050_cs_kairos_live.yaml` |
 | `idea_000048` | 在職初學者的 AI 輔助軟體開發素養 | 0/100 | `raw` | `raw` | 未排程：以課前合成資料實作診斷確認程式、資料與工程瓶頸，讓具備能力者進階或免修；課方先決定正式銜接課或既有課程基礎實作時段及支援容量。 | `ideas/raw/idea_000048_ai_software_literacy_for_working_professionals.yaml` |
+| `idea_000051` | GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 | 0/100 | `raw` | `raw` | 由 Jason 在下次啟動篩選時決定可用性、資料地域、公司控制權三層要求。 | `ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml` |
+| `idea_000052` | 幸福、回憶與人生機會的時效性 | 0/100 | `raw` | `raw` | 若 Jason 主動啟動反思，選一件反覆延後的小事，分辨真實窗口與想像中的錯過。 | `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml` |
 
 ## Compact View
 
@@ -103,3 +105,5 @@
 - idea_000048 - 在職初學者的 AI 輔助軟體開發素養 - 0/100 - raw
 - idea_000048 - Heart Island study and floating research atlas - 65/100 - research_candidate
 - idea_000050 - Kairos Live — private execution locator - 31/100 - emerging
+- idea_000051 - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 - 0/100 - raw
+- idea_000052 - 幸福、回憶與人生機會的時效性 - 0/100 - raw

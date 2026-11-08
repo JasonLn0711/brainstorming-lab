@@ -45,6 +45,10 @@
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 
+## agent-evaluation
+
+- `idea_000051` - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 (`raw`, 0/100) - `ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml`
+
 ## agent-reliability
 
 - `idea_000027` - Long-horizon agent behavior evaluation for Codex CLI orchestration (`execution_ready`, 83/100) - `ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml`
@@ -141,6 +145,7 @@
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+- `idea_000051` - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 (`raw`, 0/100) - `ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml`
 
 ## ai-security-learning
 
@@ -502,6 +507,10 @@
 ## data-governance
 
 - `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+
+## data-residency
+
+- `idea_000051` - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 (`raw`, 0/100) - `ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml`
 
 ## dataset-governance
 
@@ -1183,6 +1192,10 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
+## life-decisions
+
+- `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
+
 ## life-state-machine
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -1216,6 +1229,10 @@
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+
+## llm-api
+
+- `idea_000051` - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 (`raw`, 0/100) - `ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml`
 
 ## local-ai-gateway
 
@@ -1696,6 +1713,10 @@
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 
+## relationships
+
+- `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
+
 ## release-engineering
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
@@ -2114,6 +2135,10 @@
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## sustainability
+
+- `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
+
 ## synthetic-consensus
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
@@ -2198,6 +2223,10 @@
 ## threejs
 
 - `idea_000048` - Heart Island study and floating research atlas (`research_candidate`, 65/100) - `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml`
+
+## time
+
+- `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
 
 ## tmux
 
@@ -2349,6 +2378,10 @@
 ## web-pollution-detection
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
+
+## well-being
+
+- `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
 
 ## wifi
 
