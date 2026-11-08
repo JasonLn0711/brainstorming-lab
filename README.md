@@ -169,3 +169,6 @@ This review adds no experiment, website implementation, or scheduled research bl
 ## Private execution locator
 
 [Kairos Live](ideas/2026-11-04-cs-kairos-live/README.md) is an archived routing record for an independent private execution repository. This public index contains ownership metadata only.
+
+Shared-tool ownership, review sources, and measured validation improvements are
+recorded in [shared validation](docs/shared-rust-tools.md).
