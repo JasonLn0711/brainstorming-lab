@@ -232,6 +232,7 @@ connections:
 - idea_000020
 - idea_000039
 - idea_000040
+- idea_000051
 connection_notes:
 - id: idea_000015
   relation: audio_runtime_context

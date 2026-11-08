@@ -1,0 +1,66 @@
+id: idea_000051
+title: GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證
+created_at: '2026-11-08'
+type: question
+tags:
+- llm-api
+- data-residency
+- ai-security
+- agent-evaluation
+status: raw
+problem_statement:
+  raw: GLM-5.3 uncensored 版本，是否可以在非中國的地區找到 API？
+  normalized: Given third-party modified GLM APIs, select a verifiable provider under
+    geographic, data-processing, model-identity, quality and cost constraints.
+  structure:
+    given: 第三方 GLM 修改版 API 的公開供應資訊
+    optimize: 可追溯的供應選擇與最小驗證
+    constraints:
+    - 地域條件未定
+    - 無付費呼叫證據
+    - checkpoint 未確認
+    - 不傳送敏感資料
+summary: 保存使用者提供的供應商比較，區分台灣可呼叫、非中國推論與非中國公司控制權；公開頁面核對完成，付費 API、checkpoint 與資料流尚未驗證。
+assumptions:
+- 非中國的要求尚未選定，三層條件分開保留。
+- 供應商頁面存在不代表台灣付費呼叫成功或資料不進中國。
+- 降低拒答不代表正確性或 agent 任務完成率提升。
+evidence:
+- 2026-11-08 使用者提供的問答及供應商價格；詳見 companion Markdown。
+- 2026-11-08 公開模型頁與 Refuseless privacy 查核；未呼叫付費 API。
+baseline:
+- 原版 GLM 與既有 coding agent 在相同良性任務上的表現；尚未測量。
+metrics:
+- 實際路由及 GPU 地區證據完整性
+- 良性任務完成率、工具 schema 正確率、延遲、每成功任務成本
+insights: []
+connections:
+- idea_000020
+- idea_000027
+- idea_000043
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity: {}
+maturity_score: 0/100
+maturity_level: raw
+next_steps:
+- 由 Jason 在下次啟動篩選時決定可用性、資料地域、公司控制權三層要求。
+- 由評估者核對 GPU 地區、上游、fallback、保留政策與 checkpoint；不符合必選條件即排除。
+source:
+- user conversation 2026-11-08
+- https://refuseless.com/
+- https://refuseless.com/privacy
+- https://arnict.com/models/glm-5.3-abliterated
+- https://unlid.ai/models/glm-5.3-abliterated
+- https://unlid.ai/models/glm-5.3-uncensored
+- https://openuncensored.com/models/glm-5.3-uncensored
+maturity_action: clarify and normalize problem statement
+human_note: ideas/2026-11-08-glm-5-3-non-china-api.md
+maturity_note: 0/100 為保守初始未評分值；本次只保存研究問題，未進行週選或 research-candidate 產生。
+pressure_test:
+  setting: 台灣 coding agent 使用公開 toy repo，供應商主路由故障而觸發 fallback。
+  expected_failure: 備援跨地域、模型版本改變、工具呼叫失敗或重試費用膨脹。
+  smallest_test: 先核對可鎖定地區及所有備援處理商的書面證據；通過且另行啟動測試後，以同一組 5 個良性任務比較原版及修改版。
+  decision: 必要地域證據缺失即不選用；以實際完成率及每成功任務成本決定繼續或停用，拒答減少本身不算成功。

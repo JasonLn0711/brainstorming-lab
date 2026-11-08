@@ -392,6 +392,7 @@ connections:
 - idea_000019
 - idea_000029
 - idea_000033
+- idea_000051
 role: idea
 value:
   impact: medium
