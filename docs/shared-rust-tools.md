@@ -48,3 +48,28 @@ corpus (one paper folder, one scientific evaluation and one shortlist). The prio
 8-finding observation above remains the pre-fix measurement, not the current
 corpus status. This improves validation correctness and reuse of the existing
 shared parser; no Rust migration or speed/token-saving claim follows from it.
+
+## Batch shortlist read reuse — 2026-11-08
+
+`validate_shortlists` now shares successful YAML reads across current validation
+and historical-selection lookups for one invocation. Each resolved source is
+parsed once per batch; the cache is discarded when the call ends. Parse failures
+are not cached. Standalone file and registry calls retain their default behavior.
+This treats a batch as a source snapshot; concurrent source edits require rerunning
+validation. No persisted cache or source-record mutation is introduced.
+
+All 29 tests pass. The current corpus produces identical ordered findings (zero)
+with three loader calls reduced to two. A two-shortlist/one-paper fixture reduces
+eight reads to three, preserves ordered findings and detects a changed historical
+selection on the next call. These are read-count measurements, not elapsed-time,
+energy or LLM-token savings.
+
+Ownership review: scientific quality weights, penalties, caps and adjudication
+remain in `paper_quality.py`; shortlist recency, selection identity, arXiv URL
+normalization and scoring remain in `paper_shortlist.py`. `yaml_io.py` is the
+application's read/write codec, not a standalone generic validator. Paper Lab
+mixes required files/text sections with training policy and remains a candidate
+for separately justified extraction. The
+[shared ownership ledger](https://github.com/JasonLn0711/kairos-rust-tools/blob/main/docs/reviewed-sources.json)
+pins these decisions to source and regression evidence. Shared Rust syntax or
+presence checks do not replace these complete domain entrypoints.

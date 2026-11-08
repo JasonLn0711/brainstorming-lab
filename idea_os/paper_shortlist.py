@@ -9,6 +9,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 from typing import Any
+from collections.abc import Callable
 from urllib.parse import urlsplit, urlunsplit
 
 from idea_os.paper_lab import LAB_DIR, VALID_CYCLE_SLOTS, paper_lab_path
@@ -110,19 +111,31 @@ def validate_shortlists(root: str | Path | None = None) -> list[str]:
     errors: list[str] = []
     if not lab.exists():
         return [f"missing {LAB_DIR}/"]
+    parsed: dict[Path, Any] = {}
+
+    def load_once(path: Path) -> Any:
+        key = path.resolve()
+        if key not in parsed:
+            parsed[key] = load_yaml(path)
+        return parsed[key]
+
     for path in shortlist_paths(repo):
-        errors.extend(validate_shortlist_file(path, repo))
+        errors.extend(validate_shortlist_file(path, repo, _load=load_once))
     return errors
 
 
-def validate_shortlist_file(path: str | Path, root: str | Path | None = None) -> list[str]:
+def validate_shortlist_file(
+    path: str | Path, root: str | Path | None = None,
+    *, _load: Callable[[Path], Any] | None = None,
+) -> list[str]:
+    load = _load or load_yaml
     repo = Path(root).resolve() if root is not None else REPO_ROOT
     shortlist_path = Path(path).resolve()
     label = _rel(shortlist_path, repo)
     errors: list[str] = []
 
     try:
-        data = load_yaml(shortlist_path)
+        data = load(shortlist_path)
     except Exception as exc:
         return [f"{label}: could not parse YAML: {exc}"]
     if not isinstance(data, dict):
@@ -148,7 +161,7 @@ def validate_shortlist_file(path: str | Path, root: str | Path | None = None) ->
     if len(candidates) > 5:
         errors.append(f"{label}: candidates should contain at most 5 papers")
 
-    prior_selected = selected_item_registry(repo, before_week=week)
+    prior_selected = selected_item_registry(repo, before_week=week, _load=load)
     seen_candidates: dict[str, str] = {}
     selected_count = 0
     for index, candidate in enumerate(candidates, start=1):
@@ -167,7 +180,11 @@ def validate_shortlist_file(path: str | Path, root: str | Path | None = None) ->
     return errors
 
 
-def selected_item_registry(root: str | Path | None = None, before_week: str | None = None) -> list[dict[str, Any]]:
+def selected_item_registry(
+    root: str | Path | None = None, before_week: str | None = None,
+    *, _load: Callable[[Path], Any] | None = None,
+) -> list[dict[str, Any]]:
+    load = _load or load_yaml
     repo = Path(root).resolve() if root is not None else REPO_ROOT
     registry: list[dict[str, Any]] = []
 
@@ -175,7 +192,7 @@ def selected_item_registry(root: str | Path | None = None, before_week: str | No
     if papers_dir.exists():
         for paper_yaml in sorted(papers_dir.glob("*/paper.yaml")):
             try:
-                data = load_yaml(paper_yaml)
+                data = load(paper_yaml)
             except Exception:
                 continue
             if not isinstance(data, dict):
@@ -196,7 +213,7 @@ def selected_item_registry(root: str | Path | None = None, before_week: str | No
 
     for shortlist in shortlist_paths(repo):
         try:
-            data = load_yaml(shortlist)
+            data = load(shortlist)
         except Exception:
             continue
         if not isinstance(data, dict):
