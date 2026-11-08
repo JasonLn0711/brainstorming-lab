@@ -30,3 +30,21 @@ No wall-time, energy, maintenance-hour or LLM-token saving has been established.
 Any Rust replacement must preserve the domain findings and demonstrate a benefit
 under the central [measurement protocol](https://github.com/JasonLn0711/kairos-rust-tools/blob/main/docs/performance.md).
 Planning owns priority and capacity; this document owns the implementation receipt.
+
+## Quoted-key parsing correction — 2026-11-08
+
+Follow-up investigation identified the eight earlier findings as fallback-parser
+false positives: a YAML key written as `'yes'` was retained with its quote
+characters, so the quality validator could not find the actual `yes` field.
+The underlying evaluation data was not changed. The shared fallback loader now
+decodes single/double-quoted mapping keys, including embedded colons, doubled
+single quotes and JSON-compatible double-quote escapes. List mappings use the
+same key parser; quoted list scalars remain scalars. Malformed quoted mapping
+keys raise errors. This is support for the documented YAML subset, not a claim
+of complete YAML specification conformance or complete PyYAML equivalence.
+
+After the fix, 28 unit tests and all three paper CLI checks pass on the existing
+corpus (one paper folder, one scientific evaluation and one shortlist). The prior
+8-finding observation above remains the pre-fix measurement, not the current
+corpus status. This improves validation correctness and reuse of the existing
+shared parser; no Rust migration or speed/token-saving claim follows from it.

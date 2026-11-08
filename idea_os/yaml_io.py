@@ -136,7 +136,7 @@ def _parse_list(lines: list[str], index: int, indent: int) -> tuple[list[Any], i
         if item_text == "":
             value, index = _parse_block(lines, index + 1, indent + 2)
             result.append(value)
-        elif _looks_like_key_value(item_text) and not item_text.startswith(("'", '"')):
+        elif _looks_like_key_value(item_text):
             key, raw_value = _split_key_value(item_text, index)
             item: dict[str, Any] = {key: _parse_scalar(raw_value) if raw_value else None}
             index += 1
@@ -189,6 +189,20 @@ def _parse_block_string(
 
 
 def _split_key_value(text: str, index: int) -> tuple[str, str]:
+    if text.startswith('"'):
+        try:
+            key, end = json.JSONDecoder().raw_decode(text)
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"Invalid quoted YAML key near line {index + 1}") from exc
+        remainder = text[end:].lstrip()
+        if not remainder.startswith(":"):
+            raise ValueError(f"Expected colon after YAML key near line {index + 1}")
+        return key, remainder[1:].strip()
+    if text.startswith("'"):
+        match = re.match(r"'((?:[^']|'')*)'\s*:(.*)$", text)
+        if match is None:
+            raise ValueError(f"Invalid quoted YAML key near line {index + 1}")
+        return match.group(1).replace("''", "'"), match.group(2).strip()
     if ":" not in text:
         raise ValueError(f"Expected key/value YAML pair near line {index + 1}: {text}")
     key, value = text.split(":", 1)
@@ -243,6 +257,12 @@ def _parse_scalar_with_continuation(
 
 
 def _looks_like_key_value(text: str) -> bool:
+    if text.startswith(("'", '"')):
+        try:
+            _split_key_value(text, 0)
+            return True
+        except ValueError:
+            return False
     return re.match(r"^[A-Za-z0-9_-]+:", text) is not None
 
 
