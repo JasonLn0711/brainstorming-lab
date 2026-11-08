@@ -1,0 +1,68 @@
+id: idea_000052
+title: 幸福、回憶與人生機會的時效性
+created_at: '2026-11-08'
+type: question
+tags:
+- well-being
+- life-decisions
+- time
+- relationships
+- sustainability
+status: raw
+problem_statement:
+  raw: 人生幸福來自當下體驗還是長期回憶？如何不把重要體驗無限延後，又保護現在的健康、關係及長期安全？
+  normalized: Given finite time and changing opportunities, compare experience now,
+    a smaller alternative, and delay under constraints of health, relationships, resources
+    and uncertainty.
+  structure:
+    given: 有限時間與可能變動的人生機會
+    optimize: 兼顧當下體驗、回顧評價與意義的選擇
+    constraints:
+    - 不預設年輕必然更好
+    - 不把記憶量當幸福代理指標
+    - 不新增排程承諾
+    - 保護恢復與既定責任
+summary: 保存兩張旅行趁年輕文章截圖與使用者分析，區分當下感受、人生評價與意義，檢驗有效記憶及年齡優勢假設；保留機會時效性與健康、關係及長期安全的權衡。
+assumptions:
+- 值得回味不等於當下體驗良好，也不涵蓋全部人生價值。
+- 年齡可能改變機會條件，但不代表價值必然單調下降。
+- 記錄能提供回憶線索，但不能取代相處本身。
+evidence:
+- 2026-11-08 使用者提供兩張截圖及分析；已目視讀取、保存副本及轉錄。
+- Seneca 第10、16章與 OECD 主觀幸福指南提供概念核對，非個人因果驗證。
+baseline:
+- 只依工作截止日決策
+- 只依未來回憶或害怕錯過決策
+metrics:
+- 是否辨認具體機會窗口及延後代價
+- 當下感受、後續回味及意義分開描述
+- 是否侵蝕睡眠、關係、既定責任與可承擔預算
+insights: []
+connections:
+- idea_000003
+- idea_000017
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity: {}
+maturity_score: 0/100
+maturity_level: raw
+next_steps:
+- 若 Jason 主動啟動反思，選一件反覆延後的小事，分辨真實窗口與想像中的錯過。
+- 比較現在做、縮小做、延後三種選項；沒有清楚窗口或會擠壓恢復時保留延後。
+source:
+- user conversation 2026-11-08
+- ideas/2026-11-08-experience-memory-life/sources/transcript.md
+- ideas/2026-11-08-experience-memory-life/sources/user-analysis.md
+- https://thestoiclibrary.com/shortness-of-life/10
+- https://mouseia.org/texts/seneca-brevitate-vitae/part-16
+- https://doi.org/10.1787/9203632a-en
+maturity_action: clarify and normalize problem statement
+human_note: ideas/2026-11-08-experience-memory-life/README.md
+maturity_note: 0/100 為未評分初始值；不是人生價值評分。僅記錄反思，未啟動研究或週選。
+pressure_test:
+  setting: 忙碌學期中，一件想與家人共同完成的小事反覆被延後。
+  expected_failure: 把所有體驗標成急迫，導致睡眠受損、內疚或只顧拍攝；也可能沒有真正時效性。
+  smallest_test: 本人選定一件事後，比較現在做、縮小做、延後；如實行，當天及一週後各留一句感受，不強制量表或連續打卡。
+  decision: 只有具體窗口證據與可承擔成本才支持提前；負擔增加就縮小或停用此方法。單一案例不證明幸福理論。

@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-11-08",
+  "source": "user supplied screenshots",
+  "files": [
+    {
+      "file": "S__99581958_0.jpg",
+      "original_path": "/Users/iKev/Downloads/S__99581958_0.jpg",
+      "sha256": "c60a3c82ff3a242ce791c6fbc796390e974c9c7c428f53a1873f54cf147c9570",
+      "bytes": 311395
+    },
+    {
+      "file": "S__99581959_0.jpg",
+      "original_path": "/Users/iKev/Downloads/S__99581959_0.jpg",
+      "sha256": "96e90328f615b77d9836a90624ea54c8d0d19888a2140d825553f79c483e09e5",
+      "bytes": 324182
+    }
+  ]
+}
