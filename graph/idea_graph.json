@@ -1265,6 +1265,164 @@
         "sustainability"
       ],
       "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml"
+    },
+    {
+      "id": "idea_000053",
+      "title": "\u5f9e\u5c0e\u822a\u6a21\u5f0f\u5230\u4eba\u751f\u81ea\u4e3b\uff1a\u9078\u64c7\u6b0a\u3001\u5be6\u73fe\u80fd\u529b\u8207\u91cd\u65b0\u9078\u64c7",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "life-decisions",
+        "autonomy",
+        "phd-training",
+        "self-direction",
+        "capacity"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml"
+    },
+    {
+      "id": "idea_000054",
+      "title": "\u5f9e\u5b78\u6b77\u6ffe\u93e1\u5230\u80fd\u529b\u8b49\u64da\uff1a\u5408\u4f5c\u8868\u73fe\u8207\u535a\u58eb\u8a13\u7df4\u7684\u91cd\u65b0\u5b9a\u4f4d",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "phd-training",
+        "credentials",
+        "competence",
+        "performance",
+        "collaboration",
+        "research-identity"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000054_credentials_competence_and_performance.yaml"
+    },
+    {
+      "id": "idea_000055",
+      "title": "\u611f\u53d7\u3001\u8868\u9054\u8207\u76f8\u4e92\u7406\u89e3\uff1a\u5f9e\u5177\u9ad4\u6b23\u8cde\u5230\u95dc\u4fc2\u4e2d\u7684\u6eab\u6696",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "perception",
+        "expression",
+        "narrative",
+        "communication",
+        "relationships",
+        "epistemic-humility"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml"
+    },
+    {
+      "id": "idea_000056",
+      "title": "\u5f9e\u907a\u6f0f\u8207\u4ea4\u4ed8\u7126\u616e\u5230\u53ef\u4fee\u6b63\u5408\u4f5c\uff1a\u5bb9\u932f\u3001\u4e3b\u5c0e\u6b0a\u8207\u5e73\u7b49\u5b78\u7fd2",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "iterative-delivery",
+        "communication",
+        "collaboration",
+        "agency",
+        "scope-control",
+        "learning",
+        "self-confidence"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml"
+    },
+    {
+      "id": "idea_000057",
+      "title": "\u76f4\u89ba\u3001\u7d93\u9a57\u5ef6\u7e8c\u8207\u6df1\u523b\u6295\u5165\uff1a\u5f9e\u611f\u53d7\u3001\u7406\u89e3\u5230\u81ea\u4e3b\u9078\u64c7",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "intuition",
+        "experience-continuity",
+        "feeling",
+        "understanding",
+        "agency",
+        "interpretation",
+        "learning",
+        "relationships"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml"
+    },
+    {
+      "id": "idea_000058",
+      "title": "\u6709\u610f\u7fa9\u7684\u8a18\u61b6\u8207\u81ea\u4e3b\u6295\u5165\uff1a\u5728\u770b\u898b\u9650\u5236\u5f8c\u4fdd\u7559\u71b1\u60c5\u8207\u671f\u5f85",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "meaningful-memory",
+        "motivation",
+        "agency",
+        "chosen-devotion",
+        "learning",
+        "life-decisions",
+        "expectation"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml"
+    },
+    {
+      "id": "idea_000059",
+      "title": "\u751f\u547d\u6d3b\u529b\u3001\u5c0a\u91cd\u5f0f\u9818\u5c0e\u8207\u6709\u908a\u754c\u7684\u81ea\u5f8b\uff1a\u6211\u60f3\u6210\u70ba\u600e\u6a23\u7684\u4eba",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "vitality",
+        "leadership",
+        "agency",
+        "discipline",
+        "feedback",
+        "stopping-criteria",
+        "motivation",
+        "role-models"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml"
+    },
+    {
+      "id": "idea_000060",
+      "title": "\u5f9e\u5fd9\u788c\u4e2d\u7684\u8d74\u7d04\u5230\u671f\u5f85\u518d\u76f8\u9047\uff1a\u8b1b\u5ea7\u56de\u9867\u8207\u88ab\u559a\u8d77\u7684\u8208\u8da3",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "lecture-reflection",
+        "renewed-interest",
+        "agency",
+        "experience",
+        "motivation",
+        "source-fidelity"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml"
+    },
+    {
+      "id": "idea_000061",
+      "title": "\u6642\u9593\u3001\u91d1\u9322\u8207\u4eba\u751f\u81ea\u4e3b\u6b0a\uff1a\u6709\u9650\u751f\u547d\u4e2d\u7684\u53ef\u627f\u64d4\u914d\u7f6e",
+      "status": "raw",
+      "maturity_score": "0/100",
+      "maturity_score_raw": 0,
+      "maturity_level": "raw",
+      "tags": [
+        "time",
+        "money",
+        "life-autonomy",
+        "opportunity-cost",
+        "life-decisions",
+        "sustainability"
+      ],
+      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000061_time_money_and_life_autonomy.yaml"
     }
   ],
   "edges": [
@@ -2575,6 +2733,32 @@
       ]
     },
     {
+      "source": "idea_000012",
+      "target": "idea_000053",
+      "weight": 1.0,
+      "similarity": 0.1094,
+      "shared_tags": [
+        "phd-training"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000012",
+      "target": "idea_000054",
+      "weight": 1.0,
+      "similarity": 0.1711,
+      "shared_tags": [
+        "phd-training"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000013",
       "target": "idea_000018",
       "weight": 0.6,
@@ -2956,6 +3140,18 @@
       ]
     },
     {
+      "source": "idea_000016",
+      "target": "idea_000057",
+      "weight": 0.6,
+      "similarity": 0.2063,
+      "shared_tags": [
+        "interpretation"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000017",
       "target": "idea_000018",
       "weight": 1.0,
@@ -3015,6 +3211,26 @@
       "target": "idea_000052",
       "weight": 1.0,
       "similarity": 0.1044,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000017",
+      "target": "idea_000053",
+      "weight": 1.0,
+      "similarity": 0.1032,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000017",
+      "target": "idea_000056",
+      "weight": 1.0,
+      "similarity": 0.0891,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -3855,6 +4071,43 @@
       ]
     },
     {
+      "source": "idea_000033",
+      "target": "idea_000053",
+      "weight": 1.0,
+      "similarity": 0.1418,
+      "shared_tags": [
+        "phd-training"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000033",
+      "target": "idea_000054",
+      "weight": 1.0,
+      "similarity": 0.2322,
+      "shared_tags": [
+        "phd-training",
+        "research-identity"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000033",
+      "target": "idea_000059",
+      "weight": 1.0,
+      "similarity": 0.0414,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000034",
       "target": "idea_000042",
       "weight": 1.0,
@@ -4062,6 +4315,16 @@
       ]
     },
     {
+      "source": "idea_000038",
+      "target": "idea_000057",
+      "weight": 1.0,
+      "similarity": 0.0421,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000039",
       "target": "idea_000040",
       "weight": 0.6,
@@ -4240,6 +4503,459 @@
       "reasons": [
         "manual_connection",
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000052",
+      "target": "idea_000053",
+      "weight": 1.0,
+      "similarity": 0.3712,
+      "shared_tags": [
+        "life-decisions"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000052",
+      "target": "idea_000055",
+      "weight": 1.0,
+      "similarity": 0.1854,
+      "shared_tags": [
+        "relationships"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000052",
+      "target": "idea_000057",
+      "weight": 1.0,
+      "similarity": 0.2241,
+      "shared_tags": [
+        "relationships"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000052",
+      "target": "idea_000058",
+      "weight": 1.0,
+      "similarity": 0.2778,
+      "shared_tags": [
+        "life-decisions"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000052",
+      "target": "idea_000060",
+      "weight": 1.0,
+      "similarity": 0.1488,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000052",
+      "target": "idea_000061",
+      "weight": 1.0,
+      "similarity": 0.5327,
+      "shared_tags": [
+        "life-decisions",
+        "sustainability",
+        "time"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000054",
+      "weight": 1.0,
+      "similarity": 0.3289,
+      "shared_tags": [
+        "phd-training"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000055",
+      "weight": 1.0,
+      "similarity": 0.1639,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000056",
+      "weight": 1.0,
+      "similarity": 0.2476,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000057",
+      "weight": 1.0,
+      "similarity": 0.1851,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000058",
+      "weight": 1.0,
+      "similarity": 0.305,
+      "shared_tags": [
+        "life-decisions"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000059",
+      "weight": 1.0,
+      "similarity": 0.16,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000060",
+      "weight": 1.0,
+      "similarity": 0.1769,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000053",
+      "target": "idea_000061",
+      "weight": 1.0,
+      "similarity": 0.4974,
+      "shared_tags": [
+        "life-decisions"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000054",
+      "target": "idea_000055",
+      "weight": 1.0,
+      "similarity": 0.1421,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000054",
+      "target": "idea_000056",
+      "weight": 1.0,
+      "similarity": 0.2074,
+      "shared_tags": [
+        "collaboration"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000054",
+      "target": "idea_000057",
+      "weight": 1.0,
+      "similarity": 0.1441,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000054",
+      "target": "idea_000058",
+      "weight": 1.0,
+      "similarity": 0.115,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000054",
+      "target": "idea_000059",
+      "weight": 1.0,
+      "similarity": 0.1233,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000055",
+      "target": "idea_000056",
+      "weight": 1.0,
+      "similarity": 0.234,
+      "shared_tags": [
+        "communication"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000055",
+      "target": "idea_000057",
+      "weight": 1.0,
+      "similarity": 0.2767,
+      "shared_tags": [
+        "relationships"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000055",
+      "target": "idea_000058",
+      "weight": 1.0,
+      "similarity": 0.157,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000055",
+      "target": "idea_000059",
+      "weight": 1.0,
+      "similarity": 0.1675,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000055",
+      "target": "idea_000060",
+      "weight": 1.0,
+      "similarity": 0.1872,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000056",
+      "target": "idea_000057",
+      "weight": 1.0,
+      "similarity": 0.302,
+      "shared_tags": [
+        "agency",
+        "learning"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000056",
+      "target": "idea_000058",
+      "weight": 1.0,
+      "similarity": 0.2659,
+      "shared_tags": [
+        "agency",
+        "learning"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000056",
+      "target": "idea_000059",
+      "weight": 1.0,
+      "similarity": 0.2116,
+      "shared_tags": [
+        "agency"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000056",
+      "target": "idea_000060",
+      "weight": 0.6,
+      "similarity": 0.2177,
+      "shared_tags": [
+        "agency"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000056",
+      "target": "idea_000061",
+      "weight": 1.0,
+      "similarity": 0.1147,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000057",
+      "target": "idea_000058",
+      "weight": 1.0,
+      "similarity": 0.2997,
+      "shared_tags": [
+        "agency",
+        "learning"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000057",
+      "target": "idea_000059",
+      "weight": 1.0,
+      "similarity": 0.2227,
+      "shared_tags": [
+        "agency"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000057",
+      "target": "idea_000060",
+      "weight": 1.0,
+      "similarity": 0.3306,
+      "shared_tags": [
+        "agency"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000058",
+      "target": "idea_000059",
+      "weight": 1.0,
+      "similarity": 0.2853,
+      "shared_tags": [
+        "agency",
+        "motivation"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000058",
+      "target": "idea_000060",
+      "weight": 1.0,
+      "similarity": 0.3099,
+      "shared_tags": [
+        "agency",
+        "motivation"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000058",
+      "target": "idea_000061",
+      "weight": 1.0,
+      "similarity": 0.3276,
+      "shared_tags": [
+        "life-decisions"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000059",
+      "target": "idea_000060",
+      "weight": 1.0,
+      "similarity": 0.2865,
+      "shared_tags": [
+        "agency",
+        "motivation"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000059",
+      "target": "idea_000061",
+      "weight": 1.0,
+      "similarity": 0.1232,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000060",
+      "target": "idea_000061",
+      "weight": 1.0,
+      "similarity": 0.1981,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     }
   ]

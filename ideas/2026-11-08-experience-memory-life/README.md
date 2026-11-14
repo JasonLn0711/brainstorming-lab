@@ -63,3 +63,39 @@
 | [brainstorm bridge](../../../planning-everything-track/docs/15-brainstorming-repo-bridge.md#experience-memory-2026-11-08) | 長期索引，詳細來源只維護本資料夾 |
 
 尚未升格為永久知識規則，也沒有與所有技術想法牽強互連。下一個真正需要本人判斷的問題是：是否有某個具體、重要且確有時效性的體驗值得重新比較？目前不推定答案。
+
+
+<a id="life-agency-2026-11-14"></a>
+## 11/14 延伸：選擇權如何轉成生活能力
+
+[導航模式與人生自主](../2026-11-14-navigation-mode-and-life-agency/README.md)（idea_000053）補上「如何做出、實現及修正選擇」；本篇提供「什麼值得做、機會何時改變」的價值與時效檢核。兩者共同保留健康、關係與恢復成本；本次未驗證個人行為改變。
+
+
+<a id="mutual-understanding-2026-11-14"></a>
+## 11/14 延伸：感受、表達與相互理解
+
+[完整去識別整理](../2026-11-14-perception-expression-and-mutual-understanding/README.md)（idea_000055）。當下被理解的溫暖與日後回憶可以各自珍惜。保存來源支援回顧，不取代自然相處；不將互動變成記錄配額。
+
+
+<a id="intuition-continuity-2026-11-14"></a>
+## 11/14 延伸：直覺與經驗延續
+
+[完整去識別整理](../2026-11-14-intuition-and-continuity-of-experience/README.md)（idea_000057）。當下感受、經驗延續與後續回顧的意義各留位置；不能只用中斷片段形成完整因果故事。
+
+
+<a id="meaning-motivation-2026-11-14"></a>
+## 11/14 延伸：有意義的記憶與自主投入
+
+[完整去識別整理](../2026-11-14-meaningful-memory-and-chosen-motivation/README.md)（idea_000058）。學習、活動與旅行的不同記憶，補上意義取向的個人差異；記憶數量、鮮明程度與深刻感不直接等同。整體路由見[系列反思導航](../../docs/2026-11-14-personal-reflections-map.md)。
+
+
+<a id="appointment-interest-2026-11-14"></a>
+## 11/14 延伸：赴約與再次參與的期待
+
+[完整去識別整理](../2026-11-14-keeping-an-appointment-and-renewed-interest/README.md)（idea_000060）。赴約與再約提供參與、回顧與意義的具體片段；當下正向回饋不等於必須增加活動。
+
+
+<a id="time-money-autonomy-2026-11-14"></a>
+## 11/14 延伸：時間、金錢與人生自主權
+
+[完整體悟與分析](../2026-11-14-time-money-and-life-autonomy/README.md)（idea_000061）。時間不可回復的體悟補上資源取捨；是否有真實窗口與可承擔代價，仍決定現在做、縮小或延後。

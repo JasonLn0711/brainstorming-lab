@@ -41,6 +41,14 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## agency
+
+- `idea_000056` - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 (`raw`, 0/100) - `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml`
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
+- `idea_000058` - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 (`raw`, 0/100) - `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml`
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
+- `idea_000060` - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 (`raw`, 0/100) - `ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml`
+
 ## agent-based-modeling
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
@@ -238,6 +246,10 @@
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
 
+## autonomy
+
+- `idea_000053` - 從導航模式到人生自主：選擇權、實現能力與重新選擇 (`raw`, 0/100) - `ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml`
+
 ## backup
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
@@ -287,6 +299,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## capacity
+
+- `idea_000053` - 從導航模式到人生自主：選擇權、實現能力與重新選擇 (`raw`, 0/100) - `ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml`
+
 ## career
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
@@ -302,6 +318,10 @@
 ## ceis
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
+## chosen-devotion
+
+- `idea_000058` - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 (`raw`, 0/100) - `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml`
 
 ## citation-absorption-gap
 
@@ -371,6 +391,20 @@
 ## cognitive-vulnerability-modeling
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## collaboration
+
+- `idea_000054` - 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 (`raw`, 0/100) - `ideas/raw/idea_000054_credentials_competence_and_performance.yaml`
+- `idea_000056` - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 (`raw`, 0/100) - `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml`
+
+## communication
+
+- `idea_000055` - 感受、表達與相互理解：從具體欣賞到關係中的溫暖 (`raw`, 0/100) - `ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml`
+- `idea_000056` - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 (`raw`, 0/100) - `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml`
+
+## competence
+
+- `idea_000054` - 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 (`raw`, 0/100) - `ideas/raw/idea_000054_credentials_competence_and_performance.yaml`
 
 ## complex-systems
 
@@ -457,6 +491,10 @@
 ## counterfactual-transcripts
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
+## credentials
+
+- `idea_000054` - 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 (`raw`, 0/100) - `ideas/raw/idea_000054_credentials_competence_and_performance.yaml`
 
 ## cross-domain
 
@@ -606,6 +644,10 @@
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
+## discipline
+
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
+
 ## distributed-cognition
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -691,6 +733,10 @@
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
 
+## epistemic-humility
+
+- `idea_000055` - 感受、表達與相互理解：從具體欣賞到關係中的溫暖 (`raw`, 0/100) - `ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml`
+
 ## escalation-dynamics
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
@@ -748,9 +794,21 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## expectation
+
+- `idea_000058` - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 (`raw`, 0/100) - `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml`
+
 ## expected-operational-harm
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
+## experience
+
+- `idea_000060` - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 (`raw`, 0/100) - `ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml`
+
+## experience-continuity
+
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
 
 ## experiment-design
 
@@ -780,6 +838,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## expression
+
+- `idea_000055` - 感受、表達與相互理解：從具體欣賞到關係中的溫暖 (`raw`, 0/100) - `ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml`
+
 ## extended-mind
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -792,9 +854,17 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## feedback
+
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
+
 ## feedback-loop
 
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
+
+## feeling
+
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
 
 ## figure-analysis
 
@@ -1120,10 +1190,15 @@
 ## interpretation
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
 
 ## intervention-boundary
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+
+## intuition
+
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
 
 ## ios-audio
 
@@ -1136,6 +1211,10 @@
 ## iso-27001
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
+## iterative-delivery
+
+- `idea_000056` - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 (`raw`, 0/100) - `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml`
 
 ## janus
 
@@ -1175,14 +1254,28 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
+## leadership
+
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
+
 ## learned-orchestration
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 
+## learning
+
+- `idea_000056` - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 (`raw`, 0/100) - `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml`
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
+- `idea_000058` - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 (`raw`, 0/100) - `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml`
+
 ## lecture-practice
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
+
+## lecture-reflection
+
+- `idea_000060` - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 (`raw`, 0/100) - `ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml`
 
 ## legal-ai
 
@@ -1192,9 +1285,16 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
+## life-autonomy
+
+- `idea_000061` - 時間、金錢與人生自主權：有限生命中的可承擔配置 (`raw`, 0/100) - `ideas/raw/idea_000061_time_money_and_life_autonomy.yaml`
+
 ## life-decisions
 
 - `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
+- `idea_000053` - 從導航模式到人生自主：選擇權、實現能力與重新選擇 (`raw`, 0/100) - `ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml`
+- `idea_000058` - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 (`raw`, 0/100) - `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml`
+- `idea_000061` - 時間、金錢與人生自主權：有限生命中的可承擔配置 (`raw`, 0/100) - `ideas/raw/idea_000061_time_money_and_life_autonomy.yaml`
 
 ## life-state-machine
 
@@ -1304,6 +1404,10 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## meaningful-memory
+
+- `idea_000058` - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 (`raw`, 0/100) - `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml`
+
 ## measurement-integrity
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
@@ -1383,6 +1487,10 @@
 
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
+## money
+
+- `idea_000061` - 時間、金錢與人生自主權：有限生命中的可承擔配置 (`raw`, 0/100) - `ideas/raw/idea_000061_time_money_and_life_autonomy.yaml`
+
 ## moral-framing-risk
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
@@ -1390,6 +1498,12 @@
 ## mosquito-control
 
 - `idea_000010` - AI-assisted smart mosquito trap (`execution_ready`, 86/100) - `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml`
+
+## motivation
+
+- `idea_000058` - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 (`raw`, 0/100) - `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml`
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
+- `idea_000060` - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 (`raw`, 0/100) - `ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml`
 
 ## multi-agent
 
@@ -1412,6 +1526,10 @@
 ## multimodal-fusion
 
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+
+## narrative
+
+- `idea_000055` - 感受、表達與相互理解：從具體欣賞到關係中的溫暖 (`raw`, 0/100) - `ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml`
 
 ## nemo-curator
 
@@ -1473,6 +1591,10 @@
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 
+## opportunity-cost
+
+- `idea_000061` - 時間、金錢與人生自主權：有限生命中的可承擔配置 (`raw`, 0/100) - `ideas/raw/idea_000061_time_money_and_life_autonomy.yaml`
+
 ## osint
 
 - `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
@@ -1527,6 +1649,14 @@
 
 - `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
+## perception
+
+- `idea_000055` - 感受、表達與相互理解：從具體欣賞到關係中的溫暖 (`raw`, 0/100) - `ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml`
+
+## performance
+
+- `idea_000054` - 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 (`raw`, 0/100) - `ideas/raw/idea_000054_credentials_competence_and_performance.yaml`
+
 ## persona-simulation
 
 - `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
@@ -1551,6 +1681,8 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+- `idea_000053` - 從導航模式到人生自主：選擇權、實現能力與重新選擇 (`raw`, 0/100) - `ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml`
+- `idea_000054` - 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 (`raw`, 0/100) - `ideas/raw/idea_000054_credentials_competence_and_performance.yaml`
 
 ## philosophy-of-mind
 
@@ -1716,10 +1848,16 @@
 ## relationships
 
 - `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
+- `idea_000055` - 感受、表達與相互理解：從具體欣賞到關係中的溫暖 (`raw`, 0/100) - `ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml`
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
 
 ## release-engineering
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## renewed-interest
+
+- `idea_000060` - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 (`raw`, 0/100) - `ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml`
 
 ## repo-architecture
 
@@ -1755,6 +1893,7 @@
 ## research-identity
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+- `idea_000054` - 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 (`raw`, 0/100) - `ideas/raw/idea_000054_credentials_competence_and_performance.yaml`
 
 ## research-operating-system
 
@@ -1834,6 +1973,10 @@
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
+## role-models
+
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
+
 ## role-play
 
 - `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
@@ -1896,6 +2039,10 @@
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 
+## scope-control
+
+- `idea_000056` - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 (`raw`, 0/100) - `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml`
+
 ## script-analysis
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
@@ -1933,9 +2080,17 @@
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## self-confidence
+
+- `idea_000056` - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 (`raw`, 0/100) - `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml`
+
 ## self-directed-data-discovery
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## self-direction
+
+- `idea_000053` - 從導航模式到人生自主：選擇權、實現能力與重新選擇 (`raw`, 0/100) - `ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml`
 
 ## self-modeling
 
@@ -2042,6 +2197,10 @@
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
 
+## source-fidelity
+
+- `idea_000060` - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 (`raw`, 0/100) - `ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml`
+
 ## source-laundering
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
@@ -2099,6 +2258,10 @@
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
 
+## stopping-criteria
+
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
+
 ## stopping-rule
 
 - `idea_000041` - Autoencoder-derived latent coverage for stopping medical image data collection (`execution_ready`, 83/100) - `ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml`
@@ -2138,6 +2301,7 @@
 ## sustainability
 
 - `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
+- `idea_000061` - 時間、金錢與人生自主權：有限生命中的可承擔配置 (`raw`, 0/100) - `ideas/raw/idea_000061_time_money_and_life_autonomy.yaml`
 
 ## synthetic-consensus
 
@@ -2227,6 +2391,7 @@
 ## time
 
 - `idea_000052` - 幸福、回憶與人生機會的時效性 (`raw`, 0/100) - `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml`
+- `idea_000061` - 時間、金錢與人生自主權：有限生命中的可承擔配置 (`raw`, 0/100) - `ideas/raw/idea_000061_time_money_and_life_autonomy.yaml`
 
 ## tmux
 
@@ -2299,6 +2464,10 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## understanding
+
+- `idea_000057` - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 (`raw`, 0/100) - `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml`
+
 ## urology
 
 - `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
@@ -2342,6 +2511,10 @@
 ## visual-hierarchy
 
 - `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+
+## vitality
+
+- `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
 
 ## voice-enhancement
 

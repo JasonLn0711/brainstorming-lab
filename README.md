@@ -172,3 +172,7 @@ This review adds no experiment, website implementation, or scheduled research bl
 
 Shared-tool ownership, review sources, and measured validation improvements are
 recorded in [shared validation](docs/shared-rust-tools.md).
+
+## 個人體悟與反思系列
+
+[11/14 個人體悟與反思系列](docs/2026-11-14-personal-reflections-map.md)整理九筆 canonical YAML、詳細分析與 Planning 橋接；完整私人供稿採本機限定保存。

@@ -39,8 +39,14 @@ metrics:
 - 是否侵蝕睡眠、關係、既定責任與可承擔預算
 insights: []
 connections:
+- idea_000061
+- idea_000060
+- idea_000058
+- idea_000057
+- idea_000055
 - idea_000003
 - idea_000017
+- idea_000053
 role: idea
 value:
   impact: medium

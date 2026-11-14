@@ -148,6 +148,7 @@ insights:
 - 'The missing layer is first-person existence: embodiment, mortality, irreversible
   time, relationship loss, pain, and the cost of choosing.'
 connections:
+- idea_000056
 - idea_000003
 - idea_000005
 - idea_000006
@@ -157,6 +158,7 @@ connections:
 - idea_000020
 - idea_000044
 - idea_000052
+- idea_000053
 role: idea
 value:
   impact: high

@@ -75,6 +75,8 @@ insights:
   - "System diagrams are a research thinking tool because many real problems live in interactions, not isolated components."
   - "Research maturity includes tolerating not knowing, admitting wrong turns, and updating the worldview without collapse."
 connections:
+  - idea_000054
+  - idea_000053
   - idea_000002
   - idea_000005
   - idea_000007

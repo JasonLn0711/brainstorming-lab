@@ -959,3 +959,9 @@ This note is not yet an execution plan. Its value is to reframe a frustration ab
 ```text
 How can a Taiwan-based researcher deliberately build system-level collaboration despite local resource and incentive constraints?
 ```
+
+
+<a id="competence-evidence-2026-11-14"></a>
+## 11/14 相關個案提問：一人與三人的合作表現
+
+[學歷、能力與合作表現](2026-11-14-credentials-competence-and-performance/README.md)（idea_000054）保留一名碩士生與三名博士生工作的比較自述。這提供查明角色、範圍、先備知識與整合成本的入口，尚不能證實校際或群體能力差距，也不能替本篇的研究生態系假設補上因果證據。

@@ -53,6 +53,15 @@
 | `idea_000048` | 在職初學者的 AI 輔助軟體開發素養 | 0/100 | `raw` | `raw` | 未排程：以課前合成資料實作診斷確認程式、資料與工程瓶頸，讓具備能力者進階或免修；課方先決定正式銜接課或既有課程基礎實作時段及支援容量。 | `ideas/raw/idea_000048_ai_software_literacy_for_working_professionals.yaml` |
 | `idea_000051` | GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 | 0/100 | `raw` | `raw` | 由 Jason 在下次啟動篩選時決定可用性、資料地域、公司控制權三層要求。 | `ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml` |
 | `idea_000052` | 幸福、回憶與人生機會的時效性 | 0/100 | `raw` | `raw` | 若 Jason 主動啟動反思，選一件反覆延後的小事，分辨真實窗口與想像中的錯過。 | `ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml` |
+| `idea_000053` | 從導航模式到人生自主：選擇權、實現能力與重新選擇 | 0/100 | `raw` | `raw` | 本人願意續談時，選一件既有小決策，對照理由、限制、最小行動與重新選擇條件；不另加任務。 | `ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml` |
+| `idea_000054` | 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 | 0/100 | `raw` | `raw` | 本人願意且有權使用相關資料時，回顧一件既有合作任務，以去識別摘要比較任務、方法與限制；只選一個瓶頸做小範圍重做，未啟動。 | `ideas/raw/idea_000054_credentials_competence_and_performance.yaml` |
+| `idea_000055` | 感受、表達與相互理解：從具體欣賞到關係中的溫暖 | 0/100 | `raw` | `raw` | 本人自然願意續談時，只就一段分享回述自己的理解，保留不確定處並邀請修正；不設定每日任務、關係測試或監測。 | `ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml` |
+| `idea_000056` | 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 | 0/100 | `raw` | `raw` | 只有雙方明確願意且有容量時，先釐清卡片或網站的一個使用情境與低風險草稿邊界，確認角色及驗收後再決定是否實作；目前只記錄。 | `ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml` |
+| `idea_000057` | 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 | 0/100 | `raw` | `raw` | 若本人自然願意續談，可用一件自行選擇的經驗，分辨當時感受、如今表達、持續或中斷及其他解釋；目前只保存，不啟動調查或練習。 | `ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml` |
+| `idea_000058` | 有意義的記憶與自主投入：在看見限制後保留熱情與期待 | 0/100 | `raw` | `raw` | 本人願意時，選一件過去有意義的經驗與一件現在仍在乎的事，分辨懷念的元素、當前精力與成本，再選續做、縮小、休息或暫不行動；尚未啟動。 | `ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml` |
+| `idea_000059` | 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 | 0/100 | `raw` | `raw` | 本人願意時，從既有任務挑一項想實踐的行為，如明確回饋或完成後停止檢查；先確認當前用途、必要驗證與停止條件，未新增活動。 | `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml` |
+| `idea_000060` | 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 | 0/100 | `raw` | `raw` | 本人願意時，可只記一個最想保留的講座片段及其意義；若另行需要正式活動紀錄，再以公告或本人確認核對名稱、日期與講者，目前不啟動查證或再約。 | `ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml` |
+| `idea_000061` | 時間、金錢與人生自主權：有限生命中的可承擔配置 | 0/100 | `raw` | `raw` | 本人願意時，先補體悟的觸發情境，再選一件既有時間／金錢取捨，分辨價值、限制、成本與可逆選項；未啟動支出或排程。 | `ideas/raw/idea_000061_time_money_and_life_autonomy.yaml` |
 
 ## Compact View
 
@@ -107,3 +116,12 @@
 - idea_000050 - Kairos Live — private execution locator - 31/100 - emerging
 - idea_000051 - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 - 0/100 - raw
 - idea_000052 - 幸福、回憶與人生機會的時效性 - 0/100 - raw
+- idea_000053 - 從導航模式到人生自主：選擇權、實現能力與重新選擇 - 0/100 - raw
+- idea_000054 - 從學歷濾鏡到能力證據：合作表現與博士訓練的重新定位 - 0/100 - raw
+- idea_000055 - 感受、表達與相互理解：從具體欣賞到關係中的溫暖 - 0/100 - raw
+- idea_000056 - 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習 - 0/100 - raw
+- idea_000057 - 直覺、經驗延續與深刻投入：從感受、理解到自主選擇 - 0/100 - raw
+- idea_000058 - 有意義的記憶與自主投入：在看見限制後保留熱情與期待 - 0/100 - raw
+- idea_000059 - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 - 0/100 - raw
+- idea_000060 - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 - 0/100 - raw
+- idea_000061 - 時間、金錢與人生自主權：有限生命中的可承擔配置 - 0/100 - raw

@@ -103,6 +103,7 @@ insights:
   observed world states, connecting this line to POMDPs, predictive processing, active
   inference, cognitive architecture, and agentic reasoning.'
 connections:
+- idea_000057
 - idea_000001
 - idea_000004
 - idea_000007
