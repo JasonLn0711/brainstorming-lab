@@ -21,3 +21,25 @@
 驗證通過：314 個新增／變更內容的本機連結與錨點、九筆 schema／狀態紀錄、所有新紀錄的雙向連結、九份原文排除追蹤及圖譜／索引。brainstorming unittest 29 項通過；Planning repository validation 通過（44 項既有警告、0 新增）、knowledge 186／186、metrics freshness 與 11/14 day／W46 agenda 均通過；Planning `uv run python -m unittest discover -s tests -v` 45 項通過（系統 Python 3.9 首次執行遇既有型別語法不相容，改用現行工具環境後通過），兩 repo diff --check 通過。遠端發布結果於實際執行後補入；文件完成尚不代表 Git 已發布。Git 發布也不等於本人已確認分析、活動出席、能力提升、關係意義或人生決策成效。
 
 [Planning 今日總結](../../planning-everything-track/weeks/2026-W46/days/2026-11-14.md#reflections-first-principles-2026-11-14) ↔ [W46 容量](../../planning-everything-track/weeks/2026-W46/weekly-plan.md#reflections-first-principles-2026-11-14) ↔ [長期橋接](../../planning-everything-track/docs/15-brainstorming-repo-bridge.md#reflections-first-principles-2026-11-14) ↔ [專案定位](../../planning-everything-track/data/projects/2026-04-brainstorming-lab.md#reflections-first-principles-2026-11-14)。
+
+## 已驗證的首批遠端發布
+
+- brainstorming-lab：10 筆分開提交已推至 origin/main，內容與導航 tip 為 `fd19fe0582f0a6c9156e4d04f613c2efc7df7095`；push 後 fresh fetch 為 0 0，ls-remote 與本機 HEAD 完全相同。
+- Planning：知識關聯 `0cc4cdbb`、日誌／週計畫／橋接 `48a6e92a6fc2234fec121201e32a469f0327ed7f` 已推至 origin/main；fresh fetch 為 0 0，ls-remote 與本機 HEAD 完全相同。
+- 本次無衝突、無 merge 或 rebase，既有本機與遠端提交完整保留；沒有 force push。完整私人供稿未提交或上傳。
+- 發布後 brainstorming 僅保留原先獨立的 AGENTS.md 與 docs/agent-paper-workflow.md 變更；Planning 首批發布後乾淨。
+
+### 主題與整合提交
+
+- `57f375e`：life agency and revisable choices
+- `ba45bbe`：credentials competence and task evidence
+- `817ec95`：perception expression and mutual understanding
+- `9508bdf`：iterative delivery and equal collaboration
+- `715b5e6`：intuition and continuity of experience
+- `6817b5e`：meaningful memory and chosen motivation
+- `cde3c12`：vitality leadership and bounded discipline
+- `c33ff31`：lecture appointment and renewed interest
+- `bcc013d`：time money and life autonomy
+- `fd19fe0`：既有想法反向連結、系列導航、圖譜／索引及驗證紀錄。
+
+本節記錄上列已驗證 tip；本回執本身另以獨立提交發布，最終遠端 HEAD 由發布後 fresh fetch／ls-remote 再確認，不把自身 SHA 寫成遞迴依賴。
