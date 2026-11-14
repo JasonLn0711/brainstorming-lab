@@ -1,0 +1,73 @@
+id: idea_000053
+title: 從導航模式到人生自主：選擇權、實現能力與重新選擇
+created_at: '2026-11-14'
+type: question
+tags:
+- life-decisions
+- autonomy
+- phd-training
+- self-direction
+- capacity
+status: raw
+problem_statement:
+  raw: 從公務員體制走入博士班後，如何把生活方向的選擇權，轉化成理解自己、實現選擇與重新選擇的能力？
+  normalized: Given a transition from institutionally structured work to self-directed
+    PhD life, develop deliberate choices and revisable execution under finite attention,
+    relationships, institutional demands and uncertainty.
+  structure:
+    given: 高度結構化工作轉向博士班自我導向生活的個人回顧
+    optimize: 選擇理由、實現能力與可修正性
+    constraints:
+    - 注意力與恢復有限
+    - 制度與人際依存仍存在
+    - 不把個人經驗推廣為職業群體判斷
+    - 不預設自由意味完全控制結果
+summary: 保存供稿對話與既有延伸分析，區分導航模式、制度安排、主觀受控感、自主選擇、實現能力與重新選擇；以一件既有小決策檢查瓶頸，未啟動實驗或改變職涯。
+assumptions:
+- 結構可能支持自主，也可能固化未反思的預設選項。
+- 自由選擇、實現能力與結果控制是不同概念。
+- 人生負責包含求助、協商與承認外在限制，不代表獨自承擔所有結果。
+evidence:
+- 2026-11-14 使用者提供口語對話及一段延伸分析；對話發生日期、說話者身分及音訊均未核對。
+- 喜歡現在生活與不喜歡被控制是對話中的自述；自主能力是否已改善尚無行動證據。
+baseline:
+- 沿用預設安排而不反思理由
+- 以自由時間或完成工作量直接代表自主
+metrics:
+- 能否說明自己的選擇理由與可接受代價
+- 能否區分方向不清、能力不足、容量不足與協商問題
+- 是否產生可觀察小成果並保留修正、求助或停止選項
+insights: []
+connections:
+- idea_000061
+- idea_000060
+- idea_000059
+- idea_000058
+- idea_000057
+- idea_000056
+- idea_000055
+- idea_000054
+- idea_000012
+- idea_000017
+- idea_000033
+- idea_000052
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity: {}
+maturity_score: 0/100
+maturity_level: raw
+next_steps:
+- 本人願意續談時，選一件既有小決策，對照理由、限制、最小行動與重新選擇條件；不另加任務。
+source:
+- user supplied conversation and analysis, received 2026-11-14
+- .local/private-reflections/2026-11-14-navigation-mode-and-life-agency/source.md
+maturity_action: clarify and normalize problem statement
+human_note: ideas/2026-11-14-navigation-mode-and-life-agency/README.md
+maturity_note: 0/100 為未評分記錄初始值；不評分人生或個人能力，未進入週選或研究候選。
+pressure_test:
+  setting: 忙碌博士學期中，既有研究小步驟與臨時交付、人際期待及恢復需求衝突。
+  expected_failure: 把自主誤認為全部自己完成，因無限接案或熬夜反而失去選擇能力。
+  smallest_test: 從既有任務選一件，記錄選擇理由、可協商限制、縮小成果與停止條件；採取後才補實際結果。
+  decision: 若可在既定容量產出自己認同的小成果則暫支持；方向清楚仍卡住時，轉查能力、資源與協商；犧牲恢復則縮小或停止。
