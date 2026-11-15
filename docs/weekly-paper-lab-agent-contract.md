@@ -27,4 +27,3 @@ requirements formerly loaded in AGENTS.md; it does not activate model runs.
 - Keep large models, datasets, checkpoints, caches, credentials, sensitive evidence, and generated run artifacts out of git.
 - If a paper produces a real research question, create or update an Idea OS YAML record and link back to the paper folder.
 - Planning receives only title, paper ID, status, next test, canonical path, linked idea IDs, and capacity note.
-
