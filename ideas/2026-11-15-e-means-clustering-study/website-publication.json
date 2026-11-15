@@ -1,0 +1,25 @@
+{
+  "verified_on": "2026-11-15",
+  "content_version": "1.0.0",
+  "status": "published_and_production_verified",
+  "execution_owner": "kairos-learning",
+  "source_commit": "08e921c42520df60cbea2529a8d332271ab7c785",
+  "workflow_run": 43693970005,
+  "workflow_attempt": 2,
+  "workflow_conclusion": "success",
+  "artifact_name": "github-pages-2",
+  "artifact_id": 14153668197,
+  "artifact_digest": "sha256:f54682ee895ed2587623d3153253939b5810bb55127b4636ed22e139f87759d2",
+  "urls": [
+    "https://learn.cs-kairos.com/perspectives/e-means-clustering/",
+    "https://learn.cs-kairos.com/en/perspectives/e-means-clustering/"
+  ],
+  "production_browser_checks": 33,
+  "svg_exports_verified": 16,
+  "engineering_tests": 428,
+  "runtime_benchmark": "not_evaluated",
+  "learner_understanding": "not_evaluated",
+  "capacity": "Unknown",
+  "release_record": "https://github.com/JasonLn0711/kairos-learning/blob/main/docs/releases/2026-11-15-e-means-perspective.md",
+  "first_attempt": "Artifact existed in metadata API; deploy-pages observed zero named artifacts immediately after upload. Same-commit attempt 2 succeeded; root cause not independently established."
+}

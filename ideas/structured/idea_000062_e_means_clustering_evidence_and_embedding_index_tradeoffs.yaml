@@ -106,9 +106,12 @@ maturity_note: 分數由現有Idea OS結構規則重算，只描述此記錄的�
 normalization_status: validated
 
 website_delivery:
-  status: prepared
+  status: published_and_production_verified
   url: https://learn.cs-kairos.com/perspectives/e-means-clustering/
   english_url: https://learn.cs-kairos.com/en/perspectives/e-means-clustering/
   execution_owner: kairos-learning
   release_evidence: kairos-learning/docs/releases/2026-11-15-e-means-perspective.md
   scope: 完整雙語教學與八圖；網站部署與GPU效能重現分開驗證。
+  deployed_source: 08e921c42520df60cbea2529a8d332271ab7c785
+  workflow_run: 43693970005
+  production_browser_checks: 33

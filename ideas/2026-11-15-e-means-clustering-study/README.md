@@ -53,3 +53,5 @@ Canonical Idea OS：[idea_000062](../structured/idea_000062_e_means_clustering_e
 
 使用者另行授權部署到Learn「觀點」。[中文教學](https://learn.cs-kairos.com/perspectives/e-means-clustering/)與[英文教學](https://learn.cs-kairos.com/en/perspectives/e-means-clustering/)由kairos-learning持有；本資料夾持有原始供稿與構想。
 正式網站以原生HTML／SVG重排八圖，完整保留兩語十四章、各小節與理解題；[工程與正式站驗證回執](https://github.com/JasonLn0711/kairos-learning/blob/main/docs/releases/2026-11-15-e-means-perspective.md)記錄部署層證據。網站發布狀態依回執更新，不改變本構想的實驗未啟動界線或容量Unknown。
+
+正式發布已確認：Pages run `43693970005`第2次執行成功，部署source為`08e921c4`；正式站33組驗收、兩語完整正文與16 SVG下載回讀通過。[本次發布回條](website-publication.json)保存版本、artifact與證據界線；首次artifact可見性失敗保留在紀錄中。網站發布不啟動GPU效能實驗，也不代表本人已閱讀或理解。
