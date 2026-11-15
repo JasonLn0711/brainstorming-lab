@@ -49,6 +49,7 @@
 | `idea_000048` | Heart Island study and floating research atlas | 65/100 | `research_candidate` | `structured` | 審閱首頁與三筆公開內容映射；另行啟動網站三島切片，不自動排程。 | `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml` |
 | `idea_000006` | OpenClaw personal ops node | 60/100 | `structured` | `structured` | Write one bounded design note in second-brain-openclaw before any implementation or purchase. | `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml` |
 | `idea_000049` | GPT Nemotron hybrid coding agent architecture | 59/100 | `structured` | `structured` | 先確認 GX10 實機型號、CPU 架構、作業系統、記憶體與可用資源，再查核模型卡、OpenCode provider／agent／permission 文件與 Ollama 標籤。 | `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml` |
+| `idea_000062` | e-means clustering evidence and embedding index tradeoffs | 59/100 | `structured` | `structured` | 先確認目標向量與查詢、召回底線、硬體與計時契約，再決定是否另行啟動公平比較。 | `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml` |
 | `idea_000003` | Decision load scheduler | 58/100 | `structured` | `structured` | Compare weekly selections against the planning repo daily and weekly notes for one week. | `ideas/structured/idea_000003_decision_load_scheduler.yaml` |
 | `idea_000005` | Workflow optimization feedback loop | 57/100 | `structured` | `structured` | Run one daily-note suggestion and feedback pull using explicit marker blocks. | `ideas/structured/idea_000005_workflow_optimization_loop.yaml` |
 | `idea_000050` | Kairos Live — private execution locator | 31/100 | `emerging` | `archived` | Consult the private canonical owner for current scope and any authorized continuation. | `ideas/archived/idea_000050_cs_kairos_live.yaml` |
@@ -129,3 +130,4 @@
 - idea_000059 - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 - 0/100 - raw
 - idea_000060 - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 - 0/100 - raw
 - idea_000061 - 時間、金錢與人生自主權：有限生命中的可承擔配置 - 0/100 - raw
+- idea_000062 - e-means clustering evidence and embedding index tradeoffs - 59/100 - structured

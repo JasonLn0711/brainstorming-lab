@@ -24,6 +24,12 @@ preserves the non-audio source package with a categorized catalog and SHA-256 in
 Audio remains in the original Downloads folder; analysis and sharing drafts retain their review boundaries.
 Planning records the handoff and review gate; the sharing text remains a draft.
 
+## e-means clustering study
+
+[Complete notes and eight redrawn figures](ideas/2026-11-15-e-means-clustering-study/README.md)
+preserve the supplied teaching source, mathematical checks and evidence boundaries.
+The canonical Idea OS record is `idea_000062`; runtime evaluation remains unactivated.
+
 ## First Principle
 
 Ideas are data, not only text.

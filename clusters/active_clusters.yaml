@@ -71,3 +71,24 @@ cluster_0003:
     testability: 2/15
     evidence_support: 6/15
     feasibility: 8/15
+cluster_0004:
+  theme: life-decisions / sustainability / time
+  cluster_type: research_cluster
+  ideas:
+  - idea_000052
+  - idea_000061
+  normalized_problem: Given finite time and changing opportunities, compare experience
+    now, a smaller alternative, and delay under constraints of health, relationships,
+    resources and uncertainty.
+  average_maturity_score: 0/100
+  cluster_score: 68/100
+  reason:
+  - idea text has semantic overlap
+  - 'shared tags: life-decisions, sustainability, time'
+  - manual connection exists
+  - roles or methods are complementary
+  recommendation: keep clustered and improve maturity
+  averages:
+    testability: 0/15
+    evidence_support: 0/15
+    feasibility: 0/15

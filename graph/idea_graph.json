@@ -16,7 +16,7 @@
         "multimodal-audio",
         "clinical-intake"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000001_healthcare_ai_triage.yaml"
+      "path": "ideas/structured/idea_000001_healthcare_ai_triage.yaml"
     },
     {
       "id": "idea_000002",
@@ -31,7 +31,7 @@
         "reviewer-assist",
         "evidence-routing"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
+      "path": "ideas/structured/idea_000002_cybersecurity_review_assist.yaml"
     },
     {
       "id": "idea_000003",
@@ -46,7 +46,7 @@
         "cognitive-load",
         "workflow"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000003_decision_load_scheduler.yaml"
+      "path": "ideas/structured/idea_000003_decision_load_scheduler.yaml"
     },
     {
       "id": "idea_000004",
@@ -61,7 +61,7 @@
         "research-candidate",
         "evidence-routing"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000004_anomaly_detection_research_watch.yaml"
+      "path": "ideas/structured/idea_000004_anomaly_detection_research_watch.yaml"
     },
     {
       "id": "idea_000005",
@@ -76,7 +76,7 @@
         "planning-bridge",
         "decision-system"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000005_workflow_optimization_loop.yaml"
+      "path": "ideas/structured/idea_000005_workflow_optimization_loop.yaml"
     },
     {
       "id": "idea_000006",
@@ -91,7 +91,7 @@
         "workflow",
         "approval-gate"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000006_openclaw_personal_ops_node.yaml"
+      "path": "ideas/structured/idea_000006_openclaw_personal_ops_node.yaml"
     },
     {
       "id": "idea_000007",
@@ -140,7 +140,7 @@
         "control-loop",
         "bounded-rationality"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml"
+      "path": "ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml"
     },
     {
       "id": "idea_000008",
@@ -164,7 +164,7 @@
         "state-abstraction",
         "workflow-consistency"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml"
+      "path": "ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml"
     },
     {
       "id": "idea_000009",
@@ -179,7 +179,7 @@
         "safety",
         "side-project"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml"
+      "path": "ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml"
     },
     {
       "id": "idea_000010",
@@ -198,7 +198,7 @@
         "software-architecture",
         "cross-domain"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml"
+      "path": "ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml"
     },
     {
       "id": "idea_000011",
@@ -219,7 +219,7 @@
         "human-in-the-loop",
         "local-llm"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml"
+      "path": "ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml"
     },
     {
       "id": "idea_000012",
@@ -243,7 +243,7 @@
         "embodied-learning",
         "lecture-practice"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml"
+      "path": "ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml"
     },
     {
       "id": "idea_000013",
@@ -262,7 +262,7 @@
         "endpoint-management",
         "lenovo-ldo"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml"
+      "path": "ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml"
     },
     {
       "id": "idea_000014",
@@ -297,7 +297,7 @@
         "computational-scientometrics",
         "high-school-explainer"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000014_journal_intelligence_system.yaml"
+      "path": "ideas/structured/idea_000014_journal_intelligence_system.yaml"
     },
     {
       "id": "idea_000015",
@@ -331,7 +331,7 @@
         "infrastructure-engineering",
         "sre"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml"
+      "path": "ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml"
     },
     {
       "id": "idea_000016",
@@ -372,7 +372,7 @@
         "pragmatic-alignment",
         "ai-safety"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml"
+      "path": "ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml"
     },
     {
       "id": "idea_000017",
@@ -398,9 +398,15 @@
         "digital-cognitive-twin",
         "self-modeling",
         "descriptive-understanding",
-        "existential-understanding"
+        "existential-understanding",
+        "inner-archive",
+        "life-knowledge-repo",
+        "private-reflection",
+        "personal-cognitive-archive",
+        "meaning-making-system",
+        "psychological-resilience"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml"
+      "path": "ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml"
     },
     {
       "id": "idea_000018",
@@ -431,7 +437,7 @@
         "ai-security-learning",
         "cyber-physical-security"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml"
+      "path": "ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml"
     },
     {
       "id": "idea_000019",
@@ -452,7 +458,7 @@
         "soft-control",
         "git-run-tracking"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml"
+      "path": "ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml"
     },
     {
       "id": "idea_000020",
@@ -495,7 +501,7 @@
         "secrets-management",
         "backup"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml"
+      "path": "ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml"
     },
     {
       "id": "idea_000021",
@@ -514,7 +520,7 @@
         "network-design",
         "dynamic-graph"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml"
+      "path": "ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml"
     },
     {
       "id": "idea_000022",
@@ -549,7 +555,7 @@
         "multimodal-fusion",
         "tracking"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml"
+      "path": "ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml"
     },
     {
       "id": "idea_000023",
@@ -578,7 +584,7 @@
         "cybercrime-content",
         "scam-content"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml"
+      "path": "ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml"
     },
     {
       "id": "idea_000024",
@@ -606,7 +612,7 @@
         "ecosystem-knowledge-pollution",
         "human-source-scarcity-index"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml"
+      "path": "ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml"
     },
     {
       "id": "idea_000025",
@@ -634,7 +640,7 @@
         "evidence-void",
         "ai-crawler-opt-out"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml"
+      "path": "ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml"
     },
     {
       "id": "idea_000026",
@@ -661,7 +667,7 @@
         "digital-forensics",
         "provenance-aware-retrieval"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml"
+      "path": "ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml"
     },
     {
       "id": "idea_000027",
@@ -683,7 +689,7 @@
         "token-efficiency",
         "agent-reliability"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml"
+      "path": "ideas/structured/idea_000027_long_horizon_agent_behavior_evaluation_for_codex_cli_orchestrati.yaml"
     },
     {
       "id": "idea_000028",
@@ -709,7 +715,7 @@
         "protocol-security",
         "spectrum-awareness"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml"
+      "path": "ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml"
     },
     {
       "id": "idea_000029",
@@ -737,7 +743,7 @@
         "devops-for-research",
         "state-machine"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml"
+      "path": "ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml"
     },
     {
       "id": "idea_000030",
@@ -763,7 +769,7 @@
         "embodied-ai",
         "gimbal-lock"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml"
+      "path": "ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml"
     },
     {
       "id": "idea_000031",
@@ -790,7 +796,7 @@
         "grounding",
         "uncertainty"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml"
+      "path": "ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml"
     },
     {
       "id": "idea_000032",
@@ -817,7 +823,7 @@
         "governance",
         "safety-case"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml"
+      "path": "ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml"
     },
     {
       "id": "idea_000033",
@@ -843,7 +849,7 @@
         "governance",
         "career-strategy"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml"
+      "path": "ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml"
     },
     {
       "id": "idea_000034",
@@ -863,7 +869,7 @@
         "his-emr-boundary",
         "mermaid-system-design"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml"
+      "path": "ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml"
     },
     {
       "id": "idea_000035",
@@ -901,7 +907,7 @@
         "review-scarcity",
         "ai-safety"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml"
+      "path": "ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml"
     },
     {
       "id": "idea_000036",
@@ -950,7 +956,7 @@
         "moral-framing-risk",
         "adaptive-coping"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml"
+      "path": "ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml"
     },
     {
       "id": "idea_000037",
@@ -967,7 +973,7 @@
         "geopolitical-risk",
         "intelligence-analysis"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml"
+      "path": "ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml"
     },
     {
       "id": "idea_000038",
@@ -987,7 +993,7 @@
         "osint",
         "review-scarcity"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml"
+      "path": "ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml"
     },
     {
       "id": "idea_000039",
@@ -1012,7 +1018,7 @@
         "telephone-speech",
         "speech-governance"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml"
+      "path": "ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml"
     },
     {
       "id": "idea_000040",
@@ -1045,7 +1051,7 @@
         "measurement-integrity",
         "sensitive-data-boundary"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml"
+      "path": "ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml"
     },
     {
       "id": "idea_000041",
@@ -1071,7 +1077,7 @@
         "representation-learning",
         "experiment-design"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml"
+      "path": "ideas/structured/idea_000041_autoencoder_derived_latent_coverage_for_stopping_medical_image_d.yaml"
     },
     {
       "id": "idea_000042",
@@ -1094,7 +1100,7 @@
         "human-factors",
         "low-cognitive-load"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml"
+      "path": "ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml"
     },
     {
       "id": "idea_000043",
@@ -1123,7 +1129,7 @@
         "paper-writing",
         "manuscript-narrative"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml"
+      "path": "ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml"
     },
     {
       "id": "idea_000044",
@@ -1143,7 +1149,7 @@
         "graph-packets",
         "evidence-audit"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml"
+      "path": "ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml"
     },
     {
       "id": "idea_000045",
@@ -1166,7 +1172,36 @@
         "interaction-design",
         "decision-support"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml"
+      "path": "ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml"
+    },
+    {
+      "id": "idea_000046",
+      "title": "AI-era research problem map and problem-selection moat",
+      "status": "execution_ready",
+      "maturity_score": "89/100",
+      "maturity_score_raw": 89,
+      "maturity_level": "execution_ready",
+      "tags": [
+        "ai-era-research",
+        "problem-selection",
+        "research-strategy",
+        "problem-map",
+        "insight-generation",
+        "synthesis",
+        "scientometrics",
+        "research-policy",
+        "phd-training",
+        "research-identity",
+        "field-grounded-research",
+        "ai-native-science",
+        "intellectual-moat",
+        "commoditization",
+        "reality-access",
+        "attention-scarcity",
+        "judgment",
+        "ai-homogeneity"
+      ],
+      "path": "ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml"
     },
     {
       "id": "idea_000047",
@@ -1189,7 +1224,7 @@
         "taiwan-insurance",
         "compliance-sensitive-training"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml"
+      "path": "ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml"
     },
     {
       "id": "idea_000048",
@@ -1204,7 +1239,7 @@
         "ai-assisted-development",
         "working-professionals"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000048_ai_software_literacy_for_working_professionals.yaml"
+      "path": "ideas/raw/idea_000048_ai_software_literacy_for_working_professionals.yaml"
     },
     {
       "id": "idea_000048",
@@ -1220,7 +1255,23 @@
         "threejs",
         "personal-website"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml"
+      "path": "ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml"
+    },
+    {
+      "id": "idea_000049",
+      "title": "GPT Nemotron hybrid coding agent architecture",
+      "status": "structured",
+      "maturity_score": "59/100",
+      "maturity_score_raw": 59,
+      "maturity_level": "structured",
+      "tags": [
+        "multi-agent",
+        "governance",
+        "model-serving",
+        "local-ai-gateway",
+        "human-approval-gate"
+      ],
+      "path": "ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml"
     },
     {
       "id": "idea_000050",
@@ -1233,7 +1284,7 @@
         "private-execution",
         "interaction-platform"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/archived/idea_000050_cs_kairos_live.yaml"
+      "path": "ideas/archived/idea_000050_cs_kairos_live.yaml"
     },
     {
       "id": "idea_000051",
@@ -1248,7 +1299,7 @@
         "ai-security",
         "agent-evaluation"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml"
+      "path": "ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml"
     },
     {
       "id": "idea_000052",
@@ -1264,7 +1315,7 @@
         "relationships",
         "sustainability"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml"
+      "path": "ideas/raw/idea_000052_experience_memory_and_time_sensitive_life_opportunities.yaml"
     },
     {
       "id": "idea_000053",
@@ -1280,7 +1331,7 @@
         "self-direction",
         "capacity"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml"
+      "path": "ideas/raw/idea_000053_navigation_mode_and_life_agency.yaml"
     },
     {
       "id": "idea_000054",
@@ -1297,7 +1348,7 @@
         "collaboration",
         "research-identity"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000054_credentials_competence_and_performance.yaml"
+      "path": "ideas/raw/idea_000054_credentials_competence_and_performance.yaml"
     },
     {
       "id": "idea_000055",
@@ -1314,7 +1365,7 @@
         "relationships",
         "epistemic-humility"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml"
+      "path": "ideas/raw/idea_000055_perception_expression_and_mutual_understanding.yaml"
     },
     {
       "id": "idea_000056",
@@ -1332,7 +1383,7 @@
         "learning",
         "self-confidence"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml"
+      "path": "ideas/raw/idea_000056_iterative_delivery_and_equal_collaboration.yaml"
     },
     {
       "id": "idea_000057",
@@ -1351,7 +1402,7 @@
         "learning",
         "relationships"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml"
+      "path": "ideas/raw/idea_000057_intuition_and_continuity_of_experience.yaml"
     },
     {
       "id": "idea_000058",
@@ -1369,7 +1420,7 @@
         "life-decisions",
         "expectation"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml"
+      "path": "ideas/raw/idea_000058_meaningful_memory_and_chosen_motivation.yaml"
     },
     {
       "id": "idea_000059",
@@ -1388,7 +1439,7 @@
         "motivation",
         "role-models"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml"
+      "path": "ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml"
     },
     {
       "id": "idea_000060",
@@ -1405,7 +1456,7 @@
         "motivation",
         "source-fidelity"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml"
+      "path": "ideas/raw/idea_000060_keeping_an_appointment_and_renewed_interest.yaml"
     },
     {
       "id": "idea_000061",
@@ -1422,7 +1473,23 @@
         "life-decisions",
         "sustainability"
       ],
-      "path": "/Users/iKev/Desktop/02_Projects_and_Code/everything_on_git/brainstorming-lab/ideas/raw/idea_000061_time_money_and_life_autonomy.yaml"
+      "path": "ideas/raw/idea_000061_time_money_and_life_autonomy.yaml"
+    },
+    {
+      "id": "idea_000062",
+      "title": "e-means clustering evidence and embedding index tradeoffs",
+      "status": "structured",
+      "maturity_score": "59/100",
+      "maturity_score_raw": 59,
+      "maturity_level": "structured",
+      "tags": [
+        "clustering",
+        "e-means",
+        "vector-quantization",
+        "retrieval",
+        "evidence-gates"
+      ],
+      "path": "ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml"
     }
   ],
   "edges": [
@@ -1768,7 +1835,7 @@
       "source": "idea_000003",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.2594,
+      "similarity": 0.263,
       "shared_tags": [
         "planning-bridge"
       ],
@@ -1985,7 +2052,7 @@
       "source": "idea_000005",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.1905,
+      "similarity": 0.1892,
       "shared_tags": [
         "planning-bridge"
       ],
@@ -2030,7 +2097,7 @@
       "source": "idea_000006",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.0772,
+      "similarity": 0.0961,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2264,6 +2331,18 @@
       ]
     },
     {
+      "source": "idea_000007",
+      "target": "idea_000049",
+      "weight": 0.6,
+      "similarity": 0.128,
+      "shared_tags": [
+        "multi-agent"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
       "source": "idea_000008",
       "target": "idea_000011",
       "weight": 1.0,
@@ -2297,7 +2376,7 @@
       "source": "idea_000008",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.3297,
+      "similarity": 0.3212,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2392,6 +2471,18 @@
       "similarity": 0.1914,
       "shared_tags": [
         "evaluation"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000008",
+      "target": "idea_000049",
+      "weight": 0.6,
+      "similarity": 0.2271,
+      "shared_tags": [
+        "multi-agent"
       ],
       "reasons": [
         "shared_tags"
@@ -2670,7 +2761,7 @@
       "source": "idea_000012",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.1902,
+      "similarity": 0.1923,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2729,6 +2820,18 @@
       ],
       "reasons": [
         "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000012",
+      "target": "idea_000046",
+      "weight": 0.6,
+      "similarity": 0.4624,
+      "shared_tags": [
+        "phd-training"
+      ],
+      "reasons": [
         "shared_tags"
       ]
     },
@@ -2834,6 +2937,18 @@
     },
     {
       "source": "idea_000013",
+      "target": "idea_000049",
+      "weight": 0.6,
+      "similarity": 0.065,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000013",
       "target": "idea_000051",
       "weight": 0.6,
       "similarity": 0.1111,
@@ -2858,7 +2973,7 @@
       "source": "idea_000014",
       "target": "idea_000017",
       "weight": 1.0,
-      "similarity": 0.1653,
+      "similarity": 0.1627,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -2947,6 +3062,18 @@
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000014",
+      "target": "idea_000046",
+      "weight": 0.6,
+      "similarity": 0.254,
+      "shared_tags": [
+        "scientometrics"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -3155,7 +3282,7 @@
       "source": "idea_000017",
       "target": "idea_000018",
       "weight": 1.0,
-      "similarity": 0.4388,
+      "similarity": 0.4259,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -3165,7 +3292,7 @@
       "source": "idea_000017",
       "target": "idea_000020",
       "weight": 1.0,
-      "similarity": 0.4221,
+      "similarity": 0.4138,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -3175,7 +3302,7 @@
       "source": "idea_000017",
       "target": "idea_000031",
       "weight": 0.6,
-      "similarity": 0.2333,
+      "similarity": 0.2287,
       "shared_tags": [
         "knowledge-graph"
       ],
@@ -3187,7 +3314,7 @@
       "source": "idea_000017",
       "target": "idea_000044",
       "weight": 1.0,
-      "similarity": 0.1192,
+      "similarity": 0.1167,
       "shared_tags": [
         "knowledge-graph"
       ],
@@ -3200,7 +3327,7 @@
       "source": "idea_000017",
       "target": "idea_000047",
       "weight": 1.0,
-      "similarity": 0.1469,
+      "similarity": 0.1461,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -3210,7 +3337,7 @@
       "source": "idea_000017",
       "target": "idea_000052",
       "weight": 1.0,
-      "similarity": 0.1044,
+      "similarity": 0.1159,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -3220,7 +3347,7 @@
       "source": "idea_000017",
       "target": "idea_000053",
       "weight": 1.0,
-      "similarity": 0.1032,
+      "similarity": 0.1173,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -3230,7 +3357,7 @@
       "source": "idea_000017",
       "target": "idea_000056",
       "weight": 1.0,
-      "similarity": 0.0891,
+      "similarity": 0.0878,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -3437,6 +3564,40 @@
       ],
       "reasons": [
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000046",
+      "weight": 1.0,
+      "similarity": 0.4207,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000049",
+      "weight": 1.0,
+      "similarity": 0.1717,
+      "shared_tags": [
+        "governance",
+        "human-approval-gate"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000019",
+      "target": "idea_000062",
+      "weight": 1.0,
+      "similarity": 0.0636,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     },
     {
@@ -3667,6 +3828,16 @@
       ],
       "reasons": [
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000022",
+      "target": "idea_000062",
+      "weight": 1.0,
+      "similarity": 0.0484,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     },
     {
@@ -3905,6 +4076,16 @@
     },
     {
       "source": "idea_000029",
+      "target": "idea_000046",
+      "weight": 1.0,
+      "similarity": 0.1617,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000029",
       "target": "idea_000047",
       "weight": 0.6,
       "similarity": 0.1242,
@@ -4036,6 +4217,18 @@
     },
     {
       "source": "idea_000032",
+      "target": "idea_000049",
+      "weight": 0.6,
+      "similarity": 0.1902,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000032",
       "target": "idea_000051",
       "weight": 0.6,
       "similarity": 0.2843,
@@ -4065,6 +4258,32 @@
       "similarity": 0.1945,
       "shared_tags": [
         "human-in-the-loop"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000033",
+      "target": "idea_000046",
+      "weight": 1.0,
+      "similarity": 0.4501,
+      "shared_tags": [
+        "phd-training",
+        "research-identity"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000033",
+      "target": "idea_000049",
+      "weight": 0.6,
+      "similarity": 0.1151,
+      "shared_tags": [
+        "governance"
       ],
       "reasons": [
         "shared_tags"
@@ -4230,12 +4449,34 @@
     },
     {
       "source": "idea_000035",
+      "target": "idea_000046",
+      "weight": 1.0,
+      "similarity": 0.3427,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000035",
       "target": "idea_000047",
       "weight": 1.0,
       "similarity": 0.1983,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000035",
+      "target": "idea_000049",
+      "weight": 0.6,
+      "similarity": 0.1,
+      "shared_tags": [
+        "governance"
+      ],
+      "reasons": [
+        "shared_tags"
       ]
     },
     {
@@ -4265,6 +4506,26 @@
       "reasons": [
         "manual_connection",
         "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000036",
+      "target": "idea_000046",
+      "weight": 1.0,
+      "similarity": 0.2864,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000036",
+      "target": "idea_000062",
+      "weight": 1.0,
+      "similarity": 0.0315,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
       ]
     },
     {
@@ -4299,6 +4560,16 @@
       "target": "idea_000044",
       "weight": 1.0,
       "similarity": 0.0991,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000038",
+      "target": "idea_000046",
+      "weight": 1.0,
+      "similarity": 0.2188,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -4410,6 +4681,16 @@
       ]
     },
     {
+      "source": "idea_000040",
+      "target": "idea_000046",
+      "weight": 1.0,
+      "similarity": 0.2254,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
       "source": "idea_000042",
       "target": "idea_000045",
       "weight": 1.0,
@@ -4474,9 +4755,33 @@
     },
     {
       "source": "idea_000043",
+      "target": "idea_000049",
+      "weight": 1.0,
+      "similarity": 0.259,
+      "shared_tags": [
+        "local-ai-gateway",
+        "model-serving"
+      ],
+      "reasons": [
+        "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000043",
       "target": "idea_000051",
       "weight": 1.0,
       "similarity": 0.1695,
+      "shared_tags": [],
+      "reasons": [
+        "manual_connection"
+      ]
+    },
+    {
+      "source": "idea_000043",
+      "target": "idea_000062",
+      "weight": 1.0,
+      "similarity": 0.037,
       "shared_tags": [],
       "reasons": [
         "manual_connection"
@@ -4502,6 +4807,31 @@
       ],
       "reasons": [
         "manual_connection",
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000046",
+      "target": "idea_000053",
+      "weight": 0.6,
+      "similarity": 0.0977,
+      "shared_tags": [
+        "phd-training"
+      ],
+      "reasons": [
+        "shared_tags"
+      ]
+    },
+    {
+      "source": "idea_000046",
+      "target": "idea_000054",
+      "weight": 0.6,
+      "similarity": 0.1856,
+      "shared_tags": [
+        "phd-training",
+        "research-identity"
+      ],
+      "reasons": [
         "shared_tags"
       ]
     },

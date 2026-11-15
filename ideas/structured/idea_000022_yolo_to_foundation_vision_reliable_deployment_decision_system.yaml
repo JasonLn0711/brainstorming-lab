@@ -342,6 +342,7 @@ insights:
 - A cheap physical identity signal can beat a sophisticated vision model when many
   objects look nearly identical.
 connections:
+- idea_000062
 - idea_000004
 - idea_000007
 - idea_000008

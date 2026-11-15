@@ -1,0 +1,114 @@
+id: idea_000062
+title: e-means clustering evidence and embedding index tradeoffs
+created_at: '2026-11-15'
+type: concept
+tags:
+- clustering
+- e-means
+- vector-quantization
+- retrieval
+- evidence-gates
+status: structured
+problem_statement:
+  raw: 固定高維embedding分群時，如何判斷e-means相較Lloyd的時間—品質改善能否轉移到目標索引，而不把圖示、MSE或作者報告當成本機成效？
+  normalized: Given fixed embedding datasets, compare e-means and Lloyd under matched
+    initialization, quality criteria and timing boundaries; keep source claims separate
+    from local evidence.
+  structure:
+    given: 使用者完整供稿、八張教學圖及arXiv:2611.09501v1
+    optimize: 可回查的更新機制理解與公平比較判斷
+    constraints:
+    - 本次只記錄、重繪與數學檢核；不啟動效能重現
+    - loss、epochs、總時間與下游召回各自定義
+    - 資料與硬體未指定；容量Unknown
+    - 來源所列10倍加速保留特定條件，沒有普遍保證
+summary: 完整保存e-means教學供稿並逐張重繪，建立Lloyd、N/S的EMA、cosine、revival、finalization及scaling
+  laws的證據分層。採用決策等待目標資料與召回門檻；不替換Idea OS現有關係圖分群。
+assumptions:
+- embedding距離必須對應所需相似性；同群不代表重複或同類
+- k-means++為初始化策略，可搭配不同求解器
+- 獨立NumPy反例無直接來源，待確認
+- 數學檢核與作者實驗不能取代本機及下游驗證
+evidence:
+- 使用者1019個邏輯行（1018個換行）文字與八張圖已原樣保存並記錄SHA-256
+- 本次確認arXiv:2611.09501v1及作者專案頁；結果屬作者報告
+- 本repo分群引擎依merge-readiness關係取連通分量，並未使用k-means
+baseline:
+- Lloyd固定初始化
+- Lloyd搭配k-means++初始化
+- MiniBatchKMeans
+- e-means及組件消融（候選設計，未執行）
+metrics:
+- 固定品質的端到端時間與固定預算的train/test MSE
+- Recall@10、峰值記憶體、計時邊界及seeds分布
+insights:
+- 同目標、不同更新頻率可以改變成本與最佳化路徑；下游品質仍需獨立評估
+connections:
+- idea_000019
+- idea_000022
+- idea_000036
+- idea_000043
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 6
+  boundary_definition_score: 6/10
+  testability: 11
+  testability_score: 11/15
+  evidence_support: 3
+  evidence_support_score: 3/15
+  connection_strength: 8
+  connection_strength_score: 8/10
+  novelty: 6
+  novelty_score: 6/10
+  feasibility: 5
+  feasibility_score: 5/15
+  research_potential: 5
+  research_potential_score: 5/10
+maturity_score: 59/100
+maturity_level: structured
+next_steps:
+- 先確認目標向量與查詢、召回底線、硬體與計時契約，再決定是否另行啟動公平比較。
+source:
+- user attachment 7dff96ed-e8bf-462e-82bd-972102e7110f, captured 2026-11-15
+- https://arxiv.org/abs/2611.09501v1
+- https://e-means.github.io/
+maturity_action: include in graph and clustering
+human_note: ideas/2026-11-15-e-means-clustering-study/README.md
+first_principle:
+  scarce_resource:
+  - 來源忠實度
+  - 注意力
+  - 計算預算
+  - 下游品質
+  canonical_home: brainstorming-lab/ideas/2026-11-15-e-means-clustering-study/
+  planning_role: title, ID, status, maturity, path, next gate, capacity only
+  capacity: Unknown
+pressure_test:
+  setting: 近重複、稀有主題與不平衡文字embedding的IVF索引重建
+  expected_failure: MSE更低／訓練更快，但Recall@10退步或端到端成本未下降
+  smallest_test: 未啟動：固定向量、查詢、ground truth、初始化、seeds、精度與計時區間，先寫比較契約
+  decision: 召回／延遲底線維持且成本下降才考慮；無資料與門檻則停在筆記
+activation:
+  state: not_activated
+  owner: Jason另行決定實驗owner與資料
+  stop_defer:
+  - GPU實驗
+  - 模型部署
+  - 現有分群替換
+  - 週論文選題
+  - 持續串流推廣
+maturity_note: 分數由現有Idea OS結構規則重算，只描述此記錄的結構成熟度；不證明方法原創性、論文品質、本機效能或實驗啟動。
+normalization_status: validated
+
+website_delivery:
+  status: prepared
+  url: https://learn.cs-kairos.com/perspectives/e-means-clustering/
+  english_url: https://learn.cs-kairos.com/en/perspectives/e-means-clustering/
+  execution_owner: kairos-learning
+  release_evidence: kairos-learning/docs/releases/2026-11-15-e-means-perspective.md
+  scope: 完整雙語教學與八圖；網站部署與GPU效能重現分開驗證。

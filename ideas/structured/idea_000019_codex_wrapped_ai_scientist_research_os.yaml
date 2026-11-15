@@ -171,6 +171,7 @@ insights:
   a minimum experiment plan or small run, failure analysis, claim boundary review,
   and next-step recommendation.
 connections:
+- idea_000062
 - idea_000006
 - idea_000007
 - idea_000008

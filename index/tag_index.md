@@ -376,6 +376,10 @@
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
 
+## clustering
+
+- `idea_000062` - e-means clustering evidence and embedding index tradeoffs (`structured`, 59/100) - `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml`
+
 ## codex-cli
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
@@ -697,6 +701,10 @@
 
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 
+## e-means
+
+- `idea_000062` - e-means clustering evidence and embedding index tradeoffs (`structured`, 59/100) - `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml`
+
 ## early-warning-systems
 
 - `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
@@ -786,6 +794,10 @@
 ## evidence-density
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## evidence-gates
+
+- `idea_000062` - e-means clustering evidence and embedding index tradeoffs (`structured`, 59/100) - `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml`
 
 ## evidence-provenance
 
@@ -1999,6 +2011,10 @@
 
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
 
+## retrieval
+
+- `idea_000062` - e-means clustering evidence and embedding index tradeoffs (`structured`, 59/100) - `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml`
+
 ## retrieval-collapse
 
 - `idea_000024` - Search trust collapse under AI-generated web pollution (`execution_ready`, 88/100) - `ideas/structured/idea_000024_search_trust_collapse_under_ai_generated_web_pollution.yaml`
@@ -2583,6 +2599,10 @@
 ## value-capture
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## vector-quantization
+
+- `idea_000062` - e-means clustering evidence and embedding index tradeoffs (`structured`, 59/100) - `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml`
 
 ## venue-fit
 

@@ -3,3 +3,4 @@
 - cluster_0001 - evidence-provenance / information-retrieval / rag - 63/100 - evaluate as research candidate
 - cluster_0002 - cybersecurity / evidence-routing / ai-triage - 63/100 - evaluate as research candidate
 - cluster_0003 - decision-system / planning-bridge / workflow - 61/100 - keep clustered and improve maturity
+- cluster_0004 - life-decisions / sustainability / time - 68/100 - keep clustered and improve maturity

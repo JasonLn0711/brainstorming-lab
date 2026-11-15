@@ -228,6 +228,7 @@ insights:
   active projects, replace them with `ai_clients.asr.transcribe` or `ai_clients.llm.chat`,
   and keep the server as the only place that touches GPU model objects.'
 connections:
+- idea_000062
 - idea_000015
 - idea_000020
 - idea_000039
