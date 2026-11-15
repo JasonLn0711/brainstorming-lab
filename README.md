@@ -22,6 +22,7 @@ Website implementation remains unactivated in the existing portfolio repo.
 [Taipei mayoral debate: transcripts, fact-checking, and analysis](archive/2026-10-31-taipei-mayoral-debate-zAg64cyySQA/README.md)
 preserves the non-audio source package with a categorized catalog and SHA-256 inventory.
 Audio remains in the original Downloads folder; analysis and sharing drafts retain their review boundaries.
+Planning records the handoff and review gate; the sharing text remains a draft.
 
 ## First Principle
 
@@ -162,6 +163,21 @@ pytest -q
 5. Use `docs/real-world-pressure-tests.md` before promoting mature ideas.
 6. Inspect `index/idea_index.md` for the current idea database.
 
+## November 4 publication review
+
+The [Planning status receipt](../planning-everything-track/data/projects/2026-04-brainstorming-lab.md#brainstorming-publication-2026-11-04)
+connects the published website study and debate archive to the
+[November 4 day note](../planning-everything-track/weeks/2026-W45/days/2026-11-04.md#brainstorming-publication-2026-11-04).
+Detailed sources and review gates remain in the canonical folders linked above.
+This review adds no experiment, website implementation, or scheduled research block.
+
 ## Private execution locator
 
 [Kairos Live](ideas/2026-11-04-cs-kairos-live/README.md) is an archived routing record for an independent private execution repository. This public index contains ownership metadata only.
+
+Shared-tool ownership, review sources, and measured validation improvements are
+recorded in [shared validation](docs/shared-rust-tools.md).
+
+## 個人體悟與反思系列
+
+[11/14 個人體悟與反思系列](docs/2026-11-14-personal-reflections-map.md)整理九筆 canonical YAML、詳細分析與 Planning 橋接；完整私人供稿採本機限定保存。

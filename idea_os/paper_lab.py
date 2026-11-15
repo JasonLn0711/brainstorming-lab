@@ -164,6 +164,7 @@ def validate_paper_folder(folder: str | Path, root: str | Path | None = None) ->
         errors.append(f"{label}: folder name must match YYYY-Www-slug")
 
     yaml_path = paper_dir / "paper.yaml"
+    expected_id = None
     if not yaml_path.exists():
         errors.append(f"{label}: missing paper.yaml")
     else:
@@ -175,6 +176,7 @@ def validate_paper_folder(folder: str | Path, root: str | Path | None = None) ->
             if not isinstance(data, dict):
                 errors.append(f"{_rel(yaml_path, repo)}: paper.yaml must be a mapping")
             else:
+                expected_id = str(data.get("paper_id", ""))
                 errors.extend(validate_paper_record(data, paper_dir, repo))
 
     for filename in EXPECTED_MARKDOWN_FILES:
@@ -183,12 +185,6 @@ def validate_paper_folder(folder: str | Path, root: str | Path | None = None) ->
             errors.append(f"{label}: missing {filename}")
         elif filename == "07_scoring_report.md":
             errors.extend(_validate_scoring_report(path, repo))
-    expected_id = None
-    if yaml_path.exists():
-        try:
-            expected_id = str(load_yaml(yaml_path).get("paper_id", ""))
-        except Exception:
-            expected_id = None
     errors.extend(validate_quality_evaluation_file(paper_dir / "scientific_evaluation.yaml", repo, expected_id))
     return errors
 

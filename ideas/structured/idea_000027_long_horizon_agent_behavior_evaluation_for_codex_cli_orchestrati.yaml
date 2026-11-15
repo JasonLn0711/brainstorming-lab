@@ -82,6 +82,7 @@ insights: []
 connections:
   - idea_000019
   - idea_000020
+  - idea_000051
 role: idea
 value:
   impact: high

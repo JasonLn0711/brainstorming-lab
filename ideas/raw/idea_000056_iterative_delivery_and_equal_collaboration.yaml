@@ -1,0 +1,75 @@
+id: idea_000056
+title: 從遺漏與交付焦慮到可修正合作：容錯、主導權與平等學習
+created_at: '2026-11-14'
+type: question
+tags:
+- iterative-delivery
+- communication
+- collaboration
+- agency
+- scope-control
+- learning
+- self-confidence
+status: raw
+problem_statement:
+  raw: 當人需要透過補充與反覆嘗試整理內容，如何在明確交付邊界與互相尊重中保留修正空間、創作主導權及平等學習？
+  normalized: Given self-reported omissions under rushed delivery and a proposed creative
+    collaboration, clarify reversible draft scope, feedback and decision rights under
+    finite attention, uncertain requirements, privacy and unequal expertise.
+  structure:
+    given: 使用者提供的私人對話與既有分析，涉及遺漏焦慮及卡片／網站合作構想
+    optimize: 可修正交付、可協商分工與不依附完美表現的合作
+    constraints:
+    - 逐句說話者與音訊未核對
+    - 焦慮原因僅為自述及分析假設
+    - 合作名稱、範圍、日期與決策權待確認
+    - 容錯不代表免除驗收或無限重做
+    - 原始私人供稿本機限定
+    - 未授權實作或發布
+summary: 去識別整理敘事補充、趕交付時的遺漏擔憂、低風險容錯與平等合作；保留卡片／網站為未啟動構想，區分創作主導、工程可行性、驗收與修正責任，連回同日三篇反思及外部化認知。
+assumptions:
+- 分階段交付可能降低一次完整的壓力，但需有明確草稿範圍、回饋與停止條件。
+- 反覆嘗試需帶著回饋修正方法，次數本身不保證熟練或成功。
+- 向對方學習可與平等協商並存，專業差異不自動決定全部決策權。
+evidence:
+- 2026-11-14 收到私人對話與分析；供稿自述補充整理與趕交付時擔心遺漏，沒有獨立錯漏率、工時或原因驗證。
+- 供稿討論卡片／網站、工程與 UI／UX／PM 溝通角色；名稱、媒介、分工、時間、驗收及共同啟動均未確認。
+baseline:
+- 把第一次交付視為不能有任何遺漏
+- 無邊界地反覆補充直到感覺完整
+- 以專業高低決定全部事項或把支持視為無條件承接
+metrics:
+- 能否區分本次要交付的內容、已知缺口與下一個決策
+- 是否由雙方確認一個可修正切片的驗收與回饋方式
+- 回饋是否使缺口更明確且重做成本可承擔；尚未測量
+- 是否保留拒絕、協商、停止與不立即回答的選擇；不評分關係
+insights: []
+connections:
+- idea_000061
+- idea_000059
+- idea_000058
+- idea_000057
+- idea_000017
+- idea_000053
+- idea_000054
+- idea_000055
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity: {}
+maturity_score: 0/100
+maturity_level: raw
+next_steps:
+- 只有雙方明確願意且有容量時，先釐清卡片或網站的一個使用情境與低風險草稿邊界，確認角色及驗收後再決定是否實作；目前只記錄。
+source:
+- user supplied private conversation and analysis, received 2026-11-14
+- local-only source locator in human_note; raw text excluded from Git
+maturity_action: clarify and normalize problem statement
+human_note: ideas/2026-11-14-iterative-delivery-and-equal-collaboration/README.md
+maturity_note: 0/100 為未評分初始值，不評分人物或心理狀態；合作構想未啟動，未畢業成專案或進入週選。
+pressure_test:
+  setting: 若未來啟動雙人卡片／網站草稿，一方邊做邊補需求，另一方負責工程且雙方時間有限。
+  expected_failure: 創作自由變成無限改版、工程建議被當阻止、草稿被當正式交付，或情感支持變成必須承接的義務。
+  smallest_test: 雙方先同意一個使用情境、草稿形式、已知缺口、回饋方式及停止條件；只在另行啟動後做一個可逆切片。
+  decision: 能完成已同意範圍並保留修正與拒絕空間則暫支持；範圍持續增加就縮小或重談；條件未定保持構想。

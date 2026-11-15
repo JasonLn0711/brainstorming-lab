@@ -1,0 +1,73 @@
+id: idea_000061
+title: 時間、金錢與人生自主權：有限生命中的可承擔配置
+created_at: '2026-11-14'
+type: question
+tags:
+- time
+- money
+- life-autonomy
+- opportunity-cost
+- life-decisions
+- sustainability
+status: raw
+problem_statement:
+  raw: 如何在不可回復的時間、有限金錢與生活責任之間作可承擔的選擇，讓配置服務本人重視的生活，而不把體悟直接變成消費或減少工作的指令？
+  normalized: Given a personal reflection on irreversible time and money as a resource,
+    compare present experience, future options and economic constraints while preserving
+    health, relationships, uncertainty and agency.
+  structure:
+    given: 使用者當日對時間與金錢取捨的體悟及供稿延伸分析
+    optimize: 本人認同且可承擔的生活配置與重新選擇空間
+    constraints:
+    - 觸發事件與當前時間配置未知
+    - 沒有個人財務、安全底線或成本資料
+    - 金錢重新取得不保證容易或必然
+    - 付費服務可能有協調、驗證與維護成本
+    - 當下與未來皆有價值
+    - 不新增消費、職涯或排程承諾
+summary: 保存時間不可回復與金錢配置的體悟，將 Life Autonomy 作為供稿提出的價值視角，拆開未來可支配時間、當下經驗、經濟安全與服務淨節時；連回人生機會、自主、可持續投入與容量，尚未採用新永久規則。
+assumptions:
+- 金錢可能支持選擇，也可能需要時間、資源與風險承擔才能取得，並非損失必可回復。
+- 付費可減少某些未來勞務，卻不能取回已流逝時間，也不必然改善本人重視的體驗。
+- 時間與金錢是有用視角，不能涵蓋健康、關係、責任與人生意義的全部。
+evidence:
+- 2026-11-14 使用者明示當日體悟：人生有時間與金錢取捨，時間一去不復返；完整供稿已保存。
+- 後續分析提出未來時間自由與 Life Autonomy；觸發事件、實際成本、節時效果與本人採用程度未提供。
+baseline:
+- 只追收入、成就或空閒時數最大化
+- 以時間珍貴為由忽略經濟責任
+- 假設花錢必然淨節時
+- 為未來自由無限延後當下重要經驗
+metrics:
+- 能否說明具體選擇服務的價值與不可回復機會窗口
+- 是否辨認必要支出、責任、恢復與可承擔成本，未知則明列
+- 若比較服務，是否扣除搜尋、溝通、驗收與維護時間
+- 是否保留自己做、縮小、協助、付費與延後等選項；不把人生化約單一金額或時數
+insights: []
+connections:
+- idea_000052
+- idea_000053
+- idea_000056
+- idea_000058
+- idea_000059
+- idea_000060
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity: {}
+maturity_score: 0/100
+maturity_level: raw
+next_steps:
+- 本人願意時，先補體悟的觸發情境，再選一件既有時間／金錢取捨，分辨價值、限制、成本與可逆選項；未啟動支出或排程。
+source:
+- user supplied reflection and analysis, received 2026-11-14
+- local-only source locator in human_note; raw text excluded from Git
+maturity_action: clarify and normalize problem statement
+human_note: ideas/2026-11-14-time-money-and-life-autonomy/README.md
+maturity_note: 0/100 為未評分初始值，不評分人生、財務或自主程度；未啟動研究、採購或週選，未升格永久原則。
+pressure_test:
+  setting: 忙碌週考慮自行完成一件事、購買協助或延後，但個人容量、必要支出與服務品質資料尚缺。
+  expected_failure: 把花錢當作自動買回時間，忽略協調與驗收成本；或以省錢之名耗盡恢復、錯過無法重來的共同時間。
+  smallest_test: 若本人願意，只用既有資料比較一件任務的自己做、縮小、協助／付費與延後，列出時間、金錢、責任及未知，不先付款或新增時段。
+  decision: 資料足以支持且本人可承擔才另行決策；淨節時不足、品質不確定或安全底線未知則縮小、延後或保留現狀。

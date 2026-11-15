@@ -1,0 +1,74 @@
+id: idea_000060
+title: 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣
+created_at: '2026-11-14'
+type: question
+tags:
+- lecture-reflection
+- renewed-interest
+- agency
+- experience
+- motivation
+- source-fidelity
+status: raw
+problem_statement:
+  raw: 如何保存忙碌中決定赴約、事後想再參與的回顧，辨認當下興趣及其可能來源，而不把轉述升格為活動驗證、全體滿意或未來承諾？
+  normalized: Given a user-attributed account of attending a lecture despite busyness
+    and wishing to attend again, preserve reported decisions, retrospective interest
+    and alternative explanations under uncertain event identity, date, group attribution
+    and source quality.
+  structure:
+    given: 使用者標示分享者的一段講座回顧與既有分析
+    optimize: 忠實保存赴約前後的意願變化及可修正的意義理解
+    constraints:
+    - 活動名稱、日期、講者未核對
+    - 忙碌與爽約玩笑不等於本人不想去
+    - 群體語句非全體獨立意見
+    - 再約是回顧中的意願，不是排程要求
+    - 人名、屆數與 AirDrop 片段含辨識不確定性
+    - 私人完整來源本機限定
+summary: 去識別整理講座回顧的忙碌、赴約決定與想再參與，連回生命活力、動力、自主與經驗機會；分開供稿者明示身分、口語轉述及既有分析，未核對活動或建立再赴約任務。
+assumptions:
+- 再參與意願可能反映正向感受，也可能涉及社交、命名、內容、講者狀態等因素。
+- 忙碌中猶豫與不想參與不同，不能把玩笑直接當負面態度。
+- 對講座的正向回顧不等於知識已掌握、長期動力改善或全體參與者共識。
+evidence:
+- 2026-11-14 使用者明示分享者並提供對話與分析，回顧忙碌中赴約及事後希望再約；活動、時間、逐句說話者與群體回應未獨立核對。
+- 原文講座名稱及人物有異體或疑似辨識錯誤，屆數比較及 AirDrop 片段語義不完整；本次只保留原文。
+baseline:
+- 把忙碌與爽約玩笑寫成不想去
+- 把轉述中的大家寫成全體一致滿意
+- 由再約推定已決定或已排下一次
+- 由前文印象反向確認講者身分與活動內容
+metrics:
+- 是否分開供稿標示、本人自述、他人轉述與分析推測
+- 能否列出具體受吸引之處並保留其他原因
+- 是否保留活動名稱、日期、身分與長期效果未知，不設滿意度或動力分數
+insights: []
+connections:
+- idea_000061
+- idea_000052
+- idea_000053
+- idea_000055
+- idea_000057
+- idea_000058
+- idea_000059
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity: {}
+maturity_score: 0/100
+maturity_level: raw
+next_steps:
+- 本人願意時，可只記一個最想保留的講座片段及其意義；若另行需要正式活動紀錄，再以公告或本人確認核對名稱、日期與講者，目前不啟動查證或再約。
+source:
+- user supplied attributed private conversation and analysis, received 2026-11-14
+- local-only source locator in human_note; raw text excluded from Git
+maturity_action: clarify and normalize problem statement
+human_note: ideas/2026-11-14-keeping-an-appointment-and-renewed-interest/README.md
+maturity_note: 0/100 為未評分初始值，不評分講座、講者或個人；未啟動研究、報名、聯絡或週選。
+pressure_test:
+  setting: 忙碌週回顧一次受鼓舞的講座，口語提及想再參與，但容量未知且活動資訊未核對。
+  expected_failure: 將正向回顧變成必須增加活動的壓力，或把群體玩笑及模糊人名寫成已驗證事件。
+  smallest_test: 只在本人願意時保存一個有意義片段；若未來要參與，再核對活動資料、意願與容量，不從回顧自動排程。
+  decision: 有具體片段即可支持這次主觀受吸引的描述；沒有後續證據仍不推長期效果；無容量則不承接新活動。

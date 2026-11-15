@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "sources": [
+    "idea_os/paper_lab.py",
+    "idea_os/paper_quality.py",
+    "idea_os/paper_shortlist.py",
+    "idea_os/yaml_io.py"
+  ]
+}

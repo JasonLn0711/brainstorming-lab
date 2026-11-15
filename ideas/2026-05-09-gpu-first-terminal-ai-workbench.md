@@ -1092,3 +1092,8 @@ docs/workstation_decisions.md
 
 The next concrete action is to freeze this setup into a workstation log and a
 minimal dotfiles repo before adding more tools.
+
+
+## 2026-11-08 關聯：外部修改版模型 API
+
+[GLM-5.3 非中國 API 與資料流評估](2026-11-08-glm-5-3-non-china-api.md)保存供應商證據、模型身分與資料地域待驗項目。此關聯用於外部模型治理與受控評估；尚未接入、採購或驗證修改版品質。

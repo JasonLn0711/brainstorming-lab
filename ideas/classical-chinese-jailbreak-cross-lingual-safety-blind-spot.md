@@ -577,3 +577,8 @@ Park as a research idea until it can be connected to one active writing lane:
 - Evidence / experience: arXiv:2602.22983 argues that classical Chinese can expose safety constraints weaker than base language understanding; my GPT-5.5 implementation check showed a current frontier model detecting the unsafe intent instead of failing open.
 - How this changes future action: do not claim "classical language breaks safety" as a universal present-tense fact. Use it as a versioned benchmark question: which models, dates, language registers, and safety stacks are robust?
 - Review trigger: revisit when drafting threat model, limitation, related-work, or benchmark sections for AI governance / safety papers; include the GPT-5.5 counter-observation as motivation for model-version-aware evaluation.
+
+
+## 2026-11-08 關聯：外部修改版模型 API
+
+[GLM-5.3 非中國 API 與資料流評估](2026-11-08-glm-5-3-non-china-api.md)保存供應商證據、模型身分與資料地域待驗項目。此關聯用於外部模型治理與受控評估；尚未接入、採購或驗證修改版品質。
