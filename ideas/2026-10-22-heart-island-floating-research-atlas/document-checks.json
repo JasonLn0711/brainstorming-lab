@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-22T12:47:58.093Z",
+  "mermaid_version": "12.2.0",
+  "mermaid_parse_passed": 12,
+  "tutorial_ndc_checks_passed": 4,
+  "scope": "syntax parsing and pure JavaScript example; not browser rendering or website implementation",
+  "final_checked_at": "2026-10-22T12:53:09.101682+00:00",
+  "local_links_checked": 30,
+  "local_errors": [],
+  "idea_os_tests": {
+    "passed": 23,
+    "command": "uvx --with pytest pytest tests/test_idea_os.py -q"
+  },
+  "git_diff_checks": {
+    "brainstorming-lab": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "planning-everything-track": {
+      "exit_code": 0,
+      "output": ""
+    }
+  },
+  "browser_preview": {
+    "rendered_svg_count": 12,
+    "error_icons": 0,
+    "visual_sample": "first system boundary diagram; all diagrams generated SVG, not a full per-figure visual audit"
+  },
+  "idea_schema_records_checked": 3
+}

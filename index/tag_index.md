@@ -85,6 +85,10 @@
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 
+## ai-era-research
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
 ## ai-generated-content
 
 - `idea_000023` - Evidence provenance under recursive AI web contamination (`execution_ready`, 91/100) - `ideas/structured/idea_000023_evidence_provenance_under_recursive_ai_web_contamination.yaml`
@@ -99,6 +103,10 @@
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 - `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
+
+## ai-homogeneity
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## ai-humanities
 
@@ -115,6 +123,11 @@
 ## ai-native-design
 
 - `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
+
+## ai-native-science
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## ai-os
 
@@ -204,10 +217,15 @@
 - `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
 
 ## asr-security
 
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
+## attention-scarcity
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## auditability
 
@@ -327,6 +345,7 @@
 ## clinical-intake
 
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
 
 ## codex-cli
 
@@ -345,6 +364,7 @@
 ## cognitive-load
 
 - `idea_000003` - Decision load scheduler (`structured`, 58/100) - `ideas/structured/idea_000003_decision_load_scheduler.yaml`
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
 
 ## cognitive-security
 
@@ -359,6 +379,10 @@
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## commoditization
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
 ## complex-systems
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
@@ -366,6 +390,10 @@
 ## compliance
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
+## compliance-sensitive-training
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## computational-scientometrics
 
@@ -409,6 +437,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## conversation-design
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
+
 ## conversation-topology
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
@@ -444,6 +476,10 @@
 ## cross-lingual-search
 
 - `idea_000025` - Effective evidence collapse in AI-mediated search (`research_candidate`, 77/100) - `ideas/structured/idea_000025_effective_evidence_collapse_ai_mediated_search.yaml`
+
+## customer-simulator
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## cyber-physical-security
 
@@ -502,6 +538,10 @@
 ## decision-stability
 
 - `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
+
+## decision-support
+
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
 
 ## decision-system
 
@@ -662,6 +702,7 @@
 
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## evaluator-loop
 
@@ -696,6 +737,11 @@
 - `idea_000001` - Healthcare AI triage copilot (`execution_ready`, 95/100) - `ideas/structured/idea_000001_healthcare_ai_triage.yaml`
 - `idea_000002` - Cybersecurity reviewer assist layer (`research_candidate`, 68/100) - `ideas/structured/idea_000002_cybersecurity_review_assist.yaml`
 - `idea_000004` - Anomaly detection research watch (`research_candidate`, 73/100) - `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml`
+
+## evidence-traceability
+
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
+- `idea_000048` - Heart Island study and floating research atlas (`research_candidate`, 65/100) - `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml`
 
 ## evidence-void
 
@@ -753,9 +799,17 @@
 
 - `idea_000005` - Workflow optimization feedback loop (`structured`, 57/100) - `ideas/structured/idea_000005_workflow_optimization_loop.yaml`
 
+## field-grounded-research
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
 ## figure-analysis
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## fine-tuning-readiness
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## first-principles
 
@@ -777,6 +831,7 @@
 ## frontend-learning
 
 - `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000048` - Heart Island study and floating research atlas (`research_candidate`, 65/100) - `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml`
 
 ## fsi-di
 
@@ -830,6 +885,7 @@
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## gpu-inference
 
@@ -922,6 +978,7 @@
 ## human-approval-gate
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
+- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## human-computer-interaction
 
@@ -930,6 +987,7 @@
 ## human-factors
 
 - `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
 
 ## human-in-the-loop
 
@@ -1023,6 +1081,14 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## inner-archive
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
+## insight-generation
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
 ## institutional-capacity
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
@@ -1035,13 +1101,29 @@
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## insurance-simulation
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
+
+## intellectual-moat
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
 ## intelligence-analysis
 
 - `idea_000037` - Pizza Index as weak-signal OSINT hidden-state modeling (`research_candidate`, 74/100) - `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml`
 
+## interaction-design
+
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
+
 ## interaction-phase-transition
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
+
+## interaction-platform
+
+- `idea_000050` - Kairos Live — private execution locator (`emerging`, 31/100) - `ideas/archived/idea_000050_cs_kairos_live.yaml`
 
 ## interaction-science
 
@@ -1083,6 +1165,10 @@
 ## journal-intelligence
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+
+## judgment
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## judgment-system
 
@@ -1131,6 +1217,10 @@
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
 
+## life-knowledge-repo
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## life-state-machine
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
@@ -1168,6 +1258,7 @@
 ## local-ai-gateway
 
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## local-first
 
@@ -1235,6 +1326,10 @@
 
 - `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
+## meaning-making-system
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## measurement-integrity
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
@@ -1251,6 +1346,7 @@
 ## medical-ux
 
 - `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
 
 ## memory
 
@@ -1308,6 +1404,7 @@
 ## model-serving
 
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
+- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## moe
 
@@ -1325,6 +1422,7 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
+- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## multimodal-ai
 
@@ -1457,6 +1555,14 @@
 
 - `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
 
+## persona-simulation
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
+
+## personal-cognitive-archive
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## personal-ops
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
@@ -1464,6 +1570,10 @@
 ## personal-positioning
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## personal-website
+
+- `idea_000048` - Heart Island study and floating research atlas (`research_candidate`, 65/100) - `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml`
 
 ## personality-density
 
@@ -1473,6 +1583,7 @@
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## philosophy-of-mind
 
@@ -1528,13 +1639,29 @@
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
 
+## private-execution
+
+- `idea_000050` - Kairos Live — private execution locator (`emerging`, 31/100) - `ideas/archived/idea_000050_cs_kairos_live.yaml`
+
+## private-reflection
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
+
 ## problem-definition
 
 - `idea_000012` - PhD problem-definition thinking system (`execution_ready`, 87/100) - `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml`
 
+## problem-map
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
 ## problem-normalization
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## problem-selection
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## product-lifecycle
 
@@ -1556,6 +1683,7 @@
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
 - `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## protocol-security
 
@@ -1568,6 +1696,10 @@
 ## psychological-reconstruction
 
 - `idea_000016` - LLM Literature Mental State Understanding (`execution_ready`, 94/100) - `ideas/structured/idea_000016_llm_literature_mental_state_understanding.yaml`
+
+## psychological-resilience
+
+- `idea_000017` - Externalized cognition OS for human-AI planning (`research_candidate`, 78/100) - `ideas/structured/idea_000017_externalized_cognition_os_for_human_ai_planning.yaml`
 
 ## public-private-boundary
 
@@ -1617,6 +1749,10 @@
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
 - `idea_000034` - LINE-based Urology Follow-up CRM (`execution_ready`, 81/100) - `ideas/structured/idea_000034_line_based_urology_follow_up_crm.yaml`
+
+## reality-access
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## recovery-policy
 
@@ -1668,10 +1804,19 @@
 ## research-identity
 
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## research-operating-system
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
+
+## research-policy
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
+## research-strategy
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## research-thinking
 
@@ -1735,6 +1880,10 @@
 
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
+## rich-ui
+
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
+
 ## risk-atom
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
@@ -1742,6 +1891,10 @@
 ## robotics
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
+
+## role-play
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## rtx-5080
 
@@ -1756,6 +1909,10 @@
 ## safety-case
 
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
+## sales-training
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## sampling-bias
 
@@ -1796,6 +1953,7 @@
 ## scientometrics
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
 
 ## script-analysis
 
@@ -1971,6 +2129,10 @@
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
 
+## staff-review
+
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
+
 ## starship
 
 - `idea_000020` - GPU-first terminal as AI engineering workbench (`execution_ready`, 95/100) - `ideas/structured/idea_000020_gpu_first_terminal_as_ai_engineering_workbench.yaml`
@@ -1982,6 +2144,7 @@
 ## state-machine
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## state-space-models
 
@@ -2027,6 +2190,10 @@
 
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## synthesis
+
+- `idea_000046` - AI-era research problem map and problem-selection moat (`execution_ready`, 89/100) - `ideas/structured/idea_000046_ai_era_research_problem_map_and_problem_selection_moat.yaml`
+
 ## synthetic-consensus
 
 - `idea_000026` - Synthetic consensus and source laundering in AI-generated web pollution (`research_candidate`, 71/100) - `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml`
@@ -2063,6 +2230,10 @@
 ## taiwan-ai-supply-chain
 
 - `idea_000018` - AI Value Capture And Agent Security Career Positioning (`execution_ready`, 95/100) - `ideas/structured/idea_000018_ai_value_capture_and_agent_security_career_positioning.yaml`
+
+## taiwan-insurance
+
+- `idea_000047` - Insurance customer conversation simulator for sales training (`research_candidate`, 77/100) - `ideas/structured/idea_000047_insurance_customer_conversation_simulator_for_sales_training.yaml`
 
 ## task-graph
 
@@ -2103,6 +2274,10 @@
 ## threat-modeling
 
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
+
+## threejs
+
+- `idea_000048` - Heart Island study and floating research atlas (`research_candidate`, 65/100) - `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml`
 
 ## tmux
 
@@ -2145,6 +2320,10 @@
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
 - `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
+## trustworthy-ai
+
+- `idea_000045` - Rich UI as human-factors evidence interface for AI agents (`execution_ready`, 92/100) - `ideas/structured/idea_000045_rich_ui_as_human_factors_evidence_interface_for_ai_agents.yaml`
+
 ## trustworthy-rag
 
 - `idea_000044` - Provenance-bounded graph packets for stable small-model decision support (`execution_ready`, 89/100) - `ideas/structured/idea_000044_provenance_bounded_graph_packets_for_slm_decision_support.yaml`
@@ -2156,6 +2335,7 @@
 ## ui-reverse-engineering
 
 - `idea_000042` - AI-native UI reverse engineering framework (`execution_ready`, 83/100) - `ideas/structured/idea_000042_ai_native_ui_reverse_engineering_framework.yaml`
+- `idea_000048` - Heart Island study and floating research atlas (`research_candidate`, 65/100) - `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml`
 
 ## uncertainty
 

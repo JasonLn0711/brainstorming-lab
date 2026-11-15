@@ -114,6 +114,7 @@ insights:
     reliability, privacy, accountability, and human review.
 connections:
 - idea_000042
+- idea_000045
 role: idea
 value:
   impact: high

@@ -1,0 +1,537 @@
+id: idea_000046
+title: AI-era research problem map and problem-selection moat
+created_at: '2026-06-09'
+type: hypothesis
+tags:
+- ai-era-research
+- problem-selection
+- research-strategy
+- problem-map
+- insight-generation
+- synthesis
+- scientometrics
+- research-policy
+- phd-training
+- research-identity
+- field-grounded-research
+- ai-native-science
+- intellectual-moat
+- commoditization
+- reality-access
+- attention-scarcity
+- judgment
+- ai-homogeneity
+status: execution_ready
+problem_statement:
+  raw: In an AI-saturated research environment, technical execution is becoming cheaper
+    and faster, like a once-rare market becoming saturated. Researchers need a stronger
+    method for choosing original, durable, field-grounded problems rather than only
+    building ideas that other teams can quickly reproduce.
+  normalized: Given AI tools that can rapidly implement baselines, prototypes, experiments,
+    and paper drafts, optimize a researcher problem-selection system that finds durable,
+    original, field-grounded, and publishable problem spaces under constraints of
+    idea commoditization, paper-volume inflation, model/tool churn, limited unique
+    data access, attention scarcity, AI-induced idea homogeneity, competition from
+    AI operators, and the need to build a defensible long-term research identity.
+  structure:
+    given: AI-assisted research execution where many technically plausible ideas can
+      be implemented quickly by many teams
+    optimize: durable problem selection, insight generation, synthesis, and research
+      identity formation
+    constraints:
+    - execution cost is falling
+    - obvious ideas are quickly copied or rediscovered
+    - paper volume is increasing
+    - model and tooling maps change quickly
+    - unique field experience and data access are scarce
+    - audience attention does not scale with paper volume
+    - AI may steer many researchers toward similar plausible ideas
+    - publishability depends on novelty, evidence, framing, and timing
+summary: 'The AI-era research bottleneck is moving from "can we build it?" to "is
+  this the right problem, and does our framing reveal something durable?" The apple-market
+  analogy is useful: when a once-rare capability becomes widely available, value moves
+  from simple access to position, differentiation, distribution, trust, and judgment.
+  When AI makes coding, baselines, and draft production easier, the scarce research
+  assets become problem selection, insight generation, cross-domain synthesis, unique
+  data access, theory construction, reality access, attention capture, and field-grounded
+  judgment. The user''s strongest moat is not generic AI execution; it is the unusual
+  combination of police/165 antifraud practice, medical AI workflow exposure, cybersecurity
+  governance, AI agent systems, ASR brittleness, and human-factors thinking. The next
+  research OS should prioritize a problem map over a model map.'
+source_note_zh: 這次想法的核心是：AI 讓 execution 變快以後，研究者真正稀缺的能力會轉向 problem selection、 insight
+  generation、synthesis、unique data access、framework building。Jason 的優勢不是比 AI 更會寫 code，
+  而是比一般 AI operator 更知道哪些真實場域的問題值得做，尤其是警政、165 詐欺、醫療 AI、資安治理、AI Agent、 ASR、人因工程交會處。
+first_principle:
+  scarce_resource: original problem selection under cheap execution
+  core_question: When AI makes implementation abundant, how can a researcher choose
+    problems that remain distinctive, durable, and evidence-grounded?
+  not_the_core:
+  - racing to implement every new model baseline
+  - measuring research value only by paper count
+  - treating AI as a productivity tool without changing problem selection
+  - chasing model maps that refresh every few months
+  - assuming difficulty of coding is the main source of research novelty
+  - assuming creativity alone remains scarce when AI can generate many plausible ideas
+  reusable_rule: Build a Problem Map before a Model Map; durable research identity
+    comes from the field-grounded problems, evaluation gaps, institutional gaps, and
+    theory gaps that survive model churn.
+  smallest_next_test: Create a one-page problem map for CSL, TFSC, and STV that lists
+    each line's field observation, overlooked evaluation gap, institutional gap, civilization-level
+    question, unique evidence source, and next falsifiable test.
+  kill_condition: Park the framework if it only produces abstract slogans and does
+    not change project selection, paper framing, or next experiment choice.
+assumptions:
+- AI tools reduce the execution advantage of simply building baselines, prototypes,
+  and standard model pipelines.
+- Obvious technical gaps become crowded faster when many researchers use similar AI
+  systems and prompt patterns.
+- Researcher advantage increasingly comes from problem definition, insight, synthesis,
+  field access, and theory construction.
+- Unique field experience can create better problem selection than model familiarity
+  alone.
+- The user's police, 165 antifraud, medical workflow, cybersecurity, ASR, agent, and
+  human-factors exposure can become a defensible research moat.
+- A long-lived problem map can guide multiple papers better than a rapidly changing
+  model map.
+- Once AI skills become commodity capabilities, position in real-world systems becomes
+  more valuable than generic technical fluency.
+- Paper volume can rise faster than reviewer or field attention, so memorable problem
+  framing becomes part of research value.
+- Creativity is also becoming cheaper; judgment about which idea deserves years of
+  work remains scarce.
+- AI systems may induce convergence by suggesting similar plausible research directions
+  to many teams.
+- AI can simultaneously democratize individual execution and centralize advantage
+  around organizations with data, capital, compute, distribution, and institutional
+  access.
+- Resource-rich actors gain compounding leverage because AI turns existing data, staff,
+  trust, and partnerships into more output per unit of human labor.
+- The strategic response is not only to move toward power; it can also be to move
+  toward field sites and interfaces where powerful actors still lack problem understanding.
+evidence:
+- '2026-06-09 user idea: in the AI era, a researcher''s imagined implementation may
+  be built quickly by others, making idea originality and problem selection more important.'
+- '2026-06-09 user idea: paper output volume is rising, which makes submission and
+  innovation harder when ideas are execution-level only.'
+- '2026-06-09 user idea: researchers may be good at taking concrete solutions and
+  executing them, but finding new points and new ideas is harder.'
+- '2026-06-09 user synthesis: the bottleneck has shifted from ''cannot build'' to
+  ''what is worth building and studying.'''
+- '2026-06-09 user synthesis: valuable capabilities include problem selection, insight
+  generation, synthesis, data access, and framework building rather than coding alone.'
+- '2026-06-09 user synthesis: CEIS, SRES, and Decision Stability are stronger than
+  ASR to scam classification because they ask which errors affect decisions.'
+- '2026-06-09 user synthesis: Jason''s moat includes exposure to police systems, fraud
+  crime, medical settings, cybersecurity governance, AI agents, and human factors.'
+- Existing idea_000033 frames the risk of becoming a high-capability tool-person PhD
+  and the need to extract research identity from product work.
+- Existing idea_000038 provides Hidden State Thinking as a durable problem-definition
+  method across scam, governance, triage, and institutional stress.
+- '2026-06-09 user analogy: Taiwan apples were once expensive and prestigious because
+  import access was scarce; as supply expanded and the market saturated, value shifted
+  away from mere access.'
+- '2026-06-09 user analogy: AI research capability may be entering a similar saturated
+  state, where many people can use similar tools and researchers need a differentiated
+  moat.'
+- '2026-06-09 user reflection: the moat may come from what makes one researcher different
+  from others under crowded competition.'
+- '2026-06-09 user prompt: important missing questions include what has not yet been
+  discussed about how to stand out in saturated AI research.'
+- '2026-06-09 user question: AI may give people who already hold power, resources,
+  data, and institutional access an even larger advantage, potentially making society
+  more M-shaped.'
+- '2026-06-09 user question: if technical skill is no longer a distinctive mark, people
+  may feel pressure to move toward the powerful side.'
+- '2026-06-09 user refinement: abstract phrases such as "who sees the problem first"
+  sound deep but do not yet cut into the actual emotional pain point.'
+- '2026-06-09 user refinement: the sharper pain is whether years of learning still
+  matter when AI compresses execution ability and when elite labs hold more resources.'
+baseline:
+- 'AI Operator mode: read papers, write code, run experiments, and maximize short-term
+  output without owning a distinctive problem space.'
+- 'Model Map mode: follow the newest models, benchmarks, and toolchains as the main
+  research compass.'
+- 'Baseline race: implement ASR to classification, LLM to triage, or agent to workflow
+  without a new evaluation, governance, or theory contribution.'
+- 'Paper-volume race: compete primarily on speed and quantity in crowded topics.'
+- 'Tool-person PhD: become useful for implementation and demos without building a
+  durable research worldview.'
+- 'Commodity-AI researcher: use the same models, papers, prompts, datasets, and benchmarks
+  as everyone else while expecting execution speed alone to produce distinction.'
+- 'Attention-blind publishing: produce technically competent papers that fail to answer
+  why anyone should remember the problem.'
+- 'Power-following default: assume the only viable path is to attach to the largest
+  lab, company, hospital, government office, or funding holder.'
+- 'Solo-tool illusion: assume AI democratization alone cancels the advantages of data
+  access, institutional trust, distribution, domain relationships, and governance
+  authority.'
+metrics:
+- Number of active projects with an explicit problem-map entry rather than only a
+  model or tool plan.
+- Percentage of paper ideas that name a technical gap, evaluation gap, institutional
+  gap, and theory/framework gap.
+- Whether each research line identifies a unique field observation or data-access
+  advantage.
+- Time spent on problem framing, reviewer-question mapping, and field evidence before
+  implementation starts.
+- Reduction in projects whose novelty can be summarized as applying a current model
+  to a familiar task.
+- Number of paper claims that remain meaningful if the model baseline changes.
+- 'Quarterly continuity: whether CSL, TFSC, and STV still reinforce one intellectual
+  territory.'
+- Number of research ideas grounded in direct contact with real workflows, institutions,
+  users, or sensitive operational constraints.
+- Ability to answer "whose life, work, review burden, or decision quality changes
+  if this paper succeeds?"
+- 'Homogeneity audit: whether a proposed direction looks like the default output of
+  a general AI brainstorming prompt.'
+- 'Resource-leverage audit: whether the project depends on data, institutional access,
+  compute, distribution, or field trust that generic AI access cannot replace.'
+- 'Interface opportunity audit: whether the project lives at a boundary where powerful
+  institutions have resources but poor problem understanding.'
+insights:
+- When execution cost approaches zero, problem choice becomes the main competitive
+  bottleneck.
+- Research originality can come from evaluation gaps and institutional gaps as much
+  as from new algorithms.
+- A better metric than "can AI build it?" is "would this problem still matter if every
+  competent team could build the baseline?"
+- Field-grounded anomalies are harder to imitate than generic technical ideas.
+- CEIS, SRES, and Decision Stability are examples of moving from model accuracy to
+  decision-quality evaluation.
+- Problem Finder and AI Operator are different research roles; the strongest path
+  is to use AI operator capacity in service of problem-finder judgment.
+- The user's cross-domain field exposure can become a scientific asset when converted
+  into explicit problem maps and evaluation frameworks.
+- In a saturated market, capability alone is not the moat; position, access, trust,
+  and interpretation become the moat.
+- The most valuable researcher may be the one closest to real-world failure modes,
+  not the one closest to the newest model release.
+- Knowledge and idea generation are becoming cheaper; judgment, timing, and field
+  contact remain expensive.
+- Paper quantity can expand while attention remains fixed, so a paper needs a memorable
+  problem, not only a competent implementation.
+- AI can诱導 research homogeneity by making many people converge on similar reasonable
+  directions; deliberate contact with non-mainstream field evidence is a defense.
+- 'AI amplifies leverage more than it simply amplifies power: a person or institution
+  with data, trust, workflow access, and capital can convert those assets into output
+  faster.'
+- M-shaped outcomes become more likely when AI execution is abundant but access to
+  real problems, trusted institutions, compute, and distribution remains concentrated.
+- The answer is not only to attach to power; another viable strategy is to become
+  the trusted interface between AI capability and real-world problem sites.
+pain_point_translation:
+  surface_question: What should researchers do when AI makes technical capability
+    less distinctive?
+  deeper_anxiety: Will my years of effort still let me become one of the few people
+    whose work matters?
+  pain_points:
+  - pain: If AI gets stronger, does everything I learned still matter?
+    sharper_answer: AI compresses execution gaps, but it does not erase judgment built
+      from lived field experience.
+    jason_example: Many GPT-capable engineers can build ASR-to-classification, but
+      fewer would notice that WER is less important than whether the decision changes.
+  - pain: Will I always lose to Stanford, MIT, DeepMind, OpenAI, or Google?
+    sharper_answer: You lose if you fight them on model scale, compute, or generic
+      benchmarks; you have a different arena when the question requires police experience,
+      165 cases, medical workflow, governance, ASR brittleness, and human factors
+      together.
+    jason_example: OpenAI can be stronger at model capability while still being far
+      from Taiwan 165 consultation dynamics or local hospital adoption friction.
+  - pain: Is my time going into something that actually matters?
+    sharper_answer: The useful question is not whether AI matters, but which problems
+      deserve your finite life and attention.
+    jason_example: CSL, TFSC, and STV become worth doing only when they answer a high-risk
+      decision or governance problem, not just because the technology is current.
+  wrong_arena_warning:
+  - competing with large labs on foundation-model scale
+  - competing with elite universities on institutional prestige alone
+  - competing with platform companies on compute and distribution
+  - chasing every model, agent framework, MCP surface, and benchmark as if catching
+    up were the strategy
+  right_arena_candidates:
+  - AI failure modes in high-risk decision systems
+  - decision-quality evaluation under noisy ASR and weak transcripts
+  - cognitive-security and victim-state modeling in 165 consultation contexts
+  - governance latency and reconstructability under AI-mediated harmful interaction
+  - medical AI staff-review and evidence-interface workflows
+  core_sentence: In the AI era, the valuable question is not what technology you can
+    use, but what worlds you have seen that others have not seen, and how you convert
+    those worlds into problems only you are likely to ask.
+connections:
+- idea_000019
+- idea_000029
+- idea_000033
+- idea_000035
+- idea_000036
+- idea_000038
+- idea_000040
+connection_notes:
+- id: idea_000019
+  relation: ai_research_os
+  note: Codex-wrapped AI scientist workflows should serve problem selection and evidence
+    mapping, not only execution throughput.
+- id: idea_000029
+  relation: paper_release_strategy
+  note: PaperOps can enforce claim-evidence alignment once a problem map chooses the
+    paper's durable contribution.
+- id: idea_000033
+  relation: phd_identity
+  note: The product-constrained PhD risk is becoming a tool-person; this idea defines
+    problem selection as the research identity countermeasure.
+- id: idea_000035
+  relation: institutional_gap
+  note: AI-mediated harmful interaction trajectory modeling is valuable because it
+    reframes scam research as governance and reconstructability under review scarcity.
+- id: idea_000036
+  relation: field_grounded_moat
+  note: The 165 corpus line shows how police-field exposure can create a stronger
+    problem than generic scam classification.
+- id: idea_000038
+  relation: problem_definition_method
+  note: Hidden State Thinking is one reusable method for finding durable latent-state
+    problems beneath visible traces.
+- id: idea_000040
+  relation: evaluation_gap
+  note: JANUS decision stability shows how WER can be displaced by decision-quality
+    evaluation under ASR brittleness.
+role: idea
+value:
+  impact: high
+  feasibility: high
+  novelty: high
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 10
+  boundary_definition_score: 10/10
+  testability: 15
+  testability_score: 15/15
+  evidence_support: 15
+  evidence_support_score: 15/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 4
+  feasibility_score: 4/15
+  research_potential: 10
+  research_potential_score: 10/10
+maturity_score: 89/100
+maturity_level: execution_ready
+problem_gap_ladder:
+- level: technical_gap
+  description: A model, pipeline, or system is not fast, accurate, robust, or cheap
+    enough.
+  ai_era_risk: Easy to crowd because AI helps many teams implement the same fix.
+  example: ASR is not accurate enough.
+- level: evaluation_gap
+  description: The field is optimizing the wrong metric or missing a decision-relevant
+    failure mode.
+  ai_era_risk: Harder to notice because it requires judgment about what matters.
+  example: WER does not equal decision quality; CEIS, SRES, and Decision Stability
+    measure which errors change downstream action.
+- level: institutional_gap
+  description: The technical system interacts with review capacity, governance latency,
+    accountability, or organizational workflow.
+  ai_era_risk: Requires field understanding and cannot be solved by model upgrades
+    alone.
+  example: AI-mediated scams scale faster than institutional review and reconstructability.
+- level: civilization_gap
+  description: AI changes knowledge production, democracy, markets, science, or social
+    trust at system level.
+  ai_era_risk: Easy to overclaim; requires careful scope, evidence, and theory.
+  example: AI may homogenize scientific creativity when many researchers use similar
+    models.
+researcher_archetypes:
+- archetype: AI Operator
+  strength: Uses AI to read, code, test, write, and produce many outputs quickly.
+  risk: High output can become forgettable if it lacks a distinctive problem frame.
+  best_use: Execute baselines, run fixtures, prepare evidence, and compress literature
+    after the problem is selected.
+- archetype: Problem Finder
+  strength: Identifies overlooked, durable, field-grounded, and theory-shaping problems.
+  risk: May underproduce without a disciplined execution pipeline.
+  best_use: Choose the problem map, define contribution, protect scope, and decide
+    which AI execution is worth using.
+personal_moat:
+  field_exposures:
+  - police systems and station-level operational reality
+  - 165 antifraud consultation and victim cognitive-state questions
+  - medical AI intake and hospital workflow friction
+  - cybersecurity governance and assurance framing
+  - AI agent systems and automation failure modes
+  - ASR brittleness and decision stability
+  - human-factors and Rich UI evidence interfaces
+  strategic_claim: The moat is the ability to see high-stakes workflow failures and
+    turn them into researchable evaluation, governance, and hidden-state problems.
+  positioning_options:
+  - researcher of high-risk decision systems
+  - researcher of AI and governance interfaces
+  - researcher of AI-mediated real-world decision quality
+  - researcher of cognitive-security and institutional-review systems
+  moat_components:
+  - unique field access
+  - cross-domain synthesis
+  - trusted institutional relationships
+  - problem-selection judgment
+  - sensitive-data governance literacy
+  - ability to translate field friction into evaluation frameworks
+  moat_warning: Do not position only as a generic AI researcher when the stronger
+    position is high-risk decision systems under AI-mediated change.
+market_analogy:
+  object: Taiwan apple market as analogy for AI research capability commoditization
+  scarcity_phase: When import access or technical ability is rare, value comes from
+    being able to supply the capability at all.
+  saturation_phase: When supply expands, simple access becomes less distinctive and
+    value moves to position, quality, trust, distribution, brand, timing, and differentiated
+    use case.
+  research_translation: When many researchers can build LLM, RAG, agent, ASR, and
+    baseline systems, value shifts toward reality access, original problem definition,
+    judgment, theory, evaluation gaps, and institutional trust.
+ai_dual_force:
+  democratization:
+  - individual researchers can code, analyze, write, translate, summarize, and prototype
+    with fewer support staff
+  - small teams can reach baseline capability that previously required larger labs
+  - language and programming barriers are lowered
+  centralization:
+  - organizations with proprietary data can extract more value from existing assets
+  - institutions with compute, capital, distribution, and compliance capacity can
+    operationalize AI faster
+  - trusted access to hospitals, police systems, courts, finance, and government workflows
+    remains scarce
+  implication: AI creates both single-person leverage and resource-compounding leverage;
+    the research moat comes from choosing which scarce complement to own.
+three_positioning_paths:
+- path: close_to_power
+  examples:
+  - large AI labs
+  - major hospitals
+  - government research institutes
+  - large platform companies
+  advantage: data, compute, funding, brand, distribution, and formal authority
+  risk: agenda capture and becoming an implementer inside someone else's problem map
+- path: close_to_field
+  examples:
+  - fraud investigation
+  - medical intake workflow
+  - legal practice
+  - long-term care
+  - manufacturing operations
+  advantage: direct access to real failure modes and overlooked evaluation gaps
+  risk: slower publication path and higher coordination burden
+- path: close_to_interface
+  examples:
+  - AI and medical workflow
+  - AI and law enforcement review
+  - AI and financial compliance
+  - AI and governance
+  - AI and human factors
+  advantage: knowledge discontinuities where technical people and domain institutions
+    need translation
+  risk: requires bilingual competence across technical, institutional, and human workflow
+    languages
+missing_dimensions_to_add:
+- dimension: reality_access
+  why_it_matters: Many researchers know arXiv, Hugging Face, and GitHub, but fewer
+    have sustained access to patients, fraud victims, nurses, police workflows, legal
+    institutions, compliance teams, or operational review settings.
+  working_rule: Spend deliberate time near the real workflow before choosing the model.
+- dimension: attention_scarcity
+  why_it_matters: Paper count can grow quickly, but reviewer, reader, and field attention
+    remain scarce.
+  working_rule: A paper should answer who remembers the problem and whose decision
+    changes if the claim is true.
+- dimension: judgment_over_creativity
+  why_it_matters: AI can generate many ideas, but selecting the idea worth three to
+    five years requires experience, taste, and field evidence.
+  working_rule: Treat idea generation as cheap and idea selection as expensive.
+- dimension: anti_homogeneity
+  why_it_matters: AI may guide many researchers toward similar plausible framings,
+    baselines, and paper structures.
+  working_rule: Use field observation, contradiction logs, and non-mainstream evidence
+    to escape default AI-generated research directions.
+- dimension: relationship_and_trust
+  why_it_matters: Access to high-value real-world problems often depends on trusted
+    relationships, governance discipline, and careful handling of sensitive contexts.
+  working_rule: Build reputation as someone who can protect boundaries while extracting
+    reusable research insight.
+paper_line_implications:
+- line: CSL
+  problem_map_role: Connects language, safety, and cross-lingual blind spots as an
+    evaluation and governance gap rather than only prompt attack collection.
+- line: TFSC
+  problem_map_role: Studies institutional capacity, reconstructability, and governance
+    stress under scaled AI-mediated interaction.
+- line: STV
+  problem_map_role: Treats ASR and speech understanding as decision-stability problems
+    where transcript error matters only through downstream human or system action.
+pressure_tests:
+- name: Problem map before model map
+  setting: A new paper idea appears attractive because a current model can implement
+    the pipeline quickly.
+  expected_failure_mode: The project becomes an obvious AI-assisted application with
+    weak novelty and no durable problem claim.
+  smallest_observable_test: Fill one page with technical gap, evaluation gap, institutional
+    gap, theory gap, unique field evidence, baseline crowding risk, and ten-year relevance
+    before writing code.
+  metric_or_decision: Continue only if at least one non-obvious evaluation, institutional,
+    or theory gap remains valuable after model churn.
+- name: AI homogeneity research question test
+  setting: Many teams use similar foundation models to brainstorm, code, and write
+    papers.
+  expected_failure_mode: Research creativity appears to accelerate but actually converges
+    toward similar problem framings, baselines, and claims.
+  smallest_observable_test: Compare recent papers or project proposals in one niche
+    for repeated problem statements, metrics, and AI-assisted implementation patterns.
+  metric_or_decision: Promote to a Research Policy or Scientometrics idea only if
+    there is observable convergence beyond normal literature influence.
+- name: Field-grounded moat audit
+  setting: The user chooses between a generic model paper and a field-grounded problem
+    from police, 165, medical, cybersecurity, ASR, or human-factors exposure.
+  expected_failure_mode: The generic model paper feels easier and faster, but lacks
+    defensible originality.
+  smallest_observable_test: Score both options on unique evidence access, overlooked
+    failure mode, reviewer memory, ten-year relevance, and ability to survive baseline
+    replacement.
+  metric_or_decision: Prefer the field-grounded line if it has stronger reviewer memory
+    and a more durable evaluation or governance gap.
+- name: Saturated-market positioning audit
+  setting: The user is tempted to define themselves as an AI researcher in a crowded
+    market.
+  expected_failure_mode: The identity competes directly with thousands of researchers
+    using similar models and tools.
+  smallest_observable_test: 'Rewrite the positioning statement three ways: generic
+    AI researcher, high-risk decision-systems researcher, and AI-governance interface
+    researcher; test which one better explains CSL, TFSC, STV, 165, medical AI, and
+    Rich UI work together.'
+  metric_or_decision: Prefer the positioning that unifies the user's field access,
+    evaluation gaps, and institutional questions instead of only listing AI skills.
+- name: Reality-contact quota
+  setting: A quarter of research work risks being dominated by papers, models, and
+    code without field contact.
+  expected_failure_mode: The research map drifts toward generic AI trends and loses
+    the user's moat.
+  smallest_observable_test: 'For each active line, record one direct or proxy contact
+    with real workflow evidence: meeting, interview, observation, artifact, case,
+    log, review session, or domain expert critique.'
+  metric_or_decision: Keep investing only if the line can name the real workflow signal
+    that generic AI researchers would likely miss.
+next_steps:
+- Create a `docs/research-problem-map-template.md` with fields for field observation,
+  technical gap, evaluation gap, institutional gap, theory gap, unique evidence, baseline
+  crowding risk, and next falsifiable test.
+- Apply the template to CSL, TFSC, and STV as the first three problem-map rows.
+- For each active paper idea, write a one-sentence answer to "What remains novel if
+  every team can build the baseline?"
+- Use AI tools as execution accelerators only after the problem-map row names the
+  durable contribution and reviewer memory.
+- 'Add a "position moat" row to the problem-map template: real-world access, trusted
+  relationship, unusual field observation, judgment criterion, and attention hook.'
+- Write one positioning paragraph that frames Jason as a researcher of high-risk AI-mediated
+  decision systems rather than generic AI research.
+source:
+- conversation
+normalization_status: validated
+maturity_action: generate experiment plan

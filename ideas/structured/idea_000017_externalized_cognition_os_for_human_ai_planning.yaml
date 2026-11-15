@@ -20,6 +20,12 @@ tags:
 - self-modeling
 - descriptive-understanding
 - existential-understanding
+- inner-archive
+- life-knowledge-repo
+- private-reflection
+- personal-cognitive-archive
+- meaning-making-system
+- psychological-resilience
 status: research_candidate
 problem_statement:
   raw: Given a growing personal planning system split across planning, brainstorming,
@@ -264,6 +270,127 @@ understanding_distinction:
     but that differs from being burned.
   practical_rule: Use AI's descriptive model as a mirror and advisor, but do not outsource
     the final meaning of lived experience to the model.
+inner_archive_architecture:
+  captured_at: 2026-06-11
+  core_claim: A private `inner-archive` repo should preserve the inner layer of life
+    as a Life Knowledge Repo, not only a diary. It should handle short mood notes,
+    long reflections, partial thoughts, complete diary entries, event reactions, relationship
+    meaning, recurring themes, and later self-understanding.
+  first_principle:
+    scarce_resource:
+    - expressive fidelity
+    - privacy
+    - future retrievability
+    - emotional continuity
+    - low-friction capture
+    canonical_home:
+      planning: locator, architecture decision, capacity impact, and next gate
+      inner_archive: raw personal notes, long reflections, private emotional writing,
+        event/people detail, attachments, and maps
+      brainstorming_lab: broader theory of externalized cognition and human-AI self-modeling
+  repo_skeleton:
+  - inbox
+  - journal
+  - thoughts
+  - essays
+  - people
+  - events
+  - themes
+  - maps
+  - templates
+  - _attachments
+  connection_rules:
+  - Link notes that share a concrete life theme.
+  - Link event notes to reflection notes when one records what happened and the other
+    records what it meant.
+  - Promote a theme page when a thought recurs three or more times.
+  - Link later notes to earlier notes when they reinterpret the earlier note.
+  - Link notes that change future action, capacity, project direction, or a relationship
+    decision.
+  - Link useful contrasts when two notes disagree and reveal growth or tension.
+  ai_agent_role:
+    useful_for:
+    - converting raw voice or text into Markdown without overwriting the raw text
+    - suggesting titles, types, tags, links, and candidate folders
+    - creating weekly reflections and monthly theme maps
+    - detecting repeated motifs
+    - separating observed evidence, interpretation, and speculation
+    boundaries:
+    - never overwrite raw emotional text
+    - do not sanitize the lived voice into generic self-help prose
+    - do not decide the final meaning of an experience
+    - do not expose private notes to public channels
+    - do not create publishable excerpts without explicit approval
+  raw_preservation_rule: raw 永遠不可覆蓋；AI 可以整理，但不能洗掉原始的自己。
+  smallest_next_test: Create a private `inner-archive` repo with README, folders,
+    templates, `maps/index.md`, and 3 to 5 real notes; then run one AI-assisted weekly
+    reflection that preserves raw text while suggesting links and themes.
+pca_sdd_v01:
+  captured_at: 2026-06-11
+  planning_sdd_path: planning-everything-track/data/projects/2026-06-inner-archive-life-knowledge-repo/pca-sdd-v0.1.md
+  system_name: Personal Cognitive Archive
+  repo_name: inner-archive
+  core_claim: PCA preserves the process by which life becomes meaning, not only diary
+    text. The key pipeline is Event -> Experience -> Interpretation -> Belief -> Identity
+    -> Later reinterpretation.
+  mission:
+  - record events
+  - record feelings
+  - record thoughts
+  - preserve belief change
+  - build a life knowledge graph
+  - support future-self dialogue
+  - strengthen inner companionship and resilience
+  design_layers:
+  - Digital Reflection System
+  - Life Knowledge Base
+  - Psychological Companion
+  - Personal Meaning Graph
+  evidence_informed_constructs:
+  - narrative psychology
+  - CBT-inspired reframing
+  - meaning-making theory
+  - post-traumatic-growth-inspired reflection
+  - future self continuity
+  - resilience reporting
+  system_modules:
+  - inbox
+  - journal
+  - thoughts
+  - events
+  - people
+  - themes
+  - questions
+  - reviews
+  - maps
+  - wisdom
+  - memory
+  - self-letters
+  ai_agents:
+  - Capture Agent
+  - Structuring Agent
+  - Linking Agent
+  - Reflection Agent
+  - Wisdom Agent
+  - Memory Agent
+  core_boundary: PCA can support self-digestion, self-rescue, self-improvement, inner
+    companionship, and resilience as a private reflection system, but it is not a
+    therapy replacement, diagnosis engine, or AI authority over Jason's final life
+    meaning.
+  validation_metrics:
+  - raw text preservation rate
+  - accepted AI link suggestion rate
+  - later reinterpretation count
+  - unresolved notes revisited
+  - self-letter revisit count
+  - hallucinated or overreaching AI interpretation count
+  roadmap:
+  - v0.1 Markdown Repository
+  - v0.2 Knowledge Graph
+  - v0.3 AI Companion
+  - v0.4 Life Timeline
+  - v0.5 Personal Operating System Integration
+  - v1.0 Digital Cognitive Twin
 smallest_next_test: Run one weekly review pass where an agent reads planning, this
   brainstorming repo, and one execution repo, then produces a next-step recommendation
   that explicitly separates AI-derived context synthesis from human-only value/capacity

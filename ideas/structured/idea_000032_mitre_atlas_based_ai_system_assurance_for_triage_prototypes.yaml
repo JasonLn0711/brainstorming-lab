@@ -147,6 +147,7 @@ connections:
 - idea_000040
 - idea_000041
 - idea_000042
+- idea_000045
 role: idea
 value:
   impact: high

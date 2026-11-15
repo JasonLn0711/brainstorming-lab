@@ -180,6 +180,8 @@ connections:
 - idea_000031
 - idea_000032
 - idea_000033
+- idea_000046
+- idea_000049
 role: idea
 value:
   impact: high

@@ -1,0 +1,15 @@
+{
+  "capture_date": "2026-11-04",
+  "source": "user_message_verbatim_section",
+  "sha256": "99209e2b3f2dc6db067bf881b38918440bcbd6cc0d938dc6b1d42503beede75f",
+  "bytes": 17144,
+  "characters": 10450,
+  "main_sections": 9,
+  "installation_steps": 4,
+  "fenced_blocks": 13,
+  "hardware_change": "user_confirmed",
+  "exact_hardware_specs": "pending_confirmation",
+  "external_claims_verified": false,
+  "starter_zip_received": false,
+  "live_agent_flow_run": false
+}

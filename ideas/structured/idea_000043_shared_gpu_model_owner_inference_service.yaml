@@ -232,6 +232,7 @@ connections:
 - idea_000020
 - idea_000039
 - idea_000040
+- idea_000049
 connection_notes:
 - id: idea_000015
   relation: audio_runtime_context
@@ -492,3 +493,13 @@ source:
 - 2026-05-28 user continuation defining `~/ai-local-services`, project clients, ASR-first
   implementation, OpenAI-compatible local LLM serving, and model-manager deferral.
 maturity_action: generate experiment plan
+
+current_hardware_override:
+  date: '2026-11-04'
+  status: user_confirmed
+  current_lab_computer: GX10
+  previous_gpu: RTX 5080 已移交其他研究生，不再預設可用
+  historical_scope: 本檔 RTX 5080 敘述保留為 2026-05-28 架構背景；後續執行前先確認 GX10 實機規格與資源。
+  source: ideas/2026-11-04-gpt-nemotron-hybrid-coding/source-gx10-opencode.md
+  related_idea: idea_000049
+  activation: 本次僅更正規劃前提，未啟動模型服務或重新量測效能。

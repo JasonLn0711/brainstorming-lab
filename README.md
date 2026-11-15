@@ -10,6 +10,19 @@ It turns loose thinking into computable idea records:
 raw ideas -> structured ideas -> clusters -> research candidates -> execution bridge -> feedback -> improved ideas
 ```
 
+## Website architecture study
+
+[HEART Island study and Jason floating research atlas](ideas/2026-10-22-heart-island-floating-research-atlas/README.md)
+contains the public-source architecture analysis, teaching notes, a Kairos-inspired
+homepage design, and the six-island concept (`idea_000048`, 2026-10-22).
+Website implementation remains unactivated in the existing portfolio repo.
+
+## Debate analysis archive
+
+[Taipei mayoral debate: transcripts, fact-checking, and analysis](archive/2026-10-31-taipei-mayoral-debate-zAg64cyySQA/README.md)
+preserves the non-audio source package with a categorized catalog and SHA-256 inventory.
+Audio remains in the original Downloads folder; analysis and sharing drafts retain their review boundaries.
+
 ## First Principle
 
 Ideas are data, not only text.
@@ -49,6 +62,9 @@ Planning receives only short bridge notes. Detailed thinking stays here.
 | `docs/personal-admin/` | Redacted personal administrative records whose raw sources stay outside git |
 | `projects-ready/` | Compatibility layer for graduation packets |
 | `archive/legacy-markdown/` | Pre-Idea-OS Markdown sources |
+
+Before paper selection, scoring or review, read the
+[weekly paper-lab agent contract](docs/weekly-paper-lab-agent-contract.md).
 
 ## Paper Writing Process
 
@@ -145,3 +161,7 @@ pytest -q
    drafting and revision rules.
 5. Use `docs/real-world-pressure-tests.md` before promoting mature ideas.
 6. Inspect `index/idea_index.md` for the current idea database.
+
+## Private execution locator
+
+[Kairos Live](ideas/2026-11-04-cs-kairos-live/README.md) is an archived routing record for an independent private execution repository. This public index contains ownership metadata only.

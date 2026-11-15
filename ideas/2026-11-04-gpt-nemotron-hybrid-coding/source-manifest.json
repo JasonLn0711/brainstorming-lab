@@ -1,0 +1,13 @@
+{
+  "capture_date": "2026-11-04",
+  "source": "user_message_verbatim_section",
+  "sha256": "1b8be137938078eeea419c926fedb747eb88f3faeb200fd73901eba6fdb27176",
+  "bytes": 16732,
+  "characters": 10753,
+  "main_sections": 8,
+  "installation_steps": 5,
+  "svg_blocks": 1,
+  "external_claims_verified": false,
+  "starter_zip_received": false,
+  "live_agent_flow_run": false
+}
