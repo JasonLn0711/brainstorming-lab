@@ -1,0 +1,12 @@
+{
+  "source": "source_best.webm",
+  "segments": 3653,
+  "duration": 12611.4771875,
+  "last_segment_end": 12611.7,
+  "txt_jsonl_match": true,
+  "srt_jsonl_match": true,
+  "full_decode_exit": 0,
+  "source_hash_checked_by": "correct_best_transcript.py",
+  "accuracy": "not_evaluated",
+  "status": "full_asr_artifact_integrity_passed"
+}

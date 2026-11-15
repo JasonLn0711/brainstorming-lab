@@ -1,0 +1,18 @@
+{
+  "segments": 3653,
+  "txt_srt_jsonl_equal": true,
+  "chronological": true,
+  "all_timestamps_within_audio": true,
+  "local_markdown_links_valid": true,
+  "scope": "TXT/SRT/JSONL and annotated-text consistency, timestamps, primary audio hash and manifest; local Markdown target existence refreshed. Not full listening or factual accuracy.",
+  "sha256": {
+    "best_transcript_corrected_draft.txt": "323f464ba5ba43228798fc6059d385db890f58d84f5766050cd1e284d7bc9b72",
+    "best_transcript_corrected_draft.srt": "c8166ed9f16dab5735457217821e3300da2e63c0af12f7e7bba014a0f7c8052d",
+    "best_segments_corrected_draft.jsonl": "c570850842ad3f422b66e1561e170c694ebf7a8527467bdd4e8ecbe0a048b401",
+    "逐字稿_查核旁註草稿.md": "0e760a667048122e32a2c199fa95f5db7d1ec32b6e979de703ac99627695655f"
+  },
+  "annotated_text_equals_corrected_jsonl": true,
+  "primary_manifest_matches_audio": true,
+  "local_markdown_link_count": 477,
+  "local_link_validation_scope": "All local Markdown link targets in top-level Markdown files; file existence only, no anchor or external URL validation"
+}

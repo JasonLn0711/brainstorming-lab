@@ -1,0 +1,23 @@
+{
+  "source_url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=bd04edd7-cbe0-4193-8fb5-febf5e68fe98",
+  "source_file": "taipei_debt_actual_202609.csv",
+  "encoding": "cp950",
+  "sha256": "a4a2c94ba1f4a2bc48a64f5d7fe685031a45310878ba3efe6365237b516aabf9",
+  "start_row": {
+    "序號": "30",
+    "年度": "111",
+    "開始時間": "111.1.1",
+    "結束時間": "111.12.31",
+    "債務未償餘額實際數（億元）": "898"
+  },
+  "end_row": {
+    "序號": "53",
+    "年度": "115",
+    "開始時間": "115.1.1",
+    "結束時間": "115.9.30",
+    "債務未償餘額實際數（億元）": "468"
+  },
+  "formula": "898 - 468",
+  "decrease_100_million_TWD": "430",
+  "scope": "Official outstanding-debt series, 2022-12-31 to 2026-09-30; not all liabilities or intercity rank"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "SoybeanMilk/faster-whisper-Breeze-ASR-25",
+  "revision": "85be11de5f67aaa6a92e931622f1c2b55cc1dd3a",
+  "device": "cuda",
+  "compute_type": "int8",
+  "condition_on_previous_text": false,
+  "beam_size": 5,
+  "vad_filter": true,
+  "language": "zh",
+  "duration": 12611.4771875,
+  "segments": 3653,
+  "last_segment_end": 12611.7,
+  "source_sha256": "7f75e43846c916952487babbb3ac59d875ff6448a7a4ab6510bd7a4e123a362a",
+  "execution_status": "LIVE_FULL_COMPLETED",
+  "runtime_validity": "valid_target_runtime",
+  "validation_mode": "availability_validation",
+  "accuracy": "not_evaluated",
+  "latency": "not_evaluated"
+}

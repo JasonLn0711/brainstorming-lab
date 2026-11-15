@@ -1,0 +1,11 @@
+{
+  "retrieved_at_utc": "2026-10-31T07:41:13.134267+00:00",
+  "source": "https://udd.gov.taipei/assets/4KzK2mjX3WYkgE2HSNbmoy/attachs/都更中心111年度預算書%28議會審議%29.pdf",
+  "printed_page": 37,
+  "pdf_page_index": 40,
+  "sha256": {
+    "urban_renewal_budget_111.pdf": "5890050eec62f663a040d060975a085007568de01e64bedd06dfd0c981f54bec",
+    "urban_renewal_budget_111.txt": "9ca717de3bee377f88cc7bec79729e175ba4b227167b324d60469199bfde0474"
+  },
+  "scope": "Original PDF downloaded and relevant extracted text read; no visual page verification or causal ranking."
+}

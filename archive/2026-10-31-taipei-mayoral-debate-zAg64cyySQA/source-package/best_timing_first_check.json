@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "overrides_checked": [
+    "1399",
+    "1838",
+    "2422",
+    "2423",
+    "2967"
+  ],
+  "unchanged_other_timestamps": true,
+  "segment_count": 3653,
+  "boundary": "Same-model candidate review; not manual listening."
+}

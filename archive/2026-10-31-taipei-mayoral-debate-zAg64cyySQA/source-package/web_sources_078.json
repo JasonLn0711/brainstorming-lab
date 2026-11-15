@@ -1,0 +1,4 @@
+{
+  "retrieved_at": "2026-10-31",
+  "result": "Internal Error ()\nciteturn82view0 [wordlim: 200] Source: find({\"ref_id\":\"turn81view0\",\"pattern\":\"室內\"}); \nFailed to fetch https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=01F9ED15F9A9CBC8&sms=72544237BBE4C5F6: (400) Timeout fetching"
+}

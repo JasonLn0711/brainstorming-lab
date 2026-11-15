@@ -1,0 +1,33 @@
+{
+  "scope": "Eight cross-examination exchanges, two media questions, opening and closing evidence for requested textual analysis; not an accuracy validation of all ASR or a live NLP experiment",
+  "source_sha256": "c570850842ad3f422b66e1561e170c694ebf7a8527467bdd4e8ecbe0a048b401",
+  "rounds": 8,
+  "media_questions": 2,
+  "evidence_references": 130,
+  "full_audio_listening": false,
+  "independent_human_coding": false,
+  "psychological_effects_measured": false,
+  "facebook_posted": false,
+  "files": {
+    "辯論深入分析.md": "b5cd21655338e57200b0f1cb7c2140bcd1667366a68db78d636e2343ee2b8f96",
+    "辯論問答證據附錄.md": "35bd5b32c0a2c59180e761806916f40e065c9278a72bb0d4991dcab2e0926574",
+    "辯論八組問答分析.csv": "c0f7c88f15e25ddda8e4d890bd17c66dd111daef40e427b0fcabad9e80347833",
+    "Facebook版_辯論分析.md": "cad7ff771ac73c5be1728b7f84ecd83f6cecbb81f7485044cab44707b2eef2ea",
+    "Facebook版_可直接貼上.txt": "8854e2fed1a8065d34d1c4f9719933d0372094df70731993bd3814bea1ba4ebb"
+  },
+  "uncertain_segments_not_used_as_decisive_wording": [
+    1933,
+    2086,
+    2087,
+    2088,
+    2946,
+    3085,
+    3653
+  ],
+  "checks": {
+    "all_8_rounds_have_4_stages": true,
+    "quoted_evidence_matches_source_text": true,
+    "video_link_seconds_match_source": true,
+    "source_transcript_unchanged": true
+  }
+}

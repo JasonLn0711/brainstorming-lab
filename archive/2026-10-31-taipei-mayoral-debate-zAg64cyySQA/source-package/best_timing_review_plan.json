@@ -1,0 +1,47 @@
+{
+  "status": "prepared_not_executed",
+  "source": "source_best.webm",
+  "clips": [
+    {
+      "segment": 1399,
+      "range": [
+        5355,
+        5385
+      ],
+      "reason": "opening timestamp begins before long silence"
+    },
+    {
+      "segment": 1838,
+      "range": [
+        6538,
+        6555
+      ],
+      "reason": "short break announcement spans 320 seconds"
+    },
+    {
+      "segment": 2422,
+      "range": [
+        8307,
+        8330
+      ],
+      "reason": "short break announcement spans 321 seconds"
+    },
+    {
+      "segment": 2423,
+      "range": [
+        8625,
+        8645
+      ],
+      "reason": "first words after break may be missing"
+    },
+    {
+      "segment": 2967,
+      "range": [
+        10305,
+        10325
+      ],
+      "reason": "welcome after break timestamp starts in prior break"
+    }
+  ],
+  "boundary": "Same model short-clip review is candidate evidence, not human listening."
+}

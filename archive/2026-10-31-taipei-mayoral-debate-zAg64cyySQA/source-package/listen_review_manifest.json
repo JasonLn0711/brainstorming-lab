@@ -1,0 +1,139 @@
+{
+  "source": "source_best.webm",
+  "scope": "Five PCM excerpts covering eight explicitly unresolved segments; no denoise or speech alteration; not a listening result",
+  "clips": [
+    {
+      "segments": [
+        1933,
+        1933
+      ],
+      "source_start_seconds": 7116.86,
+      "source_end_seconds": 7129.02,
+      "file": "listen_review_1933_1933.wav",
+      "sha256": "ef8cbc127ed09ec7f9ae510f2a0a5a35e8978f7f0fe271cbb01039c72eea0262",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "12.160000"
+        }
+      },
+      "review_status": "awaiting_listening",
+      "text": [
+        "你完全不知道剛剛這 11 件案例"
+      ]
+    },
+    {
+      "segments": [
+        2086,
+        2088
+      ],
+      "source_start_seconds": 7483.02,
+      "source_end_seconds": 7502.22,
+      "file": "listen_review_2086_2088.wav",
+      "sha256": "dfd4326a01bacfc831b59e253e5e3f598faa7c05e722faa17d6cce357dec0575",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "19.200000"
+        }
+      },
+      "review_status": "awaiting_listening",
+      "text": [
+        "你現在的法務局長訴願會十二次出席一次",
+        "法規會十二次出席一次",
+        "訴願會十六次只出席五次"
+      ]
+    },
+    {
+      "segments": [
+        2946,
+        2946
+      ],
+      "source_start_seconds": 9993.69,
+      "source_end_seconds": 10006.81,
+      "file": "listen_review_2946_2946.wav",
+      "sha256": "927e3d2f439f5c0f5043bc618edf6d3908e7c1deb28feed442eee933f16a63fd",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "13.120000"
+        }
+      },
+      "review_status": "awaiting_listening",
+      "text": [
+        "但是根據縱展專業的分析數據"
+      ]
+    },
+    {
+      "segments": [
+        3084,
+        3085
+      ],
+      "source_start_seconds": 10616.37,
+      "source_end_seconds": 10631.61,
+      "file": "listen_review_3084_3085.wav",
+      "sha256": "b55c36c8b6b23cb6fd5997629fe1bc7e6e54a0e2eb039d9caf09c25768036e4e",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "15.240000"
+        }
+      },
+      "review_status": "awaiting_listening",
+      "text": [
+        "不用擔心租約到就要翻到轉學區",
+        "達到 4 年後的那一個早晨"
+      ]
+    },
+    {
+      "segments": [
+        3653,
+        3653
+      ],
+      "source_start_seconds": 12603.46,
+      "source_end_seconds": 12611.4771875,
+      "file": "listen_review_3653_3653.wav",
+      "sha256": "cf27edc468119f390061cf33f0e8f6f5edce7d4e193b2b041ef0b1f94b0616d6",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "8.017188"
+        }
+      },
+      "review_status": "awaiting_listening",
+      "text": [
+        "除了藍營民眾黨的張志豪也前往力挺帶出街頭"
+      ]
+    }
+  ]
+}

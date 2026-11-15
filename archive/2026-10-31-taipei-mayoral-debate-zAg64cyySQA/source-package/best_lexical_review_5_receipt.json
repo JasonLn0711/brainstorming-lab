@@ -1,0 +1,17 @@
+{
+  "run_id": "best_lexical_review_5",
+  "run_date": "2026-10-31",
+  "validation_mode": "availability_validation",
+  "execution_status": "LIVE_FULL_COMPLETED",
+  "runtime_validity": "valid_target_runtime",
+  "functional_result": "available_and_working",
+  "clips": 6,
+  "model_revision": "85be11de5f67aaa6a92e931622f1c2b55cc1dd3a",
+  "runtime": "project_aura/.venv/bin/python",
+  "source": "source_best.webm",
+  "source_sha256": "7f75e43846c916952487babbb3ac59d875ff6448a7a4ab6510bd7a4e123a362a",
+  "accuracy": "not_evaluated",
+  "latency": "not_evaluated",
+  "full_audio_listening": false,
+  "process_exit_code": 0
+}

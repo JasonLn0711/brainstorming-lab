@@ -1,0 +1,52 @@
+[
+  {
+    "segment": 1163,
+    "old_start": 5048.54,
+    "old_end": 5379.15,
+    "new_start": 5369.28,
+    "new_end": 5378.88,
+    "evidence": "timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  {
+    "segment": 1592,
+    "old_start": 6547.87,
+    "old_end": 6874.34,
+    "new_start": 6866.34,
+    "new_end": 6873.94,
+    "evidence": "timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  {
+    "segment": 2141,
+    "old_start": 8315.26,
+    "old_end": 8636.27,
+    "new_start": 8315.26,
+    "new_end": 8316.78,
+    "evidence": "timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  {
+    "segment": 3021,
+    "old_start": 11298.5,
+    "old_end": 11561.11,
+    "new_start": 11557.06,
+    "new_end": 11560.98,
+    "evidence": "timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  },
+  {
+    "segment": 3309,
+    "old_start": 12315.21,
+    "old_end": 12482.82,
+    "new_start": 12478.7,
+    "new_end": 12482.58,
+    "evidence": "timing_clips.jsonl",
+    "method": "same_model_short_clip_word_timestamps",
+    "human_listening": false
+  }
+]

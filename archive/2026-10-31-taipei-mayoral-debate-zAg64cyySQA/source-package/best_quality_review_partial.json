@@ -1,0 +1,1596 @@
+{
+  "status": "partial_snapshot_asr_still_running",
+  "segments_observed": 1105,
+  "last_end": 3328.49,
+  "flag_count": 175,
+  "meaning": "Review signals only; neither proof of ASR error nor automatic deletion authorization.",
+  "flags": [
+    {
+      "segment": 83,
+      "start": 349.15,
+      "end": 350.15,
+      "text": "19",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 84,
+      "start": 350.15,
+      "end": 351.15,
+      "text": "19",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 85,
+      "start": 351.15,
+      "end": 352.15,
+      "text": "19",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 86,
+      "start": 352.15,
+      "end": 353.15,
+      "text": "19",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 87,
+      "start": 353.15,
+      "end": 354.15,
+      "text": "19",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 88,
+      "start": 354.15,
+      "end": 355.15,
+      "text": "19",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 95,
+      "start": 373.15,
+      "end": 375.15,
+      "text": "他們的臉很細",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 96,
+      "start": 375.15,
+      "end": 377.15,
+      "text": "他們的臉很細",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 97,
+      "start": 377.15,
+      "end": 379.15,
+      "text": "他們的臉很細",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 98,
+      "start": 379.15,
+      "end": 381.15,
+      "text": "他們的臉很細",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 99,
+      "start": 381.15,
+      "end": 383.15,
+      "text": "他們的臉很細",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 107,
+      "start": 418.15,
+      "end": 427.15,
+      "text": "有兩個 output 是不是",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 126,
+      "start": 516.87,
+      "end": 525.25,
+      "text": "傳說中的歌手",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 127,
+      "start": 525.25,
+      "end": 530.37,
+      "text": "幾乎一生要去晟海",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 128,
+      "start": 530.37,
+      "end": 535.37,
+      "text": "還有一個名字叫做",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 129,
+      "start": 535.37,
+      "end": 552.28,
+      "text": "暴風蟹",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 130,
+      "start": 552.28,
+      "end": 555.28,
+      "text": "這完全是手動的",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 131,
+      "start": 555.28,
+      "end": 557.28,
+      "text": "這樣子",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 132,
+      "start": 557.28,
+      "end": 561.28,
+      "text": "我們更可以利用手機",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 133,
+      "start": 561.28,
+      "end": 562.28,
+      "text": "使用智慧設備",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 134,
+      "start": 562.28,
+      "end": 564.28,
+      "text": "去得到資訊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 135,
+      "start": 564.28,
+      "end": 565.28,
+      "text": "讓大家較多的訊息來溯到這個地方",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 136,
+      "start": 565.28,
+      "end": 566.28,
+      "text": "讓我們更有福利的配套",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 137,
+      "start": 566.28,
+      "end": 567.28,
+      "text": "讓我們讓大家利用之訊息來溯到這個地方",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 138,
+      "start": 567.28,
+      "end": 568.28,
+      "text": "讓我們更有福利的配套",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 139,
+      "start": 568.28,
+      "end": 569.28,
+      "text": "讓我們更有福利的配套",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 140,
+      "start": 569.28,
+      "end": 570.28,
+      "text": "現在的智慧設備",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 141,
+      "start": 570.28,
+      "end": 571.28,
+      "text": "它讓我們更直接的掌握資訊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 142,
+      "start": 571.28,
+      "end": 572.28,
+      "text": "讓我們更容易原始的掌握資訊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 143,
+      "start": 572.28,
+      "end": 573.28,
+      "text": "讓我們更有證據的資訊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 144,
+      "start": 573.28,
+      "end": 574.28,
+      "text": "讓我們更有掌握資訊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 145,
+      "start": 574.28,
+      "end": 575.28,
+      "text": "讓我們更有傳統的資訊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 146,
+      "start": 575.28,
+      "end": 576.28,
+      "text": "讓我們更有承認的應對方式",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 147,
+      "start": 576.28,
+      "end": 577.28,
+      "text": "給我們呢",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 148,
+      "start": 577.28,
+      "end": 578.28,
+      "text": "我們的智慧內裝的幫助",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 152,
+      "start": 582.28,
+      "end": 583.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 153,
+      "start": 583.28,
+      "end": 584.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 154,
+      "start": 584.28,
+      "end": 586.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 155,
+      "start": 586.28,
+      "end": 587.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 156,
+      "start": 587.28,
+      "end": 588.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 157,
+      "start": 588.28,
+      "end": 589.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 158,
+      "start": 589.28,
+      "end": 590.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 159,
+      "start": 590.28,
+      "end": 591.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 160,
+      "start": 591.28,
+      "end": 592.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 161,
+      "start": 592.28,
+      "end": 593.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 162,
+      "start": 593.28,
+      "end": 594.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 163,
+      "start": 594.28,
+      "end": 595.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 164,
+      "start": 595.28,
+      "end": 596.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 165,
+      "start": 596.28,
+      "end": 597.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 166,
+      "start": 597.28,
+      "end": 598.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 167,
+      "start": 598.28,
+      "end": 599.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 168,
+      "start": 599.28,
+      "end": 600.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 169,
+      "start": 600.28,
+      "end": 601.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 170,
+      "start": 601.28,
+      "end": 602.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 171,
+      "start": 602.28,
+      "end": 603.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 172,
+      "start": 603.28,
+      "end": 604.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 173,
+      "start": 604.28,
+      "end": 605.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 174,
+      "start": 605.28,
+      "end": 606.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 175,
+      "start": 606.28,
+      "end": 607.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 180,
+      "start": 612.28,
+      "end": 613.28,
+      "text": "你死了",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 182,
+      "start": 615.28,
+      "end": 617.28,
+      "text": "不要包他們的",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 187,
+      "start": 624.28,
+      "end": 625.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 188,
+      "start": 625.28,
+      "end": 626.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 189,
+      "start": 626.28,
+      "end": 627.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 190,
+      "start": 627.28,
+      "end": 628.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 191,
+      "start": 628.28,
+      "end": 629.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 192,
+      "start": 629.28,
+      "end": 630.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 193,
+      "start": 630.28,
+      "end": 631.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 194,
+      "start": 631.28,
+      "end": 632.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 195,
+      "start": 632.28,
+      "end": 633.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 196,
+      "start": 633.28,
+      "end": 634.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 197,
+      "start": 634.28,
+      "end": 635.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 198,
+      "start": 635.28,
+      "end": 636.28,
+      "text": "好",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 199,
+      "start": 636.28,
+      "end": 639.28,
+      "text": "沙冰",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 200,
+      "start": 639.28,
+      "end": 642.28,
+      "text": "百層好摺",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 201,
+      "start": 642.28,
+      "end": 646.28,
+      "text": "從室內到室外都可以",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 202,
+      "start": 646.28,
+      "end": 650.28,
+      "text": "好摺一堆的好摺",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 203,
+      "start": 650.28,
+      "end": 654.28,
+      "text": "好摺一堆",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 204,
+      "start": 654.28,
+      "end": 657.28,
+      "text": "好摺一堆的好摺",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 205,
+      "start": 657.28,
+      "end": 659.28,
+      "text": "好摺一堆的好摺",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 206,
+      "start": 659.28,
+      "end": 660.28,
+      "text": "不同的層次",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 207,
+      "start": 660.28,
+      "end": 661.28,
+      "text": "不同的層次",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 208,
+      "start": 661.28,
+      "end": 662.28,
+      "text": "不同的層次",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 209,
+      "start": 662.28,
+      "end": 664.28,
+      "text": "每一層都可以搭上一塊石板",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 210,
+      "start": 664.28,
+      "end": 665.28,
+      "text": "每一層都可以搭上一塊石板",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 211,
+      "start": 665.28,
+      "end": 679.19,
+      "text": "不用讓我回答你",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 212,
+      "start": 679.19,
+      "end": 697.67,
+      "text": "你現在有什麼想法嗎",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 213,
+      "start": 697.67,
+      "end": 699.07,
+      "text": "我不是很喜歡這個稱號",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 214,
+      "start": 699.07,
+      "end": 705.25,
+      "text": "我頭髮都染了",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 215,
+      "start": 705.25,
+      "end": 708.25,
+      "text": "為什麼",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 216,
+      "start": 708.25,
+      "end": 709.29,
+      "text": "因為它們歪的",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 217,
+      "start": 709.29,
+      "end": 710.89,
+      "text": "心地好心地好",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 218,
+      "start": 710.89,
+      "end": 717.34,
+      "text": "就在記憶中",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 219,
+      "start": 717.34,
+      "end": 719.42,
+      "text": "我已經忘記買 broccoli 了",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 220,
+      "start": 719.42,
+      "end": 720.86,
+      "text": "我已經想不通了",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 221,
+      "start": 720.86,
+      "end": 721.86,
+      "text": "有點想不通了",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 222,
+      "start": 721.86,
+      "end": 722.86,
+      "text": "他真的忘記了",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 223,
+      "start": 722.86,
+      "end": 723.86,
+      "text": "他已經忘記了",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 236,
+      "start": 755.02,
+      "end": 761.02,
+      "text": "AI 筆證",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 237,
+      "start": 761.02,
+      "end": 767.02,
+      "text": "AI 筆證",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 238,
+      "start": 767.02,
+      "end": 773.02,
+      "text": "AI 筆證",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 239,
+      "start": 773.02,
+      "end": 777.02,
+      "text": "AI 筆證",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 245,
+      "start": 785.02,
+      "end": 787.02,
+      "text": "我會斷句話",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 248,
+      "start": 791.02,
+      "end": 793.02,
+      "text": "我會斷句話",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 249,
+      "start": 793.02,
+      "end": 795.02,
+      "text": "我會斷句話",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 250,
+      "start": 795.02,
+      "end": 796.02,
+      "text": "我會斷句話",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 259,
+      "start": 817.04,
+      "end": 939.12,
+      "text": "他們兩個一起來",
+      "flags": [
+        "duration_over_30s"
+      ]
+    },
+    {
+      "segment": 411,
+      "start": 1282.05,
+      "end": 1295.05,
+      "text": "唔係唔係",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 412,
+      "start": 1295.05,
+      "end": 1299.05,
+      "text": "你地聽唔聽到我講",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 413,
+      "start": 1299.05,
+      "end": 1302.05,
+      "text": "唔係唔係",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 414,
+      "start": 1302.05,
+      "end": 1305.05,
+      "text": "你地聽唔聽到我講",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 415,
+      "start": 1305.05,
+      "end": 1306.05,
+      "text": "唔係唔係唔係唔係唔係唔係唔係唔係唔係唔係唔係",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 416,
+      "start": 1306.05,
+      "end": 1307.05,
+      "text": "唔係",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 417,
+      "start": 1307.05,
+      "end": 1307.85,
+      "text": "嗯",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 418,
+      "start": 1307.85,
+      "end": 1309.85,
+      "text": "佢咁誠實 out the truth",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 419,
+      "start": 1309.85,
+      "end": 1311.05,
+      "text": "嘅嚟講",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 454,
+      "start": 1397.95,
+      "end": 1399.95,
+      "text": "他站在這種情境下",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 455,
+      "start": 1399.95,
+      "end": 1401.95,
+      "text": "他無法不感動",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 456,
+      "start": 1401.95,
+      "end": 1403.95,
+      "text": "他沒有帶上他",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 457,
+      "start": 1403.95,
+      "end": 1405.95,
+      "text": "他的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 458,
+      "start": 1405.95,
+      "end": 1407.95,
+      "text": "他帶著他",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 459,
+      "start": 1407.95,
+      "end": 1409.95,
+      "text": "他的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 460,
+      "start": 1409.95,
+      "end": 1411.95,
+      "text": "他帶著他",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 461,
+      "start": 1411.95,
+      "end": 1413.95,
+      "text": "他的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 462,
+      "start": 1413.95,
+      "end": 1415.95,
+      "text": "他帶著他",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 463,
+      "start": 1415.95,
+      "end": 1417.95,
+      "text": "他的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 464,
+      "start": 1417.95,
+      "end": 1419.95,
+      "text": "和他的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 465,
+      "start": 1419.95,
+      "end": 1421.95,
+      "text": "他帶著他的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 466,
+      "start": 1421.95,
+      "end": 1423.95,
+      "text": "他帶著他他的幽默感和他的熟悉的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 467,
+      "start": 1423.95,
+      "end": 1425.95,
+      "text": "和他帶著他的熟悉的童顏",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 468,
+      "start": 1425.95,
+      "end": 1428.95,
+      "text": "但你不知道的",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 469,
+      "start": 1428.95,
+      "end": 1432.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 470,
+      "start": 1432.95,
+      "end": 1439.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 471,
+      "start": 1439.95,
+      "end": 1444.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 472,
+      "start": 1444.95,
+      "end": 1448.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 473,
+      "start": 1448.95,
+      "end": 1449.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 474,
+      "start": 1449.95,
+      "end": 1450.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 475,
+      "start": 1450.95,
+      "end": 1452.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 476,
+      "start": 1452.95,
+      "end": 1453.95,
+      "text": "說",
+      "flags": [
+        "low_log_probability",
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 502,
+      "start": 1509.55,
+      "end": 1510.55,
+      "text": "花海文化",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 507,
+      "start": 1517.55,
+      "end": 1519.55,
+      "text": "因為他們有一定的需要",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 532,
+      "start": 1562.55,
+      "end": 1563.55,
+      "text": "可以進去",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 553,
+      "start": 1692.07,
+      "end": 1726.92,
+      "text": "因為我講話還是會有問題的",
+      "flags": [
+        "duration_over_30s"
+      ]
+    },
+    {
+      "segment": 557,
+      "start": 1732.4,
+      "end": 1734.72,
+      "text": "他會幫你處理平衡的問題",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 561,
+      "start": 1753.72,
+      "end": 1755.22,
+      "text": "棒球",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 562,
+      "start": 1755.22,
+      "end": 1757.94,
+      "text": "因為我們的球隊名稱叫棒球",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 563,
+      "start": 1757.94,
+      "end": 1759.56,
+      "text": "棒球是一種知名的團體",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 564,
+      "start": 1759.56,
+      "end": 1761.34,
+      "text": "我們曾經有一個球隊叫做棒球球團",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 565,
+      "start": 1761.34,
+      "end": 1762.72,
+      "text": "名叫棒球棒球團",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 566,
+      "start": 1762.72,
+      "end": 1764.7,
+      "text": "但我以為棒球的球隊都沒有",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 567,
+      "start": 1764.7,
+      "end": 1774.52,
+      "text": "但我們身為球場的球員",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 568,
+      "start": 1774.52,
+      "end": 1776.96,
+      "text": "都是一種特殊的團體",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 569,
+      "start": 1776.96,
+      "end": 1778.12,
+      "text": "球隊名稱叫棒球",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 570,
+      "start": 1778.12,
+      "end": 1780.24,
+      "text": "棒球是其中一個隊名",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 571,
+      "start": 1780.24,
+      "end": 1781.32,
+      "text": "它們分成三大層的隊伍",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 572,
+      "start": 1781.32,
+      "end": 1782.4,
+      "text": "一般來說我們叫球隊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 573,
+      "start": 1782.4,
+      "end": 1783.28,
+      "text": "是不同的隊伍",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 574,
+      "start": 1783.28,
+      "end": 1785.16,
+      "text": "所以我們球隊名稱叫球隊",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 575,
+      "start": 1785.16,
+      "end": 1786.56,
+      "text": "是不同的隊伍的隊伍讓大家多呼呼",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 576,
+      "start": 1786.56,
+      "end": 1787.82,
+      "text": "我們會用球隊名稱叫球隊的隊員",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 577,
+      "start": 1787.82,
+      "end": 1788.8,
+      "text": "球隊名稱叫球隊的隊伍",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 578,
+      "start": 1788.8,
+      "end": 1789.48,
+      "text": "而球隊是球隊的隊伍",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 579,
+      "start": 1789.48,
+      "end": 1790.28,
+      "text": "所以我們球隊的隊伍",
+      "flags": [
+        "low_log_probability"
+      ]
+    },
+    {
+      "segment": 680,
+      "start": 2088.99,
+      "end": 2092.47,
+      "text": "來揮個手",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 704,
+      "start": 2119.51,
+      "end": 2120.71,
+      "text": "加油",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 706,
+      "start": 2123.19,
+      "end": 2155.55,
+      "text": "而且是跟著他的競選團隊一起到了這個辯論會的現場",
+      "flags": [
+        "duration_over_30s"
+      ]
+    },
+    {
+      "segment": 769,
+      "start": 2356.02,
+      "end": 2357.42,
+      "text": "有信心",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 774,
+      "start": 2370.17,
+      "end": 2372.89,
+      "text": "站這邊",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 805,
+      "start": 2455.02,
+      "end": 2490.17,
+      "text": "謝謝",
+      "flags": [
+        "duration_over_30s"
+      ]
+    },
+    {
+      "segment": 821,
+      "start": 2522.26,
+      "end": 2523.26,
+      "text": "你可能有機會",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 902,
+      "start": 2729.66,
+      "end": 2736.42,
+      "text": "站這邊",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 903,
+      "start": 2736.42,
+      "end": 2737.62,
+      "text": "站這邊",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 1000,
+      "start": 3006.94,
+      "end": 3010.46,
+      "text": "再分個手",
+      "flags": [
+        "adjacent_exact_repeat"
+      ]
+    },
+    {
+      "segment": 1065,
+      "start": 3173.98,
+      "end": 3212.59,
+      "text": "後雲",
+      "flags": [
+        "duration_over_30s"
+      ]
+    },
+    {
+      "segment": 1067,
+      "start": 3213.59,
+      "end": 3244.68,
+      "text": "我們已經不在意了",
+      "flags": [
+        "duration_over_30s"
+      ]
+    }
+  ]
+}
