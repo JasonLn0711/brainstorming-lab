@@ -2,7 +2,7 @@
 
 ## 165-antifraud
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 - `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
 ## 3d-rotation
@@ -15,7 +15,7 @@
 
 ## acoustic-intelligence
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## action-perception-loop
 
@@ -27,7 +27,7 @@
 
 ## adaptive-coping
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## adaptive-manipulation
 
@@ -117,7 +117,7 @@
 ## ai-governance
 
 - `idea_000014` - Journal Intelligence System (`execution_ready`, 86/100) - `ideas/structured/idea_000014_journal_intelligence_system.yaml`
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 - `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## ai-homogeneity
@@ -281,11 +281,11 @@
 
 ## behavioral-signal-modeling
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## belief-transition
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## benchmark-design
 
@@ -401,16 +401,16 @@
 
 ## cognitive-security
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 - `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 
 ## cognitive-security-triage
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## cognitive-vulnerability-modeling
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## collaboration
 
@@ -465,7 +465,7 @@
 
 ## consultation-call
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## context-compaction
 
@@ -886,6 +886,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## feature-engineering
+
+- `idea_000063` - 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 (`structured`, 58/100) - `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml`
+
 ## feedback
 
 - `idea_000059` - 生命活力、尊重式領導與有邊界的自律：我想成為怎樣的人 (`raw`, 0/100) - `ideas/raw/idea_000059_vitality_leadership_and_bounded_discipline.yaml`
@@ -1034,11 +1038,11 @@
 
 ## help-seeking-population
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## help-seeking-signal
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## hermes-agent
 
@@ -1094,7 +1098,7 @@
 - `idea_000022` - YOLO-to-foundation-vision reliable deployment decision system (`execution_ready`, 89/100) - `ideas/structured/idea_000022_yolo_to_foundation_vision_reliable_deployment_decision_system.yaml`
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## human-llm-rule-comparison
 
@@ -1123,7 +1127,7 @@
 
 ## human-vulnerability-dynamics
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## hybrid-intelligence
 
@@ -1190,7 +1194,7 @@
 
 ## institutional-capacity
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## institutional-stress
 
@@ -1198,7 +1202,7 @@
 
 ## institutional-verification
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## insurance-simulation
 
@@ -1226,12 +1230,12 @@
 
 ## interaction-science
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## interaction-structure-reconstruction
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## interaction-trajectory
 
@@ -1244,7 +1248,7 @@
 
 ## intervention-boundary
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## intuition
 
@@ -1445,7 +1449,7 @@
 
 ## manipulation-state-detection
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## manuscript-narrative
 
@@ -1474,6 +1478,10 @@
 ## measurement-integrity
 
 - `idea_000040` - JANUS Counterfactual Decision-Stability ASR Workspace (`execution_ready`, 97/100) - `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml`
+
+## measurement-validity
+
+- `idea_000063` - 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 (`structured`, 58/100) - `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml`
 
 ## medical-ai
 
@@ -1557,7 +1565,7 @@
 
 ## moral-framing-risk
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## mosquito-control
 
@@ -1683,7 +1691,7 @@
 
 ## paper-framework
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## paper-quality
 
@@ -1704,7 +1712,7 @@
 
 ## paralinguistics
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## path-management
 
@@ -1872,7 +1880,7 @@
 
 ## public-private-boundary
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## publication-strategy
 
@@ -1884,7 +1892,7 @@
 
 ## q1-paper-design
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## quaternion
 
@@ -1955,7 +1963,7 @@
 
 ## representation-discovery
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## representation-learning
 
@@ -2025,12 +2033,12 @@
 
 ## reversible-window
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## review-scarcity
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 - `idea_000038` - Hidden State Thinking as a unifying research methodology (`research_candidate`, 80/100) - `ideas/structured/idea_000038_hidden_state_thinking_as_a_unifying_research_methodology.yaml`
 - `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
 
@@ -2104,7 +2112,7 @@
 
 ## sampling-bias
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## scam-content
 
@@ -2120,7 +2128,7 @@
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000021` - Physarum flow model for adaptive scam-candidate routing (`research_candidate`, 80/100) - `ideas/structured/idea_000021_physarum_flow_model_for_adaptive_scam_candidate_routing.yaml`
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## scheduler
 
@@ -2182,7 +2190,7 @@
 
 ## selection-bias
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## self-confidence
 
@@ -2224,7 +2232,7 @@
 
 ## sensitive-data
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## sensitive-data-boundary
 
@@ -2317,17 +2325,22 @@
 
 - `idea_000030` - Quaternion spatial rotation representation for embodied AI systems (`research_candidate`, 80/100) - `ideas/structured/idea_000030_quaternion_spatial_rotation_representation_for_embodied_ai_syste.yaml`
 
+## speaker-embedding
+
+- `idea_000063` - 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 (`structured`, 58/100) - `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml`
+
 ## spectrum-awareness
 
 - `idea_000028` - Defensive RF interference and drone resilience research (`execution_ready`, 89/100) - `ideas/structured/idea_000028_defensive_rf_interference_and_drone_resilience_research.yaml`
 
 ## speech-data
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## speech-governance
 
 - `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+- `idea_000063` - 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 (`structured`, 58/100) - `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml`
 
 ## split-aware-evaluation
 
@@ -2400,7 +2413,7 @@
 
 ## survivorship-bias
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## sustainability
 
@@ -2425,7 +2438,7 @@
 
 ## synthetic-release
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## system-design
 
@@ -2463,10 +2476,11 @@
 ## telephone-speech
 
 - `idea_000039` - NeMo Curator and data-centric AI governance infrastructure (`execution_ready`, 89/100) - `ideas/structured/idea_000039_nemo_curator_and_data_centric_ai_governance_infrastructure.yaml`
+- `idea_000063` - 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 (`structured`, 58/100) - `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml`
 
 ## temporal-dynamics
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## temporal-interaction-graph
 
@@ -2540,7 +2554,7 @@
 ## trust-state-evolution
 
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## trustworthy-ai
 
@@ -2614,7 +2628,7 @@
 
 ## victim-cognitive-state
 
-- `idea_000036` - 165 antifraud victim cognitive-state interaction modeling (`execution_ready`, 97/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
+- `idea_000036` - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 (`execution_ready`, 87/100) - `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## video-understanding
 
@@ -2631,6 +2645,10 @@
 ## voice-enhancement
 
 - `idea_000015` - Layered Voice Enhancement in Consumer VoIP Calls (`execution_ready`, 92/100) - `ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml`
+
+## voice-quality
+
+- `idea_000063` - 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 (`structured`, 58/100) - `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml`
 
 ## voice-service-pipeline
 

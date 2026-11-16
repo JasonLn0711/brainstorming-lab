@@ -3,7 +3,6 @@
 | ID | Title | Maturity | Level | Status | Next Step | Path |
 | --- | --- | ---: | --- | --- | --- | --- |
 | `idea_000008` | Learned conductor for medical AI research workflows | 97/100 | `execution_ready` | `execution_ready` | After W20 fixed gates, define one private bounded beta test plan that compares Fugu-style orchestration against a fixed pipeline under cost, latency, verification, abstention, checkpoint quality, and valid proof-artifact constraints. | `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml` |
-| `idea_000036` | 165 antifraud victim cognitive-state interaction modeling | 97/100 | `execution_ready` | `execution_ready` | Rewrite the one-page problem definition around victim cognitive-state modeling and AI for cognitive security, not scammer audio or scam classification. | `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml` |
 | `idea_000040` | JANUS Counterfactual Decision-Stability ASR Workspace | 97/100 | `execution_ready` | `executing` | Record the one-sentence paper thesis at the top of the JANUS paper-facing README, story outline, and roadmap so every subsystem maps back to CDS-ASR. | `ideas/executing/idea_000040_janus_counterfactual_decision_stability_asr_workspace.yaml` |
 | `idea_000033` | Product-constrained PhD engineering research OS | 96/100 | `execution_ready` | `execution_ready` | Write the first Product-to-Research Extraction Card for the next real product feature, bug, or demo pressure event. | `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml` |
 | `idea_000001` | Healthcare AI triage copilot | 95/100 | `execution_ready` | `execution_ready` | Create the direct-audio experiment packet and synthetic fixture manifest for Gemma 4 E2B primary interpretation. | `ideas/structured/idea_000001_healthcare_ai_triage.yaml` |
@@ -27,6 +26,7 @@
 | `idea_000029` | PaperOps scientific submission release engineering | 88/100 | `execution_ready` | `execution_ready` | Prototype a small `paperops-ready.md` or `submission-state.yaml` for one manuscript repo with states, required artifacts, and blocked transitions. | `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml` |
 | `idea_000031` | AI-assisted ancient language decipherment and script archaeology | 88/100 | `execution_ready` | `execution_ready` | Create a two-column study card comparing known-language restoration, such as Pythia/Ithaca, with undeciphered-script structure analysis, such as Indus Script. | `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml` |
 | `idea_000012` | PhD problem-definition thinking system | 87/100 | `execution_ready` | `execution_ready` | Apply the one-page problem-definition card to one active lane, preferably idea_000002 or idea_000007, after a concrete implementation or mental-execution friction pass. | `ideas/structured/idea_000012_phd_problem_definition_thinking_system.yaml` |
+| `idea_000036` | 165 諮詢電話：聲學主線、雙人互動與跨回合預測 | 87/100 | `execution_ready` | `execution_ready` | 資料 owner 在另行啟動前確認 call ID、原始時間、角色、原始聲道與可用跨通話員警代碼；現有資料量及切片可重建性待核。 | `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml` |
 | `idea_000010` | AI-assisted smart mosquito trap | 86/100 | `execution_ready` | `execution_ready` | Review the v1 ESP32 build note and decide whether to buy the minimum parts. | `ideas/structured/idea_000010_ai_assisted_smart_mosquito_trap.yaml` |
 | `idea_000014` | Journal Intelligence System | 86/100 | `execution_ready` | `execution_ready` | Build one FSI:DI venue-culture calibration packet from 8-12 recent accepted Open Access papers plus the official author guide. | `ideas/structured/idea_000014_journal_intelligence_system.yaml` |
 | `idea_000013` | ISO 27001 high school explainer and compliance teaching module | 84/100 | `execution_ready` | `execution_ready` | Turn the Markdown explainer into a 10-minute classroom handout and ask one non-security reader to summarize ISO/IEC 27001 back in five bullet points. | `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml` |
@@ -51,6 +51,7 @@
 | `idea_000049` | GPT Nemotron hybrid coding agent architecture | 59/100 | `structured` | `structured` | 先確認 GX10 實機型號、CPU 架構、作業系統、記憶體與可用資源，再查核模型卡、OpenCode provider／agent／permission 文件與 Ollama 標籤。 | `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml` |
 | `idea_000062` | e-means clustering evidence and embedding index tradeoffs | 59/100 | `structured` | `structured` | 先確認目標向量與查詢、召回底線、硬體與計時契約，再決定是否另行啟動公平比較。 | `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml` |
 | `idea_000003` | Decision load scheduler | 58/100 | `structured` | `structured` | Compare weekly selections against the planning repo daily and weekly notes for one week. | `ideas/structured/idea_000003_decision_load_scheduler.yaml` |
+| `idea_000063` | 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 | 58/100 | `structured` | `raw` | 2026-11-16 使用者已指定應用為 165 員警—疑似受騙民眾的聲學主線；依 idea_000036 最新範圍，先確認可重建 call／time／role／officer 索引。 | `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml` |
 | `idea_000005` | Workflow optimization feedback loop | 57/100 | `structured` | `structured` | Run one daily-note suggestion and feedback pull using explicit marker blocks. | `ideas/structured/idea_000005_workflow_optimization_loop.yaml` |
 | `idea_000050` | Kairos Live — private execution locator | 31/100 | `emerging` | `archived` | Consult the private canonical owner for current scope and any authorized continuation. | `ideas/archived/idea_000050_cs_kairos_live.yaml` |
 | `idea_000048` | 在職初學者的 AI 輔助軟體開發素養 | 0/100 | `raw` | `raw` | 未排程：以課前合成資料實作診斷確認程式、資料與工程瓶頸，讓具備能力者進階或免修；課方先決定正式銜接課或既有課程基礎實作時段及支援容量。 | `ideas/raw/idea_000048_ai_software_literacy_for_working_professionals.yaml` |
@@ -103,7 +104,7 @@
 - idea_000033 - Product-constrained PhD engineering research OS - 96/100 - execution_ready
 - idea_000034 - LINE-based Urology Follow-up CRM - 81/100 - execution_ready
 - idea_000035 - AI-mediated harmful interaction trajectory modeling - 94/100 - execution_ready
-- idea_000036 - 165 antifraud victim cognitive-state interaction modeling - 97/100 - execution_ready
+- idea_000036 - 165 諮詢電話：聲學主線、雙人互動與跨回合預測 - 87/100 - execution_ready
 - idea_000037 - Pizza Index as weak-signal OSINT hidden-state modeling - 74/100 - research_candidate
 - idea_000038 - Hidden State Thinking as a unifying research methodology - 80/100 - research_candidate
 - idea_000039 - NeMo Curator and data-centric AI governance infrastructure - 89/100 - execution_ready
@@ -131,3 +132,4 @@
 - idea_000060 - 從忙碌中的赴約到期待再相遇：講座回顧與被喚起的興趣 - 0/100 - raw
 - idea_000061 - 時間、金錢與人生自主權：有限生命中的可承擔配置 - 0/100 - raw
 - idea_000062 - e-means clustering evidence and embedding index tradeoffs - 59/100 - structured
+- idea_000063 - 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 - 58/100 - structured
