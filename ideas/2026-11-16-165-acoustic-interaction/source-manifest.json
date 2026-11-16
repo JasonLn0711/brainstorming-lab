@@ -1,0 +1,18 @@
+{
+  "source": "user message 2026-11-16",
+  "file": "source.md",
+  "scope": "between source markers",
+  "sha256": "ddb2fb002f3d6365f79e77566fc2dcd70e720bf2d96483755439af359c91ee19",
+  "bytes": 31483,
+  "major_sections": 10,
+  "fenced_blocks": 5,
+  "display_equations": 3,
+  "user_scope_points": 3,
+  "integrated_case_questions": 8,
+  "numeric_boundaries": {
+    "40–60": "proposed engineering pilot, not powered sample size or scheduled quota",
+    "180 calls / 12 officers": "hypothetical integrated case, not current dataset",
+    "319 / 15% / 42–56% / 40–65%": "literature claims; verification ledger separate"
+  },
+  "boundary": "Manual transcription; checksum protects saved bytes, not independently exported message equivalence. No source audio or new live results."
+}

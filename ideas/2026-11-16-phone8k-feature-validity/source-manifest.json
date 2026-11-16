@@ -1,0 +1,22 @@
+{
+  "source": "user message 2026-11-16",
+  "file": "source.md",
+  "scope": "between source markers",
+  "sha256": "0df5c63e0c3d369c9871d73194543cca2323bfcad6eb9c9204328e421dc7c934",
+  "bytes": 46130,
+  "major_sections": 10,
+  "fenced_blocks": 5,
+  "preserved_numbers": [
+    "8000",
+    "4000",
+    "300–3,400",
+    "192",
+    "88",
+    "6,373",
+    "94",
+    "940",
+    "8,361"
+  ],
+  "attachment_status": "No ZIP, executable Python source, audio or smoke-test log supplied.",
+  "boundary": "Manual transcription; hash verifies saved bytes, not an independently exported message. Source formulas and command examples remain source text; no commands executed."
+}
