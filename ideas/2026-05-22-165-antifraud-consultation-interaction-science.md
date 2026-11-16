@@ -1,5 +1,11 @@
 # 165 Antifraud Consultation Call Interaction Science
 
+<a id="acoustic-primary-2026-11-16"></a>
+## 2026-11-16 現行範圍：聲學主線，逐字稿獨立補充
+
+Jason 明定僅以聲學量測作主研究，排除聽者主觀情緒、當事人陳述、正確重述／執行／轉介／後續紀錄作主要判準；逐字稿最後補充佐證。[完整供稿與範圍更新](2026-11-16-165-acoustic-interaction/README.md)延續同一 `idea_000036`，保留角色、個體內調整、雙向延遲與持續性假說。以下人工認知 codebook、10-call outcome pilot 與舊 paper framework 是歷史提案，現行分析以新範圍為準；情緒／安撫因果／實際解決未被證實。歷史 30 小時與短切片資訊未於本輪重核。
+
+
 Canonical Idea OS record: `ideas/structured/idea_000036_165_antifraud_consultation_interaction_science.yaml`
 
 ## Core Reframe
@@ -964,3 +970,20 @@ Figure 1 應該先畫出來，再寫全文。
 > 165 anti-fraud hotline conversations as victim-side cognitive vulnerability trajectory data.
 
 也就是用一個很窄但成立的研究物件，提出一個 conceptually coherent 的 Q1 paper。
+
+
+## 2026-11-16｜8 kHz 電話特徵與有效性
+
+[idea_000063：完整供稿、特徵地圖與查核](2026-11-16-phone8k-feature-validity/README.md)新增獨立方法筆記。候選韻律、停頓與輪替可連到求助互動軌跡；選擇偏差、人工標註與受限資料保管仍由本研究擁有，沒有從聲音直接推論說謊或詐騙。
+
+<a id="audio-first-prompt-2026-11-16"></a>
+
+### 11/16｜Audio-first完整替換Prompt
+
+同一研究構想的工程優先級更新；沿既有036／063與隱狀態、Curator及通道混雜關聯追溯。 [完整來源、範圍與下一關](../../165-diarization/docs/audio-first-research-decision-2026-11-16.md)。
+
+<a id="multi-embedding-decision-2026-11-16"></a>
+
+### 11/16｜全部Embedding與方向2、3、4、5
+
+現行研究選擇延續036，來源推薦的方向1未選為獨立主線。 [決策、完整來源、候選清單與下一關](../../165-diarization/docs/multi-objective-embeddings-decision-2026-11-16.md)。

@@ -1,0 +1,152 @@
+id: idea_000063
+title: 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性
+created_at: '2026-11-16'
+type: concept
+tags:
+- telephone-speech
+- feature-engineering
+- voice-quality
+- speaker-embedding
+- measurement-validity
+- speech-governance
+status: raw
+problem_statement:
+  raw: 一段類比電話的錄音，8kHz的通話錄音檔，請問可以給我們什麼樣的量化特徵呢？例如： jitt、voice embedding、利用 voice-supported
+    embedding model 的特徵、音頻？是否可以給我完整越多特徵越好的特徵呢？以及我們可以利用什麼樣的開源套件或免費分析方式，得到所有特徵呢？
+  normalized: Given an 8 kHz telephone recording, select reproducible multiscale signal
+    descriptors, learned representations and task-specific estimates under bandwidth,
+    channel, annotation, licensing and voice-custody constraints.
+  structure:
+    given: 8 kHz telephone recordings with unknown channel processing and possible
+      speaker overlap
+    optimize: task-relevant feature validity, traceability and channel robustness
+    constraints:
+    - preserve original channels and bandwidth provenance
+    - measured descriptors, learned representations and inferred attributes remain
+      distinct
+    - no clinical or deception conclusion from acoustic proxies
+    - no actual recording or toolkit artifact supplied
+    - restricted voice-derived data stays outside public Git
+summary: 完整保存十節電話特徵供稿；整理聲學、聲質、表徵、內容、互動與通道特徵的依賴、有效性及工具路線。165 是應用案例，連回既有互動科學／Curator／隱狀態構想；未取得
+  Toolkit、未執行音檔或模型。
+assumptions:
+- 8 kHz 取樣率不證明實際頻帶或 codec，須讀 metadata 與訊號。
+- 16 kHz／48 kHz 重取樣只滿足模型介面，不能恢復原始遺失資訊。
+- 用途、資料授權、聲道與標註尚未選定；165 不自動成為本輪執行資料。
+- Toolkit／94 與 940 欄／合成 smoke test 為供稿主張，附件與測試證據未取得。
+evidence:
+- 2026-11-16 使用者十節完整供稿，含三題理解檢查：ideas/2026-11-16-phone8k-feature-validity/source.md。
+- 2026-11-16 官方文件部分查核：Praat、openSMILE、ECAPA 設定、WavLM、Silero、pyannote、CLAP、NISQA、PESQ；README
+  保存逐項來源與證據界線。
+baseline:
+- 提案：先列低成本訊號／品質字典，再依用途選 eGeMAPS／MFCC 等基準；未執行。
+metrics:
+- 待任務選定後定義：有效輸出率、缺失原因、人工／參考一致性、跨通道穩定性、任務特定效度；目前未量測。
+insights:
+- 特徵值數量、向量維數、獨立資訊來源及有效樣本數分開記。
+- 通道與 AGC 可能混淆聲質與行為解讀；原始音訊保留，衍生處理另外追溯。
+- Speaker embedding、通用語音表徵、語義及環境音向量具有不同任務語義。
+- 同 speaker／call／session 及設備洩漏需依任務安排 split；同人驗證不能機械禁止所有測試同人配對。
+connections:
+- idea_000015
+- idea_000036
+- idea_000038
+- idea_000039
+role: idea
+value:
+  impact: medium
+  feasibility: medium
+maturity:
+  problem_clarity: 15
+  problem_clarity_score: 15/15
+  boundary_definition: 6
+  boundary_definition_score: 6/10
+  testability: 8
+  testability_score: 8/15
+  evidence_support: 3
+  evidence_support_score: 3/15
+  connection_strength: 10
+  connection_strength_score: 10/10
+  novelty: 10
+  novelty_score: 10/10
+  feasibility: 4
+  feasibility_score: 4/15
+  research_potential: 2
+  research_potential_score: 2/10
+maturity_score: 58/100
+maturity_level: structured
+next_steps:
+- 2026-11-16 使用者已指定應用為 165 員警—疑似受騙民眾的聲學主線；依 idea_000036 最新範圍，先確認可重建 call／time／role／officer
+  索引。
+- 先選一項主要聲學終點與反證，逐字稿僅作主要結果鎖定後的獨立補充；本輪未處理資料。
+- Toolkit 檔案與來源報告如取得再核對版本、輸出與授權；實作前確認容量、受控 execution home 與授權輸入。
+source:
+- ideas/2026-11-16-phone8k-feature-validity/source.md
+maturity_action: include in graph and clustering
+human_note: ideas/2026-11-16-phone8k-feature-validity/README.md
+first_principle:
+  scarce_resource: 量測有效性、受限聲音資料保管、人工標註與研究注意力
+  canonical_home: brainstorming-lab：公開安全的來源供稿、方法推理與假設；真正音檔／embedding／逐字稿歸受控 execution
+    owner
+  planning_role: locator、狀態、容量、下一關
+  evidence_path: ideas/2026-11-16-phone8k-feature-validity/source-manifest.json
+  scope_control: source preserved; implementation pending; no raw calls or voice-derived
+    vectors created
+  next_gate: 用途已指定為 165 聲學互動；下一關為資料索引可重建性、主要聲學終點、容量與受控 execution home。
+activation:
+  decision: deferred_activation
+  stop_defer:
+  - 真實 165 音檔處理、聲紋跨錄音連結與個人判斷
+  - 特徵 engine 開發、套件／模型安裝下載、付費 API
+  - A–D ablation、ASR accuracy／timing、preprocessing_effect
+  - 臨床／壓力／說謊／詐騙分類與資料發布
+pressure_test:
+  setting: 後續若啟動：同一份授權語音含原始聲道與可追溯電話通道衍生版，混有短母音、靜音與重疊片段。
+  expected_failure: 高頻特徵在空頻帶產生假精確數值；Jitter 對不合格片段仍回數值；embedding 主要依設備分群。
+  smallest_observable_test: 先審查欄位字典與有效性條件；取得授權且另行啟動後，核對可計算／不可用／估計三類輸出與原始時間索引。
+  decision: 缺少頻帶／聲道／母音條件的指標標記不可用；以有效性與參考一致性修訂字典，再決定是否擴大；不將合成測試視為真實電話效度。
+claim_checks:
+  toolkit: not_received
+  source_smoke_test: source_claim_only
+  94_frame_columns: source_claim_only
+  940_statistics: source_claim_only
+  8361_dimensions: arithmetic_example_only
+  audio_processing: not_run
+  licenses: partially_checked; pin exact code and weights before use
+  publication: not_published
+normalization_status: validated
+maturity_note: 58/100 為 11/16 CLI 計算，maturity_level=structured；生命週期維持 raw 方法來源收件。用途已由後續供稿指定為
+  165 聲學互動；目標資料量測、主要終點與 execution home 待核，未啟動實驗。
+application_update_2026_11_16:
+  scope: 使用者已明定 165 聲學量測主線；逐字稿最後補充，不採主觀情緒真值或行動結果作主判準。
+  owner_idea: idea_000036
+  note: ideas/2026-11-16-165-acoustic-interaction/README.md
+  source: ideas/2026-11-16-165-acoustic-interaction/source.md
+  boundary: 特徵字典維持通用方法；本次沒有取得或處理音檔，Toolkit 保持 not_received。
+
+audio_first_prompt_2026_11_16:
+  status: source preserved
+  scope_change: 全面逐字稿核驗不再阻擋獨立聲學量測；角色比較仍需可靠語者與角色證據。
+  execution_owner: ../165-diarization
+  canonical_record: ../165-diarization/docs/audio-first-research-decision-2026-11-16.md
+  source: ../165-diarization/docs/sources/2026-11-16-audio-first-prompt/source.md
+  evidence_boundary: 既有工程文件已有Pilot及模型實跑回執；本次只記錄與關聯，未重新驗證或啟動實驗，歷史未啟動狀態保留其時間範圍。
+  next_gate: 依既有版本化輸出核對全批覆蓋及品質，再確認原音語者與角色核驗範圍。
+  capacity: 維持W47容量與既有工作；本次不新增人工期限或配額。
+
+multi_embedding_decision_2026_11_16:
+  status: adopted decision
+  user_intent: 加入所有gpt提供的embeddings；選擇方向2、3、4、5。
+  selected_directions:
+  - '2: Cross-Turn Acoustic Influence'
+  - '3: Acoustic Entrainment vs. Regulation'
+  - '4: Dynamic Acoustic State Discovery'
+  - '5: 8 kHz Telephone Robustness'
+  direction_1: 保留來源建議與輔助混雜診斷；未選為獨立主研究或共同前置專案。
+  model_scope: 全部具名模型與方法納入；詳細清單由execution owner持有，不限原文A–E短名單。
+  canonical_record: ../165-diarization/docs/multi-objective-embeddings-decision-2026-11-16.md
+  source: ../165-diarization/docs/sources/2026-11-16-multi-objective-embeddings/source.md
+  user_words: ../165-diarization/docs/sources/2026-11-16-multi-objective-embeddings/user-decision.txt
+  implementation: 新增模型implementation pending；既有模型依原回執，本輪未啟動新實驗。
+  next_gate: 核對模型精確版本、授權、本機相容性及既有產物，再安排分批Pilot；角色比較需相應核驗證據。
+  capacity: W47容量維持；未新增人工期限、配額、外傳或Git發布。

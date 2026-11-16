@@ -130,6 +130,7 @@ insights:
   - "Distributed systems are not a badge of maturity; they are a response to real scaling, isolation, ownership, and reliability needs."
   - "SRE thinking starts when the question changes from 'can it run?' to 'how do we know it is healthy, and what happens when it fails?'"
 connections:
+  - idea_000063
   - idea_000005
   - idea_000010
   - idea_000012
@@ -1280,3 +1281,8 @@ source:
   - conversation
 maturity_action: "generate experiment plan"
 normalization_status: validated
+
+application_scope_165_2026_11_16:
+  note: ideas/2026-11-16-165-acoustic-interaction/README.md
+  reason: AGC、codec 與降噪改變可觀測聲學；165 原音主分析與修復敏感度分支分開。
+  boundary: 聲學主線與補充逐字稿依 idea_000036 現行範圍；未啟動通話處理或測謊。

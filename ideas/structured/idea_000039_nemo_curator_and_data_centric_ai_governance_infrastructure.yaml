@@ -103,6 +103,7 @@ insights:
   - "A small set of high-quality human transcripts acts as truth calibration for a much larger uncertain speech universe."
   - "Continuous speech dataset operations are the production problem: dataset drift, annotation inconsistency, ASR uncertainty explosion, and processing-history traceability matter more than one-time preprocessing."
 connections:
+  - idea_000063
   - idea_000001
   - idea_000007
   - idea_000035

@@ -1539,3 +1539,19 @@ Design a toy ASR uncertainty propagation test:
 7. Write the reconstruction trace.
 
 The useful output is not a benchmark leaderboard. The useful output is a pipeline worksheet that shows how uncertainty travels from audio quality to ASR to semantics to reviewer routing to governance.
+
+
+## 2026-11-16｜8 kHz 電話特徵與有效性
+
+[idea_000063：完整供稿、特徵地圖與查核](2026-11-16-phone8k-feature-validity/README.md)新增獨立方法筆記。特徵字典的頻帶、聲道、版本、缺失原因與可用率，可作 profiling／manifest／quality gate 的具體欄位來源；沒有啟動既有資料處理或模型訓練。
+
+
+## 2026-11-16｜165 聲學主線的範圍更新
+
+[165 聲學主線更新](2026-11-16-165-acoustic-interaction/README.md)把 call／time／role／officer 索引重建、量測覆蓋率與缺失原因列為下一個資料可行性關卡。逐字稿是獨立補充，主線不等待 ASR／情緒標籤先完成；本次未啟動 curation、轉錄或模型訓練。
+
+<a id="multi-embedding-decision-2026-11-16"></a>
+
+### 11/16｜全部Embedding與方向2、3、4、5
+
+模型／來源／時間／品質／角色追溯承接既有治理；新增向量不等於研究驗證。 [決策、完整來源、候選清單與下一關](../../165-diarization/docs/multi-objective-embeddings-decision-2026-11-16.md)。

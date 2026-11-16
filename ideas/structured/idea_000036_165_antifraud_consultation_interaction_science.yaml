@@ -1,5 +1,5 @@
 id: idea_000036
-title: "165 antifraud victim cognitive-state interaction modeling"
+title: 165 諮詢電話：聲學主線、雙人互動與跨回合預測
 created_at: 2026-05-22
 type: hypothesis
 tags:
@@ -43,26 +43,30 @@ tags:
   - adaptive-coping
 status: execution_ready
 problem_statement:
-  raw: "Given a hypothetical or authorized dataset of 30 hours of 165 antifraud hotline audio conversations between police officers and citizens, decide how to study victim cognitive state and manipulation aftermath without reducing the data to scammer audio, ASR, speech classification, or scam/not-scam labels."
-  normalized: "Given high-sensitive 165 antifraud consultation audio where citizens call after possible manipulation, optimize victim cognitive-state modeling, interaction-level representation discovery, acoustic/behavioral signal analysis, officer intervention analysis, and institutional-capacity research under constraints of small data volume, uncertain ground truth, privacy, de-identification, voice sensitivity, officer/victim safety, public-private separation, claim discipline, IRB/ethics review, and no raw evidence in git."
+  raw: Given a hypothetical or authorized dataset of 30 hours of 165 antifraud hotline
+    audio conversations between police officers and citizens, decide how to study
+    victim cognitive state and manipulation aftermath without reducing the data to
+    scammer audio, ASR, speech classification, or scam/not-scam labels. 2026-11-16
+    使用者範圍更正：聲學量測為主；逐字稿僅最後補充佐證；另比較聲音測謊的方法論。
+  normalized: Given 165 officer–citizen consultation recordings, test whether officer
+    within-person acoustic adjustments add reproducible information for predicting
+    subsequent citizen acoustics beyond citizen history, call progression and recording
+    quality, under acoustic-primary evidence and independent transcript-only supplementary
+    corroboration.
   structure:
-    given: "30 hours of high-value officer-citizen antifraud consultation audio showing citizens after possible manipulation"
-    optimize: "victim cognitive-state modeling and interaction-level representation discovery"
+    given: user-reported 165 officer and suspected-scam citizen calls; reconstructability
+      and current volume unverified
+    optimize: traceable role-specific trajectories and incremental cross-turn acoustic
+      prediction
     constraints:
-      - "30 hours is too small for commodity large-model training"
-      - "the data is likely not clean ground truth for scam/not-scam labels"
-      - "some callers may be truly scammed, suspicious, anxious, delusional, or simply asking normal questions"
-      - "165 callers are a selected help-seeking population, not a representative sample of all scam victims or all manipulated people"
-      - "the most deeply isolated or cognitively captured victims may be least likely to call 165"
-      - "raw audio is highly sensitive institutional data"
-      - "voices are biometric and personally identifying"
-      - "victim narratives may contain financial, family, location, account, phone, and case details"
-      - "officer procedure and institutional practice may be sensitive"
-      - "ASR transcripts are derived evidence, not ground truth"
-      - "public release should use synthetic exemplars, aggregate metrics, and redacted schemas"
-      - "no final scam, legal, or officer-performance judgment should be automated"
-      - "ethics, access control, retention, anonymization, and claim boundaries must be defined before analysis"
-summary: "A 30-hour 165 antifraud hotline audio corpus should be treated primarily as help-seeking victim cognitive-state data, not as scammer-speech data, a small ASR dataset, or a scam classifier benchmark. Most people assume antifraud models need scammer audio, but hotline data captures the downstream cognitive state of people who may have been manipulated and still seek institutional verification: confusion, anxiety, authority overtrust, rationalization, time pressure, attention narrowing, dependency, emotional oscillation, and resistance to external challenge. These traces can appear in voice, pauses, speaking rate, question form, topic shifts, uncertainty patterns, and interaction dynamics. The first research object should be representation discovery for cognitive vulnerability and manipulation aftermath dynamics within the help-seeking institutional interface, with selection bias, institutional response, and data governance as central boundaries."
+    - acoustic primary endpoints, no subjective emotion or action-outcome labels
+    - transcripts supplementary after primary analysis is locked
+    - role and time indexes independent of acoustic stability
+    - channel, lexical tone, missingness, repeated officers and calls
+    - association and prediction separated from emotion truth and causality
+    - raw voice, transcripts and embeddings retained in restricted execution custody
+summary: 2026-11-16 Jason 確認資料為 165 員警與疑似受騙民眾通話，明定聲學量測為主研究，逐字稿僅作獨立補充佐證；排除主觀情緒評分、當事人陳述及行動／轉介／後續紀錄作主要判準。延續既有互動研究，以角色差異、個體內調整及後續聲學變化為提案；情緒和緩屬理論解釋，未證實安撫因果或實際問題解決。歷史
+  30 小時／人工認知 codebook 方案保留歷史。
 source_note_zh: "這份 165 語音資料的重點不是詐騙集團語音，而是受害者認知狀態資料。真正留下痕跡的地方，很多時候不是詐騙者說了什麼，而是民眾被影響後呈現出的 confusion、anxiety、authority overtrust、rationalization、attention narrowing、dependency、emotional oscillation。這更接近 AI for cognitive security。"
 human_note: ideas/2026-05-22-165-antifraud-consultation-interaction-science.md
 assumptions:
@@ -100,39 +104,11 @@ evidence:
   - "Sax Institute Evidence Check on mental-health help-seeking proposes help-seeking as an adaptive coping process involving external assistance for a concern."
   - "Fraga Dominguez and Storey systematic review on elder-abuse help-seeking highlights underreporting and help-seeking barriers, supporting the claim that victims who seek help are a selected population."
 baseline:
-  - "Treat the 30 hours as an ASR dataset and report transcript word error rate."
-  - "Treat the data as a speech emotion classification dataset."
-  - "Fine-tune a BERT, Whisper, or LLM pipeline for scam/not-scam labels."
-  - "Build an accuracy leaderboard that ignores interaction structure, intervention timing, and institutional capacity."
-  - "Use full transcripts as public evidence without a de-identification and release protocol."
-  - "Analyze only citizen language and ignore officer questioning strategy and institutional triage constraints."
-  - "Assume text semantics is enough and discard acoustic hesitation, silence, overlap, speaking rate, and stress markers."
-  - "Assume antifraud modeling requires scammer voice and therefore undervalue victim-side cognitive-state data."
-  - "Force early binary ground truth even though the hotline population mixes true victims, anxious callers, suspicious callers, delusional cases, and normal consultation."
-  - "Convert speech to text and train a classifier while losing dialect, hesitation, fragmented speech, overlap, emotional speech, pauses, and turn-taking."
-  - "Treat 165 callers as representative of all scam victims or all manipulated people."
-  - "Hide selection bias in a limitation paragraph instead of using it to define the actual study population."
-  - "Frame non-help-seeking people as not worth protecting."
-  - "Confuse intervention effectiveness with human worth or protectability."
-  - "Use cognitive-security triage as moral triage rather than timing and resource-allocation analysis."
+- 提案 B0：民眾自身聲學歷史＋通話時間＋品質；B1 另加員警前段聲學；未量測。
 metrics:
-  - "Can a codebook identify interaction states such as initial suspicion, trust in scammer, uncertainty, reassurance seeking, panic, rationalization, information disclosure, officer trust, and intervention acceptance?"
-  - "Can interaction state transitions be reconstructed by turn, time window, or topic shift without relying only on scam keywords?"
-  - "Which officer question types produce sudden information gain, clarification, shutdown, resistance, or trust transfer?"
-  - "Do acoustic markers such as hesitation, silence duration, speaking rate, pitch instability, interruption, overlap, and stress burst correlate with high-risk or deep-manipulation states?"
-  - "Can trajectories distinguish already-paid, not-yet-paid, successfully-stopped, and unresolved consultation outcomes?"
-  - "Can the method estimate officer review burden, triage bottlenecks, escalation delay, and capacity threshold under higher call volume?"
-  - "Can public outputs remain useful while exposing only aggregate metrics, codebooks, synthetic exemplars, and redacted protocols?"
-  - "Can the method model cognitive vulnerability levels such as confusion, panic, dependency, suggestibility, emotional overload, and verification resistance?"
-  - "Can latent structure discovery reveal stable cognitive-state clusters without forcing scam/not-scam labels?"
-  - "Can acoustic precursors of panic, overload, or verification resistance be detected before the transcript clearly states risk?"
-  - "Can conversation repair failure be quantified through repeated questions, unresolved topics, fixation, and failed alternative explanations?"
-  - "Can effective officer intervention patterns be identified through changes in caller uncertainty, grounding, information disclosure, and action readiness?"
-  - "Can the study characterize the help-seeking population separately from non-calling, isolated, or fully captured victims?"
-  - "Can help-seeking behavior itself be modeled as an interaction signal: willingness to verify, remaining doubt, institutional trust, or partial escape from isolation?"
-  - "Can the study distinguish intervention feasibility, institutional resource allocation, and human worth in the research framing?"
-  - "Can the study identify a reversible intervention window where cognitive capture is not complete and external verification still works?"
-  - "Can help-seeking thresholds be operationalized through uncertainty, verification seeking, trust displacement, and willingness to accept institutional contact?"
+- 待選主要聲學終點的 held-out prediction loss／增益與不確定性；通話與員警為重複觀察層。
+- 有效框／語段覆蓋率、缺失／排除原因與分層差異；通道擾動對目標差異的影響。
+- 雙向延遲、持續／反彈、surrogate 與未見員警／通道敏感度；主要／探索及多重比較分開。
 insights:
   - "The rare value of the corpus is not size; it is ecological validity in high-risk help-seeking interaction."
   - "The right first unit is the interaction trajectory, not a sentence, transcript, or call-level scam label."
@@ -157,6 +133,7 @@ insights:
   - "165 help-seeking callers may be valuable precisely because they sit near the manipulation/recovery boundary, where cognitive oscillation, persuasion instability, and intervention response are observable."
   - "This makes the study closer to cognitive-security triage: not deciding whose life matters, but identifying when and how intervention can still change the trajectory."
 connections:
+  - idea_000063
   - idea_000062
   - idea_000007
   - idea_000011
@@ -171,20 +148,24 @@ value:
   impact: high
   feasibility: medium
 first_principle:
-  scarce_resource: "ethically usable, reviewer-reconstructable evidence of victim cognitive state after possible manipulation"
-  core_object: "victim cognitive-state dynamics in help-seeking 165 antifraud consultation interactions"
+  scarce_resource: ethically usable, reviewer-reconstructable evidence of victim cognitive
+    state after possible manipulation
+  core_object: 165 員警與民眾的聲學變化、跨回合關聯及增額預測
   not_the_core:
-    - "scammer voice dataset"
-    - "ASR benchmark"
-    - "speech emotion leaderboard"
-    - "BERT fine-tuning"
-    - "Whisper plus LLM demo"
-    - "scam/not-scam classifier"
-    - "public release of raw audio or full transcripts"
-    - "automated legal, scam, victim, or officer judgment"
-  smallest_useful_unit: "a restricted 10-call pilot annotation packet focused on cognitive state, acoustic markers, interaction dynamics, officer intervention, and public-safe synthetic exemplars."
-  decision_boundary: "Use real calls only for authorized restricted analysis; publish codebooks, aggregate findings, redacted protocols, and synthetic examples unless an ethics-approved release path exists; never generalize 165 callers to all scam victims."
-paper_framework:
+  - scammer voice dataset
+  - ASR benchmark
+  - speech emotion leaderboard
+  - BERT fine-tuning
+  - Whisper plus LLM demo
+  - scam/not-scam classifier
+  - public release of raw audio or full transcripts
+  - automated legal, scam, victim, or officer judgment
+  smallest_useful_unit: 先確認可追溯 call／time／role／officer 索引能否支持 C_k→O_k→C_{k+1}；本次先保存欄位與缺口，不取得或處理真實語音。
+  decision_boundary: Use real calls only for authorized restricted analysis; publish
+    codebooks, aggregate findings, redacted protocols, and synthetic examples unless
+    an ethics-approved release path exists; never generalize 165 callers to all scam
+    victims.
+historical_paper_framework:
   working_title: "AI-based interaction representation for cognitive vulnerability dynamics in anti-fraud hotline conversations"
   paper_identity: "interaction-centered cognitive vulnerability modeling"
   advisor_alignment: "Follow Rao teacher's lesson by defining the single smallest valid core problem before adding tools, systems, or governance expansion."
@@ -634,42 +615,220 @@ claim_discipline:
     - "A binary label fully captures hotline reality."
     - "Raw 165 calls can be publicly released after simple anonymization."
 pressure_test:
-  setting: "A restricted pilot using 10 authorized 165 consultation calls sampled across not-yet-paid, already-paid, successfully-stopped, unresolved, and high-anxiety cases."
-  expected_failure_mode: "The work collapses into ASR cleanup, call-level labels, or overgeneralized victim claims, or creates privacy risk by storing transcripts and voice-derived identifiers in the wrong place."
-  smallest_observable_test: "Create a redacted annotation packet that segments each call into turns or 30-second windows, labels cognitive state, officer action, interaction dynamics, acoustic markers, information-gain moments, repair failure, outcome state, and selection-boundary notes, then publishes only aggregate schema plus synthetic exemplars."
-  decision_metric: "Pass if two reviewers can apply the codebook consistently, latent patterns emerge without forcing scam/not-scam labels, intervention timing becomes visible, selection bias is explicitly bounded, and no raw audio/transcript or identifying detail enters git."
+  setting: 若未來啟動：可重建時間與角色的受控 165 相鄰 C_k→O_k→C_{k+1}，含重複員警、通道差異與無法估 F0 的語段。
+  expected_failure_mode: 用低變異定義平靜再自我驗證；用聲音穩定標員警；ASR／逐字稿先決定成功再洩漏回聲學特徵；片段或員警跨 split
+    洩漏。
+  smallest_observable_test: 先審查 metadata 欄位與缺口；另行授權實測後比較 citizen-history＋time＋quality
+    baseline 與增加 officer acoustics，對未見通話評估並保留缺失／反證。
+  decision_metric: 預測增益須在獨立通話及適用泛化設計重現；沒有增益或敏感度檢查推翻解釋時修訂／停止；不將統計係數視為安撫因果。
 next_steps:
-  - "Rewrite the one-page problem definition around victim cognitive-state modeling and AI for cognitive security, not scammer audio or scam classification."
-  - "Add the help-seeking population boundary to the one-page paper contract: 165 callers are not all scam victims, but a selected institutional verification population."
-  - "Draft the cognitive-state codebook: confusion, panic, dependency, suggestibility, emotional overload, verification resistance, authority overtrust, rationalization, attention narrowing, and emotional oscillation."
-  - "Define the four-layer representation: acoustic layer, interaction dynamics, cognitive state modeling, and institutional response."
-  - "Design a 10-call restricted pilot annotation packet; if real access is not approved, build synthetic exemplar calls first."
-  - "Define which artifacts are allowed in git: schema, aggregate metrics, synthetic examples, and redacted methods only."
-  - "Use latent structure discovery before any binary label or predictive model."
+- 資料 owner 在另行啟動前確認 call ID、原始時間、角色、原始聲道與可用跨通話員警代碼；現有資料量及切片可重建性待核。
+- Jason 有容量時選一項主要聲學終點、主要假說與最強反證；實際樣本數另依可用通話／員警結構與目標差異設計。
+- 研究維護者先建立聲學主線與逐字稿補充線的分析鎖定契約；真實資料、runtime 與 execution home 確認後另行啟動。
 source:
-  - conversation
-  - ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml
-  - ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml
-  - ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml
-  - ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml
-  - ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml
+- conversation
+- ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml
+- ideas/structured/idea_000015_layered_voice_enhancement_in_consumer_voip_calls.yaml
+- ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml
+- ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml
+- ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml
+- ideas/2026-11-16-165-acoustic-interaction/source.md
 maturity:
   problem_clarity: 15
   problem_clarity_score: 15/15
   boundary_definition: 10
   boundary_definition_score: 10/10
-  testability: 15
-  testability_score: 15/15
+  testability: 11
+  testability_score: 11/15
   evidence_support: 12
   evidence_support_score: 12/15
   connection_strength: 10
   connection_strength_score: 10/10
   novelty: 10
   novelty_score: 10/10
-  feasibility: 15
-  feasibility_score: 15/15
+  feasibility: 9
+  feasibility_score: 9/15
   research_potential: 10
   research_potential_score: 10/10
-maturity_score: 97/100
+maturity_score: 87/100
 maturity_level: execution_ready
 maturity_action: "generate experiment plan"
+
+paper_framework:
+  working_title: 8 kHz 反詐騙諮詢電話中的角色聲學差異、雙人互動動態與跨回合預測
+  thesis: 檢驗員警個體內聲學調整對民眾後續聲學狀態的增額預測；相容於情緒和緩是解釋層。
+  status: proposed; no manuscript or experiment activated
+  primary_evidence: acoustic trajectories, reliability and held-out cross-turn prediction
+  supplementary_evidence: independent transcript-derived dialogue progress after primary-result
+    lock
+  excluded_primary_criteria:
+  - listener emotion ratings
+  - participant statements
+  - correct restatement
+  - executed steps
+  - appropriate referral
+  - follow-up records
+
+current_scope_2026_11_16:
+  authority: 使用者本輪第 1–3 點；記錄與分析範圍已授權，實際語音／模型執行未啟動。
+  status: adopted research scope; source preserved; implementation pending
+  user_report: 已拿到 165 員警與疑似受騙民眾通話；檔案、數量、角色／時間與 officer ID 尚未本輪查驗。
+  primary: 僅聲學量測；保留原始研究問題，結果可以無法判定情緒。
+  supplement: 逐字稿僅最後獨立補充，不作主模型情緒真值、樣本篩選或調參依據。
+  role_metadata: 獨立角色與時間索引可用，不以穩定聲音推定員警。
+  comparison: voice stress analysis 為相關研究／效度比較，不建欺瞞分類或員警排名。
+  source: ideas/2026-11-16-165-acoustic-interaction/source.md
+  human_note: ideas/2026-11-16-165-acoustic-interaction/README.md
+  scope_change: 本次主線優先於舊人工 cognitive-state codebook、10-call outcome pilot 與 historical_paper_framework；歷史保留不自動重啟。
+  capacity: W47 Red／待重評；未新增時段、期限或樣本配額。
+historical_scope_before_2026_11_16:
+  next_steps:
+  - Rewrite the one-page problem definition around victim cognitive-state modeling
+    and AI for cognitive security, not scammer audio or scam classification.
+  - 'Add the help-seeking population boundary to the one-page paper contract: 165
+    callers are not all scam victims, but a selected institutional verification population.'
+  - 'Draft the cognitive-state codebook: confusion, panic, dependency, suggestibility,
+    emotional overload, verification resistance, authority overtrust, rationalization,
+    attention narrowing, and emotional oscillation.'
+  - 'Define the four-layer representation: acoustic layer, interaction dynamics, cognitive
+    state modeling, and institutional response.'
+  - Design a 10-call restricted pilot annotation packet; if real access is not approved,
+    build synthetic exemplar calls first.
+  - 'Define which artifacts are allowed in git: schema, aggregate metrics, synthetic
+    examples, and redacted methods only.'
+  - Use latent structure discovery before any binary label or predictive model.
+  pressure_test:
+    setting: A restricted pilot using 10 authorized 165 consultation calls sampled
+      across not-yet-paid, already-paid, successfully-stopped, unresolved, and high-anxiety
+      cases.
+    expected_failure_mode: The work collapses into ASR cleanup, call-level labels,
+      or overgeneralized victim claims, or creates privacy risk by storing transcripts
+      and voice-derived identifiers in the wrong place.
+    smallest_observable_test: Create a redacted annotation packet that segments each
+      call into turns or 30-second windows, labels cognitive state, officer action,
+      interaction dynamics, acoustic markers, information-gain moments, repair failure,
+      outcome state, and selection-boundary notes, then publishes only aggregate schema
+      plus synthetic exemplars.
+    decision_metric: Pass if two reviewers can apply the codebook consistently, latent
+      patterns emerge without forcing scam/not-scam labels, intervention timing becomes
+      visible, selection bias is explicitly bounded, and no raw audio/transcript or
+      identifying detail enters git.
+  smallest_useful_unit: a restricted 10-call pilot annotation packet focused on cognitive
+    state, acoustic markers, interaction dynamics, officer intervention, and public-safe
+    synthetic exemplars.
+  paper_framework: 原 paper_framework 已保留於 historical_paper_framework；不是本次主要分析契約。
+  baseline:
+  - Treat the 30 hours as an ASR dataset and report transcript word error rate.
+  - Treat the data as a speech emotion classification dataset.
+  - Fine-tune a BERT, Whisper, or LLM pipeline for scam/not-scam labels.
+  - Build an accuracy leaderboard that ignores interaction structure, intervention
+    timing, and institutional capacity.
+  - Use full transcripts as public evidence without a de-identification and release
+    protocol.
+  - Analyze only citizen language and ignore officer questioning strategy and institutional
+    triage constraints.
+  - Assume text semantics is enough and discard acoustic hesitation, silence, overlap,
+    speaking rate, and stress markers.
+  - Assume antifraud modeling requires scammer voice and therefore undervalue victim-side
+    cognitive-state data.
+  - Force early binary ground truth even though the hotline population mixes true
+    victims, anxious callers, suspicious callers, delusional cases, and normal consultation.
+  - Convert speech to text and train a classifier while losing dialect, hesitation,
+    fragmented speech, overlap, emotional speech, pauses, and turn-taking.
+  - Treat 165 callers as representative of all scam victims or all manipulated people.
+  - Hide selection bias in a limitation paragraph instead of using it to define the
+    actual study population.
+  - Frame non-help-seeking people as not worth protecting.
+  - Confuse intervention effectiveness with human worth or protectability.
+  - Use cognitive-security triage as moral triage rather than timing and resource-allocation
+    analysis.
+  metrics:
+  - Can a codebook identify interaction states such as initial suspicion, trust in
+    scammer, uncertainty, reassurance seeking, panic, rationalization, information
+    disclosure, officer trust, and intervention acceptance?
+  - Can interaction state transitions be reconstructed by turn, time window, or topic
+    shift without relying only on scam keywords?
+  - Which officer question types produce sudden information gain, clarification, shutdown,
+    resistance, or trust transfer?
+  - Do acoustic markers such as hesitation, silence duration, speaking rate, pitch
+    instability, interruption, overlap, and stress burst correlate with high-risk
+    or deep-manipulation states?
+  - Can trajectories distinguish already-paid, not-yet-paid, successfully-stopped,
+    and unresolved consultation outcomes?
+  - Can the method estimate officer review burden, triage bottlenecks, escalation
+    delay, and capacity threshold under higher call volume?
+  - Can public outputs remain useful while exposing only aggregate metrics, codebooks,
+    synthetic exemplars, and redacted protocols?
+  - Can the method model cognitive vulnerability levels such as confusion, panic,
+    dependency, suggestibility, emotional overload, and verification resistance?
+  - Can latent structure discovery reveal stable cognitive-state clusters without
+    forcing scam/not-scam labels?
+  - Can acoustic precursors of panic, overload, or verification resistance be detected
+    before the transcript clearly states risk?
+  - Can conversation repair failure be quantified through repeated questions, unresolved
+    topics, fixation, and failed alternative explanations?
+  - Can effective officer intervention patterns be identified through changes in caller
+    uncertainty, grounding, information disclosure, and action readiness?
+  - Can the study characterize the help-seeking population separately from non-calling,
+    isolated, or fully captured victims?
+  - 'Can help-seeking behavior itself be modeled as an interaction signal: willingness
+    to verify, remaining doubt, institutional trust, or partial escape from isolation?'
+  - Can the study distinguish intervention feasibility, institutional resource allocation,
+    and human worth in the research framing?
+  - Can the study identify a reversible intervention window where cognitive capture
+    is not complete and external verification still works?
+  - Can help-seeking thresholds be operationalized through uncertainty, verification
+    seeking, trust displacement, and willingness to accept institutional contact?
+  scope_note: 未明示更新的舊 assumptions／insights／evidence／paper 細節保留歷史；現行主分析以 current_scope_2026_11_16
+    與本次 companion 為準。
+activation_2026_11_16:
+  decision: deferred_activation
+  stop_defer:
+  - 真實音檔讀取、切片與特徵／embedding 生成
+  - 主觀情緒真值 codebook 與以執行結果為主的成功標籤
+  - 40–60 通試驗、180 通／12 員警案例、模型比較與聲紋跨通話連結
+  - 聲音測謊部署、欺瞞／可信度／員警績效評分
+  - ASR accuracy／timing、降噪比較、手稿／投稿恢復
+
+normalization_status: validated
+maturity_note: 11/16 CLI 重算 87/100，原歷史分數 97/100；分數依文字啟發式改變，不是新的實機可行性或科學成效量測。既有 execution_ready
+  為 Idea OS 分類，activation_2026_11_16 仍 deferred_activation。
+
+diarization_execution_2026_11_16:
+  authority: 後續附檔明確授權 design/implement/validate/execute 316 原始電話來源的 Nemotron pipeline。
+  execution_home: ../165-diarization
+  report: ../165-diarization/docs/engineering-report.md
+  status: LIVE_FULL_COMPLETED
+  runtime_validity: valid_target_runtime
+  coverage: 316 original-source parents; 316 successful / 0 failed; 70406.48 seconds
+  source_integrity: all SHA-256 rechecked unchanged
+  quality: DER/JER and human role/activity-reference quality not_evaluated
+  scope: 只完成 A0 分段工程與操作驗收；主要聲學／情緒和緩／因果／問題解決研究未完成，原 transcript authority 不變。
+  next_gate: 授權且有容量時進行 pilot 真實活動 reference、雙人核對與角色註記。
+
+audio_first_prompt_2026_11_16:
+  status: source preserved
+  scope_change: 全面逐字稿核驗不再阻擋獨立聲學量測；角色比較仍需可靠語者與角色證據。
+  execution_owner: ../165-diarization
+  canonical_record: ../165-diarization/docs/audio-first-research-decision-2026-11-16.md
+  source: ../165-diarization/docs/sources/2026-11-16-audio-first-prompt/source.md
+  evidence_boundary: 既有工程文件已有Pilot及模型實跑回執；本次只記錄與關聯，未重新驗證或啟動實驗，歷史未啟動狀態保留其時間範圍。
+  next_gate: 依既有版本化輸出核對全批覆蓋及品質，再確認原音語者與角色核驗範圍。
+  capacity: 維持W47容量與既有工作；本次不新增人工期限或配額。
+
+multi_embedding_decision_2026_11_16:
+  status: adopted decision
+  user_intent: 加入所有gpt提供的embeddings；選擇方向2、3、4、5。
+  selected_directions:
+  - '2: Cross-Turn Acoustic Influence'
+  - '3: Acoustic Entrainment vs. Regulation'
+  - '4: Dynamic Acoustic State Discovery'
+  - '5: 8 kHz Telephone Robustness'
+  direction_1: 保留來源建議與輔助混雜診斷；未選為獨立主研究或共同前置專案。
+  model_scope: 全部具名模型與方法納入；詳細清單由execution owner持有，不限原文A–E短名單。
+  canonical_record: ../165-diarization/docs/multi-objective-embeddings-decision-2026-11-16.md
+  source: ../165-diarization/docs/sources/2026-11-16-multi-objective-embeddings/source.md
+  user_words: ../165-diarization/docs/sources/2026-11-16-multi-objective-embeddings/user-decision.txt
+  implementation: 新增模型implementation pending；既有模型依原回執，本輪未啟動新實驗。
+  next_gate: 核對模型精確版本、授權、本機相容性及既有產物，再安排分批Pilot；角色比較需相應核驗證據。
+  capacity: W47容量維持；未新增人工期限、配額、外傳或Git發布。

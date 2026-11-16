@@ -371,3 +371,19 @@ For each case, fill:
 - intervention action.
 
 The first useful artifact is a reusable methodology worksheet, not a math-heavy implementation.
+
+
+## 2026-11-16｜8 kHz 電話特徵與有效性
+
+[idea_000063：完整供稿、特徵地圖與查核](2026-11-16-phone8k-feature-validity/README.md)新增獨立方法筆記。把聲學觀測、學習表徵與心理／認知推論分層保存，為觀察值→隱狀態推論提供量測有效性邊界；向量漂移與分群本身不建立隱狀態真值。
+
+
+## 2026-11-16｜165 聲學主線的範圍更新
+
+[165 聲學主線更新](2026-11-16-165-acoustic-interaction/README.md)將觀察值、預測與情緒解釋分開；本人排除主觀情緒／行動結果作主要判準，情緒無法判定也可接受。此 domain 範圍優先於舊 165 人工認知 codebook 提案，沒有改變其他領域的隱狀態驗證方法。
+
+<a id="multi-embedding-decision-2026-11-16"></a>
+
+### 11/16｜全部Embedding與方向2、3、4、5
+
+方向4採聲學狀態A／B／C與轉移，隱狀態不直接命名心理真值。 [決策、完整來源、候選清單與下一關](../../165-diarization/docs/multi-objective-embeddings-decision-2026-11-16.md)。
