@@ -1,0 +1,11 @@
+{
+  "source": "user message 2026-11-16",
+  "file": "source-2026-11-16-qwen-remote.md",
+  "scope": "between source markers; user-supplied quoted block",
+  "sha256": "2d8377eafb59538b124dbf962af3f99f4e116212d1b749abf6abf3bae3982cfa",
+  "bytes": 19313,
+  "sections": 7,
+  "fenced_blocks": 3,
+  "outside_quote_goal": "我最近的目標之一是很想做到這個。",
+  "boundary": "Manual transcription; checksum protects saved bytes, not independent proof of message equivalence. External images retained as URLs, not downloaded."
+}
