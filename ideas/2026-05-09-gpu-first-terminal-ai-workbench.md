@@ -1097,3 +1097,8 @@ minimal dotfiles repo before adding more tools.
 ## 2026-11-08 關聯：外部修改版模型 API
 
 [GLM-5.3 非中國 API 與資料流評估](2026-11-08-glm-5-3-non-china-api.md)保存供應商證據、模型身分與資料地域待驗項目。此關聯用於外部模型治理與受控評估；尚未接入、採購或驗證修改版品質。
+
+
+## 2026-11-16｜GX10 混合代理關聯
+
+[idea_000049：Qwen workers 與遠端控制](2026-11-04-gpt-nemotron-hybrid-coding/update-2026-11-16-qwen-remote.md)保存近期 MVP 目標、完整供稿與啟動關卡。OpenCode CLI／tmux 是 GX10 維運與遠端恢復候選；互動延遲、推論吞吐與工作完成時間各自量測。

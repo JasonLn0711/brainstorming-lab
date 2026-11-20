@@ -44,11 +44,11 @@
 | `idea_000037` | Pizza Index as weak-signal OSINT hidden-state modeling | 74/100 | `research_candidate` | `research_candidate` | Create a small historical event table with 10 to 20 crisis and non-crisis windows, then define what observable proxy signals would have been available before each event. | `ideas/structured/idea_000037_pizza_index_as_weak_signal_osint_hidden_state_modeling.yaml` |
 | `idea_000004` | Anomaly detection research watch | 73/100 | `research_candidate` | `research_candidate` | Define one public or synthetic anomaly fixture and one review packet format. | `ideas/structured/idea_000004_anomaly_detection_research_watch.yaml` |
 | `idea_000026` | Synthetic consensus and source laundering in AI-generated web pollution | 71/100 | `research_candidate` | `research_candidate` | Write the one-page definition of synthetic consensus, source laundering, truthful derivative pollution, and web pollution as evidential distortion. | `ideas/structured/idea_000026_synthetic_consensus_source_laundering_web_pollution.yaml` |
+| `idea_000049` | GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 | 69/100 | `research_candidate` | `structured` | Jason 確認可用容量、非敏感測試 repo、雲端資料範圍與費用上限；先選一次最小唯讀交接作為下一個可啟動成果。 | `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml` |
 | `idea_000002` | Cybersecurity reviewer assist layer | 68/100 | `research_candidate` | `research_candidate` | Define a controlled candidate-review fixture with explicit hard negatives. | `ideas/structured/idea_000002_cybersecurity_review_assist.yaml` |
 | `idea_000009` | Safe Tesla coil insect-trap teaching demo | 68/100 | `research_candidate` | `research_candidate` | Draft a one-page concept note comparing three safe versions: video analysis, electric-field simulation, and low-voltage LED mock. | `ideas/structured/idea_000009_safe_tesla_coil_insect_trap_teaching_demo.yaml` |
 | `idea_000048` | Heart Island study and floating research atlas | 65/100 | `research_candidate` | `structured` | 審閱首頁與三筆公開內容映射；另行啟動網站三島切片，不自動排程。 | `ideas/structured/idea_000048_heart_island_study_and_floating_research_atlas.yaml` |
 | `idea_000006` | OpenClaw personal ops node | 60/100 | `structured` | `structured` | Write one bounded design note in second-brain-openclaw before any implementation or purchase. | `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml` |
-| `idea_000049` | GPT Nemotron hybrid coding agent architecture | 59/100 | `structured` | `structured` | 先確認 GX10 實機型號、CPU 架構、作業系統、記憶體與可用資源，再查核模型卡、OpenCode provider／agent／permission 文件與 Ollama 標籤。 | `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml` |
 | `idea_000062` | e-means clustering evidence and embedding index tradeoffs | 59/100 | `structured` | `structured` | 先確認目標向量與查詢、召回底線、硬體與計時契約，再決定是否另行啟動公平比較。 | `ideas/structured/idea_000062_e_means_clustering_evidence_and_embedding_index_tradeoffs.yaml` |
 | `idea_000003` | Decision load scheduler | 58/100 | `structured` | `structured` | Compare weekly selections against the planning repo daily and weekly notes for one week. | `ideas/structured/idea_000003_decision_load_scheduler.yaml` |
 | `idea_000063` | 8 kHz 電話錄音：多層特徵字典、表徵與量測有效性 | 58/100 | `structured` | `raw` | 2026-11-16 使用者已指定應用為 165 員警—疑似受騙民眾的聲學主線；依 idea_000036 最新範圍，先確認可重建 call／time／role／officer 索引。 | `ideas/raw/idea_000063_phone8k_multilayer_feature_measurement_validity.yaml` |
@@ -118,7 +118,7 @@
 - idea_000047 - Insurance customer conversation simulator for sales training - 77/100 - research_candidate
 - idea_000048 - 在職初學者的 AI 輔助軟體開發素養 - 0/100 - raw
 - idea_000048 - Heart Island study and floating research atlas - 65/100 - research_candidate
-- idea_000049 - GPT Nemotron hybrid coding agent architecture - 59/100 - structured
+- idea_000049 - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 - 69/100 - research_candidate
 - idea_000050 - Kairos Live — private execution locator - 31/100 - emerging
 - idea_000051 - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 - 0/100 - raw
 - idea_000052 - 幸福、回憶與人生機會的時效性 - 0/100 - raw

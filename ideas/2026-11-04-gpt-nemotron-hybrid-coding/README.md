@@ -84,3 +84,10 @@
 [source-manifest.json](source-manifest.json) 記錄原始內容區段的 SHA-256、位元組數、八節／五步驟／SVG 區段及結尾檢查；它驗證已寫入檔案的結構與後續完整性。逐字區段由本輪訊息轉錄保存，未將結構檢查描述成外部來源或執行結果的查核。
 
 [gx10-source-manifest.json](gx10-source-manifest.json) 保存續稿逐字區段的雜湊與九節／四步驟結構檢查；原稿與續稿各有獨立清冊。
+
+
+## 2026-11-16｜近期目標：Qwen workers 與遠端控制
+
+Jason 明示這是近期很想完成的目標之一；[完整供稿](source-2026-11-16-qwen-remote.md)與[詳細更新／查核／關聯](update-2026-11-16-qwen-remote.md)承接 GPT 主控、Qwen FP4-Local 候選及 Web／SSH→Telegram 的提案。延續 `idea_000049`，Nemotron 選項保留歷史。CLI 重算 69/100；生命週期維持 structured，演算法候選分類不代表人工升級或部署通過。
+
+[11/16 日誌](../../../planning-everything-track/weeks/2026-W47/days/2026-11-16.md#gx10-opencode-qwen-2026-11-16)與[W47](../../../planning-everything-track/weeks/2026-W47/weekly-plan.md#gx10-opencode-qwen-2026-11-16)保留容量／下一關。W47 Red／待重評，先確認可用容量、雲端資料／費用與既有 inference／Telegram owner；沒有新排部署時段。舊模型／Starter Kit 主張保持原證據邊界。

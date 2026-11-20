@@ -55,6 +55,7 @@
 
 ## agent-evaluation
 
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 - `idea_000051` - GLM-5.3 修改版 API：非中國供應、資料流與代理品質驗證 (`raw`, 0/100) - `ideas/raw/idea_000051_glm_5_3_non_china_api_and_data_residency_verification.yaml`
 
 ## agent-reliability
@@ -988,7 +989,7 @@
 - `idea_000032` - MITRE ATLAS based AI system assurance for triage prototypes (`execution_ready`, 92/100) - `ideas/structured/idea_000032_mitre_atlas_based_ai_system_assurance_for_triage_prototypes.yaml`
 - `idea_000033` - Product-constrained PhD engineering research OS (`execution_ready`, 96/100) - `ideas/structured/idea_000033_product_constrained_phd_engineering_research_os.yaml`
 - `idea_000035` - AI-mediated harmful interaction trajectory modeling (`execution_ready`, 94/100) - `ideas/structured/idea_000035_ai_mediated_harmful_interaction_systems.yaml`
-- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## gpu-inference
 
@@ -1009,6 +1010,10 @@
 ## grounding
 
 - `idea_000031` - AI-assisted ancient language decipherment and script archaeology (`execution_ready`, 88/100) - `ideas/structured/idea_000031_ai_assisted_ancient_language_decipherment_and_script_archaeology.yaml`
+
+## gx10
+
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## hanmeibench
 
@@ -1081,7 +1086,7 @@
 ## human-approval-gate
 
 - `idea_000019` - Codex-wrapped AI Scientist research OS (`execution_ready`, 94/100) - `ideas/structured/idea_000019_codex_wrapped_ai_scientist_research_os.yaml`
-- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## human-computer-interaction
 
@@ -1399,7 +1404,7 @@
 ## local-ai-gateway
 
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
-- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## local-first
 
@@ -1553,7 +1558,7 @@
 ## model-serving
 
 - `idea_000043` - Shared GPU model-owner inference service (`execution_ready`, 83/100) - `ideas/structured/idea_000043_shared_gpu_model_owner_inference_service.yaml`
-- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## moe
 
@@ -1581,7 +1586,7 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 - `idea_000008` - Learned conductor for medical AI research workflows (`execution_ready`, 97/100) - `ideas/structured/idea_000008_learned_conductor_for_medical_ai_research_workflows.yaml`
-- `idea_000049` - GPT Nemotron hybrid coding agent architecture (`structured`, 59/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## multimodal-ai
 
@@ -1659,6 +1664,10 @@
 ## openclaw
 
 - `idea_000006` - OpenClaw personal ops node (`structured`, 60/100) - `ideas/structured/idea_000006_openclaw_personal_ops_node.yaml`
+
+## opencode
+
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## operational-ai
 
@@ -1902,6 +1911,10 @@
 
 - `idea_000007` - Signal Market for low-cost behavior discovery (`execution_ready`, 92/100) - `ideas/structured/idea_000007_signal_market_for_low_cost_behavior_discovery.yaml`
 
+## qwen
+
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
+
 ## rag
 
 - `idea_000011` - AI-assisted statement interview question recommendation system (`execution_ready`, 89/100) - `ideas/executing/idea_000011_ai_assisted_statement_interview_question_recommendation_system.yaml`
@@ -1952,6 +1965,10 @@
 ## release-engineering
 
 - `idea_000029` - PaperOps scientific submission release engineering (`execution_ready`, 88/100) - `ideas/structured/idea_000029_paperops_scientific_submission_release_engineering.yaml`
+
+## remote-control
+
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## renewed-interest
 
@@ -2472,6 +2489,10 @@
 ## teaching
 
 - `idea_000013` - ISO 27001 high school explainer and compliance teaching module (`execution_ready`, 84/100) - `ideas/structured/idea_000013_iso_27001_high_school_explainer_and_compliance_teaching_module.yaml`
+
+## telegram
+
+- `idea_000049` - GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制 (`research_candidate`, 69/100) - `ideas/structured/idea_000049_gpt_nemotron_hybrid_coding_agent_architecture.yaml`
 
 ## telephone-speech
 

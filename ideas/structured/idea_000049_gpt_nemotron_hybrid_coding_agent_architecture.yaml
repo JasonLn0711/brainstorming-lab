@@ -1,5 +1,5 @@
 id: idea_000049
-title: GPT Nemotron hybrid coding agent architecture
+title: GX10 × OpenCode 混合代理：GPT 主控、本地 workers 與遠端控制
 created_at: '2026-11-04'
 type: concept
 tags:
@@ -8,10 +8,17 @@ tags:
 - model-serving
 - local-ai-gateway
 - human-approval-gate
+- gx10
+- opencode
+- qwen
+- remote-control
+- telegram
+- agent-evaluation
 status: structured
 problem_statement:
   raw: 如何在自己的電腦，以 GPT 作為前端主控大腦，讓 Nemotron 3.5 Super 負責後端工程決策與執行？ 補充：OpenCode 能否統一整合
-    GPT、Super、Nano 與工具？RTX 5080 已移交其他研究生，實驗室改用 GX10。
+    GPT、Super、Nano 與工具？RTX 5080 已移交其他研究生，實驗室改用 GX10。 2026-11-16：希望在 GX10 以 OpenCode、GPT-6.1-max
+    與 qwen-3.8-next-flash nvfp4 建立 MVP，並由 Telegram 或其他方式遠端操作；這是近期很想完成的目標之一。
   normalized: Given a personal Ubuntu workstation and a GPT-led coding workflow, identify
     a bounded hybrid agent architecture under constraints of model availability, credentials,
     cloud data transfer, local execution permissions, hardware capacity, and verifiable
@@ -25,24 +32,38 @@ problem_statement:
     - local tool approval and operating-system isolation
     - hardware capacity and context memory
     - no installation or live run activated
-summary: 保存 GPT 主控、Nemotron 工程決策與本機工具執行架構；續稿提議以 OpenCode 統一協調，並比較雲端 Super＋GX10 Nano
-  與 GX10 本機 Super＋Nano。硬體異動已由使用者確認，產品能力與部署仍待查核。
+summary: 延續 11/04 GPT／Nemotron 混合架構，11/16 Jason 明示這是近期很想完成的目標之一；最新候選為 GPT-6.1 主控、共用
+  Qwen 推論服務的唯讀 workers，以及私有 Web／SSH 與 Telegram 控制層。保留 Nemotron 歷史選項；產品頁面查核與 GX10 實測分開。
 assumptions:
 - 使用者偏好 GPT 作為主控、Nemotron 3.5 Super 作為工程決策與執行模型。
 - OpenCode 版本、provider 支援、ChatGPT 帳戶授權、NVIDIA endpoint 與 Ollama 標籤均待查核。
 - ASUS Ascent GX10／GB10／128 GB 為提供稿的暫定規格，尚未取得實機證據。
 - OpenCode 完整協調、NVFP4 單台支援與 Super／Nano 共存是待查核的方案主張。
+- 11/16 最新偏好是 Qwen 本地 workers；尚未實測選型，Nemotron 方案保留歷史。
+- gpt-6.1-max 是使用者目標用語；官方頁列 gpt-6.1-sol 與獨立 reasoning.effort=max，帳戶及 OpenCode 實際可用性待核。
+- W47 Red／待重評；近期目標尚未核配工時或期限。
 evidence:
 - 2026-11-04 使用者要求詳實保存所附架構長文；完整來源位於 companion/source.md。
 - 2026-11-04 使用者明確更正：RTX 5080 已移交其他研究生，實驗室目前改用 GX10，並要求記憶。
-baseline: []
-metrics: []
+- 2026-11-16 使用者完整供稿與近期目標宣告：source-2026-11-16-qwen-remote.md。
+- 2026-11-16 官方頁面支持 FP4-Local／Spark 路線、OpenCode V2 設定及 Web 配對、Telegram long polling；逐項界線見
+  update-2026-11-16-qwen-remote.md。未執行 GX10 推論或代理。
+baseline:
+- 提案：固定同一組任務與驗收，後續另行啟動 GPT-only、Qwen-only、GPT＋Qwen 比較；目前未量測。
+metrics:
+- 提案指標，未量測：task success rate、tool-call validity、end-to-end p50/p95、peak unified memory、cost
+  per successful task、security violation count。
 insights:
 - 模型提出工具請求，執行框架執行，權限與隔離層控制作用範圍。
 - 使用者對角色分工的偏好已保存；第三方工具選擇與部署尚未採納。
 - 原文範例與測試數字是來源主張，未構成本輪實測證據。
+- 多個代理角色共用一個模型服務；服務 owner、排程與 KV cache 是獨立設計責任。
+- 遠端指令入口、工作授權、模型路由、工具執行與 OS 隔離分層驗收。
+- Telegram gateway 先查既有 Hermes owner；模型服務先查 ai-inference-platform 的資源與 API 邊界。
 connections:
 - idea_000019
+- idea_000020
+- idea_000027
 - idea_000043
 role: architecture exploration
 value:
@@ -53,8 +74,8 @@ maturity:
   problem_clarity_score: 15/15
   boundary_definition: 10
   boundary_definition_score: 10/10
-  testability: 0
-  testability_score: 0/15
+  testability: 8
+  testability_score: 8/15
   evidence_support: 3
   evidence_support_score: 3/15
   connection_strength: 10
@@ -63,35 +84,38 @@ maturity:
   novelty_score: 6/10
   feasibility: 15
   feasibility_score: 15/15
-  research_potential: 0
-  research_potential_score: 0/10
-maturity_score: 59/100
-maturity_level: structured
+  research_potential: 2
+  research_potential_score: 2/10
+maturity_score: 69/100
+maturity_level: research_candidate
 next_steps:
-- 先確認 GX10 實機型號、CPU 架構、作業系統、記憶體與可用資源，再查核模型卡、OpenCode provider／agent／permission 文件與
-  Ollama 標籤。
-- 確認 Starter Kit ZIP 與原圖片是否可取得，保留附件缺口。
-- Jason 決定資料界線、預算與是否啟動隔離環境內的最小交接流程。
+- Jason 確認可用容量、非敏感測試 repo、雲端資料範圍與費用上限；先選一次最小唯讀交接作為下一個可啟動成果。
+- 查核 GX10 現有服務 owner、可用記憶體／磁碟、OpenCode 版本、實際模型清單與容器 revision；保護既有執行。
+- 啟動工程前決定獨立 execution owner 及共用推論介面；再依 companion 的 G0–G4 逐關驗收。
 source:
 - ideas/2026-11-04-gpt-nemotron-hybrid-coding/source.md
 - ideas/2026-11-04-gpt-nemotron-hybrid-coding/source-gx10-opencode.md
-maturity_action: include in graph and clustering
+- ideas/2026-11-04-gpt-nemotron-hybrid-coding/source-2026-11-16-qwen-remote.md
+maturity_action: evaluate cluster readiness
 human_note: ideas/2026-11-04-gpt-nemotron-hybrid-coding/README.md
 first_principle:
   scarce_resource: 可驗證的跨模型交接、操作權限、研究注意力與帳戶額度
   canonical_home: brainstorming-lab：原文、假設、選項、查核與啟動關卡
   planning_role: 僅保存 ID、狀態、分數、定位、下一關與容量
   scope_control: source preserved；未安裝、未授權帳戶、未取得金鑰、未實作或執行代理
-  next_gate: 先查核產品與模型識別、帳戶條件、ZIP 可取得性及資料界線；確認後另行決定是否啟動
+  next_gate: 先確認容量、資料／預算與既有 inference／Telegram owner，再決定最小唯讀流程的執行 owner；未新增工程排程。
 activation:
   decision: deferred_activation
-  reason: 本輪授權為詳實紀錄；部署工具與雲端連線尚待決定。
+  reason: 11/16 授權完整筆記與關聯；近期目標已確認，部署／服務變更未啟動。
   stop_defer:
   - 大量平行 swarm
   - JEV 分數與 fork 演算法
   - 自建 LangGraph 控制器
   - GX10 本機 Super 部署：先查核量化、框架／parser、資源與資料界線，另行啟動
   - 正式專案與敏感資料接入
+  - Telegram gateway 安裝、共用 bot token 或接管既有 Hermes
+  - 多 workers 壓測、自建 dashboard、公開 OpenCode／vLLM 入口
+  - censored／uncensored 比較與正式敏感 repo 接入；維持原 owner 與獨立啟動關卡
 pressure_test:
   setting: 若後續啟動：獨立測試目錄中的字串正規化任務；GPT 規劃、Nemotron 提出變更、本機測試回報、GPT 審查。
   expected_failure_modes:
@@ -102,7 +126,8 @@ pressure_test:
   smallest_observable_test: 啟動前先取得可審閱設定及來源；啟動後以角色／實際模型、工具請求／批准／執行、差異與測試證據確認交接。
   decision: 越權或無法辨識實際模型時停止；缺乏測試證據時修訂；完整可追溯交接僅證明該次流程可用，不證明模型優劣。
 claim_checks:
-  external_sources: not_verified
+  external_sources: partially_verified_2026-11-16; see claim ledger; historical claims
+    unchanged
   starter_zip: not_received
   original_image: not_received
   configuration_tests: source_claim_only
@@ -110,6 +135,8 @@ claim_checks:
   gx10_starter_zip: not_received
   gx10_super_local_deployment: not_verified
   opencode_full_orchestration: not_verified
+  qwen_gx10_runtime: not_run
+  remote_control_runtime: not_run
 normalization_status: validated
 hardware_context:
   status: user_confirmed
@@ -118,3 +145,13 @@ hardware_context:
   previous_gpu: RTX 5080 已移交其他研究生，不再預設可用
   exact_vendor_and_specs: pending_confirmation
   source: ideas/2026-11-04-gpt-nemotron-hybrid-coding/source-gx10-opencode.md
+goal_update_2026_11_16:
+  user_statement: 我最近的目標之一是很想做到這個。
+  accepted: 近期目標：GX10 上 GPT 主控＋Qwen workers 的 OpenCode MVP，並可遠端操作。
+  proposed_configuration: GPT-6.1 Sol high 起步／max 視任務；Qwen FP4-Local 候選；私有 Web／SSH
+    優先，Telegram 次之。具體選型未核定。
+  companion: ideas/2026-11-04-gpt-nemotron-hybrid-coding/update-2026-11-16-qwen-remote.md
+  capacity: W47 Red／待重評；未核配時段或新增截止。
+  runtime: implementation pending; no live run
+maturity_note: 69/100 為 11/16 CLI 重算，maturity_level=research_candidate 是演算法分類；生命週期維持
+  structured，待實際摩擦證據與 G0 決策才評估人工升級。分數不證明部署可行或實驗完成。

@@ -363,3 +363,8 @@ Local Model-Owner Architecture for Single-GPU AI Workstations
 - Ollama OpenAI compatibility: https://docs.ollama.com/api/openai-compatibility
 
 這些 citation 的角色不同。PyTorch 支撐「跨 process/GPU ownership 不是自動共用」；vLLM 和 Triton 支撐「serving layer 管理 memory、batching、request scheduling 是成熟方向」；Ollama 支撐「本機模型可以透過相容 API 讓 project 與模型位置解耦」。你的實測則支撐本文真正的新焦點：單機 RTX 5080 多 project 的 migration discipline。
+
+
+## 2026-11-16｜GX10 混合代理關聯
+
+[idea_000049：Qwen workers 與遠端控制](2026-11-04-gpt-nemotron-hybrid-coding/update-2026-11-16-qwen-remote.md)保存近期 MVP 目標、完整供稿與啟動關卡。共用 Qwen endpoint 的多角色請求，直接沿用單一 model owner、queue 與 KV cache 問題；本次沒有啟動此構想的 ASR 或服務工程。
